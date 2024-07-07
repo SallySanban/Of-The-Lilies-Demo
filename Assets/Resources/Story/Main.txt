@@ -1,5 +1,47 @@
-Ahlai "Every night, my mind takes me back to ten years ago, whether I want it to or not.{a} They're nightmares now, but that's not much better, is it?"
+ShowCG("Red Sky")
 
-Ahlai "The Seiyslan Empire.{c}They came with every intention to destroy the peace in our tribe -"
+You "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
 
-Ahlai "ruining our lands,{wa 0.5} tearing kin away from kin.{wc 1}I was no exception."
+ShowCG("Young Ahlai Running"), PlaySoundEffect("People Screaming")
+
+"<i>They're nightmares now, but that's not much better, is it?</i>"
+
+ShowCG("Subatok Clan Fighting")
+
+"<i>The Seiyslan Empire.{a} They came with every intention to destroy the peace in our tribe -</i>"
+
+ShowCG("General Sheng Killing"),PlaySoundEffect("Sword Clashing")
+
+"{a} <i>ruining our lands,</i>"
+
+ShowCG("Ahlai Fallen")
+
+"{a} <i>tearing kin away from kin.</i>"
+
+ShowCG("Ahlai Being Taken")
+
+"<i>I was no exception.</i>"
+
+Blackout(), PlaySoundEffect("Coins Jiggling")
+
+"<i>But that was when I knew it couldn't be the end.</i>"
+
+ShowCG("Lady Sabina Reaching")
+
+"<i>At least, not for me.</i>"
+
+Blackout(), AskForName()
+
+Lady Sabina "<i>Ahlai? My dear?</i>"
+
+"<i>Wake up, Ahlai. Ahlai! Get up, now...!</i>"
+
+ShowCG("Lady Sabina Looming")
+
+"Oh, you must've been having nightmares again."
+
+You "Yes, you're... you're right. It was about my homeland again. It..."
+
+Lady Sabina "Of course, I understand... It was hard for you, Ahlai. Please, why don't you take the time to collect yourself?"
+
+"When you're ready, <b>come down and you can start on your tasks for the day</b>. Seiji is waiting."

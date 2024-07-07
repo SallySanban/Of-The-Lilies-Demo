@@ -8,15 +8,15 @@ namespace Dialogue
 {
     public class DialogueParser
     {
-        private const string commandRegexPattern = "\\w*[^\\s]\\(";
+        private const string commandRegexPattern = @"[\w\[\]]*[^\s]\(";
 
         public static DialogueLine Parse(string rawLine)
         {
-            Debug.Log($"Parsing line: {rawLine}");
+            //Debug.Log($"Parsing line: {rawLine}");
 
             (string speaker, string dialogue, string commands) = GetContent(rawLine);
 
-            Debug.Log($"Speaker = {speaker}\nDialogue = {dialogue}\nCommands = {commands}");
+            //Debug.Log($"Speaker = {speaker}\nDialogue = {dialogue}\nCommands = {commands}");
 
             return new DialogueLine(speaker, dialogue, commands);
         }

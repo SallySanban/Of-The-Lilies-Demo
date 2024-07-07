@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Commands;
 
 namespace Dialogue
 {
@@ -63,6 +64,11 @@ namespace Dialogue
                 {
                     yield return RunCommands(line);
                 }
+
+                if (line.hasDialogue)
+                {
+                    yield return WaitForUserInput();
+                }
             }
         }
 
@@ -70,17 +76,28 @@ namespace Dialogue
         {
             if (line.hasSpeaker)
             {
-                dialogueSystem.ShowSpeakerName(line.speaker);
+                dialogueSystem.ShowSpeakerName(line.speakerData.displayName);
             }
 
-            yield return BuildLineSegments(line.dialogue);
-
-            yield return WaitForUserInput();
+            yield return BuildLineSegments(line.dialogueData);
         }
 
         IEnumerator RunCommands(DialogueLine line)
         {
-            Debug.Log(line.commands);
+            List<CommandData.Command> commands = line.commandData.commands;
+
+            foreach(CommandData.Command command in commands)
+            {
+                if (command.waitForCompletion)
+                {
+                    yield return CommandManager.Instance.Execute(command.name, command.arguments);
+                }
+                else
+                {
+                    CommandManager.Instance.Execute(command.name, command.arguments);
+                }
+            }
+
             yield return null;
         }
 
