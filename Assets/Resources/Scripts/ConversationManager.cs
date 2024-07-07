@@ -72,12 +72,8 @@ namespace Dialogue
             {
                 dialogueSystem.ShowSpeakerName(line.speaker);
             }
-            else
-            {
-                dialogueSystem.HideSpeakerName();
-            }
 
-            yield return BuildDialogue(line.dialogue);
+            yield return BuildLineSegments(line.dialogue);
 
             yield return WaitForUserInput();
         }
@@ -88,9 +84,45 @@ namespace Dialogue
             yield return null;
         }
 
-        IEnumerator BuildDialogue(string dialogue)
+        IEnumerator BuildLineSegments(DialogueData line)
         {
-            architect.Build(dialogue);
+            for(int i = 0; i < line.lineSegments.Count; i++)
+            {
+                DialogueData.DialogueSegment segment = line.lineSegments[i];
+
+                yield return WaitForDialogueSegmentSignal(segment);
+
+                yield return BuildDialogue(segment.dialogue, segment.appendText);
+            }
+        }
+
+        IEnumerator WaitForDialogueSegmentSignal(DialogueData.DialogueSegment segment)
+        {
+            switch (segment.startSignal)
+            {
+                case DialogueData.DialogueSegment.StartSignal.C:
+                case DialogueData.DialogueSegment.StartSignal.A:
+                    yield return WaitForUserInput();
+                    break;
+                case DialogueData.DialogueSegment.StartSignal.WC:
+                case DialogueData.DialogueSegment.StartSignal.WA:
+                    yield return new WaitForSeconds(segment.signalDelay);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        IEnumerator BuildDialogue(string dialogue, bool append = false)
+        {
+            if (!append)
+            {
+                architect.Build(dialogue);
+            }
+            else
+            {
+                architect.Append(dialogue);
+            }
 
             while (architect.isBuilding)
             {

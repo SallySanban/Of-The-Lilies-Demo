@@ -1,5 +1,5 @@
-Ahlai "Every night, my mind takes me back to ten years ago, whether I want it to or not."
+Ahlai "Every night, my mind takes me back to ten years ago, whether I want it to or not.{a} They're nightmares now, but that's not much better, is it?"
 
-Seiji "They're nightmares now, but that's not much better, is it?"
+Ahlai "The Seiyslan Empire.{c}They came with every intention to destroy the peace in our tribe -"
 
-Ahlai "The Seiyslan Empire. They came with every intention to destroy the peace in our tribe -"
+Ahlai "ruining our lands,{wa 0.5} tearing kin away from kin.{wc 1}I was no exception."
