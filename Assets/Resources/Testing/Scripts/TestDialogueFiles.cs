@@ -16,20 +16,24 @@ public class TestDialogueFiles : MonoBehaviour
     {
         List<string> lines = FileManager.ReadTextAsset(textAsset);
 
-        foreach (string line in lines)
-        {
-            if (string.IsNullOrEmpty(line)) continue;
+        //foreach (string line in lines)
+        //{
+        //    if (string.IsNullOrEmpty(line)) continue;
 
-            Debug.Log($"Segmenting line: {line}");
-            DialogueLine dialogueLine = DialogueParser.Parse(line);
+        //    Debug.Log($"Segmenting line: {line}");
+        //    DialogueLine dialogueLine = DialogueParser.Parse(line);
 
-            int i = 0;
+        //    int i = 0;
 
-            foreach (DialogueData.DialogueSegment segment in dialogueLine.dialogueData.lineSegments)
-            {
-                Debug.Log($"{i++} '{segment.dialogue}' signal = {segment.startSignal.ToString()} signalDelay = {segment.signalDelay.ToString()}");
-            }
-        }
+        //    if (dialogueLine.dialogueData != null)
+        //    {
+        //        foreach (DialogueData.DialogueSegment segment in dialogueLine.dialogueData.lineSegments)
+        //        {
+        //            Debug.Log($"Segment {i++} '{segment.dialogue}' signal = {segment.startSignal.ToString()} signalDelay = {segment.signalDelay.ToString()}");
+        //        }
+        //    }
+
+        //}
 
         //foreach (string line in lines)
         //{
@@ -64,6 +68,6 @@ public class TestDialogueFiles : MonoBehaviour
 
         //}
 
-        //DialogueSystem.Instance.Say(lines);
+        DialogueSystem.Instance.Say(lines);
     }
 }

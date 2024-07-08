@@ -12,7 +12,6 @@ public class TextArchitect
     public string currentText => tmpro.text;
     public string targetText { get; private set; } = "";
     public string preText { get; private set; } = "";
-    private int preTextLength = 0;
 
     public string fullTargetText => preText + targetText;
 

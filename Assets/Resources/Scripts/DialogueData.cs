@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using UnityEngine;
 
 namespace Dialogue
 {
@@ -24,10 +25,25 @@ namespace Dialogue
             int lastIndex = 0;
 
             DialogueSegment segment = new DialogueSegment();
-            segment.dialogue = (matches.Count == 0 ? rawDialogue : rawDialogue.Substring(0, matches[0].Index));
-            segment.startSignal = DialogueSegment.StartSignal.NONE;
-            segment.signalDelay = 0;
-            segments.Add(segment);
+
+    
+            if(matches.Count != 0)
+            {
+                if (matches[0].Index != 0)
+                {
+                    segment.dialogue = rawDialogue.Substring(0, matches[0].Index);
+                    segment.startSignal = DialogueSegment.StartSignal.NONE;
+                    segment.signalDelay = 0;
+                    segments.Add(segment);
+                }
+            }
+            else
+            {
+                segment.dialogue = rawDialogue;
+                segment.startSignal = DialogueSegment.StartSignal.NONE;
+                segment.signalDelay = 0;
+                segments.Add(segment);
+            }
 
             if (matches.Count == 0)
             {

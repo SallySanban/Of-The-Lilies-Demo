@@ -1,6 +1,6 @@
 ShowCG("Red Sky")
 
-You "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
+Ahlai as You "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
 
 ShowCG("Young Ahlai Running"), PlaySoundEffect("People Screaming")
 

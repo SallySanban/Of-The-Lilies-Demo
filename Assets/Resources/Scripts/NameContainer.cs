@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class NameContainer
 {
     [SerializeField] private GameObject root;
+    [SerializeField] private Image nameBorder;
     [SerializeField] private TextMeshProUGUI nameText;
 
     public void Show(string name = "")
@@ -23,4 +25,6 @@ public class NameContainer
     {
         root.SetActive(false);
     }
+
+    public void SetBorderColor(Color color) => nameBorder.color = color;
 }

@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Characters;
 
 namespace Dialogue
 {
     public class DialogueSystem : MonoBehaviour
     {
+        [SerializeField] private DialogueSystemConfig _config;
+        public DialogueSystemConfig config => _config;
+
         public DialogueContainer dialogueContainer = new DialogueContainer();
         private ConversationManager conversationManager;
         private TextArchitect textArchitect;
@@ -47,19 +51,33 @@ namespace Dialogue
             onUserNext?.Invoke();
         }
 
+        public void ApplySpeakerDataToDialogueContainer(string speakerName)
+        {
+            Character character = CharacterManager.Instance.GetCharacter(speakerName);
+            CharacterConfigData config = character.config != null ? character.config : CharacterManager.Instance.GetCharacterConfig(speakerName);
+
+            ApplySpeakerDataToDialogueContainer(config);
+        }
+
+        public void ApplySpeakerDataToDialogueContainer(CharacterConfigData config)
+        {
+            dialogueContainer.SetBorderColor(config.textboxBorderColor);
+            dialogueContainer.nameContainer.SetBorderColor(config.nameBorderColor);
+        }
+
         public void ShowSpeakerName(string speakerName = "") => dialogueContainer.nameContainer.Show(speakerName);
 
         public void HideSpeakerName() => dialogueContainer.nameContainer.Hide();
 
-        public void Say(string speaker, string dialogue)
+        public Coroutine Say(string speaker, string dialogue)
         {
             List<string> conversation = new List<string>() { $"{speaker} \"{dialogue}\"" };
-            Say(conversation);
+            return Say(conversation);
         }
 
-        public void Say(List<string> conversation)
+        public Coroutine Say(List<string> conversation)
         {
-            conversationManager.StartConversation(conversation);
+            return conversationManager.StartConversation(conversation);
         }
     }
 }
