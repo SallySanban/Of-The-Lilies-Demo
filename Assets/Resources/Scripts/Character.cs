@@ -20,9 +20,12 @@ namespace Characters
 
         //Coroutines
         protected Coroutine showingCoroutine, hidingCoroutine;
+        protected Coroutine movingCoroutine;
+
         public bool isShowing => showingCoroutine != null;
         public bool isHiding => hidingCoroutine != null;
-        public virtual bool isVisible => false;
+        public bool isMoving => movingCoroutine != null;
+        public virtual bool isVisible { get; set; }
 
         public Character(string name, CharacterConfigData config, GameObject prefab)
         {
@@ -33,6 +36,8 @@ namespace Characters
             if(prefab != null)
             {
                 GameObject ob = Object.Instantiate(prefab, manager.characterPanel);
+                ob.name = name;
+
                 ob.SetActive(true);
 
                 root = ob.GetComponent<RectTransform>();
@@ -85,13 +90,75 @@ namespace Characters
             yield return null;
         }
 
+        public virtual void SetPosition(Vector2 position)
+        {
+            if (root == null) return;
 
+            (Vector2 minAnchorTarget, Vector2 maxAnchorTarget) = ConvertUIPositionToAnchorPosition(position);
+
+            root.anchorMin = minAnchorTarget;
+            root.anchorMax = maxAnchorTarget;
+        }
+
+        public virtual Coroutine MoveToPosition(Vector2 position, float speed = 4f, bool smooth = true)
+        {
+            if (root == null) return null;
+
+            if (isMoving)
+            {
+                manager.StopCoroutine(movingCoroutine);
+            }
+
+            movingCoroutine = manager.StartCoroutine(MovingToPosition(position, speed, smooth));
+
+            return movingCoroutine;
+        }
+
+        private IEnumerator MovingToPosition(Vector2 position, float speed, bool smooth)
+        {
+            (Vector2 minAnchorTarget, Vector2 maxAnchorTarget) = ConvertUIPositionToAnchorPosition(position);
+
+            Vector2 padding = root.anchorMax - root.anchorMin;
+
+            while(root.anchorMin != minAnchorTarget || root.anchorMax != maxAnchorTarget)
+            {
+                root.anchorMin = smooth ?
+                    Vector2.Lerp(root.anchorMin, minAnchorTarget, speed * Time.deltaTime) :
+                    Vector2.MoveTowards(root.anchorMin, minAnchorTarget, speed * Time.deltaTime * 0.35f);
+
+                root.anchorMax = root.anchorMin + padding;
+
+                if (smooth && Vector2.Distance(root.anchorMin, minAnchorTarget) <= 0.0001f)
+                {
+                    root.anchorMin = minAnchorTarget;
+                    root.anchorMax = maxAnchorTarget;
+
+                    break;
+                }
+
+                yield return null;
+            }
+
+            movingCoroutine = null;
+        }
+
+        protected (Vector2, Vector2) ConvertUIPositionToAnchorPosition(Vector2 position)
+        {
+            Vector2 padding = root.anchorMax - root.anchorMin;
+
+            float maxX = 1f - padding.x;
+            float maxY = 1f - padding.y;
+
+            Vector2 minAnchorTarget = new Vector2(maxX * position.x, maxY * position.y);
+            Vector2 maxAnchorTarget = minAnchorTarget + padding;
+
+            return (minAnchorTarget, maxAnchorTarget);
+        }
 
         public enum CharacterType
         {
             Text,
-            Sprite,
-            SpriteSheet
+            Sprite
         }
     }
 }

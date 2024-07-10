@@ -74,8 +74,11 @@ namespace Characters
 
             string[] nameData = characterName.Split(characterCastingDelimiter, System.StringSplitOptions.RemoveEmptyEntries);
 
+            Debug.Log("HELLO " + nameData[0]);
+
             result.name = nameData[0];
             result.castingName = nameData.Length > 1 ? nameData[1] : result.name;
+            result.rootCharacterPath = FormatCharacterPath(characterRootPath, result.castingName);
             result.config = config.GetConfig(result.castingName);
             result.prefab = GetPrefabForCharacter(result.castingName);
 
@@ -100,8 +103,7 @@ namespace Characters
                 case Character.CharacterType.Text:
                     return new TextCharacter(info.name, config);
                 case Character.CharacterType.Sprite:
-                case Character.CharacterType.SpriteSheet:
-                    return new SpriteCharacter(info.name, config, info.prefab);
+                    return new SpriteCharacter(info.name, config, info.prefab, info.rootCharacterPath);
                 default:
                     return null;
             }
@@ -111,6 +113,7 @@ namespace Characters
         {
             public string name = "";
             public string castingName = "";
+            public string rootCharacterPath = "";
             public CharacterConfigData config = null;
             public GameObject prefab = null;
         }
