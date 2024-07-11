@@ -21,6 +21,8 @@ namespace GraphicPanels
         public bool isCGShowing => showingCGCoroutine != null;
         public bool isCGHiding => hidingCGCoroutine != null;
 
+        private float fadeSpeed = 3f;
+
         public GraphicPanel(string graphicPanelFilename, string graphicPanelPath)
         {
             this.filename = graphicPanelFilename;
@@ -70,7 +72,24 @@ namespace GraphicPanels
 
             while (self.alpha != targetAlpha)
             {
-                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, 3f * Time.deltaTime);
+                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
+
+                yield return null;
+            }
+
+            showingCGCoroutine = null;
+            hidingCGCoroutine = null;
+        }
+
+        public IEnumerator Switching(bool show)
+        {
+            float targetAlpha = show ? 1f : 0f;
+
+            CanvasGroup self = graphicPanelCanvasGroup;
+
+            while (self.alpha != targetAlpha)
+            {
+                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
 
                 yield return null;
             }

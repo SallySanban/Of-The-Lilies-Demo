@@ -15,6 +15,8 @@ namespace Characters
 
         private string artAssetsDirectory = "";
 
+        private float fadeSpeed = 3f;
+
         public override bool isCharacterVisible
         { get { return isCharacterShowing || rootCanvasGroup.alpha == 1; }
           set { rootCanvasGroup.alpha = value ? 1 : 0; }
@@ -76,7 +78,7 @@ namespace Characters
 
             while(self.alpha != targetAlpha)
             {
-                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, 3f * Time.deltaTime);
+                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
 
                 yield return null;
             }

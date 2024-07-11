@@ -27,6 +27,8 @@ namespace Dialogue
 
         public bool isRunningConversation => conversationManager.isRunning;
 
+        private float fadeSpeed = 3f;
+
         private void Awake()
         {
             if (Instance == null)
@@ -116,7 +118,7 @@ namespace Dialogue
 
             while (self.alpha != targetAlpha)
             {
-                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, 3f * Time.deltaTime);
+                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
 
                 if(self.alpha == 0f)
                 {

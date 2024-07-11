@@ -9,8 +9,6 @@ namespace Commands
 {
     public class DatabaseExtensionGraphicPanel : CommandDatabaseExtension
     {
-        private static float transitionTime = 0.5f;
-
         new public static void Extend(CommandDatabase database)
         {
             database.AddCommand("ShowCG", new Func<string, IEnumerator>(Show));
