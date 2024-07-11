@@ -126,6 +126,11 @@ namespace Dialogue
                     yield return CommandManager.Instance.Execute(command.name, command.arguments);
                     yield return new WaitForSeconds(completionTime);
                 }
+                else if (command.waitForUserInput)
+                {
+                    yield return CommandManager.Instance.Execute(command.name, command.arguments);
+                    yield return WaitForUserInput();
+                }
                 else
                 {
                     CommandManager.Instance.Execute(command.name, command.arguments);

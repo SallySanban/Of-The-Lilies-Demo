@@ -1,22 +1,24 @@
-ShowCG("Red Sky"), HideTextbox()
+[input]ShowCG("Red Sky")
 
 Ahlai as You "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
 
+HideCG(), [wait]HideTextbox(), PlaySoundEffect("People Screaming"), [input]ShowCG("Young Ahlai Running")
+
 "<i>They're nightmares now, but that's not much better, is it?</i>"
 
-[wait]HideCG(), ShowCG("Subatok Clan Fighting")
+HideCG(), [wait]HideTextbox(), [input]ShowCG("Subatok Clan Fighting")
 
 "<i>The Seiyslan Empire.{a} They came with every intention to destroy the peace in our tribe -</i>"
 
-SwitchCG("General Sheng Killing"),PlaySoundEffect("Sword Clashing")
+HideCG(), [wait]HideTextbox(), PlaySoundEffect("Sword Clashing"), [input]ShowCG("General Sheng Killing")
 
-"{a} <i>ruining our lands,</i>"
+"<i>ruining our lands,</i>"
 
-SwitchCG("Ahlai Fallen")
+HideCG(), [wait]HideTextbox(), [input]ShowCG("Ahlai Fallen")
 
-"{a} <i>tearing kin away from kin.</i>"
+"<i>tearing kin away from kin.</i>"
 
-SwitchCG("Ahlai Being Taken")
+HideCG(), [wait]HideTextbox(), [input]ShowCG("Ahlai Being Taken")
 
 "<i>I was no exception.</i>"
 
@@ -24,21 +26,21 @@ Blackout(), PlaySoundEffect("Coins Jiggling")
 
 "<i>But that was when I knew it couldn't be the end.</i>"
 
-ShowCG("Lady Sabina Reaching")
+HideCG(), [wait]HideTextbox(), [input]ShowCG("Lady Sabina Reaching")
 
 "<i>At least, not for me.</i>"
 
-Blackout(), AskForName()
+[input]Blackout(), AskForName()
 
 Lady Sabina "<i>Ahlai? My dear?</i>"
 
 "<i>Wake up, Ahlai. Ahlai! Get up, now...!</i>"
 
-SwitchCG("Lady Sabina Looming")
+HideCG(), [wait]HideTextbox(), [input]ShowCG("Lady Sabina Looming")
 
 "Oh, you must've been having nightmares again."
 
-You "Yes, you're... you're right. It was about my homeland again. It..."
+Ahlai as You "Yes, you're... you're right. It was about my homeland again. It..."
 
 Lady Sabina "Of course, I understand... It was hard for you, Ahlai. Please, why don't you take the time to collect yourself?"
 

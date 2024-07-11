@@ -13,12 +13,14 @@ namespace Dialogue
         private const char argumentsId = '(';
         private const char argumentsDelimiter = ' ';
         private const string waitCommandId = "[wait]";
+        private const string waitUserInputCommandId = "[input]";
 
         public struct Command
         {
             public string name;
             public string[] arguments;
             public bool waitForCompletion;
+            public bool waitForUserInput;
         }
 
         public CommandData(string rawCommands)
@@ -44,9 +46,15 @@ namespace Dialogue
                     command.name = command.name.Substring(waitCommandId.Length);
                     command.waitForCompletion = true;
                 }
+                else if(command.name.ToLower().StartsWith(waitUserInputCommandId))
+                {
+                    command.name = command.name.Substring(waitUserInputCommandId.Length);
+                    command.waitForUserInput = true;
+                }
                 else
                 {
                     command.waitForCompletion = false;
+                    command.waitForUserInput = false;
                 }
 
                 command.arguments = GetArgs(cmd.Substring(index + 1, cmd.Length - index - 2));

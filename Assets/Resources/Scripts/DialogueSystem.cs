@@ -118,6 +118,11 @@ namespace Dialogue
             {
                 self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, 3f * Time.deltaTime);
 
+                if(self.alpha == 0f)
+                {
+                    dialogueContainer.dialogueText.text = "";
+                }
+
                 yield return null;
             }
 
