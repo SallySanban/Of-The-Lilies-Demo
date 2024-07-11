@@ -1,24 +1,22 @@
-ShowCG("Red Sky")
+ShowCG("Red Sky"), HideTextbox()
 
 Ahlai as You "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
 
-ShowCG("Young Ahlai Running"), PlaySoundEffect("People Screaming")
-
 "<i>They're nightmares now, but that's not much better, is it?</i>"
 
-ShowCG("Subatok Clan Fighting")
+[wait]HideCG(), ShowCG("Subatok Clan Fighting")
 
 "<i>The Seiyslan Empire.{a} They came with every intention to destroy the peace in our tribe -</i>"
 
-ShowCG("General Sheng Killing"),PlaySoundEffect("Sword Clashing")
+SwitchCG("General Sheng Killing"),PlaySoundEffect("Sword Clashing")
 
 "{a} <i>ruining our lands,</i>"
 
-ShowCG("Ahlai Fallen")
+SwitchCG("Ahlai Fallen")
 
 "{a} <i>tearing kin away from kin.</i>"
 
-ShowCG("Ahlai Being Taken")
+SwitchCG("Ahlai Being Taken")
 
 "<i>I was no exception.</i>"
 
@@ -36,7 +34,7 @@ Lady Sabina "<i>Ahlai? My dear?</i>"
 
 "<i>Wake up, Ahlai. Ahlai! Get up, now...!</i>"
 
-ShowCG("Lady Sabina Looming")
+SwitchCG("Lady Sabina Looming")
 
 "Oh, you must've been having nightmares again."
 

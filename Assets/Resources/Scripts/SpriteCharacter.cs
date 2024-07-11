@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 namespace Characters
 {
@@ -14,8 +15,8 @@ namespace Characters
 
         private string artAssetsDirectory = "";
 
-        public override bool isVisible
-        { get { return isShowing || rootCanvasGroup.alpha == 1; }
+        public override bool isCharacterVisible
+        { get { return isCharacterShowing || rootCanvasGroup.alpha == 1; }
           set { rootCanvasGroup.alpha = value ? 1 : 0; }
         }
 
@@ -80,8 +81,21 @@ namespace Characters
                 yield return null;
             }
 
-            showingCoroutine = null;
-            hidingCoroutine = null;
+            showingCharacterCoroutine = null;
+            hidingCharacterCoroutine = null;
+        }
+
+        public override void OnReceiveCastingExpression(int layer, string expression)
+        {
+            Sprite sprite = GetSprite(expression);
+
+            if(sprite == null)
+            {
+                Debug.LogError($"Sprite {expression} could not be found for character {name}.");
+                return;
+            }
+
+            TransitionSprite(sprite, layer);
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Commands;
+using Characters;
 
 namespace Dialogue
 {
@@ -14,6 +15,7 @@ namespace Dialogue
 
         private TextArchitect architect = null;
         private bool userNext = false;
+        private float completionTime = 0.3f;
 
         public ConversationManager(TextArchitect textArchitect)
         {
@@ -78,10 +80,39 @@ namespace Dialogue
         {
             if (line.hasSpeaker)
             {
-                dialogueSystem.ShowSpeakerName(line.speakerData.displayName);
+                HandleSpeakerLogic(line.speakerData);
             }
 
+            yield return dialogueSystem.Show();
+
             yield return BuildLineSegments(line.dialogueData);
+        }
+
+        private void HandleSpeakerLogic(SpeakerData speakerData)
+        {
+            Character character = CharacterManager.Instance.GetCharacter(speakerData.name); //creates the character as soon as character speaks
+
+            if (speakerData.isCastingPosition && !character.isCharacterVisible)
+            {
+                character.SetPosition(speakerData.castPosition);
+            }
+
+            if (speakerData.makeCharacterEnter && !character.isCharacterVisible && !character.isCharacterShowing)
+            {
+                character.Show();
+            }
+
+            dialogueSystem.ShowSpeakerName(speakerData.displayName);
+
+            DialogueSystem.Instance.ApplySpeakerDataToDialogueContainer(speakerData.name);
+
+            if (speakerData.isCastingExpressions && character.isCharacterVisible)
+            {
+                foreach (var exp in speakerData.castExpressions)
+                {
+                    character.OnReceiveCastingExpression(exp.layer, exp.expression);
+                }
+            }
         }
 
         IEnumerator RunCommands(DialogueLine line)
@@ -93,6 +124,7 @@ namespace Dialogue
                 if (command.waitForCompletion)
                 {
                     yield return CommandManager.Instance.Execute(command.name, command.arguments);
+                    yield return new WaitForSeconds(completionTime);
                 }
                 else
                 {

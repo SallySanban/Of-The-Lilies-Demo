@@ -22,14 +22,14 @@ MonoBehaviour:
     alias: ma
     characterType: 1
     nameBorderColor: {r: 0.92983586, g: 0.9433962, b: 0.55535775, a: 1}
-    textboxBorderColor: {r: 0.93333334, g: 0.94509804, b: 0.5568628, a: 0}
+    textboxBorderColor: {r: 0.93333334, g: 0.94509804, b: 0.5568628, a: 1}
   - name: Lady Sabina
     alias: ls
     characterType: 0
     nameBorderColor: {r: 1, g: 1, b: 1, a: 1}
-    textboxBorderColor: {r: 1, g: 1, b: 1, a: 0}
+    textboxBorderColor: {r: 1, g: 1, b: 1, a: 1}
   - name: Ahlai
     alias: yn
     characterType: 0
     nameBorderColor: {r: 1, g: 1, b: 1, a: 1}
-    textboxBorderColor: {r: 1, g: 1, b: 1, a: 0}
+    textboxBorderColor: {r: 1, g: 1, b: 1, a: 1}

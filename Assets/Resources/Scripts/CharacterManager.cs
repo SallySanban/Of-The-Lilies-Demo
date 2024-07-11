@@ -37,18 +37,16 @@ namespace Characters
             return config.GetConfig(characterName);
         }
 
-        public Character GetCharacter(string characterName, bool createIfDoesNotExist = false)
+        public Character GetCharacter(string characterName)
         {
             if (characters.ContainsKey(characterName.ToLower()))
             {
                 return characters[characterName.ToLower()];
             }
-            else if (createIfDoesNotExist)
+            else
             {
                 return CreateCharacter(characterName);
             }
-
-            return null;
         }
 
         public Character CreateCharacter(string characterName)
@@ -73,8 +71,6 @@ namespace Characters
             CharacterInfo result = new CharacterInfo();
 
             string[] nameData = characterName.Split(characterCastingDelimiter, System.StringSplitOptions.RemoveEmptyEntries);
-
-            Debug.Log("HELLO " + nameData[0]);
 
             result.name = nameData[0];
             result.castingName = nameData.Length > 1 ? nameData[1] : result.name;

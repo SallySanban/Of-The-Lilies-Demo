@@ -1,0 +1,45 @@
+enter Seiji [Smile] "Ahlai! You're finally awake. I hope you rested well?"
+
+Ahlai as You "...Sorry to disappoint you, Seiji."
+
+Seiji [Pout] "Another nightmare?"
+
+Ahlai as You "Another nightmare."
+
+Seiji "Aw, you don't have to say sorry for that. Oh, um... if it helps, we can take our minds off of it while we do the things Lady Sabina is making us do."
+
+Seiji [Smile] "We should go soon if we don't want to keep our clients waiting."
+
+PlaySoundEffect("Doorbell ringing"), MoveCharacter(Seiji -x 1), MoveCharacter(Myo -x 0 -i true), [wait]ShowCharacter(Myo), ChangeCharacterEmotion(Seiji -exp Displeased)
+
+Ahlai as You "Ah, Sir Aciano! Welcome to Sabina's Salves! How are you, Sir? Do we have another shipment of supplies?"
+
+"I didn't hear anything from Lady Sabina... er, Seiji and I were just about to go out to make some deliveries, so we weren't expecting you-"
+
+Myo as Myo Aciano [Flirt] "Please, Ahlai, just call me Myo. You have no need to overthink about why I'm here, I'm just going to claim the potion I ordered a few days ago."
+
+Ahlai as You "Oh yes, the Draught of Perpetuity. And you ordered... twelve vials of them!"
+
+Myo as Myo Aciano [Laugh] "What can I say? Try your hand at overseeing a province, writing publications for the university, research on the side, all while running a family business."
+
+"I mean, you're going to want to drink these too, or you just wouldn't get anything done, don't you think?"
+
+ChangeCharacterEmotion(Myo -exp Flirt)
+
+Ahlai as You "I don't envy you, Sir-um, Myo. But please, you're only allowed to drink one vial a day."
+
+"This potion is not a substitute for proper rest and a good night's sleep, since it only heightens your functionality."
+
+"It doesn't necessarily relieve any tension or anxiety on your end."
+
+Myo as Myo Aciano [Flirt] "I know, I'll keep that in mind, Ahlai. Any tension of mine shouldn't be your problem to address, but it must be unfortunate if I've already got you worrying..."
+
+"Lady Sabina told me earlier how complicated it was to make this draught, and here I requested a dozen!"
+
+Ahlai as You "Yes... <b>Magic does only come from the gods.</b> But that's what we do here at Sabina's Salves."
+
+"<b>We craft the potions so ordinary people like us can use the magic too.</b> It's nothing we cannot handle. Please, don't feel bothered by it."
+
+Myo as Myo Aciano "But I'm guilty nonetheless, aren't I?"
+
+"To make up for troubling you with all these demands of mine, would you be willing to share a drink with me at the tavern later? I'll even pay for it, too."

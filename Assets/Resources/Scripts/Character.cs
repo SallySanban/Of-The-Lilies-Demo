@@ -19,13 +19,13 @@ namespace Characters
         public DialogueSystem dialogueSystem => DialogueSystem.Instance;
 
         //Coroutines
-        protected Coroutine showingCoroutine, hidingCoroutine;
-        protected Coroutine movingCoroutine;
+        protected Coroutine showingCharacterCoroutine, hidingCharacterCoroutine;
+        protected Coroutine movingCharacterCoroutine;
 
-        public bool isShowing => showingCoroutine != null;
-        public bool isHiding => hidingCoroutine != null;
-        public bool isMoving => movingCoroutine != null;
-        public virtual bool isVisible { get; set; }
+        public bool isCharacterShowing => showingCharacterCoroutine != null;
+        public bool isCharacterHiding => hidingCharacterCoroutine != null;
+        public bool isCharacterMoving => movingCharacterCoroutine != null;
+        public virtual bool isCharacterVisible { get; set; }
 
         public Character(string name, CharacterConfigData config, GameObject prefab)
         {
@@ -58,30 +58,30 @@ namespace Characters
 
         public virtual Coroutine Show()
         {
-            if (isShowing) return showingCoroutine;
+            if (isCharacterShowing) return showingCharacterCoroutine;
 
-            if (isHiding)
+            if (isCharacterHiding)
             {
-                manager.StopCoroutine(hidingCoroutine);
+                manager.StopCoroutine(hidingCharacterCoroutine);
             }
 
-            showingCoroutine = manager.StartCoroutine(ShowingOrHiding(true));
+            showingCharacterCoroutine = manager.StartCoroutine(ShowingOrHiding(true));
 
-            return showingCoroutine;
+            return showingCharacterCoroutine;
         }
 
         public virtual Coroutine Hide()
         {
-            if(isHiding) return hidingCoroutine;
+            if(isCharacterHiding) return hidingCharacterCoroutine;
 
-            if (isShowing)
+            if (isCharacterShowing)
             {
-                manager.StopCoroutine(showingCoroutine);
+                manager.StopCoroutine(showingCharacterCoroutine);
             }
 
-            hidingCoroutine = manager.StartCoroutine(ShowingOrHiding(false));
+            hidingCharacterCoroutine = manager.StartCoroutine(ShowingOrHiding(false));
 
-            return hidingCoroutine;
+            return hidingCharacterCoroutine;
         }
 
         public virtual IEnumerator ShowingOrHiding(bool show)
@@ -104,14 +104,14 @@ namespace Characters
         {
             if (root == null) return null;
 
-            if (isMoving)
+            if (isCharacterMoving)
             {
-                manager.StopCoroutine(movingCoroutine);
+                manager.StopCoroutine(movingCharacterCoroutine);
             }
 
-            movingCoroutine = manager.StartCoroutine(MovingToPosition(position, speed, smooth));
+            movingCharacterCoroutine = manager.StartCoroutine(MovingToPosition(position, speed, smooth));
 
-            return movingCoroutine;
+            return movingCharacterCoroutine;
         }
 
         private IEnumerator MovingToPosition(Vector2 position, float speed, bool smooth)
@@ -139,7 +139,7 @@ namespace Characters
                 yield return null;
             }
 
-            movingCoroutine = null;
+            movingCharacterCoroutine = null;
         }
 
         protected (Vector2, Vector2) ConvertUIPositionToAnchorPosition(Vector2 position)
@@ -153,6 +153,11 @@ namespace Characters
             Vector2 maxAnchorTarget = minAnchorTarget + padding;
 
             return (minAnchorTarget, maxAnchorTarget);
+        }
+
+        public virtual void OnReceiveCastingExpression(int layer, string expression)
+        {
+
         }
 
         public enum CharacterType
