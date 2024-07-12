@@ -9,15 +9,14 @@ namespace GraphicPanels
     {
         public static GraphicPanelManager Instance { get; private set; }
 
-        private Dictionary<string, GraphicPanel> graphicPanels = new Dictionary<string, GraphicPanel>();
-
         public GraphicPanel activeGraphicPanel = null;
 
         private const string graphicPanelNameId = "<graphicPanelName>";
-        private string graphicPanelRootPath => $"Art/CG/{graphicPanelNameId}";
+        private string graphicPanelRootPath => $"Art/CG/Images/{graphicPanelNameId}";
+        private string graphicPanelPrefabPath => "Art/CG/Graphic Panel";
 
-        [SerializeField] private Image _graphicPanelContainer = null;
-        public Image graphicPanelContainer => _graphicPanelContainer;
+        [SerializeField] private RectTransform _graphicPanelContainer = null;
+        public RectTransform graphicPanelContainer => _graphicPanelContainer;
 
         private void Awake()
         {
@@ -33,34 +32,22 @@ namespace GraphicPanels
 
         public GraphicPanel GetGraphicPanel(string graphicPanelFilename)
         {
-            if (graphicPanels.ContainsKey(graphicPanelFilename.ToLower()))
-            {
-                return graphicPanels[graphicPanelFilename.ToLower()];
-            }
-            else
-            {
-                return CreateGraphicPanel(graphicPanelFilename);
-            }
+            return CreateGraphicPanel(graphicPanelFilename);
         }
 
         public GraphicPanel CreateGraphicPanel(string graphicPanelFilename)
         {
-            if (graphicPanels.ContainsKey(graphicPanelFilename.ToLower()))
-            {
-                Debug.LogError($"{graphicPanelFilename} already exists");
-                return null;
-            }
+            string graphicPanelImagePath = FormatCGPath(graphicPanelRootPath, graphicPanelFilename);
+            GameObject graphicPanelPrefab = Resources.Load<GameObject>(graphicPanelPrefabPath);
 
-            string graphicPanelPath = FormatCGPath(graphicPanelRootPath, graphicPanelFilename);
+            bool blackout = graphicPanelFilename == "Blackout" ? true : false;
 
-            GraphicPanel graphicPanel = new GraphicPanel(graphicPanelFilename, graphicPanelPath);
-
-            graphicPanels.Add(graphicPanelFilename.ToLower(), graphicPanel);
+            GraphicPanel graphicPanel = new GraphicPanel(graphicPanelImagePath, graphicPanelPrefab, blackout);
 
             return graphicPanel;
         }
 
-        private string FormatCGPath(string path, string filename) => path.Replace(graphicPanelNameId, filename);
+        private string FormatCGPath(string path, string filename) => filename != "" ? path.Replace(graphicPanelNameId, filename) : "";
     }
 }
 

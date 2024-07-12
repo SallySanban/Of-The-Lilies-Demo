@@ -8,13 +8,12 @@ namespace GraphicPanels
 {
     public class GraphicPanel
     {
-        public string filename = "";
-
         public GraphicPanelManager manager => GraphicPanelManager.Instance;
 
-        public Image root => manager.graphicPanelContainer;
+        public RectTransform root = null;
 
-        private CanvasGroup graphicPanelCanvasGroup => root.GetComponent<CanvasGroup>();
+        private Image rootImage;
+        private CanvasGroup rootCanvasGroup;
 
         protected Coroutine showingCGCoroutine, hidingCGCoroutine;
 
@@ -23,18 +22,37 @@ namespace GraphicPanels
 
         private float fadeSpeed = 3f;
 
-        public GraphicPanel(string graphicPanelFilename, string graphicPanelPath)
+        public GraphicPanel(string imagePath, GameObject prefab, bool blackout = false)
         {
-            this.filename = graphicPanelFilename;
-
-            if (!string.IsNullOrEmpty(graphicPanelFilename))
+            if (!string.IsNullOrEmpty(imagePath) && prefab != null)
             {
-                root.sprite = Resources.Load<Sprite>(graphicPanelPath);
-                graphicPanelCanvasGroup.alpha = 0f;
+                GameObject ob = Object.Instantiate(prefab, manager.graphicPanelContainer);
+
+                ob.transform.SetSiblingIndex(0);
+
+                ob.SetActive(true);
+
+                root = ob.GetComponent<RectTransform>();
+
+                rootImage = root.GetComponentInChildren<Image>();
+                rootCanvasGroup = root.GetComponentInChildren<CanvasGroup>();
+
+                if (!blackout)
+                {
+                    rootImage.sprite = Resources.Load<Sprite>(imagePath);
+                    rootImage.color = Color.white;
+                }
+                else
+                {
+                    rootImage.sprite = null;
+                    rootImage.color = Color.black;
+                }
+
+                rootCanvasGroup.alpha = 0f;
             }
         }
 
-        public Coroutine Show()
+        public Coroutine Show(bool immediate = false)
         {
             if (isCGShowing) return showingCGCoroutine;
 
@@ -43,14 +61,14 @@ namespace GraphicPanels
                 manager.StopCoroutine(hidingCGCoroutine);
             }
 
-            showingCGCoroutine = manager.StartCoroutine(ShowingOrHiding(true));
+            showingCGCoroutine = manager.StartCoroutine(ShowingOrHiding(true, immediate));
 
             manager.activeGraphicPanel = this;
 
             return showingCGCoroutine;
         }
 
-        public Coroutine Hide()
+        public Coroutine Hide(bool immediate = false)
         {
             if (isCGHiding) return hidingCGCoroutine;
 
@@ -59,41 +77,37 @@ namespace GraphicPanels
                 manager.StopCoroutine(showingCGCoroutine);
             }
 
-            hidingCGCoroutine = manager.StartCoroutine(ShowingOrHiding(false));
+            hidingCGCoroutine = manager.StartCoroutine(ShowingOrHiding(false, immediate));
 
             return hidingCGCoroutine;
         }
 
-        public IEnumerator ShowingOrHiding(bool show)
+        public IEnumerator ShowingOrHiding(bool show, bool immediate)
         {
             float targetAlpha = show ? 1f : 0f;
 
-            CanvasGroup self = graphicPanelCanvasGroup;
+            CanvasGroup self = rootCanvasGroup;
 
-            while (self.alpha != targetAlpha)
+            if (immediate)
             {
-                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
-
-                yield return null;
+                self.alpha = targetAlpha;
             }
-
-            showingCGCoroutine = null;
-            hidingCGCoroutine = null;
-        }
-
-        public IEnumerator Switching(bool show)
-        {
-            float targetAlpha = show ? 1f : 0f;
-
-            CanvasGroup self = graphicPanelCanvasGroup;
-
-            while (self.alpha != targetAlpha)
+            else
             {
-                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
+                while (self.alpha != targetAlpha)
+                {
+                    self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
 
-                yield return null;
+                    if (self.alpha == 0f)
+                    {
+                        Object.Destroy(self.gameObject);
+                        break;
+                    }
+
+                    yield return null;
+                }
             }
-
+           
             showingCGCoroutine = null;
             hidingCGCoroutine = null;
         }

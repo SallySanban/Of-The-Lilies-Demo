@@ -27,8 +27,6 @@ namespace Dialogue
 
         public bool isRunningConversation => conversationManager.isRunning;
 
-        private float fadeSpeed = 3f;
-
         private void Awake()
         {
             if (Instance == null)
@@ -82,54 +80,15 @@ namespace Dialogue
             return conversationManager.StartConversation(conversation);
         }
 
-        public Coroutine Show()
+        public void Show()
         {
-            if (isTextboxShowing) return showingTextboxCoroutine;
-
-            if (isTextboxHiding)
-            {
-                StopCoroutine(hidingTextboxCoroutine);
-            }
-
-            showingTextboxCoroutine = StartCoroutine(ShowingOrHiding(true));
-
-            return showingTextboxCoroutine;
+            dialogueContainer.root.SetActive(true);
         }
 
-        public Coroutine Hide()
+        public void Hide()
         {
-            if (isTextboxHiding) return hidingTextboxCoroutine;
-
-            if (isTextboxShowing)
-            {
-                StopCoroutine(showingTextboxCoroutine);
-            }
-
-            hidingTextboxCoroutine = StartCoroutine(ShowingOrHiding(false));
-
-            return hidingTextboxCoroutine;
-        }
-
-        public IEnumerator ShowingOrHiding(bool show)
-        {
-            float targetAlpha = show ? 1f : 0f;
-
-            CanvasGroup self = dialogueContainer.root.GetComponent<CanvasGroup>();
-
-            while (self.alpha != targetAlpha)
-            {
-                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
-
-                if(self.alpha == 0f)
-                {
-                    dialogueContainer.dialogueText.text = "";
-                }
-
-                yield return null;
-            }
-
-            showingTextboxCoroutine = null;
-            hidingTextboxCoroutine = null;
+            dialogueContainer.dialogueText.text = "";
+            dialogueContainer.root.SetActive(false);
         }
     }
 }

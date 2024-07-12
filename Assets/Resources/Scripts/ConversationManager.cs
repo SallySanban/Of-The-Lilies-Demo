@@ -63,6 +63,10 @@ namespace Dialogue
                 {
                     yield return RunDialogue(line);
                 }
+                else
+                {
+                    dialogueSystem.Hide();
+                }
 
                 if (line.hasCommands)
                 {
@@ -83,13 +87,20 @@ namespace Dialogue
                 HandleSpeakerLogic(line.speakerData);
             }
 
-            yield return dialogueSystem.Show();
+            dialogueSystem.Show();
 
             yield return BuildLineSegments(line.dialogueData);
         }
 
         private void HandleSpeakerLogic(SpeakerData speakerData)
         {
+            if (speakerData.mainCharacterThought)
+            {
+                dialogueSystem.HideSpeakerName();
+
+                return;
+            }
+
             Character character = CharacterManager.Instance.GetCharacter(speakerData.name); //creates the character as soon as character speaks
 
             if (speakerData.isCastingPosition && !character.isCharacterVisible)

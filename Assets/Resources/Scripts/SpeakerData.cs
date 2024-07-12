@@ -19,6 +19,7 @@ namespace Dialogue
         public bool isCastingExpressions => castExpressions.Count > 0;
 
         public bool makeCharacterEnter = false;
+        public bool mainCharacterThought = false;
 
         private const string nameCastId = " as ";
         private const string positionCastId = " at ";
@@ -54,7 +55,15 @@ namespace Dialogue
 
             if (matches.Count == 0)
             {
-                name = rawSpeaker;
+                if(rawSpeaker == "Thought")
+                {
+                    mainCharacterThought = true;
+                    name = "";
+                }
+                else
+                {
+                    name = rawSpeaker;
+                }
 
                 return;
             }

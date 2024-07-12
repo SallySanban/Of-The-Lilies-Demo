@@ -80,6 +80,12 @@ namespace Characters
             {
                 self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
 
+                if(self.alpha == 0f)
+                {
+                    Object.Destroy(self.gameObject);
+                    break;
+                }
+
                 yield return null;
             }
 

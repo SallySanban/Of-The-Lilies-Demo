@@ -13,6 +13,7 @@ namespace Commands
         {
             database.AddCommand("ShowCG", new Func<string, IEnumerator>(Show));
             database.AddCommand("HideCG", new Func<IEnumerator>(Hide));
+            database.AddCommand("SwitchCG", new Func<string, IEnumerator>(Switch));
         }
 
         private static IEnumerator Show(string data)
@@ -34,6 +35,26 @@ namespace Commands
             currentGraphicPanel.Hide();
 
             while (currentGraphicPanel.isCGHiding)
+            {
+                yield return null;
+            }
+        }
+
+        private static IEnumerator Switch(string data)
+        {
+            GraphicPanel newCG = GraphicPanelManager.Instance.GetGraphicPanel(data);
+            GraphicPanel currentCG = GraphicPanelManager.Instance.activeGraphicPanel;
+
+            newCG.Show(true);
+
+            while (newCG.isCGShowing)
+            {
+                yield return null;
+            }
+
+            currentCG.Hide();
+
+            while (currentCG.isCGHiding)
             {
                 yield return null;
             }

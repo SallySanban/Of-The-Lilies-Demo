@@ -1,42 +1,42 @@
 [input]ShowCG("Red Sky")
 
-Ahlai as You "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
+Thought "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
 
-HideCG(), [wait]HideTextbox(), PlaySoundEffect("People Screaming"), [input]ShowCG("Young Ahlai Running")
+PlaySoundEffect("People Screaming"), [input]SwitchCG("Young Ahlai Running")
 
-"<i>They're nightmares now, but that's not much better, is it?</i>"
+Thought "<i>They're nightmares now, but that's not much better, is it?</i>"
 
-HideCG(), [wait]HideTextbox(), [input]ShowCG("Subatok Clan Fighting")
+[input]SwitchCG("Subatok Clan Fighting")
 
-"<i>The Seiyslan Empire.{a} They came with every intention to destroy the peace in our tribe -</i>"
+Thought "<i>The Seiyslan Empire.{a} They came with every intention to destroy the peace in our tribe -</i>"
 
-HideCG(), [wait]HideTextbox(), PlaySoundEffect("Sword Clashing"), [input]ShowCG("General Sheng Killing")
+PlaySoundEffect("Sword Clashing"), [input]SwitchCG("General Sheng Killing")
 
-"<i>ruining our lands,</i>"
+Thought "<i>ruining our lands,</i>"
 
-HideCG(), [wait]HideTextbox(), [input]ShowCG("Ahlai Fallen")
+[input]SwitchCG("Ahlai Fallen")
 
-"<i>tearing kin away from kin.</i>"
+Thought "<i>tearing kin away from kin.</i>"
 
-HideCG(), [wait]HideTextbox(), [input]ShowCG("Ahlai Being Taken")
+[input]SwitchCG("Ahlai Being Taken")
 
-"<i>I was no exception.</i>"
+Thought "<i>I was no exception.</i>"
 
-Blackout(), PlaySoundEffect("Coins Jiggling")
+HideTextbox(), [input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling")
 
 "<i>But that was when I knew it couldn't be the end.</i>"
 
-HideCG(), [wait]HideTextbox(), [input]ShowCG("Lady Sabina Reaching")
+HideTextbox(), [input]SwitchCG("Lady Sabina Reaching")
 
 "<i>At least, not for me.</i>"
 
-[input]Blackout(), AskForName()
+HideTextbox(), [input]SwitchCG("Blackout"), AskForName()
 
 Lady Sabina "<i>Ahlai? My dear?</i>"
 
 "<i>Wake up, Ahlai. Ahlai! Get up, now...!</i>"
 
-HideCG(), [wait]HideTextbox(), [input]ShowCG("Lady Sabina Looming")
+HideTextbox(), [input]SwitchCG("Lady Sabina Looming")
 
 "Oh, you must've been having nightmares again."
 
