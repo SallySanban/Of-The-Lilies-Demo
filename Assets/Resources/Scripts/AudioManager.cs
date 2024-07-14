@@ -8,6 +8,7 @@ namespace Audio
     public class AudioManager : MonoBehaviour
     {
         private const string sfxParentName = "SFX";
+        private const string musicParentName = "Music";
         private const string sfxNameFormat = "SFX - [{0}]";
         private const string audioFilenameId = "<audioName>";
 
@@ -18,13 +19,14 @@ namespace Audio
 
         public static AudioManager Instance { get; private set; }
 
-        public Dictionary<int, AudioChannel> channels = new Dictionary <int, AudioChannel>();
+        private List<AudioTrack> tracks = new List<AudioTrack>();
 
         public AudioMixerGroup musicMixer;
         public AudioMixerGroup sfxMixer;
         public AudioMixerGroup voicesMixer;
 
         private Transform sfxRoot;
+        public Transform musicRoot;
 
         private void Awake()
         {
@@ -42,7 +44,10 @@ namespace Audio
             }
 
             sfxRoot = new GameObject(sfxParentName).transform;
+            musicRoot = new GameObject(musicParentName).transform;
+
             sfxRoot.SetParent(transform);
+            musicRoot.SetParent(transform);
         }
 
         public AudioSource PlaySoundEffect(string audioFilename, AudioMixerGroup mixer = null, float volume = 1, float pitch = 1, bool loop = false)
@@ -107,7 +112,7 @@ namespace Audio
             }
         }
 
-        public AudioTrack PlayTrack(string audioFilename, int channel = 0, bool loop = true, float startingVolume = 0f, float volumeCap = 1)
+        public AudioTrack PlayTrack(string audioFilename, bool loop = true, float startingVolume = 0f, float volumeCap = 1)
         {
             string audioPath = FormatAudioPath(musicPath, audioFilename);
 
@@ -119,30 +124,57 @@ namespace Audio
                 return null;
             }
 
-            return PlayTrack(clip, channel, loop, startingVolume, volumeCap);
+            return PlayTrack(clip, loop, startingVolume, volumeCap);
         }
 
-        public AudioTrack PlayTrack(AudioClip clip, int channel = 0, bool loop = true, float startingVolume = 0f, float volumeCap = 1)
+        public AudioTrack PlayTrack(AudioClip clip, bool loop = true, float startingVolume = 0f, float volumeCap = 1)
         {
-            AudioChannel audioChannel = TryGetChannel(channel);
+            if (TryGetTrack(clip.name, out AudioTrack existingTrack))
+            {
+                if (!existingTrack.isPlaying)
+                {
+                    existingTrack.Play();
+                }
 
-            AudioTrack track = audioChannel.PlayTrack(clip, loop, startingVolume, volumeCap);
+                return existingTrack;
+            }
+
+            AudioTrack track = new AudioTrack(clip, loop, startingVolume, volumeCap, musicMixer);
+            tracks.Add(track);
+
+            track.Play();
 
             return track;
         }
 
-        public AudioChannel TryGetChannel(int channelNumber)
+        public void StopTrack(string audioFilename)
         {
-            AudioChannel channel = null;
+            if (TryGetTrack(audioFilename, out AudioTrack currentTrack))
+            {
+                if (currentTrack.isPlaying)
+                {
+                    currentTrack.Stop();
 
-            if(channels.TryGetValue(channelNumber, out channel))
-            {
-                return channel;
+                    Destroy(currentTrack.source.gameObject);
+                }
             }
-            else
+        }
+
+        public bool TryGetTrack(string trackName, out AudioTrack value)
+        {
+            trackName = trackName.ToLower();
+
+            foreach (var track in tracks)
             {
-                return new AudioChannel(channelNumber);
+                if (track.trackName.ToLower() == trackName)
+                {
+                    value = track;
+                    return true;
+                }
             }
+
+            value = null;
+            return false;
         }
 
         private string FormatAudioPath(string path, string audioFilename) => path.Replace(audioFilenameId, audioFilename);

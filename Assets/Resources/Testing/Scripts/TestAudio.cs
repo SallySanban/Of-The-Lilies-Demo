@@ -17,6 +17,10 @@ namespace Testing
             AudioManager.Instance.PlayTrack("Epilogue", startingVolume: 0.7f);
             AudioManager.Instance.PlaySoundEffect("Coins Jiggling");
 
+            yield return new WaitForSeconds(3f);
+
+            AudioManager.Instance.StopTrack("Epilogue");
+
             yield return null;
         }
     }

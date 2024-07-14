@@ -10,8 +10,7 @@ namespace Audio
         private const string trackNameFormat = "Track - [{0}]";
         public string trackName { get; private set; }
 
-        private AudioChannel channel;
-        private AudioSource source;
+        public AudioSource source;
 
         public bool loop => source.loop;
 
@@ -19,10 +18,9 @@ namespace Audio
 
         public bool isPlaying => source.isPlaying;
 
-        public AudioTrack(AudioClip clip, bool loop, float startingVolume, float volumeCap, AudioChannel channel, AudioMixerGroup mixer)
+        public AudioTrack(AudioClip clip, bool loop, float startingVolume, float volumeCap, AudioMixerGroup mixer)
         {
             trackName = clip.name;
-            this.channel = channel;
             this.volumeCap = volumeCap;
 
             source = CreateSource();
@@ -36,7 +34,7 @@ namespace Audio
         private AudioSource CreateSource()
         {
             GameObject gameObj = new GameObject(string.Format(trackNameFormat, trackName));
-            gameObj.transform.SetParent(channel.trackContainer);
+            gameObj.transform.SetParent(AudioManager.Instance.musicRoot);
 
             AudioSource source = gameObj.AddComponent<AudioSource>();
 
