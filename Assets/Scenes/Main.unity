@@ -1951,7 +1951,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266010135}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ab53ea3ed747c2428dda4fc53184512, type: 3}
   m_Name: 
@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266010135}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6400719cd0a8bb1479125ab429fad4ee, type: 3}
   m_Name: 
@@ -2331,6 +2331,7 @@ MonoBehaviour:
   musicMixer: {fileID: 2830452512811156519, guid: 645dd67c32cc2a64eb4b1353f042c1ea, type: 2}
   sfxMixer: {fileID: -2344986748741145952, guid: 645dd67c32cc2a64eb4b1353f042c1ea, type: 2}
   voicesMixer: {fileID: -8633938854813743037, guid: 645dd67c32cc2a64eb4b1353f042c1ea, type: 2}
+  musicRoot: {fileID: 0}
 --- !u!1 &1455749185
 GameObject:
   m_ObjectHideFlags: 0

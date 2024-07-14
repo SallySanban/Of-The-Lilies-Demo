@@ -12,6 +12,7 @@ namespace Commands
         {
             database.AddCommand("PlaySoundEffect", new Action<string>(PlaySoundEffect));
             database.AddCommand("PlayMusic", new Action<string>(PlayMusic));
+            database.AddCommand("StopMusic", new Action<string>(StopMusic));
         }
 
         private static void PlaySoundEffect(string audioFilename)
@@ -22,6 +23,11 @@ namespace Commands
         private static void PlayMusic(string audioFilename)
         {
             AudioManager.Instance.PlayTrack(audioFilename, startingVolume: 1);  //temporary starting volume while music doesnt fade in and out
+        }
+
+        private static void StopMusic(string audioFilename)
+        {
+            AudioManager.Instance.StopTrack(audioFilename);
         }
     }
 }
