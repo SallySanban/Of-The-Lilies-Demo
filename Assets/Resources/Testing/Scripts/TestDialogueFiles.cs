@@ -3,71 +3,75 @@ using System.Collections.Generic;
 using UnityEngine;
 using Dialogue;
 
-public class TestDialogueFiles : MonoBehaviour
+namespace Testing
 {
-    [SerializeField] TextAsset textAsset;
-
-    private void Start()
+    public class TestDialogueFiles : MonoBehaviour
     {
-        StartConversation();
-    }
+        [SerializeField] TextAsset textAsset;
 
-    private void StartConversation()
-    {
-        List<string> lines = FileManager.ReadTextAsset(textAsset);
+        private void Start()
+        {
+            StartConversation();
+        }
 
-        //foreach (string line in lines)
-        //{
-        //    if (string.IsNullOrEmpty(line)) continue;
+        private void StartConversation()
+        {
+            List<string> lines = FileManager.ReadTextAsset(textAsset);
 
-        //    Debug.Log($"Segmenting line: {line}");
-        //    DialogueLine dialogueLine = DialogueParser.Parse(line);
+            //foreach (string line in lines)
+            //{
+            //    if (string.IsNullOrEmpty(line)) continue;
 
-        //    int i = 0;
+            //    Debug.Log($"Segmenting line: {line}");
+            //    DialogueLine dialogueLine = DialogueParser.Parse(line);
 
-        //    if (dialogueLine.dialogueData != null)
-        //    {
-        //        foreach (DialogueData.DialogueSegment segment in dialogueLine.dialogueData.lineSegments)
-        //        {
-        //            Debug.Log($"Segment {i++} '{segment.dialogue}' signal = {segment.startSignal.ToString()} signalDelay = {segment.signalDelay.ToString()}");
-        //        }
-        //    }
+            //    int i = 0;
 
-        //}
+            //    if (dialogueLine.dialogueData != null)
+            //    {
+            //        foreach (DialogueData.DialogueSegment segment in dialogueLine.dialogueData.lineSegments)
+            //        {
+            //            Debug.Log($"Segment {i++} '{segment.dialogue}' signal = {segment.startSignal.ToString()} signalDelay = {segment.signalDelay.ToString()}");
+            //        }
+            //    }
 
-        //foreach (string line in lines)
-        //{
-        //    if (string.IsNullOrEmpty(line)) continue;
+            //}
 
-        //    DialogueLine dialogueLine = DialogueParser.Parse(line);
+            //foreach (string line in lines)
+            //{
+            //    if (string.IsNullOrEmpty(line)) continue;
 
-        //    List<(int l, string ex)> expr = dialogueLine.speaker.castExpressions;
+            //    DialogueLine dialogueLine = DialogueParser.Parse(line);
 
-        //    for(int c = 0; c < expr.Count; c++)
-        //    {
-        //        Debug.Log($"Layer {expr[c].l} = {expr[c].ex}");
-        //    }
-        //}
+            //    List<(int l, string ex)> expr = dialogueLine.speaker.castExpressions;
 
-        //foreach (string line in lines)
-        //{
-        //    if (string.IsNullOrEmpty(line)) continue;
+            //    for(int c = 0; c < expr.Count; c++)
+            //    {
+            //        Debug.Log($"Layer {expr[c].l} = {expr[c].ex}");
+            //    }
+            //}
 
-        //    Debug.Log("THIS IS THE LINE " + line);
+            //foreach (string line in lines)
+            //{
+            //    if (string.IsNullOrEmpty(line)) continue;
 
-        //    DialogueLine dialogueLine = DialogueParser.Parse(line);
+            //    Debug.Log("THIS IS THE LINE " + line);
 
-        //    if(dialogueLine.commandData != null)
-        //    {
-        //        for (int i = 0; i < dialogueLine.commandData.commands.Count; i++)
-        //        {
-        //            CommandData.Command command = dialogueLine.commandData.commands[i];
-        //            Debug.Log($"Command {i}: {command.name} has arguments {string.Join(", ", command.arguments)}");
-        //        }
-        //    }
+            //    DialogueLine dialogueLine = DialogueParser.Parse(line);
 
-        //}
+            //    if(dialogueLine.commandData != null)
+            //    {
+            //        for (int i = 0; i < dialogueLine.commandData.commands.Count; i++)
+            //        {
+            //            CommandData.Command command = dialogueLine.commandData.commands[i];
+            //            Debug.Log($"Command {i}: {command.name} has arguments {string.Join(", ", command.arguments)}");
+            //        }
+            //    }
 
-        DialogueSystem.Instance.Say(lines);
+            //}
+
+            DialogueSystem.Instance.Say(lines);
+        }
     }
 }
+
