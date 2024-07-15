@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Reflection;
 using System.Linq;
+using Dialogue;
 
-namespace Dialogue
+namespace Dialogue.LogicalLines
 {
     public class LogicalLineManager
     {

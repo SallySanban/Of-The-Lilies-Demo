@@ -13,6 +13,7 @@ public class ChoicePanel : MonoBehaviour
     public static ChoicePanel Instance { get; private set; }
 
     [SerializeField] private GameObject choicePanel;
+    [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private GameObject choiceButtonPrefab;
     [SerializeField] private VerticalLayoutGroup buttonLayoutGroup;
 
@@ -47,6 +48,16 @@ public class ChoicePanel : MonoBehaviour
         else if(choicePosition == ChoicePosition.Center)
         {
             buttonLayoutGroup.childAlignment = TextAnchor.MiddleCenter;
+        }
+
+        if (string.IsNullOrEmpty(title))
+        {
+            titleText.gameObject.SetActive(false);
+        }
+        else
+        {
+            titleText.text = title;
+            titleText.gameObject.SetActive(true);
         }
         
         GenerateChoices(choices);
@@ -141,8 +152,8 @@ public class ChoicePanel : MonoBehaviour
 
     public enum ChoicePosition
     {
-        Left,
-        Right,
-        Center
+        Left, //-1
+        Right, //1
+        Center //0
     };
 }

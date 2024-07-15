@@ -31,7 +31,16 @@ public class InputPanel : MonoBehaviour
 
     public void Show(string title)
     {
-        titleText.text = title;
+        if (string.IsNullOrEmpty(title))
+        {
+            titleText.gameObject.SetActive(false);
+        }
+        else
+        {
+            titleText.text = title;
+            titleText.gameObject.SetActive(true);
+        }
+
         inputField.text = string.Empty;
 
         inputPanel.SetActive(true);

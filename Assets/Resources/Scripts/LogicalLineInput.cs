@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Dialogue
+namespace Dialogue.LogicalLines
 {
     public class LogicalLineInput : ILogicalLine
     {
@@ -12,7 +12,7 @@ namespace Dialogue
         {
             InputPanel inputPanel = InputPanel.Instance;
 
-            string title = line.dialogueData.rawData;
+            string title = line.hasDialogue ? line.dialogueData.rawData : "";
 
             inputPanel.Show(title);
 

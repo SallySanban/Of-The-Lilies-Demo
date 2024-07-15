@@ -1,4 +1,6 @@
-enter Seiji [Smile] "Ahlai! You're finally awake. I hope you rested well?"
+ShowCharacter(Seiji -i)
+
+Seiji [Smile] "Ahlai! You're finally awake. I hope you rested well?"
 
 Ahlai as You "...Sorry to disappoint you, Seiji."
 
@@ -43,3 +45,13 @@ Ahlai as You "Yes... <b>Magic does only come from the gods.</b> But that's what 
 Myo as Myo Aciano "But I'm guilty nonetheless, aren't I?"
 
 "To make up for troubling you with all these demands of mine, would you be willing to share a drink with me at the tavern later? I'll even pay for it, too."
+
+HideCharacter(Seiji)
+
+choice in 1
+{
+	- Well, it would be rude of me to say no.
+		"YEAHH"
+	- I'm sorry, but I can't tonight.
+		"ONNO"
+}
