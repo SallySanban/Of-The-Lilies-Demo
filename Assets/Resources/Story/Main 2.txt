@@ -51,7 +51,7 @@ HideCharacter(Seiji -i true)
 choice in 1
 {
 	- Well, it would be rude of me to say no.
-		"YEAHH"
+		Load("Branch 1.1")
 	- I'm sorry, but I can't tonight.
-		"ONNO"
+		Load("Branch 1.2")
 }

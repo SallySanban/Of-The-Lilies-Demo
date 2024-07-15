@@ -1,0 +1,14 @@
+MoveCharacter(Seiji -x 1 -i true), [wait]ShowCharacter(Seiji)
+
+Ahlai as You "<b>Well, it would be rude of me to say no.</b> It would be an honor for me to have a drink with you, Myo."
+
+Seiji "Ahem... Ahlai, aren't you forgetting something? Lady Sabina gave us some tasks to do for the day. We still have work..."
+
+Ahlai as You "Oh, you're right! I almost forgot. I'm sorry, Myo. Perhaps we could do it <b>some time tomorrow?</b>"
+
+Myo Aciano "Of course, Ahlai. I don't mind waiting."
+
+HideCharacter(Seiji Myo), HideTextbox(), [input]ShowCG("Sir Aciano")
+
+Myo Aciano "'Til I see you again, dear."
+

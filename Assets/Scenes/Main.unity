@@ -282,7 +282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &151385053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2739,7 +2739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6400719cd0a8bb1479125ab429fad4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textAsset: {fileID: 4900000, guid: f1b18ce3b70da414f9bfa3378f764d36, type: 3}
+  textAsset: {fileID: 4900000, guid: 9353b3d604927f54e8ae407578d49793, type: 3}
 --- !u!114 &1266010144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4156,7 +4156,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 594.7801, y: -476.99002}
-  m_SizeDelta: {x: 1186.6, y: 90.3}
+  m_SizeDelta: {x: 1186.6, y: 119.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588211114
 MonoBehaviour:
@@ -4174,7 +4174,7 @@ MonoBehaviour:
   m_MinWidth: -1
   m_MinHeight: -1
   m_PreferredWidth: 1186.6
-  m_PreferredHeight: 90.3
+  m_PreferredHeight: 119.6
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
@@ -4225,8 +4225,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
