@@ -6,7 +6,9 @@ using TMPro;
 
 public class InputPanel : MonoBehaviour
 {
-    [SerializeField] private GameObject inputPanelGroup;
+    public static InputPanel Instance { get; private set; }
+
+    [SerializeField] private GameObject inputPanel;
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private Button acceptButton;
     [SerializeField] private TMP_InputField inputField;
@@ -17,7 +19,9 @@ public class InputPanel : MonoBehaviour
 
     private void Awake()
     {
-        inputPanelGroup.SetActive(false);
+        Instance = this;
+
+        inputPanel.SetActive(false);
         acceptButton.gameObject.SetActive(false);
 
         inputField.onValueChanged.AddListener(OnInputChanged);
@@ -30,14 +34,14 @@ public class InputPanel : MonoBehaviour
         titleText.text = title;
         inputField.text = string.Empty;
 
-        inputPanelGroup.SetActive(true);
+        inputPanel.SetActive(true);
 
         isWaitingForUserInput = true;
     }
 
     public void Hide()
     {
-        inputPanelGroup.SetActive(false);
+        inputPanel.SetActive(false);
 
         isWaitingForUserInput = false;
     }

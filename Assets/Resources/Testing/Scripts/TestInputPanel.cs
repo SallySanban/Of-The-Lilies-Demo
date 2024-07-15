@@ -6,8 +6,6 @@ namespace Testing
 {
     public class TestInputPanel : MonoBehaviour
     {
-        public InputPanel inputPanel;
-
         void Start()
         {
             StartCoroutine(Running());
@@ -15,14 +13,14 @@ namespace Testing
 
         IEnumerator Running()
         {
-            inputPanel.Show("Enter your name");
+            InputPanel.Instance.Show("Enter your name");
 
-            while (inputPanel.isWaitingForUserInput)
+            while (InputPanel.Instance.isWaitingForUserInput)
             {
                 yield return null;
             }
 
-            string characterName = inputPanel.lastInput;
+            string characterName = InputPanel.Instance.lastInput;
 
             Debug.Log("Hello " + characterName);
         }

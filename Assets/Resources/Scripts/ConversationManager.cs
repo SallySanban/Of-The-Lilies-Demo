@@ -17,10 +17,16 @@ namespace Dialogue
         private bool userNext = false;
         private float completionTime = 0.3f;
 
+        private TagManager tagManager;
+        private LogicalLineManager logicalLineManager;
+
         public ConversationManager(TextArchitect textArchitect)
         {
             this.architect = textArchitect;
             dialogueSystem.onUserNext += OnUserNext;
+
+            tagManager = new TagManager();
+            logicalLineManager = new LogicalLineManager();
         }
 
         private void OnUserNext()
@@ -59,23 +65,30 @@ namespace Dialogue
 
                 DialogueLine line = DialogueParser.Parse(conversation[i]);
 
-                if (line.hasDialogue)
+                if(logicalLineManager.TryGetLogicalLine(line, out Coroutine logic))
                 {
-                    yield return RunDialogue(line);
+                    yield return logic;
                 }
                 else
                 {
-                    dialogueSystem.Hide();
-                }
+                    if (line.hasDialogue)
+                    {
+                        yield return RunDialogue(line);
+                    }
+                    else
+                    {
+                        dialogueSystem.Hide();
+                    }
 
-                if (line.hasCommands)
-                {
-                    yield return RunCommands(line);
-                }
+                    if (line.hasCommands)
+                    {
+                        yield return RunCommands(line);
+                    }
 
-                if (line.hasDialogue)
-                {
-                    yield return WaitForUserInput();
+                    if (line.hasDialogue)
+                    {
+                        yield return WaitForUserInput();
+                    }
                 }
             }
         }
@@ -113,7 +126,7 @@ namespace Dialogue
                 character.Show();
             }
 
-            dialogueSystem.ShowSpeakerName(speakerData.displayName);
+            dialogueSystem.ShowSpeakerName(tagManager.PutTagsIn(speakerData.displayName));
 
             DialogueSystem.Instance.ApplySpeakerDataToDialogueContainer(speakerData.name);
 
@@ -182,6 +195,8 @@ namespace Dialogue
 
         IEnumerator BuildDialogue(string dialogue, bool append = false)
         {
+            dialogue = tagManager.PutTagsIn(dialogue);
+
             if (!append)
             {
                 architect.Build(dialogue);

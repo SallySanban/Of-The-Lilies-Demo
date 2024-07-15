@@ -22,26 +22,28 @@ Thought "<i>tearing kin away from kin.</i>"
 
 Thought "<i>I was no exception.</i>"
 
-HideTextbox(), [input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling")
+[input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling")
 
 "<i>But that was when I knew it couldn't be the end.</i>"
 
-HideTextbox(), [input]SwitchCG("Lady Sabina Reaching")
+[input]SwitchCG("Lady Sabina Reaching")
 
 "<i>At least, not for me.</i>"
 
-HideTextbox(), [input]SwitchCG("Blackout"), AskForName()
+[input]SwitchCG("Blackout")
 
-Lady Sabina "<i>Ahlai? My dear?</i>"
+input "Enter your name"
 
-"<i>Wake up, Ahlai. Ahlai! Get up, now...!</i>"
+Lady Sabina "<i><playerName>? My dear?</i>"
 
-HideTextbox(), [input]SwitchCG("Lady Sabina Looming")
+"<i>Wake up, <playerName>. <playerName>! Get up, now...!</i>"
+
+[input]SwitchCG("Lady Sabina Looming")
 
 "Oh, you must've been having nightmares again."
 
 Ahlai as You "Yes, you're... you're right. It was about my homeland again. It..."
 
-Lady Sabina "Of course, I understand... It was hard for you, Ahlai. Please, why don't you take the time to collect yourself?"
+Lady Sabina "Of course, I understand... It was hard for you, <playerName>. Please, why don't you take the time to collect yourself?"
 
 "When you're ready, <b>come down and you can start on your tasks for the day</b>. Seiji is waiting."

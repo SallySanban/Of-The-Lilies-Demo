@@ -7,12 +7,15 @@ namespace Dialogue
 {
     public class DialogueData
     {
+        public string rawData { get; private set; } = string.Empty;
+
         public List<DialogueSegment> lineSegments;
         private const string segmentIdentifierPattern = @"\{[ca]\}|\{w[ca]\s\d*\.?\d*\}";
         private const char signalDelimiter = ' ';
 
         public DialogueData(string rawDialogue)
         {
+            this.rawData = rawDialogue;
             lineSegments = RipSegments(rawDialogue);
         }
 

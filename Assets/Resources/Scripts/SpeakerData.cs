@@ -7,6 +7,8 @@ namespace Dialogue
 {
     public class SpeakerData
     {
+        public string rawData { get; private set; } = string.Empty;
+
         public string name, castName;
 
         public string displayName => (isCastingName ? castName : name);
@@ -43,6 +45,7 @@ namespace Dialogue
 
         public SpeakerData(string rawSpeaker)
         {
+            rawData = rawSpeaker;
             rawSpeaker = ProcessKeywords(rawSpeaker);
 
             string pattern = @$"{nameCastId}|{positionCastId}|{expressionCastId.Insert(expressionCastId.Length - 1, @"\")}";
