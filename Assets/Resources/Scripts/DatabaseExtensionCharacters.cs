@@ -31,6 +31,11 @@ namespace Commands
 
             foreach(string s in data)
             {
+                if(s == immediateParameter)
+                {
+                    break;
+                }
+
                 Character character = CharacterManager.Instance.GetCharacter(s);
 
                 if(character != null)
