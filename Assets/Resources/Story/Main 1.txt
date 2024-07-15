@@ -2,43 +2,53 @@
 
 Thought "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
 
-PlaySoundEffect("People Screaming"), [input]SwitchCG("Young Ahlai Running")
+PlaySoundEffect("People Screaming"), HideTextbox(), [input]SwitchCG("Young Ahlai Running")
 
 Thought "<i>They're nightmares now, but that's not much better, is it?</i>"
 
-[input]SwitchCG("Subatok Clan Fighting")
+HideTextbox(), [input]SwitchCG("Subatok Clan Fighting")
 
 Thought "<i>The Seiyslan Empire.{a} They came with every intention to destroy the peace in our tribe -</i>"
 
-PlaySoundEffect("Sword Clashing"), [input]SwitchCG("General Sheng Killing")
+PlaySoundEffect("Sword Clashing"), HideTextbox(), [input]SwitchCG("General Sheng Killing")
 
 Thought "<i>ruining our lands,</i>"
 
-[input]SwitchCG("Ahlai Fallen")
+HideTextbox(), [input]SwitchCG("Ahlai Fallen")
 
 Thought "<i>tearing kin away from kin.</i>"
 
-[input]SwitchCG("Ahlai Being Taken")
+HideTextbox(), [input]SwitchCG("Ahlai Being Taken")
 
 Thought "<i>I was no exception.</i>"
 
-[input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling")
+HideTextbox(), [input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling")
 
 "<i>But that was when I knew it couldn't be the end.</i>"
 
-[input]SwitchCG("Lady Sabina Reaching")
+HideTextbox(), [input]SwitchCG("Lady Sabina Reaching")
 
 "<i>At least, not for me.</i>"
 
-[input]SwitchCG("Blackout")
+HideTextbox(), SwitchCG("Blackout")
 
 input "Enter your name"
+
+choice in 0 "Enter your pronouns"
+{
+	- she/her
+		SavePronoun(she)
+	- he/him
+		SavePronoun(he)
+	- they/them
+		SavePronoun(they)
+}
 
 Lady Sabina "<i><playerName>? My dear?</i>"
 
 "<i>Wake up, <playerName>. <playerName>! Get up, now...!</i>"
 
-[input]SwitchCG("Lady Sabina Looming")
+HideTextbox(), [input]SwitchCG("Lady Sabina Looming")
 
 "Oh, you must've been having nightmares again."
 

@@ -51,6 +51,7 @@ namespace Dialogue
         public Coroutine StartConversation(Conversation conversation)
         {
             StopConversation();
+            conversationQueue.Clear();
 
             Enqueue(conversation);
 
@@ -101,10 +102,6 @@ namespace Dialogue
                     if (line.hasDialogue)
                     {
                         yield return RunDialogue(line);
-                    }
-                    else
-                    {
-                        dialogueSystem.Hide();
                     }
 
                     if (line.hasCommands)

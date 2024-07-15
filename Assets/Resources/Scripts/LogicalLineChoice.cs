@@ -14,7 +14,7 @@ namespace Dialogue.LogicalLines
         private const string choiceIdentifier = "- ";
         private const string choicePositionIdentifier = " in ";
 
-        private ChoicePanel.ChoicePosition choicePosition;
+        private ChoicePanel.ChoicePosition choicePosition = ChoicePanel.ChoicePosition.Center;
 
         public string keyword => "choice";
         

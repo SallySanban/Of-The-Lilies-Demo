@@ -9,6 +9,7 @@ public class ChoicePanel : MonoBehaviour
     private const float buttonMinWidth = 455.9f;
     private const float buttonMaxWidth = 700f;
     private const float buttonPadding = 100f;
+    private const int layoutGroupPadding = 318;
 
     public static ChoicePanel Instance { get; private set; }
 
@@ -39,15 +40,18 @@ public class ChoicePanel : MonoBehaviour
 
         if(choicePosition == ChoicePosition.Left)
         {
-            buttonLayoutGroup.childAlignment = TextAnchor.MiddleLeft;
+            buttonLayoutGroup.childAlignment = TextAnchor.UpperLeft;
+            buttonLayoutGroup.padding.top = layoutGroupPadding;
         }
         else if(choicePosition == ChoicePosition.Right)
         {
-            buttonLayoutGroup.childAlignment = TextAnchor.MiddleRight;
+            buttonLayoutGroup.childAlignment = TextAnchor.UpperRight;
+            buttonLayoutGroup.padding.top = layoutGroupPadding;
         }
         else if(choicePosition == ChoicePosition.Center)
         {
             buttonLayoutGroup.childAlignment = TextAnchor.MiddleCenter;
+            buttonLayoutGroup.padding.top = 0;
         }
 
         if (string.IsNullOrEmpty(title))

@@ -6,7 +6,7 @@ using System;
 
 public class TagManager
 {
-    private readonly Dictionary<string, Func<string>> tags = new Dictionary<string, Func<string>>();
+    public static Dictionary<string, Func<string>> tags = new Dictionary<string, Func<string>>();
     private readonly Regex tagRegex = new Regex("<\\w+>");
 
     public TagManager()
@@ -16,10 +16,10 @@ public class TagManager
 
     private void InitializeTags()
     {
-        tags["<playerName>"] = () => InputPanel.Instance.lastInput;
-        tags["<subjectPronoun>"] = () => "they";
-        tags["<objectPronoun>"] = () => "them";
-        tags["<possessivePronoun>"] = () => "their";
+        tags["<playerName>"] = () => InputPanel.Instance.lastInput; //Ahlai
+        tags["<subjectPronoun>"] = () => "they"; //they
+        tags["<objectPronoun>"] = () => "them"; //them
+        tags["<possessivePronoun>"] = () => "their"; //their
     }
 
     public string PutTagsIn(string text)
