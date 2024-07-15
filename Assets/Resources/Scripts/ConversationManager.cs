@@ -31,7 +31,10 @@ namespace Dialogue
 
         private void OnUserNext()
         {
-            userNext = true;
+            if (!InputPanel.Instance.isWaitingForUserInput && !ChoicePanel.Instance.isWaitingForUserChoice)
+            {
+                userNext = true;
+            }
         }
 
         public Coroutine StartConversation(List<string> conversation)
