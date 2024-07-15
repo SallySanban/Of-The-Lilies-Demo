@@ -1,20 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using System;
 
 namespace Dialogue
 {
     public class PlayerInputManager : MonoBehaviour
     {
-        private void Update()
+        private PlayerInput input;
+        private List<(InputAction action, Action<InputAction.CallbackContext> command)> actions = new List<(InputAction action, Action<InputAction.CallbackContext> command)>();
+
+        private void Awake()
         {
-            if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+            input = GetComponent<PlayerInput>();
+
+            InitializeActions();
+        }
+
+        private void InitializeActions()
+        {
+            actions.Add((input.actions["Next"], NextLine));
+        }
+
+        private void OnEnable()
+        {
+            foreach(var inputAction in actions)
             {
-                NextLine();
+                inputAction.action.performed += inputAction.command;
             }
         }
 
-        public void NextLine()
+        private void OnDisable()
+        {
+            foreach (var inputAction in actions)
+            {
+                inputAction.action.performed -= inputAction.command;
+            }
+        }
+
+        public void NextLine(InputAction.CallbackContext c)
         {
             DialogueSystem.Instance.OnUserNext();
         }

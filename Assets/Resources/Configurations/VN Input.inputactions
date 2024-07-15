@@ -1,0 +1,45 @@
+{
+    "name": "VN Input",
+    "maps": [
+        {
+            "name": "General",
+            "id": "8a005917-1d3e-43e2-a29e-8da3c2f0f60d",
+            "actions": [
+                {
+                    "name": "Next",
+                    "type": "Button",
+                    "id": "db3642f8-0502-4b82-979c-b26ee03f5633",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6f438b55-0b99-4bf7-bfa5-4cc9d769bd65",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e247e428-5506-4771-9f1e-4c387f786d3d",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
