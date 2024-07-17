@@ -4,13 +4,13 @@ Ahlai as You "<b>I'm sorry, but I can't tonight.</b> Lady Sabina has tasked us w
 
 Myo Aciano "Too bad-but if you are free for drinks next week, do let me know. You won't have to wait for too long, since I'll be back here in a week in any case."
 
-Seiji "Yes, yes, me and Ahlai will  be here to do <i>business</i> with you! Don't forget your purchase, <i>sir</i>. Happy to help!"
+Seiji "Yes, yes, me and <playerName> will  be here to do <i>business</i> with you! Don't forget your purchase, <i>sir</i>. Happy to help!"
 
-Myo Aciano "Alright... well, until then, Ahlai! And... uh, Seiji, yes?"
+Myo Aciano "Alright... well, until then, <playerName>! And... uh, Seiji, yes?"
 
 Seiji "Yes, sir! Take care now!"
 
-HideCharacter(Myo), MoveCharacter(Seiji -x 0.5), PlaySoundEffect("Door ringing")
+HideCharacter(Myo), MoveCharacter(Seiji -x 0.5), PlaySoundEffect("Doorbell Ringing")
 
 Ahlai as You "That's a little protective even for <i>you</i>, Seiji."
 

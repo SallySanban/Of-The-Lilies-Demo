@@ -7,8 +7,8 @@ using TMPro;
 public class ChoicePanel : MonoBehaviour
 {
     private const float buttonMinWidth = 455.9f;
-    private const float buttonMaxWidth = 700f;
-    private const float buttonPadding = 100f;
+    private const float buttonMaxWidth = 750f;
+    private const float buttonPadding = 200f;
     private const int layoutGroupPadding = 318;
 
     public static ChoicePanel Instance { get; private set; }

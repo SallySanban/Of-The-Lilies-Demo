@@ -13,7 +13,6 @@ namespace Commands
         new public static void Extend(CommandDatabase database)
         {
             database.AddCommand("Load", new Action<string[]>(LoadNewDialogueFile));
-            database.AddCommand("SavePronoun", new Action<string>(SavePronoun));
         }
 
         private static void LoadNewDialogueFile(string[] data)
@@ -45,28 +44,6 @@ namespace Commands
             else
             {
                 DialogueSystem.Instance.conversationManager.StartConversation(newConversation);
-            }
-        }
-
-        private static void SavePronoun(string data)
-        {
-            if(data == "he")
-            {
-                TagManager.tags["<subjectPronoun>"] = () => "he";
-                TagManager.tags["<objectPronoun>"] = () => "him";
-                TagManager.tags["<possessivePronoun>"] = () => "his";
-            }
-            else if(data == "she")
-            {
-                TagManager.tags["<subjectPronoun>"] = () => "she";
-                TagManager.tags["<objectPronoun>"] = () => "her";
-                TagManager.tags["<possessivePronoun>"] = () => "her";
-            }
-            else if(data == "they")
-            {
-                TagManager.tags["<subjectPronoun>"] = () => "they";
-                TagManager.tags["<objectPronoun>"] = () => "them";
-                TagManager.tags["<possessivePronoun>"] = () => "their";
             }
         }
     }
