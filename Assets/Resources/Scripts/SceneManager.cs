@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Dialogue;
+using UnityEngine.UIElements;
 
 public class SceneManager : MonoBehaviour
 {
+    private const string startOfGame = "Main 1";
+    private const string playerSpriteName = "Ahlai";
     public static SceneManager Instance { get; private set; }
+    public BackgroundManager backgroundManager => BackgroundManager.Instance;
+    public SpriteManager spriteManager => SpriteManager.Instance;
 
-    [SerializeField] private CanvasGroup pixelScene;
+    [SerializeField] private RectTransform _pixelScene;
     [SerializeField] private CanvasGroup vnScene;
 
+    public RectTransform pixelSceneContainer => _pixelScene;
+
     protected Coroutine showingVNCoroutine, hidingVNCoroutine;
+    protected Coroutine settingSceneCoroutine;
 
     public bool isVNShowing => showingVNCoroutine != null;
     public bool isVNHiding => hidingVNCoroutine != null;
+    public bool isSettingScene => settingSceneCoroutine != null;
 
     public bool inVNMode => vnScene.alpha == 1f;
 
@@ -22,18 +32,29 @@ public class SceneManager : MonoBehaviour
     {
         Instance = this;
 
-        pixelScene.gameObject.SetActive(true);
-        pixelScene.alpha = 0f;
+        pixelSceneContainer.gameObject.SetActive(true);
 
         vnScene.gameObject.SetActive(true);
         vnScene.alpha = 1f;
     }
 
-    public void SwitchToPixel()
+    private void Start()
     {
-        pixelScene.alpha = 1f;
+        //TextAsset startOfStory = Resources.Load<TextAsset>(FilePaths.storyFiles + startOfGame);
 
-        HideVN();
+        //List<string> lines = FileManager.ReadTextAsset(startOfStory);
+
+        //DialogueSystem.Instance.Say(lines);
+        SetupScene("Ahlai's Bedroom");
+    }
+
+    public Coroutine SetupScene(string background)
+    {
+        if (isSettingScene) return settingSceneCoroutine;
+
+        settingSceneCoroutine = StartCoroutine(SwitchScene(background));
+
+        return settingSceneCoroutine;
     }
 
     public Coroutine ShowVN()
@@ -79,5 +100,29 @@ public class SceneManager : MonoBehaviour
 
         showingVNCoroutine = null;
         hidingVNCoroutine = null;
+    }
+
+    private IEnumerator SwitchScene(string background)
+    {
+        if (backgroundManager.currentBackground != null)
+        {
+            backgroundManager.RemoveCurrentBackground();
+            spriteManager.RemoveCurrentPlayer();
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        Background newBackground = backgroundManager.CreateBackground(background);
+        Player newPlayer = spriteManager.CreatePlayer(playerSpriteName, newBackground.root);
+
+        newBackground.Show();
+        newPlayer.Show();
+
+        if (inVNMode)
+        {
+            HideVN();
+        }
+
+        settingSceneCoroutine = null;
     }
 }

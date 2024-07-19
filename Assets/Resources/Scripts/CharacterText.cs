@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Characters
 {
-    public class TextCharacter : Character
+    public class CharacterText : Character
     {
-        public TextCharacter(string name, CharacterConfigData config) : base(name, config, prefab: null)
+        public CharacterText(string name, CharacterConfigData config) : base(name, config, prefab: null)
         {
             Debug.Log($"Created text character: {name}");
         }

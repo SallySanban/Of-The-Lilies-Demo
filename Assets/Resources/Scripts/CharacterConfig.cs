@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Characters
 {
-    [CreateAssetMenu(fileName = "Character Configuration Asset", menuName = "Dialogue System/Character Configuration Asset")]
+    [CreateAssetMenu(fileName = "Character Configuration Asset", menuName = "Configuration Assets/Character Configuration Asset")]
     public class CharacterConfig : ScriptableObject
     {
         public CharacterConfigData[] characters;

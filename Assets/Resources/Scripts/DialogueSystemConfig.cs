@@ -5,7 +5,7 @@ using Characters;
 
 namespace Dialogue
 {
-    [CreateAssetMenu(fileName = "Dialogue System Configuration", menuName = "Dialogue System/Dialogue Configuration Asset")]
+    [CreateAssetMenu(fileName = "Dialogue Configuration Asset", menuName = "Configuration Assets/Dialogue Configuration Asset")]
     public class DialogueSystemConfig : ScriptableObject
     {
         public CharacterConfig characterConfigurationAsset;

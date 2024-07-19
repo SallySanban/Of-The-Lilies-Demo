@@ -97,9 +97,9 @@ namespace Characters
             switch (config.characterType)
             {
                 case Character.CharacterType.Text:
-                    return new TextCharacter(info.name, config);
+                    return new CharacterText(info.name, config);
                 case Character.CharacterType.Sprite:
-                    return new SpriteCharacter(info.name, config, info.prefab, info.rootCharacterPath);
+                    return new CharacterSprite(info.name, config, info.prefab, info.rootCharacterPath);
                 default:
                     return null;
             }

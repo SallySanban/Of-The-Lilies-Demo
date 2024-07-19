@@ -1,0 +1,32 @@
+using Dialogue;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[System.Serializable]
+public class BackgroundConfigData
+{
+    public string backgroundName;
+    public GameObject currentBackgroundPrefab;
+    public InteractableToBackgroundMap[] map;
+
+    public BackgroundConfigData Copy()
+    {
+        BackgroundConfigData result = new BackgroundConfigData();
+
+        result.backgroundName = backgroundName;
+        result.currentBackgroundPrefab = currentBackgroundPrefab;
+        result.map = map;
+
+        return result;
+    }
+
+
+    [System.Serializable]
+    public class InteractableToBackgroundMap
+    {
+        public string interactableName;
+        public GameObject backgroundPrefab;
+        public KeyCode keyToPress;
+    }
+}

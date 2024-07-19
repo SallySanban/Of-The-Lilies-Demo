@@ -6,7 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 
 namespace Characters
 {
-    public class SpriteCharacter : Character
+    public class CharacterSprite : Character
     {
         private const string spriteRendererName = "Renderers";
         private CanvasGroup rootCanvasGroup => root.GetComponent<CanvasGroup>();
@@ -22,7 +22,7 @@ namespace Characters
           set { rootCanvasGroup.alpha = value ? 1 : 0; }
         }
 
-        public SpriteCharacter(string name, CharacterConfigData config, GameObject prefab, string rootAssetsFolder) : base(name, config, prefab)
+        public CharacterSprite(string name, CharacterConfigData config, GameObject prefab, string rootAssetsFolder) : base(name, config, prefab)
         {
             rootCanvasGroup.alpha = 0f;
             artAssetsDirectory = rootAssetsFolder + "/Images";

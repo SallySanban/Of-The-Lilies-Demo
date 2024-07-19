@@ -1,4 +1,4 @@
-[input]ShowCG("Red Sky")
+HideTextbox(), [input]ShowCG("Red Sky")
 
 Thought "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
 
@@ -58,4 +58,4 @@ Lady Sabina "Of course, I understand... It was hard for you, <playerName>. Pleas
 
 "When you're ready, <b>come down and you can start on your tasks for the day</b>. Seiji is waiting."
 
-HideTextbox(), SwitchPixel()
+HideTextbox(), SwitchPixel("Ahlai's Bedroom")

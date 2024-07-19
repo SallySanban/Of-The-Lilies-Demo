@@ -19,8 +19,8 @@ namespace Testing
 
         IEnumerator Test()
         {
-            SpriteCharacter Myo = CharacterManager.Instance.CreateCharacter("Myo") as SpriteCharacter;
-            SpriteCharacter Seiji = CharacterManager.Instance.CreateCharacter("Seiji") as SpriteCharacter;
+            CharacterSprite Myo = CharacterManager.Instance.CreateCharacter("Myo") as CharacterSprite;
+            CharacterSprite Seiji = CharacterManager.Instance.CreateCharacter("Seiji") as CharacterSprite;
 
             Myo.MoveToPosition(Vector2.zero);
 

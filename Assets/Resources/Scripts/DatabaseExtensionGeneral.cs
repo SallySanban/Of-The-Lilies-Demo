@@ -10,7 +10,7 @@ namespace Commands
         new public static void Extend(CommandDatabase database)
         {
             database.AddCommand("SavePronoun", new Action<string>(SavePronoun));
-            database.AddCommand("SwitchPixel", new Action(() => { SceneManager.Instance.SwitchToPixel(); }));
+            database.AddCommand("SwitchPixel", new Action<string>((arg) => { SceneManager.Instance.SetupScene(arg); }));
         }
 
         private static void SavePronoun(string data)
