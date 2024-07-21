@@ -18,40 +18,58 @@ MonoBehaviour:
     map:
     - interactableName: Door
       backgroundPrefab: {fileID: 5802672104050577939, guid: 836696bf5c96e964dbeeab181778f984, type: 3}
-      keyToPress: 273
+      keyToPress: 1101000077000000
+      playerPositionInNextBackground: {x: -4.56, y: -0.14}
+      playerDirectionInNextBackground: 1
   - backgroundName: Bedroom Corridor
     currentBackgroundPrefab: {fileID: 5802672104050577939, guid: 836696bf5c96e964dbeeab181778f984, type: 3}
     map:
     - interactableName: Door
       backgroundPrefab: {fileID: 7165131873778756440, guid: 8043a4c5800c9b14fb344aea6862ef7f, type: 3}
-      keyToPress: 273
+      keyToPress: 1101000077000000
+      playerPositionInNextBackground: {x: 4.89, y: -0.14}
+      playerDirectionInNextBackground: 0
     - interactableName: Stairs
       backgroundPrefab: {fileID: 5802672104050577939, guid: ccf69b9844ce4ca47a03e23010c14dd5, type: 3}
-      keyToPress: 274
+      keyToPress: 1201000073000000
+      playerPositionInNextBackground: {x: 5.69, y: -0.14}
+      playerDirectionInNextBackground: 0
   - backgroundName: First Floor Corridor
     currentBackgroundPrefab: {fileID: 5802672104050577939, guid: ccf69b9844ce4ca47a03e23010c14dd5, type: 3}
     map:
     - interactableName: Door
       backgroundPrefab: {fileID: 8605165155306645522, guid: 2edfa9ea09618354f899e63b2f64a206, type: 3}
-      keyToPress: 273
+      keyToPress: 1101000077000000
+      playerPositionInNextBackground: {x: -6.12, y: -0.14}
+      playerDirectionInNextBackground: 1
     - interactableName: Stairs
       backgroundPrefab: {fileID: 5802672104050577939, guid: 836696bf5c96e964dbeeab181778f984, type: 3}
-      keyToPress: 273
+      keyToPress: 1101000077000000
+      playerPositionInNextBackground: {x: 1.27, y: -0.14}
+      playerDirectionInNextBackground: 0
     - interactableName: Left Door
       backgroundPrefab: {fileID: 8605165155306645522, guid: 7ec2a797750e39c4fb2c3ebff6f5da2d, type: 3}
-      keyToPress: 276
+      keyToPress: 1401000061000000
+      playerPositionInNextBackground: {x: 5.9, y: -0.14}
+      playerDirectionInNextBackground: 0
   - backgroundName: Back Room
     currentBackgroundPrefab: {fileID: 8605165155306645522, guid: 2edfa9ea09618354f899e63b2f64a206, type: 3}
     map:
     - interactableName: Left Door
       backgroundPrefab: {fileID: 5802672104050577939, guid: ccf69b9844ce4ca47a03e23010c14dd5, type: 3}
-      keyToPress: 276
+      keyToPress: 1401000061000000
+      playerPositionInNextBackground: {x: -2.82, y: -0.14}
+      playerDirectionInNextBackground: 0
   - backgroundName: Main Shop
     currentBackgroundPrefab: {fileID: 8605165155306645522, guid: 7ec2a797750e39c4fb2c3ebff6f5da2d, type: 3}
     map:
     - interactableName: Left Door
       backgroundPrefab: {fileID: 0}
-      keyToPress: 276
+      keyToPress: 1401000061000000
+      playerPositionInNextBackground: {x: 0, y: -0.14}
+      playerDirectionInNextBackground: 1
     - interactableName: Right Door
       backgroundPrefab: {fileID: 5802672104050577939, guid: ccf69b9844ce4ca47a03e23010c14dd5, type: 3}
-      keyToPress: 275
+      keyToPress: 1301000064000000
+      playerPositionInNextBackground: {x: -5.9, y: -0.14}
+      playerDirectionInNextBackground: 1

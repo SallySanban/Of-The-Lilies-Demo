@@ -19,7 +19,7 @@ namespace Commands
                     string parameterName = parameterArray[i];
                     string parameterValue = "";
 
-                    if(i + 1 < parameterArray.Length && !parameterArray[i + 1].StartsWith(parameterIdentifier))
+                    if(i + 1 < parameterArray.Length)
                     {
                         parameterValue = parameterArray[i + 1];
                         i++;

@@ -1,24 +1,4 @@
-HideTextbox(), [input]ShowCG("Red Sky")
-
-Thought "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
-
-PlaySoundEffect("People Screaming")
-
-Thought "<i>They're nightmares now, but that's not much better, is it?</i>"
-
-Thought "<i>The Seiyslan Empire.{a} They came with every intention to destroy the peace in our tribe -</i>"
-
-PlaySoundEffect("Sword Clashing")
-
-Thought "<i>ruining our lands,{a} tearing kin away from kin.</i>"
-
-Thought "<i>I was no exception.</i>"
-
-HideTextbox(), [input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling")
-
-Thought "<i>But that was when I knew it couldn't be the end.</i>"
-
-HideTextbox(), [input]SwitchCG("Lady Sabina Reaching")
+HideTextbox(), [input]ShowCG("Lady Sabina Reaching")
 
 Thought "<i>At least, not for me.</i>"
 

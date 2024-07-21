@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 
 public class SpriteManager : MonoBehaviour
 {
+    [SerializeField] public Vector2 newPosition; //FOR TESTING ONLY
+
     public static SpriteManager Instance { get; private set; }
 
     public SceneManager sceneManager => SceneManager.Instance;
@@ -16,7 +18,6 @@ public class SpriteManager : MonoBehaviour
     private const string playerContainer = "Player";
 
     public Player currentPlayer = null;
-
 
     private void Awake()
     {
@@ -38,6 +39,12 @@ public class SpriteManager : MonoBehaviour
         }
     }
 
+    [ContextMenu("ShowPlayerPosition")]
+    public void SetPlayerPosition()
+    {
+        Debug.Log(currentPlayer.root.transform.position);
+    }
+
     public PixelSprite CreateSprite(string spriteName, GameObject backgroundSpriteIsOn)
     {
         string prefabPath = FormatCGPath(spritePrefabPath, spriteName);
@@ -48,12 +55,12 @@ public class SpriteManager : MonoBehaviour
         return sprite;
     }
 
-    public Player CreatePlayer(string spriteName, GameObject backgroundSpriteIsOn)
+    public Player CreatePlayer(string spriteName, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, GameObject backgroundSpriteIsOn)
     {
         string prefabPath = FormatCGPath(spritePrefabPath, spriteName);
         GameObject spritePrefab = Resources.Load<GameObject>(prefabPath);
 
-        Player playerSprite = new Player(spritePrefab, backgroundSpriteIsOn.transform.Find(playerContainer));
+        Player playerSprite = new Player(spritePrefab, playerPosition, playerDirection, backgroundSpriteIsOn.transform.Find(playerContainer));
 
         currentPlayer = playerSprite;
 

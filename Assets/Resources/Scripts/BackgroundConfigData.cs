@@ -27,6 +27,14 @@ public class BackgroundConfigData
     {
         public string interactableName;
         public GameObject backgroundPrefab;
-        public KeyCode keyToPress;
+        public KeyCode[] keyToPress;
+        public Vector2 playerPositionInNextBackground;
+        public PlayerDirection playerDirectionInNextBackground;
+    }
+
+    public enum PlayerDirection
+    {
+        left,
+        right
     }
 }

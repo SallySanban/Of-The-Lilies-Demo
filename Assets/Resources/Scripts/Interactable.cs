@@ -8,9 +8,11 @@ public class Interactable : MonoBehaviour
     [SerializeField] private GameObject _icon;
     public GameObject icon => _icon;
 
-    private KeyCode keyToPress = KeyCode.None;
+    private KeyCode[] keyToPress = null;
 
     private string backgroundToSwitch = "";
+    private Vector2 playerPosition = new Vector2(0f, 0f);
+    private BackgroundConfigData.PlayerDirection playerDirection = BackgroundConfigData.PlayerDirection.right;
 
     public BackgroundManager backgroundManager => BackgroundManager.Instance;
     public SceneManager sceneManager => SceneManager.Instance;
@@ -22,9 +24,12 @@ public class Interactable : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(keyToPress) && keyToPress != KeyCode.None)
+        if(keyToPress != null)
         {
-            sceneManager.SetupScene(backgroundToSwitch);
+            if ((Input.GetKey(keyToPress[0]) || Input.GetKey(keyToPress[1])))
+            {
+                sceneManager.SetupScene(backgroundToSwitch, playerPosition, playerDirection);
+            }
         }
     }
 
@@ -42,6 +47,8 @@ public class Interactable : MonoBehaviour
                 {
                     keyToPress = data.keyToPress;
                     backgroundToSwitch = data.backgroundPrefab.name;
+                    playerPosition = data.playerPositionInNextBackground;
+                    playerDirection = data.playerDirectionInNextBackground;
                 }
             }
         }
@@ -52,7 +59,7 @@ public class Interactable : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             icon.SetActive(false);
-            keyToPress = KeyCode.None;
+            keyToPress = null;
         }
     }
 }

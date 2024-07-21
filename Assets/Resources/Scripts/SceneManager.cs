@@ -6,11 +6,13 @@ using UnityEngine.UIElements;
 
 public class SceneManager : MonoBehaviour
 {
-    private const string startOfGame = "Main 1";
+    private const string dialogueFile = "Test";
     private const string playerSpriteName = "Ahlai";
     public static SceneManager Instance { get; private set; }
     public BackgroundManager backgroundManager => BackgroundManager.Instance;
     public SpriteManager spriteManager => SpriteManager.Instance;
+
+    public string sceneName = "";
 
     [SerializeField] private RectTransform _pixelScene;
     [SerializeField] private CanvasGroup vnScene;
@@ -28,6 +30,8 @@ public class SceneManager : MonoBehaviour
 
     private float fadeSpeed = 3f;
 
+    Player newPlayer = null;
+
     private void Awake()
     {
         Instance = this;
@@ -40,21 +44,49 @@ public class SceneManager : MonoBehaviour
 
     private void Start()
     {
-        //TextAsset startOfStory = Resources.Load<TextAsset>(FilePaths.storyFiles + startOfGame);
+        TextAsset startOfStory = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
 
-        //List<string> lines = FileManager.ReadTextAsset(startOfStory);
+        List<string> lines = FileManager.ReadTextAsset(startOfStory);
 
-        //DialogueSystem.Instance.Say(lines);
-        SetupScene("Ahlai's Bedroom");
+        DialogueSystem.Instance.Say(lines);
+
+        //SetupScene("Ahlai's Bedroom", new Vector2(-4.88f, -0.14f));
     }
 
-    public Coroutine SetupScene(string background)
+    public Coroutine SetupScene(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)
     {
         if (isSettingScene) return settingSceneCoroutine;
 
-        settingSceneCoroutine = StartCoroutine(SwitchScene(background));
+        settingSceneCoroutine = StartCoroutine(SwitchScene(background, playerPosition, playerDirection, endVN));
 
         return settingSceneCoroutine;
+    }
+
+    private IEnumerator SwitchScene(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN)
+    {
+        if (backgroundManager.currentBackground != null)
+        {
+            backgroundManager.RemoveCurrentBackground();
+            spriteManager.RemoveCurrentPlayer();
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        Background newBackground = backgroundManager.CreateBackground(background);
+        newPlayer = spriteManager.CreatePlayer(playerSpriteName, playerPosition, playerDirection, newBackground.root);
+
+        newBackground.Show();
+
+        if(inVNMode && endVN) //change background and hide VN
+        {
+            HideVN();
+        }
+        else if(!inVNMode)  //only change background, VN already hidden
+        {
+            newPlayer.Show();
+        }
+
+        settingSceneCoroutine = null;
     }
 
     public Coroutine ShowVN()
@@ -65,6 +97,8 @@ public class SceneManager : MonoBehaviour
         {
             StopCoroutine(hidingVNCoroutine);
         }
+
+        newPlayer.Hide();
 
         showingVNCoroutine = StartCoroutine(ShowOrHideVNScene(true));
 
@@ -79,6 +113,8 @@ public class SceneManager : MonoBehaviour
         {
             StopCoroutine(showingVNCoroutine);
         }
+
+        newPlayer.Show();
 
         hidingVNCoroutine = StartCoroutine(ShowOrHideVNScene(false));
 
@@ -100,29 +136,5 @@ public class SceneManager : MonoBehaviour
 
         showingVNCoroutine = null;
         hidingVNCoroutine = null;
-    }
-
-    private IEnumerator SwitchScene(string background)
-    {
-        if (backgroundManager.currentBackground != null)
-        {
-            backgroundManager.RemoveCurrentBackground();
-            spriteManager.RemoveCurrentPlayer();
-        }
-
-        yield return new WaitForSeconds(0.5f);
-
-        Background newBackground = backgroundManager.CreateBackground(background);
-        Player newPlayer = spriteManager.CreatePlayer(playerSpriteName, newBackground.root);
-
-        newBackground.Show();
-        newPlayer.Show();
-
-        if (inVNMode)
-        {
-            HideVN();
-        }
-
-        settingSceneCoroutine = null;
     }
 }
