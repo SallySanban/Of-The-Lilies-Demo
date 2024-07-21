@@ -16,6 +16,7 @@ namespace Commands
 
         new public static void Extend(CommandDatabase database)
         {
+            database.AddCommand("Wait", new Func<string, IEnumerator>(Wait));
             database.AddCommand("SavePronoun", new Action<string>(SavePronoun));
             database.AddCommand("SetupPixelScene", new Action<string[]>(SetupScene));
             database.AddCommand("HideVN", new Action(() => { SceneManager.Instance.HideVN(); }));
@@ -74,6 +75,14 @@ namespace Commands
                 TagManager.tags["<subjectPronoun>"] = () => "they";
                 TagManager.tags["<objectPronoun>"] = () => "them";
                 TagManager.tags["<possessivePronoun>"] = () => "their";
+            }
+        }
+
+        private static IEnumerator Wait(string data)
+        {
+            if(float.TryParse(data, out float time))
+            {
+                yield return new WaitForSeconds(time);
             }
         }
     }

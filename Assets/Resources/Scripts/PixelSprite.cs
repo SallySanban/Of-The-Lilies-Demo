@@ -19,7 +19,7 @@ public class PixelSprite
 
     private float fadeSpeed = 3f;
 
-    public PixelSprite(GameObject prefab, Transform backgroundSpriteIsOn)
+    public PixelSprite(GameObject prefab, Vector2 spritePosition, BackgroundConfigData.PlayerDirection spriteDirection, Transform backgroundSpriteIsOn)
     {
         if (prefab != null)
         {
@@ -32,6 +32,24 @@ public class PixelSprite
             rootCanvasGroup = root.GetComponent<CanvasGroup>();
 
             rootCanvasGroup.alpha = 0f;
+
+            SetPositionDirection(spritePosition, spriteDirection);
+        }
+    }
+
+    public void SetPositionDirection(Vector2 position, BackgroundConfigData.PlayerDirection direction)
+    {
+        if (root == null) return;
+
+        root.transform.position = position;
+
+        if (direction == BackgroundConfigData.PlayerDirection.left)
+        {
+            root.transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        else if (direction == BackgroundConfigData.PlayerDirection.right)
+        {
+            root.transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 

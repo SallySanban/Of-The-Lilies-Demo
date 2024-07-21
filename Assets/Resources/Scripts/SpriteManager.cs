@@ -18,6 +18,7 @@ public class SpriteManager : MonoBehaviour
     private const string playerContainer = "Player";
 
     public Player currentPlayer = null;
+    private List<PixelSprite> spritesInScene = new List<PixelSprite>();
 
     private void Awake()
     {
@@ -40,17 +41,28 @@ public class SpriteManager : MonoBehaviour
     }
 
     [ContextMenu("ShowPlayerPosition")]
-    public void SetPlayerPosition()
+    public void ShowPlayerPosition()
     {
         Debug.Log(currentPlayer.root.transform.position);
     }
 
-    public PixelSprite CreateSprite(string spriteName, GameObject backgroundSpriteIsOn)
+    [ContextMenu("ShowSpritesPosition")]
+    public void ShowSpritesPosition()
+    {
+        foreach (PixelSprite sprite in spritesInScene)
+        {
+            Debug.Log($"{sprite.root.name} POSITION: {sprite.root.transform.position}");
+        }
+    }
+
+    public PixelSprite CreateSprite(string spriteName, Vector2 spritePosition, BackgroundConfigData.PlayerDirection spriteDirection, GameObject backgroundSpriteIsOn)
     {
         string prefabPath = FormatCGPath(spritePrefabPath, spriteName);
         GameObject spritePrefab = Resources.Load<GameObject>(prefabPath);
 
-        PixelSprite sprite = new PixelSprite(spritePrefab, backgroundSpriteIsOn.transform.Find(spriteContainer));
+        PixelSprite sprite = new PixelSprite(spritePrefab, spritePosition, spriteDirection, backgroundSpriteIsOn.transform.Find(spriteContainer));
+
+        spritesInScene.Add(sprite);
 
         return sprite;
     }
@@ -72,6 +84,16 @@ public class SpriteManager : MonoBehaviour
         currentPlayer.Hide();
 
         currentPlayer = null;
+    }
+
+    public void RemoveAllSprites()
+    {
+        foreach(PixelSprite sprite in spritesInScene)
+        {
+            sprite.Hide();
+        }
+
+        spritesInScene.Clear();
     }
 
     private string FormatCGPath(string path, string filename) => filename != "" ? path.Replace(spriteNameId, filename) : "";

@@ -185,7 +185,7 @@ namespace Dialogue
 
             foreach(CommandData.Command command in commands)
             {
-                if (command.waitForCompletion)
+                if (command.waitForCompletion || command.name == "Wait")
                 {
                     yield return CommandManager.Instance.Execute(command.name, command.arguments);
                     yield return new WaitForSeconds(completionTime);

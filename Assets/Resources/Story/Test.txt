@@ -1,28 +1,10 @@
-HideTextbox(), [input]ShowCG("Lady Sabina Reaching")
-
-Thought "<i>At least, not for me.</i>"
-
-HideTextbox(), [wait]SwitchCG("Blackout")
-
-input "Enter your name"
-
-choice in 0 "Enter your pronouns"
-{
-	- she/her
-		SavePronoun(she)
-	- he/him
-		SavePronoun(he)
-	- they/them
-		SavePronoun(they)
-}
-
 Sabina as Lady Sabina "<i><playerName>? My dear?</i>"
 
 "<i>Wake up, <playerName>. <playerName>! Get up, now...!</i>"
 
-HideTextbox(), [input]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false)
+HideTextbox(), [wait]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
 
-enter Sabina as Lady Sabina [Worry] "Oh, you must've been having nightmares again."
+Sabina as Lady Sabina "Oh, you must've been having nightmares again."
 
 Ahlai as You "Yes, you're... you're right. It was about my homeland again. It..."
 

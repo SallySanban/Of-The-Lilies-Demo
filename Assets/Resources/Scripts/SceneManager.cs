@@ -44,13 +44,14 @@ public class SceneManager : MonoBehaviour
 
     private void Start()
     {
-        TextAsset startOfStory = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
+        //TextAsset startOfStory = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
 
-        List<string> lines = FileManager.ReadTextAsset(startOfStory);
+        //List<string> lines = FileManager.ReadTextAsset(startOfStory);
 
-        DialogueSystem.Instance.Say(lines);
+        //DialogueSystem.Instance.Say(lines);
 
-        //SetupScene("Ahlai's Bedroom", new Vector2(-4.88f, -0.14f));
+        sceneName = "Scene 1";
+        SetupScene("Ahlai's Bedroom", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
     }
 
     public Coroutine SetupScene(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)
@@ -68,11 +69,14 @@ public class SceneManager : MonoBehaviour
         {
             backgroundManager.RemoveCurrentBackground();
             spriteManager.RemoveCurrentPlayer();
+            spriteManager.RemoveAllSprites();
         }
 
         yield return new WaitForSeconds(0.5f);
 
         Background newBackground = backgroundManager.CreateBackground(background);
+        PopulateScene(newBackground);
+
         newPlayer = spriteManager.CreatePlayer(playerSpriteName, playerPosition, playerDirection, newBackground.root);
 
         newBackground.Show();
@@ -136,5 +140,20 @@ public class SceneManager : MonoBehaviour
 
         showingVNCoroutine = null;
         hidingVNCoroutine = null;
+    }
+
+    private void PopulateScene(Background background)
+    {
+        Debug.Log(sceneName);
+        //SCENE 1
+        if(sceneName == "Scene 1")
+        {
+            if (background.backgroundName == "Main Shop")
+            {
+                PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(4.77f,0.81f), BackgroundConfigData.PlayerDirection.right, background.root);
+                Seiji.Show();
+            }
+        }
+        
     }
 }
