@@ -18,7 +18,7 @@ public class SpriteManager : MonoBehaviour
     private const string playerContainer = "Player";
 
     public Player currentPlayer = null;
-    private List<PixelSprite> spritesInScene = new List<PixelSprite>();
+    public List<PixelSprite> spritesInScene = new List<PixelSprite>();
 
     private void Awake()
     {

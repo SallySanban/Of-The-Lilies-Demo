@@ -7,7 +7,6 @@ using UnityEngine;
 public class BackgroundConfigData
 {
     public string backgroundName;
-    public GameObject currentBackgroundPrefab;
     public InteractableToBackgroundMap[] map;
 
     public BackgroundConfigData Copy()
@@ -15,7 +14,6 @@ public class BackgroundConfigData
         BackgroundConfigData result = new BackgroundConfigData();
 
         result.backgroundName = backgroundName;
-        result.currentBackgroundPrefab = currentBackgroundPrefab;
         result.map = map;
 
         return result;
@@ -27,9 +25,18 @@ public class BackgroundConfigData
     {
         public string interactableName;
         public GameObject backgroundPrefab;
-        public KeyCode[] keyToPress;
+        public KeyToPress keyToPress;
         public Vector2 playerPositionInNextBackground;
         public PlayerDirection playerDirectionInNextBackground;
+    }
+
+    public enum KeyToPress
+    {
+        Right,
+        Left,
+        Up,
+        Down,
+        Question
     }
 
     public enum PlayerDirection

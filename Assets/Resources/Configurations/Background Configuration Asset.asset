@@ -14,62 +14,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgrounds:
   - backgroundName: Ahlai's Bedroom
-    currentBackgroundPrefab: {fileID: 7165131873778756440, guid: 8043a4c5800c9b14fb344aea6862ef7f, type: 3}
     map:
     - interactableName: Door
-      backgroundPrefab: {fileID: 5802672104050577939, guid: 836696bf5c96e964dbeeab181778f984, type: 3}
-      keyToPress: 1101000077000000
+      backgroundPrefab: {fileID: 7165131873778756440, guid: 787f0ea12b4ee8c4a9ee1dd6404fdce1, type: 3}
+      keyToPress: 2
       playerPositionInNextBackground: {x: -4.56, y: -0.14}
       playerDirectionInNextBackground: 1
   - backgroundName: Bedroom Corridor
-    currentBackgroundPrefab: {fileID: 5802672104050577939, guid: 836696bf5c96e964dbeeab181778f984, type: 3}
     map:
     - interactableName: Door
       backgroundPrefab: {fileID: 7165131873778756440, guid: 8043a4c5800c9b14fb344aea6862ef7f, type: 3}
-      keyToPress: 1101000077000000
+      keyToPress: 2
       playerPositionInNextBackground: {x: 4.89, y: -0.14}
       playerDirectionInNextBackground: 0
     - interactableName: Stairs
-      backgroundPrefab: {fileID: 5802672104050577939, guid: ccf69b9844ce4ca47a03e23010c14dd5, type: 3}
-      keyToPress: 1201000073000000
+      backgroundPrefab: {fileID: 7165131873778756440, guid: 10760e26840b30e45a29ee057cf386de, type: 3}
+      keyToPress: 3
       playerPositionInNextBackground: {x: 5.69, y: -0.14}
       playerDirectionInNextBackground: 0
   - backgroundName: First Floor Corridor
-    currentBackgroundPrefab: {fileID: 5802672104050577939, guid: ccf69b9844ce4ca47a03e23010c14dd5, type: 3}
     map:
     - interactableName: Door
-      backgroundPrefab: {fileID: 8605165155306645522, guid: 2edfa9ea09618354f899e63b2f64a206, type: 3}
-      keyToPress: 1101000077000000
+      backgroundPrefab: {fileID: 7165131873778756440, guid: 0cec10e0c7110524d9d3d4e7e78a7923, type: 3}
+      keyToPress: 2
       playerPositionInNextBackground: {x: -6.12, y: -0.14}
       playerDirectionInNextBackground: 1
     - interactableName: Stairs
-      backgroundPrefab: {fileID: 5802672104050577939, guid: 836696bf5c96e964dbeeab181778f984, type: 3}
-      keyToPress: 1101000077000000
+      backgroundPrefab: {fileID: 7165131873778756440, guid: 787f0ea12b4ee8c4a9ee1dd6404fdce1, type: 3}
+      keyToPress: 2
       playerPositionInNextBackground: {x: 1.27, y: -0.14}
       playerDirectionInNextBackground: 0
     - interactableName: Left Door
-      backgroundPrefab: {fileID: 8605165155306645522, guid: 7ec2a797750e39c4fb2c3ebff6f5da2d, type: 3}
-      keyToPress: 1401000061000000
+      backgroundPrefab: {fileID: 7165131873778756440, guid: c9690720742ecba4ba2050acd995c9a9, type: 3}
+      keyToPress: 1
       playerPositionInNextBackground: {x: 5.9, y: -0.14}
       playerDirectionInNextBackground: 0
   - backgroundName: Back Room
-    currentBackgroundPrefab: {fileID: 8605165155306645522, guid: 2edfa9ea09618354f899e63b2f64a206, type: 3}
     map:
     - interactableName: Left Door
-      backgroundPrefab: {fileID: 5802672104050577939, guid: ccf69b9844ce4ca47a03e23010c14dd5, type: 3}
-      keyToPress: 1401000061000000
+      backgroundPrefab: {fileID: 7165131873778756440, guid: 10760e26840b30e45a29ee057cf386de, type: 3}
+      keyToPress: 1
       playerPositionInNextBackground: {x: -2.82, y: -0.14}
       playerDirectionInNextBackground: 0
   - backgroundName: Main Shop
-    currentBackgroundPrefab: {fileID: 8605165155306645522, guid: 7ec2a797750e39c4fb2c3ebff6f5da2d, type: 3}
     map:
     - interactableName: Left Door
       backgroundPrefab: {fileID: 0}
-      keyToPress: 1401000061000000
+      keyToPress: 1
       playerPositionInNextBackground: {x: 0, y: -0.14}
       playerDirectionInNextBackground: 1
     - interactableName: Right Door
-      backgroundPrefab: {fileID: 5802672104050577939, guid: ccf69b9844ce4ca47a03e23010c14dd5, type: 3}
-      keyToPress: 1301000064000000
+      backgroundPrefab: {fileID: 7165131873778756440, guid: 10760e26840b30e45a29ee057cf386de, type: 3}
+      keyToPress: 0
       playerPositionInNextBackground: {x: -5.9, y: -0.14}
       playerDirectionInNextBackground: 1

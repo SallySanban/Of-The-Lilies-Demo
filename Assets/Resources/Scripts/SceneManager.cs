@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Dialogue;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class SceneManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class SceneManager : MonoBehaviour
     public static SceneManager Instance { get; private set; }
     public BackgroundManager backgroundManager => BackgroundManager.Instance;
     public SpriteManager spriteManager => SpriteManager.Instance;
+    public InteractableManager interactableManager => InteractableManager.Instance;
 
     public string sceneName = "";
 
@@ -34,12 +36,19 @@ public class SceneManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
 
-        pixelSceneContainer.gameObject.SetActive(true);
+            pixelSceneContainer.gameObject.SetActive(true);
 
-        vnScene.gameObject.SetActive(true);
-        vnScene.alpha = 1f;
+            vnScene.gameObject.SetActive(true);
+            vnScene.alpha = 1f;
+        }
+        else
+        {
+            DestroyImmediate(gameObject);
+        }
     }
 
     private void Start()
@@ -75,7 +84,7 @@ public class SceneManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         Background newBackground = backgroundManager.CreateBackground(background);
-        PopulateScene(newBackground);
+        interactableManager.SetupInteractablesInScene(newBackground);
 
         newPlayer = spriteManager.CreatePlayer(playerSpriteName, playerPosition, playerDirection, newBackground.root);
 
@@ -104,6 +113,11 @@ public class SceneManager : MonoBehaviour
 
         newPlayer.Hide();
 
+        foreach(PixelSprite sprite in spriteManager.spritesInScene)
+        {
+            sprite.Hide();
+        }
+
         showingVNCoroutine = StartCoroutine(ShowOrHideVNScene(true));
 
         return showingVNCoroutine;
@@ -119,6 +133,11 @@ public class SceneManager : MonoBehaviour
         }
 
         newPlayer.Show();
+
+        foreach (PixelSprite sprite in spriteManager.spritesInScene)
+        {
+            sprite.Show();
+        }
 
         hidingVNCoroutine = StartCoroutine(ShowOrHideVNScene(false));
 
@@ -140,20 +159,5 @@ public class SceneManager : MonoBehaviour
 
         showingVNCoroutine = null;
         hidingVNCoroutine = null;
-    }
-
-    private void PopulateScene(Background background)
-    {
-        Debug.Log(sceneName);
-        //SCENE 1
-        if(sceneName == "Scene 1")
-        {
-            if (background.backgroundName == "Main Shop")
-            {
-                PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(4.77f,0.81f), BackgroundConfigData.PlayerDirection.right, background.root);
-                Seiji.Show();
-            }
-        }
-        
     }
 }

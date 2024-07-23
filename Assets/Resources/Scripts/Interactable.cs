@@ -5,61 +5,52 @@ using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] private GameObject _icon;
-    public GameObject icon => _icon;
+    public InteractableManager interactableManager => InteractableManager.Instance;
 
-    private KeyCode[] keyToPress = null;
+    [SerializeField] private Image _icon;
+    [SerializeField] private InteractableType _interactableType;
+    public Image icon => _icon;
+    public InteractableType interactableType => _interactableType;
 
-    private string backgroundToSwitch = "";
-    private Vector2 playerPosition = new Vector2(0f, 0f);
-    private BackgroundConfigData.PlayerDirection playerDirection = BackgroundConfigData.PlayerDirection.right;
+    [HideInInspector] public string interactableName;
+    [HideInInspector] public string backgroundInteractableIsIn;
+    [HideInInspector] public bool isInteractable = true; //icon will not appear if false
+    [HideInInspector] public List<KeyCode> keysToPress = null;
 
-    public BackgroundManager backgroundManager => BackgroundManager.Instance;
-    public SceneManager sceneManager => SceneManager.Instance;
+    //for BackgroundSwitcher Interactables
+    [HideInInspector] public string backgroundToSwitch = "";
+    [HideInInspector] public Vector2 playerPosition = new Vector2(0f, 0f);
+    [HideInInspector] public BackgroundConfigData.PlayerDirection playerDirection = BackgroundConfigData.PlayerDirection.right;
+    [HideInInspector] public bool isLocked = false;
 
     private void Start()
     {
-        icon.SetActive(false);
-    }
-
-    private void Update()
-    {
-        if(keyToPress != null)
-        {
-            if ((Input.GetKey(keyToPress[0]) || Input.GetKey(keyToPress[1])))
-            {
-                sceneManager.SetupScene(backgroundToSwitch, playerPosition, playerDirection);
-            }
-        }
+        icon.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        BackgroundConfigData config = backgroundManager.config.GetConfig(backgroundManager.currentBackground.backgroundName);
-
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && isInteractable)
         {
-            icon.SetActive(true);
-
-            foreach(BackgroundConfigData.InteractableToBackgroundMap data in config.map)
-            {
-                if (data.interactableName == gameObject.name)
-                {
-                    keyToPress = data.keyToPress;
-                    backgroundToSwitch = data.backgroundPrefab.name;
-                    playerPosition = data.playerPositionInNextBackground;
-                    playerDirection = data.playerDirectionInNextBackground;
-                }
-            }
+            icon.gameObject.SetActive(true);
+            interactableManager.CollidingWithPlayer(true, this);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && isInteractable)
         {
-            icon.SetActive(false);
-            keyToPress = null;
+            icon.gameObject.SetActive(false);
+
+            interactableManager.CollidingWithPlayer(false);
         }
+    }
+
+    public enum InteractableType
+    {
+        BackgroundSwitcher,
+        Object,
+        PixelSprite
     }
 }

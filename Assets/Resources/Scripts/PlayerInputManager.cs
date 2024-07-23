@@ -53,7 +53,10 @@ namespace Dialogue
 
         public void NextLine(InputAction.CallbackContext context)
         {
-            DialogueSystem.Instance.OnUserNext();
+            if (SceneManager.Instance.inVNMode)
+            {
+                DialogueSystem.Instance.OnUserNext();
+            }
         }
     }
 }

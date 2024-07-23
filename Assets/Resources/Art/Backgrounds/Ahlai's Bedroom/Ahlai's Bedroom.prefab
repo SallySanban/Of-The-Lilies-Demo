@@ -259,7 +259,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7273542696746519890}
-  m_Layer: 5
+  - component: {fileID: 2432137463741174558}
+  m_Layer: 7
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,6 +288,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &2432137463741174558
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823837271438999888}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 2
+  m_TargetDisplay: 0
 --- !u!1 &1024123762868123101
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +458,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 534.4703, y: 110.22568}
+  m_Offset: {x: 532.6343, y: 110.22568}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -445,7 +469,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 347.87463, y: 530.93085}
+  m_Size: {x: 344.20264, y: 530.93085}
   m_EdgeRadius: 0
 --- !u!114 &7157071216816271497
 MonoBehaviour:
@@ -459,7 +483,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d206174dbdddf42b9c028f85765049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 8552398490881288229}
+  _icon: {fileID: 3792010525762525475}
+  _interactableType: 0
+  interactableName: 
+  backgroundInteractableIsIn: 
+  isInteractable: 1
+  keysToPress: 
+  backgroundToSwitch: 
+  playerPosition: {x: 0, y: 0}
+  playerDirection: 1
+  isLocked: 0
 --- !u!1 &6975723324795464650
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +580,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7165131873778756440}
   m_Enabled: 1
-  m_Alpha: 0.7
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -599,7 +632,7 @@ GameObject:
   - component: {fileID: 1566358390904200274}
   - component: {fileID: 4829011151401728548}
   - component: {fileID: 6949402180617791365}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +708,7 @@ GameObject:
   - component: {fileID: 4854812866720199544}
   - component: {fileID: 7229905570502399392}
   - component: {fileID: 3792010525762525475}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
