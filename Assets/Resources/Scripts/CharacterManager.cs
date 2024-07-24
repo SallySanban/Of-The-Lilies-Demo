@@ -66,6 +66,12 @@ namespace Characters
             return character;
         }
 
+        public void RemoveCharacter(GameObject character)
+        {
+            characters.Remove(character.name.ToLower());
+            Object.Destroy(character);
+        }
+
         private CharacterInfo GetCharacterInfo(string characterName)
         {
             CharacterInfo result = new CharacterInfo();

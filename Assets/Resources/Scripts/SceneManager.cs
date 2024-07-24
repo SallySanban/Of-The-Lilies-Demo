@@ -65,7 +65,7 @@ public class SceneManager : MonoBehaviour
         //DialogueSystem.Instance.Say(lines);
 
         sceneName = "Scene 1";
-        //SetupScene("Ahlai's Bedroom", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
+        SetupScene("Ahlai's Bedroom", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
     }
 
     public Coroutine SetupScene(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)

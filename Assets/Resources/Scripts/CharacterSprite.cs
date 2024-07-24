@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.GraphicsBuffer;
 
 namespace Characters
 {
@@ -82,7 +81,7 @@ namespace Characters
 
                 if(self.alpha == 0f)
                 {
-                    Object.Destroy(self.gameObject);
+                    manager.RemoveCharacter(self.gameObject);
                     break;
                 }
 
