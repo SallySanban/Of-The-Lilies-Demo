@@ -43,12 +43,23 @@ public class InteractableManager: MonoBehaviour
     {
         if (collidingWithPlayer && collidingInteractable != null)
         {
-            if(collidingInteractable.interactableType == Interactable.InteractableType.BackgroundSwitcher)
+            switch (collidingInteractable.interactableType)
             {
-                if (collidingInteractable.keysToPress.Any(key => Input.GetKey(key)) && !collidingInteractable.isLocked && collidingInteractable.isInteractable)
-                {
-                    sceneManager.SetupScene(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
-                }
+                case Interactable.InteractableType.BackgroundSwitcher:
+                    if (collidingInteractable.keysToPress.Any(key => Input.GetKey(key)) && !collidingInteractable.isLocked && collidingInteractable.isInteractable)
+                    {
+                        sceneManager.SetupScene(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+                    }
+
+                    break;
+                case Interactable.InteractableType.PixelSprite:
+                case Interactable.InteractableType.Object:
+                    if (collidingInteractable.keysToPress.Any(key => Input.GetKey(key)) && collidingInteractable.isInteractable)
+                    {
+                        sceneManager.PlayNextScene(collidingInteractable);
+                    }
+
+                    break;
             }
         }
     }
@@ -149,6 +160,8 @@ public class InteractableManager: MonoBehaviour
                     string iconPath = FormatCGPath(iconImagePath, BackgroundConfigData.KeyToPress.Question);
                     interactable.icon.sprite = Resources.Load<Sprite>(iconPath);
 
+                    interactable.keysToPress = GetKeysToPress(BackgroundConfigData.KeyToPress.Question);
+
                     break;
             }
         }
@@ -161,7 +174,8 @@ public class InteractableManager: MonoBehaviour
         {
             if (background.backgroundName == "Main Shop")
             {
-                PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(4.77f, 1.24f), BackgroundConfigData.PlayerDirection.right, background.root);
+                PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.right, background.root);
+                Seiji.root.name = "Seiji";
                 Seiji.Show();
             }
         }

@@ -1,8 +1,13 @@
 fileFormatVersion: 2
-guid: 64205477ca446cc44bc39695b528a23b
+guid: de2e43955f467c94f83e4da43b4da4d7
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Walk
+    second: {fileID: 7400000, guid: 21517ca46ff63994eae37489a8fe9663, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -35,7 +40,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 1.5
+    spritePixelsToUnits: 1.65
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638573679476639745
+  platformSettingsDirtyTick: 638573924662687710
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +126,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: AhlaiWalk_Frame_0
+  - name: Ahlai_Frame_0
     originalName: 
     pivot: {x: 0.4814815, y: -0.14953272}
     alignment: 9
@@ -132,7 +137,7 @@ ScriptedImporter:
       y: 4
       width: 378
       height: 749
-    spriteID: 1138488be91ee0a439c1b9e2eaa6fb63
+    spriteID: ce21e47696d0e6645bf61a8325b109f2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,7 +146,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 418, y: 4}
-  - name: AhlaiWalk_Frame_1
+  - name: Ahlai_Frame_1
     originalName: 
     pivot: {x: 0.4827586, y: -0.15384616}
     alignment: 9
@@ -152,7 +157,7 @@ ScriptedImporter:
       y: 4
       width: 406
       height: 728
-    spriteID: 7b32f1b7428628146ae9090b745baed7
+    spriteID: 3791f2a926ba0e64a82b69b33c299cfb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,7 +166,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: AhlaiWalk_Frame_2
+  - name: Ahlai_Frame_2
     originalName: 
     pivot: {x: 0.6176471, y: -0.1509434}
     alignment: 9
@@ -172,7 +177,7 @@ ScriptedImporter:
       y: 4
       width: 238
       height: 742
-    spriteID: 2e7a8185354a17d49bbba9c12929dce1
+    spriteID: 071782f2436d3a646a6ef516dac33155
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -181,7 +186,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 1085, y: 4}
-  - name: AhlaiWalk_Frame_3
+  - name: Ahlai_Frame_3
     originalName: 
     pivot: {x: 0.51282054, y: -0.14814815}
     alignment: 9
@@ -192,7 +197,7 @@ ScriptedImporter:
       y: 4
       width: 273
       height: 756
-    spriteID: 17c3785581654894bbeed98194b2a888
+    spriteID: 1b5f5a92084fdf749b6742df6b2450d8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -201,7 +206,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 804, y: 4}
-  - name: AhlaiWalk_Frame_4
+  - name: Ahlai_Frame_4
     originalName: 
     pivot: {x: 0.46153843, y: -0.14953272}
     alignment: 9
@@ -212,7 +217,7 @@ ScriptedImporter:
       y: 761
       width: 364
       height: 749
-    spriteID: 1835d2410742e904792f168888974faf
+    spriteID: 079781c9cbcf8fb43aa70a3b7a303bdb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -221,7 +226,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 418, y: 761}
-  - name: AhlaiWalk_Frame_5
+  - name: Ahlai_Frame_5
     originalName: 
     pivot: {x: 0.4827586, y: -0.15384616}
     alignment: 9
@@ -232,7 +237,7 @@ ScriptedImporter:
       y: 740
       width: 406
       height: 728
-    spriteID: a592ba9916374c8409e584addbb73cb0
+    spriteID: 1fe7a54f24f7b2b45a0ade3cb49b22ef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -241,7 +246,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 740}
-  - name: AhlaiWalk_Frame_6
+  - name: Ahlai_Frame_6
     originalName: 
     pivot: {x: 0.6176471, y: -0.1509434}
     alignment: 9
@@ -252,7 +257,7 @@ ScriptedImporter:
       y: 754
       width: 238
       height: 742
-    spriteID: adfda34ae5d20d04b9fd8602a0f82424
+    spriteID: 21087f6ec78e9854dbc153f4c9fe4937
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -261,7 +266,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 1085, y: 754}
-  - name: AhlaiWalk_Frame_7
+  - name: Ahlai_Frame_7
     originalName: 
     pivot: {x: 0.51282054, y: -0.14814815}
     alignment: 9
@@ -272,7 +277,7 @@ ScriptedImporter:
       y: 768
       width: 273
       height: 756
-    spriteID: 691ac4699c757aa458983ce25cad672e
+    spriteID: 383c2d94c0151a248b282f278c6447b1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -284,13 +289,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 473724486
-    name: AhlaiWalk
+    guid: -350812167
+    name: Ahlai
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: AhlaiWalk_Frame_0
+    - name: Ahlai_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -298,8 +303,8 @@ ScriptedImporter:
         y: 112
         width: 378
         height: 749
-      spriteId: 1138488be91ee0a439c1b9e2eaa6fb63
-    - name: AhlaiWalk_Frame_1
+      spriteId: ce21e47696d0e6645bf61a8325b109f2
+    - name: Ahlai_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -307,8 +312,8 @@ ScriptedImporter:
         y: 112
         width: 406
         height: 728
-      spriteId: 7b32f1b7428628146ae9090b745baed7
-    - name: AhlaiWalk_Frame_2
+      spriteId: 3791f2a926ba0e64a82b69b33c299cfb
+    - name: Ahlai_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -316,8 +321,8 @@ ScriptedImporter:
         y: 112
         width: 238
         height: 742
-      spriteId: 2e7a8185354a17d49bbba9c12929dce1
-    - name: AhlaiWalk_Frame_3
+      spriteId: 071782f2436d3a646a6ef516dac33155
+    - name: Ahlai_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -325,8 +330,8 @@ ScriptedImporter:
         y: 112
         width: 273
         height: 756
-      spriteId: 17c3785581654894bbeed98194b2a888
-    - name: AhlaiWalk_Frame_4
+      spriteId: 1b5f5a92084fdf749b6742df6b2450d8
+    - name: Ahlai_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -334,8 +339,8 @@ ScriptedImporter:
         y: 112
         width: 364
         height: 749
-      spriteId: 1835d2410742e904792f168888974faf
-    - name: AhlaiWalk_Frame_5
+      spriteId: 079781c9cbcf8fb43aa70a3b7a303bdb
+    - name: Ahlai_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -343,8 +348,8 @@ ScriptedImporter:
         y: 112
         width: 406
         height: 728
-      spriteId: a592ba9916374c8409e584addbb73cb0
-    - name: AhlaiWalk_Frame_6
+      spriteId: 1fe7a54f24f7b2b45a0ade3cb49b22ef
+    - name: Ahlai_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -352,8 +357,8 @@ ScriptedImporter:
         y: 112
         width: 238
         height: 742
-      spriteId: adfda34ae5d20d04b9fd8602a0f82424
-    - name: AhlaiWalk_Frame_7
+      spriteId: 21087f6ec78e9854dbc153f4c9fe4937
+    - name: Ahlai_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -361,7 +366,7 @@ ScriptedImporter:
         y: 112
         width: 273
         height: 756
-      spriteId: 691ac4699c757aa458983ce25cad672e
+      spriteId: 383c2d94c0151a248b282f278c6447b1
     linkedCells: []
     parentIndex: -1
   platformSettings:

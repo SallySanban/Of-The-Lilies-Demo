@@ -21,7 +21,7 @@ public class Interactable : MonoBehaviour
     [HideInInspector] public string backgroundToSwitch = "";
     [HideInInspector] public Vector2 playerPosition = new Vector2(0f, 0f);
     [HideInInspector] public BackgroundConfigData.PlayerDirection playerDirection = BackgroundConfigData.PlayerDirection.right;
-    [HideInInspector] public bool isLocked = false;
+    [HideInInspector] public bool isLocked = false; //icon will appear but cannot go inside room
 
     private void Start()
     {

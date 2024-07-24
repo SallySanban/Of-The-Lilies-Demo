@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneManager : MonoBehaviour
 {
-    private const string dialogueFile = "Test";
+    private const string dialogueFile = "Scene 1";
     private const string playerSpriteName = "Ahlai";
     public static SceneManager Instance { get; private set; }
     public BackgroundManager backgroundManager => BackgroundManager.Instance;
@@ -34,6 +34,11 @@ public class SceneManager : MonoBehaviour
 
     Player newPlayer = null;
 
+    Dictionary<(string interactableName, string sceneName), string> sceneProgression = new Dictionary<(string, string), string>
+    {
+        { ("Seiji", "Scene 1"), "Scene 2" }
+    };
+
     private void Awake()
     {
         if (Instance == null)
@@ -53,14 +58,14 @@ public class SceneManager : MonoBehaviour
 
     private void Start()
     {
-        //TextAsset startOfStory = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
+        //TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
 
-        //List<string> lines = FileManager.ReadTextAsset(startOfStory);
+        //List<string> lines = FileManager.ReadTextAsset(startingScene);
 
         //DialogueSystem.Instance.Say(lines);
 
         sceneName = "Scene 1";
-        SetupScene("Ahlai's Bedroom", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
+        //SetupScene("Ahlai's Bedroom", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
     }
 
     public Coroutine SetupScene(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)
@@ -100,6 +105,19 @@ public class SceneManager : MonoBehaviour
         }
 
         settingSceneCoroutine = null;
+    }
+
+    public void PlayNextScene(Interactable interactableClicked)
+    {
+        string sceneToPlay = GetNextScene(interactableClicked, sceneName);
+
+        TextAsset nextScene = Resources.Load<TextAsset>(FilePaths.storyFiles + sceneToPlay);
+
+        List<string> lines = FileManager.ReadTextAsset(nextScene);
+
+        ShowVN();
+
+        DialogueSystem.Instance.Say(lines);
     }
 
     public Coroutine ShowVN()
@@ -159,5 +177,17 @@ public class SceneManager : MonoBehaviour
 
         showingVNCoroutine = null;
         hidingVNCoroutine = null;
+    }
+
+    private string GetNextScene(Interactable interactableClicked, string currentScene)
+    {
+        var key = (interactableClicked.interactableName, currentScene);
+
+        if (sceneProgression.TryGetValue(key, out string nextScene))
+        {
+            return nextScene;
+        }
+
+        return "";
     }
 }

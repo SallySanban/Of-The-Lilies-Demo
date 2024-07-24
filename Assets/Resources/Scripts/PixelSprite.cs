@@ -8,7 +8,7 @@ public class PixelSprite
     public SceneManager sceneManager => SceneManager.Instance;
     public SpriteManager spriteManager => SpriteManager.Instance;
 
-    public RectTransform root = null;
+    public Transform root = null;
 
     public CanvasGroup rootCanvasGroup;
 

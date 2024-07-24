@@ -23,13 +23,13 @@ public class Player : PixelSprite
 
         if (move.x == -1) //left
         {
-            root.transform.eulerAngles = new Vector3(0, 180, 0);
+            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 180, 0);
 
             move.x -= steps;
         }
         else if (move.x == 1) //right
         {
-            root.transform.eulerAngles = new Vector3(0, 0, 0);
+            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 0, 0);
 
             move.x += steps;
         }

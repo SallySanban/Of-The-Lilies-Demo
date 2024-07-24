@@ -8,7 +8,6 @@ namespace Dialogue
 {
     public class PlayerInputManager : MonoBehaviour
     {
-        [SerializeField] private GameObject playerSprite;
         private PlayerInput input;
         private List<(InputAction action, Action<InputAction.CallbackContext> command)> actions = new List<(InputAction action, Action<InputAction.CallbackContext> command)>();
 
