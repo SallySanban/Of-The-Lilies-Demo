@@ -10,7 +10,7 @@ public class PixelSprite
 
     public Transform root = null;
 
-    public CanvasGroup rootCanvasGroup;
+    public SpriteRenderer rootSpriteRenderer;
 
     protected Coroutine showingSpriteCoroutine, hidingSpriteCoroutine;
 
@@ -27,11 +27,13 @@ public class PixelSprite
 
             ob.SetActive(true);
 
-            root = ob.GetComponent<RectTransform>();
+            root = ob.GetComponent<Transform>();
 
-            rootCanvasGroup = root.GetComponent<CanvasGroup>();
+            rootSpriteRenderer = root.GetComponentInChildren<SpriteRenderer>();
 
-            rootCanvasGroup.alpha = 0f;
+            Color spriteColor = rootSpriteRenderer.color;
+            spriteColor.a = 0f;
+            rootSpriteRenderer.color = spriteColor;
 
             SetPositionDirection(spritePosition, spriteDirection);
         }
@@ -85,21 +87,22 @@ public class PixelSprite
     {
         float targetAlpha = show ? 1f : 0f;
 
-        CanvasGroup self = rootCanvasGroup;
+        Color spriteColor = rootSpriteRenderer.color;
 
         if (immediate)
         {
-            self.alpha = targetAlpha;
+            spriteColor.a = targetAlpha;
         }
         else
         {
-            while (self.alpha != targetAlpha)
+            while (spriteColor.a != targetAlpha)
             {
-                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
+                spriteColor.a = Mathf.MoveTowards(spriteColor.a, targetAlpha, fadeSpeed * Time.deltaTime);
+                rootSpriteRenderer.color = spriteColor;
 
-                if (self.alpha == 0f)
+                if (spriteColor.a == 0f)
                 {
-                    Object.Destroy(self.gameObject);
+                    Object.Destroy(rootSpriteRenderer.transform.parent.gameObject);
                     break;
                 }
 

@@ -51,7 +51,13 @@ Myo as Myo Aciano "But I'm guilty nonetheless, aren't I?"
 choice in 1
 {
 	- Well, it would be rude of me to say no.
-		Load("Branch 1.1")
+		Load("Branch 1.1" -p true)
 	- I'm sorry, but I can't tonight.
-		Load("Branch 1.2")
+		Load("Branch 1.2" -p true)
 }
+
+Seiji [Smile] "First, we need to make some deliveries to Mr. Quan. He wants his usual order. After that, Lady Sabina wants us to bring back some drinks from the tavern."
+
+Ahlai as You "Okay, great! We should get going. We wouldn't  want late deliveries  for our best customer."
+
+HideVN(), HideCharacter(Seiji)

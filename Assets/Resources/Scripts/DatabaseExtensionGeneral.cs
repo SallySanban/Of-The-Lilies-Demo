@@ -24,11 +24,6 @@ namespace Commands
 
         private static void SetupScene(string[] data)
         {
-            if(GraphicPanelManager.Instance.activeGraphicPanel != null)
-            {
-                GraphicPanelManager.Instance.activeGraphicPanel.Hide();
-            }
-
             SceneManager.Instance.sceneName = data[0];
 
             float firstPlayerXPos = 0f, firstPlayerYPos = 0f;

@@ -41,10 +41,17 @@ public class SceneManager : MonoBehaviour
 
     Dictionary<(string sceneName, string background, string interactable), List<(string name, string dialogue)>> speechBubbleProgression = new Dictionary<(string sceneName, string background, string interactable), List<(string name, string dialogue)>>
     {
-        {("Scene 1", "First Floor Corridor", "Door"), new List<(string name, string dialogue)>
+        {
+            ("Scene 1", "First Floor Corridor", "Door"), new List<(string name, string dialogue)>
             {
-                ("Ahlai", "The door is locked..."),
-                ("Ahlai", "TRIAL TRIAL TRIAL REALLY LONG LINE SO THAT IT SHOWS")
+                ("Ahlai", "The door is locked...")
+            }
+        },
+        {
+            ("Scene 2", "Kuchai Town", "Seiji"), new List<(string name, string dialogue)>
+            {
+                ("Seiji", "Remember, Mr. Quan's house is the only one with the red walls."),
+                ("Seiji", "He likes to stand out... It's not that hard to miss.")
             }
         }
     };

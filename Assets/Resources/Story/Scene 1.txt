@@ -40,7 +40,7 @@ Sabina as Lady Sabina "<i><playerName>? My dear?</i>"
 
 "<i>Wake up, <playerName>. <playerName>! Get up, now...!</i>"
 
-HideTextbox(), [wait]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
+HideTextbox(), HideCG(), [wait]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
 
 Sabina as Lady Sabina "Oh, you must've been having nightmares again."
 
@@ -50,4 +50,4 @@ Sabina as Lady Sabina "Of course, I understand... It was hard for you, <playerNa
 
 "When you're ready, <b>come down and you can start on your tasks for the day</b>. Seiji is waiting."
 
-HideTextbox(), HideVN()
+HideTextbox(), HideVN(), HideCharacter(Sabina)

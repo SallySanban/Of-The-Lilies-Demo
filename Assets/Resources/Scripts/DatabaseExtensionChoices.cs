@@ -9,6 +9,7 @@ namespace Commands
     public class DatabaseExtensionChoices : CommandDatabaseExtension
     {
         private static readonly string enqueueParameter = "-e";
+        private static readonly string priorityParameter = "-p";
 
         new public static void Extend(CommandDatabase database)
         {
@@ -20,10 +21,12 @@ namespace Commands
             string filename = data[0];
 
             bool enqueue = false;
+            bool priority = false;
 
             var parameters = ConvertDataToParameters(data);
 
             parameters.TryGetValue(enqueueParameter, out enqueue, defaultValue: false);
+            parameters.TryGetValue(priorityParameter, out priority, defaultValue: false);
 
             TextAsset file = Resources.Load<TextAsset>(FilePaths.storyFiles + filename);
 
@@ -37,13 +40,20 @@ namespace Commands
 
             Conversation newConversation = new Conversation(lines);
 
-            if (enqueue)
+            if (priority)
             {
-                DialogueSystem.Instance.conversationManager.Enqueue(newConversation);
+                DialogueSystem.Instance.conversationManager.EnqueuePriority(newConversation);
             }
             else
             {
-                DialogueSystem.Instance.conversationManager.StartConversation(newConversation);
+                if (enqueue)
+                {
+                    DialogueSystem.Instance.conversationManager.Enqueue(newConversation);
+                }
+                else
+                {
+                    DialogueSystem.Instance.conversationManager.StartConversation(newConversation);
+                }
             }
         }
     }
