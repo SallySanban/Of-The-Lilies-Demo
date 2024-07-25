@@ -34,9 +34,19 @@ public class SceneManager : MonoBehaviour
 
     Player newPlayer = null;
 
-    Dictionary<(string interactableName, string sceneName), string> sceneProgression = new Dictionary<(string, string), string>
+    Dictionary<(string sceneName, string background, string interactable), string> vnSceneProgression = new Dictionary<(string, string, string), string>
     {
-        { ("Seiji", "Scene 1"), "Scene 2" }
+        { ("Scene 1", "Main Shop", "Seiji"), "Scene 2" }
+    };
+
+    Dictionary<(string sceneName, string background, string interactable), List<(string name, string dialogue)>> speechBubbleProgression = new Dictionary<(string sceneName, string background, string interactable), List<(string name, string dialogue)>>
+    {
+        {("Scene 1", "First Floor Corridor", "Door"), new List<(string name, string dialogue)>
+            {
+                ("Ahlai", "The door is locked..."),
+                ("Ahlai", "TRIAL TRIAL TRIAL REALLY LONG LINE SO THAT IT SHOWS")
+            }
+        }
     };
 
     private void Awake()
@@ -62,7 +72,7 @@ public class SceneManager : MonoBehaviour
 
         //List<string> lines = FileManager.ReadTextAsset(startingScene);
 
-        //DialogueSystem.Instance.Say(lines);
+        //DialogueSystem.Instance.SayTextbox(lines);
 
         sceneName = "Scene 1";
         SetupScene("Ahlai's Bedroom", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
@@ -109,15 +119,35 @@ public class SceneManager : MonoBehaviour
 
     public void PlayNextScene(Interactable interactableClicked)
     {
-        string sceneToPlay = GetNextScene(interactableClicked, sceneName);
+        string currentBackground = backgroundManager.currentBackground.backgroundName;
+        string currentScene = sceneName;
 
-        TextAsset nextScene = Resources.Load<TextAsset>(FilePaths.storyFiles + sceneToPlay);
+        Debug.Log(currentBackground);
+        Debug.Log(currentScene);
 
-        List<string> lines = FileManager.ReadTextAsset(nextScene);
+        var key = (currentScene, currentBackground, interactableClicked.interactableName);
+        if (vnSceneProgression.TryGetValue(key, out string nextScene))
+        {
+            TextAsset sceneToPlay = Resources.Load<TextAsset>(FilePaths.storyFiles + nextScene);
 
-        ShowVN();
+            List<string> lines = FileManager.ReadTextAsset(sceneToPlay);
 
-        DialogueSystem.Instance.Say(lines);
+            ShowVN();
+
+            DialogueSystem.Instance.SayTextbox(lines);
+
+            return;
+        }
+
+        if (speechBubbleProgression.TryGetValue(key, out List<(string, string)> dialogue))
+        {
+            DialogueSystem.Instance.SaySpeechBubble(dialogue);
+
+            return;
+        }
+
+        Debug.LogError("Next scene was not found!");
+        return;
     }
 
     public Coroutine ShowVN()
@@ -177,17 +207,5 @@ public class SceneManager : MonoBehaviour
 
         showingVNCoroutine = null;
         hidingVNCoroutine = null;
-    }
-
-    private string GetNextScene(Interactable interactableClicked, string currentScene)
-    {
-        var key = (interactableClicked.interactableName, currentScene);
-
-        if (sceneProgression.TryGetValue(key, out string nextScene))
-        {
-            return nextScene;
-        }
-
-        return "";
     }
 }

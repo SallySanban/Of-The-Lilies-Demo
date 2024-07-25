@@ -70,7 +70,7 @@ namespace Testing
 
             //}
 
-            DialogueSystem.Instance.Say(lines);
+            DialogueSystem.Instance.SayTextbox(lines);
         }
     }
 }

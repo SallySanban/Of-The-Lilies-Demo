@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Dialogue;
 
 public class InteractableManager: MonoBehaviour
 {
@@ -25,7 +26,8 @@ public class InteractableManager: MonoBehaviour
 
     Dictionary<(string interactableName, string background), string> uninteractables = new Dictionary<(string, string), string>
     {
-        { ("Left Door", "Main Shop"), "Scene 1" }
+        { ("Left Door", "Main Shop"), "Scene 1" },
+        { ("Right Door", "Main Shop"), "Scene 2" }
     };
 
     private void Awake()
@@ -46,15 +48,22 @@ public class InteractableManager: MonoBehaviour
             switch (collidingInteractable.interactableType)
             {
                 case Interactable.InteractableType.BackgroundSwitcher:
-                    if (collidingInteractable.keysToPress.Any(key => Input.GetKey(key)) && !collidingInteractable.isLocked && collidingInteractable.isInteractable)
+                    if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive)
                     {
-                        sceneManager.SetupScene(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+                        if (!collidingInteractable.isLocked)
+                        {
+                            sceneManager.SetupScene(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+                        }
+                        else
+                        {
+                            sceneManager.PlayNextScene(collidingInteractable);
+                        }
                     }
 
                     break;
                 case Interactable.InteractableType.PixelSprite:
                 case Interactable.InteractableType.Object:
-                    if (collidingInteractable.keysToPress.Any(key => Input.GetKey(key)) && collidingInteractable.isInteractable)
+                    if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive)
                     {
                         sceneManager.PlayNextScene(collidingInteractable);
                     }
@@ -204,7 +213,7 @@ public class InteractableManager: MonoBehaviour
                 keys.Add(KeyCode.S);
                 break;
             case BackgroundConfigData.KeyToPress.Question:
-                keys.Add(KeyCode.F);
+                keys.Add(KeyCode.Z);
                 break;
         }
 

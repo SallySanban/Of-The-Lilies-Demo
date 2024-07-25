@@ -1,0 +1,227 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using static UnityEditor.Progress;
+
+namespace Dialogue
+{
+    public class SpeechBubbleManager
+    {
+        public DialogueSystem dialogueSystem => DialogueSystem.Instance;
+
+        private Coroutine process = null;
+        public bool isRunning => process != null;
+
+        private GameObject speechBubblePrefab = null;
+        GameObject currentSpeechBubble = null;
+        private TextMeshProUGUI speechBubbleText = null;
+        private RectTransform speechBubbleTransform = null;
+        private CanvasGroup speechBubbleCanvasGroup = null;
+
+        private TextArchitect textArchitect;
+        private TagManager tagManager;
+        private bool userNext = false;
+
+        private Vector2 padding = new Vector2(10f, 10f);
+        private float minWidth = 752.36f;
+        private float minHeight = 180.48f;
+        private float maxWidth = 1291.27f;
+        private float maxHeight = 335.60f;
+
+        protected Coroutine showingBubbleCoroutine, hidingBubbleCoroutine;
+
+        public bool isBubbleShowing => showingBubbleCoroutine != null;
+        public bool isBubbleHiding => hidingBubbleCoroutine != null;
+
+        private float fadeSpeed = 3f;
+
+        public SpeechBubbleManager(GameObject prefab)
+        {
+            if (prefab != null)
+            {
+                speechBubblePrefab = prefab;
+                dialogueSystem.onUserNext += OnUserNext;
+            }
+        }
+
+        private void OnUserNext()
+        {
+            if (dialogueSystem.speechBubbleActive)
+            {
+                userNext = true;
+            }
+        }
+
+        public Coroutine StartSpeechBubble(List<(string name, string dialogue)> lines)
+        {
+            StopSpeechBubble();
+
+            process = dialogueSystem.StartCoroutine(RunningSpeechBubble(lines));
+
+            return process;
+        }
+
+        public void StopSpeechBubble()
+        {
+            if (!isRunning)
+            {
+                return;
+            }
+
+            dialogueSystem.StopCoroutine(process);
+            process = null;
+        }
+
+        private IEnumerator RunningSpeechBubble(List<(string name, string dialogue)> lines)
+        {
+            for (int i = 0; i < lines.Count; i++)
+            {
+                var line = lines[i];
+                CreateSpeechBubble(line.name);
+                Show();
+                yield return TalkSpeechBubble(line.dialogue);
+                yield return WaitForUserInput();
+
+                if (i == lines.Count - 1)
+                {
+                    Hide();
+                }
+                else
+                {
+                    Hide(true);
+                }
+            }
+
+            dialogueSystem.speechBubbleActive = false;
+            process = null;
+        }
+
+        private void CreateSpeechBubble(string characterName)
+        {
+            Transform sprite = GameObject.Find(characterName).GetComponentInChildren<Transform>();
+
+            Vector3 spriteOffset = new Vector3(-1.66f, 1.09f, 0f);
+            Vector3 speechBubblePosition = sprite.position + spriteOffset;
+
+            currentSpeechBubble = Object.Instantiate(speechBubblePrefab, speechBubblePosition, Quaternion.identity, sprite);
+            speechBubbleText = currentSpeechBubble.GetComponentInChildren<TextMeshProUGUI>();
+            speechBubbleTransform = currentSpeechBubble.GetComponent<RectTransform>();
+            speechBubbleCanvasGroup = currentSpeechBubble.GetComponent<CanvasGroup>();
+
+            textArchitect = new TextArchitect(speechBubbleText);
+            tagManager = new TagManager();
+
+            speechBubbleCanvasGroup.alpha = 0f;
+        }
+
+        private IEnumerator TalkSpeechBubble(string dialogue)
+        {
+            Debug.Log(dialogue);
+
+            speechBubbleText.text = dialogue;
+
+            Vector2 preferredSize = new Vector2(speechBubbleText.preferredWidth, speechBubbleText.preferredHeight);
+
+            float newWidth = Mathf.Clamp(preferredSize.x + padding.x, minWidth, maxWidth);
+            float newHeight = Mathf.Clamp(preferredSize.y + padding.y, minHeight, maxHeight);
+
+            if (preferredSize.x + padding.x > maxWidth)
+            {
+                newHeight = Mathf.Clamp(preferredSize.y + padding.y + (preferredSize.x + padding.x - maxWidth) / maxWidth * preferredSize.y, minHeight, maxHeight);
+            }
+
+            speechBubbleTransform.sizeDelta = new Vector2(newWidth, newHeight);
+
+            speechBubbleText.text = "";
+
+            dialogue = tagManager.PutTagsIn(dialogue);
+
+            textArchitect.Build(dialogue);
+
+            while (textArchitect.isBuilding)
+            {
+                if (userNext)
+                {
+                    if (textArchitect.isBuilding)
+                    {
+                        textArchitect.ForceComplete();
+                    }
+
+                    userNext = false;
+                }
+
+                yield return null;
+            }
+        }
+
+        public IEnumerator WaitForUserInput()
+        {
+            while (!userNext)
+            {
+                yield return null;
+            }
+
+            userNext = false;
+        }
+
+        private Coroutine Show(bool immediate = false)
+        {
+            if (isBubbleShowing) return showingBubbleCoroutine;
+
+            if (isBubbleHiding)
+            {
+                dialogueSystem.StopCoroutine(hidingBubbleCoroutine);
+            }
+
+            showingBubbleCoroutine = dialogueSystem.StartCoroutine(ShowingOrHiding(true, immediate));
+
+            return showingBubbleCoroutine;
+        }
+
+        private Coroutine Hide(bool immediate = false)
+        {
+            if (isBubbleHiding) return hidingBubbleCoroutine;
+
+            if (isBubbleShowing)
+            {
+                dialogueSystem.StopCoroutine(showingBubbleCoroutine);
+            }
+
+            hidingBubbleCoroutine = dialogueSystem.StartCoroutine(ShowingOrHiding(false, immediate));
+
+            return hidingBubbleCoroutine;
+        }
+
+        private IEnumerator ShowingOrHiding(bool show, bool immediate)
+        {
+            float targetAlpha = show ? 1f : 0f;
+
+            CanvasGroup self = speechBubbleCanvasGroup;
+
+            if (immediate)
+            {
+                self.alpha = targetAlpha;
+            }
+            else
+            {
+                while (self.alpha != targetAlpha)
+                {
+                    self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
+
+                    if (self.alpha == 0f)
+                    {
+                        Object.Destroy(self.gameObject);
+                        break;
+                    }
+
+                    yield return null;
+                }
+            }
+
+            showingBubbleCoroutine = null;
+            hidingBubbleCoroutine = null;
+        }
+    }
+}

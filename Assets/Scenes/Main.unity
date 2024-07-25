@@ -1922,7 +1922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2970c8946d95614e99289d3e9fdd4c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newPosition: {x: 0, y: -0.14}
 --- !u!114 &922456485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2656,6 +2655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _config: {fileID: 11400000, guid: 810d52345de8fc847ba795aeb4319e74, type: 2}
+  _speechBubblePrefab: {fileID: 6723955605046015714, guid: 486a3b4956f803f4380fdc6166dfd575, type: 3}
   dialogueContainer:
     root: {fileID: 116692711}
     nameContainer:
@@ -2664,6 +2664,7 @@ MonoBehaviour:
       nameText: {fileID: 498846666}
     textboxBorder: {fileID: 1545900291}
     dialogueText: {fileID: 1330562611}
+  speechBubbleActive: 0
 --- !u!1 &1227666928
 GameObject:
   m_ObjectHideFlags: 0

@@ -52,7 +52,7 @@ namespace Dialogue
 
         public void NextLine(InputAction.CallbackContext context)
         {
-            if (SceneManager.Instance.inVNMode)
+            if (SceneManager.Instance.inVNMode || DialogueSystem.Instance.speechBubbleActive)
             {
                 DialogueSystem.Instance.OnUserNext();
             }

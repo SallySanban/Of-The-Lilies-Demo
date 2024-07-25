@@ -42,7 +42,7 @@ namespace Dialogue
 
         private void OnUserNext()
         {
-            if (!InputPanel.Instance.isWaitingForUserInput && !ChoicePanel.Instance.isWaitingForUserChoice)
+            if (SceneManager.Instance.inVNMode && !InputPanel.Instance.isWaitingForUserInput && !ChoicePanel.Instance.isWaitingForUserChoice)
             {
                 userNext = true;
             }

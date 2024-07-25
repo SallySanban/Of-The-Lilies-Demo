@@ -11,9 +11,16 @@ namespace Dialogue
         [SerializeField] private DialogueSystemConfig _config;
         public DialogueSystemConfig config => _config;
 
+        [SerializeField] private GameObject _speechBubblePrefab;
+        public GameObject speechBubblePrefab => _speechBubblePrefab;
+
         public DialogueContainer dialogueContainer = new DialogueContainer();
         public ConversationManager conversationManager { get; private set; }
+        public SpeechBubbleManager speechBubbleManager { get; private set; }
+
         private TextArchitect textArchitect;
+
+        public bool speechBubbleActive = false;
 
         public static DialogueSystem Instance { get; private set; }
 
@@ -49,6 +56,7 @@ namespace Dialogue
 
             textArchitect = new TextArchitect(dialogueContainer.dialogueText);
             conversationManager = new ConversationManager(textArchitect);
+            speechBubbleManager = new SpeechBubbleManager(speechBubblePrefab);
         }
 
         public void OnUserNext()
@@ -75,16 +83,18 @@ namespace Dialogue
 
         public void HideSpeakerName() => dialogueContainer.nameContainer.Hide();
 
-        public Coroutine Say(List<string> lines)
+        public Coroutine SayTextbox(List<string> lines)
         {
             Conversation conversation = new Conversation(lines);
 
             return conversationManager.StartConversation(conversation);
         }
 
-        public Coroutine Say(Conversation conversation)
+        public Coroutine SaySpeechBubble(List<(string name, string dialogue)> lines)
         {
-            return conversationManager.StartConversation(conversation);
+            speechBubbleActive = true;
+
+            return speechBubbleManager.StartSpeechBubble(lines);
         }
 
         public void Show()

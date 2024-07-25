@@ -1,13 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
+using Dialogue;
 
 public class SpriteManager : MonoBehaviour
 {
-    [SerializeField] public Vector2 newPosition; //FOR TESTING ONLY
-
     public static SpriteManager Instance { get; private set; }
 
     public SceneManager sceneManager => SceneManager.Instance;
@@ -34,7 +31,7 @@ public class SpriteManager : MonoBehaviour
 
     private void Update()
     {
-        if (!sceneManager.inVNMode && currentPlayer != null)
+        if (!DialogueSystem.Instance.speechBubbleActive && !sceneManager.inVNMode && currentPlayer != null)
         {
             currentPlayer.MoveSprite();
         }
@@ -61,6 +58,7 @@ public class SpriteManager : MonoBehaviour
         GameObject spritePrefab = Resources.Load<GameObject>(prefabPath);
 
         PixelSprite sprite = new PixelSprite(spritePrefab, spritePosition, spriteDirection, backgroundSpriteIsOn.transform.Find(spriteContainer));
+        sprite.root.name = spriteName;
 
         spritesInScene.Add(sprite);
 
@@ -73,6 +71,7 @@ public class SpriteManager : MonoBehaviour
         GameObject spritePrefab = Resources.Load<GameObject>(prefabPath);
 
         Player playerSprite = new Player(spritePrefab, playerPosition, playerDirection, backgroundSpriteIsOn.transform.Find(playerContainer));
+        playerSprite.root.name = spriteName;
 
         currentPlayer = playerSprite;
 

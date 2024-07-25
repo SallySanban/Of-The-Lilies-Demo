@@ -21,7 +21,7 @@ namespace Testing
                 "\"This is line 3 from the original conversation.\""
             };
 
-            yield return DialogueSystem.Instance.Say(lines);
+            yield return DialogueSystem.Instance.SayTextbox(lines);
 
             DialogueSystem.Instance.Hide();
         }

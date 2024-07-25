@@ -122,7 +122,6 @@ public class ChoicePanel : MonoBehaviour
 
     private void AcceptChoice(int index)
     {
-        Debug.Log("CLICKED BUTTON");
         if (index < 0 || index > lastChoicePicked.choices.Length - 1) return;
 
         lastChoicePicked.answerIndex = index;

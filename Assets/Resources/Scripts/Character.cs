@@ -53,7 +53,7 @@ namespace Characters
             dialogueSystem.ShowSpeakerName(displayName);
             dialogueSystem.ApplySpeakerDataToDialogueContainer(name);
 
-            return dialogueSystem.Say(dialogue);
+            return dialogueSystem.SayTextbox(dialogue);
         }
 
         public virtual Coroutine Show()

@@ -45,11 +45,11 @@ public class PixelSprite
 
         if (direction == BackgroundConfigData.PlayerDirection.left)
         {
-            root.transform.eulerAngles = new Vector3(0, 180, 0);
+            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 180, 0);
         }
         else if (direction == BackgroundConfigData.PlayerDirection.right)
         {
-            root.transform.eulerAngles = new Vector3(0, 0, 0);
+            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 
