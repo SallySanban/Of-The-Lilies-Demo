@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Dialogue;
+using Cinemachine;
 using UnityEngine.UIElements;
-using UnityEngine.SceneManagement;
 
 public class SceneManager : MonoBehaviour
 {
+    [SerializeField] CinemachineVirtualCamera virtualCamera;
+
+    private CinemachineConfiner confiner;
+
     private const string dialogueFile = "Scene 1";
     private const string playerSpriteName = "Ahlai";
     public static SceneManager Instance { get; private set; }
@@ -22,10 +26,11 @@ public class SceneManager : MonoBehaviour
     public RectTransform pixelSceneContainer => _pixelScene;
 
     protected Coroutine showingVNCoroutine, hidingVNCoroutine;
-    protected Coroutine settingSceneCoroutine;
+    protected Coroutine settingBackgroundCoroutine, settingSceneCoroutine;
 
     public bool isVNShowing => showingVNCoroutine != null;
     public bool isVNHiding => hidingVNCoroutine != null;
+    public bool isSettingBackground => settingBackgroundCoroutine != null;
     public bool isSettingScene => settingSceneCoroutine != null;
 
     public bool inVNMode => vnScene.alpha == 1f;
@@ -66,6 +71,8 @@ public class SceneManager : MonoBehaviour
 
             vnScene.gameObject.SetActive(true);
             vnScene.alpha = 1f;
+
+            confiner = virtualCamera.GetComponent<CinemachineConfiner>();
         }
         else
         {
@@ -81,20 +88,20 @@ public class SceneManager : MonoBehaviour
 
         //DialogueSystem.Instance.SayTextbox(lines);
 
-        sceneName = "Scene 1";
-        SetupScene("Ahlai's Bedroom", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
+        sceneName = "Scene 2";
+        SetupBackground("Main Shop", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
     }
 
-    public Coroutine SetupScene(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)
+    public Coroutine SetupBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)
     {
-        if (isSettingScene) return settingSceneCoroutine;
+        if (isSettingBackground) return settingBackgroundCoroutine;
 
-        settingSceneCoroutine = StartCoroutine(SwitchScene(background, playerPosition, playerDirection, endVN));
+        settingBackgroundCoroutine = StartCoroutine(SwitchBackground(background, playerPosition, playerDirection, endVN));
 
-        return settingSceneCoroutine;
+        return settingBackgroundCoroutine;
     }
 
-    private IEnumerator SwitchScene(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN)
+    private IEnumerator SwitchBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN)
     {
         if (backgroundManager.currentBackground != null)
         {
@@ -112,7 +119,7 @@ public class SceneManager : MonoBehaviour
 
         newBackground.Show();
 
-        if(inVNMode && endVN) //change background and hide VN
+        if (inVNMode && endVN) //change background and hide VN
         {
             HideVN();
             newPlayer.Show();
@@ -121,6 +128,34 @@ public class SceneManager : MonoBehaviour
         {
             newPlayer.Show();
         }
+
+        virtualCamera.OnTargetObjectWarped(virtualCamera.Follow, spriteManager.currentPlayer.root.transform.position - virtualCamera.transform.position);
+
+        virtualCamera.Follow = spriteManager.currentPlayer.root.transform;
+        confiner.m_BoundingShape2D = backgroundManager.currentBackground.root.GetComponent<PolygonCollider2D>();
+
+        settingBackgroundCoroutine = null;
+    }
+
+    public Coroutine SetupScene()
+    {
+        if (isSettingScene) return settingSceneCoroutine;
+
+        settingSceneCoroutine = StartCoroutine(SwitchScene());
+
+        return settingSceneCoroutine;
+    }
+
+    private IEnumerator SwitchScene()
+    {
+        if (backgroundManager.currentBackground != null)
+        {
+            spriteManager.RemoveAllSprites();
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        interactableManager.SetupInteractablesInScene(backgroundManager.currentBackground);
 
         settingSceneCoroutine = null;
     }
@@ -167,13 +202,6 @@ public class SceneManager : MonoBehaviour
             StopCoroutine(hidingVNCoroutine);
         }
 
-        //newPlayer.Hide();
-
-        //foreach(PixelSprite sprite in spriteManager.spritesInScene)
-        //{
-        //    sprite.Hide();
-        //}
-
         showingVNCoroutine = StartCoroutine(ShowOrHideVNScene(true));
 
         return showingVNCoroutine;
@@ -188,13 +216,7 @@ public class SceneManager : MonoBehaviour
             StopCoroutine(showingVNCoroutine);
         }
 
-        //if()
         newPlayer.Show();
-
-        //foreach (PixelSprite sprite in spriteManager.spritesInScene)
-        //{
-        //    sprite.Show();
-        //}
 
         hidingVNCoroutine = StartCoroutine(ShowOrHideVNScene(false));
 

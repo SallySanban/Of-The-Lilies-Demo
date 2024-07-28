@@ -12,7 +12,7 @@ HideCharacter(Seiji Myo), HideTextbox(), [input]ShowCG("Sir Aciano")
 
 Myo Aciano "'Til I see you again, dear."
 
-[wait]HideCG()
+[wait]HideCG(), HideTextbox()
 
 enter Seiji [Pout] "<playerName>. I hope you're being careful about the people you spend time with."
 

@@ -97,6 +97,18 @@ namespace Dialogue
             return speechBubbleManager.StartSpeechBubble(lines);
         }
 
+        [ContextMenu("Show Speech Bubble Position")]
+        public void ShowPosition()
+        {
+            Debug.Log("SPEECH BUBBLE POSITION: " + speechBubbleManager.GetPosition());
+        }
+
+        [ContextMenu("Show Speech Bubble Size")]
+        public void ShowSize()
+        {
+            Debug.Log("SPEECH BUBBLE SIZE: " + speechBubbleManager.GetSize());
+        }
+
         public void Show()
         {
             dialogueContainer.root.SetActive(true);

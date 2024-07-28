@@ -18,53 +18,108 @@ MonoBehaviour:
     - interactableName: Door
       backgroundPrefab: {fileID: 7165131873778756440, guid: 787f0ea12b4ee8c4a9ee1dd6404fdce1, type: 3}
       keyToPress: 2
-      playerPositionInNextBackground: {x: -4.56, y: -0.14}
+      playerPositionInNextBackground: {x: -4.56, y: 0.44}
       playerDirectionInNextBackground: 1
   - backgroundName: Bedroom Corridor
     map:
     - interactableName: Door
       backgroundPrefab: {fileID: 7165131873778756440, guid: 8043a4c5800c9b14fb344aea6862ef7f, type: 3}
       keyToPress: 2
-      playerPositionInNextBackground: {x: 4.89, y: -0.14}
+      playerPositionInNextBackground: {x: 4.89, y: 0.44}
       playerDirectionInNextBackground: 0
     - interactableName: Stairs
       backgroundPrefab: {fileID: 7165131873778756440, guid: 10760e26840b30e45a29ee057cf386de, type: 3}
       keyToPress: 3
-      playerPositionInNextBackground: {x: 5.69, y: -0.14}
+      playerPositionInNextBackground: {x: 5.69, y: 0.44}
       playerDirectionInNextBackground: 0
   - backgroundName: First Floor Corridor
     map:
     - interactableName: Door
       backgroundPrefab: {fileID: 7165131873778756440, guid: 0cec10e0c7110524d9d3d4e7e78a7923, type: 3}
       keyToPress: 2
-      playerPositionInNextBackground: {x: -6.12, y: -0.14}
+      playerPositionInNextBackground: {x: -6.12, y: 0.44}
       playerDirectionInNextBackground: 1
     - interactableName: Stairs
       backgroundPrefab: {fileID: 7165131873778756440, guid: 787f0ea12b4ee8c4a9ee1dd6404fdce1, type: 3}
       keyToPress: 2
-      playerPositionInNextBackground: {x: 1.27, y: -0.14}
+      playerPositionInNextBackground: {x: 1.27, y: 0.44}
       playerDirectionInNextBackground: 0
     - interactableName: Left Door
       backgroundPrefab: {fileID: 7165131873778756440, guid: c9690720742ecba4ba2050acd995c9a9, type: 3}
       keyToPress: 1
-      playerPositionInNextBackground: {x: 5.9, y: -0.14}
+      playerPositionInNextBackground: {x: 5.9, y: 0.44}
       playerDirectionInNextBackground: 0
   - backgroundName: Back Room
     map:
     - interactableName: Left Door
       backgroundPrefab: {fileID: 7165131873778756440, guid: 10760e26840b30e45a29ee057cf386de, type: 3}
       keyToPress: 1
-      playerPositionInNextBackground: {x: -2.82, y: -0.14}
+      playerPositionInNextBackground: {x: -2.82, y: 0.44}
       playerDirectionInNextBackground: 0
   - backgroundName: Main Shop
     map:
     - interactableName: Left Door
-      backgroundPrefab: {fileID: 0}
+      backgroundPrefab: {fileID: 8713910913805462141, guid: 3e3b11748db26d64d894c5231bc18602, type: 3}
       keyToPress: 1
-      playerPositionInNextBackground: {x: 0, y: -0.14}
+      playerPositionInNextBackground: {x: -1.93, y: 0.44}
       playerDirectionInNextBackground: 1
     - interactableName: Right Door
       backgroundPrefab: {fileID: 7165131873778756440, guid: 10760e26840b30e45a29ee057cf386de, type: 3}
       keyToPress: 0
-      playerPositionInNextBackground: {x: -5.9, y: -0.14}
+      playerPositionInNextBackground: {x: -5.9, y: 0.44}
+      playerDirectionInNextBackground: 1
+  - backgroundName: Kuchai Town
+    map:
+    - interactableName: Sabina Door
+      backgroundPrefab: {fileID: 7165131873778756440, guid: c9690720742ecba4ba2050acd995c9a9, type: 3}
+      keyToPress: 2
+      playerPositionInNextBackground: {x: -2.82, y: 0.44}
+      playerDirectionInNextBackground: 1
+    - interactableName: Tavern Door
+      backgroundPrefab: {fileID: 7165131873778756440, guid: bef1a8d4dac0c9e41a7eaedf9616a9d6, type: 3}
+      keyToPress: 2
+      playerPositionInNextBackground: {x: -2.82, y: 0.44}
+      playerDirectionInNextBackground: 1
+    - interactableName: Ingredients Door
+      backgroundPrefab: {fileID: 7165131873778756440, guid: 110d9be757a6fde4d8bd6f9033295883, type: 3}
+      keyToPress: 2
+      playerPositionInNextBackground: {x: -2.82, y: 0.44}
+      playerDirectionInNextBackground: 1
+    - interactableName: Quan Door
+      backgroundPrefab: {fileID: 7165131873778756440, guid: 71645619080a4f049936609a5745c374, type: 3}
+      keyToPress: 2
+      playerPositionInNextBackground: {x: -2.82, y: 0.44}
+      playerDirectionInNextBackground: 1
+    - interactableName: Left Side
+      backgroundPrefab: {fileID: 2537248012789194403, guid: 0e1373969651dfc43b742c7670d05035, type: 3}
+      keyToPress: 1
+      playerPositionInNextBackground: {x: -2.82, y: -0.14}
+      playerDirectionInNextBackground: 1
+  - backgroundName: Tavern
+    map:
+    - interactableName: Left Door
+      backgroundPrefab: {fileID: 8713910913805462141, guid: 3e3b11748db26d64d894c5231bc18602, type: 3}
+      keyToPress: 1
+      playerPositionInNextBackground: {x: 10.52, y: 0.44}
+      playerDirectionInNextBackground: 1
+  - backgroundName: Ingredients Shop
+    map:
+    - interactableName: Left Door
+      backgroundPrefab: {fileID: 8713910913805462141, guid: 3e3b11748db26d64d894c5231bc18602, type: 3}
+      keyToPress: 1
+      playerPositionInNextBackground: {x: 24.74, y: 0.44}
+      playerDirectionInNextBackground: 1
+  - backgroundName: Mr. Quan's Shop
+    map:
+    - interactableName: Left Door
+      backgroundPrefab: {fileID: 8713910913805462141, guid: 3e3b11748db26d64d894c5231bc18602, type: 3}
+      keyToPress: 1
+      playerPositionInNextBackground: {x: 37.75, y: 0.44}
+      playerDirectionInNextBackground: 0
+  - backgroundName: Kadlagan Forest
+    map:
+    - interactableName: Left Side
+      backgroundPrefab: {fileID: 8713910913805462141, guid: 3e3b11748db26d64d894c5231bc18602, type: 3}
+      keyToPress: 1
+      playerPositionInNextBackground: {x: -2.82, y: -0.14}
       playerDirectionInNextBackground: 1

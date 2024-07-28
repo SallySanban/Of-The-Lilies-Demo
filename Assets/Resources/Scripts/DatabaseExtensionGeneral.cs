@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using GraphicPanels;
+using UnityEngine.UIElements;
 
 namespace Commands
 {
@@ -19,7 +20,7 @@ namespace Commands
             database.AddCommand("Wait", new Func<string, IEnumerator>(Wait));
             database.AddCommand("SavePronoun", new Action<string>(SavePronoun));
             database.AddCommand("SetupPixelScene", new Action<string[]>(SetupScene));
-            database.AddCommand("HideVN", new Action(() => { SceneManager.Instance.HideVN(); }));
+            database.AddCommand("HideVN", new Action<string>(ChangeScene));
         }
 
         private static void SetupScene(string[] data)
@@ -48,7 +49,19 @@ namespace Commands
                 firstPlayerDirection = BackgroundConfigData.PlayerDirection.left;
             }
 
-            SceneManager.Instance.SetupScene(firstBackground, position, firstPlayerDirection, endVN);
+            SceneManager.Instance.SetupBackground(firstBackground, position, firstPlayerDirection, endVN);
+        }
+
+        private static void ChangeScene(string data)
+        {
+            SceneManager.Instance.HideVN();
+
+            if(data != "")
+            {
+                SceneManager.Instance.sceneName = data;
+            }
+
+            SceneManager.Instance.SetupScene();
         }
 
         private static void SavePronoun(string data)

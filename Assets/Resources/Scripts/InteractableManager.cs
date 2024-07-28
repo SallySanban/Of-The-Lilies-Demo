@@ -54,7 +54,7 @@ public class InteractableManager: MonoBehaviour
 
                         if (!collidingInteractable.isLocked)
                         {
-                            sceneManager.SetupScene(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+                            sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
                         }
                         else
                         {
@@ -99,6 +99,12 @@ public class InteractableManager: MonoBehaviour
 
         interactablesInScene.AddRange(background.root.GetComponentsInChildren<Interactable>());
 
+        foreach (Interactable interactable in interactablesInScene) //unlocks all to reset
+        {
+            interactable.isInteractable = true;
+            interactable.isLocked = false;
+        }
+
         for (int i = interactablesInScene.Count - 1; i >= 0; i--)
         {
             Interactable interactable = interactablesInScene[i];
@@ -112,6 +118,7 @@ public class InteractableManager: MonoBehaviour
             {
                 if (lockedInteractableScene == sceneManager.sceneName)
                 {
+                    Debug.Log("LOCKED " + interactable.interactableName + " ON " + sceneManager.sceneName);
                     interactable.isLocked = true;
                 }
             }
@@ -122,6 +129,7 @@ public class InteractableManager: MonoBehaviour
             {
                 if (uninteractableScene == sceneManager.sceneName)
                 {
+                    Debug.Log("CANNOT INTERACT WITH " + interactable.interactableName + " ON " + sceneManager.sceneName);
                     interactable.isInteractable = false;
                     interactablesInScene.RemoveAt(i);
                 }
@@ -188,6 +196,15 @@ public class InteractableManager: MonoBehaviour
             if (background.backgroundName == "Main Shop")
             {
                 PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.right, background.root);
+                Seiji.root.name = "Seiji";
+                Seiji.Show();
+            }
+        }
+        else if(sceneManager.sceneName == "Scene 2")
+        {
+            if(background.backgroundName == "Kuchai Town")
+            {
+                PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(0.61f, 0.69f), BackgroundConfigData.PlayerDirection.right, background.root);
                 Seiji.root.name = "Seiji";
                 Seiji.Show();
             }
