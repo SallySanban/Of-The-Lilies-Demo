@@ -18,6 +18,13 @@ public class Player : PixelSprite
 
     public void MoveSprite()
     {
+        if(move == Vector3.zero)
+        {
+            rootAnimator.SetBool("Walk", false);
+
+            return;
+        }
+
         move.y = 0;
         move.z = 0;
 
@@ -35,5 +42,6 @@ public class Player : PixelSprite
         }
 
         root.transform.position += move * speed * Time.deltaTime;
+        rootAnimator.SetBool("Walk", true);
     }
 }

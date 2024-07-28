@@ -115,6 +115,7 @@ public class SceneManager : MonoBehaviour
         if(inVNMode && endVN) //change background and hide VN
         {
             HideVN();
+            newPlayer.Show();
         }
         else if(!inVNMode)  //only change background, VN already hidden
         {
@@ -166,12 +167,12 @@ public class SceneManager : MonoBehaviour
             StopCoroutine(hidingVNCoroutine);
         }
 
-        newPlayer.Hide();
+        //newPlayer.Hide();
 
-        foreach(PixelSprite sprite in spriteManager.spritesInScene)
-        {
-            sprite.Hide();
-        }
+        //foreach(PixelSprite sprite in spriteManager.spritesInScene)
+        //{
+        //    sprite.Hide();
+        //}
 
         showingVNCoroutine = StartCoroutine(ShowOrHideVNScene(true));
 
@@ -187,12 +188,13 @@ public class SceneManager : MonoBehaviour
             StopCoroutine(showingVNCoroutine);
         }
 
+        //if()
         newPlayer.Show();
 
-        foreach (PixelSprite sprite in spriteManager.spritesInScene)
-        {
-            sprite.Show();
-        }
+        //foreach (PixelSprite sprite in spriteManager.spritesInScene)
+        //{
+        //    sprite.Show();
+        //}
 
         hidingVNCoroutine = StartCoroutine(ShowOrHideVNScene(false));
 

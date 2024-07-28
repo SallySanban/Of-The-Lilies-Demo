@@ -11,6 +11,7 @@ public class PixelSprite
     public Transform root = null;
 
     public SpriteRenderer rootSpriteRenderer;
+    public Animator rootAnimator;
 
     protected Coroutine showingSpriteCoroutine, hidingSpriteCoroutine;
 
@@ -30,6 +31,7 @@ public class PixelSprite
             root = ob.GetComponent<Transform>();
 
             rootSpriteRenderer = root.GetComponentInChildren<SpriteRenderer>();
+            rootAnimator = rootSpriteRenderer.GetComponent<Animator>();
 
             Color spriteColor = rootSpriteRenderer.color;
             spriteColor.a = 0f;

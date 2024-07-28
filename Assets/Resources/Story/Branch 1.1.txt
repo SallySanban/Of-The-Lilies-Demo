@@ -14,17 +14,17 @@ Myo Aciano "'Til I see you again, dear."
 
 [wait]HideCG()
 
-enter Seiji [Pout] "Ahlai. I hope you're being careful about the people you spend time with."
+enter Seiji [Pout] "<playerName>. I hope you're being careful about the people you spend time with."
 
 "Sir Aciano has all this wealth and great accomplishments to go for, but... are you not bothered by how many people are put off by him? I hear he's like this with everyone."
 
 Ahlai as You "Oh? Seiji... Don't tell me, are you jealous of the great governor?"
 
-Seiji [Blush] "Of course not, Ahlai! I'm only  looking out for you. We have been together for almost 10 years now, so it's only natural that I want to do that, to look out for you."
+Seiji [Blush] "Of course not, <playerName>! I'm only  looking out for you. We have been together for almost 10 years now, so it's only natural that I want to do that, to look out for you."
 
 Ahlai as You "And I'm grateful for that, Seiji."
 
-Seiji "There isn't anything I wouldn't do, Ahlai. It's <i>you</i>."
+Seiji "There isn't anything I wouldn't do, <playerName>. It's <i>you</i>."
 
 Seiji [Pout] "And if you need me to be with you tomorrow when you meet Sir Aciano, please just let me know. Whatever will be okay for you."
 
