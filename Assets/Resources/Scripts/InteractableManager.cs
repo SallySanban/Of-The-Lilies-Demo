@@ -50,6 +50,8 @@ public class InteractableManager: MonoBehaviour
                 case Interactable.InteractableType.BackgroundSwitcher:
                     if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive)
                     {
+                        collidingInteractable.icon.gameObject.SetActive(false);
+
                         if (!collidingInteractable.isLocked)
                         {
                             sceneManager.SetupScene(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
@@ -65,6 +67,8 @@ public class InteractableManager: MonoBehaviour
                 case Interactable.InteractableType.Object:
                     if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive)
                     {
+                        collidingInteractable.icon.gameObject.SetActive(false);
+
                         sceneManager.PlayNextScene(collidingInteractable);
                     }
 
