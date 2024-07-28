@@ -98,11 +98,21 @@ namespace Dialogue
             process = null;
         }
 
+        public Vector3 GetPosition()
+        {
+            return currentSpeechBubble.transform.position;
+        }
+
+        public Vector3 GetSize()
+        {
+            return speechBubbleTransform.sizeDelta;
+        }
+
         private void CreateSpeechBubble(string characterName)
         {
             Transform sprite = GameObject.Find(characterName).GetComponentInChildren<Transform>();
 
-            Vector3 spriteOffset = new Vector3(-1.66f, 1.09f, 0f);
+            Vector3 spriteOffset = new Vector3(-0.99f, 1.39f, 0f);
             Vector3 speechBubblePosition = sprite.position + spriteOffset;
 
             currentSpeechBubble = Object.Instantiate(speechBubblePrefab, speechBubblePosition, Quaternion.identity, sprite);
@@ -203,6 +213,7 @@ namespace Dialogue
             if (immediate)
             {
                 self.alpha = targetAlpha;
+                Object.Destroy(self.gameObject);
             }
             else
             {
