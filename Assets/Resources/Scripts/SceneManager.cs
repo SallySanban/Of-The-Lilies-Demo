@@ -88,8 +88,9 @@ public class SceneManager : MonoBehaviour
 
         DialogueSystem.Instance.SayTextbox(lines);
 
-        //sceneName = "Scene 2";
-        //SetupBackground("Main Shop", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
+        //sceneName = "Scene 1";
+        //SetupBackground("First Floor Corridor", new Vector2(0.01f, 0.44f), BackgroundConfigData.PlayerDirection.right, true);
+        //-4.88f, -0.14
     }
 
     public Coroutine SetupBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)

@@ -58,7 +58,9 @@ public class InteractableManager: MonoBehaviour
                         }
                         else
                         {
-                            sceneManager.PlayNextScene(collidingInteractable);
+                            spriteManager.currentPlayer.MoveToInteract(collidingInteractable.icon.transform.position);
+
+                            //sceneManager.PlayNextScene(collidingInteractable);
                         }
                     }
 
@@ -69,7 +71,9 @@ public class InteractableManager: MonoBehaviour
                     {
                         collidingInteractable.icon.gameObject.SetActive(false);
 
-                        sceneManager.PlayNextScene(collidingInteractable);
+                        spriteManager.currentPlayer.MoveToInteract(collidingInteractable.icon.transform.position);
+
+                        //sceneManager.PlayNextScene(collidingInteractable);
                     }
 
                     break;

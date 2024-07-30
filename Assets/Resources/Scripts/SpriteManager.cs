@@ -34,6 +34,7 @@ public class SpriteManager : MonoBehaviour
         if (!DialogueSystem.Instance.speechBubbleActive && !sceneManager.inVNMode && currentPlayer != null)
         {
             currentPlayer.MoveSprite();
+            currentPlayer.AnimatePlayer();
         }
     }
 

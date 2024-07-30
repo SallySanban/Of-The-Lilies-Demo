@@ -16,15 +16,53 @@ public class Player : PixelSprite
 
     }
 
-    public void MoveSprite()
+    public void MoveToInteract(Vector3 interactablePosition)
     {
-        if(move == Vector3.zero)
+        Debug.Log(interactablePosition);
+
+        //move.x = 1;
+
+        Vector2 currentPosition = root.transform.position;
+        Debug.Log("CURRENT POSITION: " + currentPosition);
+
+        Vector2 positionToGo = interactablePosition + new Vector3(4f,currentPosition.y);//new Vector3(2.79f, 0f);
+        Debug.Log("POSITION TO GO: " + positionToGo);
+
+        spriteManager.StartCoroutine(MovePlayerToInteract(currentPosition, positionToGo));
+    }
+
+    private IEnumerator MovePlayerToInteract(Vector3 currentPosition, Vector3 positionToGo)
+    {
+        while (root.transform.position.x != positionToGo.x)
+        {
+            root.transform.position = Vector3.MoveTowards(root.transform.position, new Vector3(positionToGo.x, root.transform.position.y), speed * Time.deltaTime);
+
+            if (Vector2.Distance(root.transform.position, positionToGo) <= 0.0001f)
+            {
+                root.transform.position = positionToGo;
+
+                break;
+            }
+
+            yield return null;
+        }
+    }
+
+    public void AnimatePlayer()
+    {
+        if (move == Vector3.zero)
         {
             rootAnimator.SetBool("Walk", false);
-
-            return;
         }
+        else
+        {
+            rootAnimator.SetBool("Walk", true);
+        }
+    }
 
+    public void MoveSprite()
+    {
+        return;
         move.y = 0;
         move.z = 0;
 
@@ -42,6 +80,5 @@ public class Player : PixelSprite
         }
 
         root.transform.position += move * speed * Time.deltaTime;
-        rootAnimator.SetBool("Walk", true);
     }
 }

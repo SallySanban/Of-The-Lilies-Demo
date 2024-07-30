@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.EventSystems;
 
-public class InputPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class InputPanel : MonoBehaviour
 {
     public static InputPanel Instance { get; private set; }
 
@@ -100,23 +99,5 @@ public class InputPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     private bool HasValidInput()
     {
         return pronouns != string.Empty && inputField.text != string.Empty;
-    }
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        if (eventData.pointerEnter == acceptButton.gameObject)
-        {
-            Debug.Log("Hovering over Accept Button");
-            acceptButton.GetComponentInChildren<TextMeshProUGUI>().text = "Begin your story";
-        }
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        if (eventData.pointerEnter == acceptButton.gameObject)
-        {
-            Debug.Log("Stopped hovering over Accept Button");
-            acceptButton.GetComponentInChildren<TextMeshProUGUI>().text = "This is who you are.";
-        }
     }
 }
