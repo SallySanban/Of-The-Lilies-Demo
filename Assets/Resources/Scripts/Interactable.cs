@@ -31,15 +31,6 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && isInteractable)
-        {
-            icon.gameObject.SetActive(true);
-            interactableManager.CollidingWithPlayer(true, this);
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
         if (collision.CompareTag("Player") && isInteractable && !DialogueSystem.Instance.speechBubbleActive)
         {
             icon.gameObject.SetActive(true);

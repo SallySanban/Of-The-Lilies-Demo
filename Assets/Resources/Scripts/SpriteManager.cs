@@ -33,9 +33,17 @@ public class SpriteManager : MonoBehaviour
     {
         if (!DialogueSystem.Instance.speechBubbleActive && !sceneManager.inVNMode && currentPlayer != null)
         {
-            currentPlayer.MoveSprite();
+            if(Player.playerBeingMoved == false)
+            {
+                currentPlayer.MoveSprite();
+            }
+        }
+
+        if(currentPlayer != null)
+        {
             currentPlayer.AnimatePlayer();
         }
+        
     }
 
     [ContextMenu("ShowPlayerPosition")]

@@ -35,6 +35,8 @@ public class InputPanel : MonoBehaviour
 
         foreach(Toggle toggle in pronounToggles)
         {
+            toggle.isOn = false;
+
             toggle.onValueChanged.AddListener(state =>
             {
                 if(state == true)

@@ -82,15 +82,15 @@ public class SceneManager : MonoBehaviour
 
     private void Start()
     {
-        TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
+        //TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
 
-        List<string> lines = FileManager.ReadTextAsset(startingScene);
+        //List<string> lines = FileManager.ReadTextAsset(startingScene);
 
-        DialogueSystem.Instance.SayTextbox(lines);
+        //DialogueSystem.Instance.SayTextbox(lines);
 
-        //sceneName = "Scene 1";
-        //SetupBackground("First Floor Corridor", new Vector2(0.01f, 0.44f), BackgroundConfigData.PlayerDirection.right, true);
-        //-4.88f, -0.14
+        sceneName = "Scene 1";
+        //SetupBackground("Kuchai Town", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
+        SetupBackground("First Floor Corridor", new Vector2(0.01f, 0.44f), BackgroundConfigData.PlayerDirection.right, true);
     }
 
     public Coroutine SetupBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)

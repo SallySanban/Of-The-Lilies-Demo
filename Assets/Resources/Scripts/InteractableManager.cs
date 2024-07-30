@@ -45,40 +45,41 @@ public class InteractableManager: MonoBehaviour
     {
         if (collidingWithPlayer && collidingInteractable != null)
         {
-            switch (collidingInteractable.interactableType)
+            if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive)
             {
-                case Interactable.InteractableType.BackgroundSwitcher:
-                    if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive)
-                    {
-                        collidingInteractable.icon.gameObject.SetActive(false);
+                collidingInteractable.icon.gameObject.SetActive(false);
 
+                switch (collidingInteractable.interactableType)
+                {
+                    case Interactable.InteractableType.BackgroundSwitcher:
                         if (!collidingInteractable.isLocked)
                         {
                             sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
                         }
                         else
                         {
-                            spriteManager.currentPlayer.MoveToInteract(collidingInteractable.icon.transform.position);
-
-                            //sceneManager.PlayNextScene(collidingInteractable);
+                            sceneManager.PlayNextScene(collidingInteractable);
                         }
-                    }
 
-                    break;
-                case Interactable.InteractableType.PixelSprite:
-                case Interactable.InteractableType.Object:
-                    if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive)
-                    {
-                        collidingInteractable.icon.gameObject.SetActive(false);
+                        break;
+                    case Interactable.InteractableType.PixelSprite:
+                        StartCoroutine(WaitForMovePlayer());
 
-                        spriteManager.currentPlayer.MoveToInteract(collidingInteractable.icon.transform.position);
+                        break;
+                    case Interactable.InteractableType.Object:
+                        sceneManager.PlayNextScene(collidingInteractable);
 
-                        //sceneManager.PlayNextScene(collidingInteractable);
-                    }
-
-                    break;
+                        break;
+                }
             }
         }
+    }
+
+    private IEnumerator WaitForMovePlayer()
+    {
+        yield return spriteManager.currentPlayer.MoveToInteract(collidingInteractable.icon.transform.position);
+        yield return new WaitForSeconds(0.2f);
+        sceneManager.PlayNextScene(collidingInteractable);
     }
 
     public void CollidingWithPlayer(bool colliding, Interactable interactable = null)
