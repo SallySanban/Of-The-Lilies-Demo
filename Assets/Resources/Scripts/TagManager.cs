@@ -17,9 +17,9 @@ public class TagManager
     private void InitializeTags()
     {
         tags["<playerName>"] = () => InputPanel.Instance.lastInput; //Ahlai
-        tags["<subjectPronoun>"] = () => "they"; //they
-        tags["<objectPronoun>"] = () => "them"; //them
-        tags["<possessivePronoun>"] = () => "their"; //their
+        tags["<subjectPronoun>"] = () => InputPanel.Instance.subjectPronoun; //they
+        tags["<objectPronoun>"] = () => InputPanel.Instance.objectPronoun; //them
+        tags["<possessivePronoun>"] = () => InputPanel.Instance.possessivePronoun; //their
     }
 
     public string PutTagsIn(string text)

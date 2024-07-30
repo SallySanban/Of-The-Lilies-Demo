@@ -3,19 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class InputPanel : MonoBehaviour
+public class InputPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public static InputPanel Instance { get; private set; }
 
     [SerializeField] private GameObject inputPanel;
-    [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private Button acceptButton;
     [SerializeField] private TMP_InputField inputField;
+
+    [SerializeField] private List<Toggle> pronounToggles = new List<Toggle>();
 
     public string lastInput { get; private set; } = "";
 
     public bool isWaitingForUserInput { get; private set; }
+
+    private string pronouns = "";
+    public string subjectPronoun = "";
+    public string objectPronoun = "";
+    public string possessivePronoun = "";
 
     private void Awake()
     {
@@ -25,22 +32,22 @@ public class InputPanel : MonoBehaviour
         acceptButton.gameObject.SetActive(false);
 
         inputField.onValueChanged.AddListener(OnInputChanged);
-
         acceptButton.onClick.AddListener(OnAcceptInput);
+
+        foreach(Toggle toggle in pronounToggles)
+        {
+            toggle.onValueChanged.AddListener(state =>
+            {
+                if(state == true)
+                {
+                    pronouns = toggle.name;
+                }
+            });
+        }
     }
 
-    public void Show(string title)
+    public void Show()
     {
-        if (string.IsNullOrEmpty(title))
-        {
-            titleText.gameObject.SetActive(false);
-        }
-        else
-        {
-            titleText.text = title;
-            titleText.gameObject.SetActive(true);
-        }
-
         inputField.text = string.Empty;
 
         inputPanel.SetActive(true);
@@ -62,17 +69,54 @@ public class InputPanel : MonoBehaviour
             return;
         }
 
+        if (pronouns == "She/Her")
+        {
+            subjectPronoun = "she";
+            objectPronoun = "her";
+            possessivePronoun = "her";
+        }
+        else if (pronouns == "He/Him")
+        {
+            subjectPronoun = "he";
+            objectPronoun = "him";
+            possessivePronoun = "his";
+        }
+        else if (pronouns == "They/Them")
+        {
+            subjectPronoun = "they";
+            objectPronoun = "them";
+            possessivePronoun = "their";
+        }
+
         lastInput = inputField.text;
         Hide();
     }
 
     public void OnInputChanged(string value)
     {
-        acceptButton.gameObject.SetActive(HasValidText());
+        acceptButton.gameObject.SetActive(HasValidInput());
     }
 
-    private bool HasValidText()
+    private bool HasValidInput()
     {
-        return inputField.text != string.Empty;
+        return pronouns != string.Empty && inputField.text != string.Empty;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (eventData.pointerEnter == acceptButton.gameObject)
+        {
+            Debug.Log("Hovering over Accept Button");
+            acceptButton.GetComponentInChildren<TextMeshProUGUI>().text = "Begin your story";
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (eventData.pointerEnter == acceptButton.gameObject)
+        {
+            Debug.Log("Stopped hovering over Accept Button");
+            acceptButton.GetComponentInChildren<TextMeshProUGUI>().text = "This is who you are.";
+        }
     }
 }

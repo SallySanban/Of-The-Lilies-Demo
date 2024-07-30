@@ -12,9 +12,7 @@ namespace Dialogue.LogicalLines
         {
             InputPanel inputPanel = InputPanel.Instance;
 
-            string title = line.hasDialogue ? line.dialogueData.rawData : "";
-
-            inputPanel.Show(title);
+            inputPanel.Show();
 
             while (inputPanel.isWaitingForUserInput)
             {

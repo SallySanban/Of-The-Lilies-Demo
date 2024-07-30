@@ -18,7 +18,7 @@ public class SceneManager : MonoBehaviour
     public SpriteManager spriteManager => SpriteManager.Instance;
     public InteractableManager interactableManager => InteractableManager.Instance;
 
-    public string sceneName = "";
+    [HideInInspector] public string sceneName = "";
 
     [SerializeField] private RectTransform _pixelScene;
     [SerializeField] private CanvasGroup vnScene;
@@ -82,14 +82,14 @@ public class SceneManager : MonoBehaviour
 
     private void Start()
     {
-        //TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
+        TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
 
-        //List<string> lines = FileManager.ReadTextAsset(startingScene);
+        List<string> lines = FileManager.ReadTextAsset(startingScene);
 
-        //DialogueSystem.Instance.SayTextbox(lines);
+        DialogueSystem.Instance.SayTextbox(lines);
 
-        sceneName = "Scene 2";
-        SetupBackground("Main Shop", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
+        //sceneName = "Scene 2";
+        //SetupBackground("Main Shop", new Vector2(-4.88f, -0.14f), BackgroundConfigData.PlayerDirection.right, true);
     }
 
     public Coroutine SetupBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)

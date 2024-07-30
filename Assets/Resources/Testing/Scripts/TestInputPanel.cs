@@ -13,7 +13,7 @@ namespace Testing
 
         IEnumerator Running()
         {
-            InputPanel.Instance.Show("Enter your name");
+            InputPanel.Instance.Show();
 
             while (InputPanel.Instance.isWaitingForUserInput)
             {

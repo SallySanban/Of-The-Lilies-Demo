@@ -24,19 +24,9 @@ Thought "<i>At least, not for me.</i>"
 
 HideTextbox(), [wait]SwitchCG("Blackout")
 
-input "Enter your name"
+input
 
-choice in 0 "Enter your pronouns"
-{
-	- she/her
-		SavePronoun(she)
-	- he/him
-		SavePronoun(he)
-	- they/them
-		SavePronoun(they)
-}
-
-Sabina as Lady Sabina "<i><playerName>? My dear?</i>"
+Sabina as Lady Sabina "<i><playerName>? My dear? <subjectPronoun></i>"
 
 "<i>Wake up, <playerName>. <playerName>! Get up, now...!</i>"
 
