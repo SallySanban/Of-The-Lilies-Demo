@@ -21,7 +21,6 @@ namespace Dialogue
         private CanvasGroup speechBubbleCanvasGroup = null;
 
         private TextArchitect textArchitect;
-        private TagManager tagManager;
         private bool userNext = false;
 
         private Vector2 padding = new Vector2(10f, 10f);
@@ -130,7 +129,6 @@ namespace Dialogue
             speechBubbleCanvasGroup = currentSpeechBubble.GetComponent<CanvasGroup>();
 
             textArchitect = new TextArchitect(speechBubbleText);
-            tagManager = new TagManager();
 
             speechBubbleCanvasGroup.alpha = 0f;
         }
@@ -155,7 +153,7 @@ namespace Dialogue
 
             speechBubbleText.text = "";
 
-            dialogue = tagManager.PutTagsIn(dialogue);
+            dialogue = TagManager.Inject(dialogue);
 
             textArchitect.Build(dialogue);
 

@@ -27,7 +27,11 @@ public class InteractableManager: MonoBehaviour
     Dictionary<(string interactableName, string background), string> uninteractables = new Dictionary<(string, string), string>
     {
         { ("Left Door", "Main Shop"), "Scene 1" },
-        { ("Right Door", "Main Shop"), "Scene 2" }
+        { ("Right Door", "Main Shop"), "Scene 2" },
+        { ("Left Side", "Kuchai Town"), "Scene 2" },
+        { ("Sabina Door", "Kuchai Town"), "Scene 2" },
+        { ("Tavern Door", "Kuchai Town"), "Scene 2" },
+        { ("Ingredients Door", "Kuchai Town"), "Scene 2" },
     };
 
     private void Awake()

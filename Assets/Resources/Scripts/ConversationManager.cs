@@ -18,7 +18,6 @@ namespace Dialogue
         private bool userNext = false;
         private float completionTime = 0.3f;
 
-        private TagManager tagManager;
         private LogicalLineManager logicalLineManager;
 
         private ConversationQueue conversationQueue;
@@ -30,7 +29,6 @@ namespace Dialogue
             this.architect = textArchitect;
             dialogueSystem.onUserNext += OnUserNext;
 
-            tagManager = new TagManager();
             logicalLineManager = new LogicalLineManager();
 
             conversationQueue = new ConversationQueue();
@@ -166,7 +164,7 @@ namespace Dialogue
                 character.Show();
             }
 
-            dialogueSystem.ShowSpeakerName(tagManager.PutTagsIn(speakerData.displayName));
+            dialogueSystem.ShowSpeakerName(TagManager.Inject(speakerData.displayName));
 
             DialogueSystem.Instance.ApplySpeakerDataToDialogueContainer(speakerData.name);
 
@@ -235,7 +233,7 @@ namespace Dialogue
 
         IEnumerator BuildDialogue(string dialogue, bool append = false)
         {
-            dialogue = tagManager.PutTagsIn(dialogue);
+            dialogue = TagManager.Inject(dialogue);
 
             if (!append)
             {
