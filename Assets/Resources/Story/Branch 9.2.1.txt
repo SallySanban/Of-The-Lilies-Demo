@@ -1,0 +1,7 @@
+MoveCharacter(Seiji -x 0.5)
+
+Ahlai as You "I’m sorry, Seiji… <b>I’m not okay</b>. I just need some space."
+
+Seiji "Where are you going?"
+
+Ahlai as You "I’ll just catch some air, for a while… I need to be alone. Please… don’t follow me."

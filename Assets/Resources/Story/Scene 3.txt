@@ -1,0 +1,31 @@
+ShowCharacter(Seiji)
+
+Seiji [Smile] "Good morning, Sir Quan! Delivery from Sabina's Salves."
+
+Mr. Quan "Good morning, <playerName>! Good morning, Seiji! Punctual as always."
+
+Ahlai as You "Of course! We wouldn't want to disappoint one of our best customers."
+
+Mr. Quan "Well, it's exactly your great service that made me a loyal patron of your business. Here's my payment."
+
+PlaySoundEffect("Coins jiggling")
+
+Seiji "Thank you, sir! You'll find the set of potions you ordered here in this crate."
+
+Mr. Quan "And all are in excellent condition! Just as expected."
+
+Ahlai as You "You can always count on us, sir. We'll get going now. Pleasure doing business with you!"
+
+Mr. Quan "Oh, wait! It almost slipped my mind... I need help creating another potion."
+
+"Could you help me collect the components and brew it for me? I'm a little short here at the store. Don't worry-I'll make sure I pay you extra."
+
+Ahlai as You "We're more than happy to help, sir!"
+
+Mr. Quan "That's great! I appreciate it, <playerName>. Here's what I need: a dash of <b>everbark flakes</b>, <b>two silverleaf sprigs</b>, and a sprinkle of <b>pearl shell powder</b>."
+
+"You'll be able to find them in the <b>components shop</b> down the street. Take this bag of coins, go help yourself to anything you'd like after you buy the components!"
+
+Ahlai as You "Thank you very much!"
+
+HideVN("Scene 3"), HideCharacter(Seiji)

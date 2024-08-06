@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _icon: {fileID: 9157327871011216430}
-  _interactableType: 0
+  _interactableType: 1
   interactableName: 
   backgroundInteractableIsIn: 
   isInteractable: 1
@@ -1723,7 +1723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _icon: {fileID: 7703969096399050929}
-  _interactableType: 0
+  _interactableType: 1
   interactableName: 
   backgroundInteractableIsIn: 
   isInteractable: 1

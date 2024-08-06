@@ -1,0 +1,19 @@
+MoveCharacter(Seiji -x 0.5), ChangeCharacterEmotion(Seiji -exp Worry)
+
+Ahlai as You "You're... <b>you're right</b>, Seiji. I should be more careful."
+
+MoveCharacter(Seiji -x 1), MoveCharacter(Manju -x 0 -i true), ShowCharacter(Manju), ChangeCharacterEmotion(Manju -exp Smile), ChangeCharacterEmotion(Manju -exp Displeased)
+
+Manju as ??? "You two have been talking for quite some time now. I hope there isn't too much of an issue, for tavern patrons to simply acquaint themselves with each other?"
+
+Ahlai as You "I'm sorry, it was thoughtless of me. Maybe if I'm given a better reason the next time we meet, I'll give you what you want."
+
+Manju as ??? [Disappointed] "So it's a no, I see. That's a shame. If you ever decide to change your mind, well... that will sort itself out."
+
+"Now if you'll excuse me, I did mention I needed to be somewhere. Have a nice drink in the tavern."
+
+HideCharacter(Manju), MoveCharacter(Seiji -x 0.5)
+
+Ahlai as You "I wonder if I'll regret that."
+
+Seiji "It was for the best. Now... let's go get those drinks."

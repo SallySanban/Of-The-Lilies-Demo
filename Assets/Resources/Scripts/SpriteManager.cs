@@ -61,12 +61,12 @@ public class SpriteManager : MonoBehaviour
         }
     }
 
-    public PixelSprite CreateSprite(string spriteName, Vector2 spritePosition, BackgroundConfigData.PlayerDirection spriteDirection, GameObject backgroundSpriteIsOn)
+    public PixelSprite CreateSprite(string spriteName, Vector2 spritePosition, BackgroundConfigData.PlayerDirection spriteDirection, GameObject backgroundSpriteIsOn, string sceneToDisappear)
     {
         string prefabPath = FormatCGPath(spritePrefabPath, spriteName);
         GameObject spritePrefab = Resources.Load<GameObject>(prefabPath);
 
-        PixelSprite sprite = new PixelSprite(spritePrefab, spritePosition, spriteDirection, backgroundSpriteIsOn.transform.Find(spriteContainer));
+        PixelSprite sprite = new PixelSprite(spritePrefab, spritePosition, spriteDirection, backgroundSpriteIsOn.transform.Find(spriteContainer), sceneToDisappear);
         sprite.root.name = spriteName;
 
         spritesInScene.Add(sprite);
@@ -94,14 +94,26 @@ public class SpriteManager : MonoBehaviour
         currentPlayer = null;
     }
 
-    public void RemoveAllSprites()
+    public void RemoveAllSprites(bool switchingBackground)
     {
-        foreach(PixelSprite sprite in spritesInScene)
+        for (int i = spritesInScene.Count - 1; i >= 0; i--)
         {
-            sprite.Hide();
-        }
+            PixelSprite sprite = spritesInScene[i];
 
-        spritesInScene.Clear();
+            if (switchingBackground)
+            {
+                sprite.Hide();
+                spritesInScene.RemoveAt(i);
+            }
+            else
+            {
+                if (sprite.sceneToDisappear == sceneManager.sceneName)
+                {
+                    sprite.Hide();
+                    spritesInScene.RemoveAt(i);
+                }
+            }
+        }
     }
 
     private string FormatCGPath(string path, string filename) => filename != "" ? path.Replace(spriteNameId, filename) : "";

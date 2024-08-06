@@ -90,11 +90,11 @@ namespace Dialogue
             return conversationManager.StartConversation(conversation);
         }
 
-        public Coroutine SaySpeechBubble(List<(string name, string dialogue)> lines)
+        public Coroutine SaySpeechBubble(List<(string key, string value, string parameter)> actions)
         {
             speechBubbleActive = true;
 
-            return speechBubbleManager.StartSpeechBubble(lines);
+            return speechBubbleManager.StartSpeechBubble(actions);
         }
 
         [ContextMenu("Show Speech Bubble Position")]

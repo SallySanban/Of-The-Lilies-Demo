@@ -26,7 +26,7 @@ namespace Dialogue
         private Vector2 padding = new Vector2(10f, 10f);
         private float minWidth = 752.36f;
         private float minHeight = 180.48f;
-        private float maxWidth = 1291.27f;
+        private float maxWidth = 854f;
         private float maxHeight = 335.60f;
 
         protected Coroutine showingBubbleCoroutine, hidingBubbleCoroutine;
@@ -53,11 +53,11 @@ namespace Dialogue
             }
         }
 
-        public Coroutine StartSpeechBubble(List<(string name, string dialogue)> lines)
+        public Coroutine StartSpeechBubble(List<(string command, string key, string value)> actions)
         {
             StopSpeechBubble();
 
-            process = dialogueSystem.StartCoroutine(RunningSpeechBubble(lines));
+            process = dialogueSystem.StartCoroutine(RunningSpeechBubble(actions));
 
             return process;
         }
@@ -73,17 +73,30 @@ namespace Dialogue
             process = null;
         }
 
-        private IEnumerator RunningSpeechBubble(List<(string name, string dialogue)> lines)
+        private IEnumerator RunningSpeechBubble(List<(string command, string key, string value)> actions)
         {
-            for (int i = 0; i < lines.Count; i++)
+            for (int i = 0; i < actions.Count; i++)
             {
-                var line = lines[i];
-                CreateSpeechBubble(line.name);
-                Show();
-                yield return TalkSpeechBubble(line.dialogue);
-                yield return WaitForUserInput();
+                var action = actions[i];
 
-                if (i == lines.Count - 1)
+                if(action.command == "Command")
+                {
+                    switch (action.key)
+                    {
+                        case "Unlock Interactable":
+                            InteractableManager.Instance.MakeInteractableTrue(action.value);
+                            break;
+                    }    
+                }
+                else if(action.command == "Speech Bubble")
+                {
+                    CreateSpeechBubble(action.key);
+                    Show();
+                    yield return TalkSpeechBubble(action.value);
+                    yield return WaitForUserInput();
+                }
+
+                if (i == actions.Count - 1)
                 {
                     Hide();
                 }

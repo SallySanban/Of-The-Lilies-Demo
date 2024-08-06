@@ -1,0 +1,21 @@
+MoveCharacter(Seiji -x 0.5)
+
+Ahlai as You "<b>You would do that for me?</b> I don't even know if my family's alive, Seiji."
+
+"Coming with me would mean you'd have to leave Kuchai, and Lady Sabina. She's been there for as long as you can remember."
+
+Seiji [Smile] "Of course I would, <playerName>. I know how important this is to you!"
+
+Ahlai as You "And what if Lady Sabina doesn't let me go? She's always been protective of me, and we are her employees, in any case..."
+
+Seiji "Then that's just even more of a reason for me to come with you! Just try to ask her, <playerName>."
+
+"I know that Lady Sabina would want to do what she can to ease your worries. It's what you want in the end, isn't it? To be with your family and all again?"
+
+Ahlai as You "You're right, Seiji. And well, it looks like the drinks are done... Let's go back to Sabina's Salves and ask her."
+
+if ($ManjuBranch == true)
+{
+	Seiji "You can go ahead, <playerName>. Let me just pay for the drinks and then I'll be right behind you."
+	Load("Bad Ending 1")
+}

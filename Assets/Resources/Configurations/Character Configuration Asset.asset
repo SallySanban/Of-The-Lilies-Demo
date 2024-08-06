@@ -16,13 +16,13 @@ MonoBehaviour:
   - name: Seiji
     alias: ss
     characterType: 1
-    nameBorderColor: {r: 0.42607686, g: 0.7097983, b: 0.9528302, a: 1}
-    textboxBorderColor: {r: 0.42745098, g: 0.70980394, b: 0.9529412, a: 1}
+    nameBorderColor: {r: 0.34509805, g: 0.42745098, b: 0.6431373, a: 1}
+    textboxBorderColor: {r: 0.34509805, g: 0.42745098, b: 0.6431373, a: 1}
   - name: Myo
     alias: ma
     characterType: 1
-    nameBorderColor: {r: 0.92983586, g: 0.9433962, b: 0.55535775, a: 1}
-    textboxBorderColor: {r: 0.93333334, g: 0.94509804, b: 0.5568628, a: 1}
+    nameBorderColor: {r: 0.60784316, g: 0.6431373, b: 0.34117648, a: 1}
+    textboxBorderColor: {r: 0.60784316, g: 0.6431373, b: 0.34117648, a: 1}
   - name: Sabina
     alias: ls
     characterType: 1
@@ -33,3 +33,18 @@ MonoBehaviour:
     characterType: 0
     nameBorderColor: {r: 1, g: 1, b: 1, a: 1}
     textboxBorderColor: {r: 1, g: 1, b: 1, a: 1}
+  - name: Manju
+    alias: m
+    characterType: 1
+    nameBorderColor: {r: 0.6431373, g: 0.37254903, b: 0.34117648, a: 1}
+    textboxBorderColor: {r: 0.6431373, g: 0.37254903, b: 0.34117648, a: 1}
+  - name: Lien
+    alias: lvh
+    characterType: 1
+    nameBorderColor: {r: 0.6431373, g: 0.49803922, b: 0.34117648, a: 1}
+    textboxBorderColor: {r: 0.6431373, g: 0.49803922, b: 0.34117648, a: 1}
+  - name: Laisa
+    alias: l
+    characterType: 1
+    nameBorderColor: {r: 0.5803922, g: 0.34117648, b: 0.6431373, a: 1}
+    textboxBorderColor: {r: 0.5803922, g: 0.34117648, b: 0.6431373, a: 1}

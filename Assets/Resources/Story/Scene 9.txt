@@ -1,0 +1,59 @@
+[wait]SetupPixelScene("Scene 9" -bg "Main Shop" -x -4.88 -y -0.14 -d right -vn false), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Smile), ChangeCharacterEmotion(Sabina -exp Smile), ShowCharacter(Seiji Sabina)
+
+Sabina as Lady Sabina "Oh, you two are back! Thank Dok'kale, you are both such blessings to me! Thank you both for your help with the errands, darlings. Just great work as always."
+
+Ahlai as You "It's our pleasure, Lady Sabina. We're thankful for your trust in us."
+
+Seiji "Yes, we are!"
+
+Ahlai as You "In fact, I feel like I do not say this enough, Lady Sabina. I am always grateful for how you've taken care of me, taught me so many things... to find shelter, if not a home."
+
+"Yet you never ask me for anything in return."
+
+Sabina as Lady Sabina "Well, that's because you don't have to return any favors, dear."
+
+"I knew I saw <i>something</i> in you the moment we met. Potential and so much more."
+
+"Seeing you grow into the amazing people you've become is enough of a reward. Think of me as your second guardian or mother, please."
+
+"And you too, Seiji."
+
+"But what's with all this sentimentality? Is there something you wish to tell me?"
+
+Ahlai as You "Yes, there is, Lady. I want to ask for your help again."
+
+Sabina as Lady Sabina "What is it? What can I do?"
+
+Ahlai as You "We'd like your permission to journey out of Kuchai to find my family. It's been a torment not knowing how they're doing, or where they are."
+
+"If I at least see them safe... where they are, at least, it would bring me peace. And I'll never trouble you with a request like this ever again."
+
+Seiji "And, I'll be right by <possessivePronoun> side, Lady. I promise... I'll protect <objectPronoun> with everything I do. You'll have nothing to worry about."
+
+Sabina as Lady Sabina [Worry] "..."
+
+Seiji [Worry] "Lady Sabina? What do you say?"
+
+Sabina as Lady Sabina "I know that... I can only imagine just how much pain you've been through."
+
+"For all those years, really, I don't think that pain of losing your family and your people ever really went away. Even as you got older."
+
+"I am thankful that you even trust me enough to speak to me about this."
+
+"But I hope you understand when I say... it may be too soon for us to discuss such plans."
+
+Ahlai as You "But how is it too soon? I am of age, and I have trained for so long under you... so, please, I-"
+
+Sabina as Lady Sabina "I do not doubt that you are mature, <playerName>. But there are just too many things lurking in our world that even I'm not fully prepared for."
+
+"I am truly sorry, dear. But it just isn't time yet, what with the future ahead of you."
+
+HideCharacter(Seiji)
+
+choice in 1
+{
+	- Please reconsider.
+		Load("Branch 9.1" -p true)
+	- I understand.
+		Load("Branch 9.2" -p true)
+}

@@ -35,7 +35,7 @@ namespace GraphicPanels
             return CreateGraphicPanel(graphicPanelFilename);
         }
 
-        public GraphicPanel CreateGraphicPanel(string graphicPanelFilename)
+        private GraphicPanel CreateGraphicPanel(string graphicPanelFilename)
         {
             string graphicPanelImagePath = FormatCGPath(graphicPanelRootPath, graphicPanelFilename);
             GameObject graphicPanelPrefab = Resources.Load<GameObject>(graphicPanelPrefabPath);

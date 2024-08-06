@@ -19,19 +19,44 @@ public class InteractableManager: MonoBehaviour
     private bool collidingWithPlayer = false;
     private Interactable collidingInteractable = null;
 
-    Dictionary<(string interactableName, string background), string> lockedInteractables = new Dictionary<(string, string), string>
+    List<(string interactableName, string background, string scene)> lockedInteractables = new List<(string, string, string)>
     {
-        { ("Door", "First Floor Corridor"), "Scene 1" }
+        ("Door", "First Floor Corridor", "Scene 1")
     };
 
-    Dictionary<(string interactableName, string background), string> uninteractables = new Dictionary<(string, string), string>
+    List<(string interactableName, string background, string scene)> uninteractables = new List<(string, string, string)>
     {
-        { ("Left Door", "Main Shop"), "Scene 1" },
-        { ("Right Door", "Main Shop"), "Scene 2" },
-        { ("Left Side", "Kuchai Town"), "Scene 2" },
-        { ("Sabina Door", "Kuchai Town"), "Scene 2" },
-        { ("Tavern Door", "Kuchai Town"), "Scene 2" },
-        { ("Ingredients Door", "Kuchai Town"), "Scene 2" },
+        ("Left Door", "Main Shop", "Scene 1"),
+        ("Right Door", "Main Shop", "Scene 2"),
+        ("Left Side", "Kuchai Town", "Scene 2"),
+        ("Sabina Door", "Kuchai Town", "Scene 2"),
+        ("Tavern Door", "Kuchai Town", "Scene 2" ),
+        ("Ingredients Door", "Kuchai Town", "Scene 2"),
+        ("Left Side", "Kuchai Town", "Scene 3"),
+        ("Sabina Door", "Kuchai Town", "Scene 3"),
+        ("Tavern Door", "Kuchai Town", "Scene 3"),
+        ("Quan Door", "Kuchai Town", "Scene 3"),
+        ("Sabina Door", "Kuchai Town", "Scene 4"),
+        ("Tavern Door", "Kuchai Town", "Scene 4"),
+        ("Ingredients Door", "Kuchai Town", "Scene 4"),
+        ("Quan Door", "Kuchai Town", "Scene 4"),
+        ("Sprig 1", "Kadlagan Forest", "Scene 4"),
+        ("Sprig 2", "Kadlagan Forest", "Scene 4"),
+        ("Statue", "Kadlagan Forest", "Scene 5"),
+        ("Left Side", "Kuchai Town", "Scene 5"),
+        ("Sabina Door", "Kuchai Town", "Scene 5"),
+        ("Tavern Door", "Kuchai Town", "Scene 5" ),
+        ("Ingredients Door", "Kuchai Town", "Scene 5"),
+        ("Left Side", "Kuchai Town", "Scene 6"),
+        ("Sabina Door", "Kuchai Town", "Scene 6"),
+        ("Ingredients Door", "Kuchai Town", "Scene 6"),
+        ("Quan Door", "Kuchai Town", "Scene 6"),
+        ("Newspaper", "Tavern", "Scene 7"),
+        ("Barkeeper", "Tavern", "Scene 8"),
+        ("Left Side", "Kuchai Town", "Scene 8"),
+        ("Tavern Door", "Kuchai Town", "Scene 8" ),
+        ("Ingredients Door", "Kuchai Town", "Scene 8"),
+        ("Quan Door", "Kuchai Town", "Scene 8")
     };
 
     private void Awake()
@@ -58,7 +83,19 @@ public class InteractableManager: MonoBehaviour
                     case Interactable.InteractableType.BackgroundSwitcher:
                         if (!collidingInteractable.isLocked)
                         {
+                            if (VariableStore.TryGetValue("ManjuBranch", out object insideManjuBranch))
+                            {
+                                if ((bool)insideManjuBranch && sceneManager.sceneName == "Scene 8" && collidingInteractable.backgroundInteractableIsIn == "Tavern")
+                                {
+                                    sceneManager.PlayNextScene(collidingInteractable);
+                                }
+
+                                break;
+                            }
+
                             sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+
+                            break;
                         }
                         else
                         {
@@ -71,6 +108,7 @@ public class InteractableManager: MonoBehaviour
 
                         break;
                     case Interactable.InteractableType.Object:
+                        collidingInteractable.isInteractable = false;
                         sceneManager.PlayNextScene(collidingInteractable);
 
                         break;
@@ -92,11 +130,7 @@ public class InteractableManager: MonoBehaviour
 
         if (collidingWithPlayer)
         {
-            collidingInteractable = interactable;
-        }
-        else
-        {
-            collidingInteractable = null;
+            collidingInteractable = interactable; //last interactable that was collided with
         }
     }
 
@@ -121,27 +155,21 @@ public class InteractableManager: MonoBehaviour
             interactable.interactableName = interactable.gameObject.name;
             interactable.backgroundInteractableIsIn = background.backgroundName;
 
+            var interactableToCheck = (interactable.interactableName, interactable.backgroundInteractableIsIn, sceneManager.sceneName);
+
             //locks interactables that cannot be accessed but icon will appear
-            var key = (interactable.interactableName, interactable.backgroundInteractableIsIn);
-            if (lockedInteractables.TryGetValue(key, out string lockedInteractableScene))
+            if (lockedInteractables.Contains(interactableToCheck))
             {
-                if (lockedInteractableScene == sceneManager.sceneName)
-                {
-                    Debug.Log("LOCKED " + interactable.interactableName + " ON " + sceneManager.sceneName);
-                    interactable.isLocked = true;
-                }
+                Debug.Log("LOCKED " + interactable.interactableName + " ON " + sceneManager.sceneName);
+                interactable.isLocked = true;
             }
 
             //makes some interactables uninteractable (icon will not appear)
-            key = (interactable.interactableName, interactable.backgroundInteractableIsIn);
-            if (uninteractables.TryGetValue(key, out string uninteractableScene))
+            if (uninteractables.Contains(interactableToCheck))
             {
-                if (uninteractableScene == sceneManager.sceneName)
-                {
-                    Debug.Log("CANNOT INTERACT WITH " + interactable.interactableName + " ON " + sceneManager.sceneName);
-                    interactable.isInteractable = false;
-                    interactablesInScene.RemoveAt(i);
-                }
+                Debug.Log("CANNOT INTERACT WITH " + interactable.interactableName + " ON " + sceneManager.sceneName);
+                interactable.isInteractable = false;
+                interactablesInScene.RemoveAt(i);
             }
         }
 
@@ -197,26 +225,72 @@ public class InteractableManager: MonoBehaviour
         }
     }
 
-    private void PopulateScene(Background background)
+    public void MakeInteractableTrue(string interactableName)
     {
-        //SCENE 1
-        if (sceneManager.sceneName == "Scene 1")
+        foreach (Interactable interactable in interactablesInScene)
         {
-            if (background.backgroundName == "Main Shop")
+            if(interactable.name == interactableName)
             {
-                PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.right, background.root);
-                Seiji.root.name = "Seiji";
-                Seiji.Show();
+                interactable.isInteractable = true;
             }
         }
-        else if(sceneManager.sceneName == "Scene 2")
+    }
+
+    private void PopulateScene(Background background)
+    {
+        switch(sceneManager.sceneName)
         {
-            if(background.backgroundName == "Kuchai Town")
-            {
-                PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(2.42f, 0.65f), BackgroundConfigData.PlayerDirection.right, background.root);
-                Seiji.root.name = "Seiji";
-                Seiji.Show();
-            }
+            case "Scene 1":
+                if (background.backgroundName == "Main Shop")
+                {
+                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 2");
+                    Seiji.root.name = "Seiji";
+                    Seiji.Show();
+                }
+
+                break;
+            case "Scene 2":
+                if(background.backgroundName == "Kuchai Town")
+                {
+                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(2.42f, 0.65f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 3");
+                    Seiji.root.name = "Seiji";
+                    Seiji.Show();
+                }
+                else if(background.backgroundName == "Mr. Quan's Shop")
+                {
+                    PixelSprite Quan = spriteManager.CreateSprite("Mr. Quan", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 4");
+                    Quan.root.name = "Mr. Quan";
+                    Quan.Show();
+                }
+
+                break;
+            case "Scene 3":
+                if(background.backgroundName == "Ingredients Shop")
+                {
+                    PixelSprite Shopkeeper = spriteManager.CreateSprite("Ingredients Shopkeeper", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 5");
+                    Shopkeeper.root.name = "Ingredients Shopkeeper";
+                    Shopkeeper.Show();
+                }
+
+                break;
+            case "Scene 5":
+                if (background.backgroundName == "Mr. Quan's Shop")
+                {
+                    PixelSprite Quan = spriteManager.CreateSprite("Mr. Quan", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 6");
+                    Quan.root.name = "Mr. Quan";
+                    Quan.Show();
+                }
+
+                break;
+            case "Scene 7":
+                if (background.backgroundName == "Tavern")
+                {
+                    PixelSprite Barkeeper = spriteManager.CreateSprite("Barkeeper", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 9");
+                    Barkeeper.root.name = "Barkeeper";
+                    Barkeeper.Show();
+                }
+
+                break;
         }
     }
 

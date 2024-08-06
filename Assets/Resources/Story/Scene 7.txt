@@ -1,0 +1,46 @@
+ShowCG("Manju")
+
+Ahlai as You "Ah, I apologize-"
+
+Manju as ??? "...Is something the matter?"
+
+HideCG(), [wait]SetupPixelScene("Scene 7" -bg "Tavern" -x -4.88 -y -0.14 -d right -vn false), ChangeCharacterEmotion(Manju -exp Stern), ShowCharacter(Manju)
+
+Ahlai as You "...No, not at all. Unless you want me to say that there's anything wrong with those scars around your neck.  They're really interesting patterns, don't you think?"
+
+Manju as ??? "I'd rather not have this talk if you're only here to make light of these scars."
+
+Ahlai as You "Apologies, then, for being so curious. I said they're <i>interesting</i> and I meant it. Is small talk a bother for you, then-wherever you're from?"
+
+Manju as ??? "Not so much a bother than it is a waste of time."
+
+Thought "<i>What's his problem?</i>"
+
+Ahlai as You "Humor me! I don't mean to comment on your tattoos only for the sake of small talk."
+
+"Again, where are you from? The tattoos tell me that you're not from here, like plenty of people in Kuchai Town. Really, seeing anyone with tattoos reminds me of home."
+
+Manju as ??? "Home? Where would that be for you?"
+
+Ahlai as You "Well, I'd rather not answer if you're going to try and find out where I live."
+
+Manju as ??? [Smile] "Fair point you make. Forgive me, then. You're at least right that I don't usually bother with small talk and you have every right to keep yourself safe."
+
+Ahlai as You "..."
+
+Manju as ??? "But if you're already asking about the scars on my body and I'm already asking where is "home" to you, then is it too much to ask for your name?"
+
+[wait]MoveCharacter(Manju -x 0)
+
+choice in 1
+{
+	- I go by Ahlai.
+		Load("Branch 7.1" -p true)
+	- No, but you should tell me yours first.
+		Load("Branch 7.2" -p true)
+}
+
+HideCharacter(Seiji), HideVN()
+
+
+

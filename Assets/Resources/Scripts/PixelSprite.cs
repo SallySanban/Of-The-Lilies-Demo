@@ -12,6 +12,7 @@ public class PixelSprite
 
     public SpriteRenderer rootSpriteRenderer;
     public Animator rootAnimator;
+    public string sceneToDisappear;
 
     protected Coroutine showingSpriteCoroutine, hidingSpriteCoroutine;
 
@@ -20,7 +21,7 @@ public class PixelSprite
 
     private float fadeSpeed = 3f;
 
-    public PixelSprite(GameObject prefab, Vector2 spritePosition, BackgroundConfigData.PlayerDirection spriteDirection, Transform backgroundSpriteIsOn)
+    public PixelSprite(GameObject prefab, Vector2 spritePosition, BackgroundConfigData.PlayerDirection spriteDirection, Transform backgroundSpriteIsOn, string sceneToDisappear = "")
     {
         if (prefab != null)
         {
@@ -32,6 +33,7 @@ public class PixelSprite
 
             rootSpriteRenderer = root.GetComponentInChildren<SpriteRenderer>();
             rootAnimator = rootSpriteRenderer.GetComponent<Animator>();
+            this.sceneToDisappear = sceneToDisappear;
 
             Color spriteColor = rootSpriteRenderer.color;
             spriteColor.a = 0f;
@@ -50,6 +52,11 @@ public class PixelSprite
         if (direction == BackgroundConfigData.PlayerDirection.left)
         {
             root.Find("Sprite").transform.eulerAngles = new Vector3(0, 180, 0);
+
+            if(root.Find("Sprite").Find("Icon") != null)
+            {
+                root.Find("Sprite").Find("Icon").transform.eulerAngles = new Vector3(0, 0, 0);
+            }
         }
         else if (direction == BackgroundConfigData.PlayerDirection.right)
         {

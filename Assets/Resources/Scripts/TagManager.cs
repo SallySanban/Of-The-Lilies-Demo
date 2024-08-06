@@ -9,10 +9,10 @@ public class TagManager
 {
     public static Dictionary<string, Func<string>> tags = new Dictionary<string, Func<string>>()
     {
-        { "<playerName>", () => InputPanel.Instance.lastInput },
-        { "<subjectPronoun>", () => InputPanel.Instance.subjectPronoun },
-        { "<objectPronoun>", () => InputPanel.Instance.objectPronoun },
-        { "<possessivePronoun>", () => InputPanel.Instance.possessivePronoun },
+        { "<playerName>", () => InputPanel.Instance.lastInput }, //Ahlai
+        { "<subjectPronoun>", () => InputPanel.Instance.subjectPronoun }, //they
+        { "<objectPronoun>", () => InputPanel.Instance.objectPronoun }, //them
+        { "<possessivePronoun>", () => InputPanel.Instance.possessivePronoun }, //their
     };
 
     private static readonly Regex tagRegex = new Regex("<\\w+>");
