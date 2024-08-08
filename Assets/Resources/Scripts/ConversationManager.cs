@@ -145,6 +145,8 @@ namespace Dialogue
 
         private void HandleSpeakerLogic(SpeakerData speakerData)
         {
+            DialogueSystem.Instance.ApplySpeakerDataToDialogueContainer(speakerData.name);
+
             if (speakerData.mainCharacterThought)
             {
                 dialogueSystem.HideSpeakerName();
@@ -165,8 +167,6 @@ namespace Dialogue
             }
 
             dialogueSystem.ShowSpeakerName(TagManager.Inject(speakerData.displayName));
-
-            DialogueSystem.Instance.ApplySpeakerDataToDialogueContainer(speakerData.name);
 
             if (speakerData.isCastingExpressions && character.isCharacterVisible)
             {

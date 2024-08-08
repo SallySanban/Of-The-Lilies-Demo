@@ -10,7 +10,7 @@ namespace Dialogue
     {
         public CharacterConfig characterConfigurationAsset;
 
-        public Color defaultBorderColor = Color.white;
+        public Color defaultBorderColor = new Color(212, 212, 212);
     }
 }
 
