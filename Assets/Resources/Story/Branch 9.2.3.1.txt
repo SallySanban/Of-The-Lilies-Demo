@@ -1,0 +1,19 @@
+MoveCharacter(Seiji -x 0.5)
+
+Ahlai as You "<b>Of course</b>. I gave him my word."
+
+Seiji "I see… It seems there is nothing I can do to stop you."
+
+Ahlai as You "What do you mean? Seiji-"
+
+Seiji "Good night, Ahlai."
+
+[input]HideCharacter(Seiji)
+
+Ahlai as You "Good night, Seiji…"
+
+ShowCG("Blackout"), Wait(0.2), SwitchCG("Curses Appear"), PlaySoundEffect("Thunder")
+
+[wait]SetupPixelScene("Scene ?" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false) //what scene is this?
+
+//ahlai speech bubble by herself, load next scene

@@ -31,11 +31,11 @@ public class SpriteManager : MonoBehaviour
 
     private void Update()
     {
-        if (!DialogueSystem.Instance.speechBubbleActive && !sceneManager.inVNMode && currentPlayer != null)
+        if (!DialogueSystem.Instance.speechBubbleActive && !sceneManager.inVNMode && currentPlayer != null && BackgroundManager.Instance.currentBackground != null)
         {
             if(Player.playerBeingMoved == false)
             {
-                currentPlayer.MoveSprite();
+                currentPlayer.MovePlayer();
             }
         }
 

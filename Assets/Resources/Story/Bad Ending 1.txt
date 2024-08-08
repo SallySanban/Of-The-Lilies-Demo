@@ -1,6 +1,6 @@
-ShowCG("Blackout"), PlaySoundEffect("Whack")
+HideTextbox(), [wait]HidePixel(), PlaySoundEffect("Whack")
 
-Manju as ??? "Your name tells me all about your story, <playerName>. And where you’re from."
+Manju as ??? "Your name tells me all about your story, <playerName>. And where you're from."
 
 "It tells me that you serve the Order of La Liryo."
 
@@ -10,4 +10,4 @@ Manju as ??? "Your name tells me all about your story, <playerName>. And where y
 
 enter Manju as Manjushage [Unhinged] "Your friend will join you, just like he said. I hope you find freedom from all your worries like this, <playerName>. With a quiet, peaceful death."
 
-HideCharacter(Manju), SwitchCG("Bad End")
+HideTextbox(), [wait]HideCharacter(Manju), ShowCG("Bad End")

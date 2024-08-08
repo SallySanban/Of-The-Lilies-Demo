@@ -20,64 +20,87 @@ public class Player : PixelSprite
 
     }
 
-    public Coroutine MoveToInteract(Vector3 interactablePosition)
+    public Coroutine MoveSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false)
     {
         if (isPlayerMoving) return movingPlayerCoroutine;
 
-        Vector2 currentPosition = root.transform.position;
-        Vector2 positionToGo;
+        positionToGo.y = currentPosition.y;
 
-        if(currentDirection == CurrentPlayerDirection.Left)
+        if (interacting)
         {
-            positionToGo = new Vector3(interactablePosition.x + 3.5f, currentPosition.y); //if facing left, go right
-        }
-        else
-        {
-            positionToGo = new Vector3(interactablePosition.x - 0.5f, currentPosition.y); //if facing right, go left
+            if (currentDirection == CurrentPlayerDirection.Left)
+            {
+                positionToGo.x = positionToGo.x + 3.5f; //if facing left, go right
+            }
+            else
+            {
+                positionToGo.x = positionToGo.x - 0.5f; //if facing right, go left
+            }
         }
         
-        if (Vector2.Distance(root.transform.position, positionToGo) <= 0.01f)
+        if (Vector2.Distance(currentPosition, positionToGo) <= 0.01f)
         {
             movingPlayerCoroutine = null;
         }
         else
         {
-            movingPlayerCoroutine = spriteManager.StartCoroutine(MovePlayerToInteract(positionToGo));
+            movingPlayerCoroutine = spriteManager.StartCoroutine(MovingSprite(currentPosition, positionToGo, speed, interacting));
         }
         
         return movingPlayerCoroutine;
     }
 
-    private IEnumerator MovePlayerToInteract(Vector3 positionToGo)
+    private IEnumerator MovingSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false)
     {
         playerBeingMoved = true;
 
-        if (currentDirection == CurrentPlayerDirection.Left)
+        if (interacting)
         {
-            move.x = -1;
-            FlipPlayer(CurrentPlayerDirection.Right);
+            if (currentDirection == CurrentPlayerDirection.Left)
+            {
+                move.x = -1;
+                FlipPlayer(CurrentPlayerDirection.Right);
+            }
+            else
+            {
+                move.x = 1;
+                FlipPlayer(CurrentPlayerDirection.Left);
+            }
         }
         else
         {
-            move.x = 1;
-            FlipPlayer(CurrentPlayerDirection.Left);
+            if(positionToGo.x < currentPosition.x)
+            {
+                move.x = -1;
+                FlipPlayer(CurrentPlayerDirection.Left);
+            }
+            else if(positionToGo.x > currentPosition.x)
+            {
+                move.x = 1;
+                FlipPlayer(CurrentPlayerDirection.Right);
+            }
         }
 
-        while (root.transform.position.x != positionToGo.x)
+        while (currentPosition.x != positionToGo.x)
         {
-            root.transform.position = Vector3.MoveTowards(root.transform.position, new Vector3(positionToGo.x, root.transform.position.y), speed * Time.deltaTime);
+            root.transform.position = currentPosition;
 
-            if (Vector2.Distance(root.transform.position, positionToGo) <= 0.0001f)
+            currentPosition = Vector3.MoveTowards(currentPosition, positionToGo, speed * Time.deltaTime);
+
+            if (Vector2.Distance(currentPosition, positionToGo) <= 0.0001f)
             {
                 move = Vector3.zero;
 
-                if (currentDirection == CurrentPlayerDirection.Left)
+                if (interacting)
                 {
-                    FlipPlayer(CurrentPlayerDirection.Right);
-                }
-                else
-                {
-                    FlipPlayer(CurrentPlayerDirection.Left);
+                    if (currentDirection == CurrentPlayerDirection.Left)
+                    {
+                        FlipPlayer(CurrentPlayerDirection.Right);
+                    }
+                    else
+                    {
+                        FlipPlayer(CurrentPlayerDirection.Left);
+                    }
                 }
 
                 root.transform.position = positionToGo;
@@ -105,7 +128,7 @@ public class Player : PixelSprite
         }
     }
 
-    public void MoveSprite()
+    public void MovePlayer()
     {
         move.y = 0;
         move.z = 0;

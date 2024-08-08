@@ -2,7 +2,7 @@ MoveCharacter(Seiji -x 0.5), ChangeCharacterEmotion(Seiji -exp Worry)
 
 Ahlai as You "You're... <b>you're right</b>, Seiji. I should be more careful."
 
-MoveCharacter(Seiji -x 1), MoveCharacter(Manju -x 0 -i true), ShowCharacter(Manju), ChangeCharacterEmotion(Manju -exp Smile), ChangeCharacterEmotion(Manju -exp Displeased)
+MoveCharacter(Seiji -x 1), MoveCharacter(Manju -x 0 -i true), ShowCharacter(Manju), ChangeCharacterEmotion(Manju -exp Smile), ChangeCharacterEmotion(Seiji -exp Displeased)
 
 Manju as ??? "You two have been talking for quite some time now. I hope there isn't too much of an issue, for tavern patrons to simply acquaint themselves with each other?"
 

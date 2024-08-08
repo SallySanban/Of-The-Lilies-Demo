@@ -2,7 +2,7 @@ ShowCharacter(Seiji)
 
 Mr. Quan "You're back! Here, here. You can get started on brewing the potion."
 
-[wait]SwitchCG("Blackout"), Wait(2), HideCG()
+HideTextbox(), [wait]ShowCG("Blackout"), Wait(1), HideCG()
 
 Mr. Quan "Marvelous work, <playerName>! Thank you for all your help."
 

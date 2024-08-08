@@ -20,6 +20,9 @@ namespace Commands
             database.AddCommand("Wait", new Func<string, IEnumerator>(Wait));
             database.AddCommand("SetupPixelScene", new Action<string[]>(SetupScene));
             database.AddCommand("HideVN", new Action<string>(ChangeScene));
+            database.AddCommand("ShowVN", new Action(() => { SceneManager.Instance.ShowVN(); }));
+            database.AddCommand("HidePixel", new Action(() => { SceneManager.Instance.HideScene(); }));
+            database.AddCommand("ShowPixel", new Func<IEnumerator>(ShowScene));
         }
 
         private static void SetupScene(string[] data)
@@ -48,7 +51,7 @@ namespace Commands
                 firstPlayerDirection = BackgroundConfigData.PlayerDirection.left;
             }
 
-            SceneManager.Instance.SetupBackground(firstBackground, position, firstPlayerDirection, endVN);
+            SceneManager.Instance.SetupBackground(firstBackground, position, firstPlayerDirection);
         }
 
         private static void ChangeScene(string data)
@@ -61,6 +64,11 @@ namespace Commands
             }
 
             SceneManager.Instance.SetupScene();
+        }
+
+        private static IEnumerator ShowScene()
+        {
+            yield return SceneManager.Instance.ShowScene();
         }
 
         private static IEnumerator Wait(string data)

@@ -83,23 +83,13 @@ public class InteractableManager: MonoBehaviour
                     case Interactable.InteractableType.BackgroundSwitcher:
                         if (!collidingInteractable.isLocked)
                         {
-                            if (VariableStore.TryGetValue("ManjuBranch", out object insideManjuBranch))
-                            {
-                                if ((bool)insideManjuBranch && sceneManager.sceneName == "Scene 8" && collidingInteractable.backgroundInteractableIsIn == "Tavern")
-                                {
-                                    sceneManager.PlayNextScene(collidingInteractable);
-                                }
-
-                                break;
-                            }
-
-                            sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+                            StartCoroutine(PlaySceneAfterBackgroundSwitch());
 
                             break;
                         }
                         else
                         {
-                            sceneManager.PlayNextScene(collidingInteractable);
+                            sceneManager.PlayNextScene(sceneManager.sceneName, collidingInteractable.backgroundInteractableIsIn, collidingInteractable.interactableName);
                         }
 
                         break;
@@ -109,7 +99,7 @@ public class InteractableManager: MonoBehaviour
                         break;
                     case Interactable.InteractableType.Object:
                         collidingInteractable.isInteractable = false;
-                        sceneManager.PlayNextScene(collidingInteractable);
+                        sceneManager.PlayNextScene(sceneManager.sceneName, collidingInteractable.backgroundInteractableIsIn, collidingInteractable.interactableName);
 
                         break;
                 }
@@ -119,9 +109,30 @@ public class InteractableManager: MonoBehaviour
 
     private IEnumerator WaitForMovePlayer()
     {
-        yield return spriteManager.currentPlayer.MoveToInteract(collidingInteractable.icon.transform.position);
+        yield return spriteManager.currentPlayer.MoveSprite(spriteManager.currentPlayer.root.transform.position, collidingInteractable.icon.transform.position, 3f, true);
         yield return new WaitForSeconds(0.2f);
-        sceneManager.PlayNextScene(collidingInteractable);
+        sceneManager.PlayNextScene(sceneManager.sceneName, collidingInteractable.backgroundInteractableIsIn, collidingInteractable.interactableName);
+    }
+    private IEnumerator PlaySceneAfterBackgroundSwitch()
+    {
+        string lastInteractableScene = sceneManager.sceneName;
+        string lastInteractableBackground = collidingInteractable.backgroundInteractableIsIn;
+        string lastInteractable = collidingInteractable.interactableName;
+
+        Debug.Log("SCENE: " + lastInteractableScene + " BACKGROUND: " + lastInteractableBackground + " INTERACTABLE: " + lastInteractable);
+
+        if (sceneManager.HasNextScene(sceneManager.sceneName, collidingInteractable.backgroundInteractableIsIn, collidingInteractable.interactableName)) //has scene right after changing background
+        {
+            yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+            yield return new WaitForSeconds(0.2f);
+            yield return sceneManager.PlayNextScene(lastInteractableScene, lastInteractableBackground, lastInteractable);
+        }
+        else
+        {
+            yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+            yield return new WaitForSeconds(0.2f);
+            yield return sceneManager.ShowScene(true);
+        }
     }
 
     public void CollidingWithPlayer(bool colliding, Interactable interactable = null)
@@ -169,7 +180,6 @@ public class InteractableManager: MonoBehaviour
             {
                 Debug.Log("CANNOT INTERACT WITH " + interactable.interactableName + " ON " + sceneManager.sceneName);
                 interactable.isInteractable = false;
-                interactablesInScene.RemoveAt(i);
             }
         }
 
@@ -225,13 +235,24 @@ public class InteractableManager: MonoBehaviour
         }
     }
 
-    public void MakeInteractableTrue(string interactableName)
+    public void EnableDisableInteractable(string interactableName, bool enable)
     {
         foreach (Interactable interactable in interactablesInScene)
         {
             if(interactable.name == interactableName)
             {
-                interactable.isInteractable = true;
+                interactable.isInteractable = enable;
+            }
+        }
+    }
+
+    public void LockUnlockInteractable(string interactableName, bool unlock)
+    {
+        foreach (Interactable interactable in interactablesInScene)
+        {
+            if (interactable.name == interactableName)
+            {
+                interactable.isInteractable = unlock;
             }
         }
     }
@@ -282,7 +303,7 @@ public class InteractableManager: MonoBehaviour
                 }
 
                 break;
-            case "Scene 7":
+            case "Scene 6":
                 if (background.backgroundName == "Tavern")
                 {
                     PixelSprite Barkeeper = spriteManager.CreateSprite("Barkeeper", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 9");

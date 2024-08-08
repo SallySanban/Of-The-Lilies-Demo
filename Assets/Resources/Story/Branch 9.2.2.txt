@@ -1,28 +1,17 @@
-MoveCharacter(Sabina -x 0.5)
+MoveCharacter(Seiji -x 0.5)
 
-Ahlai as You "<b>I understand</b>, Lady Sabina. You’re right. I apologize for being so brash."
+Ahlai as You "You worry about me too much, Seiji. <b>I’ll be okay</b>. But I think Lady Sabina is right. We should get some rest. It’s been a long day."
 
-Sabina as Lady Sabina "There’s no need to be sorry, dear. I know how much you must be struggling. It would be wise to get some rest for the day."
+Seiji "You’re right. Ahlai… I hope you’ll remember that I’ll always be here for you."
 
-Ahlai as You "Yes, I will. Thank you."
+Ahlai as You "I’ll remember, Seiji. Thank you."
 
-HideCharacter(Sabina), Wait(1), ChangeCharacterEmotion(Seiji -exp Worry), ShowCharacter(Seiji)
+"Good night."
 
-Seiji "Ahlai… Are you okay?"
+Seiji "Good night. Sweet dreams."
 
-MoveCharacter(Seiji -x 1)
+[wait]HideCharacter(Seiji), ShowCG("Blackout"), Wait(0.2), SwitchCG("Curses Appear"), PlaySoundEffect("Thunder")
 
-choice in 0
-{
-	- I'm not okay.
-		Load("Branch 9.2.1" -p true)
-	- I'll be okay.
-		if ($MyoBranch == true)
-		{
-			Load("Branch 9.2.2" -p true)
-		}
-		else
-		{
-			Load("Branch 9.2.3" -p true)
-		}
-}
+[wait]SetupPixelScene("Scene ?" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false) //what scene is this?
+
+//ahlai speech bubble by herself, load next scene

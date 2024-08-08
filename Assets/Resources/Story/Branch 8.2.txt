@@ -1,4 +1,4 @@
-MoveCharacter(Seiji -x 0.5)
+ChangeCharacterEmotion(Seiji -exp Pout), MoveCharacter(Seiji -x 0.5)
 
 Ahlai as You "<b>I'm not sure about that</b>, Seiji."
 
@@ -25,5 +25,9 @@ Ahlai as You "...Okay, we can ask her."
 if ($ManjuBranch == true)
 {
 	Seiji "You can go ahead, <playerName>. Let me just pay for the drinks and then I'll be right behind you."
-	Load("Bad Ending 1")
+	HideCharacter(Seiji), HideVN("Bad Ending 1")
+}
+else
+{
+	HideCharacter(Seiji), HideVN("Scene 8")
 }

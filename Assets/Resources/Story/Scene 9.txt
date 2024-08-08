@@ -1,4 +1,4 @@
-[wait]SetupPixelScene("Scene 9" -bg "Main Shop" -x -4.88 -y -0.14 -d right -vn false), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Smile), ChangeCharacterEmotion(Sabina -exp Smile), ShowCharacter(Seiji Sabina)
+HideTextbox(), [wait]ShowPixel(), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Smile), ChangeCharacterEmotion(Sabina -exp Smile), Wait(0.2), ShowCharacter(Seiji Sabina)
 
 Sabina as Lady Sabina "Oh, you two are back! Thank Dok'kale, you are both such blessings to me! Thank you both for your help with the errands, darlings. Just great work as always."
 
@@ -48,7 +48,7 @@ Sabina as Lady Sabina "I do not doubt that you are mature, <playerName>. But the
 
 "I am truly sorry, dear. But it just isn't time yet, what with the future ahead of you."
 
-HideCharacter(Seiji)
+[wait]HideCharacter(Seiji)
 
 choice in 1
 {
@@ -57,3 +57,5 @@ choice in 1
 	- I understand.
 		Load("Branch 9.2" -p true)
 }
+
+Load("Scene 10")

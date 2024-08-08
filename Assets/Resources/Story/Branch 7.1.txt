@@ -22,7 +22,7 @@ Seiji "We can't risk it, <playerName>. Remember what Lady Sabina told us about t
 
 "Oh, <playerName>. If you tell him your name... he might figure out where we're from. And we don't know what he might do to you if he finds out you're against his beliefs."
 
-[wait]MoveCharacter(Seiji -x 1)
+MoveCharacter(Seiji -x 1), Wait(0.5)
 
 choice in -1
 {

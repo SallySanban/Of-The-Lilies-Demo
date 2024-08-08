@@ -1,12 +1,12 @@
-ShowCG("Manju")
+HideTextbox(), [input]ShowCG("Manju")
 
 Ahlai as You "Ah, I apologize-"
 
 Manju as ??? "...Is something the matter?"
 
-HideCG(), [wait]SetupPixelScene("Scene 7" -bg "Tavern" -x -4.88 -y -0.14 -d right -vn false), ChangeCharacterEmotion(Manju -exp Stern), ShowCharacter(Manju)
+HideTextbox(), [wait]HideCG(), [wait]ShowPixel(), Wait(0.2), [wait]ChangeCharacterEmotion(Manju -exp Stern), [input]ShowCharacter(Manju), 
 
-Ahlai as You "...No, not at all. Unless you want me to say that there's anything wrong with those scars around your neck.  They're really interesting patterns, don't you think?"
+Ahlai as You "...No, not at all. Unless you want me to say that there's anything wrong with those scars around your neck. They're really interesting patterns, don't you think?"
 
 Manju as ??? "I'd rather not have this talk if you're only here to make light of these scars."
 
@@ -28,19 +28,21 @@ Manju as ??? [Smile] "Fair point you make. Forgive me, then. You're at least rig
 
 Ahlai as You "..."
 
-Manju as ??? "But if you're already asking about the scars on my body and I'm already asking where is "home" to you, then is it too much to ask for your name?"
+Manju as ??? "But if you're already asking about the scars on my body and I'm already asking where is 'home' to you, then is it too much to ask for your name?"
 
-[wait]MoveCharacter(Manju -x 0)
+MoveCharacter(Manju -x 0), Wait(0.5)
 
 choice in 1
 {
 	- I go by Ahlai.
+		$ManjuBranch = true
 		Load("Branch 7.1" -p true)
 	- No, but you should tell me yours first.
+		$ManjuBranch = false
 		Load("Branch 7.2" -p true)
 }
 
-HideCharacter(Seiji), HideVN()
+HideCharacter(Seiji), HideVN("Scene 7")
 
 
 

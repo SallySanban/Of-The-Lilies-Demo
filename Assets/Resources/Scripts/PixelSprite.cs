@@ -15,9 +15,11 @@ public class PixelSprite
     public string sceneToDisappear;
 
     protected Coroutine showingSpriteCoroutine, hidingSpriteCoroutine;
+    public Coroutine movingSpriteCoroutine;
 
     public bool isSpriteShowing => showingSpriteCoroutine != null;
     public bool isSpriteHiding => hidingSpriteCoroutine != null;
+    public bool isSpriteMoving => movingSpriteCoroutine != null;
 
     private float fadeSpeed = 3f;
 

@@ -1,28 +1,17 @@
-MoveCharacter(Sabina -x 0.5)
+MoveCharacter(Seiji -x 0.5)
 
-Ahlai as You "<b>I understand</b>, Lady Sabina. You’re right. I apologize for being so brash."
+Ahlai as You "Don't worry about me, Seiji. <b>I'll be okay</b>. Besides, I have those drinks with Sir Aciano to look forward to tomorrow."
 
-Sabina as Lady Sabina "There’s no need to be sorry, dear. I know how much you must be struggling. It would be wise to get some rest for the day."
+Seiji [Sad] "<playerName>... Will you really be going to that?"
 
-Ahlai as You "Yes, I will. Thank you."
+MoveCharacter(Seiji -x 1), Wait(0.5)
 
-HideCharacter(Sabina), Wait(1), ChangeCharacterEmotion(Seiji -exp Worry), ShowCharacter(Seiji)
-
-Seiji "Ahlai… Are you okay?"
-
-MoveCharacter(Seiji -x 1)
-
-choice in 0
+choice in -1
 {
-	- I'm not okay.
-		Load("Branch 9.2.1" -p true)
-	- I'll be okay.
-		if ($MyoBranch == true)
-		{
-			Load("Branch 9.2.2" -p true)
-		}
-		else
-		{
-			Load("Branch 9.2.3" -p true)
-		}
+	- Of course.
+		$MyoBranch = true
+		Load("Branch 9.2.3.1")
+	- Would you rather I don't?
+		$MyoBranch = false
+		Load("Branch 9.2.3.2")
 }

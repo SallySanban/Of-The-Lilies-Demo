@@ -1,0 +1,27 @@
+MoveCharacter(Seiji -x 0.5)
+
+$MyoBranch = false
+
+Ahlai as You "<b>Would you rather I don’t?</b> Is there something you need me to know?"
+
+Seiji "In the end it is your choice, <playerName>. I just feel that Sir Aciano isn’t… right for you."
+
+Ahlai as You "Are you?"
+
+Seiji [Blush] "I… I’m not sure what you’re asking, <playerName>."
+
+Ahlai as You "Very well. If it bothers you this much, I will not go tomorrow."
+
+Seiji [Smile] "That’s… good to hear. I’m relieved."
+
+Seiji [Blush] "I… Anyway—! You must be tired from all our errands… We need to get some rest. Good night, <playerName>."
+
+[input]HideCharacter(Seiji)
+
+Ahlai as You "…Good night, Seiji."
+
+ShowCG("Blackout"), Wait(0.2), SwitchCG("Curses Appear"), PlaySoundEffect("Thunder")
+
+[wait]SetupPixelScene("Scene ?" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false) //what scene is this?
+
+//ahlai speech bubble by herself, load next scene

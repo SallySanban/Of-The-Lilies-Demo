@@ -61,12 +61,9 @@ namespace Dialogue
                 if(rawSpeaker == "Thought")
                 {
                     mainCharacterThought = true;
-                    name = "";
                 }
-                else
-                {
-                    name = rawSpeaker;
-                }
+
+                name = rawSpeaker;
 
                 return;
             }

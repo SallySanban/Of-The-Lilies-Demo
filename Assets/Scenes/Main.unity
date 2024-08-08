@@ -1802,6 +1802,7 @@ GameObject:
   - component: {fileID: 631915578}
   - component: {fileID: 631915580}
   - component: {fileID: 631915579}
+  - component: {fileID: 631915581}
   m_Layer: 5
   m_Name: Underlay
   m_TagString: Untagged
@@ -1867,6 +1868,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631915577}
   m_CullTransparentMesh: 1
+--- !u!114 &631915581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631915577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c416209daeaa049961473acd087ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &721752253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,6 +1893,7 @@ GameObject:
   - component: {fileID: 721752255}
   - component: {fileID: 721752257}
   - component: {fileID: 721752258}
+  - component: {fileID: 721752259}
   m_Layer: 5
   m_Name: VN Scene
   m_TagString: Untagged
@@ -1899,8 +1913,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1049106803}
   - {fileID: 1393507274}
+  - {fileID: 1049106803}
   - {fileID: 1227666929}
   - {fileID: 1423868936}
   m_Father: {fileID: 1557597938}
@@ -1984,6 +1998,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 5
   m_TargetDisplay: 0
+--- !u!114 &721752259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721752253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c416209daeaa049961473acd087ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &725734341
 GameObject:
   m_ObjectHideFlags: 0

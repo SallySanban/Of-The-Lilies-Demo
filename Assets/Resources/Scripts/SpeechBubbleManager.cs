@@ -83,8 +83,11 @@ namespace Dialogue
                 {
                     switch (action.key)
                     {
-                        case "Unlock Interactable":
-                            InteractableManager.Instance.MakeInteractableTrue(action.value);
+                        case "Enable Interactable":
+                            InteractableManager.Instance.EnableDisableInteractable(action.value, true);
+                            break;
+                        case "Disable Interactable":
+                            InteractableManager.Instance.EnableDisableInteractable(action.value, false);
                             break;
                     }    
                 }

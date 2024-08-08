@@ -1,4 +1,4 @@
-MoveCharacter(Seiji -x 0.5)
+MoveCharacter(Manju -x 0.5)
 
 Ahlai as You "<b>No, but you should tell me yours first.</b>"
 
@@ -24,7 +24,7 @@ Ahlai as You "Is this your way of making a joke?"
 
 Manju as ??? "You could say that, but it's no more of a joke than seeing the salary I take to translate texts in the library. In any case, I'll be off, then."
 
-HideCharacter(Manju), ShowCharacter(Seiji), ChangeCharacterEmotion(Seiji -exp Worry)
+HideCharacter(Manju), Wait(0.2), ShowCharacter(Seiji), ChangeCharacterEmotion(Seiji -exp Worry)
 
 Seiji "<playerName>, what did that man tell you? Did you speak to him?"
 
@@ -36,13 +36,13 @@ Ahlai as You "The Order of Hotei? I haven't ever seen one of them out in the ope
 
 Seiji "Yes, I saw it clearly. Remember what Lady Sabina told us about them, <playerName>!"
 
-"They go against what our order stands for, against the safeguards we put in place through the potions we make. They believe that <b>people should be able to wield magic</b>. As if they're equals with  the gods!"
+"They go against what our order stands for, against the safeguards we put in place through the potions we make."
+
+"They believe that <b>people should be able to wield magic</b>. As if they're equals with  the gods!"
 
 "The <b>Order of La Liryo</b> has to ensure that <b>magic is being used responsibly</b>. Sabina's Salves might be our front, but we both knew the truth when Lady Sabina took us in..."
 
-"Oh, <playerName>. If you had told him your name... he might figure out where we're from."
-
-"And we don't know what he might do to you if he finds out you're against his beliefs. Always be careful, <playerName>."
+"Oh, <playerName>. If you had told him your name... he might figure out where we're from. And we don't know what he might do to you if he finds out you're against his beliefs. Always be careful, <playerName>."
 
 Ahlai as You "Of course. You never fail to protect me, Seiji."
 

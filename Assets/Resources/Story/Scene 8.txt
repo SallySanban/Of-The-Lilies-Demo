@@ -1,4 +1,4 @@
-[input]ShowProp("Newspaper"), [wait]HideNewspaper(), Wait(1), ShowCharacter(Seiji), ChangeCharacterEmotion(Seiji -exp Worry)
+HideTextbox(), [input]ShowProp("Newspaper"), [wait]HideProp(), Wait(0.2), [wait]ChangeCharacterEmotion(Seiji -exp Worry), [input]ShowCharacter(Seiji)
 
 Seiji "Are you okay, <playerName>? You look distressed..."
 
@@ -6,9 +6,9 @@ Ahlai as You "I'm fine, Seiji. I am fine."
 
 Seiji "Are you sure? You can tell me, you know."
 
-Ahlai as You "Instead of having me tell you, you can <i>look</i> at this article, Seiji."
-
 ChangeCharacterEmotion(Seiji -exp Pout)
+
+Ahlai as You "Instead of having me tell you, you can <i>look</i> at this article, Seiji."
 
 Ahlai as You "That damn bastard, speaking as if he hasn't done any worse than a pirate!"
 
@@ -48,17 +48,13 @@ Seiji [Thought] "Then... maybe we can convince Lady Sabina to let us go on a jou
 
 "It's not as if we're still the same kids that she took in 10 years ago. You can look for your family, and I'll be there to help you. Be your second set of eyes, yeah?"
 
-[wait]MoveCharacter(Seiji -x 1)
+MoveCharacter(Seiji -x 1), Wait(0.5)
 
-choice in 0
+choice in -1
 {
 	- You would do that for me?
-		$LeaveHouse = false
-		Load("Branch 8.1" -p true)
+		Load("Branch 8.1")
 	- I'm not sure about that.
-		$LeaveHouse = true
-		Load("Branch 8.2" -p true)
+		Load("Branch 8.2")
 }
-
-HideCharacter(Seiji), HideVN("Scene 8")
 

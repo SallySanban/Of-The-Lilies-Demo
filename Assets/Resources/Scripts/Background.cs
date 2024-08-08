@@ -12,7 +12,7 @@ public class Background
 
     public GameObject root = null;
 
-    private CanvasGroup rootCanvasGroup;
+    public CanvasGroup rootCanvasGroup;
 
     protected Coroutine showingBackgroundCoroutine, hidingBackgroundCoroutine;
 

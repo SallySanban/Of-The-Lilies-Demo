@@ -1,0 +1,60 @@
+[wait]HideTextbox(), [wait]HideVN("Scene 9"), [wait]MoveSprite("Ahlai" -x -5.17 -spd 6), [wait]SetupPixelScene("Scene 9" -bg "Kuchai Town" -x -4.88 -y 0.44 -d right -vn false)
+
+PlaySoundEffect("Bump"), ShowVN(), Wait(0.5)
+
+Ahlai as You "Hey!"
+
+"Wait, aren't you-"
+
+Laisa as ??? "Ooh, I'm flattered you already know who I am. I would tread carefully if I were you."
+
+Ahlai as You "It's you! You're the Serpent of the Sea Emperor, Ilaisaane-um, they call you Laisa, don't they?! The pirate Lien captured days ago!"
+
+HideTextbox(), [wait]ShowPixel(), Wait(0.2), [wait]ChangeCharacterEmotion(Laisa -exp Stern), [input]ShowCharacter(Laisa)
+
+Laisa "Aware of my reputation, I see. And what are you going to do about it?"
+
+MoveCharacter(Laisa -x 1), Wait(0.5)
+
+choice in -1
+{
+	- Nothing! I don't intend to put you in trouble.
+		$LaisaBranch = false
+		Load("Branch 10.1" -p true)
+	- That depends on you.
+		$LaisaBranch = true
+		Load("Branch 10.2" -p true)
+}
+
+HideTextbox(), MoveCharacter(Laisa -x 1), MoveCharacter(Lien -x 0 -i true), ChangeCharacterEmotion(Lien -exp Stern), [wait]ShowCharacter(Lien), ChangeCharacterEmotion(Laisa -exp Stern)
+
+Ahlai as You "Lien..."
+
+Lien "I'm sorry, have we met?"
+
+Ahlai as You "I guess you wouldn't remember the faces of those you've ruined. It was only 10 years ago."
+
+Lien "I have no use for you, so I suggest you refrain from getting in my way. Step aside and hand over the Sea Serpent."
+
+Laisa [Smirk] "You don't have to take your anger out on this poor passerby!"
+
+"There's no rush here, General. Do you plan to shoot me on sight with that gun of yours or are you just that excited to see me?"
+
+Lien "You have broken laws and are resisting your arrest, so I am holding you accountable to the laws you violate.  Do not test  my patience, pirate."
+
+Laisa "Tell me, does it ever bother you that you're always just one step behind?"
+
+Lien "That's enough. If you continue to refuse to comply, I will have no choice but to use force."
+
+if ($LaisaBranch == false)
+{
+	Ahlai as You "I shouldn't have expected any less. Using violence to get what you want."
+
+	"I won't let you take her. You'll have to go through me."
+
+	HideCharacter(Laisa Lien), HideVN("Combat Scene")
+}
+else
+{
+	Load("Bad Ending 2")
+}

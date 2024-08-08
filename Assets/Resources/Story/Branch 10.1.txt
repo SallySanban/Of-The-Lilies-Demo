@@ -1,0 +1,31 @@
+MoveCharacter(Laisa -x 0.5)
+
+Ahlai as You "<b>Nothing! I don't intend to put you in trouble.</b> But I'm more than ready to help you, believe me."
+
+Laisa "That's a first. Just what would you gain from helping me?"
+
+Ahlai as You "Hmm, just having General Lien seething over your escape is enough of a reward. Call me petty."
+
+Laisa [Smirk] "I'd rather call you smart. I see our hatred for the general is at least one thing we have in common."
+
+Ahlai as You "More than anything. It is exactly his kind, to just... go off and do unforgivable things to the vulnerable, and then call himself a dutiful military man."
+
+Laisa "Well, I'm not too invested in the politics here... but I am hardly surprised, either."
+
+"You would think that the other Seiyslans would share your views. Really, is it so bad for a woman like myself to get the life she deserves?"
+
+Ahlai as You "Which is why you should let me help you. I could shelter you, while your crewmates' whereabouts remain uncertain."
+
+Laisa "That's very tempting, but I can handle things well alone. You wouldn't <i>want</i> to be entangled with a pirate."
+
+"Well, not in the way you're suggesting, anyway."
+
+"You're an interesting one. I'll make sure to come to you if I'm in need of assistance. I'd be grateful for your help."
+
+Ahlai as You "And I am quite pleased by this arrangement. Sure, then. You can call me <playerName>."
+
+Laisa "<playerName>... I'll make sure to remember that."
+
+Wait(0.5), ChangeCharacterEmotion(Laisa -exp Stern)
+
+Lien as ??? "Seeking allies, pirate?"

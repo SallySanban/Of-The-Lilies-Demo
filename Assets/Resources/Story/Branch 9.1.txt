@@ -1,15 +1,17 @@
 MoveCharacter(Sabina -x 0.5)
 
-Ahlai as You "<b>Please reconsider</b>, Lady Sabina. I miss them, and I’m worried for them every single day. They were <i>taken</i> away."
+Ahlai as You "<b>Please reconsider</b>, Lady Sabina. I miss them, and I'm worried for them every single day. They were <i>taken</i> away."
 
 Sabina as Lady Sabina "I know, but please-"
 
-Ahlai as You "Even just seeing Lien in the news… I couldn’t stand it. That’s how much I <b>hate</b> him, how much I…!"
+Ahlai as You "Even just seeing Lien in the news... I couldn't stand it. That's how much I <b>hate</b> him, how much I...!"
 
-"Lady Sabina, please, you understand just how important this is to me… do you not?"
+"Lady Sabina, please, you understand just how important this is to me... do you not?"
 
 Sabina as Lady Sabina "I can, but it really is not the time. Let us talk about this again later."
 
-"Lady Sabina… please let it be soon."
+Ahlai as You "Lady Sabina... please let it be soon."
 
-"Thank you, though. I just… I just need some time."
+"Thank you, though. I just... I just need some time."
+
+HideCharacter(Sabina)

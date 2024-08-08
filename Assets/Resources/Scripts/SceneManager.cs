@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 using static Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics;
 using UnityEditor;
 using UnityEngine.WSA;
+using UnityEngine.SceneManagement;
 
 public class SceneManager : MonoBehaviour
 {
@@ -29,10 +30,13 @@ public class SceneManager : MonoBehaviour
     public RectTransform pixelSceneContainer => _pixelScene;
 
     protected Coroutine showingVNCoroutine, hidingVNCoroutine;
+    protected Coroutine showingPixelCoroutine, hidingPixelCoroutine;
     protected Coroutine settingBackgroundCoroutine, settingSceneCoroutine;
 
     public bool isVNShowing => showingVNCoroutine != null;
     public bool isVNHiding => hidingVNCoroutine != null;
+    public bool isPixelShowing => showingPixelCoroutine != null;
+    public bool isPixelHiding => hidingPixelCoroutine != null;
     public bool isSettingBackground => settingBackgroundCoroutine != null;
     public bool isSettingScene => settingSceneCoroutine != null;
 
@@ -41,6 +45,7 @@ public class SceneManager : MonoBehaviour
     private float fadeSpeed = 3f;
 
     Player newPlayer = null;
+    Background newBackground = null;
 
     Dictionary<(string sceneName, string background, string interactable), string> vnSceneProgression = new Dictionary<(string, string, string), string>
     {
@@ -51,7 +56,7 @@ public class SceneManager : MonoBehaviour
         { ("Scene 5", "Mr. Quan's Shop", "Mr. Quan"), "Scene 6" },
         { ("Scene 6", "Kuchai Town", "Tavern Door"), "Scene 7" },
         { ("Scene 7", "Tavern", "Newspaper"), "Scene 8" },
-        { ("Scene 8", "Tavern", "Left Door"), "Bad Ending 1" },
+        { ("Bad Ending 1", "Tavern", "Left Door"), "Bad Ending 1" },
         { ("Scene 8", "Kuchai Town", "Sabina Door"), "Scene 9" }
     };
 
@@ -98,7 +103,8 @@ public class SceneManager : MonoBehaviour
                 ("Speech Bubble", "Ahlai", "Excuse me, can we have some drinks to go? Around three will do."),
                 ("Speech Bubble", "Barkeeper", "Three's more than the usual, pal. It'll take me some time."),
                 ("Speech Bubble", "Ahlai", "No problem."),
-                ("Command", "Unlock Interactable", "Newspaper")
+                ("Command", "Enable Interactable", "Newspaper"),
+                ("Command", "Disable Interactable", "Barkeeper")
             }
         }
     };
@@ -123,26 +129,32 @@ public class SceneManager : MonoBehaviour
 
     private void Start()
     {
-        TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
+        //TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
 
-        List<string> lines = FileManager.ReadTextAsset(startingScene);
+        //List<string> lines = FileManager.ReadTextAsset(startingScene);
 
-        DialogueSystem.Instance.SayTextbox(lines);
+        //DialogueSystem.Instance.SayTextbox(lines);
 
-        //sceneName = "Scene 1";
-        //SetupBackground("First Floor Corridor", new Vector2(0.01f, 0.44f), BackgroundConfigData.PlayerDirection.right, true);
+        sceneName = "Scene 8";
+        StartCoroutine(Test());
     }
 
-    public Coroutine SetupBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN = false)
+    private IEnumerator Test()
+    {
+        yield return SetupBackground("Kuchai Town", new Vector2(0.01f, 0.44f), BackgroundConfigData.PlayerDirection.right);
+        yield return ShowScene(true);
+    }
+
+    public Coroutine SetupBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection)
     {
         if (isSettingBackground) return settingBackgroundCoroutine;
 
-        settingBackgroundCoroutine = StartCoroutine(SwitchBackground(background, playerPosition, playerDirection, endVN));
+        settingBackgroundCoroutine = StartCoroutine(SwitchBackground(background, playerPosition, playerDirection));
 
         return settingBackgroundCoroutine;
     }
 
-    private IEnumerator SwitchBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, bool endVN)
+    private IEnumerator SwitchBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection)
     {
         if (backgroundManager.currentBackground != null)
         {
@@ -153,29 +165,70 @@ public class SceneManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        Background newBackground = backgroundManager.CreateBackground(background);
-        interactableManager.SetupInteractablesInScene(newBackground);
+        newBackground = backgroundManager.CreateBackground(background);
 
         newPlayer = spriteManager.CreatePlayer(playerSpriteName, playerPosition, playerDirection, newBackground.root);
 
-        newBackground.Show();
-
-        if (inVNMode && endVN) //change background and hide VN
-        {
-            HideVN();
-            newPlayer.Show();
-        }
-        else if(!inVNMode)  //only change background, VN already hidden
-        {
-            newPlayer.Show();
-        }
-
         virtualCamera.OnTargetObjectWarped(virtualCamera.Follow, spriteManager.currentPlayer.root.transform.position - virtualCamera.transform.position);
 
-        virtualCamera.Follow = spriteManager.currentPlayer.root.transform;
-        confiner.m_BoundingShape2D = backgroundManager.currentBackground.root.GetComponent<PolygonCollider2D>();
+        virtualCamera.Follow = newPlayer.root.transform;
+        confiner.m_BoundingShape2D = newBackground.root.GetComponent<PolygonCollider2D>();
 
         settingBackgroundCoroutine = null;
+    }
+
+    public Coroutine ShowScene(bool endVN = false)
+    {
+        Debug.Log("Attempting to show scene. isPixelShowing: " + isPixelShowing + ", isPixelHiding: " + isPixelHiding);
+        if (isPixelShowing)
+        {
+            Debug.Log("Pixel is already showing, returning existing coroutine.");
+            return showingPixelCoroutine;
+        }
+
+        if (isPixelHiding)
+        {
+            Debug.Log("Pixel is hiding, stopping hiding coroutine.");
+            StopCoroutine(hidingPixelCoroutine);
+        }
+
+        Debug.Log("Starting ShowingScene coroutine.");
+        showingPixelCoroutine = StartCoroutine(ShowingScene(endVN));
+
+        return showingPixelCoroutine;
+    }
+
+    private IEnumerator ShowingScene(bool endVN = false)
+    {
+        Debug.Log("HELLO??? SHOULD GO HERE");
+        yield return HideVN();
+        newBackground.Show();
+        newPlayer.Show();
+        interactableManager.SetupInteractablesInScene(newBackground);
+
+        if (!endVN) //change background and VN not done
+        {
+            yield return new WaitForSeconds(0.5f);
+            ShowVN();
+        }
+
+        showingPixelCoroutine = null;
+    }
+
+    public Coroutine HideScene()
+    {
+        if (isPixelHiding) return hidingPixelCoroutine;
+
+        newPlayer.Hide();
+
+        if (isPixelShowing)
+        {
+            StopCoroutine(showingPixelCoroutine);
+        }
+
+        hidingPixelCoroutine = StartCoroutine(ShowOrHideVNScene(pixelSceneContainer.GetComponent<CanvasGroup>(), false));
+
+        return hidingPixelCoroutine;
     }
 
     public Coroutine SetupScene()
@@ -203,43 +256,47 @@ public class SceneManager : MonoBehaviour
         settingSceneCoroutine = null;
     }
 
-    public void PlayNextScene(Interactable interactableClicked)
+    public Coroutine PlayNextScene(string sceneClicked, string backgroundInteractableIsIn, string interactableClicked)
     {
-        string currentBackground = backgroundManager.currentBackground.backgroundName;
-        string currentScene = sceneName;
-
-        Debug.Log(currentBackground);
-        Debug.Log(currentScene);
-
-        var key = (currentScene, currentBackground, interactableClicked.interactableName);
+        var key = (sceneClicked, backgroundInteractableIsIn, interactableClicked);
         if (vnSceneProgression.TryGetValue(key, out string nextScene))
         {
             TextAsset sceneToPlay = Resources.Load<TextAsset>(FilePaths.storyFiles + nextScene);
 
             List<string> lines = FileManager.ReadTextAsset(sceneToPlay);
 
-            ShowVN(virtualCamera.transform.position);
+            ShowVN();
 
-            DialogueSystem.Instance.SayTextbox(lines);
-
-            return;
+            return DialogueSystem.Instance.SayTextbox(lines);
         }
 
         if (speechBubbleProgression.TryGetValue(key, out List<(string, string, string)> actions))
         {
-            DialogueSystem.Instance.SaySpeechBubble(actions);
-
-            return;
+            return DialogueSystem.Instance.SaySpeechBubble(actions);
         }
 
         Debug.LogError("Next scene was not found!");
-        return;
+        return null;
     }
 
-    public Coroutine ShowVN(Vector3 position)
+    public bool HasNextScene(string sceneClicked, string backgroundInteractableIsIn, string interactableClicked)
     {
-        vnScene.transform.position = position;
+        var key = (sceneClicked, backgroundInteractableIsIn, interactableClicked);
+        if (vnSceneProgression.TryGetValue(key, out string nextScene))
+        {
+            return true;
+        }
 
+        if (speechBubbleProgression.TryGetValue(key, out List<(string, string, string)> actions))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public Coroutine ShowVN()
+    {
         if (isVNShowing) return showingVNCoroutine;
 
         if (isVNHiding)
@@ -247,7 +304,7 @@ public class SceneManager : MonoBehaviour
             StopCoroutine(hidingVNCoroutine);
         }
 
-        showingVNCoroutine = StartCoroutine(ShowOrHideVNScene(true));
+        showingVNCoroutine = StartCoroutine(ShowOrHideVNScene(vnScene, true));
 
         return showingVNCoroutine;
     }
@@ -261,27 +318,24 @@ public class SceneManager : MonoBehaviour
             StopCoroutine(showingVNCoroutine);
         }
 
-        newPlayer.Show();
-
-        hidingVNCoroutine = StartCoroutine(ShowOrHideVNScene(false));
+        hidingVNCoroutine = StartCoroutine(ShowOrHideVNScene(vnScene, false));
 
         return hidingVNCoroutine;
     }
 
-    private IEnumerator ShowOrHideVNScene(bool show)
+    private IEnumerator ShowOrHideVNScene(CanvasGroup objectToHide, bool show)
     {
         float targetAlpha = show ? 1f : 0f;
 
-        CanvasGroup self = vnScene;
-
-        while (self.alpha != targetAlpha)
+        while (objectToHide.alpha != targetAlpha)
         {
-            self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
+            objectToHide.alpha = Mathf.MoveTowards(objectToHide.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
 
             yield return null;
         }
 
         showingVNCoroutine = null;
         hidingVNCoroutine = null;
+        hidingPixelCoroutine = null;
     }
 }
