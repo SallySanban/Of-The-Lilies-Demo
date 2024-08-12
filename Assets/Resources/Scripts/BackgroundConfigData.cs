@@ -27,6 +27,7 @@ public class BackgroundConfigData
         public GameObject backgroundPrefab;
         public KeyToPress keyToPress;
         public Vector2 playerPositionInNextBackground;
+        public Vector2 playerScaleInNextBackground;
         public PlayerDirection playerDirectionInNextBackground;
     }
 

@@ -469,7 +469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 206041528}
   m_Layer: 0
-  m_Name: VNController
+  m_Name: Scene Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1165,9 +1165,55 @@ Transform:
   - {fileID: 922456481}
   - {fileID: 1419403229}
   - {fileID: 2137023835}
+  - {fileID: 473398598}
   m_Father: {fileID: 206041528}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &473398597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473398598}
+  - component: {fileID: 473398599}
+  m_Layer: 0
+  m_Name: Combat Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &473398598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473398597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 453359044}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &473398599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473398597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e8c81101aa8498b79d9e2dc06158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInCombat: 0
 --- !u!1 &498846664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,10 +1780,10 @@ RectTransform:
   m_Father: {fileID: 1928102625}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 66.661026, y: -18.63002}
+  m_SizeDelta: {x: 133.32205, y: 37.26004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591446784
 MonoBehaviour:
@@ -1900,7 +1946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &721752254
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2404,10 +2450,10 @@ RectTransform:
   m_Father: {fileID: 1928102625}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 333.3051, y: -18.63002}
+  m_SizeDelta: {x: 133.32205, y: 37.26004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &856046443
 MonoBehaviour:
@@ -2878,10 +2924,10 @@ RectTransform:
   m_Father: {fileID: 1928102625}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 599.9492, y: -18.63002}
+  m_SizeDelta: {x: 133.32205, y: 37.26004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995400394
 MonoBehaviour:
@@ -4586,10 +4632,10 @@ RectTransform:
   m_Father: {fileID: 1928102625}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 199.98308, y: -18.63002}
+  m_SizeDelta: {x: 133.32205, y: 37.26004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455749187
 MonoBehaviour:
@@ -6441,6 +6487,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1928837673}
   sceneName: 
+  combatSceneName: 
+  inCombatMode: 0
   _pixelScene: {fileID: 151385053}
   vnScene: {fileID: 721752257}
 --- !u!1 &2138627662
@@ -6477,10 +6525,10 @@ RectTransform:
   m_Father: {fileID: 1928102625}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 466.6272, y: -18.63002}
+  m_SizeDelta: {x: 133.32205, y: 37.26004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2138627664
 MonoBehaviour:

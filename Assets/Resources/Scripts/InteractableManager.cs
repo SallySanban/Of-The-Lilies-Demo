@@ -56,7 +56,12 @@ public class InteractableManager: MonoBehaviour
         ("Left Side", "Kuchai Town", "Scene 8"),
         ("Tavern Door", "Kuchai Town", "Scene 8" ),
         ("Ingredients Door", "Kuchai Town", "Scene 8"),
-        ("Quan Door", "Kuchai Town", "Scene 8")
+        ("Quan Door", "Kuchai Town", "Scene 8"),
+        ("Left Side", "Kuchai Town", "Combat Scene - Prologue"),
+        ("Sabina Door", "Kuchai Town", "Combat Scene - Prologue"),
+        ("Tavern Door", "Kuchai Town", "Combat Scene - Prologue"),
+        ("Ingredients Door", "Kuchai Town", "Combat Scene - Prologue"),
+        ("Quan Door", "Kuchai Town", "Combat Scene - Prologue")
     };
 
     private void Awake()
@@ -109,7 +114,7 @@ public class InteractableManager: MonoBehaviour
 
     private IEnumerator WaitForMovePlayer()
     {
-        yield return spriteManager.currentPlayer.MoveSprite(spriteManager.currentPlayer.root.transform.position, collidingInteractable.icon.transform.position, 3f, true);
+        yield return spriteManager.currentPlayer.MoveSprite(spriteManager.currentPlayer.root.transform.position, collidingInteractable.icon.transform.position, 3f, true, true);
         yield return new WaitForSeconds(0.2f);
         sceneManager.PlayNextScene(sceneManager.sceneName, collidingInteractable.backgroundInteractableIsIn, collidingInteractable.interactableName);
     }
@@ -123,13 +128,13 @@ public class InteractableManager: MonoBehaviour
 
         if (sceneManager.HasNextScene(sceneManager.sceneName, collidingInteractable.backgroundInteractableIsIn, collidingInteractable.interactableName)) //has scene right after changing background
         {
-            yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+            yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerScale, collidingInteractable.playerDirection);
             yield return new WaitForSeconds(0.2f);
             yield return sceneManager.PlayNextScene(lastInteractableScene, lastInteractableBackground, lastInteractable);
         }
         else
         {
-            yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerDirection);
+            yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerScale, collidingInteractable.playerDirection);
             yield return new WaitForSeconds(0.2f);
             yield return sceneManager.ShowScene(true);
         }
@@ -155,7 +160,7 @@ public class InteractableManager: MonoBehaviour
 
         foreach (Interactable interactable in interactablesInScene) //unlocks all to reset
         {
-            interactable.isInteractable = true;
+            interactable.isInteractable = false;
             interactable.isLocked = false;
         }
 
@@ -176,10 +181,13 @@ public class InteractableManager: MonoBehaviour
             }
 
             //makes some interactables uninteractable (icon will not appear)
-            if (uninteractables.Contains(interactableToCheck))
+            if (!uninteractables.Contains(interactableToCheck))
+            {
+                interactable.isInteractable = true;
+            }
+            else
             {
                 Debug.Log("CANNOT INTERACT WITH " + interactable.interactableName + " ON " + sceneManager.sceneName);
-                interactable.isInteractable = false;
             }
         }
 
@@ -215,6 +223,7 @@ public class InteractableManager: MonoBehaviour
                                 interactable.keysToPress = GetKeysToPress(data.keyToPress);
                                 interactable.backgroundToSwitch = data.backgroundPrefab.name;
                                 interactable.playerPosition = data.playerPositionInNextBackground;
+                                interactable.playerScale = data.playerScaleInNextBackground;
                                 interactable.playerDirection = data.playerDirectionInNextBackground;
 
                                 break;
@@ -264,7 +273,7 @@ public class InteractableManager: MonoBehaviour
             case "Scene 1":
                 if (background.backgroundName == "Main Shop")
                 {
-                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 2");
+                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 2");
                     Seiji.root.name = "Seiji";
                     Seiji.Show();
                 }
@@ -273,13 +282,13 @@ public class InteractableManager: MonoBehaviour
             case "Scene 2":
                 if(background.backgroundName == "Kuchai Town")
                 {
-                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(2.42f, 0.65f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 3");
+                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(2.42f, 0.65f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 3");
                     Seiji.root.name = "Seiji";
                     Seiji.Show();
                 }
                 else if(background.backgroundName == "Mr. Quan's Shop")
                 {
-                    PixelSprite Quan = spriteManager.CreateSprite("Mr. Quan", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 4");
+                    PixelSprite Quan = spriteManager.CreateSprite("Mr. Quan", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 4");
                     Quan.root.name = "Mr. Quan";
                     Quan.Show();
                 }
@@ -288,7 +297,7 @@ public class InteractableManager: MonoBehaviour
             case "Scene 3":
                 if(background.backgroundName == "Ingredients Shop")
                 {
-                    PixelSprite Shopkeeper = spriteManager.CreateSprite("Ingredients Shopkeeper", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 5");
+                    PixelSprite Shopkeeper = spriteManager.CreateSprite("Ingredients Shopkeeper", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 5");
                     Shopkeeper.root.name = "Ingredients Shopkeeper";
                     Shopkeeper.Show();
                 }
@@ -297,7 +306,7 @@ public class InteractableManager: MonoBehaviour
             case "Scene 5":
                 if (background.backgroundName == "Mr. Quan's Shop")
                 {
-                    PixelSprite Quan = spriteManager.CreateSprite("Mr. Quan", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 6");
+                    PixelSprite Quan = spriteManager.CreateSprite("Mr. Quan", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 6");
                     Quan.root.name = "Mr. Quan";
                     Quan.Show();
                 }
@@ -306,7 +315,7 @@ public class InteractableManager: MonoBehaviour
             case "Scene 6":
                 if (background.backgroundName == "Tavern")
                 {
-                    PixelSprite Barkeeper = spriteManager.CreateSprite("Barkeeper", new Vector2(6.05f, 1.55f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 9");
+                    PixelSprite Barkeeper = spriteManager.CreateSprite("Barkeeper", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 9");
                     Barkeeper.root.name = "Barkeeper";
                     Barkeeper.Show();
                 }

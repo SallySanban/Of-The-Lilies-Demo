@@ -31,7 +31,7 @@ public class SpriteManager : MonoBehaviour
 
     private void Update()
     {
-        if (!DialogueSystem.Instance.speechBubbleActive && !sceneManager.inVNMode && currentPlayer != null && BackgroundManager.Instance.currentBackground != null)
+        if (!DialogueSystem.Instance.speechBubbleActive && !sceneManager.inVNMode && currentPlayer != null && BackgroundManager.Instance.currentBackground != null && !CombatManager.Instance.playerInCombat)
         {
             if(Player.playerBeingMoved == false)
             {
@@ -61,12 +61,12 @@ public class SpriteManager : MonoBehaviour
         }
     }
 
-    public PixelSprite CreateSprite(string spriteName, Vector2 spritePosition, BackgroundConfigData.PlayerDirection spriteDirection, GameObject backgroundSpriteIsOn, string sceneToDisappear)
+    public PixelSprite CreateSprite(string spriteName, Vector2 spritePosition, Vector2 spriteScale, BackgroundConfigData.PlayerDirection spriteDirection, GameObject backgroundSpriteIsOn, string sceneToDisappear)
     {
         string prefabPath = FormatCGPath(spritePrefabPath, spriteName);
         GameObject spritePrefab = Resources.Load<GameObject>(prefabPath);
 
-        PixelSprite sprite = new PixelSprite(spritePrefab, spritePosition, spriteDirection, backgroundSpriteIsOn.transform.Find(spriteContainer), sceneToDisappear);
+        PixelSprite sprite = new PixelSprite(spritePrefab, spritePosition, spriteScale, spriteDirection, backgroundSpriteIsOn.transform.Find(spriteContainer), sceneToDisappear);
         sprite.root.name = spriteName;
 
         spritesInScene.Add(sprite);
@@ -74,12 +74,23 @@ public class SpriteManager : MonoBehaviour
         return sprite;
     }
 
-    public Player CreatePlayer(string spriteName, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection, GameObject backgroundSpriteIsOn)
+    public Enemy CreateEnemy(string spriteName, Vector2 spritePosition, Vector2 spriteScale, BackgroundConfigData.PlayerDirection spriteDirection, GameObject backgroundSpriteIsOn)
     {
         string prefabPath = FormatCGPath(spritePrefabPath, spriteName);
         GameObject spritePrefab = Resources.Load<GameObject>(prefabPath);
 
-        Player playerSprite = new Player(spritePrefab, playerPosition, playerDirection, backgroundSpriteIsOn.transform.Find(playerContainer));
+        Enemy sprite = new Enemy(spritePrefab, spritePosition, spriteScale, spriteDirection, backgroundSpriteIsOn.transform.Find(spriteContainer));
+        sprite.root.name = spriteName;
+
+        return sprite;
+    }
+
+    public Player CreatePlayer(string spriteName, Vector2 playerPosition, Vector2 playerScale, BackgroundConfigData.PlayerDirection playerDirection, GameObject backgroundSpriteIsOn)
+    {
+        string prefabPath = FormatCGPath(spritePrefabPath, spriteName);
+        GameObject spritePrefab = Resources.Load<GameObject>(prefabPath);
+
+        Player playerSprite = new Player(spritePrefab, playerPosition, playerScale, playerDirection, backgroundSpriteIsOn.transform.Find(playerContainer));
         playerSprite.root.name = spriteName;
 
         currentPlayer = playerSprite;

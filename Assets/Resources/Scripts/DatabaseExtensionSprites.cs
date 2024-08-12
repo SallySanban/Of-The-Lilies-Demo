@@ -32,7 +32,7 @@ namespace Commands
             if (spriteName == "Ahlai")
             {
                 Vector3 playerPosition = SpriteManager.Instance.currentPlayer.root.transform.position;
-                yield return SpriteManager.Instance.currentPlayer.MoveSprite(playerPosition, new Vector3(position, playerPosition.y), speed);
+                yield return SpriteManager.Instance.currentPlayer.MoveSprite(playerPosition, new Vector3(position, playerPosition.y), speed, isPlayer: true);
             }
         }
     }

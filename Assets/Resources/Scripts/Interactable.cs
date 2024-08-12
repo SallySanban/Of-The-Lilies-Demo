@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Dialogue;
+using UnityEngine.SceneManagement;
 
 public class Interactable : MonoBehaviour
 {
@@ -15,23 +16,43 @@ public class Interactable : MonoBehaviour
 
     [HideInInspector] public string interactableName;
     [HideInInspector] public string backgroundInteractableIsIn;
-    [HideInInspector] public bool isInteractable = true; //icon will not appear if false
+    [HideInInspector] public bool isInteractable = false; //icon will not appear if false
     [HideInInspector] public List<KeyCode> keysToPress = null;
 
     //for BackgroundSwitcher Interactables
     [HideInInspector] public string backgroundToSwitch = "";
     [HideInInspector] public Vector2 playerPosition = new Vector2(0f, 0f);
+    [HideInInspector] public Vector2 playerScale = new Vector2(1f, 1f);
     [HideInInspector] public BackgroundConfigData.PlayerDirection playerDirection = BackgroundConfigData.PlayerDirection.right;
     [HideInInspector] public bool isLocked = false; //icon will appear but cannot go inside room
 
     private void Start()
     {
-        icon.gameObject.SetActive(false);
+        if(interactableType != InteractableType.CombatTrigger)
+        {
+            icon.gameObject.SetActive(false);
+            isInteractable = false;
+            isLocked = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && isInteractable && !DialogueSystem.Instance.speechBubbleActive)
+        if (collision.CompareTag("Player") && isInteractable && !DialogueSystem.Instance.speechBubbleActive && interactableType != InteractableType.CombatTrigger)
+        {
+            icon.gameObject.SetActive(true);
+            interactableManager.CollidingWithPlayer(true, this);
+        }
+        else if(collision.CompareTag("Player") && interactableType == InteractableType.CombatTrigger && SceneManager.Instance.inCombatMode)
+        {
+            CombatManager.Instance.StartCombat(SceneManager.Instance.combatSceneName, gameObject.name);
+            Destroy(this);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && isInteractable && !DialogueSystem.Instance.speechBubbleActive && interactableType != InteractableType.CombatTrigger)
         {
             icon.gameObject.SetActive(true);
             interactableManager.CollidingWithPlayer(true, this);
@@ -40,7 +61,7 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && isInteractable)
+        if (collision.CompareTag("Player") && isInteractable && interactableType != InteractableType.CombatTrigger)
         {
             icon.gameObject.SetActive(false);
 
@@ -52,6 +73,7 @@ public class Interactable : MonoBehaviour
     {
         BackgroundSwitcher,
         Object,
-        PixelSprite
+        PixelSprite,
+        CombatTrigger
     }
 }

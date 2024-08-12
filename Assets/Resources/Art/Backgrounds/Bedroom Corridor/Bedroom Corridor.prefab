@@ -284,7 +284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7273542696746519890}
   - component: {fileID: 2432137463741174558}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 1770775423475891609}
   - component: {fileID: 4052670088653557500}
   - component: {fileID: 4786980635178107175}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -909,7 +909,7 @@ GameObject:
   - component: {fileID: 6949402180617791365}
   - component: {fileID: 1254026480031076751}
   - component: {fileID: 3785609721664766794}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}

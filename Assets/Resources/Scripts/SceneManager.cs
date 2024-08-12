@@ -3,11 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Dialogue;
 using Cinemachine;
-using UnityEngine.UIElements;
-using static Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics;
-using UnityEditor;
-using UnityEngine.WSA;
-using UnityEngine.SceneManagement;
 
 public class SceneManager : MonoBehaviour
 {
@@ -17,12 +12,15 @@ public class SceneManager : MonoBehaviour
 
     private const string dialogueFile = "Scene 1";
     private const string playerSpriteName = "Ahlai";
+    private const string combatSceneIdentifier = "Combat Scene - ";
     public static SceneManager Instance { get; private set; }
     public BackgroundManager backgroundManager => BackgroundManager.Instance;
     public SpriteManager spriteManager => SpriteManager.Instance;
     public InteractableManager interactableManager => InteractableManager.Instance;
 
     [HideInInspector] public string sceneName = "";
+    [HideInInspector] public string combatSceneName = "";
+    [HideInInspector] public bool inCombatMode = false;
 
     [SerializeField] private RectTransform _pixelScene;
     [SerializeField] private CanvasGroup vnScene;
@@ -135,26 +133,27 @@ public class SceneManager : MonoBehaviour
 
         //DialogueSystem.Instance.SayTextbox(lines);
 
-        sceneName = "Scene 8";
+        sceneName = "Combat Scene - Prologue";
         StartCoroutine(Test());
     }
 
     private IEnumerator Test()
     {
-        yield return SetupBackground("Kuchai Town", new Vector2(0.01f, 0.44f), BackgroundConfigData.PlayerDirection.right);
+        yield return SetupBackground("Kuchai Town", new Vector2(0.01f, 0.44f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right);
         yield return ShowScene(true);
+        yield return SetupScene();
     }
 
-    public Coroutine SetupBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection)
+    public Coroutine SetupBackground(string background, Vector2 playerPosition, Vector2 playerScale, BackgroundConfigData.PlayerDirection playerDirection)
     {
         if (isSettingBackground) return settingBackgroundCoroutine;
 
-        settingBackgroundCoroutine = StartCoroutine(SwitchBackground(background, playerPosition, playerDirection));
+        settingBackgroundCoroutine = StartCoroutine(SwitchBackground(background, playerPosition, playerScale, playerDirection));
 
         return settingBackgroundCoroutine;
     }
 
-    private IEnumerator SwitchBackground(string background, Vector2 playerPosition, BackgroundConfigData.PlayerDirection playerDirection)
+    private IEnumerator SwitchBackground(string background, Vector2 playerPosition, Vector2 playerScale, BackgroundConfigData.PlayerDirection playerDirection)
     {
         if (backgroundManager.currentBackground != null)
         {
@@ -167,7 +166,7 @@ public class SceneManager : MonoBehaviour
 
         newBackground = backgroundManager.CreateBackground(background);
 
-        newPlayer = spriteManager.CreatePlayer(playerSpriteName, playerPosition, playerDirection, newBackground.root);
+        newPlayer = spriteManager.CreatePlayer(playerSpriteName, playerPosition, playerScale, playerDirection, newBackground.root);
 
         virtualCamera.OnTargetObjectWarped(virtualCamera.Follow, spriteManager.currentPlayer.root.transform.position - virtualCamera.transform.position);
 
@@ -179,20 +178,16 @@ public class SceneManager : MonoBehaviour
 
     public Coroutine ShowScene(bool endVN = false)
     {
-        Debug.Log("Attempting to show scene. isPixelShowing: " + isPixelShowing + ", isPixelHiding: " + isPixelHiding);
         if (isPixelShowing)
         {
-            Debug.Log("Pixel is already showing, returning existing coroutine.");
             return showingPixelCoroutine;
         }
 
         if (isPixelHiding)
         {
-            Debug.Log("Pixel is hiding, stopping hiding coroutine.");
             StopCoroutine(hidingPixelCoroutine);
         }
 
-        Debug.Log("Starting ShowingScene coroutine.");
         showingPixelCoroutine = StartCoroutine(ShowingScene(endVN));
 
         return showingPixelCoroutine;
@@ -200,7 +195,6 @@ public class SceneManager : MonoBehaviour
 
     private IEnumerator ShowingScene(bool endVN = false)
     {
-        Debug.Log("HELLO??? SHOULD GO HERE");
         yield return HideVN();
         newBackground.Show();
         newPlayer.Show();
@@ -236,6 +230,13 @@ public class SceneManager : MonoBehaviour
         if (isSettingScene) return settingSceneCoroutine;
 
         settingSceneCoroutine = StartCoroutine(SwitchScene());
+
+        if (sceneName.StartsWith(combatSceneIdentifier))
+        {
+            combatSceneName = sceneName.Substring(combatSceneIdentifier.Length);
+            inCombatMode = true;
+            CombatManager.Instance.SetupCombatScene();
+        }
 
         return settingSceneCoroutine;
     }

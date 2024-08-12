@@ -1,4 +1,4 @@
-[wait]HideTextbox(), [wait]HideVN("Scene 9"), [wait]MoveSprite("Ahlai" -x -5.17 -spd 6), [wait]SetupPixelScene("Scene 9" -bg "Kuchai Town" -x -4.88 -y 0.44 -d right -vn false)
+[wait]HideTextbox(), [wait]HideVN("Scene 9"), [wait]MoveSprite("Ahlai" -x -5.17 -spd 6), [wait]SetupPixelScene("Scene 9" -bg "Kuchai Town" -x -4.88 -y 0.44 -s 0.88 -d right -vn false)
 
 PlaySoundEffect("Bump"), ShowVN(), Wait(0.5)
 
@@ -52,7 +52,7 @@ if ($LaisaBranch == false)
 
 	"I won't let you take her. You'll have to go through me."
 
-	HideCharacter(Laisa Lien), HideVN("Combat Scene")
+	HideCharacter(Laisa Lien), HideVN("Combat Scene - Prologue")
 }
 else
 {

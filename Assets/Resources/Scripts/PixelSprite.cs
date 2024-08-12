@@ -14,6 +14,8 @@ public class PixelSprite
     public Animator rootAnimator;
     public string sceneToDisappear;
 
+    public CurrentSpriteDirection currentDirection = CurrentSpriteDirection.Right;
+
     protected Coroutine showingSpriteCoroutine, hidingSpriteCoroutine;
     public Coroutine movingSpriteCoroutine;
 
@@ -23,7 +25,7 @@ public class PixelSprite
 
     private float fadeSpeed = 3f;
 
-    public PixelSprite(GameObject prefab, Vector2 spritePosition, BackgroundConfigData.PlayerDirection spriteDirection, Transform backgroundSpriteIsOn, string sceneToDisappear = "")
+    public PixelSprite(GameObject prefab, Vector2 spritePosition, Vector2 spriteScale, BackgroundConfigData.PlayerDirection spriteDirection, Transform backgroundSpriteIsOn, string sceneToDisappear = "")
     {
         if (prefab != null)
         {
@@ -41,15 +43,16 @@ public class PixelSprite
             spriteColor.a = 0f;
             rootSpriteRenderer.color = spriteColor;
 
-            SetPositionDirection(spritePosition, spriteDirection);
+            SetPositionDirectionScale(spritePosition, spriteScale, spriteDirection);
         }
     }
 
-    public void SetPositionDirection(Vector2 position, BackgroundConfigData.PlayerDirection direction)
+    public void SetPositionDirectionScale(Vector2 position, Vector2 scale, BackgroundConfigData.PlayerDirection direction)
     {
         if (root == null) return;
 
         root.transform.position = position;
+        root.localScale = scale;
 
         if (direction == BackgroundConfigData.PlayerDirection.left)
         {
@@ -63,6 +66,116 @@ public class PixelSprite
         else if (direction == BackgroundConfigData.PlayerDirection.right)
         {
             root.Find("Sprite").transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+    }
+
+    public Coroutine MoveSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false)
+    {
+        if (isSpriteMoving) return movingSpriteCoroutine;
+
+        positionToGo.y = currentPosition.y;
+
+        if (interacting)
+        {
+            if (currentDirection == CurrentSpriteDirection.Left)
+            {
+                positionToGo.x = positionToGo.x + 3.5f; //if facing left, go right
+            }
+            else
+            {
+                positionToGo.x = positionToGo.x - 0.5f; //if facing right, go left
+            }
+        }
+
+        if (Vector2.Distance(currentPosition, positionToGo) <= 0.01f)
+        {
+            movingSpriteCoroutine = null;
+        }
+        else
+        {
+            movingSpriteCoroutine = spriteManager.StartCoroutine(MovingSprite(currentPosition, positionToGo, speed, interacting, isPlayer));
+        }
+
+        return movingSpriteCoroutine;
+    }
+
+    private IEnumerator MovingSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false)
+    {
+        if (isPlayer) Player.playerBeingMoved = true;
+        
+        if (interacting)
+        {
+            if (currentDirection == CurrentSpriteDirection.Left)
+            {
+                if(isPlayer) Player.move.x = -1;
+                FlipSprite(CurrentSpriteDirection.Right);
+            }
+            else
+            {
+                if (isPlayer) Player.move.x = 1;
+                FlipSprite(CurrentSpriteDirection.Left);
+            }
+        }
+        else
+        {
+            if (positionToGo.x < currentPosition.x)
+            {
+                if (isPlayer) Player.move.x = -1;
+                FlipSprite(CurrentSpriteDirection.Left);
+            }
+            else if (positionToGo.x > currentPosition.x)
+            {
+                if (isPlayer) Player.move.x = 1;
+                FlipSprite(CurrentSpriteDirection.Right);
+            }
+        }
+
+        while (currentPosition.x != positionToGo.x)
+        {
+            root.transform.position = currentPosition;
+
+            currentPosition = Vector3.MoveTowards(currentPosition, positionToGo, speed * Time.deltaTime);
+
+            if (Vector2.Distance(currentPosition, positionToGo) <= 0.0001f)
+            {
+                if (isPlayer) Player.move = Vector3.zero;
+
+                if (interacting)
+                {
+                    if (currentDirection == CurrentSpriteDirection.Left)
+                    {
+                        FlipSprite(CurrentSpriteDirection.Right);
+                    }
+                    else
+                    {
+                        FlipSprite(CurrentSpriteDirection.Left);
+                    }
+                }
+
+                root.transform.position = positionToGo;
+
+                if (isPlayer) Player.playerBeingMoved = false;
+
+                break;
+            }
+
+            yield return null;
+        }
+
+        movingSpriteCoroutine = null;
+    }
+
+    public void FlipSprite(CurrentSpriteDirection direction)
+    {
+        if (direction == CurrentSpriteDirection.Left)
+        {
+            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 180, 0);
+            currentDirection = CurrentSpriteDirection.Left;
+        }
+        else
+        {
+            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 0, 0);
+            currentDirection = CurrentSpriteDirection.Right;
         }
     }
 
@@ -123,5 +236,11 @@ public class PixelSprite
 
         showingSpriteCoroutine = null;
         hidingSpriteCoroutine = null;
+    }
+
+    public enum CurrentSpriteDirection
+    {
+        Left,
+        Right
     }
 }
