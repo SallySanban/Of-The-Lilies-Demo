@@ -12,6 +12,7 @@ public class PixelSprite
 
     public SpriteRenderer rootSpriteRenderer;
     public Animator rootAnimator;
+    public CanvasGroup rootCanvasGroup;
     public string sceneToDisappear;
 
     public CurrentSpriteDirection currentDirection = CurrentSpriteDirection.Right;
@@ -35,6 +36,7 @@ public class PixelSprite
 
             root = ob.GetComponent<Transform>();
 
+            rootCanvasGroup = root.GetComponent<CanvasGroup>();
             rootSpriteRenderer = root.GetComponentInChildren<SpriteRenderer>();
             rootAnimator = rootSpriteRenderer.GetComponent<Animator>();
             this.sceneToDisappear = sceneToDisappear;
@@ -209,6 +211,8 @@ public class PixelSprite
 
     public IEnumerator ShowingOrHiding(bool show, bool immediate)
     {
+        if (rootSpriteRenderer == null) yield break;
+
         float targetAlpha = show ? 1f : 0f;
 
         Color spriteColor = rootSpriteRenderer.color;
@@ -216,6 +220,7 @@ public class PixelSprite
         if (immediate)
         {
             spriteColor.a = targetAlpha;
+            rootCanvasGroup.alpha = targetAlpha;
         }
         else
         {
@@ -223,6 +228,9 @@ public class PixelSprite
             {
                 spriteColor.a = Mathf.MoveTowards(spriteColor.a, targetAlpha, fadeSpeed * Time.deltaTime);
                 rootSpriteRenderer.color = spriteColor;
+
+                rootCanvasGroup.alpha = Mathf.MoveTowards(rootCanvasGroup.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
+                rootCanvasGroup.alpha = targetAlpha;
 
                 if (spriteColor.a == 0f)
                 {

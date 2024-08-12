@@ -41,7 +41,7 @@ public class SpriteManager : MonoBehaviour
 
         if(currentPlayer != null)
         {
-            currentPlayer.AnimatePlayer();
+            currentPlayer.AnimatePlayerWalk();
         }
         
     }

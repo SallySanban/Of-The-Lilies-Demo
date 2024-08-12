@@ -16,7 +16,7 @@ public class Player : PixelSprite
 
     }
 
-    public void AnimatePlayer()
+    public void AnimatePlayerWalk()
     {
         if (move == Vector3.zero)
         {
@@ -26,6 +26,16 @@ public class Player : PixelSprite
         {
             rootAnimator.SetBool("Walk", true);
         }
+    }
+
+    public void AnimatePlayerAttack()
+    {
+        rootAnimator.SetTrigger("Attack");
+    }
+
+    public void AnimatePlayerHurt()
+    {
+        rootAnimator.SetTrigger("Hurt");
     }
 
     public void MovePlayer()

@@ -10,5 +10,6 @@ public class FollowCamera : MonoBehaviour
         position.z = 1f;
 
         transform.position = position;
+        GetComponent<RectTransform>().localScale = new Vector3(GetComponent<RectTransform>().localScale.x, GetComponent<RectTransform>().localScale.y, 0f);
     }
 }

@@ -21,7 +21,7 @@ namespace Dialogue
         private void InitializeActions()
         {
             actions.Add((input.actions["Next"], NextLine));
-            actions.Add((input.actions["Move"], context => Player.move = context.ReadValue<Vector2>()));
+            actions.Add((input.actions["Move"], MovePlayer));
         }
 
         private void OnEnable()
@@ -55,6 +55,18 @@ namespace Dialogue
             if (SceneManager.Instance.inVNMode || DialogueSystem.Instance.speechBubbleActive)
             {
                 DialogueSystem.Instance.OnUserNext();
+            }
+        }
+
+        public void MovePlayer(InputAction.CallbackContext context)
+        {
+            if(!SceneManager.Instance.inVNMode && !DialogueSystem.Instance.speechBubbleActive && !CombatManager.Instance.playerInCombat)
+            {
+                Player.move = context.ReadValue<Vector2>();
+            }
+            else
+            {
+                Player.move = Vector2.zero;
             }
         }
     }

@@ -282,7 +282,7 @@ public class InteractableManager: MonoBehaviour
             case "Scene 2":
                 if(background.backgroundName == "Kuchai Town")
                 {
-                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(2.42f, 0.65f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 3");
+                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(8.02f, -0.31f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 3");
                     Seiji.root.name = "Seiji";
                     Seiji.Show();
                 }

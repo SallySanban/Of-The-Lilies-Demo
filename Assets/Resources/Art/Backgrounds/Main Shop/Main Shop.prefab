@@ -144,6 +144,7 @@ MonoBehaviour:
   keysToPress: 
   backgroundToSwitch: 
   playerPosition: {x: 0, y: 0}
+  playerScale: {x: 1, y: 1}
   playerDirection: 1
   isLocked: 0
 --- !u!1 &216710652771339610
@@ -837,6 +838,7 @@ MonoBehaviour:
   keysToPress: 
   backgroundToSwitch: 
   playerPosition: {x: 0, y: 0}
+  playerScale: {x: 1, y: 1}
   playerDirection: 1
   isLocked: 0
 --- !u!1 &6876892288754986601

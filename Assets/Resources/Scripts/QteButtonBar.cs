@@ -10,16 +10,23 @@ public class QteButtonBar
     private GameObject keyTemplate;
 
     private float sliderTimer = 1f;
-    private bool stopTimer = false;
+    private float speed;
+    public bool stopTimer = false;
 
     public GameObject root = null;
 
-    public QteButtonBar(GameObject prefab)
+    private QteButton currentButton = null;
+    private List<QteButton> currentButtons = new List<QteButton>();
+    private int currentButtonIndex = 0;
+
+    public bool allButtonsCorrect = false;
+
+    public QteButtonBar(GameObject prefab, string[] buttonSequence, float speed)
     {
         if(prefab != null)
         {
             Transform sprite = GameObject.Find("Ahlai").GetComponentInChildren<Transform>();
-            Vector3 spriteOffset = new Vector3(1.37f, 3f, 0f);
+            Vector3 spriteOffset = new Vector3(0.14f, 2.36f, 0f);
 
             Vector3 position = sprite.position + spriteOffset;
 
@@ -28,28 +35,65 @@ public class QteButtonBar
             buttonBar = root.GetComponent<Slider>();
             keyParent = root.transform.Find("Keys").gameObject;
             keyTemplate = keyParent.transform.Find("Key").gameObject;
+
+            SetupButtonBar(buttonSequence, speed);
         }
     }
 
-    //void Start()
-    //{
-    //    buttonBar.maxValue = sliderTimer;
-    //    buttonBar.value = sliderTimer;
-
-    //    StartTimer();
-    //}
-
-    private void StartTimer()
+    private void SetupButtonBar(string[] buttonSequence, float speed)
     {
-        //StartCoroutine(Timer());
+        buttonBar.maxValue = sliderTimer;
+        buttonBar.value = sliderTimer;
+
+        this.speed = speed;
+
+        bool isFirstButton = true;
+        foreach(string item in buttonSequence)
+        {
+            QteButton button = new QteButton(item, keyTemplate, keyParent.transform, isFirstButton);
+
+            currentButtons.Add(button);
+
+            isFirstButton = false;
+        }
+
+        currentButton = currentButtons[currentButtonIndex];
     }
 
-    private IEnumerator Timer()
+    public void NextButton()
+    {
+        currentButton.arrow.SetActive(false);
+        currentButton.rootCanvasGroup.alpha = 0f;
+
+        currentButtonIndex++;
+        currentButton = currentButtons[currentButtonIndex];
+
+        currentButton.arrow.SetActive(true);
+    }
+
+    public void ResetButton()
+    {
+        currentButton.arrow.SetActive(false);
+
+        foreach(QteButton button in currentButtons)
+        {
+            button.rootCanvasGroup.alpha = 1f;
+        }
+
+        currentButtonIndex = 0;
+        currentButton = currentButtons[currentButtonIndex];
+
+        currentButton.arrow.SetActive(true);
+    }
+
+    public IEnumerator Timer()
     {
         while(stopTimer == false)
         {
+            if (allButtonsCorrect) yield break;
+
             sliderTimer -= Time.deltaTime;
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(speed);
 
             if(sliderTimer <= 0)
             {

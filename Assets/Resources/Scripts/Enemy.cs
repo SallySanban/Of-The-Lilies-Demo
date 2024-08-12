@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : PixelSprite
 {
     private float speed = 3f;
     public float attackRange = 0.94f;
+    public float health;
+
+    public Slider healthBar = null;
 
     public Enemy(GameObject prefab, Vector2 spritePosition, Vector2 spriteScale, BackgroundConfigData.PlayerDirection spriteDirection, Transform backgroundSpriteIsOn) : base(prefab, spritePosition, spriteScale, spriteDirection, backgroundSpriteIsOn)
     {
-
+        healthBar = root.Find("Health Bar").GetComponent<Slider>();
+        health = healthBar.maxValue;
     }
 
     public void FollowPlayer(Transform self)

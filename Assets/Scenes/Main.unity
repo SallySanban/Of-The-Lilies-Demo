@@ -1213,6 +1213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e51e8c81101aa8498b79d9e2dc06158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sliderPosition: {x: 0, y: 0}
   playerInCombat: 0
 --- !u!1 &498846664
 GameObject:
