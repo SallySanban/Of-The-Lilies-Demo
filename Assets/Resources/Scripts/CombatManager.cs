@@ -399,18 +399,26 @@ public class CombatManager: MonoBehaviour
 
     private IEnumerator EndTrigger(bool endCombatMode)
     {
-        foreach (Enemy enemy in enemiesInScene)
-        {
-            enemy.Hide();
-        }
-
-        enemiesInScene.Clear();
-
         playerInCombat = false;
 
-        if (endCombatMode)
+        if (enemiesInScene[0].health > 0)
         {
-            yield return null;
+            yield return Restart();
+            yield break;
+        }
+        else
+        {
+            foreach (Enemy enemy in enemiesInScene)
+            {
+                enemy.Hide();
+            }
+
+            enemiesInScene.Clear();
+
+            if (endCombatMode)
+            {
+                yield return null;
+            }
         }
     }
 
