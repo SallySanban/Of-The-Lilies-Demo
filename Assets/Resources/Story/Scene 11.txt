@@ -1,0 +1,47 @@
+[wait]HideTextbox(), [wait]ShowCG("Blackout"), PlaySoundEffect("Sword Clashing"), Wait(1), PlaySoundEffect("Thunder")
+
+[input]SwitchCG("Curses Appear"), HideCG()
+
+Ahlai as You "Laisa? Laisa, where are you?!"
+
+Laisa "Over here, my pearl."
+
+HideTextbox(), ShowCG("Laisa")
+
+Laisa "Shh... Don't let them know where I've gone. It will be our little secret."
+
+Ahlai as You "Wait, Laisa, I can help you!"
+
+Laisa "I'm afraid I can't let you be involved in this any further."
+
+Lien "Find her! We can't let her escape in this mist!"
+
+Laisa "Goodbye, my pearl."
+
+HideCG()
+
+Ahlai as You "I need to find a way out of here without getting caught..."
+
+enter Seiji [Worry] "<playerName>! There you are..."
+
+"When the skies began to change and you still weren't home... I started to worry. I'm so glad you're safe."
+
+Lien "Find the Sea Serpent's accomplice as well!"
+
+Seiji "Hurry, Ahlai. Let's go back to Sabina's Salves. We'll be safe there."
+
+HideCharacter(Seiji), HideTextbox(), [input]ShowCG("Blackout"), HideCG(), [wait]SetupPixelScene("Scene 11" -bg "Main Shop" -x -4.88 -y 0.44 -d right -vn false), ShowVN(), Wait(0.5)
+
+MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Worry), ChangeCharacterEmotion(Sabina -exp Worry), Wait(0.2), ShowCharacter(Seiji Sabina)
+
+Sabina as Lady Sabina "<playerName>! Where have you been?! I've been worried sick!"
+
+Ahlai as You "I... I'm sorry, Lady Sabina. I just stepped outside for a second..."
+
+Sabina as Lady Sabina "Thank Dok'kale you're safe! It was a good thing Seiji was able to find you!"
+
+"You would not believe how quickly he ran when we all saw that darkness overtaking Kuchai Town, oh, when the darkness began..."
+
+Load("Scene 12")
+
+

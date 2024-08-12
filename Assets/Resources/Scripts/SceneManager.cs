@@ -55,7 +55,10 @@ public class SceneManager : MonoBehaviour
         { ("Scene 6", "Kuchai Town", "Tavern Door"), "Scene 7" },
         { ("Scene 7", "Tavern", "Newspaper"), "Scene 8" },
         { ("Bad Ending 1", "Tavern", "Left Door"), "Bad Ending 1" },
-        { ("Scene 8", "Kuchai Town", "Sabina Door"), "Scene 9" }
+        { ("Scene 8", "Kuchai Town", "Sabina Door"), "Scene 9" },
+        { ("Prologue", "Kuchai Town", ""), "Scene 11" },
+        { ("Scene 13", "First Floor Corridor", "Stairs"), "Scene 14" },
+        { ("Scene 14", "First Floor Corridor", "Door"), "Expected Ending" }
     };
 
     Dictionary<(string sceneName, string background, string interactable), List<(string command, string key, string value)>> speechBubbleProgression = new Dictionary<(string sceneName, string background, string interactable), List<(string command, string key, string value)>>
@@ -103,6 +106,18 @@ public class SceneManager : MonoBehaviour
                 ("Speech Bubble", "Ahlai", "No problem."),
                 ("Command", "Enable Interactable", "Newspaper"),
                 ("Command", "Disable Interactable", "Barkeeper")
+            }
+        },
+        {
+            ("Scene 13", "First Floor Corridor", "Door"), new List<(string command, string key, string value)>
+            {
+                ("Speech Bubble", "Ahlai", "The door is locked...")
+            }
+        },
+        {
+            ("Scene 14", "First Floor Corridor", "Door"), new List<(string command, string key, string value)>
+            {
+                ("Speech Bubble", "Ahlai", "It's open!")
             }
         }
     };

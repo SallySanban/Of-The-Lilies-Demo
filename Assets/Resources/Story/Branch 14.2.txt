@@ -1,0 +1,15 @@
+MoveCharacter(Seiji -x 0.5)
+
+Ahlai as You "You might be right, Seiji. <b>I changed my mind.</b> It may be too dangerous for me to go after all."
+
+Seiji "I hope you understand. I only wish to keep you safe."
+
+Seiji [Sad] "I'm glad... I was able to convince you, <playerName>."
+
+Ahlai as You "I wish you the best, Seiji. I have no doubt that you are capable of your duty. Please rest well for your trip."
+
+Seiji "I will. Goodbye, <playerName>."
+
+HideCharacter(Seiji)
+
+Load("Bad Ending 3.2")

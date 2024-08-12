@@ -1,0 +1,45 @@
+enter Sabina as Lady Sabina [Stern] "You made it."
+
+Ahlai as You "I haven't been back here since I took the oath to the Order of La Liryo... What is it that you wanted to talk about, Lady?"
+
+Sabina as Lady Sabina "Do you know how magic works, <playerName>?"
+
+Ahlai as You "Yes. It was given to us by the gods, and can be used through the potions that we make."
+
+Sabina as Lady Sabina "There's a little more to it than that."
+
+"The gods are fond of nature. This is why I speculated the curses manifest itself in the form of calamities."
+
+"When they bestowed upon us their magic, they did so in the form of <b>essence</b>."
+
+"This is the energy that is only present in nature. Plants, animals, and even... people."
+
+Ahlai as You "So people have essence, yes, and...?"
+
+Sabina as Lady Sabina "Yes, indeed. The potions that we brew are designed to harness this essence, allowing people to use it to produce magic."
+
+"Some people may have more essence than others, making them more receptive to magic. Seiji is one of these people."
+
+Ahlai as You "He is? Is he aware of this?"
+
+Sabina as Lady Sabina "No. I found out when he was a young age, but I chose not to tell him to keep him safe."
+
+"And I trust you'll keep this information from him as well."
+
+Ahlai as You "Why does this even have to be a secret? Doesn't Seiji... we all trust him here, don't we?"
+
+Sabina as Lady Sabina "When I told you both about the Ritual of Respite, I left out the most critical component needed to perform the ritual."
+
+"I didn't want to tell you in front of Seiji... he has a good heart."
+
+"But you will need to make a choice.{a} The ritual requires a single sacrifice to be made as an offering. And given the amount of essence he possesses... {a} he is one of the most suitable candidates."
+
+Ahlai as You "Seiji? As a... sacrifice?"
+
+Sabina as Lady Sabina "There are a few you can choose from, Ahlai. The choice is there for you to take. But think very, very hard about what you want, knowing all you've been through."
+
+"With what I know...{a} and with what the Ritual of Respite demands of us..."
+
+"Ultimately, you can only <b>choose one.</b>"
+
+ShowLIScreen()

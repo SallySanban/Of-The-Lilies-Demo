@@ -1,0 +1,25 @@
+MoveCharacter(Seiji -x 1 -i true), ChangeCharacterEmotion(Seiji -exp Sad), ShowCharacter(Seiji)
+
+Ahlai as You "I see. You're right, Lady Sabina. <b>Seiji will do fine on his own.</b>"
+
+"He is definitely strong enough. He will be able to handle himself."
+
+Seiji "I only wish to keep you safe, <playerName>. If you feel that is the right decision... I will go on my own."
+
+"Lady Sabina, I am at your service. My duty is to the Order of La Liryo."
+
+Sabina as Lady Sabina "I'm sorry to have you do this, Seiji. The Kingdom of Seiysla is counting on you. When you're ready... meet me in the back room."
+
+HideCharacter(Sabina), MoveCharacter(Seiji -x 0.5)
+
+Seiji "<playerName>... I may be gone for a long time. I'm not certain I will get back safely."
+
+"But I'm happy to protect you from the dangers of the curse. Please be safe before I get back."
+
+Ahlai as You "I will. Thank you, Seiji. You really are wonderful, and I... I wish you luck. Okay?"
+
+"I'll make sure to see you."
+
+HideCharacter(Seiji)
+
+Load("Bad Ending 3.2")

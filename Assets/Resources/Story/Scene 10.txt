@@ -19,10 +19,8 @@ MoveCharacter(Laisa -x 1), Wait(0.5)
 choice in -1
 {
 	- Nothing! I don't intend to put you in trouble.
-		$LaisaBranch = false
 		Load("Branch 10.1" -p true)
 	- That depends on you.
-		$LaisaBranch = true
 		Load("Branch 10.2" -p true)
 }
 

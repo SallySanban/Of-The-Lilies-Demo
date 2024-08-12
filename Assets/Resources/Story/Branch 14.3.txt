@@ -1,0 +1,51 @@
+MoveCharacter(Seiji -x 0.5)
+
+Ahlai as You "You aren't going to change my mind about this, Seiji. <b>I want to go.</b> And I'm plenty capable of ensuring your protection, too."
+
+Seiji [Smile] "I never doubted it, <playerName>. If you feel this is the right decision, I will help you."
+
+"With your family, with the curses, I will be right there with you."
+
+Ahlai as You "Then it shouldn't be a surprise that we have a long journey ahead of us. Let's <b>get to rest</b>. Good night, Seiji."
+
+Seiji "Sweet dreams, <playerName>."
+
+[wait]HideTextbox(), [wait]HideVN("Scene 14"), [wait]MoveSprite("Ahlai" -x -5.17 -spd 6)
+
+ShowVN(), Wait(0.5)
+
+[input]ShowCG("Blackout"), SwitchCG("Red Sky"), PlaySoundEffect("Fire"), [input]PlaySoundEffect("Sword Clashing")
+
+Sabina as ??? "<i>Ahlai, wake up.</i>"
+
+HideTextbox(), HideCG(), [wait]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
+
+Ahlai as You "Lady Sabina...? What time is it?"
+
+Sabina as Lady Sabina "Just before dawn. Was it the nightmares, dear? You look distressed."
+
+Ahlai as You "Yes, the nightmares. The same story with the general and the same damn atrocities."
+
+Sabina as Lady Sabina "..."
+
+Ahlai as You "And... and it's even the same set of thoughts that enter my mind. I don't have it in me to forgive him."
+
+"What I <i>do</i> know is that I need to see my family free..."
+
+"I need to do something to take back what our people lost..."
+
+"And I <i>need</i> to see that cursed general suffer for what he took away from us. Without a single thought--"
+
+Sabina as Lady Sabina "<playerName>, well... I suppose you are right. But you have to remember that this isn't healthy to obsess over."
+
+"At least for your sake, while you <b>try to find peace from all of this.</b>"
+
+Ahlai as You "I'll find peace when I find my family free and our enemies dead. It's as far as I am willing, at least... for now."
+
+Sabina as Lady Sabina "It is your decision, dear. Take some time to think it over."
+
+"When you've calmed down, <b>come down to the back room</b>. There is something important I need to tell you."
+
+HideCharacter(Sabina)
+
+HideVN("Scene 14")

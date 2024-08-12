@@ -1,27 +1,31 @@
 MoveCharacter(Seiji -x 0.5)
 
-$MyoBranch = false
+Ahlai as You "<b>Would you rather I don't?</b> Is there something you need me to know?"
 
-Ahlai as You "<b>Would you rather I don’t?</b> Is there something you need me to know?"
-
-Seiji "In the end it is your choice, <playerName>. I just feel that Sir Aciano isn’t… right for you."
+Seiji "In the end it is your choice, <playerName>. I just feel that Sir Aciano isn't... right for you."
 
 Ahlai as You "Are you?"
 
-Seiji [Blush] "I… I’m not sure what you’re asking, <playerName>."
+Seiji [Blush] "I... I'm not sure what you're asking, <playerName>."
 
 Ahlai as You "Very well. If it bothers you this much, I will not go tomorrow."
 
-Seiji [Smile] "That’s… good to hear. I’m relieved."
+Seiji [Smile] "That's... good to hear. I'm relieved."
 
-Seiji [Blush] "I… Anyway—! You must be tired from all our errands… We need to get some rest. Good night, <playerName>."
+Seiji [Blush] "I... Anyway-! You must be tired from all our errands... We need to get some rest. Good night, <playerName>."
 
 [input]HideCharacter(Seiji)
 
-Ahlai as You "…Good night, Seiji."
+Ahlai as You "...Good night, Seiji."
 
-ShowCG("Blackout"), Wait(0.2), SwitchCG("Curses Appear"), PlaySoundEffect("Thunder")
+ShowCG("Blackout"), Wait(0.2), SwitchCG("Curses Appear"), PlaySoundEffect("Thunder"), HideCG()
 
-[wait]SetupPixelScene("Scene ?" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false) //what scene is this?
+[wait]SetupPixelScene("Scene 12" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false)
 
-//ahlai speech bubble by herself, load next scene
+[input]SpeechBubble(Ahlai -dialogue "What's going on?"), HideSpeechBubble(), [input]SpeechBubble(Ahlai -dialogue "I better go downstairs and check.")
+
+ShowCG("Blackout"), Wait(1), HideCG(), [wait]SetupPixelScene("Scene 12" -bg "Main Shop" -x -4.88 -y -0.14 -d right -vn false), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Worry), ChangeCharacterEmotion(Sabina -exp Worry), Wait(0.2), ShowCharacter(Seiji Sabina)
+
+Sabina as Lady Sabina "Ay, Dok'kale... The darkness in the skies... What a bad sign..."
+
+Load("Scene 12")

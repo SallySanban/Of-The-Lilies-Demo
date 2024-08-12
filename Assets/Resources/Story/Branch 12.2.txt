@@ -1,0 +1,25 @@
+MoveCharacter(Seiji -x 1 -i true), ChangeCharacterEmotion(Seiji -exp Sad), ShowCharacter(Seiji)
+
+Ahlai as You "I see. You're right, Lady Sabina. <b>Seiji will do fine on his own.</b> He is definitely strong enough."
+
+"And besides... I have that drink with Sir Aciano to look forward to. It may be the right call that I don't go."
+
+Seiji [Sad] "I only wish to keep you safe, Ahlai. If you feel that is the right decision... I will go on my own."
+
+"Lady Sabina, I am at your service. My duty is to the Order of La Liryo."
+
+Sabina as Lady Sabina "I'm sorry to have you do this, Seiji. The rest of Seiysla is counting on you. When you're ready... meet me in the back room."
+
+HideTextbox(), HideCharacter(Sabina), [input]MoveCharacter(Seiji -x 0.5)
+
+Seiji "<playerName>... Maybe you could send me off before I leave?"
+
+Ahlai as You "I'm sorry, Seiji. There is too much I need to prepare for my meeting with Sir Aciano... I'm afraid I won't be able to."
+
+"I do wish you the best, though. I am confident you will be able to come back safely."
+
+Seiji "I see... Goodbye then, <playerName>."
+
+HideCharacter(Seiji)
+
+Load("Bad Ending 3.1")

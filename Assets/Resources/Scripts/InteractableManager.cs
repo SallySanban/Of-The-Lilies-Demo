@@ -21,7 +21,8 @@ public class InteractableManager: MonoBehaviour
 
     List<(string interactableName, string background, string scene)> lockedInteractables = new List<(string, string, string)>
     {
-        ("Door", "First Floor Corridor", "Scene 1")
+        ("Door", "First Floor Corridor", "Scene 1"),
+        ("Door", "First Floor Corridor", "Scene 13")
     };
 
     List<(string interactableName, string background, string scene)> uninteractables = new List<(string, string, string)>

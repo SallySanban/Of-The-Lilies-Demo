@@ -1,0 +1,7 @@
+ShowCG("Blackout"), SwitchCG("3 Months"), Wait(1), PlaySoundEffect("Fire")
+
+Thought "<i>Seiji… never returned safely.</i>"
+
+Thought "<i>I only wish I could have bid him goodbye.</i>"
+
+SwitchCG("Bad End")

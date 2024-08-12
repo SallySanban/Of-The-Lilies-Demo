@@ -1,5 +1,7 @@
 MoveCharacter(Seiji -x 0.5)
 
+$
+
 Ahlai as You "Don't worry about me, Seiji. <b>I'll be okay</b>. Besides, I have those drinks with Sir Aciano to look forward to tomorrow."
 
 Seiji [Sad] "<playerName>... Will you really be going to that?"

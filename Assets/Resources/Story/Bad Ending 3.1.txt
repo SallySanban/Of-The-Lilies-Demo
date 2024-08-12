@@ -1,0 +1,31 @@
+[input]ShowCG("Blackout")
+
+HideCG(), [wait]SetupPixelScene("Bad Ending 3.1" -bg "Main Shop" -x -4.88 -y -0.14 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Stern)
+
+Ahlai as You "Lady Sabina, where is Seiji?"
+
+Sabina as Lady Sabina "What are you talking about, dear? Seiji has already left."
+
+Ahlai as You "I see... Has Sir Aciano come by since then?"
+
+Sabina as Lady Sabina "I'm sorry dear, it seems Myo won't be able to make it today. I do believe he made the right decision not to come."
+
+"With the onset of the curses, it is best for you to stay indoors. They've only gotten worse since then."
+
+Ahlai as You "Both of them... Seiji needed to leave? When even Sir Aciano couldn't handle the curse this time around?"
+
+Sabina as Lady Sabina "Don't worry too much about Seiji, dear. He can handle himself."
+
+Sabina as Lady Sabina [Worry] "But he was quite sad when he left... He cares for you a great deal, you know."
+
+"Did you get to send him off, or...?"
+
+Ahlai as You "Well, no, but... I just thought... I could spend some time with Myo Aciano."
+
+Sabina as Lady Sabina "Oh, it's a shame he couldn't come. But it would be difficult to meet him until these curses are resolved."
+
+"We can only patiently hope that Seiji gets back safely."
+
+Load("Bad Ending 3.2")
+
+

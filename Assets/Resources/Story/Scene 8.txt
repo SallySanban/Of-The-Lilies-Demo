@@ -53,8 +53,10 @@ MoveCharacter(Seiji -x 1), Wait(0.5)
 choice in -1
 {
 	- You would do that for me?
+		$SeijiBranch = false
 		Load("Branch 8.1")
 	- I'm not sure about that.
+		$SeijiBranch = true
 		Load("Branch 8.2")
 }
 

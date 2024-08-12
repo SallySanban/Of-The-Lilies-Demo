@@ -1,0 +1,58 @@
+Seiji "This darkness... Lady Sabina, what is happening?"
+
+Sabina as Lady Sabina "The gods must be angry, Seiji. Their anger is manifesting itself as curses in nature."
+
+"I can't know for sure what's actually happening... but our situation can only get worse from here."
+
+"We have a duty here at the Order of La Liryo. <b>We cannot allow the threat of these curses to continue.</b>"
+
+"The adjacent effects of these curses could be devastating, ranging from pestilence to calamities..."
+
+"Dok'kale bestowed upon us the sacred art of magic, intending for us to use it wisely."
+
+"That is why La Liryo has dedicated itself to crafting potions for years, in order to reach a balance between Dok'kale's gifts and our human responsibilities."
+
+"But with the manifestation of these curses, I'm afraid this balance may break..."
+
+Ahlai as You "What do we need to do, Lady?"
+
+Sabina as Lady Sabina "I can only think of one solution... There's no telling if it will work... but it will at least alleviate its effects."
+
+"<b>The Ritual of Respite.</b>{a} A powerful banishing ceremony. It's been known to have been used in the past to get rid of negative essence."
+
+"And we will be needing to <b>find the ancient artifacts necessary to perform it</b>."
+
+Seiji "Where can we find these items, Lady?"
+
+Sabina as Lady Sabina "Well, the  artifacts we need have been lost to time. They surely lie beyond Kuchai's borders. You will need to prepare for a journey."
+
+Ahlai as You "A journey? Outside Kuchai Town? Hell, outside of Sagai Province?"
+
+Sabina as Lady Sabina "It's not a task I can ask of you, Ahlai. It's not safe, and... I couldn't bear to see you <i>hurt again</i>."
+
+"Seiji is more experienced and has been trained for combat since he was little. So, Seiji must be the one to go."
+
+[wait]HideCharacter(Seiji)
+
+choice in 1
+{
+	- I have to go with him.
+		$SeijiBranch = false
+		Load("Branch 12.1")
+	- Seiji will do fine on his own.
+		if ($MyoBranch == true)
+		{
+			Load("Branch 12.2")
+		}
+		else
+		{
+			if($SeijiBranch == true)
+			{
+				Load("Branch 12.3")
+			}
+			else
+			{
+				Load("Branch 12.4")
+			}
+		}
+}

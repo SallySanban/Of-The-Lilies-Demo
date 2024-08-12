@@ -1,0 +1,17 @@
+MoveCharacter(Seiji -x 0.5)
+
+Ahlai as You "You might be right, Seiji. <b>I changed my mind.</b> It may be too dangerous for me to go after all."
+
+"And besides... I have that drink with Sir Aciano to look forward to. It may be the right call that I don't go."
+
+Seiji [Sad] "I... I see. Yes, this is for the best."
+
+"I'm glad... I was able to convince you, Ahlai."
+
+Ahlai as You "I wish you the best, Seiji. Please rest well for your trip."
+
+Seiji "I will. Goodbye, Ahlai."
+
+HideCharacter(Seiji)
+
+Load("Bad Ending 3.1")

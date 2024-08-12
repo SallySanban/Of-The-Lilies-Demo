@@ -1,0 +1,11 @@
+MoveCharacter(Sabina -x 0.5)
+
+Ahlai as You "I see. You're right, Lady Sabina. <b>Seiji will do fine on his own.</b>"
+
+"I do believe he is strong enough. But that doesn't mean he wouldn't need help. He's alone! He's... anything could happen!"
+
+"You said it yourself, Lady. The effects of the curses could be devastating."
+
+"We don't know what Seiji will have to face out there, and there won't be anyone to protect him!"
+
+Load("Scene 13")

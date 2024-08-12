@@ -1,0 +1,7 @@
+MoveCharacter(Sabina -x 0.5)
+
+Ahlai as You "But Lady Sabina, <b>I have to go with him!</b> You said it yourself- the effects of the curses could be devastating!"
+
+"Even if Seiji's trained, he'll be alone! What if the worst happens, may our god forbid, and no one's there to protect <i>him</i>?"
+
+Load("Scene 13")

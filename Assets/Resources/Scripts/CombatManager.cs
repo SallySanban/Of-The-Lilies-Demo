@@ -417,7 +417,7 @@ public class CombatManager: MonoBehaviour
 
             if (endCombatMode)
             {
-                yield return null;
+                yield return sceneManager.PlayNextScene(sceneManager.combatSceneName, BackgroundManager.Instance.currentBackground.backgroundName, "");
             }
         }
     }
