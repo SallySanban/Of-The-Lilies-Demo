@@ -20,7 +20,7 @@ enter Seiji [Pout] "<playerName>. I hope you're being careful about the people y
 
 Ahlai as You "Oh? Seiji... Don't tell me, are you jealous of the great governor?"
 
-Seiji [Blush] "Of course not, <playerName>! I'm only  looking out for you. We have been together for almost 10 years now, so it's only natural that I want to do that, to look out for you."
+Seiji [Blush] "Of course not, <playerName>! I'm only looking out for you. We have been together for almost 10 years now, so it's only natural that I want to do that, to look out for you."
 
 Ahlai as You "And I'm grateful for that, Seiji."
 

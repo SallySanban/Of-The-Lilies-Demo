@@ -10,5 +10,5 @@ Ahlai as You "Yes... This place feels so sacred. I feel somewhat guilty already,
 
 Seiji "Remember to only take what we need. Mr. Quan said it himself... only <b>two silverleaf sprigs</b>. Then we'd have to go back to his shop."
 
-HideVN("Scene 5"), HideCharacter(Seiji)
+HideTextbox(), HideVN("Scene 5"), HideCharacter(Seiji)
 

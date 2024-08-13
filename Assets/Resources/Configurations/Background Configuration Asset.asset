@@ -88,7 +88,7 @@ MonoBehaviour:
     - interactableName: Tavern Door
       backgroundPrefab: {fileID: 7165131873778756440, guid: bef1a8d4dac0c9e41a7eaedf9616a9d6, type: 3}
       keyToPress: 2
-      playerPositionInNextBackground: {x: -6.03, y: -0.05}
+      playerPositionInNextBackground: {x: -6.03, y: -0.29}
       playerScaleInNextBackground: {x: 1, y: 1}
       playerDirectionInNextBackground: 1
     - interactableName: Ingredients Door

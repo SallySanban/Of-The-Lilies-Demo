@@ -42,7 +42,7 @@ choice in 1
 		Load("Branch 7.2" -p true)
 }
 
-HideCharacter(Seiji), HideVN("Scene 7")
+HideTextbox(), HideCharacter(Seiji), HideVN("Scene 7")
 
 
 

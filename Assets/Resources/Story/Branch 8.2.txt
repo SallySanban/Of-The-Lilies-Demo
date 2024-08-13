@@ -25,9 +25,9 @@ Ahlai as You "...Okay, we can ask her."
 if ($ManjuBranch == true)
 {
 	Seiji "You can go ahead, <playerName>. Let me just pay for the drinks and then I'll be right behind you."
-	HideCharacter(Seiji), HideVN("Bad Ending 1")
+	HideTextbox(), HideCharacter(Seiji), HideVN("Bad Ending 1")
 }
 else
 {
-	HideCharacter(Seiji), HideVN("Scene 8")
+	HideTextbox(), HideCharacter(Seiji), HideVN("Scene 8")
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Dialogue;
-using UnityEngine.SceneManagement;
 
 public class Interactable : MonoBehaviour
 {
@@ -26,7 +25,7 @@ public class Interactable : MonoBehaviour
     [HideInInspector] public BackgroundConfigData.PlayerDirection playerDirection = BackgroundConfigData.PlayerDirection.right;
     [HideInInspector] public bool isLocked = false; //icon will appear but cannot go inside room
 
-    private void Start()
+    private void Awake()
     {
         if(interactableType != InteractableType.CombatTrigger)
         {
@@ -56,6 +55,10 @@ public class Interactable : MonoBehaviour
         {
             icon.gameObject.SetActive(true);
             interactableManager.CollidingWithPlayer(true, this);
+        }
+        else if(collision.CompareTag("Player") && !isInteractable && !DialogueSystem.Instance.speechBubbleActive && interactableType != InteractableType.CombatTrigger)
+        {
+            icon.gameObject.SetActive(false);
         }
     }
 

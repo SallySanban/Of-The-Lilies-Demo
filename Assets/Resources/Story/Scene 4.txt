@@ -6,15 +6,16 @@ Seiji [Smile] "Do you happen to have any everbark flakes, silverleaf sprigs, and
 
 Shopkeeper "Oh, I'm sorry, young ones... I have some everbark flakes and pearl shell powder, but I just ran out of silverleaf sprigs."
 
+ChangeCharacterEmotion(Seiji -exp Worry)
+
 Ahlai as You "Oh, no... Do you have an idea on where we can get some?"
 
 Shopkeeper "Well, the Kadlagan Forest is not too far from here. That's where we usually source our silverleaf sprigs!"
 
 "But remember to only take what you need... Dok'kale is not fond of those that hurt his home."
 
-Seiji "Don't worry, sir. Thank you for the information. We'll take the components that you have."
+Seiji [Smile] "Don't worry, sir. Thank you for the information. We'll take the components that you have."
 
 Shopkeeper "Why, certainly! That will be two gold coins. Have a safe trip to the forest!"
 
-HideVN("Scene 4"), HideCharacter(Seiji)
-
+PlaySoundEffect("Coins Jiggling 2"), HideTextbox(), HideVN("Scene 4"), HideCharacter(Seiji)

@@ -1,4 +1,4 @@
-ShowCharacter(Seiji)
+HideTextbox(), [wait]ShowPixel(), Wait(0.2), ShowCharacter(Seiji)
 
 Seiji [Smile] "Good morning, Sir Quan! Delivery from Sabina's Salves."
 
@@ -8,7 +8,7 @@ Ahlai as You "Of course! We wouldn't want to disappoint one of our best customer
 
 Mr. Quan "Well, it's exactly your great service that made me a loyal patron of your business. Here's my payment."
 
-PlaySoundEffect("Coins jiggling")
+PlaySoundEffect("Coins Jiggling 2")
 
 Seiji "Thank you, sir! You'll find the set of potions you ordered here in this crate."
 
@@ -28,4 +28,4 @@ Mr. Quan "That's great! I appreciate it, <playerName>. Here's what I need: a das
 
 Ahlai as You "Thank you very much!"
 
-HideVN("Scene 3"), HideCharacter(Seiji)
+HideTextbox(), HideVN("Scene 3"), HideCharacter(Seiji)

@@ -38,7 +38,7 @@ public class SceneManager : MonoBehaviour
     public bool isSettingBackground => settingBackgroundCoroutine != null;
     public bool isSettingScene => settingSceneCoroutine != null;
 
-    public bool inVNMode => vnScene.alpha == 1f;
+    public bool inVNMode = true;
 
     private float fadeSpeed = 3f;
 
@@ -48,10 +48,10 @@ public class SceneManager : MonoBehaviour
     Dictionary<(string sceneName, string background, string interactable), string> vnSceneProgression = new Dictionary<(string, string, string), string>
     {
         { ("Scene 1", "Main Shop", "Seiji"), "Scene 2" },
-        { ("Scene 2", "Mr. Quan's Shop", "Mr. Quan"), "Scene 3" },
+        { ("Scene 2", "Kuchai Town", "Quan Door"), "Scene 3" },
         { ("Scene 3", "Ingredients Shop", "Ingredients Shopkeeper"), "Scene 4" },
         { ("Scene 4", "Kadlagan Forest", "Statue"), "Scene 5" },
-        { ("Scene 5", "Mr. Quan's Shop", "Mr. Quan"), "Scene 6" },
+        { ("Scene 5", "Kuchai Town", "Quan Door"), "Scene 6" },
         { ("Scene 6", "Kuchai Town", "Tavern Door"), "Scene 7" },
         { ("Scene 7", "Tavern", "Newspaper"), "Scene 8" },
         { ("Bad Ending 1", "Tavern", "Left Door"), "Bad Ending 1" },
@@ -72,18 +72,15 @@ public class SceneManager : MonoBehaviour
         {
             ("Scene 2", "Kuchai Town", "Seiji"), new List<(string command, string key, string value)>
             {
-                ("Speech Bubble", "Seiji", "Remember, Mr. Quan's house is the only one with the red walls."),
+                ("Speech Bubble", "Seiji", "Mr. Quan's house is the only one with the red walls."),
                 ("Speech Bubble", "Seiji", "He likes to stand out... It's not that hard to miss.")
             }
         },
         {
-            ("Scene 3", "Mr. Quan's Shop", "Mr. Quan"), new List<(string command, string key, string value)>
+            ("Scene 4", "Ingredients Shop", "Ingredients Shopkeeper"), new List<(string command, string key, string value)>
             {
-                ("Speech Bubble", "Mr. Quan", "Here's what I need:"),
-                ("Speech Bubble", "Mr. Quan", "A dash of everbark flakes,"),
-                ("Speech Bubble", "Mr. Quan", "Two silverleaf sprigs,"),
-                ("Speech Bubble", "Mr. Quan", "and a sprinkle of pearl shell powder."),
-                ("Speech Bubble", "Mr. Quan", "You'll be able to find them in the components shop down the street.")
+                ("Speech Bubble", "Ingredients Shopkeeper", "The Kadlagan Forest is not too far from here."),
+                ("Speech Bubble", "Ingredients Shopkeeper", "But remember to only take what you need...")
             }
         },
         {
@@ -101,8 +98,10 @@ public class SceneManager : MonoBehaviour
         {
             ("Scene 7", "Tavern", "Barkeeper"), new List<(string command, string key, string value)>
             {
-                ("Speech Bubble", "Ahlai", "Excuse me, can we have some drinks to go? Around three will do."),
-                ("Speech Bubble", "Barkeeper", "Three's more than the usual, pal. It'll take me some time."),
+                ("Speech Bubble", "Ahlai", "Excuse me, can we have some drinks to go?"),
+                ("Speech Bubble", "Ahlai", "Around three will do."),
+                ("Speech Bubble", "Barkeeper", "Three's more than the usual, pal."),
+                ("Speech Bubble", "Barkeeper", "It'll take me some time."),
                 ("Speech Bubble", "Ahlai", "No problem."),
                 ("Command", "Enable Interactable", "Newspaper"),
                 ("Command", "Disable Interactable", "Barkeeper")
@@ -142,19 +141,20 @@ public class SceneManager : MonoBehaviour
 
     private void Start()
     {
-        TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
+        //TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
 
-        List<string> lines = FileManager.ReadTextAsset(startingScene);
+        //List<string> lines = FileManager.ReadTextAsset(startingScene);
 
-        DialogueSystem.Instance.SayTextbox(lines);
+        //DialogueSystem.Instance.SayTextbox(lines);
 
-        //sceneName = "Test Scene";
-        //StartCoroutine(Test());
+        sceneName = "Scene 3";
+        StartCoroutine(Test());
     }
 
     private IEnumerator Test()
     {
-        yield return SetupBackground("Ahlai's Bedroom", new Vector2(0.01f, -0.04f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right);
+        //yield return SetupBackground("Tavern", new Vector2(0.01f, -0.04f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right);
+        yield return SetupBackground("Kuchai Town", new Vector2(0.57f, -0.85f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right);
         yield return ShowScene(true);
         yield return SetupScene();
     }
@@ -322,6 +322,8 @@ public class SceneManager : MonoBehaviour
 
         showingVNCoroutine = StartCoroutine(ShowOrHideVNScene(vnScene, true));
 
+        inVNMode = true;
+
         return showingVNCoroutine;
     }
 
@@ -335,6 +337,8 @@ public class SceneManager : MonoBehaviour
         }
 
         hidingVNCoroutine = StartCoroutine(ShowOrHideVNScene(vnScene, false));
+
+        inVNMode = false;
 
         return hidingVNCoroutine;
     }

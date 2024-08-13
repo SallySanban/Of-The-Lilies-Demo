@@ -60,6 +60,6 @@ choice in 1
 
 Seiji [Smile] "First, we need to make some deliveries to Mr. Quan. He wants his usual order. After that, Lady Sabina wants us to bring back some drinks from the tavern."
 
-Ahlai as You "Okay, great! We should get going. We wouldn't  want late deliveries for our best customer."
+Ahlai as You "Okay, great! We should get going. We wouldn't want late deliveries for our best customer."
 
-HideVN("Scene 2"), HideCharacter(Seiji)
+HideTextbox(), HideVN("Scene 2"), HideCharacter(Seiji)

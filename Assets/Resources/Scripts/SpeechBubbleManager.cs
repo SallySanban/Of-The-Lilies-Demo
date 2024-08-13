@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Dialogue
 {
@@ -23,11 +24,10 @@ namespace Dialogue
         private TextArchitect textArchitect;
         private bool userNext = false;
 
-        private Vector2 padding = new Vector2(10f, 10f);
-        private float minWidth = 752.36f;
-        private float minHeight = 180.48f;
-        private float maxWidth = 854f;
-        private float maxHeight = 335.60f;
+        private float minWidth = 300f;
+        private float minHeight = 250f;
+        private float maxWidth = 680f;
+        private float maxHeight = 300f;
 
         protected Coroutine showingBubbleCoroutine, hidingBubbleCoroutine;
 
@@ -43,6 +43,11 @@ namespace Dialogue
                 speechBubblePrefab = prefab;
                 dialogueSystem.onUserNext += OnUserNext;
             }
+        }
+
+        public void ChangeSize(Vector2 size)
+        {
+            speechBubbleTransform.sizeDelta = size;
         }
 
         private void OnUserNext()
@@ -81,6 +86,8 @@ namespace Dialogue
 
                 if(action.command == "Command")
                 {
+                    Debug.Log(action.key);
+
                     switch (action.key)
                     {
                         case "Enable Interactable":
@@ -96,19 +103,24 @@ namespace Dialogue
                     CreateSpeechBubble(action.key);
                     Show();
                     yield return TalkSpeechBubble(action.value);
-                    yield return WaitForUserInput();
+
+                    if(!SceneManager.Instance.inVNMode) yield return WaitForUserInput();
                 }
 
-                if (i == actions.Count - 1)
+                if (!SceneManager.Instance.inVNMode)
                 {
-                    Hide();
-                }
-                else
-                {
-                    Hide(true);
+                    if (i == actions.Count - 1)
+                    {
+                        Hide();
+                    }
+                    else
+                    {
+                        Hide(true);
+                    }
                 }
             }
 
+            Debug.Log("Actions ended");
             dialogueSystem.speechBubbleActive = false;
             process = null;
         }
@@ -130,16 +142,16 @@ namespace Dialogue
             Vector3 spriteOffset;
             if(characterName == "Ahlai")
             {
-                spriteOffset = new Vector3(-0.99f, 1.39f, 0f);
+                spriteOffset = new Vector3(0.53f, 1.93f, 0f);
             }
             else
             {
-                spriteOffset = new Vector3(-0.68f, 1.48f, 0f);
+                spriteOffset = new Vector3(0.29f, 1.48f, 0f);
             }
             
             Vector3 speechBubblePosition = sprite.position + spriteOffset;
 
-            currentSpeechBubble = Object.Instantiate(speechBubblePrefab, speechBubblePosition, Quaternion.identity, sprite);
+            currentSpeechBubble = Object.Instantiate(speechBubblePrefab, speechBubblePosition, Quaternion.identity, sprite.parent);
             speechBubbleText = currentSpeechBubble.GetComponentInChildren<TextMeshProUGUI>();
             speechBubbleTransform = currentSpeechBubble.GetComponent<RectTransform>();
             speechBubbleCanvasGroup = currentSpeechBubble.GetComponent<CanvasGroup>();
@@ -152,25 +164,33 @@ namespace Dialogue
         private IEnumerator TalkSpeechBubble(string dialogue)
         {
             Debug.Log(dialogue);
-
             speechBubbleText.text = dialogue;
 
-            Vector2 preferredSize = new Vector2(speechBubbleText.preferredWidth, speechBubbleText.preferredHeight);
+            float newWidth = Mathf.Clamp(speechBubbleText.preferredWidth, minWidth, maxWidth);
+            
+            speechBubbleTransform.sizeDelta = new Vector2(newWidth, speechBubbleTransform.sizeDelta[1]);
 
-            float newWidth = Mathf.Clamp(preferredSize.x + padding.x, minWidth, maxWidth);
-            float newHeight = Mathf.Clamp(preferredSize.y + padding.y, minHeight, maxHeight);
+            speechBubbleText.ForceMeshUpdate();
 
-            if (preferredSize.x + padding.x > maxWidth)
-            {
-                newHeight = Mathf.Clamp(preferredSize.y + padding.y + (preferredSize.x + padding.x - maxWidth) / maxWidth * preferredSize.y, minHeight, maxHeight);
-            }
+            float newHeight = Mathf.Clamp(speechBubbleText.preferredHeight * speechBubbleText.textInfo.lineCount, minHeight, maxHeight);
 
             speechBubbleTransform.sizeDelta = new Vector2(newWidth, newHeight);
 
+            if (speechBubbleText.textInfo.lineCount == 1)
+            {
+                speechBubbleText.alignment = TextAlignmentOptions.Midline;
+            }
+            else if(speechBubbleText.textInfo.lineCount == 2)
+            {
+                speechBubbleText.alignment = TextAlignmentOptions.Top;
+            }
+            else
+            {
+                Debug.LogError("Text is too long");
+            }
+
             speechBubbleText.text = "";
-
             dialogue = TagManager.Inject(dialogue);
-
             textArchitect.Build(dialogue);
 
             while (textArchitect.isBuilding)
@@ -213,7 +233,7 @@ namespace Dialogue
             return showingBubbleCoroutine;
         }
 
-        private Coroutine Hide(bool immediate = false)
+        public Coroutine Hide(bool immediate = false)
         {
             if (isBubbleHiding) return hidingBubbleCoroutine;
 

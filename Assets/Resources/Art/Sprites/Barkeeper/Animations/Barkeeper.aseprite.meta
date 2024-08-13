@@ -1,8 +1,18 @@
 fileFormatVersion: 2
-guid: acd22f50ef2a7b649a164c78d9de27af
+guid: c94f9d787e2603040b0206b2b8f57425
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: idle
+    second: {fileID: 7400000, guid: 0562fb77a385c3f4aab0ed1f8f3d0ae4, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: smile
+    second: {fileID: 7400000, guid: 74a072a6aae207e489e60df2fb966ea7, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -97,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638591865195240095
+  platformSettingsDirtyTick: 638591955881654046
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +131,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Seiji
+  - name: Barkeeper_Frame_0
     originalName: 
-    pivot: {x: 0.5370371, y: -0.14035088}
+    pivot: {x: 0.53846157, y: -0.14545454}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 378
-      height: 798
-    spriteID: e29311564e4f7574ab01192b5528dfe6
+      width: 273
+      height: 770
+    spriteID: aa30a273be24c1b41a205f60b2c74304
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,25 +150,54 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: -353, y: -108}
+  - name: Barkeeper_Frame_1
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.14545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 285
+      y: 4
+      width: 273
+      height: 770
+    spriteID: f4b4d1936ad192c44a3ed62b2cd4b951
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 285, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 952869320
-    name: Seiji
+    guid: -1315413831
+    name: Barkeeper
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Seiji
+    - name: Barkeeper_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 301
+        x: 0
+        y: 0
+        width: 1008
+        height: 1008
+      spriteId: aa30a273be24c1b41a205f60b2c74304
+    - name: Barkeeper_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 357
         y: 112
-        width: 378
-        height: 798
-      spriteId: e29311564e4f7574ab01192b5528dfe6
+        width: 273
+        height: 770
+      spriteId: f4b4d1936ad192c44a3ed62b2cd4b951
     linkedCells: []
     parentIndex: -1
   platformSettings:

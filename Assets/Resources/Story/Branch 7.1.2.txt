@@ -1,4 +1,4 @@
-MoveCharacter(Seiji -x 0.5), ChangeCharacterEmotion(Seiji -exp Worry)
+MoveCharacter(Seiji -x 0.5), ChangeCharacterEmotion(Seiji -exp Stern)
 
 Ahlai as You "You're... <b>you're right</b>, Seiji. I should be more careful."
 

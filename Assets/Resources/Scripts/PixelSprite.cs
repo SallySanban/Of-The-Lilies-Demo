@@ -81,11 +81,11 @@ public class PixelSprite
         {
             if (currentDirection == CurrentSpriteDirection.Left)
             {
-                positionToGo.x = positionToGo.x + 3.5f; //if facing left, go right
+                positionToGo.x = positionToGo.x + 1.8f; //if facing left, go right
             }
             else
             {
-                positionToGo.x = positionToGo.x - 0.5f; //if facing right, go left
+                positionToGo.x = positionToGo.x - 2.3f; //if facing right, go left
             }
         }
 

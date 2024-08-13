@@ -76,6 +76,7 @@ public class InteractableManager: MonoBehaviour
             DestroyImmediate(gameObject);
         }
     }
+
     private void Update()
     {
         if (collidingWithPlayer && collidingInteractable != null)
@@ -100,6 +101,7 @@ public class InteractableManager: MonoBehaviour
 
                         break;
                     case Interactable.InteractableType.PixelSprite:
+                        collidingInteractable.isInteractable = false; //makes sure that the icon doesn't show up when the player moves to interact, even if colliding
                         StartCoroutine(WaitForMovePlayer());
 
                         break;
@@ -115,9 +117,17 @@ public class InteractableManager: MonoBehaviour
 
     private IEnumerator WaitForMovePlayer()
     {
+        string lastInteractableScene = sceneManager.sceneName;
+        string lastInteractableBackground = collidingInteractable.backgroundInteractableIsIn;
+        string lastInteractable = collidingInteractable.interactableName;
+        Interactable lastCollidedInteractable = collidingInteractable;
+
+        Debug.Log("SCENE: " + lastInteractableScene + " BACKGROUND: " + lastInteractableBackground + " INTERACTABLE: " + lastInteractable);
+
         yield return spriteManager.currentPlayer.MoveSprite(spriteManager.currentPlayer.root.transform.position, collidingInteractable.icon.transform.position, 3f, true, true);
+        lastCollidedInteractable.isInteractable = true; //icon can show up again
         yield return new WaitForSeconds(0.2f);
-        sceneManager.PlayNextScene(sceneManager.sceneName, collidingInteractable.backgroundInteractableIsIn, collidingInteractable.interactableName);
+        yield return sceneManager.PlayNextScene(lastInteractableScene, lastInteractableBackground, lastInteractable);
     }
     private IEnumerator PlaySceneAfterBackgroundSwitch()
     {
@@ -129,6 +139,8 @@ public class InteractableManager: MonoBehaviour
 
         if (sceneManager.HasNextScene(sceneManager.sceneName, collidingInteractable.backgroundInteractableIsIn, collidingInteractable.interactableName)) //has scene right after changing background
         {
+            sceneManager.inVNMode = true;
+
             yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerScale, collidingInteractable.playerDirection);
             yield return new WaitForSeconds(0.2f);
             yield return sceneManager.PlayNextScene(lastInteractableScene, lastInteractableBackground, lastInteractable);
@@ -138,6 +150,15 @@ public class InteractableManager: MonoBehaviour
             yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerScale, collidingInteractable.playerDirection);
             yield return new WaitForSeconds(0.2f);
             yield return sceneManager.ShowScene(true);
+        }
+    }
+
+    [ContextMenu("Show Interactables In Scene")]
+    public void ShowInteractablesInScene()
+    {
+        foreach(Interactable interactable in interactablesInScene)
+        {
+            Debug.Log(interactable.interactableName + ": " + interactable.isInteractable);
         }
     }
 
@@ -262,7 +283,7 @@ public class InteractableManager: MonoBehaviour
         {
             if (interactable.name == interactableName)
             {
-                interactable.isInteractable = unlock;
+                interactable.isLocked = unlock;
             }
         }
     }
@@ -274,7 +295,7 @@ public class InteractableManager: MonoBehaviour
             case "Scene 1":
                 if (background.backgroundName == "Main Shop")
                 {
-                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 2");
+                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(4.82f, 1.52f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 2");
                     Seiji.root.name = "Seiji";
                     Seiji.Show();
                 }
@@ -283,40 +304,25 @@ public class InteractableManager: MonoBehaviour
             case "Scene 2":
                 if(background.backgroundName == "Kuchai Town")
                 {
-                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(8.02f, -0.31f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 3");
+                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(7.40f, -0.12f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 3");
                     Seiji.root.name = "Seiji";
                     Seiji.Show();
-                }
-                else if(background.backgroundName == "Mr. Quan's Shop")
-                {
-                    PixelSprite Quan = spriteManager.CreateSprite("Mr. Quan", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 4");
-                    Quan.root.name = "Mr. Quan";
-                    Quan.Show();
                 }
 
                 break;
             case "Scene 3":
                 if(background.backgroundName == "Ingredients Shop")
                 {
-                    PixelSprite Shopkeeper = spriteManager.CreateSprite("Ingredients Shopkeeper", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 5");
+                    PixelSprite Shopkeeper = spriteManager.CreateSprite("Ingredients Shopkeeper", new Vector2(3.99f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 5");
                     Shopkeeper.root.name = "Ingredients Shopkeeper";
                     Shopkeeper.Show();
-                }
-
-                break;
-            case "Scene 5":
-                if (background.backgroundName == "Mr. Quan's Shop")
-                {
-                    PixelSprite Quan = spriteManager.CreateSprite("Mr. Quan", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 6");
-                    Quan.root.name = "Mr. Quan";
-                    Quan.Show();
                 }
 
                 break;
             case "Scene 6":
                 if (background.backgroundName == "Tavern")
                 {
-                    PixelSprite Barkeeper = spriteManager.CreateSprite("Barkeeper", new Vector2(6.05f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 9");
+                    PixelSprite Barkeeper = spriteManager.CreateSprite("Barkeeper", new Vector2(3.03f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 9");
                     Barkeeper.root.name = "Barkeeper";
                     Barkeeper.Show();
                 }

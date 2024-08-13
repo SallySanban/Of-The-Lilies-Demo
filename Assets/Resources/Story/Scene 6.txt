@@ -1,8 +1,8 @@
-ShowCharacter(Seiji)
+HideTextbox(), [wait]ShowPixel(), Wait(0.2), ShowCharacter(Seiji)
 
 Mr. Quan "You're back! Here, here. You can get started on brewing the potion."
 
-HideTextbox(), [wait]ShowCG("Blackout"), Wait(1), HideCG()
+HideTextbox(), [wait]ShowCG("Blackout"), Wait(0.5), HideCG()
 
 Mr. Quan "Marvelous work, <playerName>! Thank you for all your help."
 
@@ -24,4 +24,4 @@ Seiji "We will, Sir. Thank you."
 
 "Oh, good. That's one task off our list. Let's go to the <b>tavern</b> next, and get Lady Sabina those drinks."
 
-HideVN("Scene 6"), HideCharacter(Seiji)
+HideTextbox(), HideVN("Scene 6"), HideCharacter(Seiji)

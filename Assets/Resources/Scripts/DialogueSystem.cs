@@ -22,6 +22,8 @@ namespace Dialogue
 
         public bool speechBubbleActive = false;
 
+        [SerializeField] public Vector2 size;
+
         public static DialogueSystem Instance { get; private set; }
 
         public delegate void DialogueSystemEvent();
@@ -90,6 +92,18 @@ namespace Dialogue
             return conversationManager.StartConversation(conversation);
         }
 
+        public Coroutine SaySpeechBubble((string key, string value, string parameter) action)
+        {
+            speechBubbleActive = true;
+
+            List<(string key, string value, string parameter)> actions = new List<(string key, string value, string parameter)>
+            {
+                action
+            };
+
+            return SaySpeechBubble(actions);
+        }
+
         public Coroutine SaySpeechBubble(List<(string key, string value, string parameter)> actions)
         {
             speechBubbleActive = true;
@@ -107,6 +121,12 @@ namespace Dialogue
         public void ShowSize()
         {
             Debug.Log("SPEECH BUBBLE SIZE: " + speechBubbleManager.GetSize());
+        }
+
+        [ContextMenu("Change Speech Bubble Size")]
+        public void ChangeSize()
+        {
+            speechBubbleManager.ChangeSize(size);
         }
 
         public void Show()

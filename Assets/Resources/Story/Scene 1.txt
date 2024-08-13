@@ -1,4 +1,4 @@
-HideTextbox(), [input]ShowCG("Red Sky"), PlayMusic("Flashback"), PlayMusic("Fire" -vol 0.4)
+HideTextbox(), [input]ShowCG("Instructions"), HideCG(), Wait(0.5), ShowCG("Red Sky"), PlayMusic("Flashback"), [input]PlayMusic("Fire" -vol 0.4)
 
 Thought "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
 
@@ -34,7 +34,7 @@ Sabina as Lady Sabina "<i><playerName>? My dear?</i>"
 
 "<i>Wake up, <playerName>. <playerName>! Get up, now...!</i>"
 
-HideTextbox(), HideCG(), [wait]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.96 -y -0.05 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
+HideTextbox(), HideCG(), [wait]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.96 -y -0.05 -d right -vn false), [wait]ShowPixel(), Wait(0.5), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
 
 Sabina as Lady Sabina "Oh, you must've been having nightmares again."
 
@@ -44,4 +44,6 @@ Sabina as Lady Sabina "Of course, I understand... It was hard for you, <playerNa
 
 "When you're ready, <b>come down and you can start on your tasks for the day</b>. Seiji is waiting."
 
-HideTextbox(), HideVN("Scene 1"), HideCharacter(Sabina)
+PlayMusic("Romance" -vol 0.1), HideTextbox(), HideVN("Scene 1"), [wait]HideCharacter(Sabina)
+
+[input]ShowSpeechBubble(Ahlai -dialogue "WASD or Arrow Keys to move"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "Z to interact with objects"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "Space or enter to go to next dialogue"), HideSpeechBubble(false)
