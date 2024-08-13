@@ -1,0 +1,825 @@
+fileFormatVersion: 2
+guid: 9339453c2379853468edfc0bf608c424
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1.6
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638591638290930450
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Soldier_Frame_17
+    originalName: 
+    pivot: {x: 0.5759493, y: -0.14545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 761
+      width: 553
+      height: 770
+    spriteID: 4a5e15368645ac84e8b293720a7462c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 761}
+  - name: Soldier_Frame_18
+    originalName: 
+    pivot: {x: 0.5759493, y: -0.14545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 565
+      y: 761
+      width: 553
+      height: 770
+    spriteID: 58b4722f41b3ce74fa6da1f81e7ae5b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 565, y: 761}
+  - name: Soldier_Frame_19
+    originalName: 
+    pivot: {x: 0.25320515, y: -0.1495327}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1092
+      height: 749
+    spriteID: 8033249d4269d624b95bb8423542e208
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Soldier_Frame_20
+    originalName: 
+    pivot: {x: 0.25496686, y: -0.1495327}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1104
+      y: 4
+      width: 1057
+      height: 749
+    spriteID: 4a66a01df9305d64f966f6eeed9f4366
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1104, y: 4}
+  - name: Soldier_Frame_21
+    originalName: 
+    pivot: {x: 0.25496686, y: -0.1495327}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2169
+      y: 4
+      width: 1057
+      height: 749
+    spriteID: 0dda829753261c84aaafd3e55bf07926
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2169, y: 4}
+  - name: Soldier_Frame_1
+    originalName: 
+    pivot: {x: 0.5298507, y: -0.14035088}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1539
+      width: 469
+      height: 798
+    spriteID: 809f7b9289e72b94fb81df18f1db03a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1539}
+  - name: Soldier_Frame_2
+    originalName: 
+    pivot: {x: 0.5546875, y: -0.14545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2326
+      y: 1539
+      width: 448
+      height: 770
+    spriteID: 63583a630d55c594185cfe1d369acb2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2326, y: 1539}
+  - name: Soldier_Frame_4
+    originalName: 
+    pivot: {x: 0.5078125, y: -0.13793103}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2345
+      width: 448
+      height: 812
+    spriteID: 478c1601fbc4f26418dd91cf7d0c8ea2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2345}
+  - name: Soldier_Frame_5
+    originalName: 
+    pivot: {x: 0.49218753, y: -0.14035088}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 958
+      y: 1539
+      width: 448
+      height: 798
+    spriteID: 9ac9b4b02fb532443b4e308419db8a22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 958, y: 1539}
+  - name: Soldier_Frame_6
+    originalName: 
+    pivot: {x: 0.47656256, y: -0.14545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2782
+      y: 1539
+      width: 448
+      height: 770
+    spriteID: c44ee4d357117a34ab6e3b38311b0269
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2782, y: 1539}
+  - name: Soldier_Frame_8
+    originalName: 
+    pivot: {x: 0.5390625, y: -0.13793103}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 460
+      y: 2345
+      width: 448
+      height: 812
+    spriteID: bd54da8d727c75f48be44b906cedcfb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 460, y: 2345}
+  - name: Soldier_Frame_3
+    originalName: 
+    pivot: {x: 0.5546875, y: -0.13913043}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1828
+      y: 2345
+      width: 448
+      height: 805
+    spriteID: 6136a9c693310ff429770c8205b0a705
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1828, y: 2345}
+  - name: Soldier_Frame_7
+    originalName: 
+    pivot: {x: 0.5546875, y: -0.13913043}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2284
+      y: 2345
+      width: 448
+      height: 805
+    spriteID: bfdf82d9d600f984b899f88b4426e81e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2284, y: 2345}
+  - name: Soldier_Frame_9
+    originalName: 
+    pivot: {x: 0.48507464, y: -0.14035088}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 481
+      y: 1539
+      width: 469
+      height: 798
+    spriteID: efa2ad61cdc04894bb564c677d03ea67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 481, y: 1539}
+  - name: Soldier_Frame_10
+    originalName: 
+    pivot: {x: 0.46093744, y: -0.14545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3238
+      y: 1539
+      width: 448
+      height: 770
+    spriteID: 489f3fb4f93e42249a8a4d24296f9b25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3238, y: 1539}
+  - name: Soldier_Frame_11
+    originalName: 
+    pivot: {x: 0.46093744, y: -0.13913043}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2740
+      y: 2345
+      width: 448
+      height: 805
+    spriteID: 35421d9f47cfbd141b18e0cc26df329f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2740, y: 2345}
+  - name: Soldier_Frame_12
+    originalName: 
+    pivot: {x: 0.5078125, y: -0.13793103}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 916
+      y: 2345
+      width: 448
+      height: 812
+    spriteID: 4b4690fa3368cad42a0e1ed095b0937e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 916, y: 2345}
+  - name: Soldier_Frame_13
+    originalName: 
+    pivot: {x: 0.5234375, y: -0.14035088}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1414
+      y: 1539
+      width: 448
+      height: 798
+    spriteID: 54ded5f79caf7174b854bbd6ddb2aa5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1414, y: 1539}
+  - name: Soldier_Frame_14
+    originalName: 
+    pivot: {x: 0.5390625, y: -0.14545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1126
+      y: 761
+      width: 448
+      height: 770
+    spriteID: 55a8c62c29eeb1b4a8f7f932f8962792
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1126, y: 761}
+  - name: Soldier_Frame_15
+    originalName: 
+    pivot: {x: 0.46093744, y: -0.13913043}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3196
+      y: 2345
+      width: 448
+      height: 805
+    spriteID: 550cee8b17264754faecf0e958e2120f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3196, y: 2345}
+  - name: Soldier_Frame_16
+    originalName: 
+    pivot: {x: 0.47656256, y: -0.13793103}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1372
+      y: 2345
+      width: 448
+      height: 812
+    spriteID: 754413764d0fb8b4a8dece6529884b34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1372, y: 2345}
+  - name: Soldier_Frame_0
+    originalName: 
+    pivot: {x: 0.5546875, y: -0.14035088}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1870
+      y: 1539
+      width: 448
+      height: 798
+    spriteID: 4668c6d8cb8e19344bcb8d545a39846c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1870, y: 1539}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 477021400
+    name: Soldier
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Soldier_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 644
+        y: 112
+        width: 553
+        height: 770
+      spriteId: 4a5e15368645ac84e8b293720a7462c3
+    - name: Soldier_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 644
+        y: 112
+        width: 553
+        height: 770
+      spriteId: 58b4722f41b3ce74fa6da1f81e7ae5b4
+    - name: Soldier_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 686
+        y: 112
+        width: 1092
+        height: 749
+      spriteId: 8033249d4269d624b95bb8423542e208
+    - name: Soldier_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 693
+        y: 112
+        width: 1057
+        height: 749
+      spriteId: 4a66a01df9305d64f966f6eeed9f4366
+    - name: Soldier_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 693
+        y: 112
+        width: 1057
+        height: 749
+      spriteId: 0dda829753261c84aaafd3e55bf07926
+    - name: Soldier_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 714
+        y: 112
+        width: 469
+        height: 798
+      spriteId: 809f7b9289e72b94fb81df18f1db03a6
+    - name: Soldier_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 714
+        y: 112
+        width: 448
+        height: 770
+      spriteId: 63583a630d55c594185cfe1d369acb2b
+    - name: Soldier_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 735
+        y: 112
+        width: 448
+        height: 812
+      spriteId: 478c1601fbc4f26418dd91cf7d0c8ea2
+    - name: Soldier_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 742
+        y: 112
+        width: 448
+        height: 798
+      spriteId: 9ac9b4b02fb532443b4e308419db8a22
+    - name: Soldier_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 749
+        y: 112
+        width: 448
+        height: 770
+      spriteId: c44ee4d357117a34ab6e3b38311b0269
+    - name: Soldier_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 721
+        y: 112
+        width: 448
+        height: 812
+      spriteId: bd54da8d727c75f48be44b906cedcfb4
+    - name: Soldier_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 714
+        y: 112
+        width: 448
+        height: 805
+      spriteId: 6136a9c693310ff429770c8205b0a705
+    - name: Soldier_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 714
+        y: 112
+        width: 448
+        height: 805
+      spriteId: bfdf82d9d600f984b899f88b4426e81e
+    - name: Soldier_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 735
+        y: 112
+        width: 469
+        height: 798
+      spriteId: efa2ad61cdc04894bb564c677d03ea67
+    - name: Soldier_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 756
+        y: 112
+        width: 448
+        height: 770
+      spriteId: 489f3fb4f93e42249a8a4d24296f9b25
+    - name: Soldier_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 756
+        y: 112
+        width: 448
+        height: 805
+      spriteId: 35421d9f47cfbd141b18e0cc26df329f
+    - name: Soldier_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 735
+        y: 112
+        width: 448
+        height: 812
+      spriteId: 4b4690fa3368cad42a0e1ed095b0937e
+    - name: Soldier_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 728
+        y: 112
+        width: 448
+        height: 798
+      spriteId: 54ded5f79caf7174b854bbd6ddb2aa5c
+    - name: Soldier_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 721
+        y: 112
+        width: 448
+        height: 770
+      spriteId: 55a8c62c29eeb1b4a8f7f932f8962792
+    - name: Soldier_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 756
+        y: 112
+        width: 448
+        height: 805
+      spriteId: 550cee8b17264754faecf0e958e2120f
+    - name: Soldier_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 749
+        y: 112
+        width: 448
+        height: 812
+      spriteId: 754413764d0fb8b4a8dece6529884b34
+    - name: Soldier_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 714
+        y: 112
+        width: 448
+        height: 798
+      spriteId: 4668c6d8cb8e19344bcb8d545a39846c
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1925, y: 1400}

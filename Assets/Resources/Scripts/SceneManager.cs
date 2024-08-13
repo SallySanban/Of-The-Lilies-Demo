@@ -148,13 +148,13 @@ public class SceneManager : MonoBehaviour
 
         //DialogueSystem.Instance.SayTextbox(lines);
 
-        sceneName = "Combat Scene - Prologue";
+        sceneName = "Test Scene";
         StartCoroutine(Test());
     }
 
     private IEnumerator Test()
     {
-        yield return SetupBackground("Kuchai Town", new Vector2(0.01f, 0.44f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right);
+        yield return SetupBackground("Ahlai's Bedroom", new Vector2(0.01f, -0.04f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right);
         yield return ShowScene(true);
         yield return SetupScene();
     }
