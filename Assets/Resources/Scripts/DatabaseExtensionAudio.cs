@@ -8,21 +8,49 @@ namespace Commands
 {
     public class DatabaseExtensionAudio : CommandDatabaseExtension
     {
+        private static string loopParameter => "-l";
+        private static string volumeParameter => "-vol";
+
         new public static void Extend(CommandDatabase database)
         {
-            database.AddCommand("PlaySoundEffect", new Action<string>(PlaySoundEffect));
-            database.AddCommand("PlayMusic", new Action<string>(PlayMusic));
+            database.AddCommand("PlaySoundEffect", new Action<string[]>(PlaySoundEffect));
+            database.AddCommand("StopSoundEffect", new Action<string>(StopSoundEffect));
+            database.AddCommand("PlayMusic", new Action<string[]>(PlayMusic));
             database.AddCommand("StopMusic", new Action<string>(StopMusic));
         }
 
-        private static void PlaySoundEffect(string audioFilename)
+        private static void PlaySoundEffect(string[] data)
         {
-            AudioManager.Instance.PlaySoundEffect(audioFilename);
+            string audioFilename = data[0];
+
+            var parameters = ConvertDataToParameters(data);
+
+            float volume = 1;
+            bool loop = false;
+
+            parameters.TryGetValue(volumeParameter, out volume, defaultValue: 1f);
+            parameters.TryGetValue(loopParameter, out loop, defaultValue: false);
+
+
+            AudioManager.Instance.PlaySoundEffect(audioFilename, volume: volume, loop: loop);
         }
 
-        private static void PlayMusic(string audioFilename)
+        private static void StopSoundEffect(string audioFilename)
         {
-            AudioManager.Instance.PlayTrack(audioFilename, startingVolume: 1);  //temporary starting volume while music doesnt fade in and out
+            AudioManager.Instance.StopSoundEffect(audioFilename);
+        }
+
+        private static void PlayMusic(string[] data)
+        {
+            string audioFilename = data[0];
+
+            var parameters = ConvertDataToParameters(data);
+
+            float volume = 1;
+
+            parameters.TryGetValue(volumeParameter, out volume, defaultValue: 1f);
+
+            AudioManager.Instance.PlayTrack(audioFilename, volumeCap: volume);
         }
 
         private static void StopMusic(string audioFilename)

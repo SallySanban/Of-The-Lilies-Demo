@@ -104,9 +104,9 @@ namespace Audio
 
             foreach(var source in sources)
             {
-                if(source.clip.name.ToLower() == audioFilename)
+                if (source.clip.name.ToLower() == audioFilename)
                 {
-                    Destroy(source.gameObject);
+                    if (source != null) Destroy(source.gameObject);
                     return;
                 }
             }
@@ -154,8 +154,6 @@ namespace Audio
                 if (currentTrack.isPlaying)
                 {
                     currentTrack.Stop();
-
-                    Destroy(currentTrack.source.gameObject);
                 }
             }
         }

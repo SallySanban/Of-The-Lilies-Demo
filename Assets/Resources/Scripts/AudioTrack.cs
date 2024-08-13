@@ -18,6 +18,9 @@ namespace Audio
 
         public bool isPlaying => source.isPlaying;
 
+        protected Coroutine fadingMusicCoroutine;
+        public bool isFadingMusic => fadingMusicCoroutine != null;
+
         public AudioTrack(AudioClip clip, bool loop, float startingVolume, float volumeCap, AudioMixerGroup mixer)
         {
             trackName = clip.name;
@@ -41,14 +44,49 @@ namespace Audio
             return source;
         }
 
-        public void Play()
+        public Coroutine Play()
         {
+            if (isFadingMusic) return fadingMusicCoroutine;
+
+            source.volume = 0f;
+
             source.Play();
+
+            fadingMusicCoroutine = AudioManager.Instance.StartCoroutine(FadeMusic(true));
+
+            return fadingMusicCoroutine;
         }
 
-        public void Stop()
+        public Coroutine Stop()
         {
-            source.Stop();
+            if (isFadingMusic) return fadingMusicCoroutine;
+
+            fadingMusicCoroutine = AudioManager.Instance.StartCoroutine(FadeMusic(false));
+
+            return fadingMusicCoroutine;
+        }
+
+        private IEnumerator FadeMusic(bool fadeIn)
+        {
+            float finalVolume = fadeIn ? volumeCap : 0;
+            float time = 0;
+            float duration = fadeIn ? 3f : 20f;
+
+            while (time < duration)
+            {
+                source.volume = Mathf.Lerp(source.volume, finalVolume, time / duration);
+                time += Time.deltaTime;
+                yield return null;
+            }
+
+            source.volume = finalVolume;
+
+            if (!fadeIn)
+            {
+                Object.Destroy(source.gameObject);
+            }
+
+            fadingMusicCoroutine = null;
         }
     }
 }

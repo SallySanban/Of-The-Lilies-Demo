@@ -1,4 +1,4 @@
-HideTextbox(), [input]ShowCG("Red Sky")
+HideTextbox(), [input]ShowCG("Red Sky"), PlayMusic("Flashback"), PlayMusic("Fire" -vol 0.4)
 
 Thought "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
 
@@ -14,11 +14,13 @@ Thought "<i>ruining our lands,{a} tearing kin away from kin.</i>"
 
 Thought "<i>I was no exception.</i>"
 
-HideTextbox(), [input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling")
+StopSoundEffect("Sword Clashing")
+
+HideTextbox(), [input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling 1")
 
 Thought "<i>But that was when I knew it couldn't be the end.</i>"
 
-HideTextbox(), [input]SwitchCG("Lady Sabina Reaching")
+StopSoundEffect("Coins Jiggling 1"), HideTextbox(), [input]SwitchCG("Lady Sabina Reaching"), StopMusic("Fire")
 
 Thought "<i>At least, not for me.</i>"
 
@@ -26,11 +28,13 @@ HideTextbox(), [wait]SwitchCG("Blackout")
 
 input
 
+StopMusic("Flashback")
+
 Sabina as Lady Sabina "<i><playerName>? My dear?</i>"
 
 "<i>Wake up, <playerName>. <playerName>! Get up, now...!</i>"
 
-HideTextbox(), HideCG(), [wait]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
+HideTextbox(), HideCG(), [wait]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.96 -y -0.05 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
 
 Sabina as Lady Sabina "Oh, you must've been having nightmares again."
 
