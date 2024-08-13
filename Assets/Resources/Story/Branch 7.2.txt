@@ -28,7 +28,7 @@ HideCharacter(Manju), Wait(0.2), ShowCharacter(Seiji), ChangeCharacterEmotion(Se
 
 Seiji "<playerName>, what did that man tell you? Did you speak to him?"
 
-Ahlai as You "I did, and he  asked for my name. But... I didn't give it to him."
+Ahlai as You "I did, and he asked for my name. But... I didn't give it to him."
 
 Seiji "Oh, praise Dok'kale. I saw that his robes have the crest of the <b>Order of Hotei</b>, and I was worried you might have said something you shouldn't have..."
 
@@ -40,9 +40,13 @@ Seiji "Yes, I saw it clearly. Remember what Lady Sabina told us about them, <pla
 
 "They believe that <b>people should be able to wield magic</b>. As if they're equals with  the gods!"
 
-"The <b>Order of La Liryo</b> has to ensure that <b>magic is being used responsibly</b>. Sabina's Salves might be our front, but we both knew the truth when Lady Sabina took us in..."
+"The <b>Order of La Liryo</b> has to ensure that <b>magic is being used responsibly</b>."
 
-"Oh, <playerName>. If you had told him your name... he might figure out where we're from. And we don't know what he might do to you if he finds out you're against his beliefs. Always be careful, <playerName>."
+"Sabina's Salves might be our front, but we both knew the truth when Lady Sabina took us in..."
+
+"Oh, <playerName>. If you had told him your name... he might figure out where we're from."
+
+"And we don't know what he might do to you if he finds out you're against his beliefs. Always be careful, <playerName>."
 
 Ahlai as You "Of course. You never fail to protect me, Seiji."
 

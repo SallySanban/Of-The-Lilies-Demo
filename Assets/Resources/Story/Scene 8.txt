@@ -20,11 +20,15 @@ Seiji [Worry] "<playerName>, please calm down! What if someone hears you? <playe
 
 Ahlai as You "..."
 
-Seiji "...Oh, I... I am so sorry..."
+Seiji [Sad] "...Oh, I... I am so sorry..."
 
-Ahlai as You "No, I should apologize. I'm sorry for snapping, for taking it out on you. I just... I cannot forget it. What he and the Seiyslan Empire did to my people. I can never forget it."
+Ahlai as You "No, I should apologize. I'm sorry for snapping, for taking it out on you. I just... I cannot forget it."
 
-"He is responsible for our suffering, how many lives were lost, and for how I lost my home. I lost my family because of him, Seiji. It's hard not to let any anger just consume me."
+"What he and the Seiyslan Empire did to my people. I can never forget it."
+
+"He is responsible for our suffering, how many lives were lost, and for how I lost my home."
+
+"I lost my family because of him, Seiji. It's hard not to let any anger just consume me."
 
 Seiji "No, please. I understand. I at least can see why it's difficult, being away from your family for so long."
 

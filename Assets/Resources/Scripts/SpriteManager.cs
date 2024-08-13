@@ -127,5 +127,18 @@ public class SpriteManager : MonoBehaviour
         }
     }
 
+    public PixelSprite GetSprite(string spriteName)
+    {
+        foreach(PixelSprite sprite in spritesInScene)
+        {
+            if(sprite.root.name == spriteName)
+            {
+                return sprite;
+            }
+        }
+
+        return null;
+    }
+
     private string FormatCGPath(string path, string filename) => filename != "" ? path.Replace(spriteNameId, filename) : "";
 }

@@ -12,7 +12,7 @@ Seiji "Then that's just even more of a reason for me to come with you! Just try 
 
 "I know that Lady Sabina would want to do what she can to ease your worries. It's what you want in the end, isn't it? To be with your family and all again?"
 
-Ahlai as You "You're right, Seiji. And well, it looks like the drinks are done... Let's go back to Sabina's Salves and ask her."
+Ahlai as You "You're right, Seiji.{a} And well, it looks like the drinks are done... Let's <b>go back to Sabina's Salves</b> and ask her."
 
 if ($ManjuBranch == true)
 {

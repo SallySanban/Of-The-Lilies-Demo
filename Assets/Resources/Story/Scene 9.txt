@@ -1,4 +1,4 @@
-HideTextbox(), [wait]ShowPixel(), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Smile), ChangeCharacterEmotion(Sabina -exp Smile), Wait(0.2), ShowCharacter(Seiji Sabina)
+HideTextbox(), [wait]ShowPixel(false), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Smile), ChangeCharacterEmotion(Sabina -exp Smile), Wait(0.2), ShowCharacter(Seiji Sabina)
 
 Sabina as Lady Sabina "Oh, you two are back! Thank Dok'kale, you are both such blessings to me! Thank you both for your help with the errands, darlings. Just great work as always."
 

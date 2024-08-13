@@ -1,6 +1,6 @@
 Laisa "Try and get me, general!"
 
-PlaySoundEffect("Thunder"), ChangeCharacterEmotion(Lien -exp Surprised), [input]ChangeCharacterEmotion(Laisa -exp Surprised)
+HideTextbox(), PlaySoundEffect("Thunder"), ChangeCharacterEmotion(Lien -exp Surprised), [input]ChangeCharacterEmotion(Laisa -exp Surprised)
 
 HideCharacter(Laisa Lien), [input]ShowCG("Curses Appear"), HideCG()
 
@@ -12,7 +12,7 @@ HideCharacter(Laisa)
 
 Lien "Find her! We can't let her escape in this mist!"
 
-Thought "I have to find a way out of here..."
+Thought "<i>I have to find a way out of here...</i>"
 
 Guard "Sir, sir! I found the accomplice!"
 

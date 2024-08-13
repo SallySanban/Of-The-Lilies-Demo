@@ -28,16 +28,6 @@ public class Player : PixelSprite
         }
     }
 
-    public void AnimatePlayerAttack()
-    {
-        rootAnimator.SetTrigger("Attack");
-    }
-
-    public void AnimatePlayerHurt()
-    {
-        rootAnimator.SetTrigger("Hurt");
-    }
-
     public void MovePlayer()
     {
         move.y = 0;

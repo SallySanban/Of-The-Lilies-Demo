@@ -10,7 +10,7 @@ Laisa [Stern] "Your threats fall dead on my ears. But at least now I know you ca
 
 Laisa [Smirk] "And finding you? It's as easy as spotting a sail on the horizon. So you better think twice before opening that pretty little mouth of yours."
 
-HideTextbox(), HideCharacter(Laisa)
+HideTextbox(), HideCharacter(Laisa), Wait(0.5)
 
 Ahlai as You "Are you sure you won't kill me, Laisa of the Sea Emperor?!"
 

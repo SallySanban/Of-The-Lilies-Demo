@@ -8,18 +8,17 @@ Ahlai as You "What do you mean? Seiji-"
 
 Seiji "Good night, Ahlai."
 
-[input]HideCharacter(Seiji)
+HideSprite(Seiji), [input]HideCharacter(Seiji)
 
 Ahlai as You "Good night, Seiji..."
 
-ShowCG("Blackout"), Wait(0.2), SwitchCG("Curses Appear"), PlaySoundEffect("Thunder"), HideCG()
+HideTextbox(), ShowCG("Blackout"), Wait(0.2), SwitchCG("Curses Appear"), [input]PlaySoundEffect("Thunder"), [wait]SetupPixelScene("Scene 12" -bg "Ahlai's Bedroom" -x -4.96 -y -0.05 -d right), [wait]HideCG(), [wait]HideVN("Scene 12"), [wait]ShowPixel(true)
 
-[wait]SetupPixelScene("Scene 12" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false)
+[input]ShowSpeechBubble(Ahlai -dialogue "What's going on?"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "I better go downstairs and check."), HideSpeechBubble(false), [wait]MoveSprite("Ahlai" -x 4.77 -spd 6)
 
-[input]SpeechBubble(Ahlai -dialogue "What's going on?"), HideSpeechBubble(), [input]SpeechBubble(Ahlai -dialogue "I better go downstairs and check.")
+[wait]ShowVN(), ShowCG("Blackout"), Wait(0.2), [wait]SetupPixelScene("Scene 12" -bg "Main Shop" -x 5.9 -y -0.05 -d left), HideCG(), [wait]ShowPixel(false), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Worry), ChangeCharacterEmotion(Sabina -exp Worry), Wait(0.2), ShowCharacter(Seiji Sabina)
 
-ShowCG("Blackout"), Wait(1), HideCG(), [wait]SetupPixelScene("Scene 12" -bg "Main Shop" -x -4.88 -y -0.14 -d right -vn false), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Worry), ChangeCharacterEmotion(Sabina -exp Worry), Wait(0.2), ShowCharacter(Seiji Sabina)
-
-Sabina as Lady Sabina "Ay, Dok’kale... The darkness in the skies... What a bad sign..."
+Sabina as Lady Sabina "Ay, Dok'kale... The darkness in the skies... What a bad sign..."
 
 Load("Scene 12")
+

@@ -178,16 +178,9 @@ public class CombatManager: MonoBehaviour
     //TODO: IMPROVE IMPLEMENTATION FOR REUSABILITY FOR ALL SOLDIERS PER TRIGGER
     private IEnumerator TriggerOne(string combatSceneName, string triggerName)
     {
-        Vector2 enemyScale = new Vector2(0.88f, 0.88f);
+        Coroutine soldier1 = StartCoroutine(CreateEnemy(new Vector2(20.62f, -0.49f), 9.89f, new Vector2(0.88f, 0.88f), "left"));
 
-        Vector2 position1 = new Vector2(20.62f, -0.64f);
-        Vector2 targetPosition1 = new Vector2(9.89f, position1.y);
-        Enemy Soldier1 = spriteManager.CreateEnemy("Soldier", position1, enemyScale, BackgroundConfigData.PlayerDirection.left, backgroundManager.currentBackground.root);
-        Soldier1.Show();
-
-        yield return Soldier1.MoveSprite(position1, targetPosition1, 6f);
-
-        enemiesInScene.Add(Soldier1);
+        yield return soldier1;
 
         yield return ButtonBarSequence(combatSceneName, triggerName);
 
@@ -196,24 +189,11 @@ public class CombatManager: MonoBehaviour
 
     private IEnumerator TriggerTwo(string combatSceneName, string triggerName)
     {
-        Vector2 enemyScale = new Vector2(0.88f, 0.88f);
+        Coroutine soldier1 = StartCoroutine(CreateEnemy(new Vector2(30.76f, -0.49f), 22.76f, new Vector2(0.88f, 0.88f), "left"));
+        Coroutine soldier2 = StartCoroutine(CreateEnemy(new Vector2(7.40f, -0.49f), 15.42f, new Vector2(0.88f, 0.88f), "right"));
 
-        Vector2 position1 = new Vector2(30.76f, -0.64f);
-        Vector2 targetPosition1 = new Vector2(22.76f, position1.y);
-        Enemy Soldier1 = spriteManager.CreateEnemy("Soldier", position1, enemyScale, BackgroundConfigData.PlayerDirection.left, backgroundManager.currentBackground.root);
-        Soldier1.Show();
-
-        enemiesInScene.Add(Soldier1);
-
-        Vector2 position2 = new Vector2(7.40f, -0.64f);
-        Vector2 targetPosition2 = new Vector2(15.42f, position1.y);
-        Enemy Soldier2 = spriteManager.CreateEnemy("Soldier", position2, enemyScale, BackgroundConfigData.PlayerDirection.right, backgroundManager.currentBackground.root);
-        Soldier2.Show();
-
-        enemiesInScene.Add(Soldier2);
-
-        Soldier1.MoveSprite(position1, targetPosition1, 6f);
-        yield return Soldier2.MoveSprite(position2, targetPosition2, 6f);
+        yield return soldier1;
+        yield return soldier2;
 
         yield return SlidingBarSequence(combatSceneName, triggerName);
 
@@ -222,40 +202,15 @@ public class CombatManager: MonoBehaviour
 
     private IEnumerator TriggerThree(string combatSceneName, string triggerName)
     {
-        Vector2 enemyScale = new Vector2(0.88f, 0.88f);
+        Coroutine soldier1 = StartCoroutine(CreateEnemy(new Vector2(42.87f, -0.49f), 37.79f, new Vector2(0.88f, 0.88f), "left"));
+        Coroutine soldier2 = StartCoroutine(CreateEnemy(new Vector2(44.50f, -0.49f), 39.77f, new Vector2(0.88f, 0.88f), "left"));
+        Coroutine soldier3 = StartCoroutine(CreateEnemy(new Vector2(21.54f, -0.49f), 27.52f, new Vector2(0.88f, 0.88f), "right"));
+        Coroutine soldier4 = StartCoroutine(CreateEnemy(new Vector2(23.97f, -0.49f), 29.54f, new Vector2(0.88f, 0.88f), "right"));
 
-        Vector2 position1 = new Vector2(42.87f, -0.64f);
-        Vector2 targetPosition1 = new Vector2(37.79f, position1.y);
-        Enemy Soldier1 = spriteManager.CreateEnemy("Soldier", position1, enemyScale, BackgroundConfigData.PlayerDirection.left, backgroundManager.currentBackground.root);
-        Soldier1.Show();
-
-        enemiesInScene.Add(Soldier1);
-
-        Vector2 position2 = new Vector2(44.50f, -0.64f);
-        Vector2 targetPosition2 = new Vector2(39.77f, position2.y);
-        Enemy Soldier2 = spriteManager.CreateEnemy("Soldier", position2, enemyScale, BackgroundConfigData.PlayerDirection.left, backgroundManager.currentBackground.root);
-        Soldier2.Show();
-
-        enemiesInScene.Add(Soldier2);
-
-        Vector2 position3 = new Vector2(21.54f, -0.64f);
-        Vector2 targetPosition3 = new Vector2(27.52f, position3.y);
-        Enemy Soldier3 = spriteManager.CreateEnemy("Soldier", position3, enemyScale, BackgroundConfigData.PlayerDirection.right, backgroundManager.currentBackground.root);
-        Soldier3.Show();
-
-        enemiesInScene.Add(Soldier3);
-
-        Vector2 position4 = new Vector2(23.97f, -0.64f);
-        Vector2 targetPosition4 = new Vector2(29.54f, position4.y);
-        Enemy Soldier4 = spriteManager.CreateEnemy("Soldier", position4, enemyScale, BackgroundConfigData.PlayerDirection.right, backgroundManager.currentBackground.root);
-        Soldier4.Show();
-
-        enemiesInScene.Add(Soldier4);
-
-        Soldier1.MoveSprite(position1, targetPosition1, 6f);
-        Soldier2.MoveSprite(position2, targetPosition2, 6f);
-        Soldier3.MoveSprite(position3, targetPosition3, 6f);
-        yield return Soldier4.MoveSprite(position4, targetPosition4, 6f);
+        yield return soldier1;
+        yield return soldier2;
+        yield return soldier3;
+        yield return soldier4;
 
         yield return ButtonBarSequence(combatSceneName, triggerName);
         yield return SlidingBarSequence(combatSceneName, triggerName);
@@ -291,16 +246,26 @@ public class CombatManager: MonoBehaviour
 
                 if (qteButtonBar.stopTimer)
                 {
-                    SpriteManager.Instance.currentPlayer.AnimatePlayerHurt();
-                    yield return new WaitForSeconds(waitAnimation);
+                    Enemy randomEnemy = GetRandomEnemy();
+                    randomEnemy.AnimateAttack();
+
+                    yield return new WaitForSeconds(0.1f);
+
+                    SpriteManager.Instance.currentPlayer.AnimateHurt();
 
                     float playerDamage = 100 / value.Count;
                     yield return DecreaseHealthBar(playerDamage);
 
                     yield return new WaitForSeconds(waitAnimation);
 
-                    SpriteManager.Instance.currentPlayer.AnimatePlayerAttack();
-                    yield return new WaitForSeconds(waitAnimation);
+                    SpriteManager.Instance.currentPlayer.AnimateAttack();
+
+                    yield return new WaitForSeconds(0.1f);
+
+                    foreach (Enemy enemy in enemiesInScene)
+                    {
+                        enemy.AnimateHurt();
+                    }
 
                     float enemyDamage = 10;
                     yield return DecreaseEnemiesHealthBar(enemyDamage);
@@ -309,18 +274,30 @@ public class CombatManager: MonoBehaviour
                 }
                 else
                 {
-                    SpriteManager.Instance.currentPlayer.AnimatePlayerAttack();
-                    yield return new WaitForSeconds(waitAnimation);
+                    Enemy randomEnemy = GetRandomEnemy();
 
-                    float damage = 100 / value.Count;
+                    SpriteManager.Instance.currentPlayer.AnimateAttack();
+
+                    yield return new WaitForSeconds(0.1f);
+
+                    foreach(Enemy enemy in enemiesInScene)
+                    {
+                        enemy.AnimateHurt();
+                    }
+
+                    float damage = (100 / value.Count) + 1;
                     yield return DecreaseEnemiesHealthBar(damage);
 
                     yield return new WaitForSeconds(waitAnimation);
                 }
 
+                Debug.Log("PLAYER HEALTH: " + playerHealth);
+
                 if (playerHealth <= 0)
                 {
+                    Debug.Log("Player already dead before all 3 QTEs");
                     yield return Restart();
+                    currentlyButtonBar = false;
                     yield break;
                 }
 
@@ -351,8 +328,16 @@ public class CombatManager: MonoBehaviour
 
                 if (success)
                 {
-                    SpriteManager.Instance.currentPlayer.AnimatePlayerAttack();
-                    yield return new WaitForSeconds(waitAnimation);
+                    Enemy randomEnemy = GetRandomEnemy();
+
+                    SpriteManager.Instance.currentPlayer.AnimateAttack();
+
+                    yield return new WaitForSeconds(0.1f);
+
+                    foreach (Enemy enemy in enemiesInScene)
+                    {
+                        enemy.AnimateHurt();
+                    }
 
                     float damage = 100 / value.Count;
                     yield return DecreaseEnemiesHealthBar(damage);
@@ -361,16 +346,26 @@ public class CombatManager: MonoBehaviour
                 }
                 else
                 {
-                    SpriteManager.Instance.currentPlayer.AnimatePlayerHurt();
-                    yield return new WaitForSeconds(waitAnimation);
+                    Enemy randomEnemy = GetRandomEnemy();
+                    randomEnemy.AnimateAttack();
+                    
+                    yield return new WaitForSeconds(0.1f);
+
+                    SpriteManager.Instance.currentPlayer.AnimateHurt();
 
                     float playerDamage = 100 / value.Count;
                     yield return DecreaseHealthBar(playerDamage);
 
                     yield return new WaitForSeconds(waitAnimation);
 
-                    SpriteManager.Instance.currentPlayer.AnimatePlayerAttack();
-                    yield return new WaitForSeconds(waitAnimation);
+                    SpriteManager.Instance.currentPlayer.AnimateAttack();
+
+                    yield return new WaitForSeconds(0.1f);
+
+                    foreach (Enemy enemy in enemiesInScene)
+                    {
+                        enemy.AnimateHurt();
+                    }
 
                     float enemyDamage = 10;
                     yield return DecreaseEnemiesHealthBar(enemyDamage);
@@ -382,6 +377,7 @@ public class CombatManager: MonoBehaviour
                 if (playerHealth <= 0)
                 {
                     yield return Restart();
+                    currentlySlidingBar = false;
                     yield break;
                 }
 
@@ -392,7 +388,9 @@ public class CombatManager: MonoBehaviour
 
     private IEnumerator Restart()
     {
-        yield return SceneManager.Instance.SetupBackground("Kuchai Town", new Vector2(0.01f, 0.44f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right);
+        enemiesInScene.Clear();
+
+        yield return SceneManager.Instance.SetupBackground("Kuchai Town", new Vector2(4.77f, -0.85f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right);
         yield return SceneManager.Instance.ShowScene(true);
         yield return SceneManager.Instance.SetupScene();
     }
@@ -403,6 +401,7 @@ public class CombatManager: MonoBehaviour
 
         if (enemiesInScene[0].health > 0)
         {
+            Debug.Log("Enemy still has fight");
             yield return Restart();
             yield break;
         }
@@ -467,6 +466,24 @@ public class CombatManager: MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator CreateEnemy(Vector2 startPosition, float targetPosition, Vector2 scale, string direction)
+    {
+        Enemy Soldier = spriteManager.CreateEnemy("Soldier", startPosition, scale, BackgroundConfigData.PlayerDirection.right, backgroundManager.currentBackground.root);
+        Soldier.Show();
+
+        Soldier.AnimateWalk(true, direction);
+        yield return Soldier.MoveSprite(startPosition, new Vector2(targetPosition, startPosition.y), 6f);
+        Soldier.AnimateWalk(false, direction);
+
+        enemiesInScene.Add(Soldier);
+    }
+
+    private Enemy GetRandomEnemy()
+    {
+        int randomIndex = Random.Range(0, enemiesInScene.Count);
+        return enemiesInScene[randomIndex];
     }
 
     private KeyCode ConvertStringToKeyCode(string key)

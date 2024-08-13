@@ -22,7 +22,7 @@ namespace Commands
             database.AddCommand("HideVN", new Action<string>(SetupScene));
             database.AddCommand("ShowVN", new Action(() => { SceneManager.Instance.ShowVN(); }));
             database.AddCommand("HidePixel", new Action(() => { SceneManager.Instance.HideScene(); }));
-            database.AddCommand("ShowPixel", new Func<IEnumerator>(ShowScene));
+            database.AddCommand("ShowPixel", new Func<string, IEnumerator>(ShowScene));
         }
 
         private static void SetupBackground(string[] data)
@@ -68,9 +68,12 @@ namespace Commands
             SceneManager.Instance.SetupScene();
         }
 
-        private static IEnumerator ShowScene()
+        private static IEnumerator ShowScene(string data)
         {
-            yield return SceneManager.Instance.ShowScene();
+            if (bool.TryParse(data, out bool endVN))
+            {
+                yield return SceneManager.Instance.ShowScene(endVN);
+            }
         }
 
         private static IEnumerator Wait(string data)

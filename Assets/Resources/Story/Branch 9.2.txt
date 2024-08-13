@@ -6,7 +6,7 @@ Sabina as Lady Sabina "There's no need to be sorry, dear. I know how much you mu
 
 Ahlai as You "Yes, I will. Thank you."
 
-HideCharacter(Sabina), Wait(1), ChangeCharacterEmotion(Seiji -exp Worry), ShowCharacter(Seiji)
+HideCharacter(Sabina), HideSprite(Sabina), Wait(0.2), ChangeCharacterEmotion(Seiji -exp Worry), ShowCharacter(Seiji)
 
 Seiji "Ahlai... Are you okay?"
 

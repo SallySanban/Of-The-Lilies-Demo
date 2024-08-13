@@ -1,4 +1,4 @@
-[wait]HideTextbox(), [wait]HideVN("Scene 9"), [wait]MoveSprite("Ahlai" -x -5.17 -spd 6), [wait]SetupPixelScene("Scene 9" -bg "Kuchai Town" -x -4.88 -y 0.44 -s 0.88 -d right -vn false)
+[wait]HideTextbox(), [wait]HideVN("Scene 10"), [wait]MoveSprite("Ahlai" -x -6.81 -spd 6), [wait]SetupPixelScene("Scene 10" -bg "Kuchai Town" -x 4.77 -y -0.85 -s 0.88 -d right)
 
 PlaySoundEffect("Bump"), ShowVN(), Wait(0.5)
 
@@ -10,7 +10,7 @@ Laisa as ??? "Ooh, I'm flattered you already know who I am. I would tread carefu
 
 Ahlai as You "It's you! You're the Serpent of the Sea Emperor, Ilaisaane-um, they call you Laisa, don't they?! The pirate Lien captured days ago!"
 
-HideTextbox(), [wait]ShowPixel(), Wait(0.2), [wait]ChangeCharacterEmotion(Laisa -exp Stern), [input]ShowCharacter(Laisa)
+HideTextbox(), [wait]ShowPixel(false), Wait(0.2), [wait]ChangeCharacterEmotion(Laisa -exp Stern), [input]ShowCharacter(Laisa)
 
 Laisa "Aware of my reputation, I see. And what are you going to do about it?"
 
@@ -53,6 +53,8 @@ if ($LaisaBranch == false)
 	"I won't let you take her. You'll have to go through me."
 
 	HideCharacter(Laisa Lien), HideVN("Combat Scene - Prologue")
+
+	[input]ShowSpeechBubble(Ahlai -dialogue "Arrow Keys and Space Bar for combat"), HideSpeechBubble(false)
 }
 else
 {

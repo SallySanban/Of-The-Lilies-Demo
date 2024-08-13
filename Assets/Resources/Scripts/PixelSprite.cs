@@ -109,26 +109,38 @@ public class PixelSprite
         {
             if (currentDirection == CurrentSpriteDirection.Left)
             {
-                if(isPlayer) Player.move.x = -1;
-                FlipSprite(CurrentSpriteDirection.Right);
+                if (isPlayer)
+                {
+                    Player.move.x = -1;
+                    FlipSprite(CurrentSpriteDirection.Right);
+                }
             }
             else
             {
-                if (isPlayer) Player.move.x = 1;
-                FlipSprite(CurrentSpriteDirection.Left);
+                if (isPlayer)
+                {
+                    Player.move.x = 1;
+                    FlipSprite(CurrentSpriteDirection.Left);
+                }
             }
         }
         else
         {
             if (positionToGo.x < currentPosition.x)
             {
-                if (isPlayer) Player.move.x = -1;
-                FlipSprite(CurrentSpriteDirection.Left);
+                if (isPlayer)
+                {
+                    Player.move.x = -1;
+                    FlipSprite(CurrentSpriteDirection.Left);
+                }
             }
             else if (positionToGo.x > currentPosition.x)
             {
-                if (isPlayer) Player.move.x = 1;
-                FlipSprite(CurrentSpriteDirection.Right);
+                if (isPlayer)
+                {
+                    Player.move.x = 1;
+                    FlipSprite(CurrentSpriteDirection.Right);
+                }
             }
         }
 
@@ -140,17 +152,20 @@ public class PixelSprite
 
             if (Vector2.Distance(currentPosition, positionToGo) <= 0.0001f)
             {
-                if (isPlayer) Player.move = Vector3.zero;
-
-                if (interacting)
+                if (isPlayer)
                 {
-                    if (currentDirection == CurrentSpriteDirection.Left)
+                    Player.move = Vector3.zero;
+
+                    if (interacting)
                     {
-                        FlipSprite(CurrentSpriteDirection.Right);
-                    }
-                    else
-                    {
-                        FlipSprite(CurrentSpriteDirection.Left);
+                        if (currentDirection == CurrentSpriteDirection.Left)
+                        {
+                            FlipSprite(CurrentSpriteDirection.Right);
+                        }
+                        else
+                        {
+                            FlipSprite(CurrentSpriteDirection.Left);
+                        }
                     }
                 }
 
@@ -179,6 +194,47 @@ public class PixelSprite
             root.Find("Sprite").transform.eulerAngles = new Vector3(0, 0, 0);
             currentDirection = CurrentSpriteDirection.Right;
         }
+    }
+
+    public void AnimateAttack()
+    {
+        rootAnimator.SetTrigger("Attack");
+    }
+
+    public void AnimateHurt()
+    {
+        rootAnimator.SetTrigger("Hurt");
+    }
+
+    public void AnimateWalk(bool walk, string direction)
+    {
+        if (walk)
+        {
+            if (direction == "left")
+            {
+                FlipSprite(CurrentSpriteDirection.Right);
+                rootAnimator.SetBool("WalkLeft", true);
+            }
+            else
+            {
+                FlipSprite(CurrentSpriteDirection.Right);
+                rootAnimator.SetBool("WalkRight", true);
+            }
+        }
+        else
+        {
+            if (direction == "left")
+            {
+                rootAnimator.SetBool("WalkLeft", false);
+                FlipSprite(CurrentSpriteDirection.Left);
+            }
+            else
+            {
+                rootAnimator.SetBool("WalkRight", false);
+                FlipSprite(CurrentSpriteDirection.Right);
+            }
+        }
+        
     }
 
     public Coroutine Show(bool immediate = false)

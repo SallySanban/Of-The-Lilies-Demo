@@ -30,7 +30,7 @@ Lien "Find the Sea Serpent's accomplice as well!"
 
 Seiji "Hurry, Ahlai. Let's go back to Sabina's Salves. We'll be safe there."
 
-HideCharacter(Seiji), HideTextbox(), [input]ShowCG("Blackout"), HideCG(), [wait]SetupPixelScene("Scene 11" -bg "Main Shop" -x -4.88 -y 0.44 -d right -vn false), ShowVN(), Wait(0.5)
+HideCharacter(Seiji), HideTextbox(), [input]ShowCG("Blackout"), HideCG(), [wait]SetupPixelScene("Scene 11" -bg "Main Shop" -x -4.88 -y 0.44 -d right), ShowVN(), Wait(0.5)
 
 MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Worry), ChangeCharacterEmotion(Sabina -exp Worry), Wait(0.2), ShowCharacter(Seiji Sabina)
 
