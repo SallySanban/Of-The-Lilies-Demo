@@ -1,4 +1,4 @@
-Sabina as Lady Sabina [Stern] "Ahlai, do not test me. To have this conversation with you again, why... I just cannot."
+Sabina as Lady Sabina [Stern] "<playerName>, do not test me. To have this conversation with you again, why... I just cannot."
 
 "It is far too soon for you to be able to handle this."
 
@@ -20,7 +20,7 @@ Sabina as Lady Sabina "..."
 
 "If you are both so confident that you will keep each other safe... then I will trust in your judgment and give you my blessing."
 
-ChangeCharacterEmotion(Seiji -x Smile)
+ChangeCharacterEmotion(Seiji -exp Smile)
 
 Ahlai as You "Thank you so much, Lady... I promise we won't let you down. You can count on us."
 
@@ -30,7 +30,7 @@ Sabina as Lady Sabina [Stern] "Go along and prepare for the journey. You will be
 
 Seiji "Thank you for trusting in us, Lady. Our duty is to the Order of La Liryo."
 
-HideCharacter(Seiji)
+HideTextbox(), HideSprite(Seiji), [wait]HideCharacter(Seiji)
 
 if($MyoBranch == true)
 {
@@ -40,16 +40,16 @@ if($MyoBranch == true)
 
 	Ahlai as You "Understood, Lady."
 
-	HideCharacter(Sabina)
+	HideTextbox(), HideSprite(Sabina), [wait]HideCharacter(Sabina)
 
 	HideVN("Scene 14")
 }
 else
 {
-	HideCharacter(Sabina)
+	HideSprite(Sabina), [wait]HideCharacter(Sabina)
 
 	Thought "<i>I should go to <b>my bedroom<b> to get ready...</i>"
 
-	HideVN("Scene 13")
+	HideTextbox(), HideVN("Scene 13")
 }
 

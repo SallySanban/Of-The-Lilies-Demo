@@ -705,7 +705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.048685033, y: 0.08067122}
   m_AnchorMax: {x: 0.23900001, y: 0.90934914}
-  m_AnchoredPosition: {x: -1.3723755, y: 1.1142273}
+  m_AnchoredPosition: {x: -1.3723145, y: 1.1142273}
   m_SizeDelta: {x: -0.602146, y: 0.75959826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &461881976473792809
@@ -770,6 +770,8 @@ GameObject:
   - component: {fileID: 7700817871391730475}
   - component: {fileID: 5800209957585513445}
   - component: {fileID: 5506409643477209191}
+  - component: {fileID: 5250972185752862511}
+  - component: {fileID: 3741034718498702044}
   m_Layer: 5
   m_Name: LI Screen
   m_TagString: Untagged
@@ -840,6 +842,30 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &5250972185752862511
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6782334479589941625}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &3741034718498702044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6782334479589941625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c416209daeaa049961473acd087ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8952805440249264126
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,4 @@
-[input]ShowCG("Blackout")
-
-HideCG(), [wait]SetupPixelScene("Bad Ending 3.1" -bg "Main Shop" -x -4.88 -y -0.14 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Stern)
+[wait]ShowVN(), [wait]ShowCG("Blackout"), [wait]SetupPixelScene("Bad Ending 3.1" -bg "Main Shop" -x 5.9 -y -0.05 -d left), HideCG(), [wait]ShowPixel(false), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Stern)
 
 Ahlai as You "Lady Sabina, where is Seiji?"
 
@@ -25,6 +23,8 @@ Ahlai as You "Well, no, but... I just thought... I could spend some time with My
 Sabina as Lady Sabina "Oh, it's a shame he couldn't come. But it would be difficult to meet him until these curses are resolved."
 
 "We can only patiently hope that Seiji gets back safely."
+
+HideSprite(Sabina), HideCharacter(Sabina)
 
 Load("Bad Ending 3.2")
 

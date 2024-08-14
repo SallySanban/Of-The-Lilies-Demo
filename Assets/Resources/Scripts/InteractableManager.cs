@@ -65,7 +65,11 @@ public class InteractableManager: MonoBehaviour
         ("Sabina Door", "Kuchai Town", "Combat Scene - Prologue"),
         ("Tavern Door", "Kuchai Town", "Combat Scene - Prologue"),
         ("Ingredients Door", "Kuchai Town", "Combat Scene - Prologue"),
-        ("Quan Door", "Kuchai Town", "Combat Scene - Prologue")
+        ("Quan Door", "Kuchai Town", "Combat Scene - Prologue"),
+        ("Stairs", "Bedroom Corridor", "Scene 13"),
+        ("Letf Door", "Main Shop", "Scene 13"),
+        ("Left Door", "Main Shop", "Expected Ending"),
+        ("Left Door", "Back Room", "Expected Ending")
     };
 
     private void Awake()
@@ -296,7 +300,13 @@ public class InteractableManager: MonoBehaviour
         switch(sceneManager.sceneName)
         {
             case "Scene 1":
-                if (background.backgroundName == "Main Shop")
+                if (background.backgroundName == "Ahlai's Bedroom")
+                {
+                    PixelSprite Sabina = spriteManager.CreateSprite("Sabina", new Vector2(-1.93f, 0.75f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 2");
+                    Sabina.root.name = "Sabina";
+                    Sabina.Show();
+                }
+                else if (background.backgroundName == "Main Shop")
                 {
                     PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(4.82f, 1.52f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 2");
                     Seiji.root.name = "Seiji";
@@ -316,7 +326,7 @@ public class InteractableManager: MonoBehaviour
             case "Scene 3":
                 if(background.backgroundName == "Ingredients Shop")
                 {
-                    PixelSprite Shopkeeper = spriteManager.CreateSprite("Ingredients Shopkeeper", new Vector2(3.99f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 5");
+                    PixelSprite Shopkeeper = spriteManager.CreateSprite("Ingredients Shopkeeper", new Vector2(3.99f, 1.55f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 5");
                     Shopkeeper.root.name = "Ingredients Shopkeeper";
                     Shopkeeper.Show();
                 }
@@ -347,11 +357,47 @@ public class InteractableManager: MonoBehaviour
             case "Scene 12":
                 if (background.backgroundName == "Main Shop")
                 {
-                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(-2.10f, 0.81f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "?");
+                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(-2.10f, 0.81f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 14");
                     Seiji.root.name = "Seiji";
                     Seiji.Show();
 
-                    PixelSprite Sabina = spriteManager.CreateSprite("Sabina", new Vector2(1.19f, 0.75f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "?");
+                    PixelSprite Sabina = spriteManager.CreateSprite("Sabina", new Vector2(1.19f, 0.75f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 14");
+                    Sabina.root.name = "Sabina";
+                    Sabina.Show();
+                }
+
+                break;
+            case "Bad Ending 3.1":
+                if (background.backgroundName == "Main Shop")
+                {
+                    PixelSprite Sabina = spriteManager.CreateSprite("Sabina", new Vector2(1.19f, 0.75f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "");
+                    Sabina.root.name = "Sabina";
+                    Sabina.Show();
+                }
+
+                break;
+            case "Scene 13":
+                if (background.backgroundName == "Bedroom Corridor")
+                {
+                    PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(-4.44f, 0.81f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 14");
+                    Seiji.root.name = "Seiji";
+                    Seiji.Show();
+                }
+
+                break;
+            case "Scene 14":
+                if (background.backgroundName == "Ahlai's Bedroom")
+                {
+                    PixelSprite Sabina = spriteManager.CreateSprite("Sabina", new Vector2(-1.93f, 0.75f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Expected Ending");
+                    Sabina.root.name = "Sabina";
+                    Sabina.Show();
+                }
+
+                break;
+            case "Expected Ending":
+                if (background.backgroundName == "Back Room")
+                {
+                    PixelSprite Sabina = spriteManager.CreateSprite("Sabina", new Vector2(5.65f, 0.75f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "");
                     Sabina.root.name = "Sabina";
                     Sabina.Show();
                 }

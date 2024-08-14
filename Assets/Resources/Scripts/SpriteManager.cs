@@ -127,17 +127,20 @@ public class SpriteManager : MonoBehaviour
         }
     }
 
-    public PixelSprite GetSprite(string spriteName)
+    public void RemoveSprite(string spriteName)
     {
-        foreach(PixelSprite sprite in spritesInScene)
+        for (int i = spritesInScene.Count - 1; i >= 0; i--)
         {
+            PixelSprite sprite = spritesInScene[i];
+
             if(sprite.root.name == spriteName)
             {
-                return sprite;
+                sprite.Hide();
+                spritesInScene.RemoveAt(i);
+
+                break;
             }
         }
-
-        return null;
     }
 
     private string FormatCGPath(string path, string filename) => filename != "" ? path.Replace(spriteNameId, filename) : "";

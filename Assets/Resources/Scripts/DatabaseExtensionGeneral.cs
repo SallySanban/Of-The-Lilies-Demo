@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using GraphicPanels;
-using UnityEngine.UIElements;
 
 namespace Commands
 {
@@ -23,6 +21,7 @@ namespace Commands
             database.AddCommand("ShowVN", new Action(() => { SceneManager.Instance.ShowVN(); }));
             database.AddCommand("HidePixel", new Action(() => { SceneManager.Instance.HideScene(); }));
             database.AddCommand("ShowPixel", new Func<string, IEnumerator>(ShowScene));
+            database.AddCommand("ShowLIScreen", new Func<IEnumerator>(ShowLIScreen));
         }
 
         private static void SetupBackground(string[] data)
@@ -81,6 +80,41 @@ namespace Commands
             if(float.TryParse(data, out float time))
             {
                 yield return new WaitForSeconds(time);
+            }
+        }
+
+        private static IEnumerator ShowLIScreen()
+        {
+            BackgroundManager.Instance.RemoveCurrentBackground();
+            SpriteManager.Instance.RemoveCurrentPlayer();
+            SpriteManager.Instance.RemoveAllSprites(true);
+
+            while(BackgroundManager.Instance.currentBackground != null || SpriteManager.Instance.currentPlayer != null)
+            {
+                yield return null;
+            }
+
+            string liScreenPrefab = "Art/UI/LI Screen/LI Screen";
+
+            GameObject prefab = Resources.Load<GameObject>(liScreenPrefab);
+
+            GameObject liScreen = UnityEngine.Object.Instantiate(prefab, SceneManager.Instance.pixelSceneContainer);
+
+            CanvasGroup liScreenCanvasGroup = liScreen.GetComponent<CanvasGroup>();
+            liScreenCanvasGroup.alpha = 0f;
+
+            float fadeSpeed = 3f;
+
+            while (liScreenCanvasGroup.alpha != 1)
+            {
+                liScreenCanvasGroup.alpha = Mathf.MoveTowards(liScreenCanvasGroup.alpha, 1, fadeSpeed * Time.deltaTime);
+
+                if(liScreenCanvasGroup.alpha == 1)
+                {
+                    yield return SceneManager.Instance.HideVN();
+                }
+
+                yield return null;
             }
         }
     }

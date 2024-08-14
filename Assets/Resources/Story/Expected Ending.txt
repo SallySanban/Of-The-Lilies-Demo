@@ -1,4 +1,6 @@
-enter Sabina as Lady Sabina [Stern] "You made it."
+HideTextbox(), [wait]ShowPixel(false), ChangeCharacterEmotion(Sabina -exp Stern), ShowCharacter(Sabina)
+
+Sabina as Lady Sabina "You made it."
 
 Ahlai as You "I haven't been back here since I took the oath to the Order of La Liryo... What is it that you wanted to talk about, Lady?"
 
@@ -30,16 +32,18 @@ Ahlai as You "Why does this even have to be a secret? Doesn't Seiji... we all tr
 
 Sabina as Lady Sabina "When I told you both about the Ritual of Respite, I left out the most critical component needed to perform the ritual."
 
-"I didn't want to tell you in front of Seiji... he has a good heart."
+Sabina as Lady Sabina [Worry] "I didn't want to tell you in front of Seiji... he has a good heart."
 
-"But you will need to make a choice.{a} The ritual requires a single sacrifice to be made as an offering. And given the amount of essence he possesses... {a} he is one of the most suitable candidates."
+Sabina as Lady Sabina [Stern] "But you will need to make a choice.{a} <b>The ritual requires a single sacrifice to be made as an offering.</b>"
+
+"And given the amount of essence he possesses...{a} <b>he is one of the most suitable candidates.</b>"
 
 Ahlai as You "Seiji? As a... sacrifice?"
 
-Sabina as Lady Sabina "There are a few you can choose from, Ahlai. The choice is there for you to take. But think very, very hard about what you want, knowing all you've been through."
+Sabina as Lady Sabina "There are a few you can choose from, <playerName>. The choice is there for you to take. But think very, very hard about what you want, knowing all you've been through."
 
 "With what I know...{a} and with what the Ritual of Respite demands of us..."
 
 "Ultimately, you can only <b>choose one.</b>"
 
-ShowLIScreen()
+HideTextbox(), HideCharacter(Sabina), [wait]ShowCG("Blackout"), Wait(0.2), ShowLIScreen()

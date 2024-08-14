@@ -1,10 +1,12 @@
-enter Seiji [Worry] "<playerName>... I need to talk to you."
+HideTextbox(), [wait]ShowPixel(false), ChangeCharacterEmotion(Seiji -exp Worry), ShowCharacter(Seiji)
+
+Seiji "<playerName>... I need to talk to you."
 
 Ahlai as You "What is it, Seiji?"
 
 Seiji "I just... can't help but worry for you, <playerName>."
 
-HideCharacter(Seiji), HideTextbox(), ShowCG("Seiji")
+HideCharacter(Seiji), HideTextbox(), [input]ShowCG("Seiji")
 
 Seiji "I know I said that I would support you. Whatever you choose. I promised to protect you as you look for your family, and I will... but the situation has changed."
 
@@ -12,7 +14,7 @@ Seiji "I know I said that I would support you. Whatever you choose. I promised t
 
 "So... I can't help but wonder if you would be safer here instead."
 
-HideCG(), MoveCharacter(Seiji -x 1), Wait(0.5)
+HideCG(), MoveCharacter(Seiji -x 1 -i true), ChangeCharacterEmotion(Seiji -exp Worry), ShowCharacter(Seiji), Wait(0.5)
 
 choice in -1
 {

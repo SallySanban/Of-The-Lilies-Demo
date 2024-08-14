@@ -10,7 +10,7 @@ Seiji [Sad] "I only wish to keep you safe, Ahlai. If you feel that is the right 
 
 Sabina as Lady Sabina "I'm sorry to have you do this, Seiji. The rest of Seiysla is counting on you. When you're ready... meet me in the back room."
 
-HideTextbox(), HideCharacter(Sabina), [input]MoveCharacter(Seiji -x 0.5)
+HideTextbox(), HideSprite(Sabina), HideCharacter(Sabina), [input]MoveCharacter(Seiji -x 0.5)
 
 Seiji "<playerName>... Maybe you could send me off before I leave?"
 
@@ -20,6 +20,6 @@ Ahlai as You "I'm sorry, Seiji. There is too much I need to prepare for my meeti
 
 Seiji "I see... Goodbye then, <playerName>."
 
-HideCharacter(Seiji)
+HideTextbox(), HideSprite(Seiji), HideCharacter(Seiji)
 
 Load("Bad Ending 3.1")

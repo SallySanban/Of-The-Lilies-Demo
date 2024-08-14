@@ -14,7 +14,7 @@ Thought "<i>ruining our lands,{a} tearing kin away from kin.</i>"
 
 Thought "<i>I was no exception.</i>"
 
-StopSoundEffect("Sword Clashing")
+StopSoundEffect("Sword Clashing 1")
 
 HideTextbox(), [input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling 1")
 

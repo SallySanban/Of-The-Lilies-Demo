@@ -14,7 +14,7 @@ HideSprite(Seiji), [wait]HideCharacter(Seiji)
 
 HideTextbox(), ShowCG("Blackout"), Wait(0.2), SwitchCG("Curses Appear"), [input]PlaySoundEffect("Thunder"), [wait]SetupPixelScene("Scene 12" -bg "Ahlai's Bedroom" -x -4.96 -y -0.05 -d right), [wait]HideCG(), [wait]HideVN("Scene 12"), [wait]ShowPixel(true)
 
-[input]ShowSpeechBubble(Ahlai -dialogue "What's going on?"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "I better go downstairs and check."), HideSpeechBubble(false), [wait]MoveSprite("Ahlai" -x 4.77 -spd 6)
+[input]ShowSpeechBubble(Ahlai -dialogue "What's going on?"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "I better go downstairs and check."), HideSpeechBubble(false), Wait(0.2), [wait]MoveSprite("Ahlai" -x 4.77 -spd 6)
 
 [wait]ShowVN(), ShowCG("Blackout"), Wait(0.2), [wait]SetupPixelScene("Scene 12" -bg "Main Shop" -x 5.9 -y -0.05 -d left), HideCG(), [wait]ShowPixel(false), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Worry), ChangeCharacterEmotion(Sabina -exp Worry), Wait(0.2), ShowCharacter(Seiji Sabina)
 

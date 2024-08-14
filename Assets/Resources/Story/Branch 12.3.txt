@@ -10,7 +10,7 @@ Seiji "I only wish to keep you safe, <playerName>. If you feel that is the right
 
 Sabina as Lady Sabina "I'm sorry to have you do this, Seiji. The Kingdom of Seiysla is counting on you. When you're ready... meet me in the back room."
 
-HideCharacter(Sabina), MoveCharacter(Seiji -x 0.5)
+HideSprite(Sabina), HideCharacter(Sabina), MoveCharacter(Seiji -x 0.5)
 
 Seiji "<playerName>... I may be gone for a long time. I'm not certain I will get back safely."
 
@@ -18,8 +18,8 @@ Seiji "<playerName>... I may be gone for a long time. I'm not certain I will get
 
 Ahlai as You "I will. Thank you, Seiji. You really are wonderful, and I... I wish you luck. Okay?"
 
-"I'll make sure to see you."
+Seiji "I'll make sure to see you."
 
-HideCharacter(Seiji)
+HideTextbox(), HideSprite(Seiji), HideCharacter(Seiji)
 
 Load("Bad Ending 3.2")

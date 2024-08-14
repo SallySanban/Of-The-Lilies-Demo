@@ -24,7 +24,7 @@ Sabina as Lady Sabina "I can only think of one solution... There's no telling if
 
 Seiji "Where can we find these items, Lady?"
 
-Sabina as Lady Sabina "Well, the  artifacts we need have been lost to time. They surely lie beyond Kuchai's borders. You will need to prepare for a journey."
+Sabina as Lady Sabina "Well, the artifacts we need have been lost to time. They surely lie beyond Kuchai's borders. You will need to prepare for a journey."
 
 Ahlai as You "A journey? Outside Kuchai Town? Hell, outside of Sagai Province?"
 
@@ -44,15 +44,13 @@ choice in 1
 		{
 			Load("Branch 12.2")
 		}
+		
+		if ($SeijiBranch == true)
+		{
+			Load("Branch 12.3")
+		}
 		else
 		{
-			if($SeijiBranch == true)
-			{
-				Load("Branch 12.3")
-			}
-			else
-			{
-				Load("Branch 12.4")
-			}
+			Load("Branch 12.4")
 		}
 }

@@ -10,7 +10,7 @@ public class SceneManager : MonoBehaviour
 
     private CinemachineConfiner confiner;
 
-    private const string dialogueFile = "Scene 1";
+    private const string dialogueFile = "Scene 12";
     private const string playerSpriteName = "Ahlai";
     private const string combatSceneIdentifier = "Combat Scene - ";
     public static SceneManager Instance { get; private set; }
@@ -58,7 +58,7 @@ public class SceneManager : MonoBehaviour
         { ("Scene 8", "Kuchai Town", "Sabina Door"), "Scene 9" },
         { ("Prologue", "Kuchai Town", ""), "Scene 11" },
         { ("Scene 13", "First Floor Corridor", "Stairs"), "Scene 14" },
-        { ("Scene 14", "First Floor Corridor", "Door"), "Expected Ending" }
+        { ("Expected Ending", "First Floor Corridor", "Door"), "Expected Ending" }
     };
 
     Dictionary<(string sceneName, string background, string interactable), List<(string command, string key, string value)>> speechBubbleProgression = new Dictionary<(string sceneName, string background, string interactable), List<(string command, string key, string value)>>
@@ -112,14 +112,9 @@ public class SceneManager : MonoBehaviour
             {
                 ("Speech Bubble", "Ahlai", "The door is locked...")
             }
-        },
-        {
-            ("Scene 14", "First Floor Corridor", "Door"), new List<(string command, string key, string value)>
-            {
-                ("Speech Bubble", "Ahlai", "It's open!")
-            }
         }
     };
+
     private void Awake()
     {
         if (Instance == null)
@@ -147,14 +142,15 @@ public class SceneManager : MonoBehaviour
 
         //DialogueSystem.Instance.SayTextbox(lines);
 
-        sceneName = "Combat Scene - Prologue";
+        //sceneName = "Combat Scene - Prologue";
+        sceneName = "Expected Ending";
         StartCoroutine(Test());
     }
 
     private IEnumerator Test()
     {
-        //yield return SetupBackground("Tavern", new Vector2(0.01f, -0.04f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right);
-        yield return SetupBackground("Kuchai Town", new Vector2(4.77f, -0.85f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right);
+        yield return SetupBackground("First Floor Corridor", new Vector2(0.01f, -0.04f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right);
+        //yield return SetupBackground("Kuchai Town", new Vector2(4.77f, -0.85f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right);
         yield return ShowScene(true);
         yield return SetupScene();
     }
@@ -230,6 +226,11 @@ public class SceneManager : MonoBehaviour
 
         newPlayer.Hide();
 
+        if (backgroundManager.currentBackground != null)
+        {
+            spriteManager.RemoveAllSprites(false);
+        }
+
         if (isPixelShowing)
         {
             StopCoroutine(showingPixelCoroutine);
@@ -240,6 +241,7 @@ public class SceneManager : MonoBehaviour
         return hidingPixelCoroutine;
     }
 
+    //doesn't change the background
     public Coroutine SetupScene()
     {
         if (isSettingScene) return settingSceneCoroutine;

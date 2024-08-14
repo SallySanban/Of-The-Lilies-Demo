@@ -10,15 +10,15 @@ Ahlai as You "Then it shouldn't be a surprise that we have a long journey ahead 
 
 Seiji "Sweet dreams, <playerName>."
 
-[wait]HideTextbox(), [wait]HideVN("Scene 14"), [wait]MoveSprite("Ahlai" -x -5.17 -spd 6)
+[wait]HideTextbox(), HideSprite(Seiji), HideCharacter(Seiji), [wait]HideVN("Scene 14"), Wait(0.2), [wait]MoveSprite(Ahlai -x -4.56 -spd 6)
 
 ShowVN(), Wait(0.5)
 
-[input]ShowCG("Blackout"), SwitchCG("Red Sky"), PlaySoundEffect("Fire"), [input]PlaySoundEffect("Sword Clashing")
+[wait]ShowCG("Blackout"), Wait(0.2), SwitchCG("Red Sky"), PlayMusic("Fire"), Wait(3), [input]PlaySoundEffect("Sword Clashing 1"), SwitchCG("Blackout"), StopSoundEffect("Sword Clashing 1")
 
-Sabina as ??? "<i>Ahlai, wake up.</i>"
+Sabina as ??? "<i><playerName>, wake up.</i>"
 
-HideTextbox(), HideCG(), [wait]SetupPixelScene("Scene 1" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right -vn false), Wait(1), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
+StopMusic("Fire"), HideTextbox(), [wait]SetupPixelScene("Scene 14" -bg "Ahlai's Bedroom" -x -4.88 -y -0.14 -d right), HideCG(), [wait]ShowPixel(false), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
 
 Ahlai as You "Lady Sabina...? What time is it?"
 
@@ -46,6 +46,6 @@ Sabina as Lady Sabina "It is your decision, dear. Take some time to think it ove
 
 "When you've calmed down, <b>come down to the back room</b>. There is something important I need to tell you."
 
-HideCharacter(Sabina)
+HideTextbox(), HideSprite(Sabina), HideCharacter(Sabina)
 
-HideVN("Scene 14")
+HideVN("Expected Ending")

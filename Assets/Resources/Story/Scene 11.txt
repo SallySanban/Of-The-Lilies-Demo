@@ -1,12 +1,12 @@
-[wait]HideTextbox(), [wait]ShowCG("Blackout"), PlaySoundEffect("Sword Clashing"), Wait(1), PlaySoundEffect("Thunder")
+[wait]HideTextbox(), [wait]ShowCG("Blackout"), PlaySoundEffect("Sword Clashing 2"), Wait(3), PlaySoundEffect("Thunder")
 
-[input]SwitchCG("Curses Appear"), HideCG()
+[input]SwitchCG("Curses Appear"), StopSoundEffect("Sword Clashing 2"), [wait]HideVN("Scene 11"), [wait]HideCG(), [wait]ShowVN()
 
 Ahlai as You "Laisa? Laisa, where are you?!"
 
 Laisa "Over here, my pearl."
 
-HideTextbox(), ShowCG("Laisa")
+HideTextbox(), [input]ShowCG("Laisa")
 
 Laisa "Shh... Don't let them know where I've gone. It will be our little secret."
 
@@ -18,7 +18,7 @@ Lien "Find her! We can't let her escape in this mist!"
 
 Laisa "Goodbye, my pearl."
 
-HideCG()
+HideCG(), HideTextbox(), Wait(0.5)
 
 Ahlai as You "I need to find a way out of here without getting caught..."
 
@@ -30,7 +30,7 @@ Lien "Find the Sea Serpent's accomplice as well!"
 
 Seiji "Hurry, Ahlai. Let's go back to Sabina's Salves. We'll be safe there."
 
-HideCharacter(Seiji), HideTextbox(), [input]ShowCG("Blackout"), HideCG(), [wait]SetupPixelScene("Scene 11" -bg "Main Shop" -x -4.88 -y 0.44 -d right), ShowVN(), Wait(0.5)
+HideCharacter(Seiji), HideTextbox(), ShowCG("Blackout"), Wait(0.2), [wait]SetupPixelScene("Scene 12" -bg "Main Shop" -x -6.14 -y -0.05 -d right), HideCG(), [wait]ShowPixel(false)
 
 MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Worry), ChangeCharacterEmotion(Sabina -exp Worry), Wait(0.2), ShowCharacter(Seiji Sabina)
 

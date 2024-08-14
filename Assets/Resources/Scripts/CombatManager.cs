@@ -253,7 +253,7 @@ public class CombatManager: MonoBehaviour
 
                     SpriteManager.Instance.currentPlayer.AnimateHurt();
 
-                    float playerDamage = 100 / value.Count;
+                    float playerDamage = (100 / value.Count) + 1;
                     yield return DecreaseHealthBar(playerDamage);
 
                     yield return new WaitForSeconds(waitAnimation);
@@ -291,14 +291,11 @@ public class CombatManager: MonoBehaviour
                     yield return new WaitForSeconds(waitAnimation);
                 }
 
-                Debug.Log("PLAYER HEALTH: " + playerHealth);
-
                 if (playerHealth <= 0)
                 {
-                    Debug.Log("Player already dead before all 3 QTEs");
                     yield return Restart();
                     currentlyButtonBar = false;
-                    yield break;
+                    break;
                 }
 
                 currentlyButtonBar = false;
@@ -339,7 +336,7 @@ public class CombatManager: MonoBehaviour
                         enemy.AnimateHurt();
                     }
 
-                    float damage = 100 / value.Count;
+                    float damage = (100 / value.Count) + 1;
                     yield return DecreaseEnemiesHealthBar(damage);
 
                     yield return new WaitForSeconds(waitAnimation);
@@ -353,7 +350,7 @@ public class CombatManager: MonoBehaviour
 
                     SpriteManager.Instance.currentPlayer.AnimateHurt();
 
-                    float playerDamage = 100 / value.Count;
+                    float playerDamage = (100 / value.Count) + 1;
                     yield return DecreaseHealthBar(playerDamage);
 
                     yield return new WaitForSeconds(waitAnimation);
@@ -378,7 +375,7 @@ public class CombatManager: MonoBehaviour
                 {
                     yield return Restart();
                     currentlySlidingBar = false;
-                    yield break;
+                    break;
                 }
 
                 currentlySlidingBar = false;
@@ -388,7 +385,14 @@ public class CombatManager: MonoBehaviour
 
     private IEnumerator Restart()
     {
+        foreach (Enemy enemy in enemiesInScene)
+        {
+            enemy.Hide();
+        }
+
         enemiesInScene.Clear();
+
+        Destroy(healthBar);
 
         yield return SceneManager.Instance.SetupBackground("Kuchai Town", new Vector2(4.77f, -0.85f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right);
         yield return SceneManager.Instance.ShowScene(true);
@@ -399,9 +403,10 @@ public class CombatManager: MonoBehaviour
     {
         playerInCombat = false;
 
+        if (enemiesInScene.Count == 0) yield break;
+
         if (enemiesInScene[0].health > 0)
         {
-            Debug.Log("Enemy still has fight");
             yield return Restart();
             yield break;
         }
@@ -416,6 +421,7 @@ public class CombatManager: MonoBehaviour
 
             if (endCombatMode)
             {
+                Destroy(healthBar);
                 yield return sceneManager.PlayNextScene(sceneManager.combatSceneName, BackgroundManager.Instance.currentBackground.backgroundName, "");
             }
         }

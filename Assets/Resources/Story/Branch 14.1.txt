@@ -12,6 +12,6 @@ Ahlai as You "I wish you the best, Seiji. Please rest well for your trip."
 
 Seiji "I will. Goodbye, Ahlai."
 
-HideCharacter(Seiji)
+HideTextbox(), HideVN("Scene 14"), HideSprite(Seiji), HideCharacter(Seiji), Wait(0.2), [wait]MoveSprite(Ahlai -x -4.56 -spd 6)
 
 Load("Bad Ending 3.1")
