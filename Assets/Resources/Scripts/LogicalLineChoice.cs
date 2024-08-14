@@ -112,7 +112,7 @@ namespace Dialogue.LogicalLines
                         };
                     }
 
-                    choice.choiceText = line.Trim().Substring(choiceIdentifier.Length);
+                    choice.choiceText = TagManager.Inject(line.Trim().Substring(choiceIdentifier.Length));
                     isFirstChoice = false;
                     continue;
                 }

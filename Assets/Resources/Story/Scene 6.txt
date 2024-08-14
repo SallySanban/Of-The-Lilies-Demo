@@ -1,4 +1,4 @@
-HideTextbox(), [wait]ShowPixel(false), Wait(0.2), ShowCharacter(Seiji)
+HideTextbox(), [wait]ShowPixel(false), Wait(0.2), [wait]ShowVN(), ShowCharacter(Seiji)
 
 Mr. Quan "You're back! Here, here. You can get started on brewing the potion."
 

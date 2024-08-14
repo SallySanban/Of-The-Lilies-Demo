@@ -1,4 +1,4 @@
-HideTextbox(), [wait]ShowPixel(false), Wait(0.2), ShowCharacter(Seiji)
+HideTextbox(), [wait]ShowPixel(false), Wait(0.2), [wait]ShowVN(), ShowCharacter(Seiji)
 
 Seiji [Smile] "Good morning, Sir Quan! Delivery from Sabina's Salves."
 

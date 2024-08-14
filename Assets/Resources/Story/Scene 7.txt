@@ -34,7 +34,7 @@ MoveCharacter(Manju -x 0), Wait(0.5)
 
 choice in 1
 {
-	- I go by Ahlai.
+	- I go by <playerName>.
 		$ManjuBranch = true
 		Load("Branch 7.1" -p true)
 	- No, but you should tell me yours first.

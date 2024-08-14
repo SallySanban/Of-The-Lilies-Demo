@@ -1,4 +1,4 @@
-ShowCharacter(Seiji)
+HideTextbox(), [wait]ShowVN(), ShowCharacter(Seiji)
 
 Seiji [Smile] "<playerName>! You're finally awake. I hope you rested well?"
 

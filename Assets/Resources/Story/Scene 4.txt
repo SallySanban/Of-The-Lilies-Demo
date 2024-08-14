@@ -1,4 +1,4 @@
-ShowCharacter(Seiji)
+HideTextbox(), [wait]ShowVN(), ShowCharacter(Seiji)
 
 Shopkeeper "Hello, welcome! What is it that you need?"
 
