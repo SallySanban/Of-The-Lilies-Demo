@@ -44,9 +44,9 @@ public class CombatManager: MonoBehaviour
         },
         { ("Prologue", "Trigger 3"), new List<(string keys, float speed)>
             {
-                ("Right Left Down Up Up", 0.008f),
-                ("Up Up Left Right Down", 0.005f),
-                ("Down Right Left Left Right", 0.002f)
+                ("Right Left Down Up Up", 0.01f),
+                ("Up Up Left Right Down", 0.01f),
+                ("Down Right Left Left Right", 0.01f)
             }
         }
     };
@@ -63,7 +63,7 @@ public class CombatManager: MonoBehaviour
         },
         { ("Prologue", "Trigger 3"), new List<(QteSlidingBar.SliderLength length, float speed)>
             {
-                (QteSlidingBar.SliderLength.VeryShort, 5f)
+                (QteSlidingBar.SliderLength.VeryShort, 4f)
             }
         }
     };

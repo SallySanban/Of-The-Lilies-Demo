@@ -16,9 +16,9 @@ Manju as ??? "Not so much a bother than it is a waste of time."
 
 Thought "<i>What's his problem?</i>"
 
-Ahlai as You "Humor me! I don't mean to comment on your tattoos only for the sake of small talk."
+Ahlai as You "Humor me! I don't mean to comment on your scars only for the sake of small talk."
 
-"Again, where are you from? The tattoos tell me that you're not from here, like plenty of people in Kuchai Town. Really, seeing anyone with tattoos reminds me of home."
+"Again, where are you from? The scars tell me that you're not from here, like plenty of people in Kuchai Town. Really, seeing anyone with scars reminds me of home."
 
 Manju as ??? "Home? Where would that be for you?"
 
