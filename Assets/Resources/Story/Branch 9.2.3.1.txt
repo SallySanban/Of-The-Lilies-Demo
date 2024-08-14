@@ -18,7 +18,7 @@ StopMusic("Walking 2"), HideTextbox(), ShowCG("Blackout"), Wait(0.2), SwitchCG("
 
 [wait]ShowVN(), ShowCG("Blackout"), Wait(0.2), [wait]SetupPixelScene("Scene 12" -bg "Main Shop" -x 5.9 -y -0.05 -d left), HideCG(), [wait]ShowPixel(false), MoveCharacter(Seiji -x 1 -i true), MoveCharacter(Sabina -x 0 -i true), ChangeCharacterEmotion(Seiji -exp Worry), ChangeCharacterEmotion(Sabina -exp Worry), Wait(0.2), ShowCharacter(Seiji Sabina)
 
-PlayMusic("Walking 2")
+PlayMusic("Walking 2" -vol 0.2)
 
 Sabina as Lady Sabina "Ay, Dok'kale... The darkness in the skies... What a bad sign..."
 

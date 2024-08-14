@@ -46,4 +46,4 @@ Sabina as Lady Sabina "Of course, I understand... It was hard for you, <playerNa
 
 PlayMusic("Romance" -vol 0.1), HideTextbox(), HideVN("Scene 1"), HideSprite(Sabina), [wait]HideCharacter(Sabina)
 
-[input]ShowSpeechBubble(Ahlai -dialogue "WASD or Arrow Keys to move"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "Z to interact with objects"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "Space or enter to go to next dialogue"), HideSpeechBubble(false)
+[input]ShowSpeechBubble(Ahlai -dialogue "WASD or Arrow Keys to move"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "Z to interact with objects"), HideSpeechBubble(false)

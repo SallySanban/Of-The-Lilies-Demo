@@ -6,7 +6,7 @@ Ahlai as You "Laisa? Laisa, where are you?!"
 
 Laisa "Over here, my pearl."
 
-PlayMusic("Walking 2"), HideTextbox(), [input]ShowCG("Laisa")
+PlayMusic("Walking 2" -vol 0.2), HideTextbox(), [input]ShowCG("Laisa")
 
 Laisa "Shh... Don't let them know where I've gone. It will be our little secret."
 

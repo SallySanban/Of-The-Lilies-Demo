@@ -68,7 +68,7 @@ public class InteractableManager: MonoBehaviour
         ("Ingredients Door", "Kuchai Town", "Combat Scene - Prologue"),
         ("Quan Door", "Kuchai Town", "Combat Scene - Prologue"),
         ("Stairs", "Bedroom Corridor", "Scene 13"),
-        ("Letf Door", "Main Shop", "Scene 13"),
+        ("Left Door", "Main Shop", "Scene 13"),
         ("Left Door", "Main Shop", "Expected Ending"),
         ("Left Door", "Back Room", "Expected Ending")
     };
@@ -89,7 +89,7 @@ public class InteractableManager: MonoBehaviour
     {
         if (collidingWithPlayer && collidingInteractable != null)
         {
-            if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive)
+            if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive && !sceneManager.inVNMode)
             {
                 collidingInteractable.icon.gameObject.SetActive(false);
 
@@ -110,7 +110,15 @@ public class InteractableManager: MonoBehaviour
                         break;
                     case Interactable.InteractableType.PixelSprite:
                         collidingInteractable.isInteractable = false; //makes sure that the icon doesn't show up when the player moves to interact, even if colliding
-                        StartCoroutine(WaitForMovePlayer());
+
+                        if(collidingInteractable.interactableName == "Seiji" && sceneManager.sceneName == "Scene 1" && collidingInteractable.backgroundInteractableIsIn == "Main Shop")
+                        {
+                            StartCoroutine(WaitForMovePlayer("left"));
+                        }
+                        else
+                        {
+                            StartCoroutine(WaitForMovePlayer());
+                        }
 
                         break;
                     case Interactable.InteractableType.Object:
@@ -123,7 +131,7 @@ public class InteractableManager: MonoBehaviour
         }
     }
 
-    private IEnumerator WaitForMovePlayer()
+    private IEnumerator WaitForMovePlayer(string placement = "")
     {
         string lastInteractableScene = sceneManager.sceneName;
         string lastInteractableBackground = collidingInteractable.backgroundInteractableIsIn;
@@ -132,10 +140,15 @@ public class InteractableManager: MonoBehaviour
 
         //Debug.Log("SCENE: " + lastInteractableScene + " BACKGROUND: " + lastInteractableBackground + " INTERACTABLE: " + lastInteractable);
 
-        yield return spriteManager.currentPlayer.MoveSprite(spriteManager.currentPlayer.root.transform.position, collidingInteractable.icon.transform.position, 3f, true, true);
-        lastCollidedInteractable.isInteractable = true; //icon can show up again
+        yield return spriteManager.currentPlayer.MoveSprite(spriteManager.currentPlayer.root.transform.position, collidingInteractable.icon.transform.position, 3f, true, true, placement);
         yield return new WaitForSeconds(0.2f);
         yield return sceneManager.PlayNextScene(lastInteractableScene, lastInteractableBackground, lastInteractable);
+
+        var key = (lastInteractable, lastInteractableBackground, lastInteractableScene);
+        if (!uninteractables.Contains(key))
+        {
+            lastCollidedInteractable.isInteractable = true; //icon can show up again if not uninteractable
+        }
     }
     private IEnumerator PlaySceneAfterBackgroundSwitch()
     {
@@ -285,6 +298,12 @@ public class InteractableManager: MonoBehaviour
             if(interactable.name == interactableName)
             {
                 interactable.isInteractable = enable;
+
+                if (!enable)
+                {
+                    var key = (interactable.interactableName, interactable.backgroundInteractableIsIn, sceneManager.sceneName);
+                    uninteractables.Add(key);
+                }
             }
         }
     }

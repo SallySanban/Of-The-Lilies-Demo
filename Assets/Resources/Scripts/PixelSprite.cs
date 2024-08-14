@@ -71,7 +71,7 @@ public class PixelSprite
         }
     }
 
-    public Coroutine MoveSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false)
+    public Coroutine MoveSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false, string placement = "")
     {
         if (isSpriteMoving) return movingSpriteCoroutine;
 
@@ -79,13 +79,24 @@ public class PixelSprite
 
         if (interacting)
         {
-            if (currentDirection == CurrentSpriteDirection.Left)
+            if(placement == "")
             {
-                positionToGo.x = positionToGo.x + 1.8f; //if facing left, go right
+                if (currentDirection == CurrentSpriteDirection.Left)
+                {
+                    positionToGo.x = positionToGo.x + 1.8f; //if facing left, go right
+                }
+                else
+                {
+                    positionToGo.x = positionToGo.x - 2.3f; //if facing right, go left
+                }
             }
-            else
+            else if(placement == "left")
             {
-                positionToGo.x = positionToGo.x - 2.3f; //if facing right, go left
+                positionToGo.x = positionToGo.x - 2.3f;
+            }
+            else if(placement == "right")
+            {
+                positionToGo.x = positionToGo.x + 1.8f;
             }
         }
 
@@ -95,17 +106,17 @@ public class PixelSprite
         }
         else
         {
-            movingSpriteCoroutine = spriteManager.StartCoroutine(MovingSprite(currentPosition, positionToGo, speed, interacting, isPlayer));
+            movingSpriteCoroutine = spriteManager.StartCoroutine(MovingSprite(currentPosition, positionToGo, speed, interacting, isPlayer, placement));
         }
 
         return movingSpriteCoroutine;
     }
 
-    private IEnumerator MovingSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false)
+    private IEnumerator MovingSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false, string placement = "")
     {
         if (isPlayer) Player.playerBeingMoved = true;
         
-        if (interacting)
+        if (interacting && placement == "")
         {
             if (currentDirection == CurrentSpriteDirection.Left)
             {

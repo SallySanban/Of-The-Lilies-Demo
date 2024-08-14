@@ -4,7 +4,7 @@ HideTextbox(), PlaySoundEffect("Thunder"), ChangeCharacterEmotion(Lien -exp Surp
 
 HideCharacter(Laisa Lien), [input]ShowCG("Curses Appear"), HideCG()
 
-PlayMusic("Bad End")
+PlayMusic("Bad End" -vol 0.5)
 
 enter Laisa [Smirk] "It seems the gods are on my side today."
 

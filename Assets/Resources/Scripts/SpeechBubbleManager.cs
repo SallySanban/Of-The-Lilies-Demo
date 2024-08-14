@@ -84,7 +84,7 @@ namespace Dialogue
 
                 if(action.command == "Command")
                 {
-                    Debug.Log(action.key);
+                    //Debug.Log(action.key);
 
                     switch (action.key)
                     {
@@ -118,7 +118,7 @@ namespace Dialogue
                 }
             }
 
-            Debug.Log("Actions ended");
+            //Debug.Log("Actions ended");
             dialogueSystem.speechBubbleActive = false;
             process = null;
         }
@@ -161,7 +161,7 @@ namespace Dialogue
 
         private IEnumerator TalkSpeechBubble(string dialogue)
         {
-            Debug.Log(dialogue);
+            //Debug.Log(dialogue);
             speechBubbleText.text = dialogue;
 
             float newWidth = Mathf.Clamp(speechBubbleText.preferredWidth, minWidth, maxWidth);

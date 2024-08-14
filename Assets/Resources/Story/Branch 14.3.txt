@@ -14,7 +14,7 @@ StopMusic("Walking 2"), [wait]HideTextbox(), HideSprite(Seiji), HideCharacter(Se
 
 ShowVN(), Wait(0.5)
 
-[wait]ShowCG("Blackout"), Wait(0.2), SwitchCG("Red Sky"), PlayMusic("Fire"), Wait(3), [input]PlaySoundEffect("Sword Clashing 1"), SwitchCG("Blackout"), StopSoundEffect("Sword Clashing 1")
+[wait]ShowCG("Blackout"), Wait(0.2), SwitchCG("Red Sky"), PlayMusic("Fire" -vol 0.4), Wait(3), [input]PlaySoundEffect("Sword Clashing 1"), SwitchCG("Blackout"), StopSoundEffect("Sword Clashing 1")
 
 Sabina as ??? "<i><playerName>, wake up.</i>"
 
