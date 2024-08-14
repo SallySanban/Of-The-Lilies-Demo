@@ -1,4 +1,4 @@
-[wait]ShowVN(), [wait]ShowCG("Blackout"), Wait(0.2), [wait]SwitchCG("3 Months"), Wait(1), [wait]SwitchCG("Blackout"), PlayMusic("Fire")
+PlayMusic("Bad End"), [wait]ShowVN(), [wait]ShowCG("Blackout"), Wait(0.2), [wait]SwitchCG("3 Months"), Wait(1), [wait]SwitchCG("Blackout"), PlayMusic("Fire")
 
 Thought "<i>Seiji... never returned safely.</i>"
 

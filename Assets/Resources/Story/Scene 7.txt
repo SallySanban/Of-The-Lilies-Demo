@@ -1,10 +1,10 @@
-HideTextbox(), [input]ShowCG("Manju")
+StopMusic("Walking 1"), HideTextbox(), [input]ShowCG("Manju")
 
 Ahlai as You "Ah, I apologize-"
 
 Manju as ??? "...Is something the matter?"
 
-HideTextbox(), [wait]HideCG(), [wait]ShowPixel(false), Wait(0.2), [wait]ChangeCharacterEmotion(Manju -exp Stern), [input]ShowCharacter(Manju), 
+PlayMusic("Romance"), HideTextbox(), [wait]HideCG(), [wait]ShowPixel(false), Wait(0.2), [wait]ChangeCharacterEmotion(Manju -exp Stern), [input]ShowCharacter(Manju), 
 
 Ahlai as You "...No, not at all. Unless you want me to say that there's anything wrong with those scars around your neck. They're really interesting patterns, don't you think?"
 
@@ -42,7 +42,7 @@ choice in 1
 		Load("Branch 7.2" -p true)
 }
 
-HideTextbox(), HideCharacter(Seiji), HideVN("Scene 7")
+HideTextbox(), HideCharacter(Seiji), HideVN("Scene 7"), StopMusic("Romance")
 
 
 

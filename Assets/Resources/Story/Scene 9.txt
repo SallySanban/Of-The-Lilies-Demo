@@ -58,4 +58,4 @@ choice in 1
 		Load("Branch 9.2" -p true)
 }
 
-Load("Scene 10")
+StopMusic("Walking 2"), Load("Scene 10")

@@ -1,4 +1,4 @@
-HideTextbox(), [wait]ShowPixel(false), ChangeCharacterEmotion(Sabina -exp Stern), ShowCharacter(Sabina)
+PlayMusic("Ending"), HideTextbox(), [wait]ShowPixel(false), ChangeCharacterEmotion(Sabina -exp Stern), ShowCharacter(Sabina)
 
 Sabina as Lady Sabina "You made it."
 

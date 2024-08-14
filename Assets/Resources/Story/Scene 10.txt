@@ -6,6 +6,8 @@ Ahlai as You "Hey!"
 
 "Wait, aren't you-"
 
+PlayMusic("Romance")
+
 Laisa as ??? "Ooh, I'm flattered you already know who I am. I would tread carefully if I were you."
 
 Ahlai as You "It's you! You're the Serpent of the Sea Emperor, Ilaisaane-um, they call you Laisa, don't they?! The pirate Lien captured days ago!"
@@ -30,6 +32,8 @@ HideTextbox(), MoveCharacter(Laisa -x 1), MoveCharacter(Lien -x 0 -i true), Chan
 
 Ahlai as You "Lien..."
 
+PlayMusic("Flashback")
+
 Lien "I'm sorry, have we met?"
 
 Ahlai as You "I guess you wouldn't remember the faces of those you've ruined. It was only 10 years ago."
@@ -44,6 +48,8 @@ Lien "You have broken laws and are resisting your arrest, so I am holding you ac
 
 Laisa "Tell me, does it ever bother you that you're always just one step behind?"
 
+StopMusic("Flashback")
+
 Lien "That's enough. If you continue to refuse to comply, I will have no choice but to use force."
 
 if ($LaisaBranch == false)
@@ -52,7 +58,7 @@ if ($LaisaBranch == false)
 
 	"I won't let you take her. You'll have to go through me."
 
-	HideCharacter(Laisa Lien), HideVN("Combat Scene - Prologue")
+	PlayMusic("Combat"), HideCharacter(Laisa Lien), HideVN("Combat Scene - Prologue")
 
 	[input]ShowSpeechBubble(Ahlai -dialogue "Arrow Keys and Space Bar for combat"), HideSpeechBubble(false)
 }

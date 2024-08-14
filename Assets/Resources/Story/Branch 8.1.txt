@@ -14,6 +14,8 @@ Seiji "Then that's just even more of a reason for me to come with you! Just try 
 
 Ahlai as You "You're right, Seiji.{a} And well, it looks like the drinks are done... Let's <b>go back to Sabina's Salves</b> and ask her."
 
+StopMusic("Romance")
+
 if ($ManjuBranch == true)
 {
 	Seiji "You can go ahead, <playerName>. Let me just pay for the drinks and then I'll be right behind you."

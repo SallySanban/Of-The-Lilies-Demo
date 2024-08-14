@@ -1,4 +1,4 @@
-MoveCharacter(Laisa -x 0.5)
+StopMusic("Romance"), MoveCharacter(Laisa -x 0.5)
 
 Ahlai as You "<b>It seems your life is in my hands.</b> Shouldn't you be more courteous with me?"
 

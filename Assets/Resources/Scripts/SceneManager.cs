@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Dialogue;
 using Cinemachine;
+using Audio;
 
 public class SceneManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class SceneManager : MonoBehaviour
 
     private CinemachineConfiner confiner;
 
-    private const string dialogueFile = "Scene 12";
+    private const string dialogueFile = "Scene 1";
     private const string playerSpriteName = "Ahlai";
     private const string combatSceneIdentifier = "Combat Scene - ";
     public static SceneManager Instance { get; private set; }
@@ -115,6 +116,16 @@ public class SceneManager : MonoBehaviour
         }
     };
 
+    Dictionary<(string sceneName, string background, string interactable), string> musicProgression = new Dictionary<(string sceneName, string background, string interactable), string>
+    {
+        {
+            ("Scene 2", "Main Shop", "Left Door"), "Walking 1"
+        },
+        {
+            ("Scene 8", "Tavern", "Left Door"), "Walking 2"
+        }
+    };
+
     private void Awake()
     {
         if (Instance == null)
@@ -143,13 +154,13 @@ public class SceneManager : MonoBehaviour
         //DialogueSystem.Instance.SayTextbox(lines);
 
         //sceneName = "Combat Scene - Prologue";
-        sceneName = "Expected Ending";
+        sceneName = "Scene 8";
         StartCoroutine(Test());
     }
 
     private IEnumerator Test()
     {
-        yield return SetupBackground("First Floor Corridor", new Vector2(0.01f, -0.04f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right);
+        yield return SetupBackground("Tavern", new Vector2(0.01f, -0.04f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right);
         //yield return SetupBackground("Kuchai Town", new Vector2(4.77f, -0.85f), new Vector2(0.88f, 0.88f), BackgroundConfigData.PlayerDirection.right);
         yield return ShowScene(true);
         yield return SetupScene();
@@ -295,6 +306,20 @@ public class SceneManager : MonoBehaviour
 
         Debug.LogError("Next scene was not found!");
         return null;
+    }
+
+    public void PlayNextMusic(string sceneClicked, string backgroundInteractableIsIn, string interactableClicked)
+    {
+        var key = (sceneClicked, backgroundInteractableIsIn, interactableClicked);
+        if (musicProgression.TryGetValue(key, out string musicName))
+        {
+            if (AudioManager.Instance.musicIsPlaying == "")
+            {
+                AudioManager.Instance.StopTrack(AudioManager.Instance.musicIsPlaying);
+            }
+
+            AudioManager.Instance.PlayTrack(musicName, volumeCap: 0.2f);
+        }
     }
 
     public bool HasNextScene(string sceneClicked, string backgroundInteractableIsIn, string interactableClicked)

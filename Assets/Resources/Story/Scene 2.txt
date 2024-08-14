@@ -62,4 +62,4 @@ Seiji [Smile] "First, we need to make some deliveries to Mr. Quan. He wants his 
 
 Ahlai as You "Okay, great! We should get going. We wouldn't want late deliveries for our best customer."
 
-HideTextbox(), HideVN("Scene 2"), HideCharacter(Seiji)
+StopMusic("Romance"), HideTextbox(), HideVN("Scene 2"), HideCharacter(Seiji)

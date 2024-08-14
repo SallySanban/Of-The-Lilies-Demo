@@ -1,4 +1,4 @@
-HideTextbox(), [wait]HidePixel(), PlaySoundEffect("Whack")
+PlayMusic("Bad End"), HideTextbox(), [wait]HidePixel(), PlaySoundEffect("Whack")
 
 Manju as ??? "Your name tells me all about your story, <playerName>. And where you're from."
 

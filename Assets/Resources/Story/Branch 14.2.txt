@@ -1,4 +1,4 @@
-MoveCharacter(Seiji -x 0.5)
+StopMusic("Walking 2"), MoveCharacter(Seiji -x 0.5)
 
 Ahlai as You "You might be right, Seiji. <b>I changed my mind.</b> It may be too dangerous for me to go after all."
 

@@ -1,4 +1,4 @@
-ShowCharacter(Seiji)
+HideTextbox(), [wait]ShowVN(), ShowCharacter(Seiji)
 
 Ahlai as You "Well, that is a beautiful statue... how can it still be so pristine?"
 

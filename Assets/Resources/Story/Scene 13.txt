@@ -34,7 +34,7 @@ HideTextbox(), HideSprite(Seiji), [wait]HideCharacter(Seiji)
 
 if($MyoBranch == true)
 {
-	MoveCharacter(Sabina -x 0.5)
+	StopMusic("Walking 2"), MoveCharacter(Sabina -x 0.5)
 
 	Sabina as Lady Sabina "<playerName>, listen to me. There is something important you need to know. When you are ready, come <b>meet me in the back room</b>."
 

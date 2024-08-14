@@ -1,4 +1,4 @@
-MoveCharacter(Seiji -x 1 -i true), ChangeCharacterEmotion(Seiji -exp Sad), ShowCharacter(Seiji)
+StopMusic("Walking 2"), MoveCharacter(Seiji -x 1 -i true), ChangeCharacterEmotion(Seiji -exp Sad), ShowCharacter(Seiji)
 
 Ahlai as You "I see. You're right, Lady Sabina. <b>Seiji will do fine on his own.</b>"
 

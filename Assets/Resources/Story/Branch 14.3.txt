@@ -10,7 +10,7 @@ Ahlai as You "Then it shouldn't be a surprise that we have a long journey ahead 
 
 Seiji "Sweet dreams, <playerName>."
 
-[wait]HideTextbox(), HideSprite(Seiji), HideCharacter(Seiji), [wait]HideVN("Scene 14"), Wait(0.2), [wait]MoveSprite(Ahlai -x -4.56 -spd 6)
+StopMusic("Walking 2"), [wait]HideTextbox(), HideSprite(Seiji), HideCharacter(Seiji), [wait]HideVN("Scene 14"), Wait(0.2), [wait]MoveSprite(Ahlai -x -4.56 -spd 6)
 
 ShowVN(), Wait(0.5)
 
@@ -23,6 +23,8 @@ StopMusic("Fire"), HideTextbox(), [wait]SetupPixelScene("Scene 14" -bg "Ahlai's 
 Ahlai as You "Lady Sabina...? What time is it?"
 
 Sabina as Lady Sabina "Just before dawn. Was it the nightmares, dear? You look distressed."
+
+PlayMusic("Flashback")
 
 Ahlai as You "Yes, the nightmares. The same story with the general and the same damn atrocities."
 
@@ -46,6 +48,6 @@ Sabina as Lady Sabina "It is your decision, dear. Take some time to think it ove
 
 "When you've calmed down, <b>come down to the back room</b>. There is something important I need to tell you."
 
-HideTextbox(), HideSprite(Sabina), HideCharacter(Sabina)
+StopMusic("Flashback"), HideTextbox(), HideSprite(Sabina), HideCharacter(Sabina)
 
 HideVN("Expected Ending")

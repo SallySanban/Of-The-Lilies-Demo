@@ -4,6 +4,8 @@ HideTextbox(), PlaySoundEffect("Thunder"), ChangeCharacterEmotion(Lien -exp Surp
 
 HideCharacter(Laisa Lien), [input]ShowCG("Curses Appear"), HideCG()
 
+PlayMusic("Bad End")
+
 enter Laisa [Smirk] "It seems the gods are on my side today."
 
 "So long, little runt. You really should've shut your mouth."

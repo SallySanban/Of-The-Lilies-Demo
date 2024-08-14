@@ -8,7 +8,7 @@ Thought "<i>They're nightmares now, but that's not much better, is it?</i>"
 
 Thought "<i>The Seiyslan Empire.{a} They came with every intention to destroy the peace in our tribe -</i>"
 
-PlaySoundEffect("Sword Clashing")
+PlaySoundEffect("Sword Clashing 1")
 
 Thought "<i>ruining our lands,{a} tearing kin away from kin.</i>"
 
@@ -44,6 +44,6 @@ Sabina as Lady Sabina "Of course, I understand... It was hard for you, <playerNa
 
 "When you're ready, <b>come down and you can start on your tasks for the day</b>. Seiji is waiting."
 
-PlayMusic("Romance" -vol 0.1), HideTextbox(), HideVN("Scene 1"), [wait]HideCharacter(Sabina)
+PlayMusic("Romance" -vol 0.1), HideTextbox(), HideVN("Scene 1"), HideSprite(Sabina), [wait]HideCharacter(Sabina)
 
 [input]ShowSpeechBubble(Ahlai -dialogue "WASD or Arrow Keys to move"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "Z to interact with objects"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "Space or enter to go to next dialogue"), HideSpeechBubble(false)

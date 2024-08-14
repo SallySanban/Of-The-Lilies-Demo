@@ -24,6 +24,6 @@ Laisa "I only think you're too precious for all this trouble. You're the only on
 
 Ahlai as You "What do you mean, then? If you still don't want my help, I'll be on my way. But if you need somewhere new to hide, I might know a place."
 
-Wait(0.5), ChangeCharacterEmotion(Laisa -exp Stern)
+StopMusic("Romance"), Wait(0.5), ChangeCharacterEmotion(Laisa -exp Stern)
 
 Lien as ??? "Going somewhere, pirate?"

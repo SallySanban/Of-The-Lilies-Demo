@@ -28,6 +28,8 @@ namespace Audio
         private Transform sfxRoot;
         public Transform musicRoot;
 
+        public string musicIsPlaying = "";
+
         private void Awake()
         {
             if (Instance == null)

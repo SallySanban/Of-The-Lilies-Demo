@@ -51,11 +51,21 @@ namespace Commands
             parameters.TryGetValue(volumeParameter, out volume, defaultValue: 1f);
 
             AudioManager.Instance.PlayTrack(audioFilename, volumeCap: volume);
+
+            if(audioFilename != "Fire")
+            {
+                AudioManager.Instance.musicIsPlaying = audioFilename;
+            }
         }
 
         private static void StopMusic(string audioFilename)
         {
             AudioManager.Instance.StopTrack(audioFilename);
+
+            if (audioFilename != "Fire")
+            {
+                AudioManager.Instance.musicIsPlaying = "";
+            }
         }
     }
 }

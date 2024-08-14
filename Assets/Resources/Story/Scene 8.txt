@@ -1,4 +1,4 @@
-HideTextbox(), [input]ShowProp("Newspaper"), [wait]HideProp(), Wait(0.2), [wait]ChangeCharacterEmotion(Seiji -exp Worry), [input]ShowCharacter(Seiji)
+HideTextbox(), [input]ShowProp("Newspaper"), [wait]HideProp(), Wait(0.2), [wait]ChangeCharacterEmotion(Seiji -exp Worry), [input]ShowCharacter(Seiji), PlayMusic("Flashback")
 
 Seiji "Are you okay, <playerName>? You look distressed..."
 

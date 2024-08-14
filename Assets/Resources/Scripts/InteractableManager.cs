@@ -151,12 +151,16 @@ public class InteractableManager: MonoBehaviour
             yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerScale, collidingInteractable.playerDirection);
             yield return new WaitForSeconds(0.2f);
             yield return sceneManager.PlayNextScene(lastInteractableScene, lastInteractableBackground, lastInteractable);
+
+            sceneManager.PlayNextMusic(lastInteractableScene, lastInteractableBackground, lastInteractable);
         }
         else
         {
             yield return sceneManager.SetupBackground(collidingInteractable.backgroundToSwitch, collidingInteractable.playerPosition, collidingInteractable.playerScale, collidingInteractable.playerDirection);
             yield return new WaitForSeconds(0.2f);
             yield return sceneManager.ShowScene(true);
+
+            sceneManager.PlayNextMusic(lastInteractableScene, lastInteractableBackground, lastInteractable);
         }
     }
 

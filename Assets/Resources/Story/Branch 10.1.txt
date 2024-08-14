@@ -26,6 +26,6 @@ Ahlai as You "And I am quite pleased by this arrangement. Sure, then. You can ca
 
 Laisa "<playerName>... I'll make sure to remember that."
 
-Wait(0.5), ChangeCharacterEmotion(Laisa -exp Stern)
+StopMusic("Romance"), Wait(0.5), ChangeCharacterEmotion(Laisa -exp Stern)
 
 Lien as ??? "Seeking allies, pirate?"
