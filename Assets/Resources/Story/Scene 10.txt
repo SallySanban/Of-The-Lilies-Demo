@@ -6,7 +6,7 @@ Ahlai as You "Hey!"
 
 "Wait, aren't you-"
 
-PlayMusic("Romance")
+PlayMusic("Romance" -vol 0.1)
 
 Laisa as ??? "Ooh, I'm flattered you already know who I am. I would tread carefully if I were you."
 

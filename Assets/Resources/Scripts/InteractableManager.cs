@@ -303,14 +303,17 @@ public class InteractableManager: MonoBehaviour
     {
         switch(sceneManager.sceneName)
         {
-            case "Scene 1":
+            case "Scene 0":
                 if (background.backgroundName == "Ahlai's Bedroom")
                 {
-                    PixelSprite Sabina = spriteManager.CreateSprite("Sabina", new Vector2(-1.93f, 0.75f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 2");
+                    PixelSprite Sabina = spriteManager.CreateSprite("Sabina", new Vector2(-1.93f, 0.75f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.left, background.root, "Scene 1");
                     Sabina.root.name = "Sabina";
                     Sabina.Show();
                 }
-                else if (background.backgroundName == "Main Shop")
+
+                break;
+            case "Scene 1":
+                if (background.backgroundName == "Main Shop")
                 {
                     PixelSprite Seiji = spriteManager.CreateSprite("Seiji", new Vector2(4.82f, 1.52f), new Vector2(1f, 1f), BackgroundConfigData.PlayerDirection.right, background.root, "Scene 2");
                     Seiji.root.name = "Seiji";

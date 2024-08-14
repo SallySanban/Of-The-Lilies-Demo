@@ -4398,6 +4398,7 @@ MonoBehaviour:
   sfxMixer: {fileID: -2344986748741145952, guid: 645dd67c32cc2a64eb4b1353f042c1ea, type: 2}
   voicesMixer: {fileID: -8633938854813743037, guid: 645dd67c32cc2a64eb4b1353f042c1ea, type: 2}
   musicRoot: {fileID: 0}
+  musicIsPlaying: 
 --- !u!1 &1423868935
 GameObject:
   m_ObjectHideFlags: 0

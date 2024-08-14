@@ -46,7 +46,7 @@ namespace Commands
 
             var parameters = ConvertDataToParameters(data);
 
-            float volume = 1;
+            float volume = 1f;
 
             parameters.TryGetValue(volumeParameter, out volume, defaultValue: 1f);
 
