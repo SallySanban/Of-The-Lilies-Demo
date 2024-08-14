@@ -53,6 +53,7 @@ public class InteractableManager: MonoBehaviour
         ("Ingredients Door", "Kuchai Town", "Scene 6"),
         ("Quan Door", "Kuchai Town", "Scene 6"),
         ("Newspaper", "Tavern", "Scene 7"),
+        ("Left Door", "Tavern", "Scene 7"),
         ("Barkeeper", "Tavern", "Scene 8"),
         ("Newspaper", "Tavern", "Scene 8"),
         ("Barkeeper", "Tavern", "Bad Ending 1"),
@@ -129,7 +130,7 @@ public class InteractableManager: MonoBehaviour
         string lastInteractable = collidingInteractable.interactableName;
         Interactable lastCollidedInteractable = collidingInteractable;
 
-        Debug.Log("SCENE: " + lastInteractableScene + " BACKGROUND: " + lastInteractableBackground + " INTERACTABLE: " + lastInteractable);
+        //Debug.Log("SCENE: " + lastInteractableScene + " BACKGROUND: " + lastInteractableBackground + " INTERACTABLE: " + lastInteractable);
 
         yield return spriteManager.currentPlayer.MoveSprite(spriteManager.currentPlayer.root.transform.position, collidingInteractable.icon.transform.position, 3f, true, true);
         lastCollidedInteractable.isInteractable = true; //icon can show up again
@@ -142,7 +143,7 @@ public class InteractableManager: MonoBehaviour
         string lastInteractableBackground = collidingInteractable.backgroundInteractableIsIn;
         string lastInteractable = collidingInteractable.interactableName;
 
-        Debug.Log("SCENE: " + lastInteractableScene + " BACKGROUND: " + lastInteractableBackground + " INTERACTABLE: " + lastInteractable);
+        //Debug.Log("SCENE: " + lastInteractableScene + " BACKGROUND: " + lastInteractableBackground + " INTERACTABLE: " + lastInteractable);
 
         if (sceneManager.HasNextScene(sceneManager.sceneName, collidingInteractable.backgroundInteractableIsIn, collidingInteractable.interactableName)) //has scene right after changing background
         {
@@ -209,7 +210,7 @@ public class InteractableManager: MonoBehaviour
             //locks interactables that cannot be accessed but icon will appear
             if (lockedInteractables.Contains(interactableToCheck))
             {
-                Debug.Log("LOCKED " + interactable.interactableName + " ON " + sceneManager.sceneName);
+                //Debug.Log("LOCKED " + interactable.interactableName + " ON " + sceneManager.sceneName);
                 interactable.isLocked = true;
             }
 
@@ -220,7 +221,7 @@ public class InteractableManager: MonoBehaviour
             }
             else
             {
-                Debug.Log("CANNOT INTERACT WITH " + interactable.interactableName + " ON " + sceneManager.sceneName);
+                //Debug.Log("CANNOT INTERACT WITH " + interactable.interactableName + " ON " + sceneManager.sceneName);
             }
         }
 

@@ -35,7 +35,7 @@ public class Background
 
             backgroundName = prefab.name;
 
-            Debug.Log("PREFAB NAME: " + backgroundName);
+            //Debug.Log("PREFAB NAME: " + backgroundName);
         }
     }
 

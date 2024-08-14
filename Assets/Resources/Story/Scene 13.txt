@@ -14,7 +14,7 @@ Ahlai as You "Lady Sabina, please. I need to know if my family is safe. I need t
 
 MoveCharacter(Sabina -x 0), [wait]MoveCharacter(Seiji -x 1 -i true), ShowCharacter(Seiji)
 
-Seiji "And if I may, Lady, I give you my word. Ahlai will be in good hands. We will protect each other."
+Seiji "And if I may, Lady, I give you my word. <playerName> will be in good hands. We will protect each other."
 
 Sabina as Lady Sabina "..."
 
@@ -42,7 +42,7 @@ if($MyoBranch == true)
 
 	HideTextbox(), HideSprite(Sabina), [wait]HideCharacter(Sabina)
 
-	HideVN("Scene 14")
+	HideVN("Expected Ending")
 }
 else
 {

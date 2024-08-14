@@ -54,8 +54,8 @@ public class QteSlidingBar
 
         slider.anchoredPosition = new Vector2(sliderPosition, slider.position.y);
 
-        slider.GetComponent<BoxCollider2D>().size = new Vector2(slider.rect.width, slider.rect.height);
-        slider.GetComponent<BoxCollider2D>().offset = slider.rect.center;
+        slider.GetComponent<CapsuleCollider2D>().size = new Vector2(slider.rect.width, slider.rect.height);
+        slider.GetComponent<CapsuleCollider2D>().offset = slider.rect.center;
     }
 
     public IEnumerator MoveArrow()
@@ -79,8 +79,9 @@ public class QteSlidingBar
 
     public bool CheckForSuccess()
     {
-        BoxCollider2D sliderCollider = slider.GetComponent<BoxCollider2D>();
-        Collider2D arrowCollider = Physics2D.OverlapBox(sliderCollider.bounds.center, sliderCollider.bounds.size, 0f);
+        CapsuleCollider2D sliderCollider = slider.GetComponent<CapsuleCollider2D>();
+        int arrowLayerMask = LayerMask.GetMask("Arrow");
+        Collider2D arrowCollider = Physics2D.OverlapCapsule(sliderCollider.bounds.center, sliderCollider.bounds.size, 0f, arrowLayerMask);
 
         if (arrowCollider != null && arrowCollider.CompareTag("Arrow"))
         {

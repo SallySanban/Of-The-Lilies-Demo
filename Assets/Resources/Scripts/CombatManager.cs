@@ -63,7 +63,7 @@ public class CombatManager: MonoBehaviour
         },
         { ("Prologue", "Trigger 3"), new List<(QteSlidingBar.SliderLength length, float speed)>
             {
-                (QteSlidingBar.SliderLength.VeryShort, 4f)
+                (QteSlidingBar.SliderLength.Short, 4f)
             }
         }
     };
@@ -213,7 +213,6 @@ public class CombatManager: MonoBehaviour
         yield return soldier4;
 
         yield return ButtonBarSequence(combatSceneName, triggerName);
-        yield return SlidingBarSequence(combatSceneName, triggerName);
 
         yield return EndTrigger(true);
     }
@@ -285,7 +284,17 @@ public class CombatManager: MonoBehaviour
                         enemy.AnimateHurt();
                     }
 
-                    float damage = (100 / value.Count) + 1;
+                    float damage;
+
+                    if(triggerName == "Trigger 3")
+                    {
+                        damage = (100 / (value.Count + 1)) + 1;
+                    }
+                    else
+                    {
+                        damage = (100 / value.Count) + 1;
+                    }
+                    
                     yield return DecreaseEnemiesHealthBar(damage);
 
                     yield return new WaitForSeconds(waitAnimation);
@@ -295,10 +304,15 @@ public class CombatManager: MonoBehaviour
                 {
                     yield return Restart();
                     currentlyButtonBar = false;
-                    break;
+                    yield break;
                 }
 
                 currentlyButtonBar = false;
+            }
+
+            if(triggerName == "Trigger 3")
+            {
+                yield return SlidingBarSequence(combatSceneName, triggerName);
             }
         }
     }
@@ -319,6 +333,8 @@ public class CombatManager: MonoBehaviour
                 currentlySlidingBar = true;
                 yield return qteSlidingBar.MoveArrow();
 
+                yield return new WaitForSeconds(0.3f);
+
                 bool success = qteSlidingBar.CheckForSuccess();
 
                 Destroy(qteSlidingBar.root);
@@ -336,7 +352,17 @@ public class CombatManager: MonoBehaviour
                         enemy.AnimateHurt();
                     }
 
-                    float damage = (100 / value.Count) + 1;
+                    float damage;
+
+                    if (triggerName == "Trigger 3")
+                    {
+                        damage = (100 / (value.Count + 3)) + 1;
+                    }
+                    else
+                    {
+                        damage = (100 / value.Count) + 1;
+                    }
+
                     yield return DecreaseEnemiesHealthBar(damage);
 
                     yield return new WaitForSeconds(waitAnimation);
@@ -375,7 +401,7 @@ public class CombatManager: MonoBehaviour
                 {
                     yield return Restart();
                     currentlySlidingBar = false;
-                    break;
+                    yield break;
                 }
 
                 currentlySlidingBar = false;

@@ -1,4 +1,4 @@
-[wait]HideTextbox(), [wait]ShowCG("Blackout"), PlaySoundEffect("Sword Clashing 2"), Wait(3), PlaySoundEffect("Thunder")
+StopMusic("Combat"), [wait]HideTextbox(), [wait]ShowCG("Blackout"), PlaySoundEffect("Sword Clashing 2"), Wait(3), PlaySoundEffect("Thunder")
 
 [input]SwitchCG("Curses Appear"), StopSoundEffect("Sword Clashing 2"), [wait]HideVN("Scene 11"), [wait]HideCG(), [wait]ShowVN()
 

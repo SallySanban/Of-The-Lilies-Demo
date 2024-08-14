@@ -44,7 +44,7 @@ Laisa [Smirk] "You don't have to take your anger out on this poor passerby!"
 
 "There's no rush here, General. Do you plan to shoot me on sight with that gun of yours or are you just that excited to see me?"
 
-Lien "You have broken laws and are resisting your arrest, so I am holding you accountable to the laws you violate.  Do not test  my patience, pirate."
+Lien "You have broken laws and are resisting your arrest, so I am holding you accountable to the laws you violate. Do not test my patience, pirate."
 
 Laisa "Tell me, does it ever bother you that you're always just one step behind?"
 
@@ -58,7 +58,7 @@ if ($LaisaBranch == false)
 
 	"I won't let you take her. You'll have to go through me."
 
-	PlayMusic("Combat"), HideCharacter(Laisa Lien), HideVN("Combat Scene - Prologue")
+	PlayMusic("Combat" -vol 0.2), HideCharacter(Laisa Lien), HideVN("Combat Scene - Prologue")
 
 	[input]ShowSpeechBubble(Ahlai -dialogue "Arrow Keys and Space Bar for combat"), HideSpeechBubble(false)
 }

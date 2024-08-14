@@ -156,6 +156,7 @@ namespace Audio
                 if (currentTrack.isPlaying)
                 {
                     currentTrack.Stop();
+                    tracks.Remove(currentTrack);
                 }
             }
         }

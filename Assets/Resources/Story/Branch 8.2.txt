@@ -22,7 +22,7 @@ Ahlai as You "...Okay, we can ask her."
 
 "It looks like the drinks are done. Let's head <b>back to Sabina's Salves</b>."
 
-StopMusic("Romance")
+StopMusic("Flashback")
 
 if ($ManjuBranch == true)
 {
