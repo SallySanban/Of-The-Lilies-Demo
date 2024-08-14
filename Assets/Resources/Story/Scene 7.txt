@@ -4,7 +4,7 @@ Ahlai as You "Ah, I apologize-"
 
 Manju as ??? "...Is something the matter?"
 
-PlayMusic("Romance" -vol 0.1), HideTextbox(), [wait]HideCG(), [wait]ShowPixel(false), Wait(0.2), [wait]ChangeCharacterEmotion(Manju -exp Stern), [input]ShowCharacter(Manju) 
+PlayMusic("Romance" -vol 0.1), HideTextbox(), [wait]HideCG(), [wait]ShowPixel(false), Wait(0.2), [wait]ChangeCharacterEmotion(Manju -exp Stern), [input]ShowCharacter(Manju)
 
 Ahlai as You "...No, not at all. Unless you want me to say that there's anything wrong with those scars around your neck. They're really interesting patterns, don't you think?"
 
