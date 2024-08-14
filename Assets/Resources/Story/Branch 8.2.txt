@@ -2,7 +2,7 @@ ChangeCharacterEmotion(Seiji -exp Pout), MoveCharacter(Seiji -x 0.5)
 
 Ahlai as You "<b>I'm not sure about that</b>, Seiji."
 
-"Lady Sabina never fell short as my guardian all these years, and it may not be  right to trouble her with this kind of request. Can I really ask for any more of her kindness?"
+"Lady Sabina never fell short as my guardian all these years, and it may not be right to trouble her with this kind of request. Can I really ask for any more of her kindness?"
 
 "I know a lot of it is wishful thinking, too. I don't think I could handle finding out if they really are dead."
 

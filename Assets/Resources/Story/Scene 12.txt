@@ -28,7 +28,7 @@ Sabina as Lady Sabina "Well, the artifacts we need have been lost to time. They 
 
 Ahlai as You "A journey? Outside Kuchai Town? Hell, outside of Sagai Province?"
 
-Sabina as Lady Sabina "It's not a task I can ask of you, Ahlai. It's not safe, and... I couldn't bear to see you <i>hurt again</i>."
+Sabina as Lady Sabina "It's not a task I can ask of you, <playerName>. It's not safe, and... I couldn't bear to see you <i>hurt again</i>."
 
 "Seiji is more experienced and has been trained for combat since he was little. So, Seiji must be the one to go."
 
