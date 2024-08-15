@@ -59,7 +59,7 @@ namespace Audio
 
         public Coroutine Stop()
         {
-            if (isFadingMusic) return fadingMusicCoroutine;
+            //if (isFadingMusic) return fadingMusicCoroutine;
 
             fadingMusicCoroutine = AudioManager.Instance.StartCoroutine(FadeMusic(false));
 
@@ -84,6 +84,11 @@ namespace Audio
             if (!fadeIn)
             {
                 Object.Destroy(source.gameObject);
+
+                if (trackName != "Fire")
+                {
+                    AudioManager.Instance.musicIsPlaying = "";
+                }
             }
 
             fadingMusicCoroutine = null;

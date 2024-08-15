@@ -22,6 +22,7 @@ namespace Commands
             database.AddCommand("HidePixel", new Action(() => { SceneManager.Instance.HideScene(); }));
             database.AddCommand("ShowPixel", new Func<string, IEnumerator>(ShowScene));
             database.AddCommand("ShowLIScreen", new Func<IEnumerator>(ShowLIScreen));
+            database.AddCommand("Cutscene", new Action<string>(Cutscene));
         }
 
         private static void SetupBackground(string[] data)
@@ -115,6 +116,16 @@ namespace Commands
                 }
 
                 yield return null;
+            }
+        }
+
+        private static void Cutscene(string data)
+        {
+            if (bool.TryParse(data, out bool cutscene))
+            {
+                InteractableManager.Instance.cutscene = cutscene;
+
+                InteractableManager.Instance.EnableDisableAllInteractables(cutscene);
             }
         }
     }

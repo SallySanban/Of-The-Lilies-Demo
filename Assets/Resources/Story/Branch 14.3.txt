@@ -10,11 +10,11 @@ Ahlai as You "Then it shouldn't be a surprise that we have a long journey ahead 
 
 Seiji "Sweet dreams, <playerName>."
 
-StopMusic("Walking 2"), [wait]HideTextbox(), HideSprite(Seiji), HideCharacter(Seiji), [wait]HideVN("Scene 14"), Wait(0.2), [wait]MoveSprite(Ahlai -x -4.56 -spd 6)
+StopMusic("Walking 2"), [wait]HideTextbox(), HideSprite(Seiji), HideCharacter(Seiji), [wait]HideVN("Scene 14"), Wait(0.2), Cutscene(true), [wait]MoveSprite(Ahlai -x -4.56 -spd 6)
 
 ShowVN(), Wait(0.5)
 
-[wait]ShowCG("Blackout"), Wait(0.2), SwitchCG("Red Sky"), PlayMusic("Fire" -vol 0.4), Wait(3), [input]PlaySoundEffect("Sword Clashing 1"), SwitchCG("Blackout"), StopSoundEffect("Sword Clashing 1")
+[wait]ShowCG("Blackout"), Cutscene(false), Wait(0.2), SwitchCG("Red Sky"), PlayMusic("Fire" -vol 0.4), Wait(3), [input]PlaySoundEffect("Sword Clashing 1"), SwitchCG("Blackout"), StopSoundEffect("Sword Clashing 1")
 
 Sabina as ??? "<i><playerName>, wake up.</i>"
 

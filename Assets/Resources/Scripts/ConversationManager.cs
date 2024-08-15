@@ -260,7 +260,7 @@ namespace Dialogue
             }
         }
 
-        IEnumerator WaitForUserInput()
+        public IEnumerator WaitForUserInput()
         {
             while(!userNext)
             {

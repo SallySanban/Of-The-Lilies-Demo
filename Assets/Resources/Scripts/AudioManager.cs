@@ -116,6 +116,8 @@ namespace Audio
 
         public AudioTrack PlayTrack(string audioFilename, bool loop = true, float startingVolume = 0f, float volumeCap = 1)
         {
+            //Debug.Log(musicIsPlaying);
+
             string audioPath = FormatAudioPath(musicPath, audioFilename);
 
             AudioClip clip = Resources.Load<AudioClip>(audioPath);
@@ -124,6 +126,11 @@ namespace Audio
             {
                 Debug.LogError($"Could not load audio file {audioPath}");
                 return null;
+            }
+
+            if (audioFilename != "Fire")
+            {
+                musicIsPlaying = audioFilename;
             }
 
             return PlayTrack(clip, loop, startingVolume, volumeCap);

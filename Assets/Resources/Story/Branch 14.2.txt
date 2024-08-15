@@ -10,6 +10,6 @@ Ahlai as You "I wish you the best, Seiji. I have no doubt that you are capable o
 
 Seiji "I will. Goodbye, <playerName>."
 
-HideTextbox(), HideVN("Scene 14"), HideSprite(Seiji), HideCharacter(Seiji), Wait(0.2), [wait]MoveSprite(Ahlai -x -4.56 -spd 6)
+HideTextbox(), HideVN("Scene 14"), HideSprite(Seiji), HideCharacter(Seiji), Wait(0.2), Cutscene(true), [wait]MoveSprite(Ahlai -x -4.56 -spd 6)
 
 Load("Bad Ending 3.2")

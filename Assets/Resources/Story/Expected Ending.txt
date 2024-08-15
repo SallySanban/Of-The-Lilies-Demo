@@ -46,4 +46,4 @@ Sabina as Lady Sabina "There are a few you can choose from, <playerName>. The ch
 
 "Ultimately, you can only <b>choose one.</b>"
 
-HideTextbox(), HideCharacter(Sabina), [wait]ShowCG("Blackout"), Wait(0.2), ShowLIScreen()
+HideTextbox(), HideCharacter(Sabina), [wait]ShowCG("Blackout"), Wait(0.2), [wait]ShowLIScreen(), HideCG()

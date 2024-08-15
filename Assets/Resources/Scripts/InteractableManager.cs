@@ -19,6 +19,8 @@ public class InteractableManager: MonoBehaviour
     private bool collidingWithPlayer = false;
     private Interactable collidingInteractable = null;
 
+    public bool cutscene = false;
+
     List<(string interactableName, string background, string scene)> lockedInteractables = new List<(string, string, string)>
     {
         ("Door", "First Floor Corridor", "Scene 1"),
@@ -87,7 +89,7 @@ public class InteractableManager: MonoBehaviour
 
     private void Update()
     {
-        if (collidingWithPlayer && collidingInteractable != null)
+        if (collidingWithPlayer && collidingInteractable != null && cutscene == false)
         {
             if (collidingInteractable.keysToPress.Any(key => Input.GetKeyDown(key)) && collidingInteractable.isInteractable && !DialogueSystem.Instance.speechBubbleActive && !sceneManager.inVNMode)
             {
@@ -308,14 +310,11 @@ public class InteractableManager: MonoBehaviour
         }
     }
 
-    public void LockUnlockInteractable(string interactableName, bool unlock)
+    public void EnableDisableAllInteractables(bool enable)
     {
-        foreach (Interactable interactable in interactablesInScene)
+        foreach(Interactable interactable in interactablesInScene)
         {
-            if (interactable.name == interactableName)
-            {
-                interactable.isLocked = unlock;
-            }
+            interactable.isInteractable = enable;
         }
     }
 

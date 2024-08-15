@@ -44,9 +44,9 @@ public class CombatManager: MonoBehaviour
         },
         { ("Prologue", "Trigger 3"), new List<(string keys, float speed)>
             {
-                ("Right Left Down Up Up", 0.01f),
-                ("Up Up Left Right Down", 0.01f),
-                ("Down Right Left Left Right", 0.01f)
+                ("Right Left Down Up Up", 0.03f),
+                ("Up Up Left Right Down", 0.03f),
+                ("Down Right Left Left Right", 0.03f)
             }
         }
     };
