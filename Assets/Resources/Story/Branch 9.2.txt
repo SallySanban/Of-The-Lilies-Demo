@@ -8,7 +8,7 @@ Ahlai as You "Yes, I will. Thank you."
 
 HideCharacter(Sabina), HideSprite(Sabina), Wait(0.2), ChangeCharacterEmotion(Seiji -exp Worry), ShowCharacter(Seiji)
 
-Seiji "Ahlai... Are you okay?"
+Seiji "<playerName>... Are you okay?"
 
 MoveCharacter(Seiji -x 1), Wait(0.5)
 

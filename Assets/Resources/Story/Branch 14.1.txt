@@ -6,11 +6,11 @@ Ahlai as You "You might be right, Seiji. <b>I changed my mind.</b> It may be too
 
 Seiji [Sad] "I... I see. Yes, this is for the best."
 
-"I'm glad... I was able to convince you, Ahlai."
+"I'm glad... I was able to convince you, <playerName>."
 
 Ahlai as You "I wish you the best, Seiji. Please rest well for your trip."
 
-Seiji "I will. Goodbye, Ahlai."
+Seiji "I will. Goodbye, <playerName>."
 
 HideTextbox(), HideVN("Scene 14"), HideSprite(Seiji), HideCharacter(Seiji), Wait(0.2), Cutscene(true), [wait]MoveSprite(Ahlai -x -4.56 -spd 6)
 

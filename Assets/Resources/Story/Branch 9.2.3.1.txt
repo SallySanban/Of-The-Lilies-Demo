@@ -6,7 +6,7 @@ Seiji "I see... It seems there is nothing I can do to stop you."
 
 Ahlai as You "What do you mean? Seiji-"
 
-Seiji "Good night, Ahlai."
+Seiji "Good night, <playerName>."
 
 HideSprite(Seiji), [input]HideCharacter(Seiji)
 

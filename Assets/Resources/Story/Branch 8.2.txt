@@ -16,7 +16,7 @@ Seiji [Sad] "You may be right..."
 
 Ahlai as You "I... don't know, really. I don't know if I'm willing to risk it. To hope and to end up knowing what it's like to lose them, again."
 
-Seiji "Well, I just know that you have this option, Ahlai. We can ask Lady Sabina, and let's see what she thinks. Then you can decide."
+Seiji "Well, I just know that you have this option, <playerName>. We can ask Lady Sabina, and let's see what she thinks. Then you can decide."
 
 Ahlai as You "...Okay, we can ask her."
 

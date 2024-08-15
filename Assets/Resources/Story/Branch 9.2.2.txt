@@ -2,7 +2,7 @@ MoveCharacter(Seiji -x 0.5)
 
 Ahlai as You "You worry about me too much, Seiji. <b>I'll be okay</b>. But I think Lady Sabina is right. We should get some rest. It's been a long day."
 
-Seiji "You're right. Ahlai... I hope you'll remember that I'll always be here for you."
+Seiji "You're right. <playerName>... I hope you'll remember that I'll always be here for you."
 
 Ahlai as You "I'll remember, Seiji. Thank you."
 

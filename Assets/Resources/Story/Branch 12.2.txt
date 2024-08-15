@@ -4,7 +4,7 @@ Ahlai as You "I see. You're right, Lady Sabina. <b>Seiji will do fine on his own
 
 "And besides... I have that drink with Sir Aciano to look forward to. It may be the right call that I don't go."
 
-Seiji [Sad] "I only wish to keep you safe, Ahlai. If you feel that is the right decision... I will go on my own."
+Seiji [Sad] "I only wish to keep you safe, <playerName>. If you feel that is the right decision... I will go on my own."
 
 "Lady Sabina, I am at your service. My duty is to the Order of La Liryo."
 

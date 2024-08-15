@@ -28,7 +28,7 @@ enter Seiji [Worry] "<playerName>! There you are..."
 
 Lien "Find the Sea Serpent's accomplice as well!"
 
-Seiji "Hurry, Ahlai. Let's go back to Sabina's Salves. We'll be safe there."
+Seiji "Hurry, <playerName>. Let's go back to Sabina's Salves. We'll be safe there."
 
 HideCharacter(Seiji), HideTextbox(), ShowCG("Blackout"), Wait(0.2), [wait]SetupPixelScene("Scene 12" -bg "Main Shop" -x -6.14 -y -0.05 -d right), HideCG(), [wait]ShowPixel(false)
 
