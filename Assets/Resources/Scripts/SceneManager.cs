@@ -147,15 +147,15 @@ public class SceneManager : MonoBehaviour
 
     private void Start()
     {
-        //TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
+        TextAsset startingScene = Resources.Load<TextAsset>(FilePaths.storyFiles + dialogueFile);
 
-        //List<string> lines = FileManager.ReadTextAsset(startingScene);
+        List<string> lines = FileManager.ReadTextAsset(startingScene);
 
-        //DialogueSystem.Instance.SayTextbox(lines);
+        DialogueSystem.Instance.SayTextbox(lines);
 
         //sceneName = "Combat Scene - Prologue";
-        sceneName = "Expected Ending";
-        StartCoroutine(Test());
+        //sceneName = "Expected Ending";
+        //StartCoroutine(Test());
     }
 
     private IEnumerator Test()
