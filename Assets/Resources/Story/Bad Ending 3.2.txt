@@ -1,7 +1,0 @@
-PlayMusic("Bad End" -vol 0.5), [wait]ShowVN(), [wait]ShowCG("Blackout"), Wait(0.2), [wait]SwitchCG("3 Months"), Wait(1), [wait]SwitchCG("Blackout"), PlayMusic("Fire" -vol 0.4)
-
-Thought "<i>Seiji... never returned safely.</i>"
-
-Thought "<i>I only wish I could have bid him goodbye.</i>"
-
-HideTextbox(), SwitchCG("Bad End")
