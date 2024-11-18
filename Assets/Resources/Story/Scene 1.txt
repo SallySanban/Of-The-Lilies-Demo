@@ -1,49 +1,36 @@
-HideTextbox(), [input]ShowCG("Instructions"), HideCG(), Wait(0.5), ShowCG("Red Sky"), PlayMusic("Flashback"), [input]PlayMusic("Fire" -vol 0.4)
+<playerName> at 1 "Dad!"
 
-Thought "<i>Every night, my mind takes me back to ten years ago, whether I want it to or not.</i>"
+Dad at 0 "Ahlai... You made it back..."
 
-PlaySoundEffect("People Screaming")
+<playerName> at 1 "What is it that you want with us?"
 
-Thought "<i>They're nightmares now, but that's not much better, is it?</i>"
+<playerName> at 1 "<i><b>Seiyslan Empire?</b> Why does that name bring me so much... pain?</i>"
 
-Thought "<i>The Seiyslan Empire.{a} They came with every intention to destroy the peace in our tribe -</i>"
+Dad at 0 "Don't listen to his lies, <playerName>. They want to take over Tayabac. We <b>can't</b> let that happen."
 
-PlaySoundEffect("Sword Clashing 1")
+Dad at 0 "I hope I've trained you enough. <b>Fight for your people</b>."
 
-Thought "<i>ruining our lands,{a} tearing kin away from kin.</i>"
+<playerName> at 1 "Dad!"
 
-Thought "<i>I was no exception.</i>"
+Dad at 0 "Ahlai... You made it back..."
 
-StopSoundEffect("Sword Clashing 1")
+<playerName> at 1 "What is it that you want with us?"
 
-HideTextbox(), [input]SwitchCG("Blackout"), PlaySoundEffect("Coins Jiggling 1")
+<playerName> at 1 "<i><b>Seiyslan Empire?</b> Why does that name bring me so much... pain?</i>"
 
-Thought "<i>But that was when I knew it couldn't be the end.</i>"
+Dad at 0 "Don't listen to his lies, <playerName>. They want to take over Tayabac. We <b>can't</b> let that happen."
 
-StopSoundEffect("Coins Jiggling 1"), HideTextbox(), [input]SwitchCG("Lady Sabina Reaching"), StopMusic("Fire")
+Dad at 0 "I hope I've trained you enough. <b>Fight for your people</b>."
 
-Thought "<i>At least, not for me.</i>"
+<playerName> at 1 "Dad!"
 
-HideTextbox(), [wait]SwitchCG("Blackout")
+Dad at 0 "Ahlai... You made it back..."
 
-input
+<playerName> at 1 "What is it that you want with us?"
 
-StopMusic("Flashback")
+<playerName> at 1 "<i><b>Seiyslan Empire?</b> Why does that name bring me so much... pain?</i>"
 
-Sabina as Lady Sabina "<i><playerName>? My dear?</i>"
+Dad at 0 "Don't listen to his lies, <playerName>. They want to take over Tayabac. We <b>can't</b> let that happen."
 
-"<i>Wake up, <playerName>. <playerName>! Get up, now...!</i>"
+Dad at 0 "I hope I've trained you enough. <b>Fight for your people</b>."
 
-HideTextbox(), HideCG(), [wait]SetupPixelScene("Scene 0" -bg "Ahlai's Bedroom" -x -4.96 -y -0.05 -d right), [wait]ShowPixel(false), Wait(0.5), ShowCharacter(Sabina), [input]ChangeCharacterEmotion(Sabina -exp Worry)
-
-Sabina as Lady Sabina "Oh, you must've been having nightmares again."
-
-Ahlai as You "Yes, you're... you're right. It was about my homeland again. It..."
-
-Sabina as Lady Sabina "Of course, I understand... It was hard for you, <playerName>. Please, why don't you take the time to collect yourself?"
-
-"When you're ready, <b>come down and you can start on your tasks for the day</b>. Seiji is waiting."
-
-PlayMusic("Romance" -vol 0.1), HideTextbox(), HideVN("Scene 1"), HideSprite(Sabina), [wait]HideCharacter(Sabina)
-
-[input]ShowSpeechBubble(Ahlai -dialogue "WASD or Arrow Keys to move"), HideSpeechBubble(true), [input]ShowSpeechBubble(Ahlai -dialogue "Z to interact with objects"), HideSpeechBubble(false)

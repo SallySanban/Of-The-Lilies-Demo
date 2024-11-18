@@ -21,7 +21,7 @@ namespace Dialogue.LogicalLines
         {
             var currentConversation = DialogueSystem.Instance.conversationManager.conversation;
             var progress = DialogueSystem.Instance.conversationManager.conversationProgress;
-            EncapsulatedData data = RipEncapsulationData(currentConversation, progress, true);
+            EncapsulatedData data = RipEncapsulationData(currentConversation, progress, true, parentStartingIndex: currentConversation.fileStartIndex);
 
             List<Choice> choices = GetChoicesFromData(data);
 
@@ -39,7 +39,7 @@ namespace Dialogue.LogicalLines
 
             Choice selectedChoice = choices[choicePanel.lastChoicePicked.answerIndex];
 
-            Conversation newConversation = new Conversation(selectedChoice.executableLines);
+            Conversation newConversation = new Conversation(selectedChoice.executableLines, file: currentConversation.file, fileStartIndex: selectedChoice.startIndex, fileEndIndex: selectedChoice.endIndex);
             DialogueSystem.Instance.conversationManager.conversation.SetProgress(data.endingIndex);
 
             DialogueSystem.Instance.conversationManager.EnqueuePriority(newConversation);
@@ -98,12 +98,18 @@ namespace Dialogue.LogicalLines
                 executableLines = new List<string>()
             };
 
-            foreach(var line in data.lines.Skip(1))
+            int choiceIndex = 0, i = 0;
+
+            for(i = 1; i < data.lines.Count; i++)
             {
+                var line = data.lines[i];
+
                 if(IsChoiceStart(line) && encapsulationDepth == 1)
                 {
                     if(!isFirstChoice)
                     {
+                        choice.startIndex = data.startingIndex + (choiceIndex + 1);
+                        choice.endIndex = data.startingIndex + (i - 1);
                         choices.Add(choice);
                         choice = new Choice
                         {
@@ -112,6 +118,7 @@ namespace Dialogue.LogicalLines
                         };
                     }
 
+                    choiceIndex = i;
                     choice.choiceText = TagManager.Inject(line.Trim().Substring(choiceIdentifier.Length));
                     isFirstChoice = false;
                     continue;
@@ -122,6 +129,8 @@ namespace Dialogue.LogicalLines
 
             if (!choices.Contains(choice))
             {
+                choice.startIndex = data.startingIndex + (choiceIndex + 1);
+                choice.endIndex = data.startingIndex + (i - 2);
                 choices.Add(choice);
             }
 
@@ -164,6 +173,8 @@ namespace Dialogue.LogicalLines
         {
             public string choiceText;
             public List<string> executableLines;
+            public int startIndex;
+            public int endIndex;
         }
     }
 }

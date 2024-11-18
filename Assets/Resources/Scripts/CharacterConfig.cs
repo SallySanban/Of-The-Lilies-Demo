@@ -1,30 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
 
-namespace Characters
-{
-    [CreateAssetMenu(fileName = "Character Configuration Asset", menuName = "Configuration Assets/Character Configuration Asset")]
-    public class CharacterConfig : ScriptableObject
-    {
-        public CharacterConfigData[] characters;
+//namespace Characters
+//{
+//    [CreateAssetMenu(fileName = "Character Configuration Asset", menuName = "Configuration Assets/Character Configuration Asset")]
+//    public class CharacterConfig : ScriptableObject
+//    {
+//        public CharacterConfigData[] characters;
 
-        public CharacterConfigData GetConfig(string characterName)
-        {
-            characterName = characterName.ToLower();
+//        public CharacterConfigData GetConfig(string characterName)
+//        {
+//            characterName = characterName.ToLower();
 
-            for(int i = 0; i < characters.Length; i++)
-            {
-                CharacterConfigData data = characters[i];
+//            for(int i = 0; i < characters.Length; i++)
+//            {
+//                CharacterConfigData data = characters[i];
 
-                if(string.Equals(characterName, data.name.ToLower()) || string.Equals(characterName, data.alias.ToLower()))
-                {
-                    return data.Copy();
-                }
-            }
+//                if(string.Equals(characterName, data.name.ToLower()) || string.Equals(characterName, data.alias.ToLower()))
+//                {
+//                    return data.Copy();
+//                }
+//            }
 
-            return CharacterConfigData.Default;
-        }
-    }
-}
+//            return CharacterConfigData.Default;
+//        }
+//    }
+//}
 

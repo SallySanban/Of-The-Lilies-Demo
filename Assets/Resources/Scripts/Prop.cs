@@ -1,104 +1,104 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
+//using UnityEngine.UI;
 
-public class Prop
-{
-    public string backgroundName;
+//public class Prop
+//{
+//    public string backgroundName;
 
-    public SceneManager sceneManager => SceneManager.Instance;
+//    public SceneManager sceneManager => SceneManager.Instance;
 
-    public PropManager propManager => PropManager.Instance;
+//    public PropManager propManager => PropManager.Instance;
 
-    public RectTransform root = null;
+//    public RectTransform root = null;
 
-    private Image rootImage;
-    private CanvasGroup rootCanvasGroup;
+//    private Image rootImage;
+//    private CanvasGroup rootCanvasGroup;
 
-    protected Coroutine showingPropCoroutine, hidingPropCoroutine;
+//    protected Coroutine showingPropCoroutine, hidingPropCoroutine;
 
-    public bool isPropShowing => showingPropCoroutine != null;
-    public bool isPropHiding => hidingPropCoroutine != null;
+//    public bool isPropShowing => showingPropCoroutine != null;
+//    public bool isPropHiding => hidingPropCoroutine != null;
 
-    private float fadeSpeed = 3f;
+//    private float fadeSpeed = 3f;
 
-    public Prop(string imagePath, GameObject prefab)
-    {
-        if (!string.IsNullOrEmpty(imagePath) && prefab != null)
-        {
-            GameObject ob = Object.Instantiate(prefab, propManager.propContainer);
+//    public Prop(string imagePath, GameObject prefab)
+//    {
+//        if (!string.IsNullOrEmpty(imagePath) && prefab != null)
+//        {
+//            GameObject ob = Object.Instantiate(prefab, propManager.propContainer);
 
-            ob.SetActive(true);
+//            ob.SetActive(true);
 
-            root = ob.GetComponent<RectTransform>();
+//            root = ob.GetComponent<RectTransform>();
 
-            rootImage = root.GetComponentInChildren<Image>();
-            rootCanvasGroup = root.GetComponentInChildren<CanvasGroup>();
+//            rootImage = root.GetComponentInChildren<Image>();
+//            rootCanvasGroup = root.GetComponentInChildren<CanvasGroup>();
 
-            rootImage.sprite = Resources.Load<Sprite>(imagePath);
+//            rootImage.sprite = Resources.Load<Sprite>(imagePath);
 
-            rootCanvasGroup.alpha = 0f;
-        }
-    }
+//            rootCanvasGroup.alpha = 0f;
+//        }
+//    }
 
-    public Coroutine Show(bool immediate = false)
-    {
-        if (isPropShowing) return showingPropCoroutine;
+//    public Coroutine Show(bool immediate = false)
+//    {
+//        if (isPropShowing) return showingPropCoroutine;
 
-        if (isPropHiding)
-        {
-            propManager.StopCoroutine(hidingPropCoroutine);
-        }
+//        if (isPropHiding)
+//        {
+//            propManager.StopCoroutine(hidingPropCoroutine);
+//        }
 
-        showingPropCoroutine = propManager.StartCoroutine(ShowingOrHiding(true, immediate));
+//        showingPropCoroutine = propManager.StartCoroutine(ShowingOrHiding(true, immediate));
 
-        propManager.activeProp = this;
+//        propManager.activeProp = this;
 
-        return showingPropCoroutine;
-    }
+//        return showingPropCoroutine;
+//    }
 
-    public Coroutine Hide(bool immediate = false)
-    {
-        if (isPropHiding) return hidingPropCoroutine;
+//    public Coroutine Hide(bool immediate = false)
+//    {
+//        if (isPropHiding) return hidingPropCoroutine;
 
-        if (isPropShowing)
-        {
-            propManager.StopCoroutine(showingPropCoroutine);
-        }
+//        if (isPropShowing)
+//        {
+//            propManager.StopCoroutine(showingPropCoroutine);
+//        }
 
-        hidingPropCoroutine = propManager.StartCoroutine(ShowingOrHiding(false, immediate));
+//        hidingPropCoroutine = propManager.StartCoroutine(ShowingOrHiding(false, immediate));
 
-        return hidingPropCoroutine;
-    }
+//        return hidingPropCoroutine;
+//    }
 
-    public IEnumerator ShowingOrHiding(bool show, bool immediate)
-    {
-        float targetAlpha = show ? 1f : 0f;
+//    public IEnumerator ShowingOrHiding(bool show, bool immediate)
+//    {
+//        float targetAlpha = show ? 1f : 0f;
 
-        CanvasGroup self = rootCanvasGroup;
+//        CanvasGroup self = rootCanvasGroup;
 
-        if (immediate)
-        {
-            self.alpha = targetAlpha;
-        }
-        else
-        {
-            while (self.alpha != targetAlpha)
-            {
-                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
+//        if (immediate)
+//        {
+//            self.alpha = targetAlpha;
+//        }
+//        else
+//        {
+//            while (self.alpha != targetAlpha)
+//            {
+//                self.alpha = Mathf.MoveTowards(self.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
 
-                if (self.alpha == 0f)
-                {
-                    Object.Destroy(self.gameObject);
-                    break;
-                }
+//                if (self.alpha == 0f)
+//                {
+//                    Object.Destroy(self.gameObject);
+//                    break;
+//                }
 
-                yield return null;
-            }
-        }
+//                yield return null;
+//            }
+//        }
 
-        showingPropCoroutine = null;
-        hidingPropCoroutine = null;
-    }
-}
+//        showingPropCoroutine = null;
+//        hidingPropCoroutine = null;
+//    }
+//}

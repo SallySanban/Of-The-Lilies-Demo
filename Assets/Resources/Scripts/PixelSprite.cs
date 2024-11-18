@@ -1,321 +1,321 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
+//using UnityEngine.UI;
 
-public class PixelSprite
-{
-    public SceneManager sceneManager => SceneManager.Instance;
-    public SpriteManager spriteManager => SpriteManager.Instance;
+//public class PixelSprite
+//{
+//    public SceneManager sceneManager => SceneManager.Instance;
+//    public SpriteManager spriteManager => SpriteManager.Instance;
 
-    public Transform root = null;
+//    public Transform root = null;
 
-    public SpriteRenderer rootSpriteRenderer;
-    public Animator rootAnimator;
-    public CanvasGroup rootCanvasGroup;
-    public string sceneToDisappear;
+//    public SpriteRenderer rootSpriteRenderer;
+//    public Animator rootAnimator;
+//    public CanvasGroup rootCanvasGroup;
+//    public string sceneToDisappear;
 
-    public CurrentSpriteDirection currentDirection = CurrentSpriteDirection.Right;
+//    public CurrentSpriteDirection currentDirection = CurrentSpriteDirection.Right;
 
-    protected Coroutine showingSpriteCoroutine, hidingSpriteCoroutine;
-    public Coroutine movingSpriteCoroutine;
+//    protected Coroutine showingSpriteCoroutine, hidingSpriteCoroutine;
+//    public Coroutine movingSpriteCoroutine;
 
-    public bool isSpriteShowing => showingSpriteCoroutine != null;
-    public bool isSpriteHiding => hidingSpriteCoroutine != null;
-    public bool isSpriteMoving => movingSpriteCoroutine != null;
+//    public bool isSpriteShowing => showingSpriteCoroutine != null;
+//    public bool isSpriteHiding => hidingSpriteCoroutine != null;
+//    public bool isSpriteMoving => movingSpriteCoroutine != null;
 
-    private float fadeSpeed = 3f;
+//    private float fadeSpeed = 3f;
 
-    public PixelSprite(GameObject prefab, Vector2 spritePosition, Vector2 spriteScale, BackgroundConfigData.PlayerDirection spriteDirection, Transform backgroundSpriteIsOn, string sceneToDisappear = "")
-    {
-        if (prefab != null)
-        {
-            GameObject ob = Object.Instantiate(prefab, backgroundSpriteIsOn);
+//    public PixelSprite(GameObject prefab, Vector2 spritePosition, Vector2 spriteScale, BackgroundConfigData.PlayerDirection spriteDirection, Transform backgroundSpriteIsOn, string sceneToDisappear = "")
+//    {
+//        if (prefab != null)
+//        {
+//            GameObject ob = Object.Instantiate(prefab, backgroundSpriteIsOn);
 
-            ob.SetActive(true);
+//            ob.SetActive(true);
 
-            root = ob.GetComponent<Transform>();
+//            root = ob.GetComponent<Transform>();
 
-            rootCanvasGroup = root.GetComponent<CanvasGroup>();
-            rootSpriteRenderer = root.GetComponentInChildren<SpriteRenderer>();
-            rootAnimator = rootSpriteRenderer.GetComponent<Animator>();
-            this.sceneToDisappear = sceneToDisappear;
+//            rootCanvasGroup = root.GetComponent<CanvasGroup>();
+//            rootSpriteRenderer = root.GetComponentInChildren<SpriteRenderer>();
+//            rootAnimator = rootSpriteRenderer.GetComponent<Animator>();
+//            this.sceneToDisappear = sceneToDisappear;
 
-            Color spriteColor = rootSpriteRenderer.color;
-            spriteColor.a = 0f;
-            rootSpriteRenderer.color = spriteColor;
+//            Color spriteColor = rootSpriteRenderer.color;
+//            spriteColor.a = 0f;
+//            rootSpriteRenderer.color = spriteColor;
 
-            SetPositionDirectionScale(spritePosition, spriteScale, spriteDirection);
-        }
-    }
+//            SetPositionDirectionScale(spritePosition, spriteScale, spriteDirection);
+//        }
+//    }
 
-    public void SetPositionDirectionScale(Vector2 position, Vector2 scale, BackgroundConfigData.PlayerDirection direction)
-    {
-        if (root == null) return;
+//    public void SetPositionDirectionScale(Vector2 position, Vector2 scale, BackgroundConfigData.PlayerDirection direction)
+//    {
+//        if (root == null) return;
 
-        root.transform.position = position;
-        root.localScale = scale;
+//        root.transform.position = position;
+//        root.localScale = scale;
 
-        if (direction == BackgroundConfigData.PlayerDirection.left)
-        {
-            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 180, 0);
+//        if (direction == BackgroundConfigData.PlayerDirection.left)
+//        {
+//            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 180, 0);
 
-            if(root.Find("Sprite").Find("Icon") != null)
-            {
-                root.Find("Sprite").Find("Icon").transform.eulerAngles = new Vector3(0, 0, 0);
-            }
-        }
-        else if (direction == BackgroundConfigData.PlayerDirection.right)
-        {
-            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-    }
+//            if(root.Find("Sprite").Find("Icon") != null)
+//            {
+//                root.Find("Sprite").Find("Icon").transform.eulerAngles = new Vector3(0, 0, 0);
+//            }
+//        }
+//        else if (direction == BackgroundConfigData.PlayerDirection.right)
+//        {
+//            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 0, 0);
+//        }
+//    }
 
-    public Coroutine MoveSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false, string placement = "")
-    {
-        if (isSpriteMoving) return movingSpriteCoroutine;
+//    public Coroutine MoveSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false, string placement = "")
+//    {
+//        if (isSpriteMoving) return movingSpriteCoroutine;
 
-        positionToGo.y = currentPosition.y;
+//        positionToGo.y = currentPosition.y;
 
-        if (interacting)
-        {
-            if(placement == "")
-            {
-                if (currentDirection == CurrentSpriteDirection.Left)
-                {
-                    positionToGo.x = positionToGo.x + 1.8f; //if facing left, go right
-                }
-                else
-                {
-                    positionToGo.x = positionToGo.x - 2.3f; //if facing right, go left
-                }
-            }
-            else if(placement == "left")
-            {
-                positionToGo.x = positionToGo.x - 2.3f;
-            }
-            else if(placement == "right")
-            {
-                positionToGo.x = positionToGo.x + 1.8f;
-            }
-        }
+//        if (interacting)
+//        {
+//            if(placement == "")
+//            {
+//                if (currentDirection == CurrentSpriteDirection.Left)
+//                {
+//                    positionToGo.x = positionToGo.x + 1.8f; //if facing left, go right
+//                }
+//                else
+//                {
+//                    positionToGo.x = positionToGo.x - 2.3f; //if facing right, go left
+//                }
+//            }
+//            else if(placement == "left")
+//            {
+//                positionToGo.x = positionToGo.x - 2.3f;
+//            }
+//            else if(placement == "right")
+//            {
+//                positionToGo.x = positionToGo.x + 1.8f;
+//            }
+//        }
 
-        if (Vector2.Distance(currentPosition, positionToGo) <= 0.01f)
-        {
-            movingSpriteCoroutine = null;
-        }
-        else
-        {
-            movingSpriteCoroutine = spriteManager.StartCoroutine(MovingSprite(currentPosition, positionToGo, speed, interacting, isPlayer, placement));
-        }
+//        if (Vector2.Distance(currentPosition, positionToGo) <= 0.01f)
+//        {
+//            movingSpriteCoroutine = null;
+//        }
+//        else
+//        {
+//            movingSpriteCoroutine = spriteManager.StartCoroutine(MovingSprite(currentPosition, positionToGo, speed, interacting, isPlayer, placement));
+//        }
 
-        return movingSpriteCoroutine;
-    }
+//        return movingSpriteCoroutine;
+//    }
 
-    private IEnumerator MovingSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false, string placement = "")
-    {
-        if (isPlayer) Player.playerBeingMoved = true;
+//    private IEnumerator MovingSprite(Vector3 currentPosition, Vector3 positionToGo, float speed, bool interacting = false, bool isPlayer = false, string placement = "")
+//    {
+//        if (isPlayer) Player.playerBeingMoved = true;
         
-        if (interacting && placement == "")
-        {
-            if (currentDirection == CurrentSpriteDirection.Left)
-            {
-                if (isPlayer)
-                {
-                    Player.move.x = -1;
-                    FlipSprite(CurrentSpriteDirection.Right);
-                }
-            }
-            else
-            {
-                if (isPlayer)
-                {
-                    Player.move.x = 1;
-                    FlipSprite(CurrentSpriteDirection.Left);
-                }
-            }
-        }
-        else
-        {
-            if (positionToGo.x < currentPosition.x)
-            {
-                if (isPlayer)
-                {
-                    Player.move.x = -1;
-                    FlipSprite(CurrentSpriteDirection.Left);
-                }
-            }
-            else if (positionToGo.x > currentPosition.x)
-            {
-                if (isPlayer)
-                {
-                    Player.move.x = 1;
-                    FlipSprite(CurrentSpriteDirection.Right);
-                }
-            }
-        }
+//        if (interacting && placement == "")
+//        {
+//            if (currentDirection == CurrentSpriteDirection.Left)
+//            {
+//                if (isPlayer)
+//                {
+//                    Player.move.x = -1;
+//                    FlipSprite(CurrentSpriteDirection.Right);
+//                }
+//            }
+//            else
+//            {
+//                if (isPlayer)
+//                {
+//                    Player.move.x = 1;
+//                    FlipSprite(CurrentSpriteDirection.Left);
+//                }
+//            }
+//        }
+//        else
+//        {
+//            if (positionToGo.x < currentPosition.x)
+//            {
+//                if (isPlayer)
+//                {
+//                    Player.move.x = -1;
+//                    FlipSprite(CurrentSpriteDirection.Left);
+//                }
+//            }
+//            else if (positionToGo.x > currentPosition.x)
+//            {
+//                if (isPlayer)
+//                {
+//                    Player.move.x = 1;
+//                    FlipSprite(CurrentSpriteDirection.Right);
+//                }
+//            }
+//        }
 
-        while (currentPosition.x != positionToGo.x)
-        {
-            root.transform.position = currentPosition;
+//        while (currentPosition.x != positionToGo.x)
+//        {
+//            root.transform.position = currentPosition;
 
-            currentPosition = Vector3.MoveTowards(currentPosition, positionToGo, speed * Time.deltaTime);
+//            currentPosition = Vector3.MoveTowards(currentPosition, positionToGo, speed * Time.deltaTime);
 
-            if (Vector2.Distance(currentPosition, positionToGo) <= 0.0001f)
-            {
-                if (isPlayer)
-                {
-                    Player.move = Vector3.zero;
+//            if (Vector2.Distance(currentPosition, positionToGo) <= 0.0001f)
+//            {
+//                if (isPlayer)
+//                {
+//                    Player.move = Vector3.zero;
 
-                    if (interacting)
-                    {
-                        if (currentDirection == CurrentSpriteDirection.Left)
-                        {
-                            FlipSprite(CurrentSpriteDirection.Right);
-                        }
-                        else
-                        {
-                            FlipSprite(CurrentSpriteDirection.Left);
-                        }
-                    }
-                }
+//                    if (interacting)
+//                    {
+//                        if (currentDirection == CurrentSpriteDirection.Left)
+//                        {
+//                            FlipSprite(CurrentSpriteDirection.Right);
+//                        }
+//                        else
+//                        {
+//                            FlipSprite(CurrentSpriteDirection.Left);
+//                        }
+//                    }
+//                }
 
-                root.transform.position = positionToGo;
+//                root.transform.position = positionToGo;
 
-                if (isPlayer) Player.playerBeingMoved = false;
+//                if (isPlayer) Player.playerBeingMoved = false;
 
-                break;
-            }
+//                break;
+//            }
 
-            yield return null;
-        }
+//            yield return null;
+//        }
 
-        movingSpriteCoroutine = null;
-    }
+//        movingSpriteCoroutine = null;
+//    }
 
-    public void FlipSprite(CurrentSpriteDirection direction)
-    {
-        if (direction == CurrentSpriteDirection.Left)
-        {
-            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 180, 0);
-            currentDirection = CurrentSpriteDirection.Left;
-        }
-        else
-        {
-            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 0, 0);
-            currentDirection = CurrentSpriteDirection.Right;
-        }
-    }
+//    public void FlipSprite(CurrentSpriteDirection direction)
+//    {
+//        if (direction == CurrentSpriteDirection.Left)
+//        {
+//            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 180, 0);
+//            currentDirection = CurrentSpriteDirection.Left;
+//        }
+//        else
+//        {
+//            root.Find("Sprite").transform.eulerAngles = new Vector3(0, 0, 0);
+//            currentDirection = CurrentSpriteDirection.Right;
+//        }
+//    }
 
-    public void AnimateAttack()
-    {
-        rootAnimator.SetTrigger("Attack");
-    }
+//    public void AnimateAttack()
+//    {
+//        rootAnimator.SetTrigger("Attack");
+//    }
 
-    public void AnimateHurt()
-    {
-        rootAnimator.SetTrigger("Hurt");
-    }
+//    public void AnimateHurt()
+//    {
+//        rootAnimator.SetTrigger("Hurt");
+//    }
 
-    public void AnimateWalk(bool walk, string direction)
-    {
-        if (walk)
-        {
-            if (direction == "left")
-            {
-                FlipSprite(CurrentSpriteDirection.Right);
-                rootAnimator.SetBool("WalkLeft", true);
-            }
-            else
-            {
-                FlipSprite(CurrentSpriteDirection.Right);
-                rootAnimator.SetBool("WalkRight", true);
-            }
-        }
-        else
-        {
-            if (direction == "left")
-            {
-                rootAnimator.SetBool("WalkLeft", false);
-                FlipSprite(CurrentSpriteDirection.Left);
-            }
-            else
-            {
-                rootAnimator.SetBool("WalkRight", false);
-                FlipSprite(CurrentSpriteDirection.Right);
-            }
-        }
+//    public void AnimateWalk(bool walk, string direction)
+//    {
+//        if (walk)
+//        {
+//            if (direction == "left")
+//            {
+//                FlipSprite(CurrentSpriteDirection.Right);
+//                rootAnimator.SetBool("WalkLeft", true);
+//            }
+//            else
+//            {
+//                FlipSprite(CurrentSpriteDirection.Right);
+//                rootAnimator.SetBool("WalkRight", true);
+//            }
+//        }
+//        else
+//        {
+//            if (direction == "left")
+//            {
+//                rootAnimator.SetBool("WalkLeft", false);
+//                FlipSprite(CurrentSpriteDirection.Left);
+//            }
+//            else
+//            {
+//                rootAnimator.SetBool("WalkRight", false);
+//                FlipSprite(CurrentSpriteDirection.Right);
+//            }
+//        }
         
-    }
+//    }
 
-    public Coroutine Show(bool immediate = false)
-    {
-        if (isSpriteShowing) return showingSpriteCoroutine;
+//    public Coroutine Show(bool immediate = false)
+//    {
+//        if (isSpriteShowing) return showingSpriteCoroutine;
 
-        if (isSpriteHiding)
-        {
-            spriteManager.StopCoroutine(hidingSpriteCoroutine);
-        }
+//        if (isSpriteHiding)
+//        {
+//            spriteManager.StopCoroutine(hidingSpriteCoroutine);
+//        }
 
-        showingSpriteCoroutine = spriteManager.StartCoroutine(ShowingOrHiding(true, immediate));
+//        showingSpriteCoroutine = spriteManager.StartCoroutine(ShowingOrHiding(true, immediate));
 
-        return showingSpriteCoroutine;
-    }
+//        return showingSpriteCoroutine;
+//    }
 
-    public Coroutine Hide(bool immediate = false)
-    {
-        if (isSpriteHiding) return hidingSpriteCoroutine;
+//    public Coroutine Hide(bool immediate = false)
+//    {
+//        if (isSpriteHiding) return hidingSpriteCoroutine;
 
-        if (isSpriteShowing)
-        {
-            spriteManager.StopCoroutine(showingSpriteCoroutine);
-        }
+//        if (isSpriteShowing)
+//        {
+//            spriteManager.StopCoroutine(showingSpriteCoroutine);
+//        }
 
-        hidingSpriteCoroutine = spriteManager.StartCoroutine(ShowingOrHiding(false, immediate));
+//        hidingSpriteCoroutine = spriteManager.StartCoroutine(ShowingOrHiding(false, immediate));
 
-        return hidingSpriteCoroutine;
-    }
+//        return hidingSpriteCoroutine;
+//    }
 
-    public IEnumerator ShowingOrHiding(bool show, bool immediate)
-    {
-        if (rootSpriteRenderer == null) yield break;
+//    public IEnumerator ShowingOrHiding(bool show, bool immediate)
+//    {
+//        if (rootSpriteRenderer == null) yield break;
 
-        float targetAlpha = show ? 1f : 0f;
+//        float targetAlpha = show ? 1f : 0f;
 
-        Color spriteColor = rootSpriteRenderer.color;
+//        Color spriteColor = rootSpriteRenderer.color;
 
-        if (immediate)
-        {
-            spriteColor.a = targetAlpha;
-            rootCanvasGroup.alpha = targetAlpha;
-        }
-        else
-        {
-            while (spriteColor.a != targetAlpha)
-            {
-                spriteColor.a = Mathf.MoveTowards(spriteColor.a, targetAlpha, fadeSpeed * Time.deltaTime);
-                rootSpriteRenderer.color = spriteColor;
+//        if (immediate)
+//        {
+//            spriteColor.a = targetAlpha;
+//            rootCanvasGroup.alpha = targetAlpha;
+//        }
+//        else
+//        {
+//            while (spriteColor.a != targetAlpha)
+//            {
+//                spriteColor.a = Mathf.MoveTowards(spriteColor.a, targetAlpha, fadeSpeed * Time.deltaTime);
+//                rootSpriteRenderer.color = spriteColor;
 
-                rootCanvasGroup.alpha = Mathf.MoveTowards(rootCanvasGroup.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
-                rootCanvasGroup.alpha = targetAlpha;
+//                rootCanvasGroup.alpha = Mathf.MoveTowards(rootCanvasGroup.alpha, targetAlpha, fadeSpeed * Time.deltaTime);
+//                rootCanvasGroup.alpha = targetAlpha;
 
-                if (spriteColor.a == 0f)
-                {
-                    Object.Destroy(rootSpriteRenderer.transform.parent.gameObject);
-                    break;
-                }
+//                if (spriteColor.a == 0f)
+//                {
+//                    Object.Destroy(rootSpriteRenderer.transform.parent.gameObject);
+//                    break;
+//                }
 
-                yield return null;
-            }
-        }
+//                yield return null;
+//            }
+//        }
 
-        showingSpriteCoroutine = null;
-        hidingSpriteCoroutine = null;
-    }
+//        showingSpriteCoroutine = null;
+//        hidingSpriteCoroutine = null;
+//    }
 
-    public enum CurrentSpriteDirection
-    {
-        Left,
-        Right
-    }
-}
+//    public enum CurrentSpriteDirection
+//    {
+//        Left,
+//        Right
+//    }
+//}
