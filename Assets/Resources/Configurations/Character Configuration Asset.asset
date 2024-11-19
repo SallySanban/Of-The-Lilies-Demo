@@ -51,5 +51,5 @@ MonoBehaviour:
   - name: Dad
     alias: dad
     characterType: 1
-    nameColor: {r: 0.33962262, g: 0.036080927, b: 0.033321455, a: 1}
-    textboxBorderColor: {r: 0.34117648, g: 0.039215688, b: 0.03529412, a: 1}
+    nameColor: {r: 0.9433962, g: 0.70965385, b: 0.7066572, a: 1}
+    textboxBorderColor: {r: 0.94509804, g: 0.70980394, b: 0.70980394, a: 1}

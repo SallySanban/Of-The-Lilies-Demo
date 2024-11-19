@@ -24,6 +24,7 @@ namespace Characters
             result.name = name;
             result.alias = alias;
             result.characterType = characterType;
+            result.nameColor = nameColor;
             result.textboxBorderColor = new Color(textboxBorderColor.r, textboxBorderColor.g, textboxBorderColor.b, textboxBorderColor.a);
 
             return result;
@@ -38,6 +39,7 @@ namespace Characters
                 result.name = "";
                 result.alias = "";
                 result.characterType = Character.CharacterType.Text;
+                result.nameColor = defaultColor;
                 result.textboxBorderColor = defaultColor;
 
                 return result;

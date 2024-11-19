@@ -14,8 +14,8 @@ namespace Characters
 
         public Animator animator;
 
-        public Vector2 startingLeftPosition = new Vector2(-1, 0);
-        public Vector2 startingRightPosition = new Vector2(2, 0);
+        public Vector2 startingLeftPosition = new Vector2(-0.5f, 0);
+        public Vector2 startingRightPosition = new Vector2(1.5f, 0);
 
         protected CharacterManager manager => CharacterManager.Instance;
 
@@ -55,7 +55,7 @@ namespace Characters
             root.anchorMax = maxAnchorTarget;
         }
 
-        public virtual Coroutine MoveToPosition(Vector2 position, float speed = 4f, bool smooth = true)
+        public virtual Coroutine MoveToPosition(Vector2 position, float speed = 2f, bool smooth = false)
         {
             if (root == null) return null;
 
