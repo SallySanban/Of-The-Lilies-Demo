@@ -1,36 +1,11 @@
-<playerName> at 1 "Dad!"
+enter Dad at 0 "Wake up!"
 
-Dad at 0 "Ahlai... You made it back..."
+Alonay as ??? "It's time to wake up!"
 
-<playerName> at 1 "What is it that you want with us?"
+enter Ahlai as <playerName> [0:Right_Default_Body,1:Right_Default] at 1 "Alonay... It's too early..."
 
-<playerName> at 1 "<i><b>Seiyslan Empire?</b> Why does that name bring me so much... pain?</i>"
+Alonay "No, it's not! The sun's already up! It's your <b>big day</b>!"
 
-Dad at 0 "Don't listen to his lies, <playerName>. They want to take over Tayabac. We <b>can't</b> let that happen."
+Alonay "<playerName>...!"
 
-Dad at 0 "I hope I've trained you enough. <b>Fight for your people</b>."
-
-<playerName> at 1 "Dad!"
-
-Dad at 0 "Ahlai... You made it back..."
-
-<playerName> at 1 "What is it that you want with us?"
-
-<playerName> at 1 "<i><b>Seiyslan Empire?</b> Why does that name bring me so much... pain?</i>"
-
-Dad at 0 "Don't listen to his lies, <playerName>. They want to take over Tayabac. We <b>can't</b> let that happen."
-
-Dad at 0 "I hope I've trained you enough. <b>Fight for your people</b>."
-
-<playerName> at 1 "Dad!"
-
-Dad at 0 "Ahlai... You made it back..."
-
-<playerName> at 1 "What is it that you want with us?"
-
-<playerName> at 1 "<i><b>Seiyslan Empire?</b> Why does that name bring me so much... pain?</i>"
-
-Dad at 0 "Don't listen to his lies, <playerName>. They want to take over Tayabac. We <b>can't</b> let that happen."
-
-Dad at 0 "I hope I've trained you enough. <b>Fight for your people</b>."
-
+Alonay "<playerName>!" ScreenShakes()

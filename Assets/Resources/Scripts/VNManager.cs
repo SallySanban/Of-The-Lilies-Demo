@@ -16,7 +16,7 @@ public class VNManager : MonoBehaviour
 
     public void Start()
     {
-        LoadFile(FilePaths.storyFiles + dialogueFile);
+        LoadFile(FilePaths.storyPath + dialogueFile);
     }
 
     public void LoadFile(string filePath)

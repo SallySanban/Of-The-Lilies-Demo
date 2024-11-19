@@ -1,1 +1,1 @@
-CharacterName as Alias "Dialogue"
+CharacterName as Alias [0:Body_Image,1:Face_Image] at 0/1 "Dialogue" Commands()

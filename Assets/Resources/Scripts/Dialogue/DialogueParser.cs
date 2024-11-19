@@ -12,11 +12,7 @@ namespace Dialogue
 
         public static DialogueLine Parse(string rawLine)
         {
-            //Debug.Log($"Parsing line: {rawLine}");
-
             (string speaker, string dialogue, string commands) = GetContent(rawLine);
-
-            //Debug.Log($"Speaker = {speaker}\nDialogue = {dialogue}\nCommands = {commands}");
 
             return new DialogueLine(rawLine, speaker, dialogue, commands);
         }

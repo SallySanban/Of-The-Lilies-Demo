@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Commands;
-//using Characters;
+using Characters;
 using Dialogue.LogicalLines;
-using UnityEngine.SceneManagement;
-using UnityEngine.TextCore.Text;
 
 namespace Dialogue
 {
@@ -137,47 +135,43 @@ namespace Dialogue
         {
             if (line.hasSpeaker)
             {
-                //HandleSpeakerLogic(line.speakerData);
+                HandleSpeakerLogic(line.speakerData);
             }
 
-            textArchitect = dialogueSystem.ShowTextbox(line.speakerData.textboxPosition);
+            textArchitect = dialogueSystem.ShowTextbox(line.speakerData.textboxPosition, TagManager.Inject(line.speakerData.displayName));
 
             yield return BuildLineSegments(line.dialogueData);
         }
 
-        //private void HandleSpeakerLogic(SpeakerData speakerData)
-        //{
-        //    DialogueSystem.Instance.ApplySpeakerDataToDialogueContainer(speakerData.name);
+        private void HandleSpeakerLogic(SpeakerData speakerData)
+        {
+            Character character = CharacterManager.Instance.GetCharacter(speakerData.name); //creates the character as soon as character speaks
 
-        //    if (speakerData.mainCharacterThought)
-        //    {
-        //        dialogueSystem.HideSpeakerName();
+            if (speakerData.isCastingPosition)
+            {
+                if(speakerData.castPosition.x == 0)
+                {
+                    character.SetPosition(character.startingLeftPosition);
+                }
+                else if(speakerData.castPosition.x == 1)
+                {
+                    character.SetPosition(character.startingRightPosition);
+                }
+            }
 
-        //        return;
-        //    }
+            if (speakerData.makeCharacterEnter)
+            {
+                character.MoveToPosition(speakerData.castPosition);
+            }
 
-        //    Character character = CharacterManager.Instance.GetCharacter(speakerData.name); //creates the character as soon as character speaks
-
-        //    if (speakerData.isCastingPosition && !character.isCharacterVisible)
-        //    {
-        //        character.SetPosition(speakerData.castPosition);
-        //    }
-
-        //    if (speakerData.makeCharacterEnter && !character.isCharacterVisible && !character.isCharacterShowing)
-        //    {
-        //        character.Show();
-        //    }
-
-        //    dialogueSystem.ShowSpeakerName(TagManager.Inject(speakerData.displayName));
-
-        //    if (speakerData.isCastingExpressions && character.isCharacterVisible)
-        //    {
-        //        foreach (var exp in speakerData.castExpressions)
-        //        {
-        //            character.OnReceiveCastingExpression(exp.layer, exp.expression);
-        //        }
-        //    }
-        //}
+            if (speakerData.isCastingExpressions && character.isCharacterVisible)
+            {
+                foreach (var exp in speakerData.castExpressions)
+                {
+                    character.OnReceiveCastingExpression(exp.layer, exp.expression);
+                }
+            }
+        }
 
         IEnumerator RunCommands(DialogueLine line)
         {

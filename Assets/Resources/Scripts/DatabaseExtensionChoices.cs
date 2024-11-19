@@ -28,7 +28,7 @@ namespace Commands
             parameters.TryGetValue(enqueueParameter, out enqueue, defaultValue: false);
             parameters.TryGetValue(priorityParameter, out priority, defaultValue: false);
 
-            TextAsset file = Resources.Load<TextAsset>(FilePaths.storyFiles + filename);
+            TextAsset file = Resources.Load<TextAsset>(FilePaths.storyPath + filename);
 
             if(file == null)
             {

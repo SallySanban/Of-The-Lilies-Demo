@@ -1,39 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-//using Characters;
-using UnityEngine.TextCore.Text;
-using UnityEditor;
+using Characters;
 
 namespace Dialogue
 {
     public class DialogueSystem : MonoBehaviour
     {
-        //[SerializeField] private DialogueSystemConfig _config;
-        //public DialogueSystemConfig config => _config;
-
-        private ContainerToUse currentMode = ContainerToUse.Textbox;
-
-        //[SerializeField] private GameObject _speechBubblePrefab;
-        //public GameObject speechBubblePrefab => _speechBubblePrefab;
-
-        //public DialogueContainer dialogueContainer = new DialogueContainer();
-
         public Transform textboxContainer;
 
-        //public DialogueContainer textbox;
+        public GameObject mainTextbox;
         public GameObject leftTextbox;
         public GameObject rightTextbox;
 
         public ConversationManager conversationManager { get; private set; }
-        //public SpeechBubbleManager speechBubbleManager { get; private set; }
 
         private TextArchitect textArchitect;
-
-        //public bool speechBubbleActive = false;
-
-        [SerializeField] public Vector2 size;
 
         public static DialogueSystem Instance { get; private set; }
 
@@ -42,12 +24,9 @@ namespace Dialogue
 
         private List<DialogueContainer> textboxesOnScreen = new List<DialogueContainer>();
 
-        protected Coroutine showingTextboxCoroutine, hidingTextboxCoroutine;
+        private DialogueContainer currentTextbox = null;
 
-        public bool isTextboxShowing => showingTextboxCoroutine != null;
-        public bool isTextboxHiding => hidingTextboxCoroutine != null;
-
-        public bool isRunningConversation => conversationManager.isRunning;
+        //public bool isRunningConversation => conversationManager.isRunning;
 
         private void Awake()
         {
@@ -69,35 +48,13 @@ namespace Dialogue
         {
             if (initialized) return;
 
-            //textArchitect = new TextArchitect(textbox.dialogueText);
-
             conversationManager = new ConversationManager();
-            //speechBubbleManager = new SpeechBubbleManager(speechBubblePrefab);
         }
 
         public void OnUserNext()
         {
             onUserNext?.Invoke();
         }
-
-        //public void ApplySpeakerDataToDialogueContainer(string speakerName)
-        //{
-        //    Character character = CharacterManager.Instance.GetCharacter(speakerName);
-
-        //    CharacterConfigData config = character.config != null ? character.config : CharacterManager.Instance.GetCharacterConfig(speakerName);
-
-        //    ApplySpeakerDataToDialogueContainer(config);
-        //}
-
-        //public void ApplySpeakerDataToDialogueContainer(CharacterConfigData config)
-        //{
-        //    dialogueContainer.SetBorderColor(config.textboxBorderColor);
-        //    dialogueContainer.nameContainer.SetBorderColor(config.nameBorderColor);
-        //}
-
-        //public void ShowSpeakerName(string speakerName = "") => dialogueContainer.nameContainer.Show(speakerName);
-
-        //public void HideSpeakerName() => dialogueContainer.nameContainer.Hide();
 
         public Coroutine Say(List<string> lines, string filePath = "")
         {
@@ -106,65 +63,23 @@ namespace Dialogue
             return conversationManager.StartConversation(conversation);
         }
 
-        //public Coroutine SaySpeechBubble((string key, string value, string parameter) action)
-        //{
-        //    speechBubbleActive = true;
-
-        //    List<(string key, string value, string parameter)> actions = new List<(string key, string value, string parameter)>
-        //    {
-        //        action
-        //    };
-
-        //    return SaySpeechBubble(actions);
-        //}
-
-        //public Coroutine SaySpeechBubble(List<(string key, string value, string parameter)> actions)
-        //{
-        //    speechBubbleActive = true;
-
-        //    return speechBubbleManager.StartSpeechBubble(actions);
-        //}
-
-        //[ContextMenu("Show Speech Bubble Position")]
-        //public void ShowPosition()
-        //{
-        //    Debug.Log("SPEECH BUBBLE POSITION: " + speechBubbleManager.GetPosition());
-        //}
-
-        //[ContextMenu("Show Speech Bubble Size")]
-        //public void ShowSize()
-        //{
-        //    Debug.Log("SPEECH BUBBLE SIZE: " + speechBubbleManager.GetSize());
-        //}
-
-        //[ContextMenu("Change Speech Bubble Size")]
-        //public void ChangeSize()
-        //{
-        //    speechBubbleManager.ChangeSize(size);
-        //}
-
-        public TextArchitect ShowTextbox(ContainerToUse textboxToShow)
+        public TextArchitect ShowTextbox(ContainerToUse textboxToShow, string speakerName)
         {
-            DialogueContainer textbox = null;
-
-            switch (textboxToShow)
+            if(currentTextbox != null && currentTextbox.textboxType == ContainerToUse.Textbox)
             {
-                case ContainerToUse.Textbox:
-                    //textbox.root.SetActive(true);
-                    break;
-                case ContainerToUse.LeftTextbox:
-                    StartCoroutine(AnimatePreviousTextboxes());
-                    textbox = new DialogueContainer(leftTextbox, textboxContainer);
-                    break;
-                case ContainerToUse.RightTextbox:
-                    StartCoroutine(AnimatePreviousTextboxes());
-                    textbox = new DialogueContainer(rightTextbox, textboxContainer);
-                    break;
+                Object.DestroyImmediate(currentTextbox.root);
+                currentTextbox = null;
             }
 
-            textArchitect = new TextArchitect(textbox.dialogue);
+            GameObject dialogueContainer = GetDialogueContainerToUse(textboxToShow);
 
-            textboxesOnScreen.Add(textbox);
+            if(textboxToShow != ContainerToUse.Textbox) StartCoroutine(AnimatePreviousTextboxes());
+
+            currentTextbox = new DialogueContainer(dialogueContainer, textboxContainer, textboxToShow, speakerName);
+
+            textArchitect = new TextArchitect(currentTextbox.dialogue);
+
+            if (textboxToShow != ContainerToUse.Textbox) textboxesOnScreen.Add(currentTextbox);
 
             return textArchitect;
         }
@@ -195,11 +110,20 @@ namespace Dialogue
             }
         }
 
-        //public void Hide()
-        //{
-        //    dialogueContainer.dialogueText.text = "";
-        //    dialogueContainer.root.SetActive(false);
-        //}
+        private GameObject GetDialogueContainerToUse(ContainerToUse textboxUsed)
+        {
+            switch(textboxUsed)
+            {
+                case ContainerToUse.Textbox:
+                    return mainTextbox;
+                case ContainerToUse.RightTextbox:
+                    return rightTextbox;
+                case ContainerToUse.LeftTextbox:
+                    return leftTextbox;
+                default:
+                    return mainTextbox;
+            }
+        }
 
         public enum ContainerToUse
         {
