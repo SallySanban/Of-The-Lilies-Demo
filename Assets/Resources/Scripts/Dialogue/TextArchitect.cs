@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TextArchitect
 {
@@ -32,8 +33,6 @@ public class TextArchitect
 
     public int charactersPerCycle { get { return speed <= 2f ? characterMultiplier : speed <= 2.5f ? characterMultiplier * 2 : characterMultiplier * 3; } }
     private int characterMultiplier = 1;
-
-    public bool hurryUp = false;
 
     public TextArchitect(TextMeshProUGUI tmpro_ui)
     {
@@ -157,7 +156,6 @@ public class TextArchitect
         while(tmpro.maxVisibleCharacters < tmpro.textInfo.characterCount)
         {
             tmpro.maxVisibleCharacters += charactersPerCycle;
-
             yield return new WaitForSeconds(0.015f / speed);
         }
     }

@@ -1,1 +1,72 @@
-CharacterName as Alias [0:Body_Image,1:Face_Image] at 0/1 "Dialogue" Commands()
+/*
+* for textbox dialogue
+* makes character enter with "enter" keyword
+* "as" changes what name the player sees
+* [] changes body and emotion of character
+* "at" changes at which position the dialogue appears - left or right (optional; no indication means it's in the main textbox)
+* can indicate commands after the dialogue
+*/
+enter CharacterName as Alias [0:BodyFilename,1:EmotionFilename] at 0/1 "Dialogue" Commands()
+
+/*
+* for pixel dialogue
+*/
+pixel CharacterName as Alias "Dialogue"
+
+/*
+* can indicate commands as standalone
+* [input] to wait for input before going to next line
+* [wait] to wait for 0.3 seconds before going to next line
+*/
+[input/wait]Commands()
+
+/*
+* tags will replace the dialogue
+*/
+<playerName>
+<subjectPronoun> //she/he/they
+<objectPronoun> //her/him/them
+<possessivePronoun> //her/his/their
+
+/*
+* shows input field
+*/
+input //shows input field
+
+/*
+* shows choice in left (0), right (1), or main (-1) textbox
+*/
+choice in 0/1/-1
+{
+	- Choice 1
+		//place stuff here
+	- Choice 2
+		//place stuff here
+}
+
+===== COMMANDS LIST ====
+=== Dialogue ===
+HideTextbox(true/false) //hides textbox immediately or fade out
+
+=== Characters ===
+ShowCharacterLeft(CharacterName -e EmotionFilename -b BodyFilename) //makes the character move to the left side of screen from outside
+ShowCharacterRight(CharacterName -e EmotionFilename -b BodyFilename) //makes the character move to the right side of screen from outside
+SwitchCharacter(CurrentCharacter NewCharacter -p 0/1 -e EmotionFilename -b BodyFilename) //fades out current character in certain position and fades in character in that position
+ChangeBodyEmotion(CurrentCharacter -e EmotionFilename -b BodyFilename) //changes body and emotion of character on screen
+HideCharacter(CurrentCharacter) //moves character either on left or right outside screen depending where they are
+
+=== Audio ===
+PlaySFX("Sound Effect Filename") //plays sound effects
+
+=== CG ===
+ShowCG("CG Filename") //fades in CG
+HideCG() //fades out current CG
+Blackout() //adds blackout image on top of screen
+
+=== Scene ===
+ShowScene("Scene Name" "Background Prefab Name") //shows pixel background immediately, ALWAYS do this behind black screen 
+SwitchScene("Scene Name") //for same background but different NPC configurations
+
+=== Effects ===
+ScreenShake()
+

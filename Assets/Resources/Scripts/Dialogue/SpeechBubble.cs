@@ -1,0 +1,80 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class SpeechBubble : DialogueContainer
+{
+    public Vector3 playerOffset = new Vector2(0f, 4f);
+
+    private const int dialogueSpacing = 20;
+    private const int choiceSpacing = 45;
+
+    private const string SPEECHBUBBLE_OBJECT = "SpeechBubble";
+
+    public SpeechBubble(GameObject speakerSprite, string speakerName = "", string[] listOfChoices = null)
+    {
+        root = speakerSprite.transform.Find(SPEECHBUBBLE_OBJECT).gameObject;
+
+        rootCanvasGroup = root.GetComponent<CanvasGroup>();
+
+        textboxImage = root.transform.Find(TEXTBOX_OBJECTNAME).gameObject;
+        name = root.transform.Find(TEXTBOX_OBJECTNAME).Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+        dialogue = root.transform.Find(TEXTBOX_OBJECTNAME).Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+        choices = root.transform.Find(TEXTBOX_OBJECTNAME).Find(CHOICES_OBJECTNAME).transform;
+        choiceTemplate = choices.Find(CHOICETEMPLATE_OBJECTNAME).gameObject;
+
+        name.text = speakerName.ToUpper();
+
+        dialogue.gameObject.SetActive(true);
+        choices.gameObject.SetActive(false);
+
+        textboxImage.GetComponent<VerticalLayoutGroup>().spacing = dialogueSpacing;
+
+        if (listOfChoices != null)
+        {
+            ShowChoices(listOfChoices);
+        }
+
+        root.SetActive(true);
+
+        //FOR DEBUGGING PURPOSES
+        root.AddComponent<PositionDebugger>();
+    }
+
+    protected override void ShowChoices(string[] listOfChoices)
+    {
+        base.ShowChoices(listOfChoices);
+
+        textboxImage.GetComponent<VerticalLayoutGroup>().spacing = choiceSpacing;
+    }
+
+    public override void HideChoices()
+    {
+        base.HideChoices();
+
+        textboxImage.GetComponent<VerticalLayoutGroup>().spacing = dialogueSpacing;
+    }
+
+    public override IEnumerator ShowingOrHiding()
+    {
+        CanvasGroup self = rootCanvasGroup;
+
+        while (self.alpha != 0)
+        {
+            self.alpha = Mathf.MoveTowards(self.alpha, 0, FADE_SPEED * Time.deltaTime);
+
+            if (self.alpha == 0f)
+            {
+                self.gameObject.SetActive(false);
+                break;
+            }
+
+            yield return null;
+        }
+
+        hidingContainerCoroutine = null;
+    }
+}

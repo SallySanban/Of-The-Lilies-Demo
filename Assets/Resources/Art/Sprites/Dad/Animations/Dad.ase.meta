@@ -1,0 +1,1263 @@
+fileFormatVersion: 2
+guid: e456940527a405c44a84c87d4bae46f4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Combat
+    second: {fileID: 7400000, guid: 0939961e836ff78438f4ea2704c33423, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Running
+    second: {fileID: 7400000, guid: 1854253509e6f284aa212d7d6e6ea208, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Sitting
+    second: {fileID: 7400000, guid: eaf48748eaaa7ec4196b6c07900a40fc, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: SittingTogether
+    second: {fileID: 7400000, guid: 3b348156f774ce64cb2e212c2a9a8d90, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638700486133647743
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Dad_Frame_16
+    originalName: 
+    pivot: {x: -0.48161745, y: -1.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 592
+      width: 272
+      height: 430
+    spriteID: 1677a96e6b7a6d744a12cbd54e758950
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 592}
+  - name: Dad_Frame_17
+    originalName: 
+    pivot: {x: -0.6291666, y: -1.4861752}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1030
+      width: 240
+      height: 434
+    spriteID: abf760129098fb24a9fa4d0a26555e36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1030}
+  - name: Dad_Frame_18
+    originalName: 
+    pivot: {x: -1.2159094, y: -1.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1843
+      y: 1030
+      width: 176
+      height: 430
+    spriteID: a93782630b27bf1488615e850527ae25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1843, y: 1030}
+  - name: Dad_Frame_19
+    originalName: 
+    pivot: {x: -0.8500001, y: -1.5140845}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 560
+      y: 592
+      width: 220
+      height: 426
+    spriteID: 5495e6de1bae7aa42848d1addda8c37b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 560, y: 592}
+  - name: Dad_Frame_20
+    originalName: 
+    pivot: {x: -0.4888058, y: -1.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 592
+      width: 268
+      height: 430
+    spriteID: 52c3791a209324742b239628f245f928
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 592}
+  - name: Dad_Frame_21
+    originalName: 
+    pivot: {x: -0.6317991, y: -1.4861752}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 1030
+      width: 239
+      height: 434
+    spriteID: af53a1e74e054e340a3b34603ca571e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 1030}
+  - name: Dad_Frame_22
+    originalName: 
+    pivot: {x: -1.2159094, y: -1.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 439
+      y: 1472
+      width: 176
+      height: 430
+    spriteID: 157a03a0c3acc47488ba8b88d9b009fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 439, y: 1472}
+  - name: Dad_Frame_23
+    originalName: 
+    pivot: {x: -0.9211823, y: -1.5140845}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 1472
+      width: 203
+      height: 426
+    spriteID: 7bbcf94efff883f4d8fa01bf8fedf05f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 228, y: 1472}
+  - name: Dad_Frame_24
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5745192}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 723
+      y: 1030
+      width: 216
+      height: 416
+    spriteID: 655d811c4d9b69347adda0e28538578f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 723, y: 1030}
+  - name: Dad_Frame_25
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5595238}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 592
+      width: 216
+      height: 420
+    spriteID: a64d8676ac2303f4c901fb8a238cc1b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 592}
+  - name: Dad_Frame_26
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5595238}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1012
+      y: 592
+      width: 216
+      height: 420
+    spriteID: 39fe00ccfcb7d2040b7feaba08320f08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1012, y: 592}
+  - name: Dad_Frame_27
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5595238}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1236
+      y: 592
+      width: 216
+      height: 420
+    spriteID: 09eb027d766f7a84a846e0fa53c5ec88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1236, y: 592}
+  - name: Dad_Frame_28
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5745192}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 947
+      y: 1030
+      width: 216
+      height: 416
+    spriteID: a21f4d67e45c30343b8e8cc09957acf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 947, y: 1030}
+  - name: Dad_Frame_29
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5745192}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1171
+      y: 1030
+      width: 216
+      height: 416
+    spriteID: 08b72ef6edb0e2a4ba2ecb45204b1f77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1171, y: 1030}
+  - name: Dad_Frame_30
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5745192}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1395
+      y: 1030
+      width: 216
+      height: 416
+    spriteID: 64ca76dfd13be3747b1c0a89020c4dcc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1395, y: 1030}
+  - name: Dad_Frame_31
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5595238}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1460
+      y: 592
+      width: 216
+      height: 420
+    spriteID: d7343c78c21cc704c8b4b33a4a8d4b67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1460, y: 592}
+  - name: Dad_Frame_32
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5595238}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1684
+      y: 592
+      width: 216
+      height: 420
+    spriteID: a592d40003ee27147a31dd2857f92e01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1684, y: 592}
+  - name: Dad_Frame_33
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5595238}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 499
+      y: 1030
+      width: 216
+      height: 420
+    spriteID: d93447c71733d074a85e78ecccbe5c74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 499, y: 1030}
+  - name: Dad_Frame_34
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5745192}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1619
+      y: 1030
+      width: 216
+      height: 416
+    spriteID: de3632cfec0ac154ebba69a15c2e46e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1619, y: 1030}
+  - name: Dad_Frame_35
+    originalName: 
+    pivot: {x: -0.80555546, y: -1.5745192}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1472
+      width: 216
+      height: 416
+    spriteID: 6d79ca86931e8444e9020d583e2682bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1472}
+  - name: Dad_Frame_0
+    originalName: 
+    pivot: {x: -0.24324313, y: -2.2816901}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 908
+      y: 4
+      width: 444
+      height: 284
+    spriteID: 4459849b69d3af04aa590db827b9fbd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 908, y: 4}
+  - name: Dad_Frame_1
+    originalName: 
+    pivot: {x: -0.24324313, y: -2.3142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 908
+      y: 300
+      width: 444
+      height: 280
+    spriteID: ee207cdbd8b0d5c4ea92e4e59f447574
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 908, y: 300}
+  - name: Dad_Frame_2
+    originalName: 
+    pivot: {x: -0.24324313, y: -2.2816901}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1360
+      y: 4
+      width: 444
+      height: 284
+    spriteID: 074b1218ad1b9734abe421871394b974
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1360, y: 4}
+  - name: Dad_Frame_3
+    originalName: 
+    pivot: {x: -0.24324313, y: -2.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 444
+      height: 288
+    spriteID: 15727a43764aaf8459c61994ad39bf0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Dad_Frame_4
+    originalName: 
+    pivot: {x: -0.24324313, y: -2.2816901}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 300
+      width: 444
+      height: 284
+    spriteID: e2e7ac2d2f8b84942852faf7848ba5d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 300}
+  - name: Dad_Frame_5
+    originalName: 
+    pivot: {x: -0.24324313, y: -2.3142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1360
+      y: 300
+      width: 444
+      height: 280
+    spriteID: be6c6c6177aa1854d86973713d06757d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1360, y: 300}
+  - name: Dad_Frame_6
+    originalName: 
+    pivot: {x: -0.24324313, y: -2.2816901}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 456
+      y: 300
+      width: 444
+      height: 284
+    spriteID: da12b4af54f23ea41b5777173aa07076
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 456, y: 300}
+  - name: Dad_Frame_7
+    originalName: 
+    pivot: {x: -0.24324313, y: -2.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 456
+      y: 4
+      width: 444
+      height: 288
+    spriteID: cd43ad82d3d3a44438864adee51971d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 456, y: 4}
+  - name: Dad_Frame_8
+    originalName: 
+    pivot: {x: -0.9375, y: -2.477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 623
+      y: 1744
+      width: 192
+      height: 268
+    spriteID: bd9769a1b8d0a9a4681ac41abbbca861
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 623, y: 1744}
+  - name: Dad_Frame_9
+    originalName: 
+    pivot: {x: -0.9183674, y: -2.5151515}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 623
+      y: 1472
+      width: 196
+      height: 264
+    spriteID: 53d04daafbd7c744a87e2a065d9dc935
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 623, y: 1472}
+  - name: Dad_Frame_10
+    originalName: 
+    pivot: {x: -0.9375, y: -2.477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 823
+      y: 1744
+      width: 192
+      height: 268
+    spriteID: 687dc76724f8c2b41ab548b42d04c891
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 823, y: 1744}
+  - name: Dad_Frame_11
+    originalName: 
+    pivot: {x: -0.9375, y: -2.4411764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1812
+      y: 300
+      width: 192
+      height: 272
+    spriteID: b928d441e0c531644a98554dd034586f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1812, y: 300}
+  - name: Dad_Frame_12
+    originalName: 
+    pivot: {x: -0.9375, y: -2.477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1023
+      y: 1744
+      width: 192
+      height: 268
+    spriteID: df359ceadad324544a0a499606f186b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1023, y: 1744}
+  - name: Dad_Frame_13
+    originalName: 
+    pivot: {x: -0.9183674, y: -2.5151515}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 827
+      y: 1472
+      width: 196
+      height: 264
+    spriteID: 9a1c9809b77dc4a44b925a49ec55e9ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 827, y: 1472}
+  - name: Dad_Frame_14
+    originalName: 
+    pivot: {x: -0.9375, y: -2.477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1223
+      y: 1744
+      width: 192
+      height: 268
+    spriteID: 6be31197ac4c1da46b3a0b930ddd2ab0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1223, y: 1744}
+  - name: Dad_Frame_15
+    originalName: 
+    pivot: {x: -0.9375, y: -2.4411764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1812
+      y: 4
+      width: 192
+      height: 272
+    spriteID: 167aa70020cd66d44a05ec2d5eab9ada
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1812, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1446159077
+    name: Dad
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Dad_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 1091
+        y: 645
+        width: 272
+        height: 430
+      spriteId: 1677a96e6b7a6d744a12cbd54e758950
+    - name: Dad_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 1111
+        y: 645
+        width: 240
+        height: 434
+      spriteId: abf760129098fb24a9fa4d0a26555e36
+    - name: Dad_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 1174
+        y: 645
+        width: 176
+        height: 430
+      spriteId: a93782630b27bf1488615e850527ae25
+    - name: Dad_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 1147
+        y: 645
+        width: 220
+        height: 426
+      spriteId: 5495e6de1bae7aa42848d1addda8c37b
+    - name: Dad_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 1091
+        y: 645
+        width: 268
+        height: 430
+      spriteId: 52c3791a209324742b239628f245f928
+    - name: Dad_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 1111
+        y: 645
+        width: 239
+        height: 434
+      spriteId: af53a1e74e054e340a3b34603ca571e3
+    - name: Dad_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 1174
+        y: 645
+        width: 176
+        height: 430
+      spriteId: 157a03a0c3acc47488ba8b88d9b009fb
+    - name: Dad_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 1147
+        y: 645
+        width: 203
+        height: 426
+      spriteId: 7bbcf94efff883f4d8fa01bf8fedf05f
+    - name: Dad_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 416
+      spriteId: 655d811c4d9b69347adda0e28538578f
+    - name: Dad_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 420
+      spriteId: a64d8676ac2303f4c901fb8a238cc1b8
+    - name: Dad_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 420
+      spriteId: 39fe00ccfcb7d2040b7feaba08320f08
+    - name: Dad_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 420
+      spriteId: 09eb027d766f7a84a846e0fa53c5ec88
+    - name: Dad_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 416
+      spriteId: a21f4d67e45c30343b8e8cc09957acf9
+    - name: Dad_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 416
+      spriteId: 08b72ef6edb0e2a4ba2ecb45204b1f77
+    - name: Dad_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 416
+      spriteId: 64ca76dfd13be3747b1c0a89020c4dcc
+    - name: Dad_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 420
+      spriteId: d7343c78c21cc704c8b4b33a4a8d4b67
+    - name: Dad_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 420
+      spriteId: a592d40003ee27147a31dd2857f92e01
+    - name: Dad_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 420
+      spriteId: d93447c71733d074a85e78ecccbe5c74
+    - name: Dad_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 416
+      spriteId: de3632cfec0ac154ebba69a15c2e46e9
+    - name: Dad_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 1134
+        y: 655
+        width: 216
+        height: 416
+      spriteId: 6d79ca86931e8444e9020d583e2682bc
+    - name: Dad_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 1068
+        y: 648
+        width: 444
+        height: 284
+      spriteId: 4459849b69d3af04aa590db827b9fbd5
+    - name: Dad_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 1068
+        y: 648
+        width: 444
+        height: 280
+      spriteId: ee207cdbd8b0d5c4ea92e4e59f447574
+    - name: Dad_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 1068
+        y: 648
+        width: 444
+        height: 284
+      spriteId: 074b1218ad1b9734abe421871394b974
+    - name: Dad_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 1068
+        y: 648
+        width: 444
+        height: 288
+      spriteId: 15727a43764aaf8459c61994ad39bf0a
+    - name: Dad_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 1068
+        y: 648
+        width: 444
+        height: 284
+      spriteId: e2e7ac2d2f8b84942852faf7848ba5d0
+    - name: Dad_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 1068
+        y: 648
+        width: 444
+        height: 280
+      spriteId: be6c6c6177aa1854d86973713d06757d
+    - name: Dad_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 1068
+        y: 648
+        width: 444
+        height: 284
+      spriteId: da12b4af54f23ea41b5777173aa07076
+    - name: Dad_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 1068
+        y: 648
+        width: 444
+        height: 288
+      spriteId: cd43ad82d3d3a44438864adee51971d5
+    - name: Dad_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 1140
+        y: 664
+        width: 192
+        height: 268
+      spriteId: bd9769a1b8d0a9a4681ac41abbbca861
+    - name: Dad_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 1140
+        y: 664
+        width: 196
+        height: 264
+      spriteId: 53d04daafbd7c744a87e2a065d9dc935
+    - name: Dad_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 1140
+        y: 664
+        width: 192
+        height: 268
+      spriteId: 687dc76724f8c2b41ab548b42d04c891
+    - name: Dad_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 1140
+        y: 664
+        width: 192
+        height: 272
+      spriteId: b928d441e0c531644a98554dd034586f
+    - name: Dad_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 1140
+        y: 664
+        width: 192
+        height: 268
+      spriteId: df359ceadad324544a0a499606f186b9
+    - name: Dad_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 1140
+        y: 664
+        width: 196
+        height: 264
+      spriteId: 9a1c9809b77dc4a44b925a49ec55e9ed
+    - name: Dad_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 1140
+        y: 664
+        width: 192
+        height: 268
+      spriteId: 6be31197ac4c1da46b3a0b930ddd2ab0
+    - name: Dad_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 1140
+        y: 664
+        width: 192
+        height: 272
+      spriteId: 167aa70020cd66d44a05ec2d5eab9ada
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1920, y: 1080}

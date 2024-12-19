@@ -1,41 +1,94 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Dialogue;
 using TMPro;
 using Characters;
+using UnityEngine.UI;
+using System.Collections;
+using Dialogue;
 
 public class DialogueContainer
 {
+    DialogueManager dialogueManager => DialogueManager.Instance;
+
     public GameObject root;
-    public DialogueSystem.ContainerToUse textboxType;
+    public CanvasGroup rootCanvasGroup;
+
+    public GameObject textboxImage;
+    public ContainerType textboxType;
     public TextMeshProUGUI name;
     public TextMeshProUGUI dialogue;
+    public Transform choices;
+    public GameObject choiceTemplate;
 
-    private const string IMAGE_OBJECTNAME = "Textbox Image";
-    private const string NAME_OBJECTNAME = "Name Text";
-    private const string DIALOGUE_OBJECTNAME = "Dialogue Text";
+    protected string TEXTBOX_OBJECTNAME = "Textbox Image";
+    protected string NAMEPLATE_OBJECTNAME = "Name Plate";
+    protected string NAME_OBJECTNAME = "Name Text";
+    protected string DIALOGUE_OBJECTNAME = "Dialogue Text";
+    protected string CHOICES_OBJECTNAME = "Choices";
+    protected string CHOICETEMPLATE_OBJECTNAME = "Choice Template";
 
-    public DialogueContainer(GameObject prefab, Transform parent, DialogueSystem.ContainerToUse textboxType, string speakerName = "")
-    {
-        GameObject textbox = Object.Instantiate(prefab, parent);
+    protected const float FADE_SPEED = 3f;
 
-        root = textbox;
-        name = textbox.transform.Find(IMAGE_OBJECTNAME).Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
-        dialogue = textbox.transform.Find(IMAGE_OBJECTNAME).Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+    public ChoiceContainer currentChoiceContainer;
 
-        this.textboxType = textboxType;
-        name.text = speakerName;
+    protected Coroutine showingContainerCoroutine, hidingContainerCoroutine;
+    public bool isContainerShowing => showingContainerCoroutine != null;
+    public bool isContainerHiding => hidingContainerCoroutine != null;
 
-        if(speakerName != "") ApplySpeakerDataToDialogueContainer(speakerName);
-    }
-
-    private void ApplySpeakerDataToDialogueContainer(string speakerName)
+    protected void ApplySpeakerDataToDialogueContainer(string speakerName)
     {
         Character character = CharacterManager.Instance.GetCharacter(speakerName);
 
         CharacterConfigData config = character.config != null ? character.config : CharacterManager.Instance.GetCharacterConfig(speakerName);
+    }
 
-        name.color = config.nameColor;
+    protected virtual void ShowChoices(string[] listOfChoices)
+    {
+        dialogue.gameObject.SetActive(false);
+        choices.gameObject.SetActive(true);
+
+        currentChoiceContainer = new ChoiceContainer(this, listOfChoices, choices, choiceTemplate);
+    }
+
+    public virtual void HideChoices()
+    {
+        dialogue.gameObject.SetActive(true);
+        choices.gameObject.SetActive(false);
+    }
+
+    public enum ContainerType
+    {
+        Textbox,
+        LeftTextbox,
+        RightTextbox,
+        SpeechBubble
+    }
+
+    public Coroutine Hide()
+    {
+        if (isContainerHiding) return hidingContainerCoroutine;
+
+        hidingContainerCoroutine = dialogueManager.StartCoroutine(ShowingOrHiding());
+
+        return hidingContainerCoroutine;
+    }
+
+    public virtual IEnumerator ShowingOrHiding()
+    {
+        CanvasGroup self = rootCanvasGroup;
+
+        while (self.alpha != 0)
+        {
+            self.alpha = Mathf.MoveTowards(self.alpha, 0, FADE_SPEED * Time.deltaTime);
+
+            if (self.alpha == 0f)
+            {
+                Object.Destroy(self.gameObject);
+                break;
+            }
+
+            yield return null;
+        }
+
+        hidingContainerCoroutine = null;
     }
 }

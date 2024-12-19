@@ -1,0 +1,18 @@
+input
+
+[wait]ShowScene("Scene 1" "Tayabac House 2nd Floor")
+[wait]ShowCharacterRight(Dad -b Right_CrossedArms_Body -e Right_CrossedArms)
+
+Dad at 0 "Good. It's a big day today. The people of Tayabac are busy preparing for our celebration. Make sure you ask them if they need any help."
+
+Dad at 0 "<b>And meet me at the top of the cliff when you're finished.</b> We'll do the ritual there. Your people will be ready to celebrate your coming-of-age afterward."
+
+HideTextbox(true)
+HideCharacter(Dad)
+[wait]Blackout()
+[wait]SwitchScene("Scene 2")
+[wait]HideCG()
+
+pixel Ahlai as <playerName> "It all feels like this has happened before..."
+
+HideTextbox(false)

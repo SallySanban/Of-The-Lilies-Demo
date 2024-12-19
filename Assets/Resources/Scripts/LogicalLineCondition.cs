@@ -17,8 +17,8 @@ namespace Dialogue.LogicalLines
             string rawCondition = ExtractCondition(line.rawData.Trim());
             bool conditionResult = EvaluateCondition(rawCondition);
 
-            Conversation currentConversation = DialogueSystem.Instance.conversationManager.conversation;
-            int currentProgress = DialogueSystem.Instance.conversationManager.conversationProgress;
+            Conversation currentConversation = DialogueManager.Instance.conversationManager.conversation;
+            int currentProgress = DialogueManager.Instance.conversationManager.conversationProgress;
 
             EncapsulatedData ifData = RipEncapsulationData(currentConversation, currentProgress, false, parentStartingIndex: currentConversation.fileStartIndex);
             EncapsulatedData elseData = new EncapsulatedData();
@@ -40,8 +40,8 @@ namespace Dialogue.LogicalLines
             if(!selectedData.isNull && selectedData.lines.Count > 0)
             {
                 Conversation newConversation = new Conversation(selectedData.lines, file: currentConversation.file, fileStartIndex: currentConversation.fileStartIndex, fileEndIndex: currentConversation.fileEndIndex);
-                DialogueSystem.Instance.conversationManager.conversation.SetProgress(selectedData.endingIndex);
-                DialogueSystem.Instance.conversationManager.EnqueuePriority(newConversation);
+                DialogueManager.Instance.conversationManager.conversation.SetProgress(selectedData.endingIndex);
+                DialogueManager.Instance.conversationManager.EnqueuePriority(newConversation);
             }
 
             yield return null;

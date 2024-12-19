@@ -13,7 +13,7 @@ namespace Dialogue
 
         public string displayName => (isCastingName ? castName : name);
 
-        public DialogueSystem.ContainerToUse textboxPosition;
+        public DialogueContainer.ContainerType textboxPosition;
         public Vector2 castPosition;
         public List<(int layer, string expression)> castExpressions { get; set; }
 
@@ -22,6 +22,7 @@ namespace Dialogue
         public bool isCastingExpressions => castExpressions.Count > 0;
 
         public bool makeCharacterEnter = false;
+        public bool talkInSpeechBubble = false;
 
         private const string nameCastId = " as ";
         private const string positionCastId = " at ";
@@ -30,6 +31,7 @@ namespace Dialogue
         private const char expressionDelimiter = ',';
         private const char expressionLayerDelimiter = ':';
         private const string enterKeyword = "enter ";
+        private const string pixelKeyword = "pixel ";
 
         private string ProcessKeywords(string rawSpeaker)
         {
@@ -38,6 +40,12 @@ namespace Dialogue
                 rawSpeaker = rawSpeaker.Substring(enterKeyword.Length);
 
                 makeCharacterEnter = true;
+            }
+            else if (rawSpeaker.StartsWith(pixelKeyword))
+            {
+                rawSpeaker = rawSpeaker.Substring(pixelKeyword.Length);
+
+                talkInSpeechBubble = true;
             }
 
             return rawSpeaker;
@@ -54,7 +62,7 @@ namespace Dialogue
 
             castName = "";
             castPosition = Vector2.zero;
-            textboxPosition = DialogueSystem.ContainerToUse.Textbox;
+            textboxPosition = DialogueContainer.ContainerType.Textbox;
             castExpressions = new List<(int layer, string expression)>();
 
             if (matches.Count == 0)
@@ -97,18 +105,7 @@ namespace Dialogue
                         float.TryParse(axis[1], out castPosition.y);
                     }
 
-                    if (castPosition.x == 0)
-                    {
-                        textboxPosition = DialogueSystem.ContainerToUse.LeftTextbox;
-                    }
-                    else if(castPosition.x == 1)
-                    {
-                        textboxPosition = DialogueSystem.ContainerToUse.RightTextbox;
-                    }
-                    else
-                    {
-                        textboxPosition = DialogueSystem.ContainerToUse.Textbox;
-                    }
+                    textboxPosition = DialogueManager.Instance.GetTextboxTypeFromPosition(castPosition.x);
                 }
                 else if (match.Value == expressionCastId)
                 {
