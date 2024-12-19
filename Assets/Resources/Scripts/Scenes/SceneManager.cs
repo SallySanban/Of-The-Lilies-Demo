@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,12 +19,15 @@ public class SceneManager : MonoBehaviour
 
     public const string SPRITES_OBJECTNAME = "Sprites";
 
-    public GameObject currentScene = null;
-    public string currentSceneName;
-    public string currentBackground;
+    [SerializeField] CinemachineVirtualCamera virtualCamera;
+    private CinemachineConfiner confiner;
+
+    [HideInInspector] public GameObject currentScene = null;
+    [HideInInspector] public string currentSceneName;
+    [HideInInspector] public string currentBackground;
     public Player player = null;
 
-    public string MC_NAME = "Ahlai";
+    [HideInInspector] public string MC_NAME = "Ahlai";
 
     private void Awake()
     {
@@ -47,6 +51,8 @@ public class SceneManager : MonoBehaviour
 
         interactableManager = new InteractableManager();
         npcManager = new NPCManager();
+
+        confiner = virtualCamera.GetComponent<CinemachineConfiner>();
     }
 
     private void Update()
@@ -72,6 +78,13 @@ public class SceneManager : MonoBehaviour
         npcManager.PopulateNPCs(currentScene.transform.Find(SPRITES_OBJECTNAME));
         PutPlayerInScene();
         interactableManager.GetInteractablesInScene(currentScene);
+
+        if(player != null)
+        {
+            virtualCamera.OnTargetObjectWarped(virtualCamera.Follow, player.root.transform.position - virtualCamera.transform.position);
+            virtualCamera.Follow = player.root.transform;
+            confiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
+        }
     }
 
     //changes the NPCs, player, and interactables for the SAME background

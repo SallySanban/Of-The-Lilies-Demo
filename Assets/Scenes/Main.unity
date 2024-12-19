@@ -608,6 +608,7 @@ GameObject:
   - component: {fileID: 721752257}
   - component: {fileID: 721752258}
   - component: {fileID: 721752259}
+  - component: {fileID: 721752260}
   m_Layer: 5
   m_Name: VN Scene
   m_TagString: Untagged
@@ -699,6 +700,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &721752260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721752253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c416209daeaa049961473acd087ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &835192702
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pixelContainer: {fileID: 151385053}
   _config: {fileID: 11400000, guid: 71d91a719a99b984dbd0490fb6b960c5, type: 2}
+  virtualCamera: {fileID: 1928837673}
   currentScene: {fileID: 0}
   currentSceneName: 
   currentBackground: 
@@ -1263,7 +1277,7 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
+  m_XDamping: 4.5
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
@@ -1274,7 +1288,7 @@ MonoBehaviour:
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
+  m_SoftZoneWidth: 0.6
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
