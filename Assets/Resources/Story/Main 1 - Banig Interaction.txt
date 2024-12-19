@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "We were a huge family. I really don't know how we all slept on such a small mat."
+
+HideTextbox(false)

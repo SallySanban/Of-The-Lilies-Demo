@@ -43,6 +43,24 @@ public class SceneConfig : ScriptableObject
         return null;
     }
 
+    public BackgroundData[] GetBackgroundsToGoInScene(string sceneName, string backgroundName)
+    {
+        sceneName = sceneName.ToLower();
+        backgroundName = backgroundName.ToLower();
+
+        for (int i = 0; i < scenes.Length; i++)
+        {
+            SceneData data = scenes[i];
+
+            if (string.Equals(sceneName, data.sceneName.ToLower()) && string.Equals(backgroundName, data.currentBackgroundName.ToLower()))
+            {
+                return data.backgroundsToGo;
+            }
+        }
+
+        return null;
+    }
+
     public (bool, Vector2, int) GetPlayerInfo(string sceneName, string backgroundName)
     {
         sceneName = sceneName.ToLower();

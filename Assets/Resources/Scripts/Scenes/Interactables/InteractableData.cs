@@ -6,18 +6,20 @@ using UnityEngine;
 public class InteractableData
 {
     public string interactableName;
-    public bool locked;
+    public Interactable.InteractableType interactableType;
     public bool isInteractable;
-    public string sceneToPlay;
+    public string storyToPlay;
+    public Vector2 moveToInteractPosition;
 
     public InteractableData Copy()
     {
         InteractableData result = new InteractableData();
 
         result.interactableName = interactableName;
-        result.locked = locked;
+        result.interactableType = interactableType;
         result.isInteractable = isInteractable;
-        result.sceneToPlay = sceneToPlay;
+        result.storyToPlay = storyToPlay;
+        result.moveToInteractPosition = moveToInteractPosition;
 
         return result;
     }

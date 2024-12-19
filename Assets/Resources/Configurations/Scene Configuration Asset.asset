@@ -20,44 +20,96 @@ MonoBehaviour:
     playerDirection: 0
     npcsInScene:
     - npcName: Dad
-      position: {x: -184.94, y: -222.32}
+      position: {x: -184.94, y: -189.66}
       animationState: SittingTogether
-      sceneToPlay: 
     - npcName: Mom
-      position: {x: -612.94, y: -260.32}
+      position: {x: -612.94, y: -192.34}
       animationState: Sitting
-      sceneToPlay: 
     interactablesInScene: []
     backgroundsToGo: []
   - sceneName: Scene 2
     currentBackgroundName: Tayabac House 2nd Floor
     showPlayer: 1
-    playerPosition: {x: -4.28, y: -148.01}
+    playerPosition: {x: -0.04, y: -86.29}
     playerDirection: -1
     npcsInScene:
     - npcName: Dad
-      position: {x: -151.94, y: -243.32}
+      position: {x: -151.94, y: -197.66}
       animationState: Sitting
-      sceneToPlay: 
     - npcName: Mom
-      position: {x: 0, y: 0}
+      position: {x: -612.94, y: -192.34}
       animationState: Sitting
-      sceneToPlay: 
     interactablesInScene:
     - interactableName: Chest
-      locked: 0
+      interactableType: 1
       isInteractable: 1
-      sceneToPlay: 
+      storyToPlay: Main 1 - Chest Interaction
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Banig
-      locked: 0
+      interactableType: 1
       isInteractable: 1
-      sceneToPlay: 
+      storyToPlay: Main 1 - Banig Interaction
+      moveToInteractPosition: {x: -5.24, y: -0.8}
     - interactableName: Hearth
-      locked: 0
+      interactableType: 1
       isInteractable: 1
-      sceneToPlay: 
+      storyToPlay: Main 1 - Hearth Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Mom
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - Mom Interaction
+      moveToInteractPosition: {x: -3.9, y: -0.8}
+    - interactableName: Dad
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - Dad Interaction
+      moveToInteractPosition: {x: 0.68, y: -0.8}
+    - interactableName: Ladder
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Ladder
-      sceneToGo: 
-      backgroundToGo: 
+      backgroundToGo: Tayabac House 1st Floor
+      keyToPress: 4
+  - sceneName: Scene 2
+    currentBackgroundName: Tayabac House 1st Floor
+    showPlayer: 1
+    playerPosition: {x: -0.02, y: -227.17}
+    playerDirection: -1
+    npcsInScene: []
+    interactablesInScene:
+    - interactableName: Pound Rice
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 1 - Pound Rice Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Wooden Platform
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 1 - Wooden Platform Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Kitchenware
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 1 - Kitchenware Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Ladder
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Left Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Ladder
+      backgroundToGo: Tayabac House 2nd Floor
       keyToPress: 3
+    - interactableName: Left Door
+      backgroundToGo: Tayabac Village
+      keyToPress: 2

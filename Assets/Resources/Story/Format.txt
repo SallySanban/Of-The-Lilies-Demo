@@ -70,3 +70,6 @@ SwitchScene("Scene Name") //for same background but different NPC configurations
 === Effects ===
 ScreenShake()
 
+=== General ===
+Wait(Time) //waits for Time seconds before continuing
+

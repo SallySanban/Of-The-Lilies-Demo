@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "The nights did get kind of cold..."
+
+HideTextbox(false)

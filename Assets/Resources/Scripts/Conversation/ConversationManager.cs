@@ -42,10 +42,7 @@ namespace Dialogue
 
         private void OnUserNext()
         {
-            //if (SceneManager.Instance.inVNMode && !InputPanel.Instance.isWaitingForUserInput && !ChoicePanel.Instance.isWaitingForUserChoice)
-            //{
-                userNext = true;
-            //}
+            userNext = true;
         }
 
         public Coroutine StartConversation(Conversation conversation)

@@ -57,6 +57,7 @@ public class SceneManager : MonoBehaviour
         }
     }
 
+    //creates, sets up, and shows a background, including its NPCs, player, and interactables
     public void CreateScene(string sceneName, string backgroundFilename)
     {
         GameObject backgroundPrefab = FilePaths.GetPrefabFromPath(FilePaths.backgroundPrefabPath, backgroundFilename);
@@ -73,6 +74,7 @@ public class SceneManager : MonoBehaviour
         interactableManager.GetInteractablesInScene(currentScene);
     }
 
+    //changes the NPCs, player, and interactables for the SAME background
     public void SwitchScene(string sceneName)
     {
         currentSceneName = sceneName;
@@ -82,11 +84,23 @@ public class SceneManager : MonoBehaviour
         interactableManager.GetInteractablesInScene(currentScene);
     }
 
-    public void RemoveCurrentScene()
+    //changes the background
+    public IEnumerator SwitchBackground(string backgroundFilename, Interactable collidingInteractable)
     {
+        GraphicPanel blackout = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
+
+        yield return blackout.Show();
+
         DestroyImmediate(currentScene);
 
-        currentScene = null;
+        CreateScene(currentSceneName, backgroundFilename);
+
+        yield return blackout.Hide();
+
+        if (!string.IsNullOrEmpty(collidingInteractable.storyToPlay))
+        {
+            yield return VNManager.Instance.PlayCollidingInteractableStory(collidingInteractable);
+        }
     }
 
     private void PutPlayerInScene()

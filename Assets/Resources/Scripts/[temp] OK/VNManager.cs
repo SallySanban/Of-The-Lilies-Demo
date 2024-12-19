@@ -10,26 +10,55 @@ public class VNManager : MonoBehaviour
 
     private const string DIALOGUE_FILE = "Test";
 
-    public void Start()
+    private void Awake()
     {
-        LoadFile(FilePaths.storyPath + DIALOGUE_FILE);
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    public void LoadFile(string filePath)
+    public void Start()
     {
+        LoadFile(DIALOGUE_FILE);
+    }
+
+    public Coroutine LoadFile(string filename)
+    {
+        string filePath = FilePaths.storyPath + filename;
+
         List<string> lines = new List<string>();
         TextAsset file = Resources.Load<TextAsset>(filePath);
 
         try
         {
             lines = FileManager.ReadTextAsset(file);
+
+            return DialogueManager.Instance.Say(lines, filePath);
         }
         catch
         {
             Debug.LogError($"Dialogue file at path Resources/{filePath} does not exist");
-            return;
+            return null;
+        }
+    }
+
+    public IEnumerator PlayCollidingInteractableStory(Interactable interactable)
+    {
+        interactable.ShowHideIcon(false);
+        InteractableManager.Instance.SetInteractablesAfterInteraction();
+
+        if(interactable.moveToInteractPosition != Vector2.zero)
+        {
+            yield return Player.Instance.MoveToInteract(interactable.moveToInteractPosition);
         }
 
-        DialogueManager.Instance.Say(lines, filePath);
+        yield return LoadFile(interactable.storyToPlay);
+
+        InteractableManager.Instance.SetInteractablesAfterInteraction(true);
     }
 }

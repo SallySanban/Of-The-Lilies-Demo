@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1194018367911045576}
   - component: {fileID: 4148996939568464602}
+  - component: {fileID: 7072289145506214943}
   m_Layer: 5
   m_Name: Dad
   m_TagString: Untagged
@@ -182,7 +183,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.340897, y: -60.005157}
+  m_Offset: {x: -1.4159813, y: -60.005157}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -193,8 +194,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 165.06146, y: 276.59244}
+  m_Size: {x: 25.222176, y: 276.59244}
   m_EdgeRadius: 0
+--- !u!114 &7072289145506214943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729656738121326156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8174999a3b78e48ab2ae5933fd35b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 228736152401390551}
 --- !u!1 &8156819105681035981
 GameObject:
   m_ObjectHideFlags: 0

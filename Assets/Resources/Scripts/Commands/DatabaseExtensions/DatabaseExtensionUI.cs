@@ -48,8 +48,6 @@ namespace Commands
             {
                 yield return null;
             }
-
-            UIManager.Instance.currentCG = null;
         }
 
         private static IEnumerator SwitchCG(string data)

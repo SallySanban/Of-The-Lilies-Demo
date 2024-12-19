@@ -25,8 +25,6 @@ namespace Dialogue
 
         public DialogueContainer currentTextbox = null;
 
-        //public bool isRunningConversation => conversationManager.isRunning;
-
         private void Awake()
         {
             if (Instance == null)
@@ -107,8 +105,6 @@ namespace Dialogue
             }
 
             conversationManager.textArchitect = new TextArchitect(currentTextbox.dialogue);
-
-            yield return null;
         }
 
         public IEnumerator HideTextbox(bool immediate)

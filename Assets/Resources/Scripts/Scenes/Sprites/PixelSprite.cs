@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PixelSprite
 {
+    //uses local position
     protected void SetPosition(GameObject npc, Vector2 targetPosition)
     {
         Transform npcTransform = npc.transform;

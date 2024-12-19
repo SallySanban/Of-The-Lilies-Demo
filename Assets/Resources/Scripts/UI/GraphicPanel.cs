@@ -95,6 +95,7 @@ public class GraphicPanel
                 if (self.alpha == 0f)
                 {
                     Object.Destroy(self.gameObject);
+                    UIManager.Instance.currentCG = null;
                     break;
                 }
 

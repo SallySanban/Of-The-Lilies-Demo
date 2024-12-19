@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "I remember our family would come together to eat here."
+
+pixel Ahlai as <playerName> "What I'd give to eat with them again as a family..."
+
+HideTextbox(false)

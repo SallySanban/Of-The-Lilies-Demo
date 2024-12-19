@@ -4,13 +4,17 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
 using Dialogue;
+using UnityEngine.SceneManagement;
 
 public class PlayerInputManager : MonoBehaviour
 {
     public static PlayerInputManager Instance { get; private set; }
 
+    public SceneManager sceneManager => SceneManager.Instance;
+
     private PlayerInput input;
     private List<(InputAction action, Action<InputAction.CallbackContext> command)> actions = new List<(InputAction action, Action<InputAction.CallbackContext> command)>();
+    private bool isRunningConversation => DialogueManager.Instance.conversationManager.isRunning;
 
     private void Awake()
     {
@@ -34,6 +38,7 @@ public class PlayerInputManager : MonoBehaviour
         actions.Add((input.actions["MoveArrow"], MoveArrow));
         actions.Add((input.actions["Move"], MovePlayer));
         actions.Add((input.actions["Interact"], Interact));
+        actions.Add((input.actions["SwitchBackground"], SwitchBackground));
     }
 
     private void OnEnable()
@@ -80,12 +85,13 @@ public class PlayerInputManager : MonoBehaviour
             {
                 choiceContainer.MoveSelection(-1);
             }
-            
         }
     }
 
     public void NextLine(InputAction.CallbackContext context)
     {
+        if (!isRunningConversation) return;
+
         ChoiceContainer choiceContainer = DialogueManager.Instance.currentTextbox?.currentChoiceContainer;
 
         if (choiceContainer != null && choiceContainer.isWaitingForUserChoice)
@@ -99,6 +105,8 @@ public class PlayerInputManager : MonoBehaviour
 
     public void MovePlayer(InputAction.CallbackContext context)
     {
+        if (isRunningConversation) return;
+
         if (Player.Instance == null)
         {
             return;
@@ -114,7 +122,64 @@ public class PlayerInputManager : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
+        if (InteractableManager.Instance.interactableCollidingWithPlayer == null) return;
 
+        if (InteractableManager.Instance.interactableCollidingWithPlayer.interactableType == Interactable.InteractableType.Background) return;
+
+        Interactable collidingInteractable = InteractableManager.Instance.interactableCollidingWithPlayer;
+
+        if (collidingInteractable.isInteractable)
+        {
+            StartCoroutine(VNManager.Instance.PlayCollidingInteractableStory(collidingInteractable));
+        }
+    }
+
+    public void SwitchBackground(InputAction.CallbackContext context)
+    {
+        if (InteractableManager.Instance.interactableCollidingWithPlayer == null) return;
+
+        if (InteractableManager.Instance.interactableCollidingWithPlayer.interactableType != Interactable.InteractableType.Background) return;
+
+        Interactable collidingInteractable = InteractableManager.Instance.interactableCollidingWithPlayer;
+
+        if (collidingInteractable.isInteractable)
+        {
+            Vector2 direction = context.ReadValue<Vector2>();
+            BackgroundData.KeyToPress keyToPress;
+
+            switch ((direction.x, direction.y))
+            {
+                case (0f, 1f):
+                    keyToPress = BackgroundData.KeyToPress.Up;
+                    break;
+                case (0f, -1f):
+                    keyToPress = BackgroundData.KeyToPress.Down;
+                    break;
+                case (-1f, 0f):
+                    keyToPress = BackgroundData.KeyToPress.Left;
+                    break;
+                case (1f, 0f):
+                    keyToPress = BackgroundData.KeyToPress.Right;
+                    break;
+                default:
+                    keyToPress = BackgroundData.KeyToPress.None;
+                    break;
+            }
+
+            BackgroundData[] backgroundsToGoInScene = sceneManager.config.GetBackgroundsToGoInScene(sceneManager.currentSceneName, sceneManager.currentBackground);
+
+            foreach (BackgroundData backgroundData in backgroundsToGoInScene)
+            {
+                if (backgroundData.interactableName.Equals(collidingInteractable.interactableName))
+                {
+                    if (keyToPress == backgroundData.keyToPress)
+                    {
+                        StartCoroutine(sceneManager.SwitchBackground(backgroundData.backgroundToGo, collidingInteractable));
+                        break;
+                    }
+                }
+            }
+        }
     }
 }
 

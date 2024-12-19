@@ -59,12 +59,12 @@ public class DialogueContainer
     {
         if (isContainerHiding) return hidingContainerCoroutine;
 
-        hidingContainerCoroutine = dialogueManager.StartCoroutine(ShowingOrHiding());
+        hidingContainerCoroutine = dialogueManager.StartCoroutine(Hiding());
 
         return hidingContainerCoroutine;
     }
 
-    public virtual IEnumerator ShowingOrHiding()
+    public virtual IEnumerator Hiding()
     {
         CanvasGroup self = rootCanvasGroup;
 

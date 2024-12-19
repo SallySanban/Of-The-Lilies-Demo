@@ -31,7 +31,7 @@ namespace Characters
             GetLayers();
 
             //FOR DEBUGGING PURPOSES
-            root.AddComponent<PositionDebugger>();
+            //root.AddComponent<PositionDebugger>();
         }
 
         private void GetLayers()

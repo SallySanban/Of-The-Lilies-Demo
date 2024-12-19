@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Mom usually cooked for the family..."
+
+HideTextbox(false)

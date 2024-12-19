@@ -7,8 +7,6 @@ public class NPC : PixelSprite
 {
     public GameObject root = null;
 
-    private SceneManager sceneManager => SceneManager.Instance;
-
     public string name;
     public Vector2 lastPosition = Vector2.zero;
     public string lastAnimationState;
@@ -20,13 +18,14 @@ public class NPC : PixelSprite
         root.transform.SetParent(parent, false);
 
         name = npcData.npcName;
+        root.name = name;
         lastPosition = npcData.position;
         lastAnimationState = npcData.animationState;
 
         SetupNPC(lastPosition, lastAnimationState);
 
         //FOR DEBUGGING PURPOSES
-        //root.AddComponent<PositionDebugger>();
+        root.AddComponent<PositionDebugger>();
     }
 
     public void SetupNPC(Vector2 position, string animationState)

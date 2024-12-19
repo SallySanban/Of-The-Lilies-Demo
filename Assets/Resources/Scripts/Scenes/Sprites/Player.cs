@@ -28,9 +28,10 @@ public class Player : PixelSprite
         animator.SetBool("Flipped", direction < 0);
 
         //FOR DEBUGGING PURPOSES
-        //root.AddComponent<PositionDebugger>();
+        root.AddComponent<PositionDebugger>();
     }
 
+    //uses world position
     public void Move()
     {
         if (move.x != 0)
@@ -45,5 +46,32 @@ public class Player : PixelSprite
         {
             //animator.SetBool("IsWalking", false);
         }
+    }
+
+    //uses world position
+    public IEnumerator MoveToInteract(Vector2 position)
+    {
+        Debug.Log("POSITION: " + position);
+
+        Vector2 targetPos = position;
+        Vector2 currentPos = root.transform.position;
+        bool movedLeft = false;
+        
+        while (Vector2.Distance(currentPos, targetPos) > 0.1f)
+        {
+            currentPos = root.transform.position;
+            Vector2 direction = (targetPos - currentPos).normalized;
+            
+            movedLeft = direction.x < 0;
+            
+            //animator.SetBool("IsWalking", true);
+            animator.SetBool("Flipped", movedLeft);
+            
+            root.transform.position += new Vector3(direction.x, 0, 0) * SPEED * Time.deltaTime;
+            yield return null;
+        }
+        
+        //animator.SetBool("IsWalking", false);
+        animator.SetBool("Flipped", !movedLeft);
     }
 }

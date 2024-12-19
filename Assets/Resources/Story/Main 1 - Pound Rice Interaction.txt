@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Pounding rice was such a pain... but I miss it now."
+
+HideTextbox(false)

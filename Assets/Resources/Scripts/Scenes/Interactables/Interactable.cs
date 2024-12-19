@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Dialogue;
 
 public class Interactable : MonoBehaviour
 {
-    private string interactableName;
-    private bool locked;
-    private bool isInteractable;
-    private string sceneToPlay;
+    [HideInInspector] public string interactableName;
+    [HideInInspector] public InteractableType interactableType;
+    [HideInInspector] public bool isInteractable;
+    [HideInInspector] public string storyToPlay;
+    [HideInInspector] public Vector2 moveToInteractPosition;
 
     [SerializeField] private GameObject icon;
 
@@ -16,21 +18,21 @@ public class Interactable : MonoBehaviour
         icon.SetActive(false);
     }
 
-    public void SetupInteractable(string name, bool locked, bool isInteractable, string sceneToPlay)
+    public void SetupInteractable(string name, InteractableType type, bool isInteractable, string storyToPlay, Vector2 moveToInteractPosition)
     {
         interactableName = name;
-        this.locked = locked;
+        interactableType = type;
         this.isInteractable = isInteractable;
-        this.sceneToPlay = sceneToPlay;
+        this.storyToPlay = storyToPlay;
+        this.moveToInteractPosition = moveToInteractPosition;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(isInteractable);
-
-        if (collision.CompareTag("Player") && isInteractable)
+        if (collision.CompareTag("Player") && isInteractable && !DialogueManager.Instance.conversationManager.isRunning)
         {
-            icon.SetActive(true);
+            ShowHideIcon(true);
+            InteractableManager.Instance.interactableCollidingWithPlayer = this;
         }
     }
 
@@ -38,7 +40,27 @@ public class Interactable : MonoBehaviour
     {
         if (collision.CompareTag("Player") && isInteractable)
         {
+            ShowHideIcon(false);
+            InteractableManager.Instance.interactableCollidingWithPlayer = null;
+        }
+    }
+
+    public void ShowHideIcon(bool show)
+    {
+        if (show)
+        {
+            icon.SetActive(true);
+        }
+        else
+        {
             icon.SetActive(false);
         }
+    }
+
+    public enum InteractableType
+    {
+        NPC,
+        Interactable,
+        Background
     }
 }

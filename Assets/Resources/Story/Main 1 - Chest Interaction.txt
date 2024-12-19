@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Mom always told Laya and Alonay to keep their toys in here when they were done playing."
+
+HideTextbox(false)

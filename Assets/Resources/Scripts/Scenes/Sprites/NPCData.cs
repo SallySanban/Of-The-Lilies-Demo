@@ -8,7 +8,6 @@ public class NPCData
     public string npcName;
     public Vector2 position;
     public string animationState;
-    public string sceneToPlay;
 
     public NPCData Copy()
     {
@@ -17,7 +16,6 @@ public class NPCData
         result.npcName = npcName;
         result.position = position;
         result.animationState = animationState;
-        result.sceneToPlay = sceneToPlay;
 
         return result;
     }

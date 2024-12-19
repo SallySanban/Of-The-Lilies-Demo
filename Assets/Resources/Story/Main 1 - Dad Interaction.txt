@@ -1,0 +1,20 @@
+ShowCharacterLeft(Dad -b Left_Default_Body -e Left_Apologetic)
+[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Default)
+
+Dad at 0 "I know I've always been hard on you, <playerName>."
+
+ChangeBodyEmotion(Dad -e Left_Stern)
+
+Dad at 0 "I only want what's best for you and our people."
+
+Dad at 0 "I'm sure you know it's a huge responsibility. One that you've been training for your entire childhood."
+
+Dad at 0 "But now that we'll be doing the ritual later, Tayabac can rest easy on your shoulders."
+
+ChangeBodyEmotion(Dad -e Left_Smile)
+
+Dad at 0 "I have no doubt that you'll be able to lead well. Happy birthday, <playerName>."
+
+HideTextbox(true)
+HideCharacter(Dad)
+HideCharacter(Ahlai)

@@ -26,6 +26,7 @@ public class SpeechBubble : DialogueContainer
         choices = textboxImage.transform.Find(CHOICES_OBJECTNAME).transform;
         choiceTemplate = choices.Find(CHOICETEMPLATE_OBJECTNAME).gameObject;
 
+        textboxType = ContainerType.SpeechBubble;
         name.text = speakerName.ToUpper();
 
         dialogue.gameObject.SetActive(true);
@@ -38,10 +39,8 @@ public class SpeechBubble : DialogueContainer
             ShowChoices(listOfChoices);
         }
 
+        rootCanvasGroup.alpha = 1f;
         root.SetActive(true);
-
-        //FOR DEBUGGING PURPOSES
-        root.AddComponent<PositionDebugger>();
     }
 
     protected override void ShowChoices(string[] listOfChoices)
@@ -58,7 +57,7 @@ public class SpeechBubble : DialogueContainer
         textboxImage.GetComponent<VerticalLayoutGroup>().spacing = dialogueSpacing;
     }
 
-    public override IEnumerator ShowingOrHiding()
+    public override IEnumerator Hiding()
     {
         CanvasGroup self = rootCanvasGroup;
 
