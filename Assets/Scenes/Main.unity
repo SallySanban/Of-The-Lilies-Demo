@@ -168,10 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textboxPanel: {fileID: 1534821054}
-  mainTextboxPrefab: {fileID: 8155873105002869874, guid: a317b5f2c9da8184e9382e0f3e6a1da8, type: 3}
-  leftTextboxPrefab: {fileID: 5545101937354628542, guid: 599150446756c0749922b4cb3095117d, type: 3}
-  rightTextboxPrefab: {fileID: 3992660463367673355, guid: 92f9ba07d905de44bbbe2afb1da32d70, type: 3}
-  speechBubblePrefab: {fileID: 2011938717851164220, guid: 5a719e1d4ba337740a33a899ff469d56, type: 3}
+  leftTextboxPrefab: {fileID: 687442216985260398, guid: 599150446756c0749922b4cb3095117d, type: 3}
+  rightTextboxPrefab: {fileID: 4020100256512724886, guid: 92f9ba07d905de44bbbe2afb1da32d70, type: 3}
 --- !u!1 &151385052
 GameObject:
   m_ObjectHideFlags: 0

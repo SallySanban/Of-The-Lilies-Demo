@@ -62,7 +62,7 @@ namespace Dialogue
 
             castName = "";
             castPosition = Vector2.zero;
-            textboxPosition = DialogueContainer.ContainerType.Textbox;
+            textboxPosition = DialogueContainer.ContainerType.MainTextbox;
             castExpressions = new List<(int layer, string expression)>();
 
             if (matches.Count == 0)

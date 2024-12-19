@@ -27,10 +27,5 @@ public class InteractableManager
                 interactable.SetupInteractable(interactableData.interactableName, interactableData.locked, interactableData.isInteractable, interactableData.sceneToPlay);
             }
         }
-
-        foreach(Interactable inter in interactablesInScreen)
-        {
-            Debug.Log(inter.gameObject.name);
-        }
     }
 }

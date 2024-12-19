@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,6 +29,9 @@ namespace Characters
             portraitAssetsDirectory = FilePaths.FormatPath(FilePaths.portraitAssetsPath, rootAssetsFolder);
 
             GetLayers();
+
+            //FOR DEBUGGING PURPOSES
+            root.AddComponent<PositionDebugger>();
         }
 
         private void GetLayers()

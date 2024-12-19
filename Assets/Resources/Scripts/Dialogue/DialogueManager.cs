@@ -10,7 +10,6 @@ namespace Dialogue
         public static DialogueManager Instance { get; private set; }
 
         [SerializeField] private RectTransform textboxPanel;
-        [SerializeField] private GameObject mainTextboxPrefab;
         [SerializeField] private GameObject leftTextboxPrefab;
         [SerializeField] private GameObject rightTextboxPrefab;
 
@@ -18,8 +17,6 @@ namespace Dialogue
 
         public ConversationManager conversationManager { get; private set; }
         public CommandManager commandManager { get; private set; }
-
-        private const float ANIMATION_DECREASE_TIME = 0.2f; //time that the currentTextbox animation is decreased by before the text architect starts
 
         public delegate void DialogueManagerEvent();
         public event DialogueManagerEvent onUserNext;
@@ -68,55 +65,50 @@ namespace Dialogue
 
         public IEnumerator ShowTextbox(DialogueContainer.ContainerType textboxTypeToShow, string speakerName = "", GameObject speakerSprite = null, string[] listOfChoices = null)
         {
-            if(currentTextbox != null)
+            if (currentTextbox != null)
             {
                 if (currentTextbox.textboxType == textboxTypeToShow)
                 {
-                    if(currentTextbox.name.text.ToLower().Equals(speakerName.ToLower()))
+                    if(currentTextbox.textboxType != DialogueContainer.ContainerType.SpeechBubble)
                     {
+                        //we don't hide the textbox if they're exactly the same textbox, only change the name
+                        if (!speakerName.Equals(currentTextbox.name))
+                        {
+                            currentTextbox.name.text = speakerName.ToUpper();
+                        }
+
                         yield break;
                     }
-                }
-
-                switch (currentTextbox.textboxType)
-                {
-                    case DialogueContainer.ContainerType.SpeechBubble:
+                    else
+                    {
+                        //we want to show the next textbox (which is a speech bubble), and the previous is also speech bubble,
+                        //so we hide it to make way for new speech bubble
                         yield return HideTextbox(true);
-
-                        break;
-                    case DialogueContainer.ContainerType.LeftTextbox:
-                    case DialogueContainer.ContainerType.RightTextbox:
-                        StartCoroutine(AnimatePreviousTextboxes());
-                        break;
+                    }
+                }
+                else
+                {
+                    //we want to show the next textbox, but the next textbox is not the same textbox, so we hide the previous one
+                    yield return HideTextbox(true); 
                 }
             }
 
-            GameObject dialogueContainer = GetDialogueContainerPrefab(textboxTypeToShow);
-            
             switch (textboxTypeToShow)
             {
-                case DialogueContainer.ContainerType.Textbox:
-                    currentTextbox = new Textbox(dialogueContainer, textboxPanel, textboxTypeToShow, speakerName, listOfChoices);
-                    break;
+                case DialogueContainer.ContainerType.MainTextbox:
                 case DialogueContainer.ContainerType.LeftTextbox:
                 case DialogueContainer.ContainerType.RightTextbox:
+                    GameObject dialogueContainer = GetTextboxContainerPrefab(textboxTypeToShow);
                     currentTextbox = new Textbox(dialogueContainer, textboxPanel, textboxTypeToShow, speakerName, listOfChoices);
-
-                    Animator currentTextboxAnimator = currentTextbox.root.GetComponent<Animator>();
-
-                    float animationTime = currentTextboxAnimator.GetCurrentAnimatorStateInfo(0).length;
-                    yield return new WaitForSeconds(animationTime - ANIMATION_DECREASE_TIME);
-
-                    textboxesOnScreen.Add(currentTextbox);
-
                     break;
                 case DialogueContainer.ContainerType.SpeechBubble:
                     currentTextbox = new SpeechBubble(speakerSprite, speakerName, listOfChoices);
-
                     break;
             }
 
             conversationManager.textArchitect = new TextArchitect(currentTextbox.dialogue);
+
+            yield return null;
         }
 
         public IEnumerator HideTextbox(bool immediate)
@@ -125,7 +117,9 @@ namespace Dialogue
 
             switch (currentTextbox.textboxType)
             {
-                case DialogueContainer.ContainerType.Textbox:
+                case DialogueContainer.ContainerType.MainTextbox:
+                case DialogueContainer.ContainerType.LeftTextbox:
+                case DialogueContainer.ContainerType.RightTextbox:
                     if (immediate)
                     {
                         DestroyImmediate(currentTextbox.root);
@@ -145,19 +139,10 @@ namespace Dialogue
                     }
                     else
                     {
-                        currentTextbox.Hide();
+                        yield return currentTextbox.Hide();
                     }
 
                     currentTextbox = null;
-
-                    break;
-                case DialogueContainer.ContainerType.LeftTextbox:
-                case DialogueContainer.ContainerType.RightTextbox:
-                    foreach(DialogueContainer dialogueContainer in textboxesOnScreen)
-                    {
-                        DestroyImmediate(dialogueContainer.root);
-                        currentTextbox = null;
-                    }
 
                     break;
                 default:
@@ -165,45 +150,15 @@ namespace Dialogue
             }
         }
 
-        private IEnumerator AnimatePreviousTextboxes()
-        {
-            if (textboxesOnScreen.Count == 1)
-            {
-                Animator moveUpTextboxAnimator = textboxesOnScreen[0].root.GetComponent<Animator>();
-
-                moveUpTextboxAnimator.SetTrigger("NextLine");
-
-                float animationTime = moveUpTextboxAnimator.GetCurrentAnimatorStateInfo(0).length;
-                yield return new WaitForSeconds(animationTime);
-            }
-            else if (textboxesOnScreen.Count == 2)
-            {
-                Animator disappearingTextboxAnimator = textboxesOnScreen[0].root.GetComponent<Animator>();
-                Animator moveUpTextboxAnimator = textboxesOnScreen[1].root.GetComponent<Animator>();
-
-                moveUpTextboxAnimator.SetTrigger("NextLine");
-                disappearingTextboxAnimator.SetTrigger("Disappear");
-
-                float animationTime = disappearingTextboxAnimator.GetCurrentAnimatorStateInfo(0).length;
-                yield return new WaitForSeconds(animationTime);
-
-                DestroyImmediate(textboxesOnScreen[0].root);
-                textboxesOnScreen.RemoveAt(0);
-            }
-        }
-
-        private GameObject GetDialogueContainerPrefab(DialogueContainer.ContainerType textboxUsed)
+        private GameObject GetTextboxContainerPrefab(DialogueContainer.ContainerType textboxUsed)
         {
             switch (textboxUsed)
             {
-                case DialogueContainer.ContainerType.Textbox:
-                    return mainTextboxPrefab;
-                case DialogueContainer.ContainerType.RightTextbox:
-                    return rightTextboxPrefab;
+                case DialogueContainer.ContainerType.MainTextbox:
                 case DialogueContainer.ContainerType.LeftTextbox:
                     return leftTextboxPrefab;
-                case DialogueContainer.ContainerType.SpeechBubble:
-                    return null;
+                case DialogueContainer.ContainerType.RightTextbox:
+                    return rightTextboxPrefab;
                 default:
                     return null;
             }
@@ -218,7 +173,7 @@ namespace Dialogue
                 case 1:
                     return DialogueContainer.ContainerType.RightTextbox;
                 default:
-                    return DialogueContainer.ContainerType.Textbox;
+                    return DialogueContainer.ContainerType.MainTextbox;
             }
         }
     }

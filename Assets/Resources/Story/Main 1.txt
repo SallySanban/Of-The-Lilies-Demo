@@ -59,8 +59,8 @@ Alonay "Now hurry and get up! We have to play before the ritual ceremony!"
 
 Dad "Not so fast, Alonay."
 
-Blackout()
 HideTextbox(true)
+[wait]Blackout()
 [wait]ShowScene("Scene 1" "Tayabac House 2nd Floor")
 [wait]HideCG()
 ShowCharacterLeft(Alonay -b Left_Pout_Body -e Left_Pout)

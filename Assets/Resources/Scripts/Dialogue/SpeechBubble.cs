@@ -21,9 +21,9 @@ public class SpeechBubble : DialogueContainer
         rootCanvasGroup = root.GetComponent<CanvasGroup>();
 
         textboxImage = root.transform.Find(TEXTBOX_OBJECTNAME).gameObject;
-        name = root.transform.Find(TEXTBOX_OBJECTNAME).Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
-        dialogue = root.transform.Find(TEXTBOX_OBJECTNAME).Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
-        choices = root.transform.Find(TEXTBOX_OBJECTNAME).Find(CHOICES_OBJECTNAME).transform;
+        name = textboxImage.transform.Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+        dialogue = textboxImage.transform.Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+        choices = textboxImage.transform.Find(CHOICES_OBJECTNAME).transform;
         choiceTemplate = choices.Find(CHOICETEMPLATE_OBJECTNAME).gameObject;
 
         name.text = speakerName.ToUpper();

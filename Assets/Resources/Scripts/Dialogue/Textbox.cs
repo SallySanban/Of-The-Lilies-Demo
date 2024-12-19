@@ -9,16 +9,29 @@ public class Textbox : DialogueContainer
     private const int dialoguePadding = 45;
     private const int choicePadding = 20;
 
+    private Vector2 mainPosition = new Vector2(16.82f, -464.20f);
+
     public Textbox(GameObject prefab, Transform parent, ContainerType textboxType, string speakerName = "", string[] listOfChoices = null)
     {
         root = Object.Instantiate(prefab, parent);
 
+        switch (textboxType)
+        {
+            case ContainerType.MainTextbox:
+                root.transform.localPosition = mainPosition;
+                break;
+            case ContainerType.LeftTextbox:
+                break;
+            case ContainerType.RightTextbox:
+                break;
+        }
+
         rootCanvasGroup = root.GetComponent<CanvasGroup>();
 
         textboxImage = root.transform.Find(TEXTBOX_OBJECTNAME).gameObject;
-        name = root.transform.Find(NAMEPLATE_OBJECTNAME).Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
-        dialogue = root.transform.Find(TEXTBOX_OBJECTNAME).Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
-        choices = root.transform.Find(TEXTBOX_OBJECTNAME).Find(CHOICES_OBJECTNAME).transform;
+        name = textboxImage.transform.Find(NAMEPLATE_OBJECTNAME).Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+        dialogue = textboxImage.transform.Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+        choices = textboxImage.transform.Find(CHOICES_OBJECTNAME).transform;
         choiceTemplate = choices.Find(CHOICETEMPLATE_OBJECTNAME).gameObject;
 
         this.textboxType = textboxType;
@@ -36,6 +49,9 @@ public class Textbox : DialogueContainer
         {
             ShowChoices(listOfChoices);
         }
+
+        //FOR DEBUGGING PURPOSES
+        root.AddComponent<PositionDebugger>();
     }
 
     protected override void ShowChoices(string[] listOfChoices)

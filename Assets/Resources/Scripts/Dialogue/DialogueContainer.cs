@@ -55,14 +55,6 @@ public class DialogueContainer
         choices.gameObject.SetActive(false);
     }
 
-    public enum ContainerType
-    {
-        Textbox,
-        LeftTextbox,
-        RightTextbox,
-        SpeechBubble
-    }
-
     public Coroutine Hide()
     {
         if (isContainerHiding) return hidingContainerCoroutine;
@@ -90,5 +82,13 @@ public class DialogueContainer
         }
 
         hidingContainerCoroutine = null;
+    }
+
+    public enum ContainerType
+    {
+        MainTextbox,
+        LeftTextbox,
+        RightTextbox,
+        SpeechBubble
     }
 }
