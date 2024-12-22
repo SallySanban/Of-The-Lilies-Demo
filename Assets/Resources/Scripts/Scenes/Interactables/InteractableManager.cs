@@ -47,6 +47,11 @@ public class InteractableManager
                 }
             }
 
+            if(NPCManager.Instance.GetNPC(interactable.gameObject.name) != null)
+            {
+                existsInData = true;
+            }
+
             if (!existsInData)
             {
                 Object.Destroy(interactable.gameObject);

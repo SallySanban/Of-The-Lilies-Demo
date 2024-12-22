@@ -10,6 +10,11 @@ public class NPCManager
 
     private List<NPC> npcsInScreen = new List<NPC>();
 
+    public NPCManager()
+    {
+        Instance = this;
+    }
+
     public void PopulateNPCs(Transform parent)
     {
         npcsInScreen.Clear();
@@ -29,50 +34,6 @@ public class NPCManager
         }
     }
 
-    public NPCManager()
-    {
-        Instance = this;
-    }
-
-    public void SwitchNPCs()
-    {
-        NPCData[] npcDataInScene = sceneManager.config.GetNPCsInScene(sceneManager.currentSceneName, sceneManager.currentBackground);
-
-        foreach(NPC npc in npcsInScreen)
-        {
-            foreach(NPCData npcData in npcDataInScene)
-            {
-                if(npc.name.Equals(npcData.npcName))
-                {
-                    bool positionChanged = (npc.lastPosition != npcData.position) && (npcData.position != Vector2.zero);
-                    bool animationChanged = (npc.lastAnimationState != npcData.animationState) && (!string.IsNullOrEmpty(npcData.animationState));
-
-                    if (positionChanged)
-                    {
-                        npc.lastPosition = npcData.position;
-                    }
-
-                    if(animationChanged) 
-                    {
-                        npc.lastAnimationState = npcData.animationState;
-                    }
-
-                    npc.SetupNPC(npc.lastPosition, npc.lastAnimationState);
-                }
-            }
-        }
-    }
-
-    public void RemoveAllNPCs()
-    {
-        foreach (NPC npc in npcsInScreen)
-        {
-            Object.Destroy(npc.root);
-        }
-
-        npcsInScreen.Clear();
-    }
-
     public void RemoveNPC(string name)
     {
         foreach (NPC npc in npcsInScreen)
@@ -82,7 +43,6 @@ public class NPCManager
                 Object.Destroy(npc.root);
                 npcsInScreen.Remove(npc);
                 sceneManager.config.RemoveNPCFromScene(sceneManager.currentSceneName, sceneManager.currentBackground, name);
-
                 break;
             }
         }

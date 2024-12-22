@@ -9,8 +9,7 @@ namespace Commands
         new public static void Extend(CommandDatabase database)
         {
             database.AddCommand("ShowScene", new Action<string[]>(ShowScene));
-            database.AddCommand("SwitchScene", new Action<string>(SwitchScene));
-            database.AddCommand("SwitchBackground", new Func<string[], IEnumerator>(SwitchBackground));
+            database.AddCommand("SwitchScene", new Func<string[], IEnumerator>(SwitchScene));
             database.AddCommand("ToggleInteractable", new Action<string[]>(ToggleInteractable));
             database.AddCommand("ChangeAnimationState", new Action<string[]>(ChangeAnimationState));
             database.AddCommand("RemoveFromScene", new Action<string[]>(RemoveFromScene));
@@ -24,12 +23,7 @@ namespace Commands
             SceneManager.Instance.CreateScene(sceneName, backgroundName);
         }
 
-        private static void SwitchScene(string data)
-        {
-            SceneManager.Instance.SwitchScene(data);
-        }
-
-        private static IEnumerator SwitchBackground(string[] data)
+        private static IEnumerator SwitchScene(string[] data)
         {
             string sceneName = data[0];
             string backgroundName = data[1];
@@ -41,6 +35,8 @@ namespace Commands
             SceneManager.Instance.RemoveScene();
 
             SceneManager.Instance.CreateScene(sceneName, backgroundName);
+
+            yield return new WaitForSeconds(SceneManager.Instance.TRANSITION_WAIT_TIME);
 
             yield return blackout.Hide();
         }
@@ -91,13 +87,16 @@ namespace Commands
 
             Interactable interactable = InteractableManager.Instance.GetInteractable(name);
 
-            if (interactable == null)
-            {
-                NPCManager.Instance.RemoveNPC(name);
-            }
-            else
+            if (interactable != null)
             {
                 InteractableManager.Instance.RemoveInteractable(name);
+            }
+
+            NPC npc = NPCManager.Instance.GetNPC(name);
+
+            if (npc != null)
+            {
+                NPCManager.Instance.RemoveNPC(name);
             }
         }
     }

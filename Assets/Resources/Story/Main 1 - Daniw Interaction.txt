@@ -1,4 +1,4 @@
-[wait]SwitchBackground("Scene 2" "Tayabac Village")
+[wait]SwitchScene("Scene 2" "Tayabac Village")
 
 pixel MaleNPC3 as Uncle Daniw "<playerName>! Congratulations on your coming-of-age!"
 

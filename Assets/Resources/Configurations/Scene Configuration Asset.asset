@@ -129,7 +129,7 @@ MonoBehaviour:
       position: {x: -3860.97, y: -173.84}
       animationState: Idle
     - npcName: MaleNPC2
-      position: {x: 4813.24, y: -206.88}
+      position: {x: 4813.24, y: -188.68}
       animationState: Idle
     - npcName: MaleNPC3
       position: {x: -2014.94, y: -192.32}
@@ -169,7 +169,7 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 1 - Cliffside Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -54.81, y: -2.11}
     - interactableName: MaleNPC1
       interactableType: 0
       isInteractable: 1

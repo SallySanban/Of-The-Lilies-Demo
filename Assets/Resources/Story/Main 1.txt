@@ -131,9 +131,7 @@ Dad at 0 "<b>And meet me at the top of the cliff when you're finished.</b> We'll
 HideTextbox(true)
 HideCharacter(Dad)
 HideCharacter(Ahlai)
-[wait]Blackout()
-[wait]SwitchScene("Scene 2")
-[wait]HideCG()
+[wait]SwitchScene("Scene 2" "Tayabac House 2nd Floor")
 
 pixel Ahlai as <playerName> "It all feels like this has happened before..."
 

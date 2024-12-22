@@ -757,12 +757,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pixelContainer: {fileID: 151385053}
+  _vnContainerFollowCamera: {fileID: 721752260}
   _config: {fileID: 11400000, guid: 71d91a719a99b984dbd0490fb6b960c5, type: 2}
   virtualCamera: {fileID: 1928837673}
   currentScene: {fileID: 0}
   currentSceneName: 
   currentBackground: 
   MC_NAME: Ahlai
+  TRANSITION_WAIT_TIME: 0.5
 --- !u!1 &898236848
 GameObject:
   m_ObjectHideFlags: 0

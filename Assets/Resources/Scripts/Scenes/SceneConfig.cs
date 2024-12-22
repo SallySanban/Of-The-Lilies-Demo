@@ -32,7 +32,7 @@ public class SceneConfig : ScriptableObject
         {
             return;
         }
-        
+
         _runtimeScenes = scenes.Select(scene => scene.Copy()).ToArray();
         initialized = true;
     }
@@ -49,9 +49,11 @@ public class SceneConfig : ScriptableObject
             SceneData data = _runtimeScenes[i];
             if (string.Equals(sceneName, data.sceneName.ToLower()) && string.Equals(backgroundName, data.currentBackgroundName.ToLower()))
             {
-                return data.npcsInScene?.Select(npc => npc.Copy()).ToArray();
+                var npcs = data.npcsInScene?.Select(npc => npc.Copy()).ToArray();
+                return npcs;
             }
         }
+
         return null;
     }
 

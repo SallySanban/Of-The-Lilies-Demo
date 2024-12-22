@@ -8,5 +8,5 @@ else
 {
 	pixel Ahlai as <playerName> "Here goes nothing."
 
-	Load("Main 2")
+	[wait]Blackout()
 }

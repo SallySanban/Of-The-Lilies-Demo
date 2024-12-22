@@ -9,7 +9,9 @@ public class SceneManager : MonoBehaviour
     public static SceneManager Instance { get; private set; }
 
     [SerializeField] private RectTransform _pixelContainer = null;
+    [SerializeField] private FollowCamera _vnContainerFollowCamera;
     public RectTransform pixelContainer => _pixelContainer;
+    public FollowCamera vnContainerFollowCamera => _vnContainerFollowCamera;
 
     [SerializeField] private SceneConfig _config = null;
     public SceneConfig config => _config;
@@ -28,6 +30,7 @@ public class SceneManager : MonoBehaviour
     public Player player = null;
 
     [HideInInspector] public string MC_NAME = "Ahlai";
+    [HideInInspector] public float TRANSITION_WAIT_TIME = 0.3f;
 
     private void Awake()
     {
@@ -82,22 +85,17 @@ public class SceneManager : MonoBehaviour
         PutPlayerInScene(playerOverride, playerPositionInNextBackground, playerDirectionInNextBackground);
         interactableManager.GetInteractablesInScene(currentScene);
 
-        if(player != null)
+        if (player != null)
         {
             virtualCamera.OnTargetObjectWarped(virtualCamera.Follow, player.root.transform.position - virtualCamera.transform.position);
             virtualCamera.Follow = player.root.transform;
             confiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
         }
-    }
 
-    //changes the NPCs, player, and interactables for the SAME background
-    public void SwitchScene(string sceneName)
-    {
-        currentSceneName = sceneName;
-
-        npcManager.SwitchNPCs();
-        PutPlayerInScene();
-        interactableManager.GetInteractablesInScene(currentScene);
+        if (vnContainerFollowCamera != null)
+        {
+            vnContainerFollowCamera.enabled = true;
+        }
     }
 
     //changes the background
@@ -124,9 +122,11 @@ public class SceneManager : MonoBehaviour
 
                         yield return blackout.Show();
 
-                        DestroyImmediate(currentScene);
+                        RemoveScene();
 
                         CreateScene(currentSceneName, backgroundData.backgroundToGo, playerPositionInNextBackground: backgroundData.playerPositionInNextBackground, playerDirectionInNextBackground: backgroundData.playerDirectionInNextBackground);
+
+                        yield return new WaitForSeconds(TRANSITION_WAIT_TIME);
 
                         yield return blackout.Hide();
                     }
@@ -139,6 +139,10 @@ public class SceneManager : MonoBehaviour
 
     public void RemoveScene()
     {
+        vnContainerFollowCamera.enabled = false;
+
+        virtualCamera.Follow = null;
+
         DestroyImmediate(currentScene);
     }
 
