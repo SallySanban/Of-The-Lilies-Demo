@@ -44,6 +44,26 @@ choice in 0/1/-1
 		//place stuff here
 }
 
+/*
+* conditions
+* uses <, >, and ==
+*/
+
+if (condition)
+{
+	//if condition
+}
+else
+{
+	//else condition
+}
+
+/*
+* stores variable, can be used for condition
+* can be int, string, bool
+*/
+$Variable = SomeValue
+
 ===== COMMANDS LIST ====
 === Dialogue ===
 HideTextbox(true/false) //hides textbox immediately or fade out
@@ -66,6 +86,10 @@ Blackout() //adds blackout image on top of screen
 === Scene ===
 ShowScene("Scene Name" "Background Prefab Name") //shows pixel background immediately, ALWAYS do this behind black screen 
 SwitchScene("Scene Name") //for same background but different NPC configurations
+RemoveScene() //removes current scene
+ToggleInteractable("Scene Name" "Background Name" InteractableName true/false) //changes isInteractable on/off
+ChangeAnimationState("Interactable/NPC Name" TriggerName) //triggers animation for interactable/NPC
+RemoveFromScene("Interactable/NPC Name") //removes interactable/NPC from screen
 
 === Effects ===
 ScreenShake()

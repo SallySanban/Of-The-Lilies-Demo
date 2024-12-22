@@ -1,0 +1,17 @@
+choice in -1
+{
+	- How are the preparations?
+		pixel FemNPC2 as Auntie "Oh, happy coming-of-age, <playerName>!"
+
+		pixel FemNPC2 as Auntie "We'll get the preparations done, don't you worry!"
+
+	- if ($KnowDaniwItems && !$KnowThreadLocation) Do you know where to find fishing thread?
+		pixel FemNPC2 as Auntie "Nope, sorry! Only Brother Daniw would know."
+	
+	- if ($KnowDaniwItems && !$KnowWoodLocation) Do you know where to find some wood?
+		pixel FemNPC2 as Auntie "Wouldn't the people sitting by the fire know that?"
+
+		pixel FemNPC2 as Auntie "They just finished finding some wood to light it up."
+}
+
+HideTextbox(false)

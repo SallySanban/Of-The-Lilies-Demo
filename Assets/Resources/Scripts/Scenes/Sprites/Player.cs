@@ -28,7 +28,7 @@ public class Player : PixelSprite
         animator.SetBool("Flipped", direction < 0);
 
         //FOR DEBUGGING PURPOSES
-        root.AddComponent<PositionDebugger>();
+        //root.AddComponent<PositionDebugger>();
     }
 
     //uses world position
@@ -51,8 +51,6 @@ public class Player : PixelSprite
     //uses world position
     public IEnumerator MoveToInteract(Vector2 position)
     {
-        Debug.Log("POSITION: " + position);
-
         Vector2 targetPos = position;
         Vector2 currentPos = root.transform.position;
         bool movedLeft = false;

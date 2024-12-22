@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "The Kipang nut. My favorite! Auntie must have known."
+
+ToggleInteractable("Scene 2" "Tayabac Village" "Kipang Nut" false)
+$Crops += 1
+HideTextbox(false)

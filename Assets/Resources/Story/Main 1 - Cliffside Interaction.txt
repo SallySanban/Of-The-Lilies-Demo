@@ -1,0 +1,12 @@
+if ($QuestsCompleted < 3)
+{
+	pixel Ahlai as <playerName> "There's still some things to do. I can meet with dad later."
+
+	HideTextbox(false)
+}
+else
+{
+	pixel Ahlai as <playerName> "Here goes nothing."
+
+	Load("Main 2")
+}

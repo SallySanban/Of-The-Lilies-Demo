@@ -1,0 +1,46 @@
+if ($GotCropsQuest == false)
+{
+	pixel FemNPC1 as Auntie "<playerName>! My crops are ready, just in time for the celebration!"
+
+	pixel FemNPC1 as Auntie "Help me harvest them, won't you?"
+
+	$GotCropsQuest = true
+	$Crops = 0
+	ToggleInteractable("Scene 2" "Tayabac Village" Turnip true)
+	ToggleInteractable("Scene 2" "Tayabac Village" "Kipang Nut" true)
+	ToggleInteractable("Scene 2" "Tayabac Village" Cabbage true)
+}
+else
+{
+	if ($Crops == 0)
+	{
+		pixel FemNPC1 as Auntie "Help me harvest my crops, won't you?"
+	}
+	else
+	{
+		if ($Crops <= 2)
+		{
+			pixel FemNPC1 as Auntie "Harvesting's a busy job, isn't it? Don't stop 'til you get them all!"
+		}
+		else
+		{
+			pixel FemNPC1 as Auntie "That's it! I hope you're excited for our celebration, <playerName>."
+
+			pixel FemNPC1 as Auntie "We'll prepare a feast just for you!"
+
+			if ($QuestsCompleted == 0)
+			{
+				$QuestsCompleted = 1
+			}
+			else
+			{
+				$QuestsCompleted = 2
+			}
+
+			$CropsQuestCompleted = true
+		}
+	}
+}
+
+HideTextbox(false)
+

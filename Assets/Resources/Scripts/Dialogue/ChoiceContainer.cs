@@ -41,6 +41,7 @@ public class ChoiceContainer
                 TextMeshProUGUI choiceText = newChoice.transform.Find(CHOICETEXT_OBJECTNAME).GetComponent<TextMeshProUGUI>();
 
                 choiceButton = new ChoiceButton {
+                    root = newChoice,
                     choiceText = choiceText,
                     arrow = arrow
                 };
@@ -92,6 +93,13 @@ public class ChoiceContainer
         isWaitingForUserChoice = false;
 
         dialogueContainer.HideChoices();
+
+        foreach (ChoiceButton choice in buttons)
+        {
+            Object.DestroyImmediate(choice.root);
+        }
+
+        buttons.Clear();
     }
 
     public class ChoicePanelDecision
@@ -109,6 +117,7 @@ public class ChoiceContainer
 
     private struct ChoiceButton
     {
+        public GameObject root;
         public GameObject arrow;
         public TextMeshProUGUI choiceText;
     }

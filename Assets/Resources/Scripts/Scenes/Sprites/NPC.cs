@@ -25,7 +25,7 @@ public class NPC : PixelSprite
         SetupNPC(lastPosition, lastAnimationState);
 
         //FOR DEBUGGING PURPOSES
-        root.AddComponent<PositionDebugger>();
+        //root.AddComponent<PositionDebugger>();
     }
 
     public void SetupNPC(Vector2 position, string animationState)

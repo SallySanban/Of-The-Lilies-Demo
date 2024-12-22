@@ -13,6 +13,8 @@ public class Interactable : MonoBehaviour
 
     [SerializeField] private GameObject icon;
 
+    public bool stateChangedDuringStory = false;
+
     public void Awake()
     {
         icon.SetActive(false);

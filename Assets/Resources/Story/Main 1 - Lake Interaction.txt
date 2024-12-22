@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Lake Ra-i. Should I make sure the villagers are collecting enough water for the celebration?"
+
+HideTextbox(false)

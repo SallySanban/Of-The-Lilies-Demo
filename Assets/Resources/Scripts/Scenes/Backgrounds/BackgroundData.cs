@@ -8,6 +8,8 @@ public class BackgroundData
     public string interactableName;
     public string backgroundToGo;
     public KeyToPress keyToPress;
+    public Vector2 playerPositionInNextBackground;
+    public int playerDirectionInNextBackground;
 
     public BackgroundData Copy()
     {
@@ -16,6 +18,8 @@ public class BackgroundData
         result.interactableName = interactableName;
         result.backgroundToGo = backgroundToGo;
         result.keyToPress = keyToPress;
+        result.playerPositionInNextBackground = playerPositionInNextBackground;
+        result.playerDirectionInNextBackground = playerDirectionInNextBackground;
 
         return result;
     }

@@ -1,0 +1,5 @@
+pixel MaleSittingNPC as Uncle "14, huh? It's my honor to witness your coming-of-age, <playerName>!"
+
+pixel MaleSittingNPC as Uncle "You'll be a great chief!"
+
+HideTextbox(false)

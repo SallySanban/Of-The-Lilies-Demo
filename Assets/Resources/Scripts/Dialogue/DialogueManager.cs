@@ -131,11 +131,13 @@ namespace Dialogue
                 case DialogueContainer.ContainerType.SpeechBubble:
                     if (immediate)
                     {
+                        currentTextbox.dialogue.text = "";
                         currentTextbox.root.SetActive(false);
                     }
                     else
                     {
                         yield return currentTextbox.Hide();
+                        currentTextbox.dialogue.text = "";
                     }
 
                     currentTextbox = null;
@@ -168,6 +170,8 @@ namespace Dialogue
                     return DialogueContainer.ContainerType.LeftTextbox;
                 case 1:
                     return DialogueContainer.ContainerType.RightTextbox;
+                case -1:
+                    return DialogueContainer.ContainerType.SpeechBubble;
                 default:
                     return DialogueContainer.ContainerType.MainTextbox;
             }

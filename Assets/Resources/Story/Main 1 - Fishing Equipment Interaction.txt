@@ -1,0 +1,23 @@
+if ($DaniwItems < 2)
+{
+	pixel Ahlai as <playerName> "I need to find some fishing thread and some wood to fix this, huh?"
+	
+	$KnowDaniwItems = true
+}
+else
+{
+	pixel Ahlai as <playerName> "Time to fix this equipment."
+
+	[wait]Blackout()
+	HideTextbox(true)
+	Wait(0.5)
+	ChangeAnimationState("Fishing Equipment" Fixed)
+	[wait]HideCG()
+
+	pixel Ahlai as <playerName> "All fixed! I should let Uncle Daniw know."
+
+	$FishingEquipmentFixed = true
+	RemoveFromScene("Fishing Equipment")
+}
+
+HideTextbox(false)

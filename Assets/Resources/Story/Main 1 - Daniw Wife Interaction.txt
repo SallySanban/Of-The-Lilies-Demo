@@ -1,0 +1,21 @@
+choice in -1
+{
+	- How are the preparations?
+		pixel FemNPC3 as Auntie "<playerName>... Thanks for stopping by. Happy 14th birthday."
+
+		pixel FemNPC3 as Auntie "My husband, Daniw, is preparing to catch some fish."
+
+	- if ($KnowDaniwItems && !$KnowThreadLocation) Do you know where to find fishing thread?
+		pixel FemNPC3 as Auntie "Ah, fishing thread. Did Daniw's equipment break again?"
+	
+		pixel FemNPC3 as Auntie "I keep telling him not to leave it out by the lake overnight."
+
+		pixel FemNPC3 as Auntie "I do have some. Here you go."
+
+		pixel FemNPC3 as Auntie "I hope we'll have a great celebration later."
+
+		$KnowThreadLocation = true
+		$DaniwItems += 1
+}
+
+HideTextbox(false)

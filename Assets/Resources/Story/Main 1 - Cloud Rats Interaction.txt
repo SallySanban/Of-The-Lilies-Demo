@@ -1,0 +1,5 @@
+pixel MaleNPC1 as Uncle "My buddies are at the cliffside hunting down some cloud rats for the celebration later!"
+
+pixel MaleNPC1 as Uncle "Let's hope they don't run into any Aya... That wouldn't be good for us, would it?"
+
+HideTextbox(false)

@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class NPCManager
 {
+    public static NPCManager Instance { get; private set; }
+
     private SceneManager sceneManager => SceneManager.Instance;
 
     private List<NPC> npcsInScreen = new List<NPC>();
 
     public void PopulateNPCs(Transform parent)
     {
+        npcsInScreen.Clear();
+
         NPCData[] npcDataInScene = sceneManager.config.GetNPCsInScene(sceneManager.currentSceneName, sceneManager.currentBackground);
 
         foreach (NPCData npcData in npcDataInScene)
@@ -23,6 +27,11 @@ public class NPCManager
                 npcsInScreen.Add(npc);
             }
         }
+    }
+
+    public NPCManager()
+    {
+        Instance = this;
     }
 
     public void SwitchNPCs()
@@ -51,8 +60,6 @@ public class NPCManager
                     npc.SetupNPC(npc.lastPosition, npc.lastAnimationState);
                 }
             }
-
-            //TODO: what abt if npc got removed the next scene?
         }
     }
 
@@ -64,6 +71,21 @@ public class NPCManager
         }
 
         npcsInScreen.Clear();
+    }
+
+    public void RemoveNPC(string name)
+    {
+        foreach (NPC npc in npcsInScreen)
+        {
+            if (npc.name.Equals(name))
+            {
+                Object.Destroy(npc.root);
+                npcsInScreen.Remove(npc);
+                sceneManager.config.RemoveNPCFromScene(sceneManager.currentSceneName, sceneManager.currentBackground, name);
+
+                break;
+            }
+        }
     }
 
     public NPC GetNPC(string npcName)

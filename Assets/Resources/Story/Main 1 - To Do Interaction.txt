@@ -1,0 +1,23 @@
+pixel MaleNPC2 as Uncle "Meat... ongoing. Fire... ongoing."
+
+if ($DaniwQuestCompleted == false)
+{
+	pixel MaleNPC2 as Uncle "Fish... ongoing."
+}
+else
+{
+	pixel MaleNPC2 as Uncle "Fish... check."
+}
+
+if($CropsQuestCompleted == false)
+{
+	pixel MaleNPC2 as Uncle "Vegetables... ongoing."
+}
+else
+{
+	pixel MaleNPC2 as Uncle "Vegetables... check."
+}
+
+pixel MaleNPC2 as Uncle "Oh, <playerName>. Happy coming-of-age. If only these tasks would get themselves done faster..."
+
+HideTextbox(false)

@@ -64,7 +64,7 @@ public class SceneManager : MonoBehaviour
     }
 
     //creates, sets up, and shows a background, including its NPCs, player, and interactables
-    public void CreateScene(string sceneName, string backgroundFilename)
+    public void CreateScene(string sceneName, string backgroundFilename, bool playerOverride = false, Vector2 playerPositionInNextBackground = default, int playerDirectionInNextBackground = 0)
     {
         GameObject backgroundPrefab = FilePaths.GetPrefabFromPath(FilePaths.backgroundPrefabPath, backgroundFilename);
 
@@ -73,10 +73,13 @@ public class SceneManager : MonoBehaviour
         currentSceneName = sceneName;
         currentBackground = backgroundPrefab.name;
 
+        Debug.Log("SCENE NAME: " + currentSceneName);
+        Debug.Log("BACKGROUND NAME: " + currentBackground);
+
         currentScene.SetActive(true);
 
         npcManager.PopulateNPCs(currentScene.transform.Find(SPRITES_OBJECTNAME));
-        PutPlayerInScene();
+        PutPlayerInScene(playerOverride, playerPositionInNextBackground, playerDirectionInNextBackground);
         interactableManager.GetInteractablesInScene(currentScene);
 
         if(player != null)
@@ -98,27 +101,60 @@ public class SceneManager : MonoBehaviour
     }
 
     //changes the background
-    public IEnumerator SwitchBackground(string backgroundFilename, Interactable collidingInteractable)
+    public IEnumerator SwitchBackground(BackgroundData.KeyToPress keyToPress, Interactable collidingInteractable)
     {
-        GraphicPanel blackout = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
+        string storyToPlay = collidingInteractable.storyToPlay;
+        Vector2 moveToInteractPosition = collidingInteractable.moveToInteractPosition;
 
-        yield return blackout.Show();
+        BackgroundData[] backgroundsToGoInScene = config.GetBackgroundsToGoInScene(currentSceneName, currentBackground);
 
-        DestroyImmediate(currentScene);
-
-        CreateScene(currentSceneName, backgroundFilename);
-
-        yield return blackout.Hide();
-
-        if (!string.IsNullOrEmpty(collidingInteractable.storyToPlay))
+        foreach (BackgroundData backgroundData in backgroundsToGoInScene)
         {
-            yield return VNManager.Instance.PlayCollidingInteractableStory(collidingInteractable);
+            if (backgroundData.interactableName.Equals(collidingInteractable.interactableName))
+            {
+                if (keyToPress == backgroundData.keyToPress)
+                {
+                    if (!string.IsNullOrEmpty(storyToPlay)) //background will switch through the txt file
+                    {
+                        yield return VNManager.Instance.PlayCollidingInteractableStory(storyToPlay, moveToInteractPosition);
+                    }
+                    else
+                    {
+                        GraphicPanel blackout = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
+
+                        yield return blackout.Show();
+
+                        DestroyImmediate(currentScene);
+
+                        CreateScene(currentSceneName, backgroundData.backgroundToGo, playerPositionInNextBackground: backgroundData.playerPositionInNextBackground, playerDirectionInNextBackground: backgroundData.playerDirectionInNextBackground);
+
+                        yield return blackout.Hide();
+                    }
+
+                    break;
+                }
+            }
         }
     }
 
-    private void PutPlayerInScene()
+    public void RemoveScene()
+    {
+        DestroyImmediate(currentScene);
+    }
+
+    private void PutPlayerInScene(bool playerOverride = false, Vector2 playerPositionOverride = default, int playerDirectionOverride = 0)
     {
         (bool playerInScene, Vector2 playerPosition, int playerDirection) = config.GetPlayerInfo(currentSceneName, currentBackground);
+
+        if(playerPositionOverride != playerPosition && playerPositionOverride != Vector2.zero)
+        {
+            playerPosition = playerPositionOverride;
+        }
+
+        if(playerDirectionOverride != playerDirection && playerDirectionOverride != 0)
+        {
+            playerDirection = playerDirectionOverride;
+        }
 
         if (playerInScene)
         {

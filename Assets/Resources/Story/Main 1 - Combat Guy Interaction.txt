@@ -1,0 +1,31 @@
+choice in -1
+{
+	- How are the preparations?
+		pixel MaleNPC4 as Uncle "Sorry, <playerName>. We're leaving the preparations for the celebration to the rest of the village."
+
+		pixel MaleNPC4 as Uncle "You never know when danger will arise. We always have to be ready."
+
+		pixel MaleNPC4 as Uncle "You have to help out, don't you? Come by later when you're done for some sparring practice."
+		
+	- if ($QuestsCompleted == 2) Can I help with sparring practice?
+		pixel MaleNPC4 as Uncle "<playerName>! Finished with the preparations, are we?"
+
+		pixel MaleNPC4 as Uncle "We couldn't start without you. Come on."
+
+		[wait]Blackout()
+		HideTextbox(true)
+		Wait(0.5)
+		[wait]HideCG()
+
+		pixel MaleNPC4 as Uncle "Alright, <playerName>. That's it for today."
+
+		pixel MaleNPC4 as Uncle "Not so bad for the next-in-line, but you've still got ways to go!"
+
+		pixel MaleNPC4 as Uncle "It's getting late. You'll be meeting with your dad at the cliff for the Hinukaw Ritual, right?"
+
+		pixel MaleNPC4 as Uncle "Good luck with that. We'll be waiting for you to start the grand celebration."
+
+		$QuestsCompleted = 3
+}
+
+HideTextbox(false)

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using static Dialogue.LogicalLines.LogicalLineUtils.Encapsulation;
+using static Dialogue.LogicalLines.LogicalLineUtils.Conditions;
+using UnityEngine;
 
 namespace Dialogue.LogicalLines
 {
@@ -11,6 +13,8 @@ namespace Dialogue.LogicalLines
     {
         private const string choiceIdentifier = "- ";
         private const string choicePositionIdentifier = " in ";
+        private const string conditionStart = "if (";
+        private const string conditionEnd = ")";
 
         private DialogueContainer.ContainerType choiceContainer;
 
@@ -26,7 +30,7 @@ namespace Dialogue.LogicalLines
 
             string[] choiceTexts = choices.Select(c => c.choiceText).ToArray();
 
-            yield return DialogueManager.Instance.ShowTextbox(choiceContainer, speakerName: TagManager.Inject("<playerName>"), listOfChoices: choiceTexts);
+            yield return DialogueManager.Instance.ShowTextbox(choiceContainer, speakerName: TagManager.Inject("<playerName>"), speakerSprite: SceneManager.Instance.player?.root, listOfChoices: choiceTexts);
 
             while (DialogueManager.Instance.currentTextbox.currentChoiceContainer.isWaitingForUserChoice)
             {
@@ -75,7 +79,6 @@ namespace Dialogue.LogicalLines
         private List<Choice> GetChoicesFromData(EncapsulatedData data)
         {
             List<Choice> choices = new List<Choice>();
-
             int encapsulationDepth = 0;
             bool isFirstChoice = true;
 
@@ -106,7 +109,26 @@ namespace Dialogue.LogicalLines
                     }
 
                     choiceIndex = i;
-                    choice.choiceText = TagManager.Inject(line.Trim().Substring(choiceIdentifier.Length));
+                    string trimmedLine = line.Trim().Substring(choiceIdentifier.Length);
+                    
+                    if (trimmedLine.StartsWith(conditionStart))
+                    {
+                        int conditionEndIndex = trimmedLine.IndexOf(conditionEnd);
+                        if (conditionEndIndex != -1)
+                        {
+                            string condition = trimmedLine.Substring(conditionStart.Length, 
+                                conditionEndIndex - conditionStart.Length);
+                            
+                            choice.condition = condition;
+                            choice.choiceText = TagManager.Inject(
+                                trimmedLine.Substring(conditionEndIndex + 1).Trim());
+                        }
+                    }
+                    else
+                    {
+                        choice.choiceText = TagManager.Inject(trimmedLine);
+                    }
+                    
                     isFirstChoice = false;
                     continue;
                 }
@@ -121,7 +143,7 @@ namespace Dialogue.LogicalLines
                 choices.Add(choice);
             }
 
-            return choices;
+            return choices.Where(c => string.IsNullOrEmpty(c.condition) || EvaluateCondition(c.condition)).ToList();
         }
 
         private void AddLineToResults(string line, ref Choice choice, ref int encapsulationDepth)
@@ -159,6 +181,7 @@ namespace Dialogue.LogicalLines
         private struct Choice
         {
             public string choiceText;
+            public string condition;
             public List<string> executableLines;
             public int startIndex;
             public int endIndex;

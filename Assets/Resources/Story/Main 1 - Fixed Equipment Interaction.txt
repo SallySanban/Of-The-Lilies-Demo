@@ -1,0 +1,33 @@
+if ($FishingEquipmentFixed == false)
+{
+	pixel MaleNPC3 as Uncle Daniw "Oh, my dear fishing equipment..."
+
+	HideTextbox(false)
+}
+else
+{
+	pixel MaleNPC3 as Uncle Daniw "You've fixed it? That's great!"
+
+	pixel MaleNPC3 as Uncle Daniw "Thanks a lot, <playerName>. Don't worry, I'll catch the best fish in time for the celebration!"
+
+	pixel MaleNPC3 as Uncle Daniw "Oh, before I forget! They want you over at the end of the village to practice some sparring."
+
+	pixel MaleNPC3 as Uncle Daniw "It seems they're missing a person."
+
+	[wait]Blackout()
+	HideTextbox(true)
+	Wait(0.5)
+	RemoveFromScene("MaleNPC3")
+	[wait]HideCG()
+
+	if ($QuestsCompleted == 0)
+	{
+		$QuestsCompleted = 1
+	}
+	else
+	{
+		$QuestsCompleted = 2
+	}
+	
+	$DaniwQuestCompleted = true
+}

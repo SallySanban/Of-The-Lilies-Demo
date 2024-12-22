@@ -138,4 +138,3 @@ HideCharacter(Ahlai)
 pixel Ahlai as <playerName> "It all feels like this has happened before..."
 
 HideTextbox(false)
-

@@ -74,6 +74,8 @@ MonoBehaviour:
     - interactableName: Ladder
       backgroundToGo: Tayabac House 1st Floor
       keyToPress: 4
+      playerPositionInNextBackground: {x: -0.02, y: -227.17}
+      playerDirectionInNextBackground: -1
   - sceneName: Scene 2
     currentBackgroundName: Tayabac House 1st Floor
     showPlayer: 1
@@ -104,12 +106,172 @@ MonoBehaviour:
     - interactableName: Left Door
       interactableType: 2
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 1 - Daniw Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Ladder
       backgroundToGo: Tayabac House 2nd Floor
       keyToPress: 3
+      playerPositionInNextBackground: {x: -0.04, y: -86.29}
+      playerDirectionInNextBackground: -1
     - interactableName: Left Door
       backgroundToGo: Tayabac Village
       keyToPress: 2
+      playerPositionInNextBackground: {x: -1522.89, y: -238.22}
+      playerDirectionInNextBackground: -1
+  - sceneName: Scene 2
+    currentBackgroundName: Tayabac Village
+    showPlayer: 1
+    playerPosition: {x: -1522.89, y: -238.22}
+    playerDirection: -1
+    npcsInScene:
+    - npcName: MaleNPC1
+      position: {x: -3860.97, y: -173.84}
+      animationState: Idle
+    - npcName: MaleNPC2
+      position: {x: 4813.24, y: -206.88}
+      animationState: Idle
+    - npcName: MaleNPC3
+      position: {x: -2014.94, y: -192.32}
+      animationState: Idle
+    - npcName: MaleNPC4
+      position: {x: 6445.06, y: -190.32}
+      animationState: Idle
+    - npcName: MaleNPC5
+      position: {x: 7395.09, y: -199.26}
+      animationState: Swinging
+    - npcName: FemNPC1
+      position: {x: 1442.06, y: -206.88}
+      animationState: Idle
+    - npcName: FemNPC2
+      position: {x: -924.26, y: -222.38}
+      animationState: Idle
+    - npcName: FemNPC3
+      position: {x: 3729.21, y: -191.82}
+      animationState: Idle
+    interactablesInScene:
+    - interactableName: Fishing Equipment
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 1 - Fishing Equipment Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Lake
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 1 - Lake Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Fireplace Entrance
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Cliffside Entrance
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 1 - Cliffside Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: MaleNPC1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - Cloud Rats Interaction
+      moveToInteractPosition: {x: -18.3, y: -2.11}
+    - interactableName: MaleNPC2
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - To Do Interaction
+      moveToInteractPosition: {x: 62.03, y: -2.11}
+    - interactableName: MaleNPC3
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - Fixed Equipment Interaction
+      moveToInteractPosition: {x: -1.12, y: -2.11}
+    - interactableName: MaleNPC4
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - Combat Guy Interaction
+      moveToInteractPosition: {x: 73.23, y: -2.11}
+    - interactableName: FemNPC1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - Crops Interaction
+      moveToInteractPosition: {x: 27, y: -2.11}
+    - interactableName: FemNPC2
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - Question Interaction
+      moveToInteractPosition: {x: 4.85, y: -2.11}
+    - interactableName: FemNPC3
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - Daniw Wife Interaction
+      moveToInteractPosition: {x: 47.96, y: -2.11}
+    - interactableName: Turnip
+      interactableType: 1
+      isInteractable: 0
+      storyToPlay: Main 1 - Turnip Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Kipang Nut
+      interactableType: 1
+      isInteractable: 0
+      storyToPlay: Main 1 - Kipang Nut Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Cabbage
+      interactableType: 1
+      isInteractable: 0
+      storyToPlay: Main 1 - Cabbage Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Trees
+      interactableType: 1
+      isInteractable: 0
+      storyToPlay: Main 1 - Tree Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: MaleNPC5
+      interactableType: 1
+      isInteractable: 0
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Cliffside Entrance
+      backgroundToGo: Cliffside 1
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 0, y: 0}
+      playerDirectionInNextBackground: 0
+    - interactableName: Fireplace Entrance
+      backgroundToGo: Tayabac Fireplace
+      keyToPress: 4
+      playerPositionInNextBackground: {x: -39.03, y: -85.96}
+      playerDirectionInNextBackground: 1
+  - sceneName: Scene 2
+    currentBackgroundName: Tayabac Fireplace
+    showPlayer: 1
+    playerPosition: {x: -39.03, y: -85.96}
+    playerDirection: 1
+    npcsInScene:
+    - npcName: FemSittingNPC
+      position: {x: -538.68, y: -300.18}
+      animationState: Sitting NPC - Fem
+    - npcName: MaleSittingNPC
+      position: {x: 561.36, y: -408.84}
+      animationState: SittingIdle
+    interactablesInScene:
+    - interactableName: FemSittingNPC
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - FemSitting Interaction
+      moveToInteractPosition: {x: -2.98, y: -0.8}
+    - interactableName: MaleSittingNPC
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 1 - MaleSitting Interaction
+      moveToInteractPosition: {x: 3.1, y: -0.8}
+    - interactableName: Village Entrance
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Village Entrance
+      backgroundToGo: Tayabac Village
+      keyToPress: 3
+      playerPositionInNextBackground: {x: -1595.11, y: -228.18}
+      playerDirectionInNextBackground: -1

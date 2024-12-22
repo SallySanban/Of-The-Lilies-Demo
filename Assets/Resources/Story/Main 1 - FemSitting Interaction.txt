@@ -1,0 +1,22 @@
+choice in -1
+{
+	- How are the preparations?
+		pixel FemSittingNPC as Auntie "Happy coming-of-age, <playerName>."
+
+		pixel FemSittingNPC as Auntie "Just taking a break from tending to this fire."
+
+		pixel FemSittingNPC as Auntie "We'll need it strong and steady in time for the celebration later."
+	
+	- if ($KnowDaniwItems && !$KnowThreadLocation) Do you know where to find fishing thread?
+		pixel FemSittingNPC as Auntie "Doesn't Brother Daniw usually do the fishing around here?"
+
+		pixel FemSittingNPC as Auntie "Why don't you ask his wife?"
+
+	- if ($KnowDaniwItems && !$KnowWoodLocation) Do you know where to find some wood?
+		pixel FemSittingNPC as Auntie "You can chop some down, you know. Tayabac's filled with trees."
+
+		$KnowWoodLocation = true
+		ToggleInteractable("Scene 2" "Tayabac Village" Trees true)
+}
+
+HideTextbox(false)
