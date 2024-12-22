@@ -277,7 +277,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 09af62bda8cfb5648a098f43fe505c7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -502,6 +502,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 6176127418568111826}
+  stateChangedDuringStory: 0
 --- !u!1 &2081864516066224276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,7 +1051,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: fc48aa646fdb33848adc79a41bf6d3e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1164,6 +1165,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 8862157344125997884}
+  stateChangedDuringStory: 0
 --- !u!1 &6169697342546499126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1792,6 +1794,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 1187275445002599179}
+  stateChangedDuringStory: 0
 --- !u!1 &7565367894931766961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,6 +1933,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 8717270565382250880}
+  stateChangedDuringStory: 0
 --- !u!1 &7973188378217804173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,6 +2036,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 66331674553986871}
+  stateChangedDuringStory: 0
 --- !u!1 &8576680599662530628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2139,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 6244314187035708333}
+  stateChangedDuringStory: 0
 --- !u!1 &8717270565382250880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2169,7 +2175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24800001, y: 0.5676238}
   m_AnchorMax: {x: 0.8112927, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: 0.06500244}
+  m_AnchoredPosition: {x: -0.4999981, y: 0.06500244}
   m_SizeDelta: {x: -0.3955078, y: -0.1296997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &6985889637769592803
@@ -2459,6 +2465,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 6169697342546499126}
+  stateChangedDuringStory: 0
 --- !u!1 &9135490160876411431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,6 +2568,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 7405442469104207978}
+  stateChangedDuringStory: 0
 --- !u!1001 &400821998236716688
 PrefabInstance:
   m_ObjectHideFlags: 0

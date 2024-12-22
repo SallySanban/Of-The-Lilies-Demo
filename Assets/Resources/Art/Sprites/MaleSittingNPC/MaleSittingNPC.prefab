@@ -358,6 +358,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 61074764341831829}
+  stateChangedDuringStory: 0
 --- !u!1 &4200026076627314864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,7 +1197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 3d28d255f34032e41a4a4cb2f727360c, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 3d28d255f34032e41a4a4cb2f727360c, type: 3}
       propertyPath: m_RootOrder

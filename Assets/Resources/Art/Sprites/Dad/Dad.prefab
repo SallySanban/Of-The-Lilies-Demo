@@ -208,7 +208,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8174999a3b78e48ab2ae5933fd35b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactableName: 
+  interactableType: 0
+  isInteractable: 0
+  storyToPlay: 
+  moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 228736152401390551}
+  stateChangedDuringStory: 0
 --- !u!1 &8156819105681035981
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +288,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3298839459585530618, guid: e456940527a405c44a84c87d4bae46f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
