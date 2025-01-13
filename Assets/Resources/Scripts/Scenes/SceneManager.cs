@@ -1,8 +1,7 @@
 using Cinemachine;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using Dialogue;
 
 public class SceneManager : MonoBehaviour
 {
@@ -142,6 +141,8 @@ public class SceneManager : MonoBehaviour
         vnContainerFollowCamera.enabled = false;
 
         virtualCamera.Follow = null;
+
+        DialogueManager.Instance.currentTextbox = null;
 
         DestroyImmediate(currentScene);
     }

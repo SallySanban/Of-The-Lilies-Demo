@@ -63,6 +63,8 @@ namespace Dialogue
 
         public IEnumerator ShowTextbox(DialogueContainer.ContainerType textboxTypeToShow, string speakerName = "", GameObject speakerSprite = null, string[] listOfChoices = null)
         {
+            if (currentTextbox == null) Debug.Log("CURRENT TEXTBOX NULL");
+
             if (currentTextbox != null)
             {
                 if (currentTextbox.textboxType == textboxTypeToShow)

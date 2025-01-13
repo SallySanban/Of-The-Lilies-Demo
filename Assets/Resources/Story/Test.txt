@@ -1,3 +1,5 @@
 input
 
-[wait]ShowScene("Scene 2" "Tayabac House 1st Floor")
+[wait]ShowScene("Scene 2" "Tayabac Village")
+
+$QuestsCompleted = 3

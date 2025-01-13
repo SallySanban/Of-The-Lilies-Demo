@@ -231,16 +231,16 @@ MonoBehaviour:
       storyToPlay: 
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
-    - interactableName: Cliffside Entrance
-      backgroundToGo: Cliffside 1
-      keyToPress: 2
-      playerPositionInNextBackground: {x: 0, y: 0}
-      playerDirectionInNextBackground: 0
     - interactableName: Fireplace Entrance
       backgroundToGo: Tayabac Fireplace
       keyToPress: 4
       playerPositionInNextBackground: {x: -39.03, y: -85.96}
       playerDirectionInNextBackground: 1
+    - interactableName: Cliffside Entrance
+      backgroundToGo: Tayabac Cliffside 1
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 1977.22, y: -227.17}
+      playerDirectionInNextBackground: -1
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Fireplace
     showPlayer: 1
@@ -275,3 +275,21 @@ MonoBehaviour:
       keyToPress: 3
       playerPositionInNextBackground: {x: -1595.11, y: -228.18}
       playerDirectionInNextBackground: -1
+  - sceneName: Scene 2
+    currentBackgroundName: Tayabac Cliffside 1
+    showPlayer: 1
+    playerPosition: {x: 1977.22, y: -227.17}
+    playerDirection: -1
+    npcsInScene: []
+    interactablesInScene:
+    - interactableName: Left Exit
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 'Main '
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Left Exit
+      backgroundToGo: Tayabac Cliffside P2
+      keyToPress: 0
+      playerPositionInNextBackground: {x: 0, y: 0}
+      playerDirectionInNextBackground: 0

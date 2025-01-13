@@ -1,24 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Dialogue;
 
-public class Interactable : MonoBehaviour
+public class Trigger : MonoBehaviour
 {
-    [HideInInspector] public string interactableName;
-    [HideInInspector] public InteractableType interactableType;
-    [HideInInspector] public bool isInteractable;
+    [HideInInspector] public string triggerName;
+    [HideInInspector] public TriggerType triggerType;
     [HideInInspector] public string storyToPlay;
-    [HideInInspector] public Vector2 moveToInteractPosition;
-
-    [SerializeField] private GameObject icon;
-
-    [HideInInspector] public bool stateChangedDuringStory = false;
-
-    public void Awake()
-    {
-        icon.SetActive(false);
-    }
 
     public void SetupInteractable(string name, InteractableType type, bool isInteractable, string storyToPlay, Vector2 moveToInteractPosition)
     {
@@ -57,14 +45,5 @@ public class Interactable : MonoBehaviour
         {
             icon.SetActive(false);
         }
-    }
-
-    public enum InteractableType
-    {
-        NPC,
-        StoryTrigger,
-        StopTrigger,
-        Interactable,
-        Background
     }
 }
