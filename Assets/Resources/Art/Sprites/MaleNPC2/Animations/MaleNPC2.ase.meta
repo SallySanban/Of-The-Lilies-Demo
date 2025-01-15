@@ -6,8 +6,13 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
-      name: Idle
-    second: {fileID: 7400000, guid: 7fa7ea030aa11c34a8ce1a7f1058a43a, type: 2}
+      name: RMaleNPCPanic
+    second: {fileID: 7400000, guid: 78b38ec8452d4a5449fb1e0921b60ffa, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: RMaleNPCStandingIdle
+    second: {fileID: 7400000, guid: 163a3248f10f1974ab9af6aa5156810a, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -102,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638702710473493636
+  platformSettingsDirtyTick: 638724638139039807
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -126,18 +131,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: MaleNPC2_Frame_0
+  - name: MaleNPC2_Frame_8
     originalName: 
-    pivot: {x: 0.3250003, y: -1.7227724}
+    pivot: {x: 0.20833312, y: -1.7029704}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 176
-      y: 4
-      width: 160
+      x: 4
+      y: 1252
+      width: 192
       height: 404
-    spriteID: 13155954f70a1af48a5baac19f31cc2e
+    spriteID: cb3a36f414e08904cb07b645007037cb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -145,19 +150,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 176, y: 4}
-  - name: MaleNPC2_Frame_1
+    uvTransform: {x: 4, y: 1252}
+  - name: MaleNPC2_Frame_9
     originalName: 
-    pivot: {x: 0.31578916, y: -1.74}
+    pivot: {x: 0.20833312, y: -1.72}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 512
+      x: 604
       y: 4
-      width: 152
+      width: 192
       height: 400
-    spriteID: 1ba802515eb112e418e31bf642e9960a
+    spriteID: 6181858fbcf193647a39c4686db051b6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -165,19 +170,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 512, y: 4}
-  - name: MaleNPC2_Frame_2
+    uvTransform: {x: 604, y: 4}
+  - name: MaleNPC2_Frame_10
     originalName: 
-    pivot: {x: 0.3250003, y: -1.7227724}
+    pivot: {x: 0.20833312, y: -1.7029704}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 176
-      y: 416
-      width: 160
+      x: 204
+      y: 4
+      width: 192
       height: 404
-    spriteID: 457094e3fc4e07c468cfd3f8fdd19334
+    spriteID: 03e9232bb4e59fd4194d904ab5b88725
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -185,19 +190,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 176, y: 416}
-  - name: MaleNPC2_Frame_3
+    uvTransform: {x: 204, y: 4}
+  - name: MaleNPC2_Frame_11
     originalName: 
-    pivot: {x: 0.31707346, y: -1.7058823}
+    pivot: {x: 0.20833312, y: -1.6862745}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 164
+      width: 192
       height: 408
-    spriteID: 9dcd887e6c284a14db5447b1e75f7d6c
+    spriteID: f0eb24287f92bc343a310492c8de41e2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -206,58 +211,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: MaleNPC2_Frame_4
+  - name: MaleNPC2_Frame_12
     originalName: 
-    pivot: {x: 0.3250003, y: -1.7227724}
+    pivot: {x: 0.20833312, y: -1.7029704}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 344
-      y: 4
-      width: 160
-      height: 404
-    spriteID: 9b7e91ecda34aba438d3bef4547a48df
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 344, y: 4}
-  - name: MaleNPC2_Frame_5
-    originalName: 
-    pivot: {x: 0.31578916, y: -1.74}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 512
-      y: 412
-      width: 152
-      height: 400
-    spriteID: c1640a195dcb0b841b9c50fa18f3793d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 512, y: 412}
-  - name: MaleNPC2_Frame_6
-    originalName: 
-    pivot: {x: 0.3250003, y: -1.7227724}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 344
+      x: 204
       y: 416
-      width: 160
+      width: 192
       height: 404
-    spriteID: 9ebb0df4119a12549a83754244fd1fc0
+    spriteID: 77524b692d9830645837f8533f5f4a03
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -265,19 +230,59 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 344, y: 416}
-  - name: MaleNPC2_Frame_7
+    uvTransform: {x: 204, y: 416}
+  - name: MaleNPC2_Frame_13
     originalName: 
-    pivot: {x: 0.31707346, y: -1.7058823}
+    pivot: {x: 0.20833312, y: -1.72}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 412
+      width: 192
+      height: 400
+    spriteID: b6c72b5a959ac9f47ae29588ec140d7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 412}
+  - name: MaleNPC2_Frame_14
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.7029704}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 828
+      width: 192
+      height: 404
+    spriteID: 388eb1a161a8927438fdea81490b54eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 828}
+  - name: MaleNPC2_Frame_15
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.6862745}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 420
-      width: 164
+      width: 192
       height: 408
-    spriteID: f8e5e95ed8d8b9d4abb3a23422f27ba0
+    spriteID: d959bdc9d4297d44e91af1715b0af5e6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -286,6 +291,326 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 420}
+  - name: MaleNPC2_Frame_16
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.72}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 820
+      width: 192
+      height: 400
+    spriteID: 4a1e74b3ab717ca4dba3f8f812b5be4c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 820}
+  - name: MaleNPC2_Frame_17
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.7029704}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 1240
+      width: 192
+      height: 404
+    spriteID: d31f76a261cac6e40b20b491fa867442
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 1240}
+  - name: MaleNPC2_Frame_18
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.6862745}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 836
+      width: 192
+      height: 408
+    spriteID: dd5e5d610a8879a49aa488fb10710664
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 836}
+  - name: MaleNPC2_Frame_19
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.7029704}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 4
+      width: 192
+      height: 404
+    spriteID: eaba4f85f6516f940b3657fdd40365ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 4}
+  - name: MaleNPC2_Frame_20
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.7029704}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 416
+      width: 192
+      height: 404
+    spriteID: 771c5abdfb3187843a59a85a11108af3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 416}
+  - name: MaleNPC2_Frame_21
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.72}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 1228
+      width: 192
+      height: 400
+    spriteID: 5275a4c0f35c1a942a911d7171311d85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 1228}
+  - name: MaleNPC2_Frame_22
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.7029704}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 828
+      width: 192
+      height: 404
+    spriteID: de0affa5d8e672e418a2c44284128769
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 828}
+  - name: MaleNPC2_Frame_23
+    originalName: 
+    pivot: {x: 0.20833312, y: -1.7029704}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 1240
+      width: 192
+      height: 404
+    spriteID: 7c1e4f60bf8d7e849b33b21a0584c800
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 1240}
+  - name: MaleNPC2_Frame_0
+    originalName: 
+    pivot: {x: 0.3250003, y: -1.7227724}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 420
+      width: 160
+      height: 404
+    spriteID: 4b527591a0a8de849b1353858a2c1180
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 420}
+  - name: MaleNPC2_Frame_1
+    originalName: 
+    pivot: {x: 0.31578916, y: -1.74}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 976
+      y: 416
+      width: 152
+      height: 400
+    spriteID: 7dd286b77e385834b8f57c41f8f3dab7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 976, y: 416}
+  - name: MaleNPC2_Frame_2
+    originalName: 
+    pivot: {x: 0.3250003, y: -1.7227724}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 832
+      width: 160
+      height: 404
+    spriteID: 4713c54a49067bd4fbfd6983f5c0d41f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 832}
+  - name: MaleNPC2_Frame_3
+    originalName: 
+    pivot: {x: 0.31707346, y: -1.7058823}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 1636
+      width: 164
+      height: 408
+    spriteID: 9ecbc0e788944f542a53bba1329689af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 1636}
+  - name: MaleNPC2_Frame_4
+    originalName: 
+    pivot: {x: 0.3250003, y: -1.7227724}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 1244
+      width: 160
+      height: 404
+    spriteID: f86a5ef16175216419e74bcf2cbfed6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 1244}
+  - name: MaleNPC2_Frame_5
+    originalName: 
+    pivot: {x: 0.31578916, y: -1.74}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 976
+      y: 824
+      width: 152
+      height: 400
+    spriteID: b58280c585bde1a4280ae1d11907395a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 976, y: 824}
+  - name: MaleNPC2_Frame_6
+    originalName: 
+    pivot: {x: 0.3250003, y: -1.7227724}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 976
+      y: 4
+      width: 160
+      height: 404
+    spriteID: b4a38994d36b00346b07672114c7305d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 976, y: 4}
+  - name: MaleNPC2_Frame_7
+    originalName: 
+    pivot: {x: 0.31707346, y: -1.7058823}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 4
+      width: 164
+      height: 408
+    spriteID: 85615819c37a77d44a4279cad68175bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -295,6 +620,150 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: MaleNPC2_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 404
+      spriteId: cb3a36f414e08904cb07b645007037cb
+    - name: MaleNPC2_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 400
+      spriteId: 6181858fbcf193647a39c4686db051b6
+    - name: MaleNPC2_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 404
+      spriteId: 03e9232bb4e59fd4194d904ab5b88725
+    - name: MaleNPC2_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 408
+      spriteId: f0eb24287f92bc343a310492c8de41e2
+    - name: MaleNPC2_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 404
+      spriteId: 77524b692d9830645837f8533f5f4a03
+    - name: MaleNPC2_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 400
+      spriteId: b6c72b5a959ac9f47ae29588ec140d7a
+    - name: MaleNPC2_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 404
+      spriteId: 388eb1a161a8927438fdea81490b54eb
+    - name: MaleNPC2_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 408
+      spriteId: d959bdc9d4297d44e91af1715b0af5e6
+    - name: MaleNPC2_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 400
+      spriteId: 4a1e74b3ab717ca4dba3f8f812b5be4c
+    - name: MaleNPC2_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 404
+      spriteId: d31f76a261cac6e40b20b491fa867442
+    - name: MaleNPC2_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 408
+      spriteId: dd5e5d610a8879a49aa488fb10710664
+    - name: MaleNPC2_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 404
+      spriteId: eaba4f85f6516f940b3657fdd40365ea
+    - name: MaleNPC2_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 404
+      spriteId: 771c5abdfb3187843a59a85a11108af3
+    - name: MaleNPC2_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 400
+      spriteId: 5275a4c0f35c1a942a911d7171311d85
+    - name: MaleNPC2_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 404
+      spriteId: de0affa5d8e672e418a2c44284128769
+    - name: MaleNPC2_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 1560
+        y: 688
+        width: 192
+        height: 404
+      spriteId: 7c1e4f60bf8d7e849b33b21a0584c800
     - name: MaleNPC2_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -303,7 +772,7 @@ ScriptedImporter:
         y: 696
         width: 160
         height: 404
-      spriteId: 13155954f70a1af48a5baac19f31cc2e
+      spriteId: 4b527591a0a8de849b1353858a2c1180
     - name: MaleNPC2_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -312,7 +781,7 @@ ScriptedImporter:
         y: 696
         width: 152
         height: 400
-      spriteId: 1ba802515eb112e418e31bf642e9960a
+      spriteId: 7dd286b77e385834b8f57c41f8f3dab7
     - name: MaleNPC2_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -321,7 +790,7 @@ ScriptedImporter:
         y: 696
         width: 160
         height: 404
-      spriteId: 457094e3fc4e07c468cfd3f8fdd19334
+      spriteId: 4713c54a49067bd4fbfd6983f5c0d41f
     - name: MaleNPC2_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -330,7 +799,7 @@ ScriptedImporter:
         y: 696
         width: 164
         height: 408
-      spriteId: 9dcd887e6c284a14db5447b1e75f7d6c
+      spriteId: 9ecbc0e788944f542a53bba1329689af
     - name: MaleNPC2_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -339,7 +808,7 @@ ScriptedImporter:
         y: 696
         width: 160
         height: 404
-      spriteId: 9b7e91ecda34aba438d3bef4547a48df
+      spriteId: f86a5ef16175216419e74bcf2cbfed6c
     - name: MaleNPC2_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
@@ -348,7 +817,7 @@ ScriptedImporter:
         y: 696
         width: 152
         height: 400
-      spriteId: c1640a195dcb0b841b9c50fa18f3793d
+      spriteId: b58280c585bde1a4280ae1d11907395a
     - name: MaleNPC2_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -357,7 +826,7 @@ ScriptedImporter:
         y: 696
         width: 160
         height: 404
-      spriteId: 9ebb0df4119a12549a83754244fd1fc0
+      spriteId: b4a38994d36b00346b07672114c7305d
     - name: MaleNPC2_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
@@ -366,7 +835,7 @@ ScriptedImporter:
         y: 696
         width: 164
         height: 408
-      spriteId: f8e5e95ed8d8b9d4abb3a23422f27ba0
+      spriteId: 85615819c37a77d44a4279cad68175bd
     linkedCells: []
     parentIndex: -1
   platformSettings:

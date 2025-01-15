@@ -55,6 +55,13 @@ namespace Commands
             GraphicPanel newGraphicPanel = UIManager.Instance.CreateUI<GraphicPanel>(filename: data);
             GraphicPanel currentGraphicPanel = UIManager.Instance.currentCG;
 
+            newGraphicPanel.Show(true);
+
+            while (newGraphicPanel.isCGShowing)
+            {
+                yield return null;
+            }
+
             currentGraphicPanel.Hide();
 
             while (currentGraphicPanel.isCGHiding)
@@ -62,12 +69,7 @@ namespace Commands
                 yield return null;
             }
 
-            newGraphicPanel.Show(true);
-
-            while (newGraphicPanel.isCGShowing)
-            {
-                yield return null;
-            }
+            UIManager.Instance.currentCG = newGraphicPanel;
         }
     }
 }

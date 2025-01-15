@@ -1,0 +1,1060 @@
+fileFormatVersion: 2
+guid: 63424ea60306fe348abc336dbcdf0231
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Aya bird
+    second: {fileID: 7400000, guid: 640570e3c3a2be14887d985995193bb9, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: AyaFlying
+    second: {fileID: 7400000, guid: 3f2bc7b1d2ee638439193bcf28daa55b, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: AyaHopping
+    second: {fileID: 7400000, guid: 8a30d77aab594ad4a92399d95feb15be, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: AyaWindupFlying
+    second: {fileID: 7400000, guid: 102782f58bdec0445aeb8f31213b2120, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638724522243173090
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Aya_Frame_0
+    originalName: 
+    pivot: {x: 0.7375, y: -1.1304348}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 836
+      y: 168
+      width: 160
+      height: 92
+    spriteID: 41c6a12b52454e14aa83794753063060
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 836, y: 168}
+  - name: Aya_Frame_1
+    originalName: 
+    pivot: {x: 0.7375, y: -1.1818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 676
+      y: 292
+      width: 160
+      height: 88
+    spriteID: 0d8fb2cffad6e224f8d086003d99f2dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 676, y: 292}
+  - name: Aya_Frame_2
+    originalName: 
+    pivot: {x: 0.7375, y: -1.1304348}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 292
+      width: 160
+      height: 92
+    spriteID: 9c1190bc32f1af14c95e13741bce4e4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 292}
+  - name: Aya_Frame_3
+    originalName: 
+    pivot: {x: 0.7375, y: -1.1818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 844
+      y: 292
+      width: 160
+      height: 88
+    spriteID: 29c8e48378651934fb0f3754ae3a2f08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 844, y: 292}
+  - name: Aya_Frame_4
+    originalName: 
+    pivot: {x: 0.7375, y: -1.1818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 392
+      width: 160
+      height: 88
+    spriteID: 192b62c88d041bb46a272a64f372c981
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 392}
+  - name: Aya_Frame_5
+    originalName: 
+    pivot: {x: 0.7375, y: -1.1818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 392
+      width: 160
+      height: 88
+    spriteID: a603d43571e53b642854e569ffa1a2b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 392}
+  - name: Aya_Frame_6
+    originalName: 
+    pivot: {x: 0.7375, y: -1.1304348}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 292
+      width: 160
+      height: 92
+    spriteID: 8f06bde813cc37945ad93f795ca9858b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 292}
+  - name: Aya_Frame_7
+    originalName: 
+    pivot: {x: 0.7375, y: -1.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 168
+      width: 160
+      height: 100
+    spriteID: 3116c77bd792b214f9864599faa09d77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 168}
+  - name: Aya_Frame_8
+    originalName: 
+    pivot: {x: 0.75641024, y: -0.89655167}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 824
+      y: 4
+      width: 156
+      height: 116
+    spriteID: 259222fbe7650f94799fae47989cbb55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 824, y: 4}
+  - name: Aya_Frame_9
+    originalName: 
+    pivot: {x: 0.72368425, y: -0.7428571}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 344
+      y: 4
+      width: 152
+      height: 140
+    spriteID: 0d91ff47b90fe234a80dffeaff4bc63c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 344, y: 4}
+  - name: Aya_Frame_10
+    originalName: 
+    pivot: {x: 0.7375, y: -0.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 4
+      width: 160
+      height: 156
+    spriteID: 1428e0e757737194e9c604c33198765d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 4}
+  - name: Aya_Frame_11
+    originalName: 
+    pivot: {x: 0.72368425, y: -0.7428571}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 504
+      y: 4
+      width: 152
+      height: 140
+    spriteID: c9a7a2b76a339c44e9c7d35d49c73a3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 504, y: 4}
+  - name: Aya_Frame_12
+    originalName: 
+    pivot: {x: 0.75641024, y: -0.89655167}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 168
+      width: 156
+      height: 116
+    spriteID: 8f6c1367927769c47abb31655e2608fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 168}
+  - name: Aya_Frame_13
+    originalName: 
+    pivot: {x: 0.7375, y: -1.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 168
+      width: 160
+      height: 100
+    spriteID: 7664ea0de676e1240873afcd454588f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 168}
+  - name: Aya_Frame_14
+    originalName: 
+    pivot: {x: 0.7375, y: -1.1304348}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 292
+      width: 160
+      height: 92
+    spriteID: 4f71fee17fb953d4cb7514143a550c76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 292}
+  - name: Aya_Frame_15
+    originalName: 
+    pivot: {x: 0.7375, y: -1.1304348}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 292
+      width: 160
+      height: 92
+    spriteID: 423417ed17a660442b02c53514f894dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 292}
+  - name: Aya_Frame_16
+    originalName: 
+    pivot: {x: 0.7375, y: -1.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 168
+      width: 160
+      height: 100
+    spriteID: da319a6c2c4b7b44791a4b8e0915b49a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 168}
+  - name: Aya_Frame_17
+    originalName: 
+    pivot: {x: 0.75641024, y: -0.89655167}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 168
+      width: 156
+      height: 116
+    spriteID: 5099336153cd0244894da5be708735d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 168}
+  - name: Aya_Frame_18
+    originalName: 
+    pivot: {x: 0.72368425, y: -0.7428571}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 664
+      y: 4
+      width: 152
+      height: 140
+    spriteID: 13db188aa0e04e54fb017a6088d1b24a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 664, y: 4}
+  - name: Aya_Frame_19
+    originalName: 
+    pivot: {x: 0.71951216, y: -0.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 164
+      height: 156
+    spriteID: 56d456241a05d6d4fbfaf5032202ee4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Aya_Frame_20
+    originalName: 
+    pivot: {x: 0.68750006, y: -2.4090912}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 392
+      width: 160
+      height: 88
+    spriteID: 12a1aa061d91a4246be9c7e887faffa3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 392}
+  - name: Aya_Frame_21
+    originalName: 
+    pivot: {x: 0.68604654, y: -3.0500002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 392
+      width: 172
+      height: 80
+    spriteID: 51a5b7c6d3e9a6b4e904ea1c7298b1ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 392}
+  - name: Aya_Frame_22
+    originalName: 
+    pivot: {x: 0.6707317, y: -4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 368
+      y: 488
+      width: 164
+      height: 68
+    spriteID: 214badd7e61ea274da7fcf7386837559
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 368, y: 488}
+  - name: Aya_Frame_23
+    originalName: 
+    pivot: {x: 0.69318175, y: -4.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 488
+      width: 176
+      height: 64
+    spriteID: dc49049c8afc1bb408eac782352299f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 488}
+  - name: Aya_Frame_24
+    originalName: 
+    pivot: {x: 0.68604654, y: -3.882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 488
+      width: 172
+      height: 68
+    spriteID: e3412aa26aa16d4419d775a1bc0d0672
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 488}
+  - name: Aya_Frame_25
+    originalName: 
+    pivot: {x: 0.6707317, y: -4.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 712
+      y: 488
+      width: 164
+      height: 64
+    spriteID: 3e6e232d9533fc2499791481c391d479
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 712, y: 488}
+  - name: Aya_Frame_26
+    originalName: 
+    pivot: {x: 0.6707317, y: -4.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 564
+      width: 164
+      height: 64
+    spriteID: 7ca60413aa7df1a4981b8a8ac6a533b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 564}
+  - name: Aya_Frame_27
+    originalName: 
+    pivot: {x: 0.6707317, y: -4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 540
+      y: 488
+      width: 164
+      height: 68
+    spriteID: 3a92ccf250401de4489f98414d7f2f19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 540, y: 488}
+  - name: Aya_Frame_28
+    originalName: 
+    pivot: {x: 0.6707317, y: -3.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 688
+      y: 392
+      width: 164
+      height: 80
+    spriteID: 1615e55809641784e82a8ea2f25cbe82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 688, y: 392}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1917442787
+    name: Aya
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Aya_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 92
+      spriteId: 41c6a12b52454e14aa83794753063060
+    - name: Aya_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 88
+      spriteId: 0d8fb2cffad6e224f8d086003d99f2dc
+    - name: Aya_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 92
+      spriteId: 9c1190bc32f1af14c95e13741bce4e4f
+    - name: Aya_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 88
+      spriteId: 29c8e48378651934fb0f3754ae3a2f08
+    - name: Aya_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 88
+      spriteId: 192b62c88d041bb46a272a64f372c981
+    - name: Aya_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 88
+      spriteId: a603d43571e53b642854e569ffa1a2b2
+    - name: Aya_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 92
+      spriteId: 8f06bde813cc37945ad93f795ca9858b
+    - name: Aya_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 100
+      spriteId: 3116c77bd792b214f9864599faa09d77
+    - name: Aya_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 156
+        height: 116
+      spriteId: 259222fbe7650f94799fae47989cbb55
+    - name: Aya_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 104
+        width: 152
+        height: 140
+      spriteId: 0d91ff47b90fe234a80dffeaff4bc63c
+    - name: Aya_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 156
+      spriteId: 1428e0e757737194e9c604c33198765d
+    - name: Aya_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 104
+        width: 152
+        height: 140
+      spriteId: c9a7a2b76a339c44e9c7d35d49c73a3e
+    - name: Aya_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 156
+        height: 116
+      spriteId: 8f6c1367927769c47abb31655e2608fe
+    - name: Aya_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 100
+      spriteId: 7664ea0de676e1240873afcd454588f4
+    - name: Aya_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 92
+      spriteId: 4f71fee17fb953d4cb7514143a550c76
+    - name: Aya_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 92
+      spriteId: 423417ed17a660442b02c53514f894dd
+    - name: Aya_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 160
+        height: 100
+      spriteId: da319a6c2c4b7b44791a4b8e0915b49a
+    - name: Aya_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 156
+        height: 116
+      spriteId: 5099336153cd0244894da5be708735d2
+    - name: Aya_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 104
+        width: 152
+        height: 140
+      spriteId: 13db188aa0e04e54fb017a6088d1b24a
+    - name: Aya_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 104
+        width: 164
+        height: 156
+      spriteId: 56d456241a05d6d4fbfaf5032202ee4e
+    - name: Aya_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 212
+        width: 160
+        height: 88
+      spriteId: 12a1aa061d91a4246be9c7e887faffa3
+    - name: Aya_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 244
+        width: 172
+        height: 80
+      spriteId: 51a5b7c6d3e9a6b4e904ea1c7298b1ac
+    - name: Aya_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 272
+        width: 164
+        height: 68
+      spriteId: 214badd7e61ea274da7fcf7386837559
+    - name: Aya_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 268
+        width: 176
+        height: 64
+      spriteId: dc49049c8afc1bb408eac782352299f4
+    - name: Aya_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 264
+        width: 172
+        height: 68
+      spriteId: e3412aa26aa16d4419d775a1bc0d0672
+    - name: Aya_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 272
+        width: 164
+        height: 64
+      spriteId: 3e6e232d9533fc2499791481c391d479
+    - name: Aya_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 272
+        width: 164
+        height: 64
+      spriteId: 7ca60413aa7df1a4981b8a8ac6a533b5
+    - name: Aya_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 272
+        width: 164
+        height: 68
+      spriteId: 3a92ccf250401de4489f98414d7f2f19
+    - name: Aya_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 272
+        width: 164
+        height: 80
+      spriteId: 1615e55809641784e82a8ea2f25cbe82
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 372, y: 380}

@@ -1,18 +1,30 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 namespace Commands
 {
     public class DatabaseExtensionScene : CommandDatabaseExtension
     {
+        private static readonly string xParameter = "-x";
+        private static readonly string yParameter = "-y";
+        private static readonly string spdParameter = "-spd";
+
+
         new public static void Extend(CommandDatabase database)
         {
             database.AddCommand("ShowScene", new Action<string[]>(ShowScene));
             database.AddCommand("SwitchScene", new Func<string[], IEnumerator>(SwitchScene));
+            database.AddCommand("RemoveScene", new Action(RemoveScene));
             database.AddCommand("ToggleInteractable", new Action<string[]>(ToggleInteractable));
             database.AddCommand("ChangeAnimationState", new Action<string[]>(ChangeAnimationState));
             database.AddCommand("RemoveFromScene", new Action<string[]>(RemoveFromScene));
+            database.AddCommand("MoveNPC", new Func<string[], IEnumerator>(MoveNPC));
+            database.AddCommand("MovePlayerToInteract", new Func<string[], IEnumerator>(MovePlayerToInteract));
+            database.AddCommand("PanCamera", new Func<string[], IEnumerator>(PanCamera));
+            database.AddCommand("ResetCamera", new Action(ResetCamera));
         }
 
         private static void ShowScene(string[] data)
@@ -21,6 +33,11 @@ namespace Commands
             string backgroundName = data[1];
 
             SceneManager.Instance.CreateScene(sceneName, backgroundName);
+        }
+
+        private static void RemoveScene()
+        {
+            SceneManager.Instance.RemoveScene();
         }
 
         private static IEnumerator SwitchScene(string[] data)
@@ -98,6 +115,60 @@ namespace Commands
             {
                 NPCManager.Instance.RemoveNPC(name);
             }
+        }
+
+        private static IEnumerator MoveNPC(string[] data)
+        {
+            NPC npc = NPCManager.Instance.GetNPC(data[0]);
+
+            var parameters = ConvertDataToParameters(data);
+
+            float x;
+            float y;
+            float spd;
+
+            parameters.TryGetValue(xParameter, out x, defaultValue: 0);
+            parameters.TryGetValue(yParameter, out y, defaultValue: 0);
+            parameters.TryGetValue(spdParameter, out spd, defaultValue: 4);
+
+            Vector2 position = new Vector2(x, y);
+
+            yield return npc.MoveToPosition(npc.root, position, speed: spd);
+        }
+
+        private static IEnumerator MovePlayerToInteract(string[] data)
+        {
+            var parameters = ConvertDataToParameters(data);
+
+            float x;
+            float y;
+
+            parameters.TryGetValue(xParameter, out x, defaultValue: 0);
+            parameters.TryGetValue(yParameter, out y, defaultValue: 0);
+
+            Vector2 position = new Vector2(x, y);
+
+            yield return SceneManager.Instance.player.MoveToInteract(position);
+        }
+
+        private static IEnumerator PanCamera(string[] data)
+        {
+            var parameters = ConvertDataToParameters(data);
+
+            float x;
+            float y;
+            float spd;
+
+            parameters.TryGetValue(xParameter, out x, defaultValue: 0);
+            parameters.TryGetValue(yParameter, out y, defaultValue: 0);
+            parameters.TryGetValue(spdParameter, out spd, defaultValue: 0);
+
+            yield return SceneManager.Instance.PanCamera(x, y, spd);
+        }
+
+        private static void ResetCamera()
+        {
+            SceneManager.Instance.ResetCamera();
         }
     }
 }

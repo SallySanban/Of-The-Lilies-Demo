@@ -127,10 +127,10 @@ MonoBehaviour:
     npcsInScene:
     - npcName: MaleNPC1
       position: {x: -3860.97, y: -173.84}
-      animationState: Idle
+      animationState: LGMaleNPCStandingIdle
     - npcName: MaleNPC2
       position: {x: 4813.24, y: -188.68}
-      animationState: Idle
+      animationState: RMaleNPCStandingIdle
     - npcName: MaleNPC3
       position: {x: -2014.94, y: -192.32}
       animationState: Idle
@@ -142,10 +142,10 @@ MonoBehaviour:
       animationState: Swinging
     - npcName: FemNPC1
       position: {x: 1442.06, y: -206.88}
-      animationState: Idle
+      animationState: DBFemNPCStandingIdle
     - npcName: FemNPC2
       position: {x: -924.26, y: -222.38}
-      animationState: Idle
+      animationState: RFemStandingIdle
     - npcName: FemNPC3
       position: {x: 3729.21, y: -191.82}
       animationState: Idle
@@ -280,16 +280,119 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: 1977.22, y: -227.17}
     playerDirection: -1
-    npcsInScene: []
+    npcsInScene:
+    - npcName: Aya
+      position: {x: -2786.25, y: -580.6}
+      animationState: Aya bird
     interactablesInScene:
     - interactableName: Left Exit
-      interactableType: 0
+      interactableType: 2
       isInteractable: 1
-      storyToPlay: 'Main '
+      storyToPlay: Main 2 - Dreadful Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Aya Trigger
+      interactableType: 4
+      isInteractable: 1
+      storyToPlay: Main 2 - Aya Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Left Exit
-      backgroundToGo: Tayabac Cliffside P2
-      keyToPress: 0
+      backgroundToGo: Tayabac Cliffside 2
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 1270.26, y: -227.17}
+      playerDirectionInNextBackground: -1
+  - sceneName: Scene 2
+    currentBackgroundName: Tayabac Cliffside 2
+    showPlayer: 1
+    playerPosition: {x: 1270.26, y: -227.17}
+    playerDirection: -1
+    npcsInScene: []
+    interactablesInScene:
+    - interactableName: Left Exit
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 2
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Coconut Tree
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 2 - Coconut Tree Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Coconut
+      interactableType: 1
+      isInteractable: 0
+      storyToPlay: Main 2 - Coconut Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Left Exit
+      backgroundToGo: 
+      keyToPress: 2
       playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: 0
+  - sceneName: Scene 3
+    currentBackgroundName: Tayabac Village Burning
+    showPlayer: 1
+    playerPosition: {x: -7868.96, y: -228.19}
+    playerDirection: 1
+    npcsInScene:
+    - npcName: FemNPC1
+      position: {x: 1446.07, y: -199.88}
+      animationState: DBFemNPCPanic
+    - npcName: FemNPC2
+      position: {x: -960.22, y: -202.38}
+      animationState: RFemNPCPanic
+    - npcName: MaleNPC1
+      position: {x: -4497.97, y: -184.73}
+      animationState: LGMaleNPCPanic
+    - npcName: MaleNPC2
+      position: {x: 3131.25, y: -182.68}
+      animationState: RMaleNPCPanic
+    - npcName: FemNPC3
+      position: {x: -2605.79, y: -231.82}
+      animationState: Panic
+    - npcName: Dad
+      position: {x: 5244.91, y: -279.66}
+      animationState: Combat
+    - npcName: Lien
+      position: {x: 5786.91, y: -161.67}
+      animationState: Lien10Yrs
+    interactablesInScene:
+    - interactableName: FemNPC1 Trigger
+      interactableType: 3
+      isInteractable: 1
+      storyToPlay: Main 2 - FemNPC1 Panic Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: FemNPC2 Trigger
+      interactableType: 3
+      isInteractable: 1
+      storyToPlay: Main 2 - FemNPC2 Panic Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: FemNPC3 Trigger
+      interactableType: 3
+      isInteractable: 1
+      storyToPlay: Main 2 - FemNPC3 Panic Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: MaleNPC1 Trigger
+      interactableType: 3
+      isInteractable: 1
+      storyToPlay: Main 2 - MaleNPC1 Panic Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Dad Trigger
+      interactableType: 4
+      isInteractable: 1
+      storyToPlay: Main 2 - Dad Lien Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: MaleNPC2 Trigger
+      interactableType: 3
+      isInteractable: 1
+      storyToPlay: Main 2 - MaleNPC2 Panic Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo: []
+  - sceneName: Scene 4
+    currentBackgroundName: Riverside Pathway
+    showPlayer: 1
+    playerPosition: {x: 0, y: 0}
+    playerDirection: -1
+    npcsInScene: []
+    interactablesInScene: []
+    backgroundsToGo: []

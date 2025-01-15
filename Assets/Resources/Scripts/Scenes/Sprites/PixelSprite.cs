@@ -12,33 +12,38 @@ public class PixelSprite
         npcTransform.localPosition = new Vector3(targetPosition.x, targetPosition.y, currentPos.z);
     }
 
-    private IEnumerator MoveToPosition(GameObject npc, Vector2 targetPosition, float speed = 4f, bool smooth = true)
+    //uses world position
+    public IEnumerator MoveToPosition(GameObject npc, Vector2 targetPosition, float speed = 4f, bool smooth = false)
     {
         Transform npcTransform = npc.transform;
-        Vector3 startPosition = npcTransform.localPosition;
+        Vector3 startPosition = npcTransform.position;
         Vector3 target = new Vector3(targetPosition.x, targetPosition.y, startPosition.z);
+        
+        // Get the parent's scale to adjust speed
+        float scaleAdjustment = npcTransform.parent ? npcTransform.parent.localScale.x : 1f;
+        float adjustedSpeed = speed * scaleAdjustment;
 
-        while (Vector3.Distance(npcTransform.localPosition, target) > 0.01f)
+        while (Vector3.Distance(npcTransform.position, target) > 0.01f)
         {
             if (smooth)
             {
-                npcTransform.localPosition = Vector3.Lerp(
-                    npcTransform.localPosition,
+                npcTransform.position = Vector3.Lerp(
+                    npcTransform.position,
                     target,
-                    speed * Time.deltaTime
+                    adjustedSpeed * Time.deltaTime
                 );
             }
             else
             {
-                npcTransform.localPosition = Vector3.MoveTowards(
-                    npcTransform.localPosition,
+                npcTransform.position = Vector3.MoveTowards(
+                    npcTransform.position,
                     target,
-                    speed * Time.deltaTime
+                    adjustedSpeed * Time.deltaTime
                 );
             }
             yield return null;
         }
 
-        npcTransform.localPosition = target;
+        npcTransform.position = target;
     }
 }

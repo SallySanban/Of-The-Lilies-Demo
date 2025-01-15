@@ -1,0 +1,5 @@
+Proceed(true)
+pixel FemNPC3 as Auntie "Daniw! Daniw, can you hear me?! Oh, oh no! Please don't leave me alone here! Please!"
+Wait(1)
+HideTextbox(false)
+Proceed(false)

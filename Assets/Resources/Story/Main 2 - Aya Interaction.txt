@@ -1,0 +1,21 @@
+PlaySFX("Bushes rustling")
+
+ChangeAnimationState("Aya" Hop)
+
+[wait]MoveNPC(Aya -x -18.52 -y -5.43 -spd 5)
+
+pixel Ahlai as <playerName> "An Aya?"
+
+pixel Ahlai as <playerName> "That can't be a good sign."
+
+HideTextbox(false)
+
+ChangeAnimationState("Aya" Fly)
+
+Wait(0.3)
+
+[wait]MoveNPC(Aya -x 3.09 -y 4.67 -spd 5)
+
+pixel Ahlai as <playerName> "It might be nothing. Let's... just move forward."
+
+HideTextbox(false)

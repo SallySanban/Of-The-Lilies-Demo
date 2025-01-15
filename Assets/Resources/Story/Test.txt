@@ -1,5 +1,3 @@
 input
 
-[wait]ShowScene("Scene 2" "Tayabac Village")
-
-$QuestsCompleted = 3
+PlaySFX("Chicken")

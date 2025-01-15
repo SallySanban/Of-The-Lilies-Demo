@@ -110,7 +110,7 @@ public class PlayerInputManager : MonoBehaviour
             return;
         }
 
-        if (isRunningConversation)
+        if ((isRunningConversation && !InteractableManager.Instance.playerInsideStopTrigger) || InteractableManager.Instance.playerInsideStopTrigger)
         {
             Player.Instance.move = Vector2.zero;
             return;

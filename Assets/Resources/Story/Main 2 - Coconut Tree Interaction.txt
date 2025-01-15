@@ -1,0 +1,6 @@
+pixel Ahlai as <playerName> "It's a coconut tree. I should be able to find some fallen coconuts."
+
+ToggleInteractable("Scene 2" "Tayabac Cliffside 2" Coconut true)
+ToggleInteractable("Scene 2" "Tayabac Cliffside 2" "Coconut Tree" false)
+
+HideTextbox(false)

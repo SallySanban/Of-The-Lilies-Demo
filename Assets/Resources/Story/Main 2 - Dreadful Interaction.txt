@@ -1,0 +1,9 @@
+[wait]SwitchScene("Scene 2" "Tayabac Cliffside 2")
+
+pixel Ahlai as <playerName> "This feels dreadfully familiar..."
+
+pixel Ahlai as <playerName> "Is it really my first time doing this ritual?"
+
+$GotCoconut = false
+
+HideTextbox(false)

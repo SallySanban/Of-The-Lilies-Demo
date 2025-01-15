@@ -1,0 +1,5 @@
+Proceed(true)
+pixel FemNPC2 as Auntie "Run! Run! They want our lands, our men, our women, our children!"
+Wait(1)
+HideTextbox(false)
+Proceed(false)

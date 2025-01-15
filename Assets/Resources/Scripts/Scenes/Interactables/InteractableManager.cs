@@ -14,6 +14,7 @@ public class InteractableManager
     public List<Interactable> activeInteractables = new List<Interactable>();
 
     public Interactable interactableCollidingWithPlayer = null;
+    public bool playerInsideStopTrigger = false;
 
     public InteractableManager()
     {
@@ -110,6 +111,8 @@ public class InteractableManager
             }
 
             activeInteractables.Clear();
+
+            playerInsideStopTrigger = false;
         }
     }
 

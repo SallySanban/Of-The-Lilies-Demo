@@ -1,0 +1,5 @@
+Proceed(true)
+pixel MaleNPC2 as Uncle "Is... Is this really happening? No, this can't be happening!"
+Wait(1)
+HideTextbox(false)
+Proceed(false)

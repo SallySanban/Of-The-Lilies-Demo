@@ -2,6 +2,7 @@ using Cinemachine;
 using System.Collections;
 using UnityEngine;
 using Dialogue;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 
 public class SceneManager : MonoBehaviour
 {
@@ -59,7 +60,7 @@ public class SceneManager : MonoBehaviour
 
     private void Update()
     {
-        if (player != null)
+        if (player != null && !InteractableManager.Instance.playerInsideStopTrigger)
         {
             player.Move();
         }
@@ -138,8 +139,6 @@ public class SceneManager : MonoBehaviour
 
     public void RemoveScene()
     {
-        vnContainerFollowCamera.enabled = false;
-
         virtualCamera.Follow = null;
 
         DialogueManager.Instance.currentTextbox = null;
@@ -167,5 +166,43 @@ public class SceneManager : MonoBehaviour
 
             player = new Player(playerPrefab, currentScene.transform.Find(SPRITES_OBJECTNAME), playerPosition, playerDirection);
         }
+    }
+
+    public IEnumerator PanCamera(float targetX, float targetY, float duration)
+    {
+        virtualCamera.Follow = null;
+
+        Vector3 originalPosition = virtualCamera.transform.position;
+        Vector3 targetPosition = Vector3.zero;
+
+        if (targetX == 0)
+        {
+            targetPosition = new Vector2(originalPosition.x, targetY);
+        }
+        else if(targetY == 0)
+        {
+            targetPosition = new Vector2(targetX, originalPosition.y);
+        }
+        
+        float startTime = Time.time;
+        float elapsedTime = 0;
+
+        while(elapsedTime < duration)
+        {
+            float t = elapsedTime / duration;
+            t = t * t * (3f - 2f * t);
+
+            virtualCamera.transform.position = Vector3.Lerp(originalPosition, targetPosition, t);
+
+            elapsedTime = Time.time - startTime;
+            yield return null;
+        }
+
+        virtualCamera.transform.position = targetPosition;
+    }
+
+    public void ResetCamera()
+    {
+        virtualCamera.Follow = player.root.transform;
     }
 }

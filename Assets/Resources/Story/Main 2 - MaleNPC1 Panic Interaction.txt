@@ -1,0 +1,5 @@
+Proceed(true)
+pixel MaleNPC1 as Uncle "Invaders! We're being attacked!"
+Wait(1)
+HideTextbox(false)
+Proceed(false)

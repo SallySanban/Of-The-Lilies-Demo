@@ -1,0 +1,135 @@
+[wait]PanCamera(-x 65.75 -spd 2)
+
+pixel Ahlai as <playerName> "Dad!"
+
+HideTextbox(false)
+[wait]ShowCharacterLeft(Dad -b Left_Battered_Body -e Left_Battered)
+
+Dad at 0 "<playerName>... You made it back..."
+
+HideTextbox(true)
+[wait]ShowCharacterRight(Lien -b Right_Default_Body -e Right_Proud)
+
+Lien at 1 as ??? "So this is the rumoured chieftain-to-be."
+
+HideTextbox(true)
+[wait]SwitchCharacter(Dad Ahlai -p 0 -b Left_Default_Body -e Left_WorriedAngry)
+
+Ahlai at 0 as <playerName> "What is it that you want with us?"
+
+Lien at 1 as ??? "You will have to come with us. I'm sorry, but this has to be done. For the good of the <b>Seiyslan Empire</b>."
+
+Ahlai at 0 as <playerName> "<i><b>Seiyslan Empire?</b> Why does that name bring me so much... pain?</i>"
+
+HideTextbox(true)
+[wait]SwitchCharacter(Lien Dad -p 1 -b Right_Battered_Body -e Right_Battered)
+
+Dad at 1 "Don't listen to his lies, <playerName>. They want to take over Tayabac. We <b>can't</b> let that happen."
+
+Dad at 1 "I hope I've trained you enough. <b>Fight for your people</b>."
+
+Dad at 1 "Now, go! I have another fight to settle..."
+
+HideTextbox(true)
+HideCharacter(Dad)
+HideCharacter(Ahlai)
+ChangeAnimationState(Dad Run)
+[wait]MoveNPC(Dad -x 76.74 -y -2.59 -spd 5)
+
+ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_WorriedAngry)
+[wait]ShowCharacterRight(Lien -b Right_Default_Body -e Right_Proud)
+
+Lien at 1 as ??? "Listen, I do not want to hurt you. Stand down."
+
+choice in 0
+{
+	- How dare you?
+		$Vengeance = 2
+		$Justice = 0
+		$Peace = 0
+
+		ChangeBodyEmotion(Ahlai -e Left_Angry -b Left_Angry_Body)
+
+		Ahlai as <playerName> at 0 "And yet you've hurt the people I care the most about?"
+
+		Ahlai as <playerName> at 0 "Do you think you can replace what you've taken from us?"
+
+		Ahlai as <playerName> at 0 "The lives of our people? Our homes?"
+
+		Ahlai as <playerName> at 0 "You don't want to hurt us? How dare you? <b>You already have.</b>"
+
+		Ahlai as <playerName> at 0 "You don't have the right to tell us to stand down"
+
+		HideTextbox(true)
+		[wait]Blackout()
+
+	- This isn't right.
+		$Vengeance = 0
+		$Justice = 2
+		$Peace = 0
+		
+		ChangeBodyEmotion(Ahlai -e Left_Incredulous -b Left_Default_Body)
+	
+		Ahlai as <playerName> at 0 "No, no. This isn't right."
+
+		Ahlai as <playerName> at 0 "You say you don't want to hurt us, but what about the people you've killed? What about our homes?"
+
+		Ahlai as <playerName> at 0 "You have to leave. I don't want to fight you."
+
+		Lien as ??? at 1 "There is nothing I can do about this. It's already been decided."
+
+		Ahlai as <playerName> at 0 "I won't let you get in the way of our tribe. I'm giving you one last chance."
+
+		Ahlai as <playerName> at 0 "Leave or I'll make you leave."
+
+		Lien as ??? at 1 "It doesn't seem like we have a choice, do we?"
+
+		HideTextbox(true)
+		[wait]Blackout()
+
+	- Let us go.
+		$Vengeance = 0
+		$Justice = 0
+		$Peace = 2
+
+		ChangeBodyEmotion(Ahlai -e Left_Plead -b Left_Plead_Body)
+
+		Ahlai as <playerName> at 0 "I don't know why you're here or what you need from us, but there has to be a way you can leave us be."
+
+		Ahlai as <playerName> at 0 "We have done nothing to destroy your peace. Let us go."
+
+		ChangeBodyEmotion(Lien -e Right_Conflicted)
+
+		Lien as ??? at 1 "I'm sorry... It's already been decided. There is nothing I can do."
+
+		Lien as ??? at 1 "Believe me. This is for the greater good."
+
+		Ahlai as <playerName> at 0 "I don't want to fight you. But I don't want anyone else to get hurt."
+
+		Ahlai as <playerName> at 0 "If we surrender our land... Will you promise to keep my people safe?"
+
+		ChangeBodyEmotion(Lien -e Right_LookAway)
+
+		Lien as ??? at 1 "I will... do my best."
+
+		HideTextbox(true)
+		[wait]Blackout()
+}
+
+Ahlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
+
+??? "Sir Lien!"
+
+PlaySFX("Thump")
+
+??? "Sir Lien! Are you okay?!"
+
+??? "Someone get Sir Lien!"
+
+Lien "I'm fine. This is all... <b>for the good of the Seiyslan Empire.</b>"
+
+Ahlai as <playerName> "<b><i>Lien...</b></i>"
+
+Ahlai as <playerName> "<b><i>I won't forget that name...</b></i>"
+
+HideTextbox(true)

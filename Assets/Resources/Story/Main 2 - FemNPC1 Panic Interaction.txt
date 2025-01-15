@@ -1,0 +1,5 @@
+Proceed(true)
+pixel FemNPC1 as Auntie "My poor crops! My house! It's all burning!"
+Wait(1)
+HideTextbox(false)
+Proceed(false)

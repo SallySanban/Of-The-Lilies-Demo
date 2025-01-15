@@ -17,7 +17,7 @@ public class Interactable : MonoBehaviour
 
     public void Awake()
     {
-        icon.SetActive(false);
+        ShowHideIcon(false);
     }
 
     public void SetupInteractable(string name, InteractableType type, bool isInteractable, string storyToPlay, Vector2 moveToInteractPosition)
@@ -31,6 +31,17 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(interactableType == InteractableType.StopTrigger || interactableType == InteractableType.StoryTrigger)
+        {
+            if(interactableType == InteractableType.StopTrigger)
+            {
+                InteractableManager.Instance.playerInsideStopTrigger = true;
+            }
+
+            StartCoroutine(HandleTriggerStory());
+            return;
+        }
+
         if (collision.CompareTag("Player") && isInteractable && !DialogueManager.Instance.conversationManager.isRunning)
         {
             ShowHideIcon(true);
@@ -38,8 +49,16 @@ public class Interactable : MonoBehaviour
         }
     }
 
+    private IEnumerator HandleTriggerStory()
+    {
+        yield return VNManager.Instance.PlayCollidingInteractableStory(storyToPlay, moveToInteractPosition);
+        Destroy(this);
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (interactableType == InteractableType.StoryTrigger || interactableType == InteractableType.StopTrigger) return;
+
         if (collision.CompareTag("Player") && isInteractable)
         {
             ShowHideIcon(false);
@@ -49,6 +68,8 @@ public class Interactable : MonoBehaviour
 
     public void ShowHideIcon(bool show)
     {
+        if(icon == null) return;
+
         if (show)
         {
             icon.SetActive(true);
@@ -62,9 +83,9 @@ public class Interactable : MonoBehaviour
     public enum InteractableType
     {
         NPC,
+        Interactable,
+        Background,
         StoryTrigger,
         StopTrigger,
-        Interactable,
-        Background
     }
 }

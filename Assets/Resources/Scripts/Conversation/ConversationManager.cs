@@ -27,6 +27,8 @@ namespace Dialogue
         public Conversation conversation => (conversationQueue.IsEmpty() ? null : conversationQueue.top);
         public int conversationProgress => (conversationQueue.IsEmpty() ? -1 : conversationQueue.top.GetProgress());
 
+        public bool proceed = false;
+
         public ConversationManager()
         {
             dialogueManager.onUserNext += OnUserNext;
@@ -106,7 +108,7 @@ namespace Dialogue
                         yield return RunCommands(line);
                     }
 
-                    if (line.hasDialogue)
+                    if (line.hasDialogue && !proceed)
                     {
                         yield return WaitForUserInput();
                     }
