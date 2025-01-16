@@ -67,12 +67,17 @@ namespace Dialogue
             {
                 if (currentTextbox.textboxType == textboxTypeToShow)
                 {
-                    if(currentTextbox.textboxType != DialogueContainer.ContainerType.SpeechBubble)
+                    if(currentTextbox.textboxType != DialogueContainer.ContainerType.SpeechBubble && currentTextbox.textboxType != DialogueContainer.ContainerType.MainTextbox)
                     {
                         //we don't hide the textbox if they're exactly the same textbox, only change the name
                         if (!speakerName.Equals(currentTextbox.name))
                         {
                             currentTextbox.name.text = speakerName.ToUpper();
+                        }
+
+                        if(listOfChoices != null)
+                        {
+                            currentTextbox.ShowChoices(listOfChoices);
                         }
 
                         yield break;
@@ -123,6 +128,7 @@ namespace Dialogue
                     else
                     {
                         yield return currentTextbox.Hide();
+                        currentTextbox.dialogue.text = "";
                     }
 
                     currentTextbox = null;
@@ -131,15 +137,14 @@ namespace Dialogue
                 case DialogueContainer.ContainerType.SpeechBubble:
                     if (immediate)
                     {
-                        currentTextbox.dialogue.text = "";
                         currentTextbox.root.SetActive(false);
                     }
                     else
                     {
                         yield return currentTextbox.Hide();
-                        currentTextbox.dialogue.text = "";
                     }
 
+                    currentTextbox.dialogue.text = "";
                     currentTextbox = null;
 
                     break;

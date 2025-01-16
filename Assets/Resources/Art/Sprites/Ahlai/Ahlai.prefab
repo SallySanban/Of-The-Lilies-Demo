@@ -152,7 +152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 13180514791106722}
-  - component: {fileID: 6335733595912154455}
+  - component: {fileID: 334826855527141379}
   - component: {fileID: 553561236021826331}
   m_Layer: 6
   m_Name: Ahlai
@@ -183,7 +183,7 @@ RectTransform:
   m_AnchoredPosition: {x: 1.2770996, y: 1.4061279}
   m_SizeDelta: {x: 1.0453976, y: 0.10087955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!50 &6335733595912154455
+--- !u!50 &334826855527141379
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -205,7 +205,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

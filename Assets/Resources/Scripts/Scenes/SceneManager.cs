@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using Dialogue;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using UnityEngine.UI;
 
 public class SceneManager : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class SceneManager : MonoBehaviour
 
     [HideInInspector] public string MC_NAME = "Ahlai";
     [HideInInspector] public float TRANSITION_WAIT_TIME = 0.3f;
+    [HideInInspector] public bool scrollBackground = false;
 
     private void Awake()
     {
@@ -89,8 +91,9 @@ public class SceneManager : MonoBehaviour
         {
             virtualCamera.OnTargetObjectWarped(virtualCamera.Follow, player.root.transform.position - virtualCamera.transform.position);
             virtualCamera.Follow = player.root.transform;
-            confiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
         }
+
+        confiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
 
         if (vnContainerFollowCamera != null)
         {
@@ -166,6 +169,10 @@ public class SceneManager : MonoBehaviour
 
             player = new Player(playerPrefab, currentScene.transform.Find(SPRITES_OBJECTNAME), playerPosition, playerDirection);
         }
+        else
+        {
+            player = null;
+        }
     }
 
     public IEnumerator PanCamera(float targetX, float targetY, float duration)
@@ -204,5 +211,22 @@ public class SceneManager : MonoBehaviour
     public void ResetCamera()
     {
         virtualCamera.Follow = player.root.transform;
+    }
+
+    public IEnumerator ScrollBackground()
+    {
+        RawImage scrollImage = currentScene.GetComponentInChildren<RawImage>();
+
+        while (scrollBackground == true)
+        {
+            scrollImage.uvRect = new Rect(scrollImage.uvRect.position + new Vector2(0.05f, scrollImage.uvRect.y) * Time.deltaTime, scrollImage.uvRect.size);
+
+            if(scrollBackground == false)
+            {
+                break;
+            }
+
+            yield return null;
+        }
     }
 }

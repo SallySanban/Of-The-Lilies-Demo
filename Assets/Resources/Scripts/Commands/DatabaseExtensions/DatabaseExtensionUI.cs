@@ -12,6 +12,9 @@ namespace Commands
             database.AddCommand("ShowCG", new Func<string, IEnumerator>(ShowCG));
             database.AddCommand("HideCG", new Func<IEnumerator>(HideCG));
             database.AddCommand("SwitchCG", new Func<string, IEnumerator>(SwitchCG));
+            database.AddCommand("ShowCredits", new Func<string, IEnumerator>(ShowCredits));
+            database.AddCommand("SwitchCredits", new Func<string, IEnumerator>(SwitchCredits));
+            database.AddCommand("HideCredits", new Func<IEnumerator>(HideCredits));
         }
 
         private static IEnumerator Blackout()
@@ -28,7 +31,7 @@ namespace Commands
 
         private static IEnumerator ShowCG(string data)
         {
-            GraphicPanel graphicPanel = UIManager.Instance.CreateUI<GraphicPanel>(filename: data);
+            GraphicPanel graphicPanel = UIManager.Instance.CreateUI<GraphicPanel>(data);
 
             graphicPanel.Show();
 
@@ -52,7 +55,7 @@ namespace Commands
 
         private static IEnumerator SwitchCG(string data)
         {
-            GraphicPanel newGraphicPanel = UIManager.Instance.CreateUI<GraphicPanel>(filename: data);
+            GraphicPanel newGraphicPanel = UIManager.Instance.CreateUI<GraphicPanel>(data);
             GraphicPanel currentGraphicPanel = UIManager.Instance.currentCG;
 
             newGraphicPanel.Show(true);
@@ -70,6 +73,21 @@ namespace Commands
             }
 
             UIManager.Instance.currentCG = newGraphicPanel;
+        }
+
+        private static IEnumerator ShowCredits(string data)
+        {
+            yield return UIManager.Instance.CreateUI<CreditsPanel>(data);
+        }
+
+        private static IEnumerator HideCredits()
+        {
+            yield return UIManager.Instance.creditsPanel.HideCredits();
+        }
+
+        private static IEnumerator SwitchCredits(string data)
+        {
+            yield return UIManager.Instance.creditsPanel.SwitchCredits(data);
         }
     }
 }

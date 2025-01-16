@@ -54,7 +54,7 @@ public class Textbox : DialogueContainer
         //root.AddComponent<PositionDebugger>();
     }
 
-    protected override void ShowChoices(string[] listOfChoices)
+    public override void ShowChoices(string[] listOfChoices)
     {
         base.ShowChoices(listOfChoices);
 

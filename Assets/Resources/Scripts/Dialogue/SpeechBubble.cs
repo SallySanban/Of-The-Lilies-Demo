@@ -49,7 +49,7 @@ public class SpeechBubble : DialogueContainer
         root.SetActive(true);
     }
 
-    protected override void ShowChoices(string[] listOfChoices)
+    public override void ShowChoices(string[] listOfChoices)
     {
         base.ShowChoices(listOfChoices);
 

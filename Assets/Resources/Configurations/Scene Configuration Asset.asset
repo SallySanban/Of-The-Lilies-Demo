@@ -148,7 +148,7 @@ MonoBehaviour:
       animationState: RFemStandingIdle
     - npcName: FemNPC3
       position: {x: 3729.21, y: -191.82}
-      animationState: Idle
+      animationState: PFemNPCStandingIdle
     interactablesInScene:
     - interactableName: Fishing Equipment
       interactableType: 1
@@ -349,7 +349,7 @@ MonoBehaviour:
       animationState: RMaleNPCPanic
     - npcName: FemNPC3
       position: {x: -2605.79, y: -231.82}
-      animationState: Panic
+      animationState: PFemNPCPanic
     - npcName: Dad
       position: {x: 5244.91, y: -279.66}
       animationState: Combat
@@ -390,9 +390,12 @@ MonoBehaviour:
     backgroundsToGo: []
   - sceneName: Scene 4
     currentBackgroundName: Riverside Pathway
-    showPlayer: 1
+    showPlayer: 0
     playerPosition: {x: 0, y: 0}
-    playerDirection: -1
-    npcsInScene: []
+    playerDirection: 0
+    npcsInScene:
+    - npcName: Ahlai
+      position: {x: -528.66, y: -500.41}
+      animationState: IdleRight
     interactablesInScene: []
     backgroundsToGo: []

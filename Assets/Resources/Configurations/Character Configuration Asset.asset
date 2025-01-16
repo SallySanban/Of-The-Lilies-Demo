@@ -45,7 +45,10 @@ MonoBehaviour:
     characterType: 1
   - name: Dalawi
     alias: dalawi
-    characterType: 1
+    characterType: 0
   - name: Laya
     alias: laya
-    characterType: 1
+    characterType: 0
+  - name: Lady Sabina
+    alias: lady sabina
+    characterType: 0

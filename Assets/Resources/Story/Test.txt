@@ -1,3 +1,40 @@
 input
 
-PlaySFX("Chicken")
+Lady Sabina "Do you want to be saved?"
+
+choice in 2
+{
+	- I need to avenge my family.
+		Ahlai as <playerName> "If it means I get to avenge my family... I do."
+
+		Ahlai as <playerName> "It's their fault. <b><i>Lien</i></b> and the Seiyslan Empire... They took my family away from me. Did you even see what they did to my land? My tribe?"
+
+		Lady Sabina "I know you're hurting, child. I'll let you take your time to process what happened."
+
+		Lady Sabina "What's important is that I'm here now."
+
+	- Yes, to make things right.
+		Ahlai as <playerName> "If I go with you... will you help me make things right?"
+
+		Ahlai as <playerName> "I... want to do something about what happened. I need to find my family, at least."
+
+		Ahlai as <playerName> "I do not know if you understand, but... please, I have to do something! It's not right that they can just... take them away!"
+
+		Lady Sabina "You can take all the time you need to find the right answer for you."
+
+		Lady Sabina "What's important is that you're all right now."
+
+	- Please make this all end.
+		Ahlai as <playerName> "Please, save me. I want it all to end..."
+
+		Ahlai as <playerName> "My family was taken away... I can't handle much more..."
+
+		Lady Sabina "Shh, I understand, child. You're all right now. You no longer have to worry."
+}
+
+HideTextbox(true)
+[wait]Blackout()
+
+Lady Sabina "I'll make sure to keep you safe."
+
+HideTextbox(true)

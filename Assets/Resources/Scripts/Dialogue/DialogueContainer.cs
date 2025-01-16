@@ -41,7 +41,7 @@ public class DialogueContainer
         CharacterConfigData config = character.config != null ? character.config : CharacterManager.Instance.GetCharacterConfig(speakerName);
     }
 
-    protected virtual void ShowChoices(string[] listOfChoices)
+    public virtual void ShowChoices(string[] listOfChoices)
     {
         dialogue.gameObject.SetActive(false);
         choices.gameObject.SetActive(true);

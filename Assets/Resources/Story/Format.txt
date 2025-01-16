@@ -94,6 +94,7 @@ MoveNPC(NPCName -x xPosition -y yPosition -spd speed) //moves NPC to target loca
 MovePlayerToInteract(-x xPosition -y yPosition)
 PanCamera(-x xPosition -y yPosition -spd speed)
 ResetCamera()
+RemoveScene()
 
 === Effects ===
 ScreenShake()

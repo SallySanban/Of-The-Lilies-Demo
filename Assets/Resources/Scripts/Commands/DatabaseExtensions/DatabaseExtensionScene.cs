@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
 namespace Commands
@@ -25,6 +23,7 @@ namespace Commands
             database.AddCommand("MovePlayerToInteract", new Func<string[], IEnumerator>(MovePlayerToInteract));
             database.AddCommand("PanCamera", new Func<string[], IEnumerator>(PanCamera));
             database.AddCommand("ResetCamera", new Action(ResetCamera));
+            database.AddCommand("ScrollBackground", new Action<string>(ScrollBackground));
         }
 
         private static void ShowScene(string[] data)
@@ -169,6 +168,16 @@ namespace Commands
         private static void ResetCamera()
         {
             SceneManager.Instance.ResetCamera();
+        }
+
+        private static void ScrollBackground(string data)
+        {
+            if(bool.TryParse(data, out bool scroll))
+            {
+                SceneManager.Instance.scrollBackground = scroll;
+
+                SceneManager.Instance.StartCoroutine(SceneManager.Instance.ScrollBackground());
+            }
         }
     }
 }
