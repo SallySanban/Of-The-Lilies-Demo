@@ -147,7 +147,7 @@ MonoBehaviour:
       position: {x: -924.26, y: -222.38}
       animationState: RFemStandingIdle
     - npcName: FemNPC3
-      position: {x: 3729.21, y: -191.82}
+      position: {x: 3729.21, y: -171.82}
       animationState: PFemNPCStandingIdle
     interactablesInScene:
     - interactableName: Fishing Equipment

@@ -70,6 +70,7 @@ Dad at 1 "<playerName> has their own fair share of errands to do to prepare. The
 
 Alonay at 0 "But Dad! <subjectPronoun> promised!"
 
+HideTextbox(true)
 [wait]SwitchCharacter(Alonay Ahlai -p 0 -b Left_Default_Body -e Left_Confused)
 
 Ahlai as <playerName> at 0 "The ritual ceremony? Was that today?"
@@ -80,17 +81,18 @@ Dad at 1 "But today is especially important for you. You have the duty to be <b>
 
 Dad at 1 "The people of Tayabac are counting on you, <playerName>. You do understand what kind of responsibility this holds, don't you?"
 
+HideTextbox(true)
 [wait]SwitchCharacter(Ahlai Alonay -p 0 -b Left_Pout_Body -e Left_Pout)
 
 Alonay at 0 "But, Dad! <playerName> should be able to enjoy their last day as a kid! We have to play together!"
 
+HideTextbox(true)
 [wait]SwitchCharacter(Dad Ahlai -p 1 -b Right_Default_Body -e Right_Default)
 
 choice in 1
 {
 	- I want to play first.
-		Ahlai as <playerName> at 1 "I want to play first."
-
+		HideTextbox(true)
 		[wait]SwitchCharacter(Ahlai Dad -p 1 -b Right_CrossedArms_Body -e Right_CrossedArms)
 
 		Alonay at 0 "See, Dad! <playerName> wants to play!"
@@ -110,8 +112,7 @@ choice in 1
 		Ahlai as <playerName> at 1 "Yes, I promise. Before the day ends."
 
 	- I have to work first.
-		Ahlai as <playerName> at 1 "I have to work first."
-
+		HideTextbox(true)
 		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Apologetic)
 
 		Ahlai as <playerName> at 1 "I'm sorry, Alonay - there are some things I need to do first, but we'll play later."
@@ -121,6 +122,7 @@ choice in 1
 		Ahlai as <playerName> at 1 "I'll play with you before the day ends, I promise."
 }
 
+HideTextbox(true)
 [wait]SwitchCharacter(Alonay Dad -p 0 -b Left_CrossedArms_Body -e Left_CrossedArms)
 ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Default)
 

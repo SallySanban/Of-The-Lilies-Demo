@@ -86,10 +86,14 @@ namespace Commands
             if(character.characterPosition == Character.CharacterPosition.Left)
             {
                 yield return character.MoveToPosition(character.startingLeftPosition, speed: 2f);
+
+                CharacterManager.Instance.RemoveCharacter(character.root.gameObject);
             }
             else
             {
                 yield return character.MoveToPosition(character.startingRightPosition, speed: 2f);
+
+                CharacterManager.Instance.RemoveCharacter(character.root.gameObject);
             }
         }
 

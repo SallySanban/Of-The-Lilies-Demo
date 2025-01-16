@@ -169,6 +169,7 @@ Wait(3)
 [wait]SwitchCredits("<b>Audio and Mixing</b><br>Antoine Andre Labuanan")
 Wait(3)
 [wait]SwitchCredits("<b>Original Soundtrack</b><br>Darren Vega")
+Wait(3)
 HideCredits()
 [wait]Blackout()
 Wait(0.5)
@@ -286,6 +287,8 @@ Lady Sabina "Do you want to be saved?"
 choice in 2
 {
 	- I need to avenge my family.
+		$Vengeance += 1
+
 		Ahlai as <playerName> "If it means I get to avenge my family... I do."
 
 		Ahlai as <playerName> "It's their fault. <b><i>Lien</i></b> and the Seiyslan Empire... They took my family away from me. Did you even see what they did to my land? My tribe?"
@@ -295,6 +298,8 @@ choice in 2
 		Lady Sabina "What's important is that I'm here now."
 
 	- Yes, to make things right.
+		$Justice += 1
+
 		Ahlai as <playerName> "If I go with you... will you help me make things right?"
 
 		Ahlai as <playerName> "I... want to do something about what happened. I need to find my family, at least."
@@ -306,6 +311,8 @@ choice in 2
 		Lady Sabina "What's important is that you're all right now."
 
 	- Please make this all end.
+		$Peace += 1
+		
 		Ahlai as <playerName> "Please, save me. I want it all to end..."
 
 		Ahlai as <playerName> "My family was taken away... I can't handle much more..."
