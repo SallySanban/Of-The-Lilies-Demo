@@ -83,18 +83,18 @@ namespace Commands
         {
             Character character = CharacterManager.Instance.GetCharacter(data);
 
-            if(character.characterPosition == Character.CharacterPosition.Left)
+            CharacterManager.Instance.RemoveCharacterFromList(character.root.gameObject, false);
+
+            if (character.characterPosition == Character.CharacterPosition.Left)
             {
                 yield return character.MoveToPosition(character.startingLeftPosition, speed: 2f);
-
-                CharacterManager.Instance.RemoveCharacter(character.root.gameObject);
             }
             else
             {
                 yield return character.MoveToPosition(character.startingRightPosition, speed: 2f);
-
-                CharacterManager.Instance.RemoveCharacter(character.root.gameObject);
             }
+
+            CharacterManager.Instance.DestroyCharacter(character.root.gameObject);
         }
 
         private static IEnumerator SwitchCharacter(string[] data)

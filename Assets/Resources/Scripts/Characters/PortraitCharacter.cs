@@ -84,7 +84,7 @@ namespace Characters
 
                 if (self.alpha == 0f)
                 {
-                    characterManager.RemoveCharacter(self.gameObject);
+                    characterManager.RemoveCharacterFromList(self.gameObject);
                     break;
                 }
 

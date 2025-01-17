@@ -64,9 +64,15 @@ namespace Characters
             return character;
         }
 
-        public void RemoveCharacter(GameObject character)
+        public void RemoveCharacterFromList(GameObject character, bool destroyImmediate = true)
         {
             characters.Remove(character.name.ToLower());
+
+            if (destroyImmediate) DestroyCharacter(character);
+        }
+
+        public void DestroyCharacter(GameObject character)
+        {
             Object.Destroy(character);
         }
 
