@@ -1,0 +1,44 @@
+if($GotCoconut == true)
+{
+	[wait]Blackout()
+	[wait]RemoveScene()
+	[wait]HideCG()
+	[input]ShowCG("Sunset 1")
+
+	Ahlai as <playerName> "Where is he?"
+
+	Ahlai as <playerName> "It's already sunset. The view of Tayabac from up here couldn't be more beautiful."
+
+	HideTextbox(true)
+	[input]SwitchCG("Smoke")
+
+	Ahlai as <playerName> "...Huh?"
+
+	HideTextbox(true)
+	[wait]HideCG()
+	ScreenShake()
+	[input]ShowCG("Sunset 2")
+
+	Ahlai as <playerName> "Dad!"
+
+	HideTextbox(true)
+	[wait]Blackout()
+	[wait]ShowScene("Scene 3" "Tayabac Village Burning")
+	[wait]HideCG()
+	[wait]PanCamera(-x 66.69 -spd 10)
+	[wait]Blackout()
+	[wait]ResetCamera()
+	[wait]HideCG()
+}
+else
+{
+	[wait]MovePlayerToInteract(-x -11.65 -y -2.10)
+	
+	pixel Ahlai as <playerName> "I need to find a coconut first."
+
+	HideTextbox(false)
+}
+
+
+
+

@@ -311,7 +311,7 @@ MonoBehaviour:
     - interactableName: Left Exit
       interactableType: 2
       isInteractable: 1
-      storyToPlay: Main 2
+      storyToPlay: Main 2 - Village Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Coconut Tree
       interactableType: 1
@@ -380,7 +380,7 @@ MonoBehaviour:
     - interactableName: Dad Trigger
       interactableType: 4
       isInteractable: 1
-      storyToPlay: Main 2 - Dad Lien Interaction
+      storyToPlay: Main 2
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: MaleNPC2 Trigger
       interactableType: 3
