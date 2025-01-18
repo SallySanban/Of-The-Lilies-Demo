@@ -1,2 +1,3 @@
+playSFX(SFX_VegHarvest)
 ToggleInteractable("Scene 2" "Tayabac Village" Cabbage false)
 $Crops += 1

@@ -16,7 +16,7 @@ ScreenShake()
 
 Alonay "<playerName>!"
 
-PlaySFX("Chickens")
+playAmbience(Amb_Opening)
 HideTextbox(true)
 [input]ShowCG("Family")
 
@@ -26,7 +26,7 @@ Ahlai as <playerName> "<i>It feels like I haven't been here in so long.</i>"
 
 HideCG()
 [wait]HideTextbox(true)
-PlaySFX("Children Laughter")
+playSFX(SFX_BoysLaugh)
 [input]ShowCG("Dalawi Laya")
 
 Ahlai as <playerName> "<i>Laya... He always loved to play with his toys.</i>"
@@ -62,6 +62,7 @@ Dad "Not so fast, Alonay."
 HideTextbox(true)
 [wait]Blackout()
 [wait]ShowScene("Scene 1" "Tayabac House 2nd Floor")
+playMusic(BGM_Scene1)
 [wait]HideCG()
 ShowCharacterLeft(Alonay -b Left_Pout_Body -e Left_Pout)
 [wait]ShowCharacterRight(Dad -b Right_CrossedArms_Body -e Right_CrossedArms)

@@ -1,2 +1,3 @@
+playSFX(SFX_VegHarvest)
 ToggleInteractable("Scene 2" "Tayabac Village" Turnip false)
 $Crops += 1
