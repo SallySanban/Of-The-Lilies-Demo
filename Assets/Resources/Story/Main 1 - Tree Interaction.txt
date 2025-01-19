@@ -2,8 +2,8 @@ pixel Ahlai as <playerName> "This must be where I can get some wood."
 
 [wait]Blackout()
 HideTextbox(true)
-Wait(0.5)
-PlaySFX("Chopping wood")
+playSFX(SFX_WoodChop)
+Wait(2.0)
 ToggleInteractable("Scene 2" "Tayabac Village" Trees false)
 [wait]HideCG()
 

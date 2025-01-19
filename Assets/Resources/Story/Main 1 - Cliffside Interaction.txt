@@ -10,6 +10,9 @@ else
 
 	[wait]SwitchScene("Scene 2" "Tayabac Cliffside 1")
 
+	stopEvent(1)
+	stopEvent(2)
+
 	pixel Ahlai as <playerName> "Dad isn't here yet."
 
 	pixel Ahlai as <playerName> "Where is he?"

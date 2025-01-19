@@ -128,7 +128,7 @@ Ahlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
 
 ??? "Sir Lien!"
 
-PlaySFX("Thump")
+playSFX(SFX_LienFall)
 
 ??? "Sir Lien! Are you okay?!"
 
@@ -139,6 +139,9 @@ Lien "I'm fine. This is all... <b>for the good of the Seiyslan Empire.</b>"
 Ahlai as <playerName> "<b><i>Lien...</b></i>"
 
 Ahlai as <playerName> "<b><i>I won't forget that name...</b></i>"
+
+stopEvent(5)
+playAmb(Amb_ForestMain)
 
 HideTextbox(true)
 [wait]ShowScene("Scene 4" "Riverside Pathway")

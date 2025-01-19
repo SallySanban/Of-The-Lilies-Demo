@@ -1,71 +1,83 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-//using Audio;
-//using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
+using System;
 
-//namespace Commands
-//{
-//    public class DatabaseExtensionAudio : CommandDatabaseExtension
-//    {
-//        private static string loopParameter => "-l";
-//        private static string volumeParameter => "-vol";
+namespace Commands
+{
+    public class DatabaseExtensionAudio : CommandDatabaseExtension
+    {
+        private static List<EventInstance> activeEvents = new List<EventInstance>();
+        private static int eventCounter = 0;
+        private const string MUSIC_FILEPATH = "event:/Music/";
+        private const string SFX_FILEPATH = "event:/SFX/";
+        private const string AMB_FILEPATH = "event:/Ambience/";
+        
 
-//        new public static void Extend(CommandDatabase database)
-//        {
-//            database.AddCommand("PlaySoundEffect", new Action<string[]>(PlaySoundEffect));
-//            database.AddCommand("StopSoundEffect", new Action<string>(StopSoundEffect));
-//            database.AddCommand("PlayMusic", new Action<string[]>(PlayMusic));
-//            database.AddCommand("StopMusic", new Action<string>(StopMusic));
-//        }
+        new public static void Extend(CommandDatabase database)
+        {
+            
+            database.AddCommand("playMusic", new Action<string>(playMusic));
+            database.AddCommand("playSFX", new Action<string>(playSFX));
+            database.AddCommand("playAmbience", new Action<string>(playAmbience));
+            database.AddCommand("stopEvent", new Action<string>(stopEvent));
+        }
 
-//        private static void PlaySoundEffect(string[] data)
-//        {
-//            string audioFilename = data[0];
+        private static void playMusic(string filename)
+        {
+            eventCounter++;
+            FMOD.Studio.EventInstance music;
+            music = FMODUnity.RuntimeManager.CreateInstance(MUSIC_FILEPATH + filename);
+            music.start();
+            Debug.Log("Playing Event " + eventCounter + ": " + MUSIC_FILEPATH + filename);
+            activeEvents.Add(music);
+        }
+        private static void playSFX(string filename)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(SFX_FILEPATH + filename);
+        }
 
-//            var parameters = ConvertDataToParameters(data);
+        private static void playAmbience(string filename)
+        {
+            eventCounter++;
+            FMOD.Studio.EventInstance amb;
+            amb = FMODUnity.RuntimeManager.CreateInstance(AMB_FILEPATH + filename);
+            amb.start();
+            Debug.Log("Playing Event " + eventCounter + ": " + AMB_FILEPATH + filename);
+            activeEvents.Add(amb);
+        }
 
-//            float volume = 1;
-//            bool loop = false;
+        private static void stopEvent(string data)
+        {
+            if (int.TryParse(data, out int eventID))
+            {
+                if (eventID <= 0 || eventID > activeEvents.Count)
+                {
+                    Debug.Log($"Stopping Event with ID: {eventID}. Total active events: {activeEvents.Count}");
+                    return;
+                }
 
-//            parameters.TryGetValue(volumeParameter, out volume, defaultValue: 1f);
-//            parameters.TryGetValue(loopParameter, out loop, defaultValue: false);
-
-
-//            AudioManager.Instance.PlaySoundEffect(audioFilename, volume: volume, loop: loop);
-//        }
-
-//        private static void StopSoundEffect(string audioFilename)
-//        {
-//            AudioManager.Instance.StopSoundEffect(audioFilename);
-//        }
-
-//        private static void PlayMusic(string[] data)
-//        {
-//            string audioFilename = data[0];
-
-//            var parameters = ConvertDataToParameters(data);
-
-//            float volume = 1f;
-
-//            parameters.TryGetValue(volumeParameter, out volume, defaultValue: 1f);
-
-//            if (AudioManager.Instance.musicIsPlaying != "")
-//            {
-//                //Debug.Log("INSIDE " + AudioManager.Instance.musicIsPlaying);
-//                if(audioFilename != "Fire")
-//                {
-//                    AudioManager.Instance.StopTrack(AudioManager.Instance.musicIsPlaying);
-//                }
-//            }
-
-//            AudioManager.Instance.PlayTrack(audioFilename, volumeCap: volume);
-//        }
-
-//        private static void StopMusic(string audioFilename)
-//        {
-//            AudioManager.Instance.StopTrack(audioFilename);
-//        }
-//    }
-//}
+                else
+                {
+                    FMOD.Studio.EventInstance eventToStop = activeEvents[eventID - 1];
+                    Debug.Log("Stopping Event ID " + eventID + " (Index: " + (eventID - 1) + ")");
+                    eventToStop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    eventToStop.release();
+                    Debug.Log("Event " + eventID + " stopped successfully.");
+                }
+            }
+            //else
+            //{
+            //    FMOD.Studio.EventInstance eventToStop = activeEvents[eventID - 1];
+            //    Debug.Log("Stopping Event ID " + eventID + " (Index: " + (eventID - 1) + ")");
+            //    eventToStop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            //    eventToStop.release();
+            //    activeEvents.RemoveAt(eventID - 1);
+            //    Debug.Log("Event " + eventID + " stopped successfully.");
+            //}
+        }
+    }
+}
 

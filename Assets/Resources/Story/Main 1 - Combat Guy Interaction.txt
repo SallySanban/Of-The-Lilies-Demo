@@ -17,7 +17,8 @@ choice in -1
 
 		[wait]Blackout()
 		HideTextbox(true)
-		Wait(0.5)
+		playSFX(SFX_AxeSwing)
+		Wait(2.0)
 		[wait]HideCG()
 
 		pixel MaleNPC4 as Uncle "Alright, <playerName>. That's it for today."

@@ -10,7 +10,8 @@ else
 
 	[wait]Blackout()
 	HideTextbox(true)
-	Wait(0.5)
+	playSFX(SFX_ReelFix)
+	Wait(1.5)
 	ChangeAnimationState("Fishing Equipment" Fixed)
 	[wait]HideCG()
 

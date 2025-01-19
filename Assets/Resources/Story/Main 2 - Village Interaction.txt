@@ -11,7 +11,10 @@ if($GotCoconut == true)
 
 	HideTextbox(true)
 	[input]SwitchCG("Smoke")
-
+	
+	stopEvent(3)
+	playAmbience(Amb_Fire)
+	
 	Ahlai as <playerName> "...Huh?"
 
 	HideTextbox(true)
@@ -24,6 +27,7 @@ if($GotCoconut == true)
 	HideTextbox(true)
 	[wait]Blackout()
 	[wait]ShowScene("Scene 3" "Tayabac Village Burning")
+	playAmbience(Amb_SwordRiot)
 	[wait]HideCG()
 	[wait]PanCamera(-x 66.69 -spd 10)
 	[wait]Blackout()

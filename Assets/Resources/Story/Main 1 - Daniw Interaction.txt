@@ -1,4 +1,5 @@
 [wait]SwitchScene("Scene 2" "Tayabac Village")
+playAmbience(Amb_ForestMain)
 
 pixel MaleNPC3 as Uncle Daniw "<playerName>! Congratulations on your coming-of-age!"
 

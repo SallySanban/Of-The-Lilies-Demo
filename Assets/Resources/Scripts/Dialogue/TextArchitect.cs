@@ -2,6 +2,8 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class TextArchitect
 {
@@ -156,7 +158,18 @@ public class TextArchitect
         while(tmpro.maxVisibleCharacters < tmpro.textInfo.characterCount)
         {
             tmpro.maxVisibleCharacters += charactersPerCycle;
+            PlayDialogueSound(tmpro.maxVisibleCharacters);
             yield return new WaitForSeconds(0.015f / speed);
+        }
+    }
+
+    private void PlayDialogueSound(int currentDisplayedCharacterCount)
+    {
+        if (currentDisplayedCharacterCount % 4 == 0)
+        {
+            FMOD.Studio.EventInstance sfxTyping;
+            sfxTyping = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SFX_UI Dialogue");
+            sfxTyping.start();
         }
     }
 }
