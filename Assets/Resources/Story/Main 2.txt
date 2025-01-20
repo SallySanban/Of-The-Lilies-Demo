@@ -275,17 +275,17 @@ Ahlai as <playerName> "...Who are you?"
 
 ??? "Don't worry, child. I'm here to help you."
 
-Lady Sabina "You can call me... Lady Sabina."
+Sabina as Lady Sabina "You can call me... Lady Sabina."
 
 Ahlai as <playerName> "What do you want with me? Where did they take my family?"
 
-Lady Sabina "...I was too late for them. I'm sorry. But it's not too late for you."
+Sabina as Lady Sabina "...I was too late for them. I'm sorry. But it's not too late for you."
 
-Lady Sabina "You must've been through a lot."
+Sabina as Lady Sabina "You must've been through a lot."
 
-Lady Sabina "It's over now, <playerName>. I'll protect you."
+Sabina as Lady Sabina "It's over now, <playerName>. I'll protect you."
 
-Lady Sabina "Do you want to be saved?"
+Sabina as Lady Sabina "Do you want to be saved?"
 
 choice in 2
 {
@@ -296,9 +296,9 @@ choice in 2
 
 		Ahlai as <playerName> "It's their fault. <b><i>Lien</i></b> and the Seiyslan Empire... They took my family away from me. Did you even see what they did to my land? My tribe?"
 
-		Lady Sabina "I know you're hurting, child. I'll let you take your time to process what happened."
+		Sabina as Lady Sabina "I know you're hurting, child. I'll let you take your time to process what happened."
 
-		Lady Sabina "What's important is that I'm here now."
+		Sabina as Lady Sabina "What's important is that I'm here now."
 
 	- Yes, to make things right.
 		$Justice += 1
@@ -309,9 +309,9 @@ choice in 2
 
 		Ahlai as <playerName> "I do not know if you understand, but... please, I have to do something! It's not right that they can just... take them away!"
 
-		Lady Sabina "You can take all the time you need to find the right answer for you."
+		Sabina as Lady Sabina "You can take all the time you need to find the right answer for you."
 
-		Lady Sabina "What's important is that you're all right now."
+		Sabina as Lady Sabina "What's important is that you're all right now."
 
 	- Please make this all end.
 		$Peace += 1
@@ -320,13 +320,13 @@ choice in 2
 
 		Ahlai as <playerName> "My family was taken away... I can't handle much more..."
 
-		Lady Sabina "Shh, I understand, child. You're all right now. You no longer have to worry."
+		Sabina as Lady Sabina "Shh, I understand, child. You're all right now. You no longer have to worry."
 }
 
 HideTextbox(true)
 [wait]Blackout()
 
-Lady Sabina "I'll make sure to keep you safe."
+Sabina as Lady Sabina "I'll make sure to keep you safe."
 
 [input]HideTextbox(true)
 
@@ -336,34 +336,35 @@ Lady Sabina "I'll make sure to keep you safe."
 
 [input]ShowCG("Lady Sabina Worried")
 
-Lady Sabina "Oh my. <playerName>, you're sweating profusely!"
+Sabina as Lady Sabina "Oh my. <playerName>, you're sweating profusely!"
 
-Lady Sabina "Are you okay? Did you perhaps have another bad dream?"
+Sabina as Lady Sabina "Are you okay? Did you perhaps have another bad dream?"
 
 choice in 2
 {
 	- I did, actually...
-		Lady Sabina "Oh no. If you were sweating from that nightmare, then it must've been terrible..."
+		Sabina as Lady Sabina "Oh no. If you were sweating from that nightmare, then it must've been terrible..."
 
 	- No, I'm fine...
-		Lady Sabina "I just said you're sweating, of course you're not fine!"
+		Sabina as Lady Sabina "I just said you're sweating, of course you're not fine!"
 
-		Lady Sabina "Ugh. You know I'm concerned for you, so you might as well be honest with me..."
+		Sabina as Lady Sabina "Ugh. You know I'm concerned for you, so you might as well be honest with me..."
 
 		Ahlai as <playerName> "Thank you for your concern, Lady Sabina..."
 }
 
-Lady Sabina "Go get ready and head downstairs. Seiji's already manning the counter."
+Sabina as Lady Sabina "Go get ready and head downstairs. Seiji's already manning the counter."
 
-Lady Sabina "I'll see to it that I prepare something for your sleep."
+Sabina as Lady Sabina "I'll see to it that I prepare something for your sleep."
 
-Lady Sabina "If you don't feel well, you tell me, okay?"
+Sabina as Lady Sabina "If you don't feel well, you tell me, okay?"
 
 Ahlai as <playerName> "Yes, ma'am."
 
-Lady Sabina "Good."
+Sabina as Lady Sabina "Good."
 
 [wait]Blackout()
 $AxeReceived = false
+$SatoQuest = false
 [wait]ShowScene("Scene 5" "Ahlai's Bedroom")
 

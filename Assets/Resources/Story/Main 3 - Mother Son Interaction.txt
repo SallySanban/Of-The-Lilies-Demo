@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "Oh, no. How did I sleep in this mess?"
+
+pixel Ahlai as <playerName> "Ugh, it smells too! I think this batch of bath fizz is a failure..."
+
+HideTextbox(false)

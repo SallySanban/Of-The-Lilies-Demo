@@ -94,6 +94,9 @@ namespace Dialogue.LogicalLines
             {
                 var line = data.lines[i];
 
+                // Debugging: Log the current line and encapsulation depth
+                Debug.Log($"Processing line: {line}, Encapsulation Depth: {encapsulationDepth}");
+
                 if(IsChoiceStart(line) && encapsulationDepth == 1)
                 {
                     if(!isFirstChoice)

@@ -2,8 +2,9 @@ using Cinemachine;
 using System.Collections;
 using UnityEngine;
 using Dialogue;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine.UI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class SceneManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class SceneManager : MonoBehaviour
 
     [SerializeField] private RectTransform _pixelContainer = null;
     [SerializeField] private FollowCamera _vnContainerFollowCamera;
+    [SerializeField] private StudioListener studioListener;
     public RectTransform pixelContainer => _pixelContainer;
     public FollowCamera vnContainerFollowCamera => _vnContainerFollowCamera;
 
@@ -168,6 +170,8 @@ public class SceneManager : MonoBehaviour
             GameObject playerPrefab = FilePaths.GetPrefabFromPath(FilePaths.spritesPrefabPath, MC_NAME);
 
             player = new Player(playerPrefab, currentScene.transform.Find(SPRITES_OBJECTNAME), playerPosition, playerDirection);
+
+            studioListener.attenuationObject = player.root;
         }
         else
         {
