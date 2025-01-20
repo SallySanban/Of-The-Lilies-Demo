@@ -1,0 +1,77 @@
+if(!$SatoQuest)
+{
+	pixel Sato as Mr. Sato "Hey, <playerName>!"
+
+	pixel Ahlai as <playerName> "Hello, Mr. Sato!"
+
+	pixel Sato as Mr. Sato "Say, you came at just the right time! I was wondering if you can get me a potion for growing my crops faster."
+
+	pixel Sato as Mr. Sato "Sorry. I don't usually worry about these things, but I've got a special day coming up and I want to have my crops ready."
+	
+	pixel Sato as Mr. Sato "It's been quite difficult to grow them lately... They aren't thriving as well as they used to. Something just doesn't feel right."
+
+	choice in -1
+	{
+		- Sure.
+			pixel Ahlai as <playerName> "I understand, Mr. Sato. No need to explain yourself."
+
+			pixel Ahlai as <playerName> "I'll go make you that potion."
+
+			pixel Sato as Mr. Sato "Thank you, Ahlai! Always so reliable."
+
+		- I can't.
+			pixel Sato as Mr. Sato "Oh... I see."
+
+			pixel Sato as Mr. Sato "Sorry for bothering you."
+
+			pixel Sato as Mr. Sato "But! I will remain right here for the foreseeable future, if you change your mind."
+	}
+
+	HideTextbox(false)
+	$SatoPotionDone = false
+	$SatoQuest = true
+}
+else
+{
+	if($SatoQuest && !$SatoPotionDone)
+	{
+		pixel Sato as Mr. Sato "I'm looking forward to your potion, Ahlai!"
+	}
+	else
+	{
+		pixel Ahlai as <playerName> "Here you go, Mr. Sato! One fertilizer potion!"
+
+		pixel Sato as Mr. Sato "Splendid! Thank you, Ahlai!"
+
+		pixel Sato as Mr. Sato "It'll be ready just in time for the missus!"
+
+		pixel Ahlai as <playerName> "Oh! Is it your wife's birthday, Mr. Sato?"
+
+		pixel Sato as Mr. Sato "Wedding anniversary, actually!"
+
+		pixel Ahlai as <playerName> "Wow! Happy anniversary to you both! Please give her my regards."
+
+		pixel Sato as Mr. Sato "I will! Or better yet, you can always greet her yourself."
+
+		pixel Ahlai as <playerName> "I can? I wouldn't want to intrude on your special day."
+
+		pixel Sato as Mr. Sato "Nonsense! Of course you can."
+
+		pixel Sato as Mr. Sato "Do visit her when you have the time. There's a good chance you'll see me too."
+
+		pixel Ahlai as <playerName> "Okay, I will!"
+
+		pixel Sato as Mr. Sato "Great!"
+
+		pixel Sato as Mr. Sato "Anyway, gotta get farming! Those flowers ain't gonna grow themselves."
+
+		pixel Sato as Mr. Sato "See you, Ahlai! Thanks again!"
+
+		pixel Ahlai as <playerName> "No problem, Mr. Sato. See you!"
+
+		HideTextbox(false)
+		[wait]Blackout()
+		RemoveFromScene("Sato")
+		[wait]HideCG()
+	}
+}

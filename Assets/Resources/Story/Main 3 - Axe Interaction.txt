@@ -1,0 +1,8 @@
+pixel Ahlai as <playerName> "This was once my family's axe, but it's mine now."
+
+RemoveFromScene("Axe")
+$AxeReceived = true
+
+pixel Ahlai as <playerName> "I always hoped I would never have to use it..."
+
+HideTextbox(false)

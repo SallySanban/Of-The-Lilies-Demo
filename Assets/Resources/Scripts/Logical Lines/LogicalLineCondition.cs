@@ -17,6 +17,9 @@ namespace Dialogue.LogicalLines
             string rawCondition = ExtractCondition(line.rawData.Trim());
             bool conditionResult = EvaluateCondition(rawCondition);
 
+            // Debugging: Log the condition and its result
+            Debug.Log($"Condition: {rawCondition}, Result: {conditionResult}");
+
             Conversation currentConversation = DialogueManager.Instance.conversationManager.conversation;
             int currentProgress = DialogueManager.Instance.conversationManager.conversationProgress;
 

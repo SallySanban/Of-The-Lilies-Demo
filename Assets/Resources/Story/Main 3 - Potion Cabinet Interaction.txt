@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Don't need anything from here at the moment."
+
+HideTextbox(false)

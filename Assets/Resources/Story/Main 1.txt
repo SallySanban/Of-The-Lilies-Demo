@@ -31,7 +31,9 @@ playSFX(SFX_BoysLaugh)
 
 Ahlai as <playerName> "<i>Laya... He always loved to play with his toys.</i>"
 
-Ahlai as <playerName> "<i>He looked exactly like our older brother, Dalawi... but Laya was the shy type. He and Dalawi were completely different.</i>"
+Ahlai as <playerName> "<i>He looked exactly like our older brother, Dalawi... but Laya was the shy type."
+
+Ahlai as <playerName> "<i>He and Dalawi were completely different.</i>"
 
 HideCG()
 [wait]HideTextbox(true)
@@ -47,9 +49,13 @@ Ahlai as <playerName> "<i>Oh, it's Alonay... I miss her the most.<i>"
 
 Alonay "You finally opened your eyes! Hmph, it's so hard to wake you, <playerName>."
 
-Ahlai as <playerName> "Sorry. The mornings are just not my thing. It's a wonder how you have the energy to get up so early."
+Ahlai as <playerName> "Sorry. The mornings are just not my thing."
 
-Alonay "Teehee, that's because I'm younger than you, after all! And I need the sun to keep me pretty and healthy!"
+Ahlai as <playerName> "It's a wonder how you have the energy to get up so early."
+
+Alonay "Teehee, that's because I'm younger than you, after all!"
+
+Alonay "And I need the sun to keep me pretty and healthy!"
 
 Ahlai as <playerName> "You can have your morning sun, then. Takes a lot to be the prettiest of the land, doesn't it?"
 

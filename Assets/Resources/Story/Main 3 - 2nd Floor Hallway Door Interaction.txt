@@ -1,0 +1,10 @@
+if($AxeReceived == true)
+{
+	[wait]SwitchScene("Scene 5" "2nd Floor Hallway")
+}
+else
+{
+	pixel Ahlai as <playerName> "There must be something I'm forgetting..."
+
+	HideTextbox(false)
+}

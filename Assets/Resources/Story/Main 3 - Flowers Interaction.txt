@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Oh no. I forgot to water them last night..."
+
+HideTextbox(false)

@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "Ah, Lady Sabina."
+
+pixel Ahlai as <playerName> "She's already as beautiful as she is kind. But this painting of her in her prime? Even more so..."
+
+HideTextbox(false)

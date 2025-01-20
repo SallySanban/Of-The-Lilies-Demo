@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "Look at you."
+
+pixel Ahlai as <playerName> "I am nowhere near my best right now... I should freshen up when I can."
+
+HideTextbox(false)

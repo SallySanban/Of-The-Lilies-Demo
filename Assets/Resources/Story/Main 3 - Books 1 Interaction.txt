@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "'...the Empire of Seiysla welcomes all religions, but our proud Kingdom reveres our one god, Dok'kale...'"
+
+HideTextbox(false)
