@@ -126,6 +126,10 @@ HideCharacter(Lien)
 
 Ahlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
 
+stopEvent(4)
+stopEvent(5)
+stopEvent(6)
+
 ??? "Sir Lien!"
 
 playSFX(SFX_LienFall)
@@ -140,13 +144,13 @@ Ahlai as <playerName> "<b><i>Lien...</b></i>"
 
 Ahlai as <playerName> "<b><i>I won't forget that name...</b></i>"
 
-stopEvent(5)
-playAmb(Amb_ForestMain)
+
 
 HideTextbox(true)
 [wait]ShowScene("Scene 4" "Riverside Pathway")
 ScrollBackground(true)
 Wait(0.5)
+playMusic(BGM_Scene4)
 [wait]HideCG()
 [wait]PanCamera(-y -10.02 -spd 3)
 [wait]ShowCredits("<b>Lead and Programmer</b><br>Johanna Eikou Teknomo")
@@ -174,6 +178,7 @@ Wait(3)
 [wait]SwitchCredits("<b>Original Soundtrack</b><br>Darren Vega")
 Wait(3)
 HideCredits()
+stopEvent(7)
 [wait]Blackout()
 Wait(0.5)
 
@@ -228,7 +233,7 @@ Laya "Wah...! Don't hurt me...! It hurts! Please don't, please...!"
 Dalawi "He said not to hurt him! What are you doing?! Unhand me or I'm <i>going to</i>-"
 
 HideTextbox(true)
-PlaySFX("Knock out")
+playSFX(SFX_Knockout)
 [wait]Blackout()
 
 [input]SwitchCG("Alonay Chained")
@@ -240,12 +245,13 @@ Alonay "No... Don't touch me! H-Help! <playerName>, I'm scared!"
 Ahlai as <playerName> "Alonay!"
 
 HideTextbox(true)
-PlaySFX("Door slam")
+playSFX(SFX_DoorSlam)
+
 [wait]Blackout()
 
 Ahlai as <playerName> "NO!"
 
-PlaySFX("Muffled voices")
+playAmbience(Amb_MuffledVoices)
 
 Ahlai as <playerName> "..."
 
@@ -259,7 +265,7 @@ Ahlai as <playerName> "<i>There are people talking outside... Is it not over?</i
 
 ??? "Someone else is taking <objectPronoun> home, and they have the money for it, too."
 
-PlaySFX("Coins jiggling")
+playSFX(SFX_CoinsJiggle)
 
 ??? "Then how about I offer you more?"
 
@@ -267,8 +273,10 @@ PlaySFX("Coins jiggling")
 
 ??? "Hand them to me."
 
+stopEvent(8)
+
 HideTextbox(true)
-PlaySFX("Door opening")
+playSFX(SFX_DoorOpen)
 [input]SwitchCG("Lady Sabina Save")
 
 Ahlai as <playerName> "...Who are you?"
