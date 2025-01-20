@@ -561,7 +561,7 @@ MonoBehaviour:
     - interactableName: Door
       backgroundToGo: Main Shop
       keyToPress: 2
-      playerPositionInNextBackground: {x: 2271.17, y: -227.16}
+      playerPositionInNextBackground: {x: 2277.64, y: -262.05}
       playerDirectionInNextBackground: -1
     - interactableName: Stairs
       backgroundToGo: 2nd Floor Hallway
@@ -571,9 +571,36 @@ MonoBehaviour:
   - sceneName: Scene 5
     currentBackgroundName: Main Shop
     showPlayer: 1
-    playerPosition: {x: 2271.17, y: -227.16}
+    playerPosition: {x: 2277.64, y: -262.05}
     playerDirection: -1
-    npcsInScene: []
+    npcsInScene:
+    - npcName: Sabina
+      position: {x: 631.78, y: -218.32}
+      animationState: Idle
+    - npcName: RookieJournalist
+      position: {x: -2131.22, y: -205.4}
+      animationState: Idle
+    - npcName: Seiji
+      position: {x: 311.68, y: -168.32}
+      animationState: Idle
+    - npcName: Sato
+      position: {x: -1201.53, y: -205.4}
+      animationState: Idle
+    - npcName: RichSeiyslan
+      position: {x: -1482.22, y: -205.4}
+      animationState: Idle
+    - npcName: MotherWithSon
+      position: {x: 2073.78, y: -218.32}
+      animationState: Idle
+    - npcName: DesperateGirl
+      position: {x: -525.22, y: -205.4}
+      animationState: Idle
+    - npcName: AmazedVisitor
+      position: {x: 1306.78, y: -218.32}
+      animationState: Idle
+    - npcName: SonWithMother
+      position: {x: 1907.78, y: -225.32}
+      animationState: Idle
     interactablesInScene:
     - interactableName: Potion Cabinet
       interactableType: 1
@@ -594,6 +621,46 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: RookieJournalist
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3 - Rookie Journalist Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Sabina
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3 - Sabina Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Seiji
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Sato
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3 - Sato Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: RichSeiyslan
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3 - Rich Seiyslan Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: MotherWithSon
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3 - Mother Son Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: DesperateGirl
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3 - Desperate Girl Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: AmazedVisitor
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3 - Amazed Visitor Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Left Door
