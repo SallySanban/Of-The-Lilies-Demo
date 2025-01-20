@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "It's another busy day."
+
+pixel Ahlai as <playerName> "Gotta make sure we have enough flasks for potions."
+
+HideTextbox(false)

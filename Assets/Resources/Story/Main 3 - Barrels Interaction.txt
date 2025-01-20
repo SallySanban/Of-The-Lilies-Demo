@@ -1,0 +1,7 @@
+pixel Ahlai as <playerName> "Lady Sabina said to separate the explosive powder from the spices."
+
+pixel Ahlai as <playerName> "..."
+
+pixel Ahlai as <playerName> "Though, it's no easy task. They all look the same..."
+
+HideTextbox(false)

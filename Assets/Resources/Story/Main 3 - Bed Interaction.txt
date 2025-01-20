@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "I could go back to bed, but..."
+
+pixel Ahlai as <playerName> "That would get me either another nightmare or a scolding from Lady Sabina."
+
+HideTextbox(false)

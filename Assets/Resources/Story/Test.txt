@@ -1,5 +1,4 @@
-playMusic(BGM_Scene1)
-Wait(5.0)
-listEvents
-stopEvent(1)
-[wait]ShowScene("Scene 3" "Tayabac Village Burning")
+input
+
+$SatoQuest = false
+[wait]ShowScene("Scene 5" "Main Shop")

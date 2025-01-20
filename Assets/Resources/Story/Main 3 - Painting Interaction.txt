@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "Dok'kale..."
+
+pixel Ahlai as <playerName> "Please give me a good night's sleep for once..."
+
+HideTextbox(false)

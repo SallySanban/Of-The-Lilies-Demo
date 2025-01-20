@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "'...and so, shops everywhere in Seiysla enjoy the innovations of a simple machine that counts and stores currency, lightening the burdens of moneylenders and bankers...'"
+
+HideTextbox(false)

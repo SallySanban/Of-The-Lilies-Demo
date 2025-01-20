@@ -1,0 +1,7 @@
+pixel Ahlai as <playerName> "'Please knock before you enter. Seiji.'"
+
+pixel Ahlai as <playerName> "..."
+
+pixel Ahlai as <playerName> "...did it take him 3 tries to write 'knock' correctly?"
+
+HideTextbox(false)

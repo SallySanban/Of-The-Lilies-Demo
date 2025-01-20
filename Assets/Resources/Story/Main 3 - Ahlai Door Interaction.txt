@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "'Do Not Disturb. Ahlai.'"
+
+pixel Ahlai as <playerName> "'Applicable to all except Lady Sabina.'"
+
+HideTextbox(false)
