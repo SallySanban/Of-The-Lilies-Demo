@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "'The best way to brew a batch of bath fizz'"
+
+pixel Ahlai as <playerName> "It took me quite a few tries to get this right."
+
+HideTextbox(false)

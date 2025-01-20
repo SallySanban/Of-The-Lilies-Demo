@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Lady Sabina's flowers go a long way to liven up the place."
+
+HideTextbox(false)

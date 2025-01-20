@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "These are the new potions in stock."
+
+pixel Ahlai as <playerName> "I have to learn how Lady Sabina makes these..."
+
+HideTextbox(false)

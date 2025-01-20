@@ -364,4 +364,6 @@ Ahlai as <playerName> "Yes, ma'am."
 Lady Sabina "Good."
 
 [wait]Blackout()
+$AxeReceived = false
+[wait]ShowScene("Scene 5" "Ahlai's Bedroom")
 

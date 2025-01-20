@@ -1,0 +1,10 @@
+ShowUI("Family photo")
+
+pixel Ahlai as <playerName> "Another nightmare..."
+
+pixel Ahlai as <playerName> "I just can't seem to forget what Seiysla did..."
+
+pixel Ahlai as <playerName> "I can't forget what they took from me..."
+
+HideUI()
+HideTextbox(false)

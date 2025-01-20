@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "'...the Empire is divided into provinces with rich resources and multiple peoples - to the east is Sagai Province, to the north is Agon Province...'"
+
+HideTextbox(false)

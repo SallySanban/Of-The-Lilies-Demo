@@ -399,3 +399,210 @@ MonoBehaviour:
       animationState: IdleRight
     interactablesInScene: []
     backgroundsToGo: []
+  - sceneName: Scene 5
+    currentBackgroundName: Ahlai's Bedroom
+    showPlayer: 1
+    playerPosition: {x: -1001.34, y: -227.16}
+    playerDirection: 1
+    npcsInScene: []
+    interactablesInScene:
+    - interactableName: Conspiracy Wall
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Conspiracy Wall Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Flowers
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Flowers Interaction
+      moveToInteractPosition: {x: -9.17, y: -2.1}
+    - interactableName: Family Photo
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Family Photo Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Workbench
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Workbench Interaction
+      moveToInteractPosition: {x: 9.27, y: -2.1}
+    - interactableName: Bed
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Bed Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Book
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Book Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Painting of Nari
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Painting Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Rock
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Rock Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Axe
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Axe Interaction
+      moveToInteractPosition: {x: -9.17, y: -2.1}
+    - interactableName: Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 3 - 2nd Floor Hallway Door Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Door
+      backgroundToGo: 2nd Floor Corridor
+      keyToPress: 3
+      playerPositionInNextBackground: {x: -1277.97, y: -227.16}
+      playerDirectionInNextBackground: 1
+  - sceneName: Scene 5
+    currentBackgroundName: 2nd Floor Hallway
+    showPlayer: 1
+    playerPosition: {x: -1277.97, y: -227.16}
+    playerDirection: 1
+    npcsInScene: []
+    interactablesInScene:
+    - interactableName: Ahlai Door
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Ahlai Door Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Seiji Door
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Seiji Door Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Flowers
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Hallway Flowers Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Portrait
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Portrait Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Books 1
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Books 1 Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Books 2
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Books 2 Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Books 3
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Books 3 Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Stairs
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Stairs
+      backgroundToGo: 1st Floor Hallway
+      keyToPress: 4
+      playerPositionInNextBackground: {x: 1311.99, y: -227.16}
+      playerDirectionInNextBackground: -1
+  - sceneName: Scene 5
+    currentBackgroundName: 1st Floor Hallway
+    showPlayer: 1
+    playerPosition: {x: 1311.99, y: -227.16}
+    playerDirection: -1
+    npcsInScene: []
+    interactablesInScene:
+    - interactableName: Barrels
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Barrels Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Flasks
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Flasks Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Mirror
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Mirror Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Boxes
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Boxes Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Double Door
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Locked Door Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Stairs
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Door
+      backgroundToGo: Main Shop
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 2271.17, y: -227.16}
+      playerDirectionInNextBackground: -1
+    - interactableName: Stairs
+      backgroundToGo: 2nd Floor Hallway
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 836.17, y: -227.16}
+      playerDirectionInNextBackground: -1
+  - sceneName: Scene 5
+    currentBackgroundName: Main Shop
+    showPlayer: 1
+    playerPosition: {x: 2271.17, y: -227.16}
+    playerDirection: -1
+    npcsInScene: []
+    interactablesInScene:
+    - interactableName: Potion Cabinet
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Potion Cabinet Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Display Shelf
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Display Shelf Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Left Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 3 - Leave Sabina Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Right Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Left Door
+      backgroundToGo: Kuchai Town 1
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 0, y: 0}
+      playerDirectionInNextBackground: 0
+    - interactableName: Right Door
+      backgroundToGo: 1st Floor Hallway
+      keyToPress: 1
+      playerPositionInNextBackground: {x: -2275.36, y: -226.71}
+      playerDirectionInNextBackground: 1
