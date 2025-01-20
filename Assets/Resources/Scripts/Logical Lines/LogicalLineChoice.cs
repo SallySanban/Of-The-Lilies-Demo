@@ -22,6 +22,8 @@ namespace Dialogue.LogicalLines
 
         public IEnumerator Execute(DialogueLine line)
         {
+            Debug.Log("WENT HERE");
+
             var currentConversation = DialogueManager.Instance.conversationManager.conversation;
             var progress = DialogueManager.Instance.conversationManager.conversationProgress;
             EncapsulatedData data = RipEncapsulationData(currentConversation, progress, true, parentStartingIndex: currentConversation.fileStartIndex);
@@ -61,7 +63,9 @@ namespace Dialogue.LogicalLines
 
                     choiceContainer = DialogueManager.Instance.GetTextboxTypeFromPosition(position);
 
-                    keywordToFind = line.speakerData.name.Substring(0, match.Index);
+                    keywordToFind = line.speakerData.name.Substring(0, match.Index).Trim();
+
+                    Debug.Log("FOUND MATCH");
                 }
                 else
                 {

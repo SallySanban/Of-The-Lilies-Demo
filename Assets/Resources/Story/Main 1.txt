@@ -108,6 +108,7 @@ choice in 1
 
 		Alonay at 0 "But... but...!"
 
+		HideTextbox(true)
 		[wait]SwitchCharacter(Dad Ahlai -p 1 -b Right_Default_Body -e Right_Apologetic)
 
 		Ahlai as <playerName> at 1 "Thank you for looking out for me, Alonay. I'm lucky to have you as a sister."

@@ -1,4 +1,3 @@
 input
 
-$SatoQuest = false
-[wait]ShowScene("Scene 5" "Main Shop")
+[wait]ShowScene("Scene 5" "Ahlai's Bedroom")
