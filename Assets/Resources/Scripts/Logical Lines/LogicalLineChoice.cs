@@ -22,8 +22,6 @@ namespace Dialogue.LogicalLines
 
         public IEnumerator Execute(DialogueLine line)
         {
-            Debug.Log("WENT HERE");
-
             var currentConversation = DialogueManager.Instance.conversationManager.conversation;
             var progress = DialogueManager.Instance.conversationManager.conversationProgress;
             EncapsulatedData data = RipEncapsulationData(currentConversation, progress, true, parentStartingIndex: currentConversation.fileStartIndex);
@@ -64,8 +62,6 @@ namespace Dialogue.LogicalLines
                     choiceContainer = DialogueManager.Instance.GetTextboxTypeFromPosition(position);
 
                     keywordToFind = line.speakerData.name.Substring(0, match.Index).Trim();
-
-                    Debug.Log("FOUND MATCH");
                 }
                 else
                 {
@@ -97,9 +93,6 @@ namespace Dialogue.LogicalLines
             for(i = 1; i < data.lines.Count; i++)
             {
                 var line = data.lines[i];
-
-                // Debugging: Log the current line and encapsulation depth
-                Debug.Log($"Processing line: {line}, Encapsulation Depth: {encapsulationDepth}");
 
                 if(IsChoiceStart(line) && encapsulationDepth == 1)
                 {
