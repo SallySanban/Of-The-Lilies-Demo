@@ -1126,6 +1126,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 0ecbac81-d4f4-4ada-a5ab-7d2da95991db
     m_ActionName: General/Move Left[/Keyboard/a,/Keyboard/leftArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fb2cf0d5-7601-4094-a846-4bceffcfe3e2
+    m_ActionName: General/MoveArrow[/Keyboard/downArrow,/Keyboard/upArrow,/Keyboard/w,/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6644003a-ef67-4b8c-8e05-3b5cada2eb13
+    m_ActionName: General/Interact[/Keyboard/space,/Keyboard/enter,/Keyboard/z]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 79d37788-4e63-47aa-ae74-94265f940367
+    m_ActionName: General/SwitchBackground[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: General
@@ -1185,6 +1197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1419403229}
+  - component: {fileID: 1419403230}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -1207,6 +1220,20 @@ Transform:
   m_Father: {fileID: 453359044}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1419403230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419403228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e17c7c4a77683714694bba54fc5b0108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VCAName: Master
+  masterVolume: 1
 --- !u!1 &1534821053
 GameObject:
   m_ObjectHideFlags: 0
