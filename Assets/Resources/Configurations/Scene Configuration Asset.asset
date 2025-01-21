@@ -626,42 +626,42 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rookie Journalist Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -24.07, y: -2.43}
     - interactableName: Sabina
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Sabina Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -1.48, y: -2.43}
     - interactableName: Seiji
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -4.52, y: -2.43}
     - interactableName: Sato
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Sato Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -14.91, y: -2.43}
     - interactableName: RichSeiyslan
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rich Seiyslan Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -21.02, y: -2.43}
     - interactableName: MotherWithSon
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Mother Son Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 10.21, y: -2.43}
     - interactableName: DesperateGirl
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Desperate Girl Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -8.83, y: -2.43}
     - interactableName: AmazedVisitor
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Amazed Visitor Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 4.88, y: -2.43}
     backgroundsToGo:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1

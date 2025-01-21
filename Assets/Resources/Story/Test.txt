@@ -1,3 +1,5 @@
 input
 
-[wait]ShowScene("Scene 5" "Ahlai's Bedroom")
+$SatoQuest = false
+$SeijiTalkedTo = false
+[wait]ShowScene("Scene 5" "Main Shop")

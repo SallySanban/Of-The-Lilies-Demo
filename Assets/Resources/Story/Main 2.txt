@@ -377,6 +377,7 @@ HideTextbox(true)
 [wait]Blackout()
 $AxeReceived = false
 $SatoQuest = false
+$SeijiTalkedTo = false
 [wait]ShowScene("Scene 5" "Ahlai's Bedroom")
 [wait]HideCG()
 

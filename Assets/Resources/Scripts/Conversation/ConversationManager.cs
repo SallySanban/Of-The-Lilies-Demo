@@ -4,6 +4,7 @@ using UnityEngine;
 using Commands;
 using Characters;
 using Dialogue.LogicalLines;
+using System;
 
 namespace Dialogue
 {
@@ -28,6 +29,8 @@ namespace Dialogue
         public int conversationProgress => (conversationQueue.IsEmpty() ? -1 : conversationQueue.top.GetProgress());
 
         public bool proceed = false;
+
+        public event Action OnConversationEnd;
 
         public ConversationManager()
         {
@@ -118,6 +121,8 @@ namespace Dialogue
             }
 
             process = null;
+
+            OnConversationEnd?.Invoke();
         }
 
         private void TryAdvanceConversation(Conversation conversation)

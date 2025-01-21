@@ -1,0 +1,86 @@
+pixel Sabina as Lady Sabina "Now, is there anything else you'd like to talk about?"
+
+choice in -1
+{
+	- La Liryo
+		pixel Sabina as Lady Sabina "I heard from the Order of La Liryo."
+
+		pixel Ahlai as <playerName> "Oh? What did they say?"
+
+		pixel Sabina as Lady Sabina "We have our work cut out for us."
+
+		pixel Sabina as Lady Sabina "There have been rumours of different unfortunate incidents happening all over Seiysla. People need potions now more than ever."
+
+		pixel Sabina as Lady Sabina "I am putting my faith in you to deliver."
+
+		pixel Sabina as Lady Sabina "But that is also why I wanted to make sure you're okay..."
+
+		pixel Sabina as Lady Sabina "If you really need to, just say the word and I'll let you rest."
+
+		pixel Sabina as Lady Sabina "I just don't want you to be burdened by tasks from the Order."
+
+		pixel Ahlai as <playerName> "Thank you, Lady Sabina."
+
+		pixel Ahlai as <playerName> "Your compassion is a gift I will appreciate."
+
+		pixel Sabina as Lady Sabina "You better. I worry about you, you know."
+
+		pixel Sabina as Lady Sabina "Waking up sweating and murmuring in your sleep... It's disgusting and terrifying."
+
+		pixel Ahlai as <playerName> "Sorry, Lady Sabina."
+
+		pixel Sabina as Lady Sabina "You are better off apologizing by getting yourself some sleep."
+
+		pixel Sabina as Lady Sabina "And while you're here, fix your clothes."
+
+		pixel Sabina as Lady Sabina "Oh, and your hair. That just won't do, you look like you just woke up."
+
+		pixel Sabina as Lady Sabina "Let me fix it for you."
+
+		pixel Ahlai as <playerName> "Yes, ma'am..."
+
+		Load("Main 3 - Sabina Repeating Dialogue")
+
+	- Today's business
+		pixel Ahlai as <playerName> "The shop is full today."
+
+		pixel Sabina as Lady Sabina "Indeed."
+
+		pixel Sabina as Lady Sabina "Kuchai Town is lively today."
+
+		pixel Sabina as Lady Sabina "We have some regulars, but some of them might be affected by whatever strange occurrence is happening around town."
+
+		pixel Sabina as Lady Sabina "Do find time to talk to them and help them. I taught you how to make potions for a reason."
+
+		pixel Sabina as Lady Sabina "And reviews have praised my shop for its incredible customer service. I'd like to maintain that quality."
+
+		pixel Ahlai as <playerName> "Yes, Lady Sabina."
+
+		Load("Main 3 - Sabina Repeating Dialogue")
+
+	- Seiji
+		pixel Sabina as Lady Sabina "Seiji has been handling the counter since this morning."
+
+		pixel Sabina as Lady Sabina "He's been working nonstop since we opened today. What a hard worker."
+
+		pixel Sabina as Lady Sabina "You know, he didn't hesitate to volunteer doing all the work today if you were going to call in sick."
+
+		pixel Ahlai as <playerName> "Really?"
+
+		pixel Sabina as Lady Sabina "The things that man does for you..."
+
+		pixel Sabina as Lady Sabina "It's best you thank him!"
+
+		pixel Sabina as Lady Sabina "How about you take him out to dinner sometime?"
+
+		pixel Ahlai as <playerName> "D-Dinner?"
+
+		pixel Sabina as Lady Sabina "Well, he just likes his food. Whatever makes the man happy. Just do it!"
+
+		Load("Main 3 - Sabina Repeating Dialogue")
+		
+	- That's all
+		pixel Sabina as Lady Sabina "Alright, I won't keep you any longer. Good luck with your tasks for the day, dear."
+
+		HideTextbox(false)
+}

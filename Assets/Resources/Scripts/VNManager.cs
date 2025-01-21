@@ -22,9 +22,16 @@ public class VNManager : MonoBehaviour
         }
     }
 
-    public void Start()
+    private void Start()
     {
         LoadFile(DIALOGUE_FILE);
+
+        DialogueManager.Instance.conversationManager.OnConversationEnd += HandleConversationEnd;
+    }
+
+    private void HandleConversationEnd()
+    {
+        InteractableManager.Instance.SetInteractablesAfterInteraction(true);
     }
 
     public Coroutine LoadFile(string filename)
@@ -57,7 +64,5 @@ public class VNManager : MonoBehaviour
         }
 
         yield return LoadFile(storyToPlay);
-
-        InteractableManager.Instance.SetInteractablesAfterInteraction(true);
     }
 }
