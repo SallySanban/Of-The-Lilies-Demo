@@ -61,7 +61,7 @@ namespace Dialogue.LogicalLines
 
                     choiceContainer = DialogueManager.Instance.GetTextboxTypeFromPosition(position);
 
-                    keywordToFind = line.speakerData.name.Substring(0, match.Index);
+                    keywordToFind = line.speakerData.name.Substring(0, match.Index).Trim();
                 }
                 else
                 {
@@ -93,9 +93,6 @@ namespace Dialogue.LogicalLines
             for(i = 1; i < data.lines.Count; i++)
             {
                 var line = data.lines[i];
-
-                // Debugging: Log the current line and encapsulation depth
-                Debug.Log($"Processing line: {line}, Encapsulation Depth: {encapsulationDepth}");
 
                 if(IsChoiceStart(line) && encapsulationDepth == 1)
                 {

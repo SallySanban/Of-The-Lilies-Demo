@@ -1,1 +1,5 @@
-[wait]ShowScene("Scene 2" "Tayabac Cliffside 1")
+input
+
+$SatoQuest = false
+$SeijiTalkedTo = false
+[wait]ShowScene("Scene 5" "Main Shop")

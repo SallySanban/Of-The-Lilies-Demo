@@ -19,6 +19,8 @@ if(!$SatoQuest)
 
 			pixel Sato as Mr. Sato "Thank you, Ahlai! Always so reliable."
 
+			$SatoPotionDone = false
+			$SatoQuest = true
 		- I can't.
 			pixel Sato as Mr. Sato "Oh... I see."
 
@@ -28,14 +30,14 @@ if(!$SatoQuest)
 	}
 
 	HideTextbox(false)
-	$SatoPotionDone = false
-	$SatoQuest = true
 }
 else
 {
 	if($SatoQuest && !$SatoPotionDone)
 	{
 		pixel Sato as Mr. Sato "I'm looking forward to your potion, Ahlai!"
+
+		HideTextbox(false)
 	}
 	else
 	{

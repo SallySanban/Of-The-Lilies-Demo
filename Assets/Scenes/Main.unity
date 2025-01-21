@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e17c7c4a77683714694bba54fc5b0108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VCAName: Master
+  VCAName: 
   masterVolume: 1
 --- !u!1 &1534821053
 GameObject:

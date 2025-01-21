@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 3.bank
   Name: Scene 3
   StudioPath: bank:/Scene 3
-  lastModified: 638729825318228868
+  lastModified: 638730103589997763
   FileSizes: []
   Exists: 1
 --- !u!114 &-5564720779252863745
@@ -519,7 +519,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638729719801294663
+  lastModified: 638730103590858060
   FileSizes: []
   Exists: 1
 --- !u!114 &1419812272976363828

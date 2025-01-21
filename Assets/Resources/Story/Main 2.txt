@@ -336,13 +336,15 @@ HideTextbox(true)
 
 Sabina as Lady Sabina "I'll make sure to keep you safe."
 
-[input]HideTextbox(true)
+HideTextbox(true)
+Wait(1)
 
 ??? "<playerName>? Are you awake?"
 
 ??? "It's time to wake up."
 
-[input]ShowCG("Lady Sabina Worried")
+HideTextbox(true)
+[input]SwitchCG("Lady Sabina Worried")
 
 Sabina as Lady Sabina "Oh my. <playerName>, you're sweating profusely!"
 
@@ -371,8 +373,11 @@ Ahlai as <playerName> "Yes, ma'am."
 
 Sabina as Lady Sabina "Good."
 
+HideTextbox(true)
 [wait]Blackout()
 $AxeReceived = false
 $SatoQuest = false
+$SeijiTalkedTo = false
 [wait]ShowScene("Scene 5" "Ahlai's Bedroom")
+[wait]HideCG()
 

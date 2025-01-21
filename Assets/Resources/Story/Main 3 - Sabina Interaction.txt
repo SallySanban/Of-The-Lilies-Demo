@@ -1,5 +1,54 @@
-pixel Ahlai as <playerName> "Oh, no. How did I sleep in this mess?"
+pixel Sabina as Lady Sabina "Good morning, <playerName>."
 
-pixel Ahlai as <playerName> "Ugh, it smells too! I think this batch of bath fizz is a failure..."
+pixel Ahlai as <playerName> "Good morning, Lady Sabina."
 
-HideTextbox(false)
+pixel Sabina as Lady Sabina "Have you talked to Seiji already?"
+
+if ($SeijiTalkedTo)
+{
+	pixel Ahlai as <playerName> "I have."
+
+	pixel Sabina as Lady Sabina "Then, you know about the chores I've asked you both to do."
+
+	pixel Ahlai as <playerName> "Yes, ma'am."
+}
+else
+{
+	pixel Ahlai as <playerName> "Not yet."
+
+	pixel Sabina as Lady Sabina "Well, I gave him a list of chores for you to do. You can ask him about the details."
+
+	pixel Sabina as Lady Sabina "However..."
+}
+
+pixel Sabina as Lady Sabina "<playerName>... Are you sure you're okay?"
+
+pixel Sabina as Lady Sabina "You looked terrible earlier, and this is hardly the first time you woke up like this either."
+
+pixel Ahlai as <playerName> "I insist, I am alright, Lady Sabina. I apologize for worrying you."
+
+pixel Sabina as Lady Sabina "..."
+
+pixel Ahlai as <playerName> "Look, I appreciate your concern..."
+
+pixel Ahlai as <playerName> "...but I would rather spend my day working than staying in my room doing nothing."
+
+pixel Ahlai as <playerName> "Being busy helps me keep my spirits up! And keeps my mind away from the past..."
+
+pixel Ahlai as <playerName> "Please. Let me do this, Lady Sabina."
+
+pixel Sabina as Lady Sabina "Hmm... Very well, then. I only have one condition."
+
+pixel Ahlai as <playerName> "What is it?"
+
+pixel Sabina as Lady Sabina "That the moment you feel the tiniest bit exhausted or distressed, you tell me immediately, okay?"
+
+pixel Sabina as Lady Sabina "I mean it!"
+
+pixel Ahlai as <playerName> "Y-Yes, Lady Sabina!"
+
+pixel Sabina as Lady Sabina "Good."
+
+pixel Sabina as Lady Sabina "I shall not have any of my members crying under my roof."
+
+Load("Main 3 - Sabina Repeating Dialogue")
