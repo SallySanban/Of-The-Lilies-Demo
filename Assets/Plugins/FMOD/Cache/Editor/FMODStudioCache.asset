@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638730103589095792
+  lastModified: 638730079551324193
   FileSizes:
   - Name: 
-    Value: 2030
+    Value: 2116
   Exists: 1
 --- !u!114 &-7730249944335003038
 MonoBehaviour:
@@ -74,6 +74,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7722956987764431199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Creek
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_Creek
+  Guid:
+    Data1: 404284534
+    Data2: 1283621227
+    Data3: -1393036401
+    Data4: -753359265
+  Banks:
+  - {fileID: 1419812272976363828}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 66645
 --- !u!114 &-7604676054006501822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +221,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -4441171743867631478}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
@@ -242,7 +269,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 4.bank
   Name: Scene 4
   StudioPath: bank:/Scene 4
-  lastModified: 638730103590747914
+  lastModified: 638730072341503955
   FileSizes: []
   Exists: 1
 --- !u!114 &-4243179252238247953
@@ -287,7 +314,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 2.bank
   Name: Scene 2
   StudioPath: bank:/Scene 2
-  lastModified: 638730103589787338
+  lastModified: 638730079598212621
   FileSizes: []
   Exists: 1
 --- !u!114 &-2674132412399908612
@@ -441,12 +468,14 @@ MonoBehaviour:
   - {fileID: 4251411287373890466}
   - {fileID: -4243179252238247953}
   - {fileID: 3348709079690436109}
+  - {fileID: -7722956987764431199}
+  - {fileID: 4050167311890285739}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7670331138803669314}
   StringsBanks:
   - {fileID: -9098128131374794348}
-  cacheTime: 638730103590858060
+  cacheTime: 638730079598212621
   cacheVersion: 131621
 --- !u!114 &1263197496126337903
 MonoBehaviour:
@@ -508,7 +537,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 1.bank
   Name: Scene 1
   StudioPath: bank:/Scene 1
-  lastModified: 638730103589675331
+  lastModified: 638730079597280606
   FileSizes: []
   Exists: 1
 --- !u!114 &2309007734629960150
@@ -565,6 +594,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4050167311890285739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Campfire
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_Campfire
+  Guid:
+    Data1: -1569126433
+    Data2: 1332750244
+    Data3: 84769203
+    Data4: 1178822714
+  Banks:
+  - {fileID: 1419812272976363828}
+  - {fileID: -3069623276588684719}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 181612
 --- !u!114 &4251411287373890466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,6 +826,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638730103589050447
+  lastModified: 638730079551312652
   FileSizes: []
   Exists: 1
