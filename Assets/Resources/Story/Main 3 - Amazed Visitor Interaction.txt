@@ -1,5 +1,5 @@
-pixel Ahlai as <playerName> "Oh, no. How did I sleep in this mess?"
+pixel AmazedVisitor as Customer "So many potions!"
 
-pixel Ahlai as <playerName> "Ugh, it smells too! I think this batch of bath fizz is a failure..."
+pixel AmazedVisitor as Customer "I wonder what to get..."
 
 HideTextbox(false)

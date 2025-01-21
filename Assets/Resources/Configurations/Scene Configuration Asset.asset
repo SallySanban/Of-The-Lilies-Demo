@@ -616,7 +616,7 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 3 - Leave Sabina Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -25.02, y: -2.43}
     - interactableName: Right Door
       interactableType: 2
       isInteractable: 1
@@ -662,6 +662,11 @@ MonoBehaviour:
       isInteractable: 1
       storyToPlay: Main 3 - Amazed Visitor Interaction
       moveToInteractPosition: {x: 4.88, y: -2.43}
+    - interactableName: Cauldron
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Cauldron Interaction
+      moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1

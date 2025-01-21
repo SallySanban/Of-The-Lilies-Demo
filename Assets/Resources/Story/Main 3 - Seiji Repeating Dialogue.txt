@@ -1,0 +1,382 @@
+pixel Seiji "Lady Sabina gave us some tasks to complete for the shop. Is there anything you want to talk about before we go?"
+
+choice in -1
+{
+	- How's the shop been?
+		pixel Seiji "The shop is pretty packed today."
+
+		pixel Seiji "So many people with so many different problems."
+
+		pixel Seiji "We're getting a growing reputation here in Kuchai Town."
+
+		pixel Seiji "And with that reporter writing an article on us, we're just bound to get more customers!"
+
+		pixel Seiji "Maybe Lady Sabina will finally give us a raise!"
+
+		pixel Seiji "I'll be sure to treat you to dinner when it happens."
+
+		pixel Ahlai as <playerName> "I will hold you to that."
+
+		Load("Main 3 - Seiji Repeating Dialogue")
+
+	- How are you?
+		pixel Seiji "Me?"
+
+		pixel Seiji "I'm doing well, thanks for asking."
+
+		pixel Seiji "Lady Sabina bought me dinner after working overtime yesterday."
+
+		pixel Ahlai as <playerName> "Did she also buy you that thing you're carrying?"
+
+		pixel Seiji "Oh, my little sister made me this!"
+
+		pixel Seiji "I keep it around as a good luck charm. I even put it on the counter when I'm working."
+
+		choice in -1
+		{
+			- That's sweet, Seiji.
+				$Seiji += 1
+
+				pixel Ahlai as <playerName> "It's nice that you think of your sister so fondly like that."
+
+				pixel Seiji "Thank you. I knew you'd understand."
+
+				pixel Seiji "These kinds of gifts from family, they're important."
+
+				pixel Seiji "They remind me just why I work so hard."
+
+				pixel Ahlai as <playerName> "I agree..."
+
+			- That's unprofessional.
+				pixel Ahlai as <playerName> "You shouldn't put things like that on the counter. It's unprofessional."
+
+				pixel Seiji "...I suppose you're right..."
+
+				pixel Seiji "Although, I thought you'd understand just how important these mementos are..."
+
+				pixel Ahlai as <playerName> "..."
+		}
+
+		Load("Main 3 - Seiji Repeating Dialogue")
+
+	- How are the customers?
+		pixel Seiji "Oh. Something very absurd happened earlier while you were still sleeping!"
+
+		pixel Ahlai as <playerName> "What happened?"
+
+		pixel Seiji "Just before we opened, as Lady Sabina and I were readying the shop, suddenly, this random lady barged in."
+
+		pixel Seiji "She walked in as if we were already open."
+
+		pixel Seiji "Lady Sabina was somewhere else so I had to be the one to tell her that we weren't open yet."
+
+		pixel Seiji "She goes, 'Oh, but you'll be open in a few minutes, yes? This is utterly urgent, I just need to make a quick purchase.'"
+
+		pixel Seiji "And before I could even say anything, she just started grabbing potions straight from the unpacked boxes!"
+
+		pixel Ahlai as <playerName> "What?!"
+
+		pixel Seiji "Those potions weren't even for sale. They were for me to take to the back."
+
+		pixel Seiji "So she takes them to the counter to pay and I tell her just that. She kept insisting and I kept protesting."
+
+		pixel Seiji "The next thing I know, she starts screaming at me! Calling me names, saying I'm rude and unprofessional, and that I shouldn't be working here..."
+
+		pixel Seiji "She demanded to talk to Lady Sabina and, right on cue, she came in, probably hearing her nagging from across the hall."
+
+		pixel Seiji "You should've seen what happened next! That crazy lady actually thought Lady Sabina would side with her."
+
+		pixel Seiji "But instead, she got a verbal beatdown from her! I'm sure her ego totally dropped by the time Lady Sabina was done."
+
+		pixel Seiji "In the end, she left, saying she's never coming back."
+
+		pixel Seiji "Haha! It’s safe to say that she's banned from even coming inside now."
+
+		choice in -1
+		{
+			- I hope you're okay.
+				$Seiji += 1
+
+				pixel Ahlai as <playerName> "I hope you're okay, though. You didn't deserve that kind of treatment."
+
+				pixel Ahlai as <playerName> "That woman was crazy and you are not any of the things she accused you of being."
+
+				pixel Ahlai as <playerName> "Don't let that woman or that experience put you down."
+
+				pixel Seiji "Thanks, <playerName>. I appreciate it."
+
+				pixel Seiji "I know that lady was speaking nonsense, and Lady Sabina backed me up."
+
+				pixel Seiji "It's still nice to hear that validation from you though, <playerName>."
+
+				pixel Ahlai as <playerName> "You're a good guy, Seiji. Never forget that."
+
+				pixel Seiji "I know. Thanks, <playerName>."
+
+				pixel Seiji "So long as you believe that, I'll believe it too."
+
+			- Don't mess with Lady Sabina.
+				pixel Seiji "Agreed. That woman can be absolutely terrifying."
+
+				pixel Ahlai as <playerName> "It's a good thing she was there to protect you."
+
+				pixel Ahlai as <playerName> "I imagine it wouldn't have turned out as well without her."
+
+				pixel Seiji "I'm not defenseless, you know. I can stand up for myself."
+
+				pixel Seiji "But that crazy lady probably wouldn't have taken me as seriously as Lady Sabina. It was a good thing she was there."
+		}
+
+		Load("Main 3 - Seiji Repeating Dialogue")
+		
+	- My nightmare...
+		pixel Seiji "Hey..."
+
+		pixel Seiji "Do you want to talk about your nightmare?"
+
+		pixel Seiji "I know it’s a sensitive topic but... I just think it'll lift that weight on your chest a little."
+
+		pixel Ahlai as <playerName> "It starts off nice. I see my family, warm smiles across their faces."
+
+		pixel Ahlai as <playerName> "They laugh, they banter. My father sends me off to do chores and I meet the rest of my village."
+
+		pixel Ahlai as <playerName> "My father tells me to join him at the cliff overlooking our beautiful village."
+
+		pixel Ahlai as <playerName> "I go there and... he's not there."
+
+		pixel Ahlai as <playerName> "And the only thing I see up there... is my village in flames."
+
+		pixel Seiji "..."
+
+		pixel Ahlai as <playerName> "I run down as fast as I can, but I see people screaming and dying everywhere I look."
+
+		pixel Ahlai as <playerName> "And that's when I see him: <b>Lien</b>."
+
+		pixel Ahlai as <playerName> "He led the invasion..."
+
+		pixel Ahlai as <playerName> "I fight him with everything I have, but it's not enough."
+
+		pixel Ahlai as <playerName> "I'm knocked down to the ground and the last thing I see is his cruel smile..."
+
+		pixel Ahlai as <playerName> "His smile, which has cemented its place in my mind as a lingering ghost..."
+
+		pixel Seiji "<playerName>... I'm so sorry to hear about that..."
+
+		pixel Seiji "If I could do anything to help you with your sleep, I would."
+
+		pixel Ahlai as <playerName> "Thanks, Seiji..."
+
+		pixel Seiji "..."
+
+		pixel Seiji "Would you... like a hug?"
+
+		pixel Ahlai as <playerName> "What?"
+
+		pixel Seiji "I think a nightmare like that deserves a hug."
+
+		pixel Seiji "Do you want one?"
+
+		choice in -1
+		{
+			- Yes
+				$Seiji += 1
+
+				[wait]ShowCG("Seiji")
+
+				Seiji "There you go. Isn't that nice?"
+
+				Ahlai as <playerName> "It is, actually..."
+
+				Seiji "You know, I've been told I'm nice to hug."
+
+				Ahlai as <playerName> "Heh, I can attest to that."
+
+				Ahlai as <playerName> "Thank you, Seiji. For helping me with this."
+
+				Seiji "Of course."
+
+				Seiji "I'm here for you, Ahlai."
+
+				[wait]Blackout()
+				[wait]HideCG()
+
+			- No
+				pixel Seiji "I see..."
+
+				pixel Ahlai as <playerName> "Well, if you ever need one, I'm always here for you."
+		}
+
+		Load("Main 3 - Seiji Repeating Dialogue")
+
+	- Which tasks did we have to complete?
+		pixel Seiji "Ah, yes! I almost forgot to mention."
+
+		pixel Seiji "We need to make a <b>delivery to Mr. Quan</b> today. Then we have to <b>borrow a book from the library</b>, and <b>get some drinks for Lady Sabina</b>…"
+		
+		pixel Seiji "Are you good for a trip around Kuchai Town with me? We should go soon if we don’t want to keep Mr. Quan waiting."
+
+		PlaySFX("Doorbell ringing")
+
+		pixel Ahlai as <playerName> "Oh!"
+
+		[wait]Blackout
+		[wait]MoveNPC(Myo -x 0 -spd 5)
+		[wait]HideCG()
+
+		pixel Ahlai as <playerName> "Sir Aciano? Welcome to Sabina's Salves!"
+
+		pixel Myo "<playerName>! How wonderful it is to see you here."
+
+		pixel Ahlai as <playerName> "I'm always here, you know."
+
+		pixel Myo "Precisely."
+
+		pixel Seiji "Sir Aciano."
+
+		pixel Myo "Ah. Seiji. You're here too."
+
+		pixel Ahlai as <playerName> "Sorry about that. How are you today, sir? Do we have another shipment of supplies?"
+
+		pixel Ahlai as <playerName> "I didn't hear anything from Lady Sabina... er, Seiji and I were just about to go out to make some deliveries, so we weren't expecting you-"
+
+		pixel Myo "Please, <playerName>, just call me Myo. You have no need to stress about why I'm here, I'm just going to claim the potion I ordered a few days ago."
+
+		pixel Ahlai as <playerName> "Oh, yes, the Draught of Perpetuity. And you ordered... twelve vials of them!"
+
+		pixel Myo "What can I say? I have plenty on my plate—overseeing Agon Province, writing publications and conducting research for the university, teaching students, managing my family's business..."
+
+		pixel Myo "I mean, you're going to want to drink these too, or you just wouldn't get anything done, don't you think?"
+
+		pixel Ahlai as <playerName> "I don't envy you, Sir- um, Myo. But please, you're only allowed to drink one vial a day."
+
+		pixel Ahlai as <playerName> "This potion is not a substitute for proper rest and a good night's sleep, since it only heightens your functionality. It doesn't necessarily relieve any tension or anxiety on your end."
+
+		pixel Myo "I'll keep that in mind, <playerName>. Any tension of mine shouldn't be your problem to address, but it must be unfortunate if I've already got you worrying..."
+
+		pixel Myo "Lady Sabina mentioned to me how complicated it was to make this draught, and here I requested a dozen!"
+
+		pixel Ahlai as <playerName> "Yes... <b>Magic does only come from the gods</b>. But that's what we do here at Sabina's Salves. <b>We craft the potions so ordinary people like us can use the magic too</b>. It's nothing we cannot handle. Please, don't feel too bothered by it."
+
+		pixel Myo "Well, if you insist..."
+
+		pixel Myo "But allow me to pose the question back to you, <playerName>. How are you faring today? You seem a little pale."
+
+		choice in -1
+		{
+			- I'm alright, I guess...
+				$FlirtMyo = false
+				pixel Myo "I see."
+
+				pixel Myo "Well, alright is always better than nothing."
+
+				pixel Ahlai as <playerName> "I suppose..."
+
+			- Having you here is certainly helpful...
+				$FlirtMyo = true
+				$Myo += 1
+				pixel Myo "Oh, <playerName>. I did not know you were capable of such flattery."
+
+				pixel Seiji "<playerName>, we don't flirt with customers."
+
+				pixel Ahlai as <playerName> "It was just a joke. Nothing serious, Seiji."
+
+				pixel Myo "Is that so..."
+		}
+
+		pixel Myo "Then perhaps I can invite you for a drink with me later, if you're not too busy?"
+
+		if ($FlirtMyo)
+		{
+			pixel Myo "So you'd know I'm not just joking with you."
+		}
+		else
+		{
+			pixel Myo "It could help you take your mind off things."
+		}
+
+		pixel Seiji "Hold on a second."
+
+		pixel Seiji "I don’t think <playerName> will have time for you. We have a very busy day ahead of us! Who knows how long our chores will take."
+
+		pixel Myo "Is that right..."
+
+		pixel Seiji "Yes, it is."
+
+		pixel Myo "Well, I would love to hear what <i><playerName></i> thinks, you know. No need to speak on <possessivePronoun> behalf."
+
+		pixel Myo "What do you say, dear? Will you take me up on my offer?"
+
+		choice in -1
+		{
+			- Well, it would be rude of me to say no.
+				$Myo += 1
+				$AcceptMyoInvite = true
+
+				pixel Ahlai as <playerName> "It would be an honor for me to have a drink with you, Myo."
+
+				pixel Ahlai as <playerName> "But Seiji is right. Lady Sabina did give us some tasks to do for the day. Would you mind waiting for me at the tavern later?"
+
+				pixel Myo "Of course, <playerName>."
+
+				[wait]ShowCG("Myo")
+
+				Myo "There isn't a time in the world where I wouldn't wait for you."
+
+				Myo "Till I see you again, dear."
+
+				[wait]Blackout()
+				PlaySFX("Doorbell ringing")
+				RemoveFromScene("Myo")
+				[wait]HideCG()
+
+				pixel Seiji "<playerName>, I hope you're being careful about the people you spend time with."
+
+				pixel Seiji "Sir Aciano has all this wealth and great accomplishments to go for, but... are you not bothered by how many people are put off by him? I hear he's like this with everyone."
+
+				pixel Ahlai as <playerName> "Oh? Seiji... Don't tell me, are you jealous of the great governor?"
+
+				pixel "Of course not, <playerName>! I'm only looking out for you. We have been together for almost 10 years now, so it's only natural that I want to do that, to look out for you."
+
+			- I'm sorry, but I can't tonight.
+				$AcceptMyoInvite = false
+				
+				pixel Ahlai as <playerName> "I'm sorry, but Seiji is right. Lady Sabina has tasked us with some errands for the day. There is too much I have to do."
+
+				pixel Myo "Oh, that's a shame..."
+
+				pixel Myo "Well, if you do change your mind, come see me at the tavern, okay?"
+
+				pixel Myo "I'll be waiting for you, <playerName>."
+
+				pixel Seiji "You really don't have to. Don't forget your purchase, sir. It was a pleasure doing business with you."
+
+				pixel Myo "Yes... Well, until then, <playerName>."
+
+				[wait]Blackout()
+				RemoveFromScene("Myo")
+				[wait]HideCG()
+
+				pixel Ahlai as <playerName> "That's a little protective even for <i>you</i>, Seiji."
+
+				pixel Seiji "I, well! I... I mean, it's a part of the job! Lady Sabina took you in 10 years ago, she told me to protect you for... about the same time. Again, I was just simply doing my job."
+		}
+
+		pixel Ahlai as <playerName> "And I'm grateful for that, Seiji."
+
+		pixel Seiji "There isn't anything I wouldn't do, <playerName>. It's you. If you need anything from me... anything at all, please just let me know."
+
+		if ($AcceptMyoInvite)
+		{
+			pixel Ahlai as <playerName> "You're already so worried, but you will have to trust me when I say I can likely handle a few drinks with our supplier."
+		}
+		else
+		{
+			pixel Ahlai as <playerName> "I know, Seiji. Thank you."
+		}
+
+		pixel Ahlai as <playerName> "It's getting late. We should get started on those tasks for the day."
+
+		pixel Seiji "Right. Here's the potion that Mr. Quan ordered. Let me just finish up some things. Wait for me outside, okay?"
+
+		HideTextbox(false)
+}

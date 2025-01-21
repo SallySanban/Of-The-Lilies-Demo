@@ -1,5 +1,18 @@
 input
 
 $SatoQuest = false
+$SatoPotionDone = false
+$RichSeiyslanQuest = false
+$RichSeiyslanPotionDone = false
+$DesperateGirlQuest = false
+$DesperateGirlPotionDone = false
+$QuanQuest = false
+$QuanPotionDone = false
+$PotionQuests = 0
 $SeijiTalkedTo = false
+$QuanIngredients = 0
+
+$KnowThreadLocation = false
+$KnowDaniwItems = false
+$KnowWoodLocation = false
 [wait]ShowScene("Scene 5" "Main Shop")

@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638730079551324193
+  lastModified: 638730701672434694
   FileSizes:
   - Name: 
     Value: 2116
@@ -269,7 +269,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 4.bank
   Name: Scene 4
   StudioPath: bank:/Scene 4
-  lastModified: 638730072341503955
+  lastModified: 638730701674404904
   FileSizes: []
   Exists: 1
 --- !u!114 &-4243179252238247953
@@ -314,7 +314,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 2.bank
   Name: Scene 2
   StudioPath: bank:/Scene 2
-  lastModified: 638730079598212621
+  lastModified: 638730701673585011
   FileSizes: []
   Exists: 1
 --- !u!114 &-2674132412399908612
@@ -475,7 +475,7 @@ MonoBehaviour:
   - {fileID: 7670331138803669314}
   StringsBanks:
   - {fileID: -9098128131374794348}
-  cacheTime: 638730079598212621
+  cacheTime: 638730701674404904
   cacheVersion: 131621
 --- !u!114 &1263197496126337903
 MonoBehaviour:
@@ -537,7 +537,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 1.bank
   Name: Scene 1
   StudioPath: bank:/Scene 1
-  lastModified: 638730079597280606
+  lastModified: 638730701673224658
   FileSizes: []
   Exists: 1
 --- !u!114 &2309007734629960150
@@ -826,6 +826,6 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638730079551312652
+  lastModified: 638730701672394725
   FileSizes: []
   Exists: 1

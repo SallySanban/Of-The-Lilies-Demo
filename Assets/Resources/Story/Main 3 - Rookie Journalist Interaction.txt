@@ -1,5 +1,50 @@
-pixel Ahlai as <playerName> "Oh, no. How did I sleep in this mess?"
+pixel RookieJournalist as ??? "Hello there!"
 
-pixel Ahlai as <playerName> "Ugh, it smells too! I think this batch of bath fizz is a failure..."
+pixel Ahlai as <playerName> "Hello."
+
+pixel RookieJournalist as Dean "My name is Dean from the Seiysla Chronicle. I'm writing an article on the different important establishments of Kuchai Town."
+
+pixel RookieJournalist as Dean "'From Bakeries to Bookstores: A Spirited Stroll through Kuchai Town's Eclectic Mix of Shops and Establishments.'"
+
+pixel RookieJournalist as Dean "That's what I'm planning to call it."
+
+pixel Ahlai as <playerName> "Interesting!"
+
+pixel RookieJournalist as Dean "Say, you work here, don't you? I would like to get some insight on this store from one of the employees themselves."
+
+pixel RookieJournalist as Dean "Tell me, how would you describe Sabina's Salves? What makes this place different from other potion shops?"
+
+choice in -1
+{
+	- Customer service
+		pixel Ahlai as <playerName> "Sabina's Salves offers potions tailored specifically to fit any of our customers' needs!"
+
+		pixel Ahlai as <playerName> "We make an effort to talk to our customers and understand exactly what they want."
+
+		pixel Ahlai as <playerName> "Whatever you need, we got it!"
+
+	- Guaranteed quality
+		pixel Ahlai as <playerName> "Sabina's Salves brews potions using only the freshest ingredients from the local markets."
+
+		pixel Ahlai as <playerName> "Made personally by Sabina and her staff, including myself, we make sure that all of our potions are sold at the highest quality."
+
+		pixel Ahlai as <playerName> "You'll never find potions more authentic than ours!"
+
+	- Wide variety
+		pixel Ahlai as <playerName> "Sabina's Salves offers a wide variety of choices for you to choose from!"
+
+		pixel Ahlai as <playerName> "Transformation potions, healing potions, whatever it is your mind can think of."
+
+		pixel Ahlai as <playerName> "I guarantee you our little store has it!"
+}
+
+pixel RookieJournalist as Dean "Thank you! This is just what I need for my article."
+
+pixel RookieJournalist as Dean "Do keep a lookout for its publication. I'll make sure to write down everything you told me."
+
+pixel RookieJournalist as Dean "Thank you!"
 
 HideTextbox(false)
+[wait]Blackout()
+RemoveFromScene("RookieJournalist")
+[wait]HideCG()

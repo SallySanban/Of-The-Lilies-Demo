@@ -1,4 +1,4 @@
-if(!$SatoQuest)
+if (!$SatoQuest)
 {
 	pixel Sato as Mr. Sato "Hey, <playerName>!"
 
@@ -21,6 +21,7 @@ if(!$SatoQuest)
 
 			$SatoPotionDone = false
 			$SatoQuest = true
+			$PotionQuests += 1
 		- I can't.
 			pixel Sato as Mr. Sato "Oh... I see."
 
@@ -33,7 +34,7 @@ if(!$SatoQuest)
 }
 else
 {
-	if($SatoQuest && !$SatoPotionDone)
+	if ($SatoQuest && !$SatoPotionDone)
 	{
 		pixel Sato as Mr. Sato "I'm looking forward to your potion, Ahlai!"
 

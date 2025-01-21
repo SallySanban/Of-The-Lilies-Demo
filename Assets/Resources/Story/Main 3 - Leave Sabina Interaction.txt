@@ -1,0 +1,10 @@
+if($SeijiTalkedTo)
+{
+	[wait]SwitchScene("Scene 5" "Kuchai Town 1")
+}
+else
+{
+	pixel Ahlai as <playerName> "Don't I have to find Seiji first?"
+
+	HideTextbox(false)
+}
