@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 4260065113595315983}
   - component: {fileID: 5185563810717803514}
   m_Layer: 5
-  m_Name: RiverSFX
+  m_Name: SFXRiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1564,9 +1564,9 @@ MonoBehaviour:
   Preload: 0
   NonRigidbodyVelocity: 0
   Params: []
-  OverrideAttenuation: 0
+  OverrideAttenuation: 1
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 15
 --- !u!1 &6379828066264454419
 GameObject:
   m_ObjectHideFlags: 0

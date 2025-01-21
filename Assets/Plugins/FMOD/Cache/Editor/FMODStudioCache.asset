@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638730079551324193
+  lastModified: 638730464030854615
   FileSizes:
   - Name: 
-    Value: 2116
+    Value: 2264
   Exists: 1
 --- !u!114 &-7730249944335003038
 MonoBehaviour:
@@ -269,7 +269,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 4.bank
   Name: Scene 4
   StudioPath: bank:/Scene 4
-  lastModified: 638730072341503955
+  lastModified: 638730553826108105
   FileSizes: []
   Exists: 1
 --- !u!114 &-4243179252238247953
@@ -314,7 +314,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 2.bank
   Name: Scene 2
   StudioPath: bank:/Scene 2
-  lastModified: 638730079598212621
+  lastModified: 638730466461584999
   FileSizes: []
   Exists: 1
 --- !u!114 &-2674132412399908612
@@ -343,7 +343,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 4751
 --- !u!114 &-1859683005693759744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,13 +470,43 @@ MonoBehaviour:
   - {fileID: 3348709079690436109}
   - {fileID: -7722956987764431199}
   - {fileID: 4050167311890285739}
+  - {fileID: 7699088091768920979}
+  - {fileID: 91187399276147669}
+  - {fileID: 1437086525120928604}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7670331138803669314}
   StringsBanks:
   - {fileID: -9098128131374794348}
-  cacheTime: 638730079598212621
+  cacheTime: 638730760857842510
   cacheVersion: 131621
+--- !u!114 &91187399276147669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_BushRustle
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_BushRustle
+  Guid:
+    Data1: -1523008841
+    Data2: 1266256302
+    Data3: 1813254329
+    Data4: -1341296912
+  Banks:
+  - {fileID: -3069623276588684719}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1263197496126337903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,7 +549,11 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
+<<<<<<< Updated upstream
   lastModified: 638730103590858060
+=======
+  lastModified: 638730490653669508
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &1419812272976363828
@@ -537,9 +571,36 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Scene 1.bank
   Name: Scene 1
   StudioPath: bank:/Scene 1
-  lastModified: 638730079597280606
+  lastModified: 638730760857842510
   FileSizes: []
   Exists: 1
+--- !u!114 &1437086525120928604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_AyaFlap
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_AyaFlap
+  Guid:
+    Data1: 1967998683
+    Data2: 1224792869
+    Data3: -977684348
+    Data4: -1775784586
+  Banks:
+  - {fileID: -3069623276588684719}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2309007734629960150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,8 +674,8 @@ MonoBehaviour:
     Data3: 84769203
     Data4: 1178822714
   Banks:
-  - {fileID: 1419812272976363828}
   - {fileID: -3069623276588684719}
+  - {fileID: 1419812272976363828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -826,6 +887,33 @@ MonoBehaviour:
   Path: Assets/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638730079551312652
+  lastModified: 638730464030844634
   FileSizes: []
   Exists: 1
+--- !u!114 &7699088091768920979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_AyaWalk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_AyaWalk
+  Guid:
+    Data1: -533564155
+    Data2: 1119873626
+    Data3: -523202636
+    Data4: -767718162
+  Banks:
+  - {fileID: -3069623276588684719}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2230
