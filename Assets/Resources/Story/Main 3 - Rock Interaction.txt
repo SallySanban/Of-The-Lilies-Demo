@@ -9,6 +9,7 @@ pixel Ahlai as <playerName> "It feels like yesterday when she made it for me..."
 RemoveFromScene("Rock")
 
 pixel Ahlai as <playerName> "A piece of her to take with me."
+playSFX("SFX_UI InventoryPickup")
 
 pixel Ahlai as <playerName> "I might be able to pick up more items that remind me of home if I keep an eye out for them."
 

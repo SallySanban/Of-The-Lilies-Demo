@@ -336,6 +336,7 @@ MonoBehaviour:
   - Scene 2
   - Scene 3
   - Scene 4
+  - Scene 5
   - UI
   BanksToLoad: []
   LiveUpdatePort: 9264

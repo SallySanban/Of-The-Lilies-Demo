@@ -1,4 +1,5 @@
-PlaySFX("Bushes rustling")
+playSFX(SFX_BushRustle)
+playSFX(SFX_AyaWalk)
 
 ChangeAnimationState("Aya" Hop)
 
@@ -14,6 +15,7 @@ ChangeAnimationState("Aya" Fly)
 
 Wait(0.3)
 
+playSFX(SFX_AyaFlap)
 [wait]MoveNPC(Aya -x 3.09 -y 4.67 -spd 5)
 
 pixel Ahlai as <playerName> "It might be nothing. Let's... just move forward."

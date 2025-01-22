@@ -1,4 +1,4 @@
-PlaySFX("Locked doorknob")
+playSFX(SFX_LockedDoor)
 
 pixel Ahlai as <playerName> "Locked. This leads back to the La Liryo room. We can't go back there unless we really need to."
 
