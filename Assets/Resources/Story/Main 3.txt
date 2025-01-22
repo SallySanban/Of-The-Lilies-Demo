@@ -1,43 +1,48 @@
-pixel Seiji "<playerName>! Good morning!"
+if (!$TasksAlreadyChosen)
+{
+	pixel Seiji "<playerName>! Good morning!"
 
-pixel Ahlai as <playerName> "Good morning, Seiji."
+	pixel Ahlai as <playerName> "Good morning, Seiji."
 
-pixel Seiji "Lady Sabina told me you woke up from a terrible nightmare. Are you okay?"
+	pixel Seiji "Lady Sabina told me you woke up from a terrible nightmare. Are you okay?"
 
-pixel Ahlai as <playerName> "Yeah, I'm fine."
+	pixel Ahlai as <playerName> "Yeah, I'm fine."
 
-pixel Seiji "Are you sure?"
+	pixel Seiji "Are you sure?"
 
-pixel Seiji "She said you were sweating a lot in your sleep."
+	pixel Seiji "She said you were sweating a lot in your sleep."
 
-pixel Seiji "Did you have a nightmare about running up a hill?"
+	pixel Seiji "Did you have a nightmare about running up a hill?"
 
-pixel Ahlai as <playerName> "Heh, I wish."
+	pixel Ahlai as <playerName> "Heh, I wish."
 
-pixel Ahlai as <playerName> "That would've been more pleasant than what I actually got."
+	pixel Ahlai as <playerName> "That would've been more pleasant than what I actually got."
 
-pixel Ahlai as <playerName> "I had a nightmare about them again, Seiji. About my family..."
+	pixel Ahlai as <playerName> "I had a nightmare about them again, Seiji. About my family..."
 
-pixel Seiji "Oh..."
+	pixel Seiji "Oh..."
 
-pixel Ahlai as <playerName> "The memory... It's just so painful..."
+	pixel Ahlai as <playerName> "The memory... It's just so painful..."
 
-pixel Ahlai as <playerName> "I don't think I can ever get the invasion out of my head..."
+	pixel Ahlai as <playerName> "I don't think I can ever get the invasion out of my head..."
 
-pixel Seiji "I'm so sorry, <playerName>. I shouldn't have asked."
+	pixel Seiji "I'm so sorry, <playerName>. I shouldn't have asked."
 
-pixel Ahlai as <playerName> "No, it's okay. You were just checking up on me."
+	pixel Ahlai as <playerName> "No, it's okay. You were just checking up on me."
 
-pixel Seiji "Still... I know this isn't something pleasant for you to talk about."
+	pixel Seiji "Still... I know this isn't something pleasant for you to talk about."
 
-pixel Ahlai as <playerName> "You're always so considerate of me. Thank you, Seiji."
+	pixel Ahlai as <playerName> "You're always so considerate of me. Thank you, Seiji."
 
-pixel Seiji "I-it's no problem. I'm always here for you, <playerName>."
+	pixel Seiji "I-it's no problem. I'm always here for you, <playerName>."
 
-$Seiji = 0
-$Myo = 0
-$Manju = 0
-$Laisa = 0
-$Lien = 0
+	Load("Main 3 - Seiji Repeating Dialogue")
+}
+else
+{
+	pixel Seiji "Let me just finish up some things. Wait for me outside, okay?"
 
-Load("Main 3 - Seiji Repeating Dialogue")
+	HideTextbox(false)
+}
+
+

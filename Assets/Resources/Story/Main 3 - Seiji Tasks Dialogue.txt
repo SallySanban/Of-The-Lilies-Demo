@@ -1,16 +1,20 @@
 pixel Seiji "Ah, yes! I almost forgot to mention."
 
-pixel Seiji "We need to make a <b>delivery to Mr. Quan</b> today. Then we have to <b>borrow a book from the library</b>, and <b>get some drinks for Lady Sabina</b>…"
+pixel Seiji "We need to make a <b>delivery to Mr. Quan</b> today. Then we have to <b>borrow a book from the library</b>, and <b>get some drinks for Lady Sabina</b>..."
 		
-pixel Seiji "Are you good for a trip around Kuchai Town with me? We should go soon if we don’t want to keep Mr. Quan waiting."
+pixel Seiji "Are you good for a trip around Kuchai Town with me? We should go soon if we don't want to keep Mr. Quan waiting."
 
 PlaySFX("Doorbell ringing")
 
+FlipNPC("Ahlai" "Left")
+
 pixel Ahlai as <playerName> "Oh!"
 
-[wait]Blackout
-[wait]MoveNPC(Myo -x 0 -spd 5)
-[wait]HideCG()
+HideTextbox(false)
+[wait]SetNPCPosition(Myo -x -2308.22 -y -259.32)
+[wait]PanCamera(-x -20.38 -spd 5)
+SetCameraFollow(Myo)
+[wait]MoveNPC(Myo -x -6.36 -y -2.40 -spd 5)
 
 pixel Ahlai as <playerName> "Sir Aciano? Welcome to Sabina's Salves!"
 
@@ -32,7 +36,7 @@ pixel Myo "Please, <playerName>, just call me Myo. You have no need to stress ab
 
 pixel Ahlai as <playerName> "Oh, yes, the Draught of Perpetuity. And you ordered... twelve vials of them!"
 
-pixel Myo "What can I say? I have plenty on my plate—overseeing Agon Province, writing publications and conducting research for the university, teaching students, managing my family's business..."
+pixel Myo "What can I say? I have plenty on my plate-overseeing Agon Province, writing publications and conducting research for the university, teaching students, managing my family's business..."
 
 pixel Myo "I mean, you're going to want to drink these too, or you just wouldn't get anything done, don't you think?"
 
@@ -85,7 +89,7 @@ else
 
 pixel Seiji "Hold on a second."
 
-pixel Seiji "I don’t think <playerName> will have time for you. We have a very busy day ahead of us! Who knows how long our chores will take."
+pixel Seiji "I don't think <playerName> will have time for you. We have a very busy day ahead of us! Who knows how long our chores will take."
 
 pixel Myo "Is that right..."
 
@@ -107,15 +111,20 @@ choice in -1
 
 		pixel Myo "Of course, <playerName>."
 
-		[wait]ShowCG("Myo")
+		HideTextbox(true)
+		[wait]Blackout()
+		[wait]SwitchCG("Myo")
 
 		Myo "There isn't a time in the world where I wouldn't wait for you."
 
 		Myo "Till I see you again, dear."
 
+		HideTextbox(true)
 		[wait]Blackout()
+		ResetCamera()
 		PlaySFX("Doorbell ringing")
 		RemoveFromScene("Myo")
+		FlipNPC("Ahlai" "Right")
 		[wait]HideCG()
 
 		pixel Seiji "<playerName>, I hope you're being careful about the people you spend time with."
@@ -124,7 +133,7 @@ choice in -1
 
 		pixel Ahlai as <playerName> "Oh? Seiji... Don't tell me, are you jealous of the great governor?"
 
-		pixel "Of course not, <playerName>! I'm only looking out for you. We have been together for almost 10 years now, so it's only natural that I want to do that, to look out for you."
+		pixel Seiji "Of course not, <playerName>! I'm only looking out for you. We have been together for almost 10 years now, so it's only natural that I want to do that, to look out for you."
 
 	- I'm sorry, but I can't tonight.
 		$AcceptMyoInvite = false
@@ -142,6 +151,7 @@ choice in -1
 		pixel Myo "Yes... Well, until then, <playerName>."
 
 		[wait]Blackout()
+		ResetCamera()
 		RemoveFromScene("Myo")
 		[wait]HideCG()
 

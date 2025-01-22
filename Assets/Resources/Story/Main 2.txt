@@ -391,5 +391,15 @@ $QuanPotionDone = false
 $PotionQuests = 0
 $QuanIngredients = 0
 $SeijiTalkedTo = false
+$ShopAlreadyChosen = false
+$HowAreYouAlreadyChosen = false
+$CustomersAlreadyChosen = false
+$NightmareAlreadyChosen = false
+$TasksAlreadyChosen = false
+$Seiji = 0
+$Myo = 0
+$Manju = 0
+$Laisa = 0
+$Lien = 0
 [wait]ShowScene("Scene 5" "Ahlai's Bedroom")
 [wait]HideCG()

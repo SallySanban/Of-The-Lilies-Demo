@@ -420,7 +420,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Flowers Interaction
-      moveToInteractPosition: {x: -9.17, y: -2.1}
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Family Photo
       interactableType: 1
       isInteractable: 1
@@ -430,7 +430,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Workbench Interaction
-      moveToInteractPosition: {x: 9.27, y: -2.1}
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Bed
       interactableType: 1
       isInteractable: 1
@@ -440,7 +440,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Book Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 9.27, y: -2.1}
     - interactableName: Painting of Nari
       interactableType: 1
       isInteractable: 1
@@ -605,6 +605,9 @@ MonoBehaviour:
       animationState: Idle
     - npcName: SonWithMother
       position: {x: 1907.78, y: -225.32}
+      animationState: Idle
+    - npcName: Myo
+      position: {x: -2678.22, y: -262.05}
       animationState: Idle
     interactablesInScene:
     - interactableName: Potion Cabinet

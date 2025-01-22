@@ -49,6 +49,7 @@ choice in -1
 	- Yes
 		$Seiji += 1
 
+		HideTextbox(true)
 		[wait]Blackout()
 		[wait]SwitchCG("Seiji")
 
@@ -66,6 +67,7 @@ choice in -1
 
 		Seiji "I'm here for you, Ahlai."
 
+		HideTextbox(true)
 		[wait]Blackout()
 		[wait]HideCG()
 

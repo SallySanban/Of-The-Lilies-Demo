@@ -33,5 +33,6 @@ choice in -1
 		Load("Main 3 - Seiji Nightmare Dialogue")
 
 	- Which tasks did we have to complete?
+		$TasksAlreadyChosen = true
 		Load("Main 3 - Seiji Tasks Dialogue")
 }

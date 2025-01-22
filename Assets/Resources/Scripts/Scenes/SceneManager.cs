@@ -24,8 +24,9 @@ public class SceneManager : MonoBehaviour
 
     public const string SPRITES_OBJECTNAME = "Sprites";
 
-    [SerializeField] CinemachineVirtualCamera virtualCamera;
+    [SerializeField] private CinemachineVirtualCamera virtualCamera;
     private CinemachineConfiner confiner;
+    private CinemachineComponentBase componentBase;
 
     [HideInInspector] public GameObject currentScene = null;
     [HideInInspector] public string currentSceneName;
@@ -35,6 +36,9 @@ public class SceneManager : MonoBehaviour
     [HideInInspector] public string MC_NAME = "Ahlai";
     [HideInInspector] public float TRANSITION_WAIT_TIME = 0.3f;
     [HideInInspector] public bool scrollBackground = false;
+
+    private const float PLAYER_SOFTZONEWIDTH = 0.6f;
+    private const float NPC_SOFTZONEWIDTH = 0f;
 
     private void Awake()
     {
@@ -60,6 +64,7 @@ public class SceneManager : MonoBehaviour
         npcManager = new NPCManager();
 
         confiner = virtualCamera.GetComponent<CinemachineConfiner>();
+        componentBase = virtualCamera.GetCinemachineComponent(CinemachineCore.Stage.Body);
     }
 
     private void Update()
@@ -215,6 +220,21 @@ public class SceneManager : MonoBehaviour
     public void ResetCamera()
     {
         virtualCamera.Follow = player.root.transform;
+        if (componentBase is CinemachineFramingTransposer)
+        {
+            var framingTransposer = componentBase as CinemachineFramingTransposer;
+            framingTransposer.m_SoftZoneWidth = PLAYER_SOFTZONEWIDTH;
+        }
+    }
+
+    public void SetCameraFollow(Transform npc)
+    {
+        virtualCamera.Follow = npc;
+        if (componentBase is CinemachineFramingTransposer)
+        {
+            var framingTransposer = componentBase as CinemachineFramingTransposer;
+            framingTransposer.m_SoftZoneWidth = NPC_SOFTZONEWIDTH;
+        }
     }
 
     public IEnumerator ScrollBackground()
