@@ -124,11 +124,12 @@ choice in 0
 HideCharacter(Ahlai)
 HideCharacter(Lien)
 
-Ahlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
-
 stopEvent(4)
 stopEvent(5)
 stopEvent(6)
+
+Ahlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
+
 
 ??? "Sir Lien!"
 
@@ -265,18 +266,18 @@ Ahlai as <playerName> "<i>There are people talking outside... Is it not over?</i
 
 ??? "Someone else is taking <objectPronoun> home, and they have the money for it, too."
 
-playSFX(SFX_CoinsJiggle)
-
 ??? "Then how about I offer you more?"
+
+playSFX(SFX_CoinsJiggle)
 
 ??? "..."
 
-??? "Hand them to me."
-
+playSFX(SFX_DoorOpen)
 stopEvent(8)
 
+??? "Hand them to me."
+
 HideTextbox(true)
-playSFX(SFX_DoorOpen)
 [input]SwitchCG("Lady Sabina Save")
 
 Ahlai as <playerName> "...Who are you?"

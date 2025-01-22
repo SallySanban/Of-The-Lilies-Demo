@@ -11,11 +11,12 @@ else
 	[wait]Blackout()
 	HideTextbox(true)
 	playSFX(SFX_ReelFix)
-	Wait(1.5)
+	Wait(2.0)
 	ChangeAnimationState("Fishing Equipment" Fixed)
 	[wait]HideCG()
 
 	pixel Ahlai as <playerName> "All fixed! I should let Uncle Daniw know."
+	playSFX("SFX_UI InventoryPickup")
 
 	$FishingEquipmentFixed = true
 	RemoveFromScene("Fishing Equipment")
