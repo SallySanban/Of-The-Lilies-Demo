@@ -1,0 +1,78 @@
+pixel Seiji "Hey..."
+
+pixel Seiji "Do you want to talk about your nightmare?"
+
+pixel Seiji "I know it's a sensitive topic but... I just think it'll lift that weight on your chest a little."
+
+pixel Ahlai as <playerName> "It starts off nice. I see my family, warm smiles across their faces."
+
+pixel Ahlai as <playerName> "They laugh, they banter. My father sends me off to do chores and I meet the rest of my village."
+
+pixel Ahlai as <playerName> "My father tells me to join him at the cliff overlooking our beautiful village."
+
+pixel Ahlai as <playerName> "I go there and... he's not there."
+
+pixel Ahlai as <playerName> "And the only thing I see up there... is my village in flames."
+
+pixel Seiji "..."
+
+pixel Ahlai as <playerName> "I run down as fast as I can, but I see people screaming and dying everywhere I look."
+
+pixel Ahlai as <playerName> "And that's when I see him: <b>Lien</b>."
+
+pixel Ahlai as <playerName> "He led the invasion..."
+
+pixel Ahlai as <playerName> "I fight him with everything I have, but it's not enough."
+
+pixel Ahlai as <playerName> "I'm knocked down to the ground and the last thing I see is his cruel smile..."
+
+pixel Ahlai as <playerName> "His smile, which has cemented its place in my mind as a lingering ghost..."
+
+pixel Seiji "<playerName>... I'm so sorry to hear about that..."
+
+pixel Seiji "If I could do anything to help you with your sleep, I would."
+
+pixel Ahlai as <playerName> "Thanks, Seiji..."
+
+pixel Seiji "..."
+
+pixel Seiji "Would you... like a hug?"
+
+pixel Ahlai as <playerName> "What?"
+
+pixel Seiji "I think a nightmare like that deserves a hug."
+
+pixel Seiji "Do you want one?"
+
+choice in -1
+{
+	- Yes
+		$Seiji += 1
+
+		[wait]Blackout()
+		[wait]SwitchCG("Seiji")
+
+		Seiji "There you go. Isn't that nice?"
+
+		Ahlai as <playerName> "It is, actually..."
+
+		Seiji "You know, I've been told I'm nice to hug."
+
+		Ahlai as <playerName> "Heh, I can attest to that."
+
+		Ahlai as <playerName> "Thank you, Seiji. For helping me with this."
+
+		Seiji "Of course."
+
+		Seiji "I'm here for you, Ahlai."
+
+		[wait]Blackout()
+		[wait]HideCG()
+
+	- No
+		pixel Seiji "I see..."
+
+		pixel Ahlai as <playerName> "Well, if you ever need one, I'm always here for you."
+}
+
+Load("Main 3 - Seiji Repeating Dialogue")
