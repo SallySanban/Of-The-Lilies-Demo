@@ -16,4 +16,4 @@ $KnowThreadLocation = false
 $KnowDaniwItems = false
 $KnowWoodLocation = false
 $QuestsCompleted = 2
-[wait]ShowScene("Scene 2" "Tayabac Village")
+[wait]ShowScene("Scene 2" "Tayabac Cliffside 1")
