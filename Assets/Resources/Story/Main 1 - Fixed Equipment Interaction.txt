@@ -16,6 +16,7 @@ else
 
 	[wait]Blackout()
 	HideTextbox(true)
+	playSFX(SFX_DaniwWalk)
 	Wait(0.5)
 	RemoveFromScene("MaleNPC3")
 	[wait]HideCG()
