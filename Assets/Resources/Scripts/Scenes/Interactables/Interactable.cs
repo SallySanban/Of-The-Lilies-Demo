@@ -31,9 +31,9 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(interactableType == InteractableType.StopTrigger || interactableType == InteractableType.StoryTrigger)
+        if(interactableType == InteractableType.StopTrigger || interactableType == InteractableType.StoryTrigger || interactableType == InteractableType.RepeatingStoryTrigger)
         {
-            if(interactableType == InteractableType.StopTrigger)
+            if(interactableType == InteractableType.StopTrigger || interactableType == InteractableType.RepeatingStoryTrigger)
             {
                 InteractableManager.Instance.playerInsideStopTrigger = true;
             }
@@ -52,12 +52,13 @@ public class Interactable : MonoBehaviour
     private IEnumerator HandleTriggerStory()
     {
         yield return VNManager.Instance.PlayCollidingInteractableStory(storyToPlay, moveToInteractPosition);
-        Destroy(this);
+
+        if(interactableType != InteractableType.RepeatingStoryTrigger) Destroy(this);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (interactableType == InteractableType.StoryTrigger || interactableType == InteractableType.StopTrigger) return;
+        if (interactableType == InteractableType.StoryTrigger || interactableType == InteractableType.StopTrigger || interactableType == InteractableType.RepeatingStoryTrigger) return;
 
         if (collision.CompareTag("Player") && isInteractable)
         {
@@ -87,5 +88,6 @@ public class Interactable : MonoBehaviour
         Background,
         StoryTrigger,
         StopTrigger,
+        RepeatingStoryTrigger
     }
 }

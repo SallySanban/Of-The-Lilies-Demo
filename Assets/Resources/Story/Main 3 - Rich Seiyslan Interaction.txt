@@ -1,5 +1,76 @@
-pixel Ahlai as <playerName> "Oh, no. How did I sleep in this mess?"
+if (!$RichSeiyslanQuest)
+{
+	pixel RichSeiyslan as Customer "Good day!"
 
-pixel Ahlai as <playerName> "Ugh, it smells too! I think this batch of bath fizz is a failure..."
+	pixel RichSeiyslan as Customer "I wanted to inquire about a potion for hair growth."
 
-HideTextbox(false)
+	pixel Ahlai as <playerName> "Hair growth?"
+
+	pixel RichSeiyslan as Customer "Yes! I believe I am due for a makeover and I have an important meeting later that I'd like to look my best at!"
+
+	pixel RichSeiyslan as Customer "Does your quaint shop happen to have such a potion?"
+
+	choice in -1
+	{
+		- Yes.
+			pixel RichSeiyslan as Customer "Oh, thank you so much!"
+
+			pixel RichSeiyslan as Customer "I am hoping to give my hair some luscious locks, like a gallant knight straight out of a fairy tale!"
+
+			pixel RichSeiyslan as Customer "Do you see it? Do you see the vision?"
+
+			pixel RichSeiyslan as Customer "Me, walking down the streets, golden hair waving in the wind..."
+
+			pixel Ahlai as <playerName> "Uh..."
+
+			pixel Ahlai as <playerName> "I suppose I do..."
+
+			pixel RichSeiyslan as Customer "Brilliant!"
+
+			pixel RichSeiyslan as Customer "Then you know why I need it."
+
+			pixel RichSeiyslan as Customer "Go now! Make me that potion!"
+
+			pixel RichSeiyslan as Customer "Oh, and please make it the fast-acting kind. It's an urgent matter."
+
+			$RichSeiyslanPotionDone = false
+			$RichSeiyslanQuest = true
+			$PotionQuests += 1
+		- No.
+			pixel RichSeiyslan as Customer "Oh, what a shame..."
+
+			pixel RichSeiyslan as Customer "But I know you'll have time for me soon! Maybe you have other things to attend to at the moment, hmm?"
+	}
+
+	HideTextbox(false)
+}
+else
+{
+	if ($RichSeiyslanQuest && !$RichSeiyslanPotionDone)
+	{
+		pixel RichSeiyslan as Customer "Is it finished yet? The potion for my beautiful hair?"
+
+		HideTextbox(false)
+	}
+	else
+	{
+		pixel Ahlai as <playerName> "Here's your potion, sir!"
+
+		pixel RichSeiyslan as Customer "Marvelous! There is hope for me yet!"
+
+		pixel Ahlai as <playerName> "Huh?"
+
+		pixel RichSeiyslan as Customer "Thank you so much! You are truly a lifesaver."
+
+		pixel Ahlai as <playerName> "Please be sure not to drink the entire potion at once. It's potent enough to take effect quickly but you only need a minor dosage."
+
+		pixel RichSeiyslan as Customer "Understood! Here's my payment. My regards to you and the rest of the staff."
+
+		pixel RichSeiyslan as Customer "Farewell!"
+
+		HideTextbox(false)
+		[wait]Blackout()
+		RemoveFromScene("RichSeiyslan")
+		[wait]HideCG()
+	}
+}

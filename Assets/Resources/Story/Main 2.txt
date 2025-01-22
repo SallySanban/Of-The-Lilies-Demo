@@ -145,15 +145,17 @@ Ahlai as <playerName> "<b><i>Lien...</b></i>"
 
 Ahlai as <playerName> "<b><i>I won't forget that name...</b></i>"
 
-
-
 HideTextbox(true)
+playMusic(BGM_Scene4)
+Wait(1)
 [wait]ShowScene("Scene 4" "Riverside Pathway")
 ScrollBackground(true)
-Wait(0.5)
-playMusic(BGM_Scene4)
-[wait]HideCG()
-[wait]PanCamera(-y -10.02 -spd 3)
+HideCG()
+Wait(3)
+[wait]ShowCG("Title")
+Wait(3)
+HideCG()
+[wait]PanCamera(-y -17.75 -spd 6)
 [wait]ShowCredits("<b>Lead and Programmer</b><br>Johanna Eikou Teknomo")
 Wait(3)
 [wait]SwitchCredits("<b>Scriptwriters</b><br>Julia Ortega<br>Johanna Eikou Teknomo<br>Gerry Mijares")
@@ -378,7 +380,16 @@ HideTextbox(true)
 [wait]Blackout()
 $AxeReceived = false
 $SatoQuest = false
+$SatoPotionDone = false
+$RichSeiyslanQuest = false
+$RichSeiyslanPotionDone = false
+$DesperateGirlQuest = false
+$DesperateGirlPotionDone = false
+$QuanQuest = false
+$QuanPotionDone = false
+$PotionQuests = 0
+$QuanIngredients = 0
 $SeijiTalkedTo = false
+RemoveScene()
 [wait]ShowScene("Scene 5" "Ahlai's Bedroom")
 [wait]HideCG()
-

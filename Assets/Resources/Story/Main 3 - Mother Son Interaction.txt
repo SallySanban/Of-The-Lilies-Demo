@@ -1,5 +1,11 @@
-pixel Ahlai as <playerName> "Oh, no. How did I sleep in this mess?"
+pixel SonWithMother as Son "Hey mom, I was thinking..."
 
-pixel Ahlai as <playerName> "Ugh, it smells too! I think this batch of bath fizz is a failure..."
+pixel MotherWithSon as Mother "No, I am not getting you a shapeshifting potion."
+
+pixel SonWithMother as Son "But I promise to get better at it!"
+
+pixel MotherWithSon as Mother "That's exactly what I'm afraid of! You are not scaring your brother again!"
+
+pixel SonWithMother as Son "Aww..."
 
 HideTextbox(false)

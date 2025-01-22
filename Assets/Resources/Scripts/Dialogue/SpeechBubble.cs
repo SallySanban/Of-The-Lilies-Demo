@@ -11,16 +11,13 @@ public class SpeechBubble : DialogueContainer
 
     private const int dialogueSpacing = 20;
     private const int dialoguePadding = 40;
-    private const int choiceSpacing = -35;
+    private const int choiceSpacing = -30;
     private const int choicePadding = 0;
 
     private const string SPEECHBUBBLE_OBJECT = "SpeechBubble";
 
     public SpeechBubble(GameObject speakerSprite, string speakerName = "", string[] listOfChoices = null)
     {
-        if (speakerSprite == null) Debug.Log("SPEAKER NULL");
-        if (speakerSprite.transform.Find(SPEECHBUBBLE_OBJECT) == null) Debug.Log("SPEECH BUBBLE NULL");
-
         root = speakerSprite.transform.Find(SPEECHBUBBLE_OBJECT).gameObject;
 
         rootCanvasGroup = root.GetComponent<CanvasGroup>();

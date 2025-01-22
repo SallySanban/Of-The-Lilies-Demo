@@ -1,5 +1,85 @@
-pixel Ahlai as <playerName> "Oh, no. How did I sleep in this mess?"
+if (!$DesperateGirlQuest)
+{
+	pixel DesperateGirl as Customer "H-Hello?"
 
-pixel Ahlai as <playerName> "Ugh, it smells too! I think this batch of bath fizz is a failure..."
+	pixel Ahlai as <playerName> "Huh?"
 
-HideTextbox(false)
+	pixel DesperateGirl as Customer "Please! Won't you help me?"
+
+	pixel Ahlai as <playerName> "What's wrong?"
+	
+	pixel DesperateGirl as Customer "M-My dad! He is so very sick, you see."
+
+	pixel DesperateGirl as Customer "His lungs are clogged and he can hardly breathe."
+
+	pixel DesperateGirl as Customer "I-I was hoping to get a healing potion to cure him. I'm afraid he won't live long..."
+
+	pixel DesperateGirl as Customer "Please, I'll do anything! Please help me save my dad!"
+
+	choice in -1
+	{
+		- I'll help you.
+			pixel DesperateGirl as Customer "You'll help me? Thanks!"
+
+			pixel Ahlai as <playerName> "Let me go brew something for your father."
+
+			$DesperateGirlPotionDone = false
+			$DesperateGirlQuest = true
+			$PotionQuests += 1
+		- I'm sorry.
+			pixel DesperateGirl as Customer "Please take your time to think about it... I'll be waiting..."
+	}
+
+	HideTextbox(false)
+}
+else
+{
+	if ($DesperateGirlQuest && !$DesperateGirlPotionDone)
+	{
+		pixel DesperateGirl as Customer "Will the potion be ready soon...?"
+
+		HideTextbox(false)
+	}
+	else
+	{
+		pixel Ahlai as <playerName> "Here you go!"
+
+		pixel DesperateGirl as Customer "Wow! The healing potion! Thank you so much!"
+
+		pixel DesperateGirl as Customer "Um..."
+
+		pixel DesperateGirl as Customer "...I don't have any money right now."
+
+		pixel DesperateGirl as Customer "But I will pay you back, as soon as my dad gets better!"
+
+		pixel DesperateGirl as Customer "I-Is that okay?"
+
+		choice in -1
+		{
+			- Of course.
+				pixel Ahlai as <playerName> "Your father needs it. Take it."
+
+				pixel DesperateGirl as Customer "Oh, thank you so much! You were the right person for me to talk to!"
+
+				pixel DesperateGirl as Customer "I'll give this to my father then pay you back, I promise!"
+
+			- Of course not.
+				pixel Ahlai as <playerName> "No. You have to pay to get your potion."
+
+				pixel DesperateGirl as Customer "B-But my father... He has the money! He just needs to recover! Please!"
+
+				pixel Ahlai as <playerName> "No."
+
+				pixel DesperateGirl as Customer "You're horrible..."
+
+				pixel DesperateGirl as Customer "My dad's gonna die, and it's all because of you!"
+
+				pixel DesperateGirl as Customer "I hate you!"
+		}
+
+		HideTextbox(false)
+		[wait]Blackout()
+		RemoveFromScene("DesperateGirl")
+		[wait]HideCG()
+	}
+}

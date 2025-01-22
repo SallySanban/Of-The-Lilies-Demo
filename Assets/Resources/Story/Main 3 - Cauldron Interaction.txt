@@ -1,0 +1,66 @@
+if ($PotionQuests > 0)
+{
+	choice in -1
+	{
+		- if ($SatoQuest && !$SatoPotionDone) Make fertilizer potion
+			pixel Ahlai as <playerName> "Time to make a potion."
+
+			HideTextbox(false)
+			[wait]Blackout()
+			Wait(0.5)
+			$SatoPotionDone = true
+			$PotionQuests -= 1
+			[wait]HideCG()
+
+		- if ($DesperateGirlQuest && !$DesperateGirlPotionDone) Make a healing potion
+			pixel Ahlai as <playerName> "Time to make a potion."
+
+			HideTextbox(false)
+			[wait]Blackout()
+			Wait(0.5)
+			$DesperateGirlPotionDone = true
+			$PotionQuests -= 1
+			[wait]HideCG()
+
+			pixel Ahlai as <playerName> "This looks good. Off to give it to the girl."
+
+		- if ($RichSeiyslanQuest && !$RichSeiyslanPotionDone) Make a hair growth potion
+			pixel Ahlai as <playerName> "Time to make a potion."
+
+			HideTextbox(false)
+			[wait]Blackout()
+			Wait(0.5)
+			$RichSeiyslanPotionDone = true
+			$PotionQuests -= 1
+			[wait]HideCG()
+
+			pixel Ahlai as <playerName> "Okay, let's give this potion to the customer."
+
+		- if ($QuanQuest && !$QuanPotionDone) Make Mr. Quan's potion
+			if ($QuanIngredients < 3)
+			{
+				pixel Ahlai as <playerName> "I'm missing some ingredients."
+			}
+			else
+			{
+				pixel Ahlai as <playerName> "Alright, all the ingredients are complete. Time to make a potion."
+
+				HideTextbox(false)
+				[wait]Blackout()
+				Wait(0.5)
+				$QuanPotionDone = true
+				$PotionQuests -= 1
+				[wait]HideCG()
+
+				pixel Ahlai as <playerName> "We can go give this to Mr. Quan now."
+			}
+	}
+
+	HideTextbox(false)
+}
+else
+{
+	pixel Ahlai as <playerName> "I don't really need to make a potion right now."
+
+	HideTextbox(false)
+}

@@ -1,5 +1,19 @@
 input
 
 $SatoQuest = false
+$SatoPotionDone = false
+$RichSeiyslanQuest = false
+$RichSeiyslanPotionDone = false
+$DesperateGirlQuest = false
+$DesperateGirlPotionDone = false
+$QuanQuest = false
+$QuanPotionDone = false
+$PotionQuests = 0
 $SeijiTalkedTo = false
-[wait]ShowScene("Scene 3" "Tayabac Village Burning")
+$QuanIngredients = 0
+
+$KnowThreadLocation = false
+$KnowDaniwItems = false
+$KnowWoodLocation = false
+$QuestsCompleted = 2
+[wait]ShowScene("Scene 2" "Tayabac Cliffside 1")
