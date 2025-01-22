@@ -15,4 +15,5 @@ $QuanIngredients = 0
 $KnowThreadLocation = false
 $KnowDaniwItems = false
 $KnowWoodLocation = false
-[wait]ShowScene("Scene 5" "Main Shop")
+$QuestsCompleted = 2
+[wait]ShowScene("Scene 2" "Tayabac Village")

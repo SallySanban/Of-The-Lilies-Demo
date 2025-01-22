@@ -230,6 +230,11 @@ MonoBehaviour:
       isInteractable: 0
       storyToPlay: 
       moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Axe Trigger
+      interactableType: 5
+      isInteractable: 1
+      storyToPlay: Main 1 - Axe Guy Interaction
+      moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Fireplace Entrance
       backgroundToGo: Tayabac Fireplace

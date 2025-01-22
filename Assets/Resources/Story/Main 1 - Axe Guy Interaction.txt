@@ -1,0 +1,7 @@
+[wait]MovePlayerToInteract(-x 73.12 -y -2.11)
+
+pixel MaleNPC4 as Uncle "Don't bother him, <playerName>. He's practicing."
+
+pixel MaleNPC4 as Uncle "Besides, don't you have things to do?"
+
+HideTextbox(false)

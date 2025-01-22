@@ -20,44 +20,7 @@ choice in -1
 		Load("Main 3 - Seiji Repeating Dialogue")
 
 	- How are you?
-		pixel Seiji "Me?"
-
-		pixel Seiji "I'm doing well, thanks for asking."
-
-		pixel Seiji "Lady Sabina bought me dinner after working overtime yesterday."
-
-		pixel Ahlai as <playerName> "Did she also buy you that thing you're carrying?"
-
-		pixel Seiji "Oh, my little sister made me this!"
-
-		pixel Seiji "I keep it around as a good luck charm. I even put it on the counter when I'm working."
-
-		choice in -1
-		{
-			- That's sweet, Seiji.
-				$Seiji += 1
-
-				pixel Ahlai as <playerName> "It's nice that you think of your sister so fondly like that."
-
-				pixel Seiji "Thank you. I knew you'd understand."
-
-				pixel Seiji "These kinds of gifts from family, they're important."
-
-				pixel Seiji "They remind me just why I work so hard."
-
-				pixel Ahlai as <playerName> "I agree..."
-
-			- That's unprofessional.
-				pixel Ahlai as <playerName> "You shouldn't put things like that on the counter. It's unprofessional."
-
-				pixel Seiji "...I suppose you're right..."
-
-				pixel Seiji "Although, I thought you'd understand just how important these mementos are..."
-
-				pixel Ahlai as <playerName> "..."
-		}
-
-		Load("Main 3 - Seiji Repeating Dialogue")
+		Load("Main 3 - Seiji How Are You Dialogue")
 
 	- How are the customers?
 		pixel Seiji "Oh. Something very absurd happened earlier while you were still sleeping!"
@@ -90,7 +53,7 @@ choice in -1
 
 		pixel Seiji "In the end, she left, saying she's never coming back."
 
-		pixel Seiji "Haha! It’s safe to say that she's banned from even coming inside now."
+		pixel Seiji "Haha! It's safe to say that she's banned from even coming inside now."
 
 		choice in -1
 		{
