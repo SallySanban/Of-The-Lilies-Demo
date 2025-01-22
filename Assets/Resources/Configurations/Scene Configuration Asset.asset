@@ -686,3 +686,11 @@ MonoBehaviour:
       keyToPress: 1
       playerPositionInNextBackground: {x: -2275.36, y: -226.71}
       playerDirectionInNextBackground: 1
+  - sceneName: Scene 5
+    currentBackgroundName: Kuchai Town 1
+    showPlayer: 1
+    playerPosition: {x: 0, y: 0}
+    playerDirection: 1
+    npcsInScene: []
+    interactablesInScene: []
+    backgroundsToGo: []
