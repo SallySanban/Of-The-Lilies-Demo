@@ -1,0 +1,68 @@
+pixel Seiji "Oh. Something very absurd happened earlier while you were still sleeping!"
+
+pixel Ahlai as <playerName> "What happened?"
+
+pixel Seiji "Just before we opened, as Lady Sabina and I were readying the shop, suddenly, this random lady barged in."
+
+pixel Seiji "She walked in as if we were already open."
+
+pixel Seiji "Lady Sabina was somewhere else so I had to be the one to tell her that we weren't open yet."
+
+pixel Seiji "She goes, 'Oh, but you'll be open in a few minutes, yes? This is utterly urgent, I just need to make a quick purchase.'"
+
+pixel Seiji "And before I could even say anything, she just started grabbing potions straight from the unpacked boxes!"
+
+pixel Ahlai as <playerName> "What?!"
+
+pixel Seiji "Those potions weren't even for sale. They were for me to take to the back."
+
+pixel Seiji "So she takes them to the counter to pay and I tell her just that. She kept insisting and I kept protesting."
+
+pixel Seiji "The next thing I know, she starts screaming at me! Calling me names, saying I'm rude and unprofessional, and that I shouldn't be working here..."
+
+pixel Seiji "She demanded to talk to Lady Sabina and, right on cue, she came in, probably hearing her nagging from across the hall."
+
+pixel Seiji "You should've seen what happened next! That crazy lady actually thought Lady Sabina would side with her."
+
+pixel Seiji "But instead, she got a verbal beatdown from her! I'm sure her ego totally dropped by the time Lady Sabina was done."
+
+pixel Seiji "In the end, she left, saying she's never coming back."
+
+pixel Seiji "Haha! It's safe to say that she's banned from even coming inside now."
+
+choice in -1
+{
+	- I hope you're okay.
+		$Seiji += 1
+
+		pixel Ahlai as <playerName> "I hope you're okay, though. You didn't deserve that kind of treatment."
+
+		pixel Ahlai as <playerName> "That woman was crazy and you are not any of the things she accused you of being."
+
+		pixel Ahlai as <playerName> "Don't let that woman or that experience put you down."
+
+		pixel Seiji "Thanks, <playerName>. I appreciate it."
+
+		pixel Seiji "I know that lady was speaking nonsense, and Lady Sabina backed me up."
+
+		pixel Seiji "It's still nice to hear that validation from you though, <playerName>."
+
+		pixel Ahlai as <playerName> "You're a good guy, Seiji. Never forget that."
+
+		pixel Seiji "I know. Thanks, <playerName>."
+
+		pixel Seiji "So long as you believe that, I'll believe it too."
+
+	- Don't mess with Lady Sabina.
+		pixel Seiji "Agreed. That woman can be absolutely terrifying."
+
+		pixel Ahlai as <playerName> "It's a good thing she was there to protect you."
+
+		pixel Ahlai as <playerName> "I imagine it wouldn't have turned out as well without her."
+
+		pixel Seiji "I'm not defenseless, you know. I can stand up for myself."
+
+		pixel Seiji "But that crazy lady probably wouldn't have taken me as seriously as Lady Sabina. It was a good thing she was there."
+}
+
+Load("Main 3 - Seiji Repeating Dialogue")

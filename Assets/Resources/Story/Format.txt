@@ -95,6 +95,8 @@ MovePlayerToInteract(-x xPosition -y yPosition)
 PanCamera(-x xPosition -y yPosition -spd speed)
 ResetCamera()
 RemoveScene()
+SetCameraFollow("NPC Name")
+Flip("NPC Name/Ahlai" "Left/Right")
 
 === Effects ===
 ScreenShake()

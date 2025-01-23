@@ -9,11 +9,21 @@ $DesperateGirlPotionDone = false
 $QuanQuest = false
 $QuanPotionDone = false
 $PotionQuests = 0
-$SeijiTalkedTo = false
 $QuanIngredients = 0
+$SeijiTalkedTo = false
+$ShopAlreadyChosen = false
+$HowAreYouAlreadyChosen = false
+$CustomersAlreadyChosen = false
+$NightmareAlreadyChosen = false
+$TasksAlreadyChosen = false
+$Seiji = 0
+$Myo = 0
+$Manju = 0
+$Laisa = 0
+$Lien = 0
 
 $KnowThreadLocation = false
 $KnowDaniwItems = false
 $KnowWoodLocation = false
 $QuestsCompleted = 2
-[wait]ShowScene("Scene 5" "Ahlai's Bedroom")
+[wait]ShowScene("Scene 5" "Kuchai Town 1")

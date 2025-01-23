@@ -321,17 +321,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SHOW CREDITS
+  m_text: CREDITS TEXT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1ac8b32e34b4cc845a1e5322d6e56584, type: 2}
-  m_sharedMaterial: {fileID: -315567941548918596, guid: 1ac8b32e34b4cc845a1e5322d6e56584, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4098f18b12dec134c98919e4ee072207, type: 2}
+  m_sharedMaterial: {fileID: 6536311507833374744, guid: 4098f18b12dec134c98919e4ee072207, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4284964418
+  m_fontColor: {r: 0.25793877, g: 0.36872998, b: 0.4056604, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1433,14 +1433,14 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
+  m_XDamping: 3
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.3
+  m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0

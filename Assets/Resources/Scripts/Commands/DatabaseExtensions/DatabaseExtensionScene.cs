@@ -24,6 +24,9 @@ namespace Commands
             database.AddCommand("PanCamera", new Func<string[], IEnumerator>(PanCamera));
             database.AddCommand("ResetCamera", new Action(ResetCamera));
             database.AddCommand("ScrollBackground", new Action<string>(ScrollBackground));
+            database.AddCommand("SetNPCPosition", new Action<string[]>(SetNPCPosition));
+            database.AddCommand("SetCameraFollow", new Action<string>(SetCameraFollow));
+            database.AddCommand("FlipNPC", new Action<string[]>(FlipNPC));
         }
 
         private static void ShowScene(string[] data)
@@ -135,6 +138,23 @@ namespace Commands
             yield return npc.MoveToPosition(npc.root, position, speed: spd);
         }
 
+        private static void SetNPCPosition(string[] data)
+        {
+            NPC npc = NPCManager.Instance.GetNPC(data[0]);
+
+            var parameters = ConvertDataToParameters(data);
+
+            float x;
+            float y;
+
+            parameters.TryGetValue(xParameter, out x, defaultValue: 0);
+            parameters.TryGetValue(yParameter, out y, defaultValue: 0);
+
+            Vector2 position = new Vector2(x, y);
+
+            npc.SetPosition(npc.root, position);
+        }
+
         private static IEnumerator MovePlayerToInteract(string[] data)
         {
             var parameters = ConvertDataToParameters(data);
@@ -177,6 +197,38 @@ namespace Commands
                 SceneManager.Instance.scrollBackground = scroll;
 
                 SceneManager.Instance.StartCoroutine(SceneManager.Instance.ScrollBackground());
+            }
+        }
+
+        private static void SetCameraFollow(string data)
+        {
+            NPC npc = NPCManager.Instance.GetNPC(data);
+
+            SceneManager.Instance.SetCameraFollow(npc.root.transform);
+        }
+
+        private static void FlipNPC(string[] data)
+        {
+            int direction = 0;
+
+            if (data[1].Equals("Left"))
+            {
+                direction = -1;
+            }
+            else
+            {
+                direction = 1;
+            }
+
+            if (data[0].Equals("Ahlai"))
+            {
+                SceneManager.Instance.player.Flip(direction);
+            }
+            else
+            {
+                NPC npc = NPCManager.Instance.GetNPC(data[0]);
+
+                //TODO: Add flip code for NPC
             }
         }
     }
