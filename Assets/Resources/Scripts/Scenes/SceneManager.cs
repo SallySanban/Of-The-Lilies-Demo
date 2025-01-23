@@ -4,7 +4,7 @@ using UnityEngine;
 using Dialogue;
 using UnityEngine.UI;
 using FMODUnity;
-using FMOD.Studio;
+using System.Xml.Linq;
 
 public class SceneManager : MonoBehaviour
 {
@@ -36,6 +36,7 @@ public class SceneManager : MonoBehaviour
     [HideInInspector] public string MC_NAME = "Ahlai";
     [HideInInspector] public float TRANSITION_WAIT_TIME = 0.3f;
     [HideInInspector] public bool scrollBackground = false;
+    [HideInInspector] public bool followPlayer = false;
 
     private const float PLAYER_SOFTZONEWIDTH = 0.6f;
     private const float NPC_SOFTZONEWIDTH = 0f;
@@ -122,7 +123,7 @@ public class SceneManager : MonoBehaviour
             {
                 if (keyToPress == backgroundData.keyToPress)
                 {
-                    if (!string.IsNullOrEmpty(storyToPlay)) //background will switch through the txt file
+                    if (!string.IsNullOrEmpty(storyToPlay)) //background will switch through the txt file & NPC will follow Ahlai through txt file
                     {
                         yield return VNManager.Instance.PlayCollidingInteractableStory(storyToPlay, moveToInteractPosition);
                     }
@@ -138,6 +139,8 @@ public class SceneManager : MonoBehaviour
 
                         yield return new WaitForSeconds(TRANSITION_WAIT_TIME);
 
+                        if (!string.IsNullOrEmpty(backgroundData.followPlayer)) FollowPlayer(backgroundData.followPlayer, backgroundData.followPlayerPosition);
+
                         yield return blackout.Hide();
                     }
 
@@ -149,6 +152,8 @@ public class SceneManager : MonoBehaviour
 
     public void RemoveScene()
     {
+        followPlayer = false;
+
         virtualCamera.Follow = null;
 
         DialogueManager.Instance.currentTextbox = null;
@@ -182,6 +187,20 @@ public class SceneManager : MonoBehaviour
         {
             player = null;
         }
+    }
+
+    public void FollowPlayer(string npcName, Vector2 followNPCPosition = default)
+    {
+        NPC npc = NPCManager.Instance.GetNPC(npcName);
+
+        if(followNPCPosition != Vector2.zero)
+        {
+            npc.SetPosition(npc.root, followNPCPosition);
+        }
+
+        followPlayer = true;
+
+        StartCoroutine(npc.FollowPlayer(npc.root));
     }
 
     public IEnumerator PanCamera(float targetX, float targetY, float duration)

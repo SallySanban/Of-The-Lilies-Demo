@@ -28,6 +28,7 @@ namespace Commands
             database.AddCommand("SetNPCPosition", new Action<string[]>(SetNPCPosition));
             database.AddCommand("SetCameraFollow", new Action<string>(SetCameraFollow));
             database.AddCommand("FlipNPC", new Action<string[]>(FlipNPC));
+            database.AddCommand("FollowPlayer", new Action<string>(FollowPlayer));
         }
 
         private static void ShowScene(string[] data)
@@ -59,6 +60,11 @@ namespace Commands
             yield return new WaitForSeconds(SceneManager.Instance.TRANSITION_WAIT_TIME);
 
             yield return blackout.Hide();
+        }
+
+        private static void FollowPlayer(string data)
+        {
+            SceneManager.Instance.FollowPlayer(data);
         }
 
         private static void ToggleInteractable(string[] data)

@@ -46,4 +46,40 @@ public class PixelSprite
 
         npcTransform.position = target;
     }
+
+    public IEnumerator FollowPlayer(GameObject npc, float followDistance = 2f, float speed = 5f)
+    {
+        Transform npcTransform = npc.transform;
+        Transform playerTransform = SceneManager.Instance.player.root.transform;
+
+        while (SceneManager.Instance.followPlayer)
+        {
+            Vector3 npcPosition = npcTransform.position;
+            Vector3 playerPosition = new Vector2(playerTransform.position.x, npcPosition.y);
+
+            float distanceToPlayer = Vector3.Distance(npcPosition, playerPosition);
+
+            Vector3 directionToPlayer = (playerPosition - npcPosition).normalized;
+
+            if (directionToPlayer.x > 0)
+            {
+                npcTransform.localScale = new Vector3(Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
+            }
+            else if (directionToPlayer.x < 0)
+            {
+                npcTransform.localScale = new Vector3(-Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
+            }
+
+            if (distanceToPlayer > followDistance)
+            {
+                npcTransform.position = Vector3.MoveTowards(
+                    npcPosition,
+                    playerPosition,
+                    speed * Time.deltaTime
+                );
+            }
+
+            yield return null;
+        }
+    }
 }

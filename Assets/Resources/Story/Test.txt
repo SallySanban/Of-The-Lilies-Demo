@@ -24,7 +24,8 @@ $MaiFamilyFound = false
 $PotionQuests = 0
 $QuanIngredients = 0
 $LibraryQuest = false
-$SeijiTalkedTo = false
+$SeijiTalkedTo = true
+$SteppedOutside = false
 $ShopAlreadyChosen = false
 $HowAreYouAlreadyChosen = false
 $CustomersAlreadyChosen = false
@@ -36,4 +37,4 @@ $Manju = 0
 $Laisa = 0
 $Lien = 0
 
-[wait]ShowScene("Scene 5" "Kuchai Town 1")
+[wait]ShowScene("Scene 5" "Main Shop")

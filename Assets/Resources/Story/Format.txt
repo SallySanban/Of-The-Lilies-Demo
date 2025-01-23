@@ -99,6 +99,7 @@ SetCameraFollow("NPC Name")
 Flip("NPC Name/Ahlai" "Left/Right")
 ToggleNPC("Scene Name" "Background Name" NPCName true/false) //changes appear to true/false
 SetNPCPosition("NPC Name" -x xPosition -y yPosition)
+FollowPlayer("NPC Name That Will Follow Player")
 
 === Effects ===
 ScreenShake()

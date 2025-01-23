@@ -405,6 +405,7 @@ $PotionQuests = 0
 $QuanIngredients = 0
 $LibraryQuest = false
 $SeijiTalkedTo = false
+$SteppedOutside = false
 $ShopAlreadyChosen = false
 $HowAreYouAlreadyChosen = false
 $CustomersAlreadyChosen = false

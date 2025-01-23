@@ -1,6 +1,22 @@
 if($SeijiTalkedTo)
 {
-	[wait]SwitchScene("Scene 5" "Kuchai Town 1")
+	if (!$SteppedOutside)
+	{
+		[wait]SwitchScene("Scene 5" "Kuchai Town 1")
+		ToggleNPC("Scene 5" "Main Shop" Seiji false)
+		$SteppedOutside = true
+
+		pixel Seiji "I think Mr. Quan would be in Kuchai Market, selling his daily produce. Let's go?"
+
+		HideTextbox(false)
+		FollowPlayer("Seiji")
+	}
+	else
+	{
+		[wait]SwitchScene("Scene 5" "Kuchai Town 1")
+
+		FollowPlayer("Seiji")
+	}
 }
 else
 {

@@ -10,6 +10,8 @@ public class BackgroundData
     public KeyToPress keyToPress;
     public Vector2 playerPositionInNextBackground;
     public int playerDirectionInNextBackground;
+    public string followPlayer;
+    public Vector2 followPlayerPosition;
 
     public BackgroundData Copy()
     {
@@ -20,6 +22,8 @@ public class BackgroundData
         result.keyToPress = keyToPress;
         result.playerPositionInNextBackground = playerPositionInNextBackground;
         result.playerDirectionInNextBackground = playerDirectionInNextBackground;
+        result.followPlayer = followPlayer;
+        result.followPlayerPosition = followPlayerPosition;
 
         return result;
     }
