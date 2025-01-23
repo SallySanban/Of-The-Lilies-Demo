@@ -17,7 +17,6 @@ choice in -1
 
 		[wait]Blackout()
 		HideTextbox(true)
-		playSFX(SFX_AxeSwing)
 		Wait(2.0)
 		[wait]HideCG()
 
