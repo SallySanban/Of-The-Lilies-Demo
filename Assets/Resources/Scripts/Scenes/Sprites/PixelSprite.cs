@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PixelSprite
 {
+    private bool spriteCurrentlyMoving = false;
+
     //uses local position
     public void SetPosition(GameObject npc, Vector2 targetPosition)
     {
@@ -59,27 +61,92 @@ public class PixelSprite
 
             float distanceToPlayer = Vector3.Distance(npcPosition, playerPosition);
 
-            Vector3 directionToPlayer = (playerPosition - npcPosition).normalized;
 
-            if (directionToPlayer.x > 0)
+            if (!spriteCurrentlyMoving)
             {
-                npcTransform.localScale = new Vector3(Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
-            }
-            else if (directionToPlayer.x < 0)
-            {
-                npcTransform.localScale = new Vector3(-Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
-            }
+                Vector3 directionToPlayer = (playerPosition - npcPosition).normalized;
 
-            if (distanceToPlayer > followDistance)
-            {
-                npcTransform.position = Vector3.MoveTowards(
-                    npcPosition,
-                    playerPosition,
-                    speed * Time.deltaTime
-                );
+                if (directionToPlayer.x > 0)
+                {
+                    npcTransform.localScale = new Vector3(Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
+                }
+                else if (directionToPlayer.x < 0)
+                {
+                    npcTransform.localScale = new Vector3(-Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
+                }
+
+                if (distanceToPlayer > followDistance)
+                {
+                    npcTransform.position = Vector3.MoveTowards(
+                        npcPosition,
+                        playerPosition,
+                        speed * Time.deltaTime
+                    );
+                }
             }
 
             yield return null;
         }
+    }
+
+    public IEnumerator GoBehindPlayer(bool movedLeft, float followDistance = 2f, float speed = 5f)
+    {
+        spriteCurrentlyMoving = true;
+
+        Transform npcTransform = SceneManager.Instance.follower.root.transform;
+        Transform playerTransform = SceneManager.Instance.player.root.transform;
+
+        float offsetX = movedLeft ? -followDistance : followDistance;
+
+        Vector3 targetPosition = new Vector3(
+            playerTransform.position.x + offsetX,
+            npcTransform.position.y,
+            npcTransform.position.z
+        );
+
+        while (Vector3.Distance(npcTransform.position, targetPosition) > 0.01f)
+        {
+            Vector3 directionOfMotion = targetPosition - npcTransform.position;
+
+            if (directionOfMotion.x > 0)
+            {
+                npcTransform.localScale = new Vector3(
+                    Mathf.Abs(npcTransform.localScale.x),
+                    npcTransform.localScale.y,
+                    npcTransform.localScale.z
+                );
+            }
+            else if (directionOfMotion.x < 0)
+            {
+                npcTransform.localScale = new Vector3(
+                    -Mathf.Abs(npcTransform.localScale.x),
+                    npcTransform.localScale.y,
+                    npcTransform.localScale.z
+                );
+            }
+
+            npcTransform.position = Vector3.MoveTowards(
+                npcTransform.position,
+                targetPosition,
+                speed * Time.deltaTime
+            );
+
+            yield return null;
+        }
+
+        Vector3 directionToPlayer = playerTransform.position - npcTransform.position;
+
+        if (directionToPlayer.x > 0)
+        {
+            npcTransform.localScale = new Vector3(Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
+        }
+        else if (directionToPlayer.x < 0)
+        {
+            npcTransform.localScale = new Vector3(-Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
+        }
+
+        yield return null;
+
+        spriteCurrentlyMoving = false;
     }
 }

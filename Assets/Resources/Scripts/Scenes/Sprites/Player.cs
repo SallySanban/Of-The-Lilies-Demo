@@ -63,7 +63,7 @@ public class Player : PixelSprite
             movedLeft = direction.x < 0;
             
             //animator.SetBool("IsWalking", true);
-            animator.SetBool("Flipped", movedLeft); //true means facing left
+            animator.SetBool("Flipped", movedLeft); //true means going left
             
             root.transform.position += new Vector3(direction.x, 0, 0) * SPEED * Time.deltaTime;
             yield return null;
@@ -71,6 +71,8 @@ public class Player : PixelSprite
         
         //animator.SetBool("IsWalking", false);
         animator.SetBool("Flipped", !movedLeft);
+
+        if(SceneManager.Instance.followPlayer) yield return SceneManager.Instance.follower.GoBehindPlayer(movedLeft);
     }
 
     public void Flip(int direction)

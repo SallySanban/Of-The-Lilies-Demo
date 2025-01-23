@@ -37,6 +37,7 @@ public class SceneManager : MonoBehaviour
     [HideInInspector] public float TRANSITION_WAIT_TIME = 0.3f;
     [HideInInspector] public bool scrollBackground = false;
     [HideInInspector] public bool followPlayer = false;
+    [HideInInspector] public NPC follower = null;
 
     private const float PLAYER_SOFTZONEWIDTH = 0.6f;
     private const float NPC_SOFTZONEWIDTH = 0f;
@@ -153,6 +154,7 @@ public class SceneManager : MonoBehaviour
     public void RemoveScene()
     {
         followPlayer = false;
+        follower = null;
 
         virtualCamera.Follow = null;
 
@@ -191,16 +193,16 @@ public class SceneManager : MonoBehaviour
 
     public void FollowPlayer(string npcName, Vector2 followNPCPosition = default)
     {
-        NPC npc = NPCManager.Instance.GetNPC(npcName);
+        follower = NPCManager.Instance.GetNPC(npcName);
 
         if(followNPCPosition != Vector2.zero)
         {
-            npc.SetPosition(npc.root, followNPCPosition);
+            follower.SetPosition(follower.root, followNPCPosition);
         }
 
         followPlayer = true;
 
-        StartCoroutine(npc.FollowPlayer(npc.root));
+        StartCoroutine(follower.FollowPlayer(follower.root));
     }
 
     public IEnumerator PanCamera(float targetX, float targetY, float duration)

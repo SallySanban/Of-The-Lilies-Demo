@@ -80,6 +80,8 @@ MonoBehaviour:
       keyToPress: 4
       playerPositionInNextBackground: {x: -0.02, y: -227.17}
       playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac House 1st Floor
     showPlayer: 1
@@ -118,11 +120,15 @@ MonoBehaviour:
       keyToPress: 3
       playerPositionInNextBackground: {x: -0.04, y: -86.29}
       playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
     - interactableName: Left Door
       backgroundToGo: Tayabac Village
       keyToPress: 2
       playerPositionInNextBackground: {x: -1522.89, y: -238.22}
       playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Village
     showPlayer: 1
@@ -253,11 +259,15 @@ MonoBehaviour:
       keyToPress: 4
       playerPositionInNextBackground: {x: -39.03, y: -85.96}
       playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
     - interactableName: Cliffside Entrance
       backgroundToGo: Tayabac Cliffside 1
       keyToPress: 2
       playerPositionInNextBackground: {x: 1977.22, y: -227.17}
       playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Fireplace
     showPlayer: 1
@@ -294,6 +304,8 @@ MonoBehaviour:
       keyToPress: 3
       playerPositionInNextBackground: {x: -1595.11, y: -228.18}
       playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Cliffside 1
     showPlayer: 1
@@ -321,6 +333,8 @@ MonoBehaviour:
       keyToPress: 3
       playerPositionInNextBackground: {x: 1270.26, y: -227.17}
       playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Cliffside 2
     showPlayer: 1
@@ -349,6 +363,8 @@ MonoBehaviour:
       keyToPress: 2
       playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: 0
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 3
     currentBackgroundName: Tayabac Village Burning
     showPlayer: 1
@@ -490,6 +506,8 @@ MonoBehaviour:
       keyToPress: 3
       playerPositionInNextBackground: {x: -1277.97, y: -227.16}
       playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: 2nd Floor Hallway
     showPlayer: 1
@@ -543,6 +561,8 @@ MonoBehaviour:
       keyToPress: 4
       playerPositionInNextBackground: {x: 1311.99, y: -227.16}
       playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: 1st Floor Hallway
     showPlayer: 1
@@ -591,11 +611,15 @@ MonoBehaviour:
       keyToPress: 2
       playerPositionInNextBackground: {x: 2277.64, y: -262.05}
       playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
     - interactableName: Stairs
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
       playerPositionInNextBackground: {x: 836.17, y: -227.16}
       playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: Main Shop
     showPlayer: 1
@@ -714,16 +738,20 @@ MonoBehaviour:
       keyToPress: 2
       playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: 0
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
     - interactableName: Right Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 1
       playerPositionInNextBackground: {x: -2275.36, y: -226.71}
       playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: Kuchai Town 1
     showPlayer: 1
     playerPosition: {x: -3436.47, y: -244.74}
-    playerDirection: 1
+    playerDirection: -1
     npcsInScene:
     - npcName: Myo
       position: {x: 3180.04, y: -189.32}
@@ -761,42 +789,46 @@ MonoBehaviour:
       position: {x: -1441.96, y: -189.32}
       appear: 1
       animationState: Idle
+    - npcName: Seiji
+      position: {x: -3868.96, y: -217.32}
+      appear: 1
+      animationState: Idle
     interactablesInScene:
     - interactableName: Myo
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Myo Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 27.49, y: -2.27}
     - interactableName: GossipGirl2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Gossip Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 16.51, y: -2.27}
     - interactableName: TownCrier
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Town Crier Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -3.86, y: -2.27}
     - interactableName: MaleListener
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Listener Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 6.71, y: -2.27}
     - interactableName: RichSeiyslan
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - After Rich Seiyslan Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -27.33, y: -2.27}
     - interactableName: RichSeiyslanCrush
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rich Seiyslan Crush Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -25.42, y: -2.27}
     - interactableName: RichSeiyslanFriend
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rich Seiyslan Friend Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -15.31, y: -2.27}
     - interactableName: Sabina Door
       interactableType: 2
       isInteractable: 1
@@ -821,22 +853,28 @@ MonoBehaviour:
     - interactableName: Market
       backgroundToGo: Kuchai Town 2
       keyToPress: 3
-      playerPositionInNextBackground: {x: 4251.06, y: -235.45}
+      playerPositionInNextBackground: {x: 4050.6, y: -235.45}
       playerDirectionInNextBackground: -1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 0, y: 0}
     - interactableName: Bridge
       backgroundToGo: Kuchai Town 4
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1747.12, y: -236.6}
+      playerPositionInNextBackground: {x: -1523.99, y: -236.6}
       playerDirectionInNextBackground: 1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 0, y: 0}
     - interactableName: Sabina Door
       backgroundToGo: Main Shop
       keyToPress: 3
       playerPositionInNextBackground: {x: -2306.26, y: -262.05}
       playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: Kuchai Town 2
     showPlayer: 1
-    playerPosition: {x: 4251.06, y: -235.45}
+    playerPosition: {x: 4050.6, y: -235.45}
     playerDirection: -1
     npcsInScene:
     - npcName: DesperateGirl
@@ -867,37 +905,41 @@ MonoBehaviour:
       position: {x: 2106.66, y: -192.32}
       appear: 1
       animationState: Idle
+    - npcName: Seiji
+      position: {x: 4251.06, y: -209.45}
+      appear: 1
+      animationState: Idle
     interactablesInScene:
     - interactableName: DesperateGirl
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - After Desperate Girl Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -4.6, y: -2.18}
     - interactableName: Quan
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Quan Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -23.04, y: -2.18}
     - interactableName: PrayingGirl
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Praying Girl Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 4.94, y: -2.18}
     - interactableName: Salesperson1
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Salesperson1 Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -34.84, y: -2.18}
     - interactableName: Salesperson2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Salesperson2 Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -11.2, y: -2.18}
     - interactableName: Salesperson3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Salesperson3 Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 21.51, y: -2.18}
     - interactableName: Right Side
       interactableType: 2
       isInteractable: 1
@@ -909,6 +951,8 @@ MonoBehaviour:
       keyToPress: 1
       playerPositionInNextBackground: {x: -4888.15, y: -244.74}
       playerDirectionInNextBackground: 1
+      followPlayer: Seiji
+      followPlayerPosition: {x: -5066.96, y: -218.57}
   - sceneName: Scene 5
     currentBackgroundName: Kuchai Town 3
     showPlayer: 1
@@ -939,27 +983,31 @@ MonoBehaviour:
       position: {x: 3174.05, y: -193.32}
       appear: 1
       animationState: Idle
+    - npcName: Seiji
+      position: {x: -3908.45, y: -206.51}
+      appear: 1
+      animationState: Idle
     interactablesInScene:
     - interactableName: Reader
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Reader Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 27.29, y: -2.15}
     - interactableName: Sato
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - After Sato Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -44.28, y: -2.15}
     - interactableName: PoorBoy
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Poor Boy Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -4.82, y: -2.15}
     - interactableName: Soldier3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Soldier Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 16.94, y: -2.15}
     - interactableName: Bridge
       interactableType: 2
       isInteractable: 1
@@ -976,27 +1024,35 @@ MonoBehaviour:
       keyToPress: 3
       playerPositionInNextBackground: {x: 1701.75, y: -236.6}
       playerDirectionInNextBackground: -1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 1833.35, y: -210.6}
     - interactableName: Library Door
       backgroundToGo: Library 1
       keyToPress: 3
       playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: 0
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: Kuchai Town 4
     showPlayer: 1
-    playerPosition: {x: -1747.12, y: -236.6}
+    playerPosition: {x: -1523.99, y: -236.6}
     playerDirection: 1
     npcsInScene:
     - npcName: Boater
-      position: {x: -1089.65, y: -196.32}
+      position: {x: -1089.65, y: -180.32}
       appear: 1
       animationState: Idle
     - npcName: WaterLooker
-      position: {x: -70.65, y: -196.32}
+      position: {x: -70.65, y: -185.32}
       appear: 1
       animationState: Idle
     - npcName: MotherAndDaughter
-      position: {x: 1014.35, y: -196.32}
+      position: {x: 1014.35, y: -182.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Seiji
+      position: {x: -1747.12, y: -210.6}
       appear: 1
       animationState: Idle
     interactablesInScene:
@@ -1004,17 +1060,17 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Mai Family Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 7.08, y: -2.19}
     - interactableName: Boater
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Boater Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -12.34, y: -2.19}
     - interactableName: WaterLooker
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Water Looker Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -2.8, y: -2.19}
     - interactableName: Left Side
       interactableType: 2
       isInteractable: 1
@@ -1033,11 +1089,15 @@ MonoBehaviour:
     backgroundsToGo:
     - interactableName: Left Side
       backgroundToGo: Kuchai Town 1
-      keyToPress: 1
+      keyToPress: 2
       playerPositionInNextBackground: {x: 4530.73, y: -244.74}
       playerDirectionInNextBackground: -1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 4749.48, y: -218.71}
     - interactableName: Right Side
       backgroundToGo: Kuchai Town 3
       keyToPress: 1
       playerPositionInNextBackground: {x: -3706.83, y: -232.51}
       playerDirectionInNextBackground: 1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 0, y: 0}
