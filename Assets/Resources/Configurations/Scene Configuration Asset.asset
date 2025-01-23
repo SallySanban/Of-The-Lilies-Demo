@@ -535,7 +535,7 @@ MonoBehaviour:
     - interactableName: Stairs
       interactableType: 2
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Stairs Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Stairs
@@ -583,7 +583,7 @@ MonoBehaviour:
     - interactableName: Stairs
       interactableType: 2
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Stairs Interaction Up
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Door
