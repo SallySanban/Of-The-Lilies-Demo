@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "I should pay my respects to Dok'kale. He protects the forest, and the Seiyslan people..."
+
+pixel Ahlai as <playerName> "I know we aren't Seiyslan, but will you please protect my family too?"
+
+HideTextbox(false)

@@ -1,0 +1,74 @@
+choice in -1
+{
+	- What are you selling?
+		pixel Quan as Mr. Quan "<playerName>, Seiji! Good to see you!"
+
+		pixel Quan as Mr. Quan "Why, I'm selling the freshest produce you'll ever find here in Kuchai Town!"
+
+	- if ($QuanDeliverQuest) Delivery from Sabina's Salves!
+		pixel Quan as Mr. Quan "Oh, has my potion finally arrived?"
+
+		pixel Quan as Mr. Quan "Yes, it's here! Punctual as always, you two."
+
+		pixel Seiji "Of course. We wouldn't want to disappoint one of our best customers."
+
+		pixel Quan as Mr. Quan "Well, it's exactly your great service that made me a loyal patron of your business. Here's my payment."
+
+		PlaySFX("Coins jiggling")
+
+		pixel Quan as Mr. Quan "Just as expected, the potions are in excellent condition!"
+
+		pixel Ahlai as <playerName> "You can always count on us, sir. We'll get going now. It was a pleasure doing business with you!"
+
+		pixel Quan as Mr. Quan "Oh, wait! It almost slipped my mind... I need help creating another potion."
+
+		pixel Quan as Mr. Quan "Could you help me collect the components and brew it for me? I'm a little short here at the store. Don't worry- I'll make sure I pay you extra."
+
+		pixel Ahlai as <playerName> "We're more than happy to help, sir!"
+
+		pixel Quan as Mr. Quan "That's great! I appreciate it, <playerName>. Here's what I need: a dash of everbark flakes, some silverleaf sprigs, and a sprinkle of pearl shell powder."
+
+		pixel Quan as Mr. Quan "Maybe the component vendors have them in stock here at the market?"
+
+		pixel Quan as Mr. Quan "Take this bag of coins, go help yourself to anything you'd like after you buy the components!"
+
+		pixel Ahlai as <playerName> "We'll be back with your potion, sir!"
+
+		$QuanDeliverQuest = false
+		$QuanPotionQuest = true
+	- if ($QuanPotionQuest && !$QuanPotionDone) What were the components?
+		pixel Quan as Mr. Quan "Here's what I need: a dash of everbark flakes, some silverleaf sprigs, and a sprinkle of pearl shell powder."
+
+		pixel Quan as Mr. Quan "Maybe the component vendors have them in stock here at the market?"
+	- if ($QuanPotionQuest && $QuanPotionDone) Here's your potion, sir!
+		pixel Quan as Mr. Quan "Marvelous work, <playerName>! Thank you for all your help."
+
+		pixel Quan as Mr. Quan "With this Everguard Elixir, I can keep the pests off my produce! They have been bothering me more often than usual lately. I wonder if it's the change in weather?"
+
+		pixel Quan as Mr. Quan "Anyway, nothing you two need to worry about! Here is the extra fee I promised."
+
+		pixel Ahlai as <playerName> "It's always a pleasure working with you, Mr. Quan."
+
+		pixel Quan as Mr. Quan "Likewise, you two! I'll definitely be ordering from Sabina's Salves again."
+
+		Flip("Ahlai" Right)
+
+		pixel Ahlai as <playerName> "Where to next?"
+
+		pixel Seiji "Lady Sabina wants us to borrow a book at the library. She told me that she suspects something strange is happening, and she needs more information."
+
+		pixel Ahlai as <playerName> "What's the book about?"
+
+		pixel Seiji "The 100-year curse."
+
+		pixel Ahlai as <playerName> "That curse? What's Lady Sabina suspecting about that? We don't even know whether it's real or a myth. Nobody would live long enough to experience it twice."
+
+		pixel Seiji "Who knows. We might be able to find out more when we get our hands on that book."
+
+		pixel Ahlai as <playerName> "Then, let's go find it."
+
+		$QuanPotionQuest = false
+		$LibraryQuest = true
+}
+
+HideTextbox(false)

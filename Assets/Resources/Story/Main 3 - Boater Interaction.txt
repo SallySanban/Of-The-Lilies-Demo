@@ -1,0 +1,5 @@
+pixel Boater as Docker "The Kanding River is beautiful, isn't it?"
+
+pixel Boater as Docker "Our tiny port will take you straight to the Kingdom of Seiysla."
+
+HideTextbox(false)

@@ -1,0 +1,7 @@
+pixel GossipGirl1 as ??? "Isn't that... Myo Aciano? The governor-general of Agon?"
+
+pixel GossipGirl2 as ??? "It is! It is! He's even dreamier than I thought he'd be!"
+
+pixel GossipGirl1 as ??? "What's he doing here in Kuchai Town?"
+
+HideTextbox(false)

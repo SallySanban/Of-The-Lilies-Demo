@@ -17,6 +17,7 @@ namespace Commands
             database.AddCommand("SwitchScene", new Func<string[], IEnumerator>(SwitchScene));
             database.AddCommand("RemoveScene", new Action(RemoveScene));
             database.AddCommand("ToggleInteractable", new Action<string[]>(ToggleInteractable));
+            database.AddCommand("ToggleNPC", new Action<string[]>(ToggleNPC));
             database.AddCommand("ChangeAnimationState", new Action<string[]>(ChangeAnimationState));
             database.AddCommand("RemoveFromScene", new Action<string[]>(RemoveFromScene));
             database.AddCommand("MoveNPC", new Func<string[], IEnumerator>(MoveNPC));
@@ -78,6 +79,18 @@ namespace Commands
                 }
 
                 InteractableManager.Instance.RefreshInteractables();
+            }
+        }
+
+        private static void ToggleNPC(string[] data)
+        {
+            string sceneName = data[0];
+            string backgroundName = data[1];
+            string npcName = data[2];
+
+            if (bool.TryParse(data[3], out bool toggle))
+            {
+                SceneManager.Instance.config.ChangeNPC(sceneName, backgroundName, npcName, toggle);
             }
         }
 

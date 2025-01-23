@@ -1,0 +1,31 @@
+pixel DesperateGirl as Customer "Would you kindly spare some change for poor little me?"
+
+pixel DesperateGirl as Customer "I've just moved here, you see... I lost my family..."
+
+pixel MaleCustomer as ??? "Oh, you poor dear..."
+
+pixel Ahlai as <playerName> "Hey, wait a minute!"
+
+Flip("DesperateGirl" Left)
+
+pixel DesperateGirl as Customer "Oh... It's you!"
+
+pixel Ahlai as <playerName> "Didn't you say your father was sick?"
+
+pixel DesperateGirl as Customer "I... um..."
+
+HideTextbox(false)
+[wait]Blackout()
+RemoveFromScene("DesperateGirl")
+PlaySFX("Running")
+
+Ahlai as <playerName> "Hey!"
+
+HideTextbox(true)
+[wait]HideCG()
+
+pixel Ahlai as <playerName> "Was that all just a lie?"
+
+pixel MaleCustomer as ??? "Oh, I almost might have been scammed. Thank you so much, dear."
+
+HideTextbox(false)

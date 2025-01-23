@@ -17,6 +17,7 @@ pixel RookieJournalist as Dean "Tell me, how would you describe Sabina's Salves?
 choice in -1
 {
 	- Customer service
+		$CustomerService = true
 		pixel Ahlai as <playerName> "Sabina's Salves offers potions tailored specifically to fit any of our customers' needs!"
 
 		pixel Ahlai as <playerName> "We make an effort to talk to our customers and understand exactly what they want."
@@ -24,6 +25,7 @@ choice in -1
 		pixel Ahlai as <playerName> "Whatever you need, we got it!"
 
 	- Guaranteed quality
+		$GuaranteedQuality = true
 		pixel Ahlai as <playerName> "Sabina's Salves brews potions using only the freshest ingredients from the local markets."
 
 		pixel Ahlai as <playerName> "Made personally by Sabina and her staff, including myself, we make sure that all of our potions are sold at the highest quality."
@@ -31,6 +33,7 @@ choice in -1
 		pixel Ahlai as <playerName> "You'll never find potions more authentic than ours!"
 
 	- Wide variety
+		$WideVariety = true
 		pixel Ahlai as <playerName> "Sabina's Salves offers a wide variety of choices for you to choose from!"
 
 		pixel Ahlai as <playerName> "Transformation potions, healing potions, whatever it is your mind can think of."
@@ -47,4 +50,5 @@ pixel RookieJournalist as Dean "Thank you!"
 HideTextbox(false)
 [wait]Blackout()
 RemoveFromScene("RookieJournalist")
+$RookieJournalistDone = true
 [wait]HideCG()

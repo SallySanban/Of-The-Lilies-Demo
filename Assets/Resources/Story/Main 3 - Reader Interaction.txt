@@ -1,0 +1,5 @@
+pixel Reader as ??? "Are you a fellow reader too?"
+
+pixel Reader as ??? "The Kuchai Library's got all the essentials... History, magic, geography, you name it!"
+
+HideTextbox(false)

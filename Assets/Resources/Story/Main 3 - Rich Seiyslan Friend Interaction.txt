@@ -1,0 +1,3 @@
+pixel RichSeiyslanFriend as ??? "What's taking him so long...? It looks like she's gonna leave any second."
+
+HideTextbox(false)

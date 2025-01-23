@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "'Will be open at 5:00 PM'"
+
+pixel Ahlai as <playerName> "I guess we should come back later."
+
+HideTextbox(false)

@@ -1,0 +1,5 @@
+pixel WaterLooker as ??? "Doesn't the river look a little... funky to you?"
+
+pixel WaterLooker as ??? "I somewhat recall it being more pristine than this..."
+
+HideTextbox(false)

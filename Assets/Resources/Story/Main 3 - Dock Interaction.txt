@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "I want to find my family, but... Are they even alive?"
+
+pixel Ahlai as <playerName> "No, <playerName>. You can't go to the Kingdom yet... It'd be too painful to find out."
+
+HideTextbox(false)

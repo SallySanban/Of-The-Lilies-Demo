@@ -57,6 +57,30 @@ public class SceneConfig : ScriptableObject
         return null;
     }
 
+    public void ChangeNPC(string sceneName, string backgroundName, string npcName, bool appear)
+    {
+        if (!initialized) return;
+
+        sceneName = sceneName.ToLower();
+        backgroundName = backgroundName.ToLower();
+
+        for (int i = 0; i < _runtimeScenes.Length; i++)
+        {
+            SceneData data = _runtimeScenes[i];
+            if (string.Equals(sceneName, data.sceneName.ToLower()) && string.Equals(backgroundName, data.currentBackgroundName.ToLower()))
+            {
+                for (int j = 0; j < _runtimeScenes[i].npcsInScene.Length; j++)
+                {
+                    if (_runtimeScenes[i].npcsInScene[j].npcName.Equals(npcName))
+                    {
+                        _runtimeScenes[i].npcsInScene[j].appear = appear;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
     public void RemoveNPCFromScene(string sceneName, string backgroundName, string npcName)
     {
         if (!initialized) return;

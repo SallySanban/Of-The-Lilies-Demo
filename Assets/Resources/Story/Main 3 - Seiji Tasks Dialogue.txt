@@ -177,4 +177,5 @@ pixel Ahlai as <playerName> "It's getting late. We should get started on those t
 
 pixel Seiji "Right. Here's the potion that Mr. Quan ordered. Let me just finish up some things. Wait for me outside, okay?"
 
+$QuanDeliverQuest = true
 HideTextbox(false)

@@ -1,0 +1,3 @@
+pixel RichSeiyslanCrush as ??? "Ugh. Should I just leave if he's going to keep me waiting?"
+
+HideTextbox(false)

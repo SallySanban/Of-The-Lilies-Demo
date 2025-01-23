@@ -1,0 +1,5 @@
+pixel Soldier3 as Seiyslan Soldier "How ya doing, gorgeous?"
+
+pixel Ahlai as <playerName> "Ugh..."
+
+HideTextbox(false)

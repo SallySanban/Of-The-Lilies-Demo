@@ -1,0 +1,7 @@
+pixel Myo "<playerName>! Are you here to come to the tavern with me?"
+
+pixel Ahlai as <playerName> "Sorry, sir. I still have some things to do."
+
+pixel Myo "No worries, my dear. The tavern isn't open yet anyway!"
+
+HideTextbox(false)

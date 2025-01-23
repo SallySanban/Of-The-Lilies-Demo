@@ -1,0 +1,77 @@
+pixel Ahlai as <playerName> "Mr. Sato! You've got beautiful flowers. Looks like the potion's doing wonders."
+
+pixel Sato as Mr. Sato "It's all thanks to you, <playerName>. I'll be visiting Sabina's Salves again soon enough. I'm not sure why these strange occurrences are happening, but it's been more difficult to keep them alive lately."
+
+pixel Ahlai as <playerName> "But where's your wife? You mentioned it was your wedding anniversary."
+
+pixel Sato as Mr. Sato "Oh... well, she's in a happier place now. I believe she is."
+
+pixel Ahlai as <playerName> "Oh, I... I'm sorry, Mr. Sato."
+
+pixel Sato as Mr. Sato "Don't worry about it. It's been a few years already. Sometimes, I do think... What if things happened differently? But there's no point in dwelling over that now."
+
+pixel Ahlai as <playerName> "If you don't mind me asking, sir, what happened?"
+
+pixel Sato as Mr. Sato "They told me that my wife got into an argument with one of the Seiyslan soldiers. I can't remember all the details... but according to them, things didn't go smoothly."
+
+pixel Sato as Mr. Sato "And she was already in fragile health. So when tensions rose, she became overwhelmed and fainted, and she... never woke up since."
+
+pixel Sato as Mr. Sato "At least, that's the story they shared with me... If only I was there to help her..."
+
+choice in -1
+{
+	- I knew it was them.
+		$Vengeance += 1
+
+		pixel Ahlai as <playerName> "I knew it. I knew it all along."
+
+		pixel Ahlai as <playerName> "Those Seiyslan soldiers... someone has to put them in their place."
+
+		pixel Sato as Mr. Sato "Oh, <playerName>... I know how you feel. I was angry at them once, too."
+
+		pixel Sato as Mr. Sato "But with age you'll understand that nothing will come from your anger. My wife is, after all, no longer with me."
+
+		pixel Sato as Mr. Sato "It's something I've already accepted for a long time now. So you don't need to be angry for me, child."
+
+		pixel Sato as Mr. Sato "You have my appreciation."
+
+	- What caused the argument?
+		$Justice += 1
+
+		pixel Ahlai as <playerName> "What was it that caused the argument? Were the soldiers... violent with her?"
+
+		pixel Sato as Mr. Sato "They made it seem like my wife was the cause of the conflict. But I know her - she was always calm and kind. She would never start a fight."
+
+		pixel Sato as Mr. Sato "I understand now that they twisted the story to cover their actions. But there's nothing I can do about it anymore..."
+
+		pixel Sato as Mr. Sato "All that's left was for me to accept the situation. My wife is, after all, no longer with me."
+
+		pixel Sato as Mr. Sato "I've already made my peace with it, so you don't need to worry too much for me, child."
+
+		pixel Sato as Mr. Sato "You have my appreciation."
+
+	- I'm sorry for bringing it up.
+		$Peace += 1
+
+		pixel Ahlai as <playerName> "I didn't know... These must be painful memories for you, sir. I'm sorry for bringing it up."
+
+		pixel Sato as Mr. Sato "No worries, child. They may be painful memories, but I still find joy in remembering my wife every now and then."
+}
+
+pixel Ahlai as <playerName> "...Mr. Sato, I'm really sorry for your loss."
+
+pixel Ahlai as <playerName> "It's just that, something similar happened to me... And I'm having a hard time moving on."
+
+pixel Sato as Mr. Sato "It happens to the best of us. I do hope you'll come to terms with your loss as well, <playerName>."
+
+pixel Sato as Mr. Sato "You have your friend, Seiji, here with you. I'm sure Lady Sabina cares for you a great deal as well."
+
+pixel Sato as Mr. Sato "And now that we've shared our troubles, feel free to come by any time and we can talk about it."
+
+pixel Ahlai as <playerName> "Thank you, Mr. Sato. I'll keep that in mind."
+
+pixel Seiji "Your story is safe with us, sir. I'll take good care of <playerName>."
+
+pixel Sato as Mr. Sato "I'm sure you will, son."
+
+HideTextbox(false)

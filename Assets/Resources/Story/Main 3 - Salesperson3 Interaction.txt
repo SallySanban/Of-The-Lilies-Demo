@@ -1,0 +1,23 @@
+choice in -1
+{
+	- What are you selling?
+		pixel Salesperson3 as Salesperson "Get your fresh herbs! Handpicked from the Kadlagan Forest!"
+
+	- if ($QuanQuest && !$EverbarkFlakes) Do you have any everbark flakes?
+		pixel Salesperson3 as Salesperson "Yes, yes, we have them right here! Freshly handpicked from the Kadlagan Forest!"
+
+		pixel Salesperson3 as Salesperson "That would be two gold coins."
+
+		PlaySFX("Coins jiggling")
+
+		pixel Salesperson3 as Salesperson "Come again!"
+
+		$EverbarkFlakes = true
+	- if ($QuanQuest && !$SilverleafSprigs) Do you have any silverleaf sprigs?
+		pixel Salesperson3 as Salesperson "Oh, I'm sorry, dear. Those are quite a rare find. I don't think anyone will be selling them in the market."
+
+	- if ($QuanQuest && !$PearlShellPowder) Do you have any pearl shell powder?
+		pixel Salesperson3 as Salesperson "Pearl shell powder? That man at the end of the market's selling spices like those, all different kinds!"
+}
+
+HideTextbox(false)

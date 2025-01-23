@@ -1,0 +1,7 @@
+pixel MaleListener as ??? "Sabina's Salves... Isn't that being run by the members of the Order of La Liryo?"
+
+pixel FemaleListener as ??? "Oh, you might be right. It's thanks to them that magic is being used responsibly around here."
+
+pixel FemaleListener as ??? "Otherwise, who knows what chaos Seiysla might have to go through?"
+
+HideTextbox(false)

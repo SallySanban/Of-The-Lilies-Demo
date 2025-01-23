@@ -1,0 +1,97 @@
+pixel Soldier1 as Seiyslan Soldier "Scram! Damn street rats! You're all lucky you even get warnings from us here!"
+
+pixel Soldier2 as Seiyslan Soldier "Don’t you ever feel like you even have the right to set foot in the grounds of the Kuchai Town governor!"
+
+pixel PoorBoy as Boy "P-please... I only wanted to ask him if he had the heart to look out for people like me... I... I just want something to eat, please..."
+
+choice in -1
+{
+	- You better watch yourself.
+		$Vengeance += 1
+
+		pixel Ahlai as <playerName> "You should think twice before doing things like this."
+
+		pixel Seiji "Ahlai...?"
+
+		pixel Soldier1 as Seiyslan Soldier "Who are you?"
+
+		pixel Ahlai as <playerName> "I happen to be under the Order of La Liryo. Lady Sabina has connections to the very governor you speak of."
+
+		pixel Ahlai as <playerName> "I won't hesitate to make you regret your actions if you continue."
+
+		pixel Soldier2 as Seiyslan Soldier "Tch... Let's go."
+
+		[wait]Blackout()
+		RemoveFromScene("Soldier1")
+		RemoveFromScene("Soldier2")
+		[wait]HideCG()
+
+		pixel Ahlai as <playerName> "Are you okay?"
+
+		pixel PoorBoy as Boy "I could be better... but thank you."
+
+		pixel PoorBoy as Boy "Do you... happen to have any food on you?"
+
+		pixel Seiji "I do. Here's some bread. Be careful next time, okay?"
+
+		pixel PoorBoy as Boy "I-I will. Thank you!"
+
+		[wait]Blackout()
+		RemoveFromScene("PoorBoy")
+		Flip("Ahlai" Left)
+		[wait]HideCG()
+
+		pixel Seiji "<playerName>, what were you thinking? You scared me."
+
+		pixel Seiji "It's best not to get involved in things like these... You know how they happen all the time."
+
+		pixel Ahlai as <playerName> "That's impossible, Seiji. If I can't have them pay for what they've done before... I should at least stop them from harming others now. Especially if I can."
+
+		pixel Seiji "You scare me sometimes, <playerName>..."
+
+	- Stop it!
+		$Justice += 1
+
+		pixel Seiji "<playerName>, I don't think that’s a good idea-"
+
+		pixel Ahlai as <playerName> "That's enough! Leave him alone!"
+
+		pixel Soldier1 as Seiyslan Soldier "Crap... We've been caught. Let's go."
+
+		[wait]Blackout()
+		RemoveFromScene("Soldier1")
+		RemoveFromScene("Soldier2")
+		[wait]HideCG()
+
+		pixel Ahlai as <playerName> "Are you okay?"
+
+		pixel PoorBoy as Boy "I could be better... but thank you."
+
+		pixel PoorBoy as Boy "Do you... happen to have any food on you?"
+
+		pixel Seiji "I do. Here's some bread. Be careful next time, okay?"
+
+		pixel PoorBoy as Boy "I-I will. Thank you!"
+
+		[wait]Blackout()
+		RemoveFromScene("PoorBoy")
+		Flip("Ahlai" Left)
+		[wait]HideCG()
+
+		pixel Seiji "<playerName>, what were you thinking? You scared me."
+
+		pixel Seiji "It's best not to get involved in things like these... You know how they happen all the time."
+
+		pixel Ahlai as <playerName> "You know I can't do that, Seiji. I have to help them."
+
+		pixel Seiji "You and your heroic heart..."
+
+	- I shouldn't get involved.
+		$Peace += 1
+
+		pixel Ahlai as <playerName> "I shouldn't get involved in this..."
+
+		pixel Seiji "You're right, <playerName>. It's too dangerous. Let's go."
+}
+
+HideTextbox(false)

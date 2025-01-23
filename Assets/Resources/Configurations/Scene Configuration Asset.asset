@@ -21,9 +21,11 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Dad
       position: {x: -184.94, y: -189.66}
+      appear: 1
       animationState: SittingTogether
     - npcName: Mom
       position: {x: -612.94, y: -192.34}
+      appear: 1
       animationState: Sitting
     interactablesInScene: []
     backgroundsToGo: []
@@ -35,9 +37,11 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Dad
       position: {x: -151.94, y: -197.66}
+      appear: 1
       animationState: Sitting
     - npcName: Mom
       position: {x: -612.94, y: -192.34}
+      appear: 1
       animationState: Sitting
     interactablesInScene:
     - interactableName: Chest
@@ -127,27 +131,35 @@ MonoBehaviour:
     npcsInScene:
     - npcName: MaleNPC1
       position: {x: -3860.97, y: -173.84}
+      appear: 1
       animationState: LGMaleNPCStandingIdle
     - npcName: MaleNPC2
       position: {x: 4813.24, y: -188.68}
+      appear: 1
       animationState: RMaleNPCStandingIdle
     - npcName: MaleNPC3
       position: {x: -2014.94, y: -192.32}
+      appear: 1
       animationState: Idle
     - npcName: MaleNPC4
       position: {x: 6445.06, y: -190.32}
+      appear: 1
       animationState: Idle
     - npcName: MaleNPC5
       position: {x: 7395.09, y: -199.26}
+      appear: 1
       animationState: Swinging
     - npcName: FemNPC1
       position: {x: 1442.06, y: -206.88}
+      appear: 1
       animationState: DBFemNPCStandingIdle
     - npcName: FemNPC2
       position: {x: -924.26, y: -222.38}
+      appear: 1
       animationState: RFemStandingIdle
     - npcName: FemNPC3
       position: {x: 3729.21, y: -171.82}
+      appear: 1
       animationState: PFemNPCStandingIdle
     interactablesInScene:
     - interactableName: Fishing Equipment
@@ -254,9 +266,11 @@ MonoBehaviour:
     npcsInScene:
     - npcName: FemSittingNPC
       position: {x: -538.68, y: -300.18}
+      appear: 1
       animationState: Sitting NPC - Fem
     - npcName: MaleSittingNPC
       position: {x: 561.36, y: -408.84}
+      appear: 1
       animationState: SittingIdle
     interactablesInScene:
     - interactableName: FemSittingNPC
@@ -288,6 +302,7 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Aya
       position: {x: -2786.25, y: -580.6}
+      appear: 1
       animationState: Aya bird
     interactablesInScene:
     - interactableName: Left Exit
@@ -342,24 +357,31 @@ MonoBehaviour:
     npcsInScene:
     - npcName: FemNPC1
       position: {x: 1446.07, y: -199.88}
+      appear: 1
       animationState: DBFemNPCPanic
     - npcName: FemNPC2
       position: {x: -960.22, y: -202.38}
+      appear: 1
       animationState: RFemNPCPanic
     - npcName: MaleNPC1
       position: {x: -4497.97, y: -184.73}
+      appear: 1
       animationState: LGMaleNPCPanic
     - npcName: MaleNPC2
       position: {x: 3131.25, y: -182.68}
+      appear: 1
       animationState: RMaleNPCPanic
     - npcName: FemNPC3
       position: {x: -2605.79, y: -231.82}
+      appear: 1
       animationState: PFemNPCPanic
     - npcName: Dad
       position: {x: 5244.91, y: -279.66}
+      appear: 1
       animationState: Combat
     - npcName: Lien
       position: {x: 5786.91, y: -161.67}
+      appear: 1
       animationState: Lien10Yrs
     interactablesInScene:
     - interactableName: FemNPC1 Trigger
@@ -401,6 +423,7 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Ahlai
       position: {x: -528.66, y: -500.41}
+      appear: 1
       animationState: IdleRight
     interactablesInScene: []
     backgroundsToGo: []
@@ -581,33 +604,43 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Sabina
       position: {x: 631.78, y: -218.32}
+      appear: 1
       animationState: Idle
     - npcName: RookieJournalist
       position: {x: -2131.22, y: -205.4}
+      appear: 1
       animationState: Idle
     - npcName: Seiji
       position: {x: 311.68, y: -168.32}
+      appear: 1
       animationState: Idle
     - npcName: Sato
       position: {x: -1201.53, y: -205.4}
+      appear: 1
       animationState: Idle
     - npcName: RichSeiyslan
       position: {x: -1482.22, y: -205.4}
+      appear: 1
       animationState: Idle
     - npcName: MotherWithSon
       position: {x: 2073.78, y: -218.32}
+      appear: 1
       animationState: Idle
     - npcName: DesperateGirl
       position: {x: -525.22, y: -205.4}
+      appear: 1
       animationState: Idle
     - npcName: AmazedVisitor
       position: {x: 1306.78, y: -218.32}
+      appear: 1
       animationState: Idle
     - npcName: SonWithMother
       position: {x: 1907.78, y: -225.32}
+      appear: 1
       animationState: Idle
     - npcName: Myo
       position: {x: -2678.22, y: -262.05}
+      appear: 1
       animationState: Idle
     interactablesInScene:
     - interactableName: Potion Cabinet
@@ -624,7 +657,7 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 3 - Leave Sabina Interaction
-      moveToInteractPosition: {x: -25.02, y: -2.43}
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Right Door
       interactableType: 2
       isInteractable: 1
@@ -694,66 +727,75 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Myo
       position: {x: 3180.04, y: -189.32}
+      appear: 1
       animationState: Idle
     - npcName: GossipGirl1
       position: {x: 2021.04, y: -189.32}
+      appear: 1
       animationState: Idle
     - npcName: GossipGirl2
       position: {x: 2187.04, y: -189.32}
+      appear: 1
       animationState: Idle
     - npcName: TownCrier
       position: {x: -201.96, y: -189.32}
+      appear: 1
       animationState: Idle
     - npcName: MaleListener
       position: {x: 282.04, y: -189.32}
+      appear: 1
       animationState: Idle
     - npcName: FemaleListener
       position: {x: 480.04, y: -189.32}
+      appear: 1
       animationState: Idle
     - npcName: RichSeiyslan
       position: {x: -2737.96, y: -189.32}
+      appear: 0
       animationState: Idle
     - npcName: RichSeiyslanCrush
       position: {x: -2518.96, y: -189.32}
+      appear: 1
       animationState: Idle
     - npcName: RichSeiyslanFriend
       position: {x: -1441.96, y: -189.32}
+      appear: 1
       animationState: Idle
     interactablesInScene:
     - interactableName: Myo
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Myo Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: GossipGirl2
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Gossip Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: TownCrier
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Town Crier Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: MaleListener
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Listener Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: RichSeiyslan
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - After Rich Seiyslan Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: RichSeiyslanCrush
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Rich Seiyslan Crush Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: RichSeiyslanFriend
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Rich Seiyslan Friend Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Sabina Door
       interactableType: 2
@@ -763,7 +805,7 @@ MonoBehaviour:
     - interactableName: Tavern Door
       interactableType: 1
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Tavern Door Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Bridge
       interactableType: 2
@@ -799,55 +841,62 @@ MonoBehaviour:
     npcsInScene:
     - npcName: DesperateGirl
       position: {x: -257.34, y: -192.32}
+      appear: 0
       animationState: Idle
     - npcName: Quan
       position: {x: -1436.34, y: -192.32}
+      appear: 1
       animationState: Idle
     - npcName: PrayingGirl
       position: {x: 741.66, y: -192.32}
+      appear: 1
       animationState: Idle
     - npcName: MaleCustomer
       position: {x: -47.34, y: -192.32}
+      appear: 0
       animationState: Idle
     - npcName: Salesperson1
       position: {x: -3983.34, y: -218.81}
+      appear: 1
       animationState: Idle
     - npcName: Salesperson2
       position: {x: -2707.34, y: -192.32}
+      appear: 1
       animationState: Idle
     - npcName: Salesperson3
       position: {x: 2106.66, y: -192.32}
+      appear: 1
       animationState: Idle
     interactablesInScene:
     - interactableName: DesperateGirl
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - After Desperate Girl Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Quan
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Quan Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: PrayingGirl
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Praying Girl Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Salesperson1
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Salesperson1 Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Salesperson2
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Salesperson2 Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Salesperson3
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Salesperson3 Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Right Side
       interactableType: 2
@@ -868,42 +917,48 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Sato
       position: {x: -4997.45, y: -193.32}
+      appear: 0
       animationState: Idle
     - npcName: Soldier1
       position: {x: -252.45, y: -193.32}
+      appear: 1
       animationState: Idle
     - npcName: Soldier2
       position: {x: 166.55, y: -193.32}
+      appear: 1
       animationState: Idle
     - npcName: Soldier3
       position: {x: 1625.55, y: -193.32}
+      appear: 1
       animationState: Idle
     - npcName: PoorBoy
       position: {x: -57.45, y: -193.32}
+      appear: 1
       animationState: Idle
     - npcName: Reader
       position: {x: 3174.05, y: -193.32}
+      appear: 1
       animationState: Idle
     interactablesInScene:
     - interactableName: Reader
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Reader Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Sato
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - After Sato Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: PoorBoy
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Poor Boy Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Soldier3
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Soldier Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Bridge
       interactableType: 2
@@ -913,7 +968,7 @@ MonoBehaviour:
     - interactableName: Library Door
       interactableType: 2
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Library Door Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Bridge
@@ -934,28 +989,31 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Boater
       position: {x: -1089.65, y: -196.32}
+      appear: 1
       animationState: Idle
     - npcName: WaterLooker
       position: {x: -70.65, y: -196.32}
+      appear: 1
       animationState: Idle
     - npcName: MotherAndDaughter
       position: {x: 1014.35, y: -196.32}
+      appear: 1
       animationState: Idle
     interactablesInScene:
     - interactableName: MotherAndDaughter
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Mai Family Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Boater
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Boater Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: WaterLooker
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Water Looker Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Left Side
       interactableType: 2
@@ -970,7 +1028,7 @@ MonoBehaviour:
     - interactableName: Dock
       interactableType: 1
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Dock Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Left Side

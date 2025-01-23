@@ -36,7 +36,7 @@ if ($PotionQuests > 0)
 
 			pixel Ahlai as <playerName> "Okay, let's give this potion to the customer."
 
-		- if ($QuanQuest && !$QuanPotionDone) Make Mr. Quan's potion
+		- if ($QuanPotionQuest && !$QuanPotionDone) Make Mr. Quan's potion
 			if ($QuanIngredients < 3)
 			{
 				pixel Ahlai as <playerName> "I'm missing some ingredients."

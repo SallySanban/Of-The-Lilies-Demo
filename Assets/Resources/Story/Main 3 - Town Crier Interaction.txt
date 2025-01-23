@@ -1,0 +1,28 @@
+pixel TownCrier as Town Crier "Hear ye, hear ye! I just received this never-before-seen article by an unnamed journalist, which I shall read to you now."
+
+pixel TownCrier as Town Crier "Today's announcement is about... Sabina's Salves!"
+
+if ($RookieJournalistDone)
+{
+	if ($CustomerService)
+	{
+		pixel TownCrier as Town Crier "The apothecary with the best customer service!"
+	}
+	else
+	{
+		if ($GuaranteedQuality)
+		{
+			pixel TownCrier as Town Crier "The apothecary that sells the highest quality potions!"
+		}
+		else
+		{
+			pixel TownCrier as Town Crier "The apothecary that sells a wide variety of potions!"
+		}
+	}
+}
+else
+{
+	pixel TownCrier as Town Crier "Sabina's Salves is... Oh, what's this? The article is incomplete? Hmm..."
+}
+
+HideTextbox(false)

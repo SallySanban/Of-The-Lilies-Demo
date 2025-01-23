@@ -1,0 +1,10 @@
+if ($LibraryQuest)
+{
+	[wait]SwitchScene("Scene 6" "Library 1")
+}
+else
+{
+	pixel Seiji "Mr. Quan's waiting for us to finish his potion. We can stop by later."
+
+	HideTextbox(false)
+}

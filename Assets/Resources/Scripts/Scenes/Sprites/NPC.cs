@@ -11,6 +11,7 @@ public class NPC : PixelSprite
     public Vector2 lastPosition = Vector2.zero;
     public string lastAnimationState;
     public Vector2 lastInteractablePosition = Vector2.zero;
+    public bool appear = true;
 
     public NPC(GameObject prefab, Transform parent, NPCData npcData)
     {
@@ -21,16 +22,26 @@ public class NPC : PixelSprite
         root.name = name;
         lastPosition = npcData.position;
         lastAnimationState = npcData.animationState;
+        appear = npcData.appear;
 
-        SetupNPC(lastPosition, lastAnimationState);
+        SetupNPC(appear, lastPosition, lastAnimationState);
 
         //FOR DEBUGGING PURPOSES
         //root.AddComponent<PositionDebugger>();
     }
 
-    public void SetupNPC(Vector2 position, string animationState)
+    public void SetupNPC(bool appear, Vector2 position, string animationState)
     {
         root.GetComponentInChildren<Animator>().Play(animationState);
         SetPosition(root, position);
+
+        if (appear)
+        {
+            root.SetActive(true);
+        }
+        else
+        {
+            root.SetActive(false);
+        }
     }
 }

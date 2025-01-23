@@ -1,0 +1,20 @@
+pixel RichSeiyslanCrush as ??? "You made me wait this long... to show me that mop of hair?"
+
+pixel RichSeiyslan as Customer "Why, yes, my sweet! I wanted to profess my love to you in the most extravagant of ways! Aren't you charmed?"
+
+pixel RichSeiyslanCrush as ??? "It's hideous. And we don't feel the same way."
+
+pixel RichSeiyslanCrush as ??? "Don't come near me again..."
+
+[wait]Blackout()
+RemoveFromScene("RichSeiyslanCrush")
+SetNPCPosition("RichSeiyslanFriend" -x -2518.96 -y -189.32)
+[wait]HideCG()
+
+pixel RichSeiyslan as Customer "But... but why?"
+
+pixel RichSeiyslan as Customer "Even though I changed my hair for her... why?"
+
+pixel RichSeiyslanFriend as ??? "There, there. You'll find someone better."
+
+ToggleInteractable("Scene 5" "Kuchai Town 1" "RichSeiyslan" false)

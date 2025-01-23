@@ -1,0 +1,28 @@
+if ($MaiQuest)
+{
+	pixel Ahlai as <playerName> "Are you Mai's mother?"
+
+	pixel MotherAndDaughter as Mai's Mother "You know about Mai...? Yes, I'm her mother!"
+
+	pixel MotherAndDaughter as Mai's Mother "Have you seen her? Where is she?"
+
+	pixel Ahlai as <playerName> "She's all the way in Kuchai Market, waiting for you."
+
+	pixel MotherAndDaughter as Mai's Mother "Oh, thank Dok'kale! Bless you both."
+
+	[wait]Blackout()
+	RemoveFromScene("MotherAndDaughter")
+	[wait]HideCG()
+
+	pixel Seiji "What did I tell you? I knew we'd find them."
+
+	pixel Seiji "Let's get back to Mai for those sprigs."
+
+	$MaiFamilyFound = true
+}
+else
+{
+	pixel MotherAndDaughter as ??? "My daughter... Where is she..."
+}
+
+HideTextbox(false)
