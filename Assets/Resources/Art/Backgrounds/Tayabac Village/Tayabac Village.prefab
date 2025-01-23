@@ -619,6 +619,74 @@ PolygonCollider2D:
       - {x: 8035.415, y: 535.9512}
       - {x: -8030.8506, y: 540.09534}
   m_UseDelaunayMesh: 0
+--- !u!1 &2093492607821262809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3636947504630455267}
+  - component: {fileID: 135837411193887205}
+  m_Layer: 5
+  m_Name: SFXAxeGuy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3636947504630455267
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093492607821262809}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3236631050298994793}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.9471592, y: 0.09787205}
+  m_AnchorMax: {x: 0.9532411, y: 0.18833224}
+  m_AnchoredPosition: {x: -1.2885742, y: -0.29882812}
+  m_SizeDelta: {x: 2.5960832, y: 2.2021337}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &135837411193887205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093492607821262809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1087846990
+      Data2: 1203446383
+      Data3: -40982143
+      Data4: 1367628013
+    Path: event:/SFX/SFX_AxeSwing
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2262912694303683963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,6 +1672,7 @@ RectTransform:
   - {fileID: 1993381881508061715}
   - {fileID: 125040484607863739}
   - {fileID: 4260065113595315983}
+  - {fileID: 3636947504630455267}
   - {fileID: 1416915379977283164}
   m_Father: {fileID: 3596662280474488519}
   m_RootOrder: -1

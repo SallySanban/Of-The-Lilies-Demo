@@ -37,6 +37,8 @@ choice in -1
 
 		pixel Sabina as Lady Sabina "Let me fix it for you."
 
+		playSFX(SFX_SabinaFix)
+
 		pixel Ahlai as <playerName> "Yes, ma'am..."
 
 		Load("Main 3 - Sabina Repeating Dialogue")
