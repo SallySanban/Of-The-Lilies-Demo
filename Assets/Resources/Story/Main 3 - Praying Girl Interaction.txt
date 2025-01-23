@@ -10,7 +10,7 @@ if (!$QuanPotionQuest)
 }
 else
 {
-	if (!$MaiFamilyFound)
+	if (!$MaiQuest && !$MaiFamilyFound)
 	{
 		pixel Ahlai as <playerName> "Hey, kid, do you happen to have any silverleaf sprigs?"
 
@@ -28,7 +28,7 @@ else
 
 		pixel Ahlai as <playerName> "Yes, that one. Do you want a potion in exchange for those sprigs?"
 
-		pixel PrayingGirl as ??? "Well... It'd just be great if I could have a potion that would help me find my mother and sister... I lost them, and I don't know if we’ll ever see each other again..."
+		pixel PrayingGirl as ??? "Well... It'd just be great if I could have a potion that would help me find my mother and sister... I lost them, and I don't know if we'll ever see each other again..."
 
 		pixel Ahlai as <playerName> "I'm... sorry, but we don't have potions for that..."
 
@@ -99,7 +99,8 @@ else
 		}
 
 		$MaiQuest = true
-		Flip("Ahlai" Left)
+		$MaiThankYou = false
+		FlipNPC("Ahlai" Left)
 
 		pixel Seiji "<playerName>, what's wrong?"
 
@@ -125,12 +126,27 @@ else
 	}
 	else
 	{
-		pixel PrayingGirl as Mai "You helped me find them!"
+		if ($MaiQuest && $MaiFamilyFound)
+		{
+			pixel PrayingGirl as Mai "You helped me find them!"
 
-		pixel PrayingGirl as Mai "Thank you so much... I guess I won't be needing these anymore."
+			if (!$MaiThankYou)
+			{
+				pixel PrayingGirl as Mai "Thank you so much... I guess I won't be needing these anymore."
+			}
 
-		pixel PrayingGirl as Mai "I'll visit you at Sabina's Salves again soon!"
+			pixel PrayingGirl as Mai "I'll visit you at Sabina's Salves again soon!"
 
-		HideTextbox(false)
+			$SilverleafSprigs = true
+			$QuanIngredients += 1
+			HideTextbox(false)
+			$MaiThankYou = true
+		}
+		else
+		{
+			pixel PrayingGirl as Mai "Where could they be...?"
+
+			HideTextbox(false)
+		}
 	}
 }

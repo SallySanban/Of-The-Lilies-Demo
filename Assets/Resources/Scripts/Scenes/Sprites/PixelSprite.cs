@@ -49,7 +49,7 @@ public class PixelSprite
         npcTransform.position = target;
     }
 
-    public IEnumerator FollowPlayer(GameObject npc, float followDistance = 2f, float speed = 5f)
+    public IEnumerator FollowPlayer(GameObject npc, float followDistance = 2f, float speed = 6f)
     {
         Transform npcTransform = npc.transform;
         Transform playerTransform = SceneManager.Instance.player.root.transform;

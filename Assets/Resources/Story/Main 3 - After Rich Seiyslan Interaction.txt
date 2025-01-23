@@ -6,6 +6,7 @@ pixel RichSeiyslanCrush as ??? "It's hideous. And we don't feel the same way."
 
 pixel RichSeiyslanCrush as ??? "Don't come near me again..."
 
+HideTextbox(false)
 [wait]Blackout()
 RemoveFromScene("RichSeiyslanCrush")
 SetNPCPosition("RichSeiyslanFriend" -x -2518.96 -y -189.32)
@@ -18,3 +19,4 @@ pixel RichSeiyslan as Customer "Even though I changed my hair for her... why?"
 pixel RichSeiyslanFriend as ??? "There, there. You'll find someone better."
 
 ToggleInteractable("Scene 5" "Kuchai Town 1" "RichSeiyslan" false)
+HideTextbox(false)

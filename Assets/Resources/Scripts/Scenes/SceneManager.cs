@@ -24,9 +24,11 @@ public class SceneManager : MonoBehaviour
 
     public const string SPRITES_OBJECTNAME = "Sprites";
 
-    [SerializeField] private CinemachineVirtualCamera virtualCamera;
-    private CinemachineConfiner confiner;
-    private CinemachineComponentBase componentBase;
+    [SerializeField] private CinemachineVirtualCamera playerCamera;
+    [SerializeField] private CinemachineVirtualCamera panCamera;
+    private CinemachineConfiner playerCamConfiner;
+    private CinemachineConfiner panCamConfiner;
+    private CinemachineComponentBase playerCamComponentBase;
 
     [HideInInspector] public GameObject currentScene = null;
     [HideInInspector] public string currentSceneName;
@@ -38,9 +40,6 @@ public class SceneManager : MonoBehaviour
     [HideInInspector] public bool scrollBackground = false;
     [HideInInspector] public bool followPlayer = false;
     [HideInInspector] public NPC follower = null;
-
-    private const float PLAYER_SOFTZONEWIDTH = 0.6f;
-    private const float NPC_SOFTZONEWIDTH = 0f;
 
     private void Awake()
     {
@@ -65,8 +64,9 @@ public class SceneManager : MonoBehaviour
         interactableManager = new InteractableManager();
         npcManager = new NPCManager();
 
-        confiner = virtualCamera.GetComponent<CinemachineConfiner>();
-        componentBase = virtualCamera.GetCinemachineComponent(CinemachineCore.Stage.Body);
+        playerCamConfiner = playerCamera.GetComponent<CinemachineConfiner>();
+        panCamConfiner = panCamera.GetComponent<CinemachineConfiner>();
+        playerCamComponentBase = playerCamera.GetCinemachineComponent(CinemachineCore.Stage.Body);
     }
 
     private void Update()
@@ -98,11 +98,12 @@ public class SceneManager : MonoBehaviour
 
         if (player != null)
         {
-            virtualCamera.OnTargetObjectWarped(virtualCamera.Follow, player.root.transform.position - virtualCamera.transform.position);
-            virtualCamera.Follow = player.root.transform;
+            playerCamera.OnTargetObjectWarped(playerCamera.Follow, player.root.transform.position - playerCamera.transform.position);
+            playerCamera.Follow = player.root.transform;
         }
 
-        confiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
+        playerCamConfiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
+        panCamConfiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
 
         if (vnContainerFollowCamera != null)
         {
@@ -156,7 +157,7 @@ public class SceneManager : MonoBehaviour
         followPlayer = false;
         follower = null;
 
-        virtualCamera.Follow = null;
+        playerCamera.Follow = null;
 
         DialogueManager.Instance.currentTextbox = null;
 
@@ -207,9 +208,9 @@ public class SceneManager : MonoBehaviour
 
     public IEnumerator PanCamera(float targetX, float targetY, float duration)
     {
-        virtualCamera.Follow = null;
+        panCamera.Priority = 2;
 
-        Vector3 originalPosition = virtualCamera.transform.position;
+        Vector3 originalPosition = playerCamera.transform.position;
         Vector3 targetPosition = Vector3.zero;
 
         if (targetX == 0)
@@ -229,33 +230,23 @@ public class SceneManager : MonoBehaviour
             float t = elapsedTime / duration;
             t = t * t * (3f - 2f * t);
 
-            virtualCamera.transform.position = Vector3.Lerp(originalPosition, targetPosition, t);
+            panCamera.transform.position = Vector3.Lerp(originalPosition, targetPosition, t);
 
             elapsedTime = Time.time - startTime;
             yield return null;
         }
 
-        virtualCamera.transform.position = targetPosition;
+        panCamera.transform.position = targetPosition;
     }
 
     public void ResetCamera()
     {
-        virtualCamera.Follow = player.root.transform;
-        if (componentBase is CinemachineFramingTransposer)
-        {
-            var framingTransposer = componentBase as CinemachineFramingTransposer;
-            framingTransposer.m_SoftZoneWidth = PLAYER_SOFTZONEWIDTH;
-        }
+        panCamera.Priority = 0;
     }
 
     public void SetCameraFollow(Transform npc)
     {
-        virtualCamera.Follow = npc;
-        if (componentBase is CinemachineFramingTransposer)
-        {
-            var framingTransposer = componentBase as CinemachineFramingTransposer;
-            framingTransposer.m_SoftZoneWidth = NPC_SOFTZONEWIDTH;
-        }
+        panCamera.Follow = npc;
     }
 
     public IEnumerator ScrollBackground()

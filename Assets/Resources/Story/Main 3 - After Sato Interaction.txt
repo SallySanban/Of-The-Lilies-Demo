@@ -75,3 +75,4 @@ pixel Seiji "Your story is safe with us, sir. I'll take good care of <playerName
 pixel Sato as Mr. Sato "I'm sure you will, son."
 
 HideTextbox(false)
+ToggleInteractable("Scene 5" "Kuchai Town 3" Sato false)

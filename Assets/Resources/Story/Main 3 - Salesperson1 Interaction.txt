@@ -3,13 +3,13 @@ choice in -1
 	- What are you selling?
 		pixel Salesperson1 as Salesperson "Spices from all over the country! You won't get the same deal anywhere else!"
 
-	- if ($QuanQuest && !$EverbarkFlakes) Do you have any everbark flakes?
+	- if ($QuanPotionQuest && !$EverbarkFlakes) Do you have any everbark flakes?
 		pixel Salesperson1 as Salesperson "Those are herbs, not spices. But you might be able to find those over at my friend's store, by the Dok'kale statue!"
 
-	- if ($QuanQuest && !$SilverleafSprigs) Do you have any silverleaf sprigs?
+	- if ($QuanPotionQuest && !$SilverleafSprigs) Do you have any silverleaf sprigs?
 		pixel Salesperson1 as Salesperson "You won't be able to find those here. You'd need to go deep into the Kadlagan Forest to get those."
 
-	- if ($QuanQuest && !$PearlShellPowder) Do you have any pearl shell powder?
+	- if ($QuanPotionQuest && !$PearlShellPowder) Do you have any pearl shell powder?
 		pixel Salesperson1 as Salesperson "Ah, pearl shell powder! Straight from the beaches in Agon Province!"
 
 		pixel Salesperson1 as Salesperson "Of course we have them! Here, here. For four gold coins."
@@ -26,6 +26,7 @@ choice in -1
 
 		pixel Ahlai as <playerName> "Hmph! What insolent youngsters!"
 
+		$QuanIngredients += 1
 		$PearlShellPowder = true
 }
 

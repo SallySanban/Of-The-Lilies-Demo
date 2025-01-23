@@ -919,7 +919,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Quan Interaction
-      moveToInteractPosition: {x: -23.04, y: -2.18}
+      moveToInteractPosition: {x: -11.2, y: -2.18}
     - interactableName: PrayingGirl
       interactableType: 0
       isInteractable: 1
@@ -934,7 +934,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Salesperson2 Interaction
-      moveToInteractPosition: {x: -11.2, y: -2.18}
+      moveToInteractPosition: {x: -23.04, y: -2.18}
     - interactableName: Salesperson3
       interactableType: 0
       isInteractable: 1

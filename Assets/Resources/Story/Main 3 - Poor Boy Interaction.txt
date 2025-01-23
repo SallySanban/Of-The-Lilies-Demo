@@ -1,6 +1,8 @@
+[wait]PanCamera(-x -1.57 -spd 2)
+
 pixel Soldier1 as Seiyslan Soldier "Scram! Damn street rats! You're all lucky you even get warnings from us here!"
 
-pixel Soldier2 as Seiyslan Soldier "Don’t you ever feel like you even have the right to set foot in the grounds of the Kuchai Town governor!"
+pixel Soldier2 as Seiyslan Soldier "Don't you ever feel like you even have the right to set foot in the grounds of the Kuchai Town governor!"
 
 pixel PoorBoy as Boy "P-please... I only wanted to ask him if he had the heart to look out for people like me... I... I just want something to eat, please..."
 
@@ -21,6 +23,7 @@ choice in -1
 
 		pixel Soldier2 as Seiyslan Soldier "Tch... Let's go."
 
+		HideTextbox(false)
 		[wait]Blackout()
 		RemoveFromScene("Soldier1")
 		RemoveFromScene("Soldier2")
@@ -36,9 +39,11 @@ choice in -1
 
 		pixel PoorBoy as Boy "I-I will. Thank you!"
 
+		HideTextbox(false)
 		[wait]Blackout()
 		RemoveFromScene("PoorBoy")
-		Flip("Ahlai" Left)
+		ResetCamera()
+		FlipNPC("Ahlai" Left)
 		[wait]HideCG()
 
 		pixel Seiji "<playerName>, what were you thinking? You scared me."
@@ -52,12 +57,13 @@ choice in -1
 	- Stop it!
 		$Justice += 1
 
-		pixel Seiji "<playerName>, I don't think that’s a good idea-"
+		pixel Seiji "<playerName>, I don't think that's a good idea-"
 
 		pixel Ahlai as <playerName> "That's enough! Leave him alone!"
 
 		pixel Soldier1 as Seiyslan Soldier "Crap... We've been caught. Let's go."
 
+		HideTextbox(false)
 		[wait]Blackout()
 		RemoveFromScene("Soldier1")
 		RemoveFromScene("Soldier2")
@@ -73,9 +79,11 @@ choice in -1
 
 		pixel PoorBoy as Boy "I-I will. Thank you!"
 
+		HideTextbox(false)
 		[wait]Blackout()
 		RemoveFromScene("PoorBoy")
-		Flip("Ahlai" Left)
+		ResetCamera()
+		FlipNPC("Ahlai" Left)
 		[wait]HideCG()
 
 		pixel Seiji "<playerName>, what were you thinking? You scared me."
@@ -92,6 +100,8 @@ choice in -1
 		pixel Ahlai as <playerName> "I shouldn't get involved in this..."
 
 		pixel Seiji "You're right, <playerName>. It's too dangerous. Let's go."
+
+		ResetCamera()
 }
 
 HideTextbox(false)

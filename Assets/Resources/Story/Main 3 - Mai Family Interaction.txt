@@ -10,6 +10,7 @@ if ($MaiQuest)
 
 	pixel MotherAndDaughter as Mai's Mother "Oh, thank Dok'kale! Bless you both."
 
+	HideTextbox(false)
 	[wait]Blackout()
 	RemoveFromScene("MotherAndDaughter")
 	[wait]HideCG()

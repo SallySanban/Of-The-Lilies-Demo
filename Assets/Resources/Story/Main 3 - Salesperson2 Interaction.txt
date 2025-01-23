@@ -3,13 +3,13 @@ choice in -1
 	- What are you selling?
 		pixel Salesperson2 as Salesperson "Silks, cottons, all the textiles! Only Sagai's finest fabrics!"
 
-	- if ($QuanQuest && !$EverbarkFlakes) Do you have any everbark flakes?
+	- if ($QuanPotionQuest && !$EverbarkFlakes) Do you have any everbark flakes?
 		pixel Salesperson2 as Salesperson "Nope, none of those herbs. We sell clothing here."
 
-	- if ($QuanQuest && !$SilverleafSprigs) Do you have any silverleaf sprigs?
+	- if ($QuanPotionQuest && !$SilverleafSprigs) Do you have any silverleaf sprigs?
 		pixel Salesperson2 as Salesperson "Silverleaf sprigs? Do those still exist?"
 
-	- if ($QuanQuest && !$PearlShellPowder) Do you have any pearl shell powder?
+	- if ($QuanPotionQuest && !$PearlShellPowder) Do you have any pearl shell powder?
 		pixel Salesperson2 as Salesperson "We don't sell spices. We only sell good quality garments."
 }
 

@@ -6,7 +6,7 @@ pixel MaleCustomer as ??? "Oh, you poor dear..."
 
 pixel Ahlai as <playerName> "Hey, wait a minute!"
 
-Flip("DesperateGirl" Left)
+FlipNPC("DesperateGirl" Left)
 
 pixel DesperateGirl as Customer "Oh... It's you!"
 

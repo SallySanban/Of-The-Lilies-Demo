@@ -3,15 +3,15 @@ input
 $AxeReceived = false
 $SatoQuest = false
 $SatoPotionDone = false
-$FinishedSatoQuest = false
+$FinishedSatoQuest = true
 $RichSeiyslanQuest = false
 $RichSeiyslanPotionDone = false
-$FinishedRichSeiyslanQuest = false
+$FinishedRichSeiyslanQuest = true
 $DesperateGirlQuest = false
 $DesperateGirlPotionDone = false
-$FinishedDesperateGirlQuest = false
-$RookieJournalistDone = false
-$WideVariety = false
+$FinishedDesperateGirlQuest = true
+$RookieJournalistDone = true
+$WideVariety = true
 $CustomerService = false
 $GuaranteedQuality = false
 $QuanDeliverQuest = true
@@ -37,5 +37,4 @@ $Myo = 0
 $Manju = 0
 $Laisa = 0
 $Lien = 0
-[wait]ShowScene("Scene 5" "Kuchai Town 1")
-FollowPlayer("Seiji")
+[wait]ShowScene("Scene 5" "Kuchai Town 2")

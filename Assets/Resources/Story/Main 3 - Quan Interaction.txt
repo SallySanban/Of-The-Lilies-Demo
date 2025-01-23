@@ -36,6 +36,7 @@ choice in -1
 
 		$QuanDeliverQuest = false
 		$QuanPotionQuest = true
+		$PotionQuests += 1
 	- if ($QuanPotionQuest && !$QuanPotionDone) What were the components?
 		pixel Quan as Mr. Quan "Here's what I need: a dash of everbark flakes, some silverleaf sprigs, and a sprinkle of pearl shell powder."
 
@@ -51,7 +52,7 @@ choice in -1
 
 		pixel Quan as Mr. Quan "Likewise, you two! I'll definitely be ordering from Sabina's Salves again."
 
-		Flip("Ahlai" Right)
+		FlipNPC("Ahlai" Right)
 
 		pixel Ahlai as <playerName> "Where to next?"
 
