@@ -4,9 +4,10 @@ pixel Seiji "We need to make a <b>delivery to Mr. Quan</b> today. Then we have t
 		
 pixel Seiji "Are you good for a trip around Kuchai Town with me? We should go soon if we don't want to keep Mr. Quan waiting."
 
+HideTextbox(true)
 PlaySFX("Doorbell ringing")
 
-FlipNPC("Ahlai" "Left")
+[wait]FlipNPC("Ahlai" "Left")
 
 pixel Ahlai as <playerName> "Oh!"
 
@@ -113,7 +114,7 @@ choice in -1
 
 		HideTextbox(true)
 		[wait]Blackout()
-		[wait]SwitchCG("Myo")
+		[input]SwitchCG("Myo")
 
 		Myo "There isn't a time in the world where I wouldn't wait for you."
 

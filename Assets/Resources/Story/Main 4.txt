@@ -1,0 +1,16 @@
+pixel Ahlai as <playerName> "Excuse me, are you an archivist here?"
+
+HideTextbox(true)
+[input]ShowCG("Manju")
+
+Manju as ??? "Hm?"
+
+Manju as ??? "Oh, yes-hello and welcome to the Kuchai Library. How may I help you?"
+
+HideTextbox(true)
+[wait]Blackout()
+[wait]HideCG()
+
+pixel Ahlai as <playerName> "I'm looking for a book on a 100-year curse. You know, that myth? Do you happen to know where it is?"
+
+pixel Manju as ??? "Well, I <i>would</i> know where it is, if you <i>could</i> be more specific. A lot of books here cover curses that last a hundred years."

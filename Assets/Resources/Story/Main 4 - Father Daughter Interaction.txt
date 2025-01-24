@@ -1,0 +1,9 @@
+pixel DaughterWithFather as Daughter "Wow, look at that beach! Is that Agon Province?"
+
+pixel FatherWithDaughter as Father "Yes, it is."
+
+pixel DaughterWithFather as Daughter "It looks so pretty! Papa, can we go there next?"
+
+pixel FatherWithDaughter as Father "Hehe. Sure, dear."
+
+HideTextbox(false)

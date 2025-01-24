@@ -1,0 +1,13 @@
+pixel Ahlai as <playerName> "'Bisasagi Beauty Through Words'"
+
+pixel Ahlai as <playerName> "It looks like a book of poems. And it's got paintings of Bisasagi."
+
+if ($RetiredVeteranQuest)
+{
+	pixel Ahlai as <playerName> "I should take this to that man. He did say he wanted to see more of these landscapes..."
+
+	$RetiredVeteranBook = true
+	ToggleInteractable("Scene 6" "Library 1" "Books 2" false)
+}
+
+HideTextbox(false)

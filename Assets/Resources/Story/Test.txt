@@ -1,3 +1,13 @@
 input
 
-[wait]ShowScene("Scene 6" "Library 1")
+$LibraryQuest = true
+$Vengeance = 0
+$Justice = 0
+$Peace = 0
+$Seiji = 0
+$Myo = 0
+$Manju = 0
+$Laisa = 0
+$Lien = 0
+
+[wait]ShowScene("Scene 6" "Library 2")

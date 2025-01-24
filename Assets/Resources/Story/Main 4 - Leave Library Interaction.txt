@@ -1,0 +1,12 @@
+if (!$ManjuTalkedTo)
+{
+	pixel Ahlai as <playerName> "Aren't there things I still have to do?"
+
+	HideTextbox(false)
+}
+else
+{
+	pixel Seiji "Hey, were you planning on leaving without me?"
+
+	Load("Main 4 - Seiji Interaction")
+}

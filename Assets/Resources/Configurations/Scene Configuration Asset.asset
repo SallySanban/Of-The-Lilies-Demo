@@ -1131,22 +1131,22 @@ MonoBehaviour:
     - interactableName: FatherWithDaughter
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 4 - Father Daughter Interaction
+      moveToInteractPosition: {x: -13.15, y: -2.51}
     - interactableName: Receptionist
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 4 - Receptionist Interaction
+      moveToInteractPosition: {x: 8.72, y: -2.51}
     - interactableName: BusyLibrarian
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 4 - Librarian Interaction
+      moveToInteractPosition: {x: 18.91, y: -2.51}
     - interactableName: Door
       interactableType: 2
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 4 - Leave Library Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Left Door
       interactableType: 2
@@ -1161,23 +1161,28 @@ MonoBehaviour:
     - interactableName: Staircase
       interactableType: 1
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 4 - Staircase Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Bulletin Board
       interactableType: 1
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 4 - Bulletin Board Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Library Map
       interactableType: 1
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 4 - Library Map Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Ambana Map
       interactableType: 1
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 4 - Ambana Map Interaction
       moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Seiji
+      interactableType: 0
+      isInteractable: 0
+      storyToPlay: Main 4 - Seiji Interaction
+      moveToInteractPosition: {x: -3.67, y: -2.51}
     backgroundsToGo:
     - interactableName: Left Door
       backgroundToGo: Library 3
@@ -1197,6 +1202,80 @@ MonoBehaviour:
       backgroundToGo: Kuchai Town 3
       keyToPress: 3
       playerPositionInNextBackground: {x: 0, y: 0}
+      playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+  - sceneName: Scene 6
+    currentBackgroundName: Library 2
+    showPlayer: 1
+    playerPosition: {x: -1984.83, y: -251.24}
+    playerDirection: 1
+    npcsInScene:
+    - npcName: CoupleSit1
+      position: {x: 698.31, y: -505.32}
+      appear: 1
+      animationState: 
+    - npcName: CoupleSit2
+      position: {x: 1549.31, y: -494.32}
+      appear: 1
+      animationState: 
+    - npcName: RetiredVeteran
+      position: {x: -1539.69, y: -185.32}
+      appear: 1
+      animationState: 
+    - npcName: GossipSit1
+      position: {x: 259.31, y: -490.32}
+      appear: 1
+      animationState: 
+    - npcName: GossipSit2
+      position: {x: -504.69, y: -499.32}
+      appear: 1
+      animationState: 
+    - npcName: BathroomGuy
+      position: {x: 1712.05, y: -161.84}
+      appear: 1
+      animationState: 
+    interactablesInScene:
+    - interactableName: CoupleSit1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 4 - Couple Interaction
+      moveToInteractPosition: {x: 10.2, y: -2.33}
+    - interactableName: RetiredVeteran
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 4 - Retired Veteran Interaction
+      moveToInteractPosition: {x: -12.49, y: -2.33}
+    - interactableName: GossipSit2
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 4 - Gossip Sit Interaction
+      moveToInteractPosition: {x: -1.26, y: -2.33}
+    - interactableName: Books 1
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 4 - Books 1 Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Left Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Books 2
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 4 - Books 2 Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Bathroom
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 4 - Bathroom Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Left Door
+      backgroundToGo: Library 1
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 2394.23, y: -270.88}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -1234,22 +1313,22 @@ MonoBehaviour:
     - interactableName: GossipGirl3
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 4 - Gossip Stand Interaction
+      moveToInteractPosition: {x: 12.85, y: -2.33}
     - interactableName: AspiringWriterSit
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 4 - Aspiring Writer Interaction
+      moveToInteractPosition: {x: -9, y: -2.33}
     - interactableName: StudentSit2
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 4 - Student Sit Interaction
+      moveToInteractPosition: {x: 0.95, y: -2.33}
     - interactableName: Books
       interactableType: 1
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 4 - Books 3 Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Right Door
       interactableType: 2
@@ -1259,78 +1338,13 @@ MonoBehaviour:
     - interactableName: Manju
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 4
+      moveToInteractPosition: {x: -12.75, y: -2.33}
     backgroundsToGo:
     - interactableName: Right Door
       backgroundToGo: Library 1
       keyToPress: 1
       playerPositionInNextBackground: {x: -2438.99, y: -270.88}
       playerDirectionInNextBackground: 1
-      followPlayer: 
-      followPlayerPosition: {x: 0, y: 0}
-  - sceneName: Scene 6
-    currentBackgroundName: Library 2
-    showPlayer: 1
-    playerPosition: {x: -1984.83, y: -251.24}
-    playerDirection: 1
-    npcsInScene:
-    - npcName: CoupleSit1
-      position: {x: 698.31, y: -505.32}
-      appear: 1
-      animationState: 
-    - npcName: CoupleSit2
-      position: {x: 1549.31, y: -494.32}
-      appear: 1
-      animationState: 
-    - npcName: RetiredVeteran
-      position: {x: -1539.69, y: -185.32}
-      appear: 1
-      animationState: 
-    - npcName: GossipSit1
-      position: {x: 259.31, y: -490.32}
-      appear: 1
-      animationState: 
-    - npcName: GossipSit2
-      position: {x: -504.69, y: -499.32}
-      appear: 1
-      animationState: 
-    interactablesInScene:
-    - interactableName: CoupleSit1
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: RetiredVeteran
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: GossipSit2
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Books 1
-      interactableType: 1
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Left Door
-      interactableType: 2
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Books 2
-      interactableType: 1
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    backgroundsToGo:
-    - interactableName: Left Door
-      backgroundToGo: Library 1
-      keyToPress: 2
-      playerPositionInNextBackground: {x: 2394.23, y: -270.88}
-      playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
