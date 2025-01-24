@@ -1101,3 +1101,236 @@ MonoBehaviour:
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
+  - sceneName: Scene 6
+    currentBackgroundName: Library 1
+    showPlayer: 1
+    playerPosition: {x: -554, y: -270.88}
+    playerDirection: 1
+    npcsInScene:
+    - npcName: Seiji
+      position: {x: -211.58, y: -215.32}
+      appear: 1
+      animationState: Idle
+    - npcName: BusyLibrarian
+      position: {x: 1849.42, y: -196.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Receptionist
+      position: {x: 1154.42, y: -144.32}
+      appear: 1
+      animationState: Idle
+    - npcName: FatherWithDaughter
+      position: {x: -1197.58, y: -203.32}
+      appear: 1
+      animationState: Idle
+    - npcName: DaughterWithFather
+      position: {x: -1027.58, y: -203.32}
+      appear: 1
+      animationState: Idle
+    interactablesInScene:
+    - interactableName: FatherWithDaughter
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Receptionist
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: BusyLibrarian
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Left Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Right Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Staircase
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Bulletin Board
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Library Map
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Ambana Map
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Left Door
+      backgroundToGo: Library 3
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 1723.11, y: -251.24}
+      playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Right Door
+      backgroundToGo: Library 2
+      keyToPress: 1
+      playerPositionInNextBackground: {x: -1984.83, y: -251.24}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Door
+      backgroundToGo: Kuchai Town 3
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 0, y: 0}
+      playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+  - sceneName: Scene 6
+    currentBackgroundName: Library 3
+    showPlayer: 1
+    playerPosition: {x: 1723.11, y: -251.24}
+    playerDirection: 1
+    npcsInScene:
+    - npcName: StudentSit1
+      position: {x: -269.59, y: -479.32}
+      appear: 1
+      animationState: 
+    - npcName: StudentSit2
+      position: {x: 472.41, y: -497.32}
+      appear: 1
+      animationState: 
+    - npcName: AspiringWriterSit
+      position: {x: -749.59, y: -489.32}
+      appear: 1
+      animationState: 
+    - npcName: GossipGirl3
+      position: {x: 1008.41, y: -190.32}
+      appear: 1
+      animationState: 
+    - npcName: GossipGirl4
+      position: {x: 1180.41, y: -185.32}
+      appear: 1
+      animationState: 
+    - npcName: Manju
+      position: {x: -1576.59, y: -188.32}
+      appear: 1
+      animationState: 
+    interactablesInScene:
+    - interactableName: GossipGirl3
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: AspiringWriterSit
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: StudentSit2
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Books
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Right Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Manju
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Right Door
+      backgroundToGo: Library 1
+      keyToPress: 1
+      playerPositionInNextBackground: {x: -2438.99, y: -270.88}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+  - sceneName: Scene 6
+    currentBackgroundName: Library 2
+    showPlayer: 1
+    playerPosition: {x: -1984.83, y: -251.24}
+    playerDirection: 1
+    npcsInScene:
+    - npcName: CoupleSit1
+      position: {x: 698.31, y: -505.32}
+      appear: 1
+      animationState: 
+    - npcName: CoupleSit2
+      position: {x: 1549.31, y: -494.32}
+      appear: 1
+      animationState: 
+    - npcName: RetiredVeteran
+      position: {x: -1539.69, y: -185.32}
+      appear: 1
+      animationState: 
+    - npcName: GossipSit1
+      position: {x: 259.31, y: -490.32}
+      appear: 1
+      animationState: 
+    - npcName: GossipSit2
+      position: {x: -504.69, y: -499.32}
+      appear: 1
+      animationState: 
+    interactablesInScene:
+    - interactableName: CoupleSit1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: RetiredVeteran
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: GossipSit2
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Books 1
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Left Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Books 2
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Left Door
+      backgroundToGo: Library 1
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 2394.23, y: -270.88}
+      playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
