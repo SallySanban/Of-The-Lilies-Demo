@@ -32,7 +32,7 @@ if($GotCoconut == true)
 	[wait]HideCG()
 	[wait]PanCamera(-x 66.69 -spd 15)
 	[wait]Blackout()
-	[wait]ResetCamera()
+	[wait]ResetCamera(false)
 	[wait]HideCG()
 }
 else

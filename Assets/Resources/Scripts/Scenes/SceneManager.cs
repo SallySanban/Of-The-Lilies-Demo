@@ -29,6 +29,7 @@ public class SceneManager : MonoBehaviour
     private CinemachineConfiner playerCamConfiner;
     private CinemachineConfiner panCamConfiner;
     private CinemachineComponentBase playerCamComponentBase;
+    private CinemachineBrain cinemachineBrain;
 
     [HideInInspector] public GameObject currentScene = null;
     [HideInInspector] public string currentSceneName;
@@ -40,6 +41,8 @@ public class SceneManager : MonoBehaviour
     [HideInInspector] public bool scrollBackground = false;
     [HideInInspector] public bool followPlayer = false;
     [HideInInspector] public NPC follower = null;
+
+    private const float DEFAULT_BLEND = 2f;
 
     private void Awake()
     {
@@ -67,6 +70,7 @@ public class SceneManager : MonoBehaviour
         playerCamConfiner = playerCamera.GetComponent<CinemachineConfiner>();
         panCamConfiner = panCamera.GetComponent<CinemachineConfiner>();
         playerCamComponentBase = playerCamera.GetCinemachineComponent(CinemachineCore.Stage.Body);
+        cinemachineBrain = Camera.main.GetComponent<CinemachineBrain>();
     }
 
     private void Update()
@@ -104,6 +108,8 @@ public class SceneManager : MonoBehaviour
 
         playerCamConfiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
         panCamConfiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
+
+        cinemachineBrain.m_DefaultBlend.m_Time = DEFAULT_BLEND;
 
         if (vnContainerFollowCamera != null)
         {
@@ -209,6 +215,7 @@ public class SceneManager : MonoBehaviour
     public IEnumerator PanCamera(float targetX, float targetY, float duration)
     {
         panCamera.Priority = 2;
+        cinemachineBrain.m_DefaultBlend.m_Time = DEFAULT_BLEND;
 
         Vector3 originalPosition = playerCamera.transform.position;
         Vector3 targetPosition = Vector3.zero;
@@ -239,9 +246,17 @@ public class SceneManager : MonoBehaviour
         panCamera.transform.position = targetPosition;
     }
 
-    public void ResetCamera()
+    public void ResetCamera(bool smooth)
     {
-        panCamera.Priority = 0;
+        if(smooth)
+        {
+            panCamera.Priority = 0;
+        }
+        else
+        {
+            cinemachineBrain.m_DefaultBlend.m_Time = 0;
+            panCamera.Priority = 0;
+        }
     }
 
     public void SetCameraFollow(Transform npc)
