@@ -616,7 +616,7 @@ MonoBehaviour:
     - interactableName: Stairs
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: 836.17, y: -227.16}
+      playerPositionInNextBackground: {x: 802.43, y: -227.16}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
