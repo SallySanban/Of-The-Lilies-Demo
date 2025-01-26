@@ -124,9 +124,9 @@ choice in 0
 HideCharacter(Ahlai)
 HideCharacter(Lien)
 
-stopEvent(4)
-stopEvent(5)
-stopEvent(6)
+stopEvent(Amb_Fire)
+stopEvent(Amb_SwordRiot)
+stopEvent(BGM_Scene3)
 
 Ahlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
 
@@ -181,7 +181,7 @@ Wait(3)
 [wait]SwitchCredits("<b>Original Soundtrack</b><br>Darren Vega")
 Wait(3)
 HideCredits()
-stopEvent(7)
+stopEvent(BGM_Scene4)
 [wait]Blackout()
 Wait(0.5)
 RemoveScene()
@@ -254,8 +254,8 @@ Ahlai as <playerName> "Alonay!"
 
 HideTextbox(true)
 playSFX(SFX_DoorSlam)
-stopEvent(8)
-stopEvent(9)
+stopEvent(BGM_Scene4-2)
+stopEvent(Amb_Leather)
 
 [wait]Blackout()
 
@@ -282,7 +282,7 @@ playSFX(SFX_CoinsJiggle)
 ??? "..."
 
 playSFX(SFX_DoorOpen)
-stopEvent(10)
+stopEvent(Amb_MuffledVoices)
 
 ??? "Hand them to me."
 
