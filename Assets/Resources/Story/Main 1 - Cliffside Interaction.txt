@@ -10,8 +10,8 @@ else
 
 	[wait]SwitchScene("Scene 2" "Tayabac Cliffside 1")
 
-	stopEvent(1)
-	stopEvent(2)
+	stopEvent(Amb_Opening)
+	stopEvent(BGM_Scene1)
 
 	pixel Ahlai as <playerName> "Dad isn't here yet."
 

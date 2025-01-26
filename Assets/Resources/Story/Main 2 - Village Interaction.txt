@@ -12,7 +12,7 @@ if($GotCoconut == true)
 	HideTextbox(true)
 	[input]SwitchCG("Smoke")
 	
-	stopEvent(3)
+	stopEvent(Amb_ForestMain)
 	playAmbience(Amb_Fire)
 	
 	Ahlai as <playerName> "...Huh?"

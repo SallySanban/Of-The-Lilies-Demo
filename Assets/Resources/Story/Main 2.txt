@@ -124,9 +124,9 @@ choice in 0
 HideCharacter(Ahlai)
 HideCharacter(Lien)
 
-stopEvent(4)
-stopEvent(5)
-stopEvent(6)
+stopEvent(Amb_Fire)
+stopEvent(Amb_SwordRiot)
+stopEvent(BGM_Scene3)
 
 Ahlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
 
@@ -181,7 +181,7 @@ Wait(3)
 [wait]SwitchCredits("<b>Original Soundtrack</b><br>Darren Vega")
 Wait(3)
 HideCredits()
-stopEvent(7)
+stopEvent(BGM_Scene4)
 [wait]Blackout()
 Wait(0.5)
 ScrollBackground(false)
@@ -190,6 +190,7 @@ RemoveScene()
 
 Ahlai as <playerName> "<i>I remember it all like it was yesterday</i>."
 
+playMusic(BGM_Scene4-2)
 HideTextbox(true)
 [input]SwitchCG("Family Chained")
 
@@ -202,12 +203,15 @@ Ahlai as <playerName> "<i>And slowly... my family disappeared too.</i>"
 
 HideTextbox(true)
 [input]SwitchCG("Dad Chained")
+playAmbience(Amb_Leather)
 
 Mom "No! You can't take him away!"
 
 Mom "Please...! We'll do anything! Just, please, let us stay together!"
 
 ??? "He will be doing a great service to the <b>Logresh Empire</b>. Don't worry, his life won't be in vain."
+
+playSFX(SFX_ClothS4)
 
 ??? "You'd make a good servant as well... We'll be sending you to a place you can be of good use."
 
@@ -252,6 +256,8 @@ Ahlai as <playerName> "Alonay!"
 
 HideTextbox(true)
 playSFX(SFX_DoorSlam)
+stopEvent(BGM_Scene4-2)
+stopEvent(Amb_Leather)
 
 [wait]Blackout()
 
@@ -278,7 +284,7 @@ playSFX(SFX_CoinsJiggle)
 ??? "..."
 
 playSFX(SFX_DoorOpen)
-stopEvent(8)
+stopEvent(Amb_MuffledVoices)
 
 ??? "Hand them to me."
 
