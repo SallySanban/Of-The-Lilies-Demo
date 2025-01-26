@@ -23,7 +23,7 @@ namespace Commands
             database.AddCommand("MoveNPC", new Func<string[], IEnumerator>(MoveNPC));
             database.AddCommand("MovePlayerToInteract", new Func<string[], IEnumerator>(MovePlayerToInteract));
             database.AddCommand("PanCamera", new Func<string[], IEnumerator>(PanCamera));
-            database.AddCommand("ResetCamera", new Action(ResetCamera));
+            database.AddCommand("ResetCamera", new Action<string>(ResetCamera));
             database.AddCommand("ScrollBackground", new Action<string>(ScrollBackground));
             database.AddCommand("SetNPCPosition", new Action<string[]>(SetNPCPosition));
             database.AddCommand("SetCameraFollow", new Action<string>(SetCameraFollow));
@@ -204,9 +204,13 @@ namespace Commands
             yield return SceneManager.Instance.PanCamera(x, y, spd);
         }
 
-        private static void ResetCamera()
+        private static void ResetCamera(string data)
         {
-            SceneManager.Instance.ResetCamera();
+            if (bool.TryParse(data, out bool smooth))
+            {
+                SceneManager.Instance.ResetCamera(smooth);
+            }
+            
         }
 
         private static void ScrollBackground(string data)

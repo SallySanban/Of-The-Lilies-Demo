@@ -1,0 +1,101 @@
+if (!$RetiredVeteranQuest)
+{
+	pixel RetiredVeteran as Retired Veteran "Excuse me."
+
+	pixel Ahlai as <playerName> "Yes?"
+
+	pixel RetiredVeteran as Retired Veteran "Good day to you."
+
+	pixel RetiredVeteran as Retired Veteran "I was wondering if you knew any good books that feature the scenery of Bisasagi."
+
+	pixel RetiredVeteran as Retired Veteran "I once traveled there with my wife and I would like to relive those memories with pictures."
+
+	choice in -1
+	{
+		- Yes
+			pixel Ahlai as <playerName> "I'll see what I can find."
+
+			pixel RetiredVeteran as Retired Veteran "Oh, thank you so much."
+
+			pixel RetiredVeteran as Retired Veteran "I'll be waiting here."
+
+			pixel RetiredVeteran as Retired Veteran "A book on Bisasagi, huh?"
+
+			if ($InteractedBulletinBoard)
+			{
+				pixel Ahlai as <playerName> "Maybe he'll like Hana Abe's 'Bisasagi Beauty Through Words'."
+			}
+
+			$RetiredVeteranQuest = true
+
+		- No
+			pixel Ahlai as <playerName> "I'm sorry, I'm not an archivist here."
+
+			pixel RetiredVeteran as Retired Veteran "Oh, I see. I'll just ask the other librarians then."
+
+			pixel RetiredVeteran as Retired Veteran "Thank you."
+
+			ToggleInteractable("Scene 6" "Library 2" RetiredVeteran false)
+	}
+
+	HideTextbox(false)
+}
+else
+{
+	if ($RetiredVeteranBook)
+	{
+		pixel Ahlai as <playerName> "Sir, I found the book for you."
+
+		pixel Ahlai as <playerName> "This is 'Bisasagi Beauty Through Words', by Hana Abe. It's both an autobiography and poem collection that contains scenes of Bisasagi's environment."
+
+		pixel RetiredVeteran as Retired Veteran "Let me see."
+
+		pixel RetiredVeteran as Retired Veteran "Wow..."
+
+		pixel RetiredVeteran as Retired Veteran "This is incredible! It's exactly what I need."
+
+		pixel RetiredVeteran as Retired Veteran "Ah, this is the one I really wanted to see. Look here."
+
+		pixel RetiredVeteran as Retired Veteran "There's this mountain overlooking the Eijiko River. I proposed to my wife on that very mountaintop."
+
+		pixel RetiredVeteran as Retired Veteran "'I climb the peak so that I may adore you in your entirety. O Bisasagi, how your water nourishes me. The sunset welcomes our meeting and I fall for you again like it was my first time gazing upon you.'"
+
+		pixel RetiredVeteran as Retired Veteran "Heh, this poet’s good. And that description of hers is how I would describe seeing my wife on that mountaintop."
+
+		pixel RetiredVeteran as Retired Veteran "It was like falling in love with her for the first time again. Proposing to her brought me back to my younger days, when I was afraid to even just talk to her."
+
+		pixel RetiredVeteran as Retired Veteran "She's from Bisasagi, and I'm from Seiysla. I wanted to propose to her at what she thought was the most beautiful spot of her home."
+
+		pixel RetiredVeteran as Retired Veteran "She's gone now. She was tragically killed in a fight."
+
+		pixel RetiredVeteran as Retired Veteran "And remembering her has become... Much more difficult for me."
+
+		pixel Ahlai as <playerName> "I'm so sorry for your loss..."
+
+		pixel RetiredVeteran as Retired Veteran "Thank you."
+
+		pixel RetiredVeteran as Retired Veteran "I've been going to places like this library lately to relive some of my memories of her."
+
+		pixel RetiredVeteran as Retired Veteran "Documents like this... Help me remember."
+
+		pixel RetiredVeteran as Retired Veteran "You aided me with something incredibly personal to me. And for that, I thank you."
+
+		pixel Ahlai as <playerName> "You're welcome."
+
+		pixel Ahlai as <playerName> "It pains me to hear what happened to you... I hope you're able to find peace."
+
+		pixel Ahlai as <playerName> "If we see each other in the future, please don't hesitate to ask for my help again."
+
+		pixel RetiredVeteran as Retired Veteran "I would like that very much. Thank you."
+
+		ToggleInteractable("Scene 6" "Library 2" RetiredVeteran false)
+	}
+	else
+	{
+		pixel RetiredVeteran as Retired Veteran "Have you found the book?"
+
+		pixel RetiredVeteran as Retired Veteran "I'll be waiting here."
+	}
+
+	HideTextbox(false)
+}

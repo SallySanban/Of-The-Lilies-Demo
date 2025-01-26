@@ -1,3 +1,283 @@
 input
 
-[wait]ShowScene("Scene 2" "Tayabac Cliffside 1")
+$LibraryQuest = true
+$Vengeance = 0
+$Justice = 0
+$Peace = 0
+$Seiji = 0
+$Myo = 0
+$Manju = 0
+$Laisa = 0
+$Lien = 0
+
+[wait]ShowScene("Scene 4" "Riverside Pathway")
+ScrollBackground(true)
+Wait(3)
+[wait]ShowCG("Title")
+Wait(3)
+HideCG()
+[wait]PanCamera(-y -17.75 -spd 6)
+[wait]ShowCredits("<b>Lead and Programmer</b><br>Johanna Eikou Teknomo")
+Wait(3)
+[wait]SwitchCredits("<b>Scriptwriters</b><br>Julia Ortega<br>Johanna Eikou Teknomo<br>Gerry Mijares")
+Wait(3)
+[wait]SwitchCredits("<b>Character Design</b><br>Althea Ong<br>Amparo Isabelle Rivera<br>Alessandra Delos Santos")
+Wait(3)
+[wait]SwitchCredits("<b>Character Design</b><br>Chenoa Mikaela A. Cada<br>Edgar Joseph Vallejo")
+Wait(3)
+[wait]SwitchCredits("<b>Character Portraits</b><br>Althea Ong")
+Wait(3)
+[wait]SwitchCredits("<b>Cutscene Graphics</b><br>Amparo Isabelle Rivera<br>Althea Ong")
+Wait(3)
+[wait]SwitchCredits("<b>Pixel Backgrounds</b><br>Elise Illenberger<br>Chenoa Mikaela A. Cada<br>Althea Ong")
+Wait(3)
+[wait]SwitchCredits("<b>Pixel Backgrounds</b><br>Dyethrow Pixel")
+Wait(3)
+[wait]SwitchCredits("<b>Pixel Sprites</b><br>Chenoa Mikaela A. Cada<br>Edgar Joseph Vallejo<br>Alessandra Delos Santos")
+Wait(3)
+[wait]SwitchCredits("<b>User Interface</b><br>Althea Ong")
+Wait(3)
+[wait]SwitchCredits("<b>Audio and Mixing</b><br>Antoine Andre Labuanan")
+Wait(3)
+[wait]SwitchCredits("<b>Original Soundtrack</b><br>Darren Vega")
+Wait(3)
+HideCredits()
+stopEvent(7)
+[wait]Blackout()
+Wait(0.5)
+ScrollBackground(false)
+RemoveScene()
+[wait]ResetCamera(false)
+
+Ahlai as <playerName> "<i>I remember it all like it was yesterday</i>."
+
+HideTextbox(true)
+[input]SwitchCG("Family Chained")
+
+Ahlai as <playerName> "<i>Our land was taken from us. Our people, killed</i>."
+
+HideTextbox(true)
+[wait]Blackout()
+
+Ahlai as <playerName> "<i>And slowly... my family disappeared too.</i>"
+
+HideTextbox(true)
+[input]SwitchCG("Dad Chained")
+
+Mom "No! You can't take him away!"
+
+Mom "Please...! We'll do anything! Just, please, let us stay together!"
+
+??? "He will be doing a great service to the <b>Logresh Empire</b>. Don't worry, his life won't be in vain."
+
+??? "You'd make a good servant as well... We'll be sending you to a place you can be of good use."
+
+??? "Some businessmen from <b>Haripura</b> are eager to have you!"
+
+HideTextbox(true)
+[wait]Blackout()
+
+[input]SwitchCG("Dalawi Chained")
+
+Dalawi "Damn it, no! No! Don't separate us, I won't let you!"
+
+Laya "Don't take my big brother!"
+
+??? "All of the family's here... what a success! Alright, this one... looks old enough."
+
+??? "He would work perfectly for our client in the <b>Gataran Empire</b>."
+
+??? "What about this one?"
+
+??? "That one? The kid? Heh, send him down to the <b>mines</b>!"
+
+??? "He's a scrawny little stick, he could use the exercise."
+
+??? "Nowhere near good enough to even hand off to our trade partners."
+
+Laya "Wah...! Don't hurt me...! It hurts! Please don't, please...!"
+
+Dalawi "He said not to hurt him! What are you doing?! Unhand me or I'm <i>going to</i>-"
+
+HideTextbox(true)
+playSFX(SFX_Knockout)
+[wait]Blackout()
+
+[input]SwitchCG("Alonay Chained")
+
+Alonay "No... Don't touch me! H-Help! <playerName>, I'm scared!"
+
+??? "Hehe. Don't worry, little girl. There's a place for you too. I'll take <i>good</i> care of you..."
+
+Ahlai as <playerName> "Alonay!"
+
+HideTextbox(true)
+playSFX(SFX_DoorSlam)
+
+[wait]Blackout()
+
+Ahlai as <playerName> "NO!"
+
+playAmbience(Amb_MuffledVoices)
+
+Ahlai as <playerName> "..."
+
+Ahlai as <playerName> "<i>There are people talking outside... Is it not over?</i>"
+
+??? "That one looks strong. I hear it was in line to be the next chief?"
+
+??? "...Good. <subjectPronoun> would be a fine addition to my servants."
+
+??? "Yes. But I'm afraid you're too late, Lady."
+
+??? "Someone else is taking <objectPronoun> home, and they have the money for it, too."
+
+??? "Then how about I offer you more?"
+
+playSFX(SFX_CoinsJiggle)
+
+??? "..."
+
+playSFX(SFX_DoorOpen)
+stopEvent(8)
+
+??? "Hand them to me."
+
+HideTextbox(true)
+[input]SwitchCG("Lady Sabina Save")
+
+Ahlai as <playerName> "...Who are you?"
+
+??? "Don't worry, child. I'm here to help you."
+
+Sabina as Lady Sabina "You can call me... Lady Sabina."
+
+Ahlai as <playerName> "What do you want with me? Where did they take my family?"
+
+Sabina as Lady Sabina "...I was too late for them. I'm sorry. But it's not too late for you."
+
+Sabina as Lady Sabina "You must've been through a lot."
+
+Sabina as Lady Sabina "It's over now, <playerName>. I'll protect you."
+
+Sabina as Lady Sabina "Do you want to be saved?"
+
+choice in 2
+{
+	- I need to avenge my family.
+		$Vengeance += 1
+
+		Ahlai as <playerName> "If it means I get to avenge my family... I do."
+
+		Ahlai as <playerName> "It's their fault. <b><i>Lien</i></b> and the Seiyslan Empire... They took my family away from me. Did you even see what they did to my land? My tribe?"
+
+		Sabina as Lady Sabina "I know you're hurting, child. I'll let you take your time to process what happened."
+
+		Sabina as Lady Sabina "What's important is that I'm here now."
+
+	- Yes, to make things right.
+		$Justice += 1
+
+		Ahlai as <playerName> "If I go with you... will you help me make things right?"
+
+		Ahlai as <playerName> "I... want to do something about what happened. I need to find my family, at least."
+
+		Ahlai as <playerName> "I do not know if you understand, but... please, I have to do something! It's not right that they can just... take them away!"
+
+		Sabina as Lady Sabina "You can take all the time you need to find the right answer for you."
+
+		Sabina as Lady Sabina "What's important is that you're all right now."
+
+	- Please make this all end.
+		$Peace += 1
+		
+		Ahlai as <playerName> "Please, save me. I want it all to end..."
+
+		Ahlai as <playerName> "My family was taken away... I can't handle much more..."
+
+		Sabina as Lady Sabina "Shh, I understand, child. You're all right now. You no longer have to worry."
+}
+
+HideTextbox(true)
+[wait]Blackout()
+
+Sabina as Lady Sabina "I'll make sure to keep you safe."
+
+HideTextbox(true)
+Wait(1)
+
+??? "<playerName>? Are you awake?"
+
+??? "It's time to wake up."
+
+HideTextbox(true)
+[input]SwitchCG("Lady Sabina Worried")
+
+Sabina as Lady Sabina "Oh my. <playerName>, you're sweating profusely!"
+
+Sabina as Lady Sabina "Are you okay? Did you perhaps have another bad dream?"
+
+choice in 2
+{
+	- I did, actually...
+		Sabina as Lady Sabina "Oh no. If you were sweating from that nightmare, then it must've been terrible..."
+
+	- No, I'm fine...
+		Sabina as Lady Sabina "I just said you're sweating, of course you're not fine!"
+
+		Sabina as Lady Sabina "Ugh. You know I'm concerned for you, so you might as well be honest with me..."
+
+		Ahlai as <playerName> "Thank you for your concern, Lady Sabina..."
+}
+
+Sabina as Lady Sabina "Go get ready and head downstairs. Seiji's already manning the counter."
+
+Sabina as Lady Sabina "I'll see to it that I prepare something for your sleep."
+
+Sabina as Lady Sabina "If you don't feel well, you tell me, okay?"
+
+Ahlai as <playerName> "Yes, ma'am."
+
+Sabina as Lady Sabina "Good."
+
+HideTextbox(true)
+[wait]Blackout()
+$AxeReceived = false
+$SatoQuest = false
+$SatoPotionDone = false
+$FinishedSatoQuest = false
+$RichSeiyslanQuest = false
+$RichSeiyslanPotionDone = false
+$FinishedRichSeiyslanQuest = false
+$DesperateGirlQuest = false
+$DesperateGirlPotionDone = false
+$FinishedDesperateGirlQuest = false
+$RookieJournalistDone = false
+$WideVariety = false
+$CustomerService = false
+$GuaranteedQuality = false
+$QuanDeliverQuest = false
+$QuanPotionQuest = false
+$QuanPotionDone = false
+$EverbarkFlakes = false
+$SilverleafSprigs = false
+$PearlShellPowder = false
+$MaiQuest = false
+$MaiFamilyFound = false
+$PotionQuests = 0
+$QuanIngredients = 0
+$LibraryQuest = false
+$SeijiTalkedTo = false
+$SteppedOutside = false
+$ShopAlreadyChosen = false
+$HowAreYouAlreadyChosen = false
+$CustomersAlreadyChosen = false
+$NightmareAlreadyChosen = false
+$TasksAlreadyChosen = false
+$Seiji = 0
+$Myo = 0
+$Manju = 0
+$Laisa = 0
+$Lien = 0
+[wait]ShowScene("Scene 5" "Ahlai's Bedroom")
+[wait]HideCG()

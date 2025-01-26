@@ -1,0 +1,9 @@
+pixel BathroomGuy as ??? "Ugh..."
+
+pixel Ahlai as <playerName> "..."
+
+pixel BathroomGuy as ??? "Ugh...!"
+
+pixel Ahlai as <playerName> "I'll... leave them to it."
+
+HideTextbox(false)

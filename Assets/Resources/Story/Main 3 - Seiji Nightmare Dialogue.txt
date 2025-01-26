@@ -51,7 +51,7 @@ choice in -1
 
 		HideTextbox(true)
 		[wait]Blackout()
-		[wait]SwitchCG("Seiji")
+		[input]SwitchCG("Seiji")
 
 		Seiji "There you go. Isn't that nice?"
 

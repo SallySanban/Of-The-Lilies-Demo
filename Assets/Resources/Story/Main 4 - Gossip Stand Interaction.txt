@@ -1,0 +1,17 @@
+pixel GossipGirl3 as ??? "Oh, General Lien, not just handsome, but also reliable!"
+
+pixel GossipGirl4 as ??? "What did you hear?"
+
+pixel GossipGirl3 as ??? "Ilaisaane, the Sea Serpent, was captured! They've been tracking her down for weeks."
+
+pixel GossipGirl4 as ??? "Is that right? The Gataran pirate that's been tearing up the streets lately?"
+
+pixel GossipGirl3 as ??? "Yes, her! They've been pursuing her from Agon Province and now she's taken all the way 'till here, in Kuchai Town!"
+
+pixel GossipGirl4 as ??? "They're here in Kuchai? General Lien rarely pays a visit... He's usually up at the capital."
+
+pixel GossipGirl4 as ??? "Maybe we should go and take a look at his attractive face..."
+
+pixel GossipGirl3 as ??? "A good idea!"
+
+HideTextbox(false)

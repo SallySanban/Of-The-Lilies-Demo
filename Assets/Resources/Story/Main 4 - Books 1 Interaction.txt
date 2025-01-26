@@ -1,0 +1,9 @@
+pixel Ahlai as <playerName> "'The Tribes of Seiysla'"
+
+pixel Ahlai as <playerName> "'The Miandi Tribe, originating from Agon Province'"
+
+pixel Ahlai as <playerName> "'The Subatok Tribe, originating from Tayabac Province, claimed by the Seiyslan Empire 10 years ago...'"
+
+pixel Ahlai as <playerName> "...I should stop reading."
+
+HideTextbox(false)

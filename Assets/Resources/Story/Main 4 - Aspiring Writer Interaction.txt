@@ -1,0 +1,134 @@
+pixel AspiringWriter as Aspiring Writer "Hello there! May I ask your opinion on something?"
+
+pixel Ahlai as <playerName> "Oh! Sure."
+
+pixel AspiringWriter as Aspiring Writer "Wonderful!"
+
+pixel AspiringWriter as Aspiring Writer "You see, I'm an aspiring writer and I plan to write a novel."
+
+pixel AspiringWriter as Aspiring Writer "One with a story that will not only be interesting to its readers but will also make them change the way they perceive their reality."
+
+pixel AspiringWriter as Aspiring Writer "Having stayed in Seiysla for 12 years of my life, I have witnessed the good and the bad in this Empire."
+
+pixel AspiringWriter as Aspiring Writer "And while my loyalties to Seiysla still remain, I cannot bring myself to support everything the Empire has done."
+
+pixel AspiringWriter as Aspiring Writer "Their many invasions against lesser towns and tribes... They just don't sit right with me."
+
+pixel Ahlai as <playerName> "..."
+
+choice in -1
+{
+	- It's definitely not right.
+		$Vengeance += 1
+
+		pixel Ahlai as <playerName> "Of course it isn't right. Taking away their family and homeland? It couldn’t possibly sit right with anyone, yet the Empire still continues their expansion plans!"
+
+		pixel AspiringWriter as Aspiring Writer "Am I right in sensing you have personal experience with the matter?"
+
+		pixel AspiringWriter as Aspiring Writer "Then you must understand where I'm coming from. That’s good."
+
+	- I agree.
+		$Justice += 1
+
+		pixel Ahlai as <playerName> "You're right. There must be a way we can do something about it..."
+
+		pixel AspiringWriter as Aspiring Writer "So you understand where I'm coming from. That's good."
+
+	- I guess so.
+		$Peace += 1
+
+		pixel Ahlai as <playerName> "I guess so, but there's nothing we can do about it now."
+
+		pixel Ahlai as <playerName> "It won't bring back what was lost."
+
+		pixel AspiringWriter as Aspiring Writer "Am I right in sensing you have personal experience with the matter?"
+
+		pixel AspiringWriter as Aspiring Writer "You may have lost some things in the past, but that doesn't mean we can't change the future."
+}
+
+pixel AspiringWriter as Aspiring Writer "I want to write a novel that will show people the Seiyslan Empire in its entirety, not just the good."
+
+pixel AspiringWriter as Aspiring Writer "Not to spit on its name and revolt, but rather to encourage discernment and a conversation among the people."
+
+pixel Ahlai as <playerName> "I see. That's very brave of you."
+
+pixel AspiringWriter as Aspiring Writer "Thank you."
+
+pixel AspiringWriter as Aspiring Writer "Kuchai Town is filled with people of many different backgrounds. I find it enlightening to talk to the residents."
+
+pixel AspiringWriter as Aspiring Writer "Different backgrounds, different opinions."
+
+pixel AspiringWriter as Aspiring Writer "And I'm sure I can get one out of you as well."
+
+pixel AspiringWriter as Aspiring Writer "I'm planning to write a story about a man who, after returning from his studies abroad to help his local town, is put into a political battle against the corrupt government run by its oppressors."
+
+pixel AspiringWriter as Aspiring Writer "His father is denied a proper burial, he is branded a criminal, his livelihood is destroyed, and he is eventually saved by one of his friends, who is a member of a rebel group."
+
+pixel AspiringWriter as Aspiring Writer "That's what I've come up with for now."
+
+pixel Ahlai as <playerName> "Sounds like a very interesting story."
+
+pixel AspiringWriter as Aspiring Writer "Thank you. It's meant to critique the society established by Seiysla today."
+
+pixel AspiringWriter as Aspiring Writer "I'm almost done outlining my story. The only thing I'm thinking about is the ending."
+
+pixel AspiringWriter as Aspiring Writer "I thought of three possible outcomes."
+
+pixel AspiringWriter as Aspiring Writer "Either he joins the rebel group and fights for justice, he resorts to violence for what the oppressors did to him, or he leaves to find closure from the conflict."
+
+pixel AspiringWriter as Aspiring Writer "To you, what's the most fitting ending for this story?"
+
+choice in -1
+{
+	- Justice
+		$Justice += 1
+		pixel AspiringWriter as Aspiring Writer "He fights for justice, huh?"
+
+		pixel AspiringWriter as Aspiring Writer "It would make for an epic tale."
+
+		pixel AspiringWriter as Aspiring Writer "Though I worry about the implications of glorifying the protagonist's victory in a violent rebellion against his oppressors..."
+
+		pixel AspiringWriter as Aspiring Writer "However, it would also work in emphasizing the needs and rights of non-Seiyslans."
+
+		pixel AspiringWriter as Aspiring Writer "I suppose it all boils down to the writing. I'll think about this."
+
+	- Violence
+		$Vengeance += 1
+		pixel AspiringWriter as Aspiring Writer "He seeks revenge, huh?"
+
+		pixel AspiringWriter as Aspiring Writer "Glorifying revenge certainly does not make for a good message."
+
+		pixel AspiringWriter as Aspiring Writer "But what if that were the point of the story, that revenge is not the right answer?"
+
+		pixel AspiringWriter as Aspiring Writer "An unsatisfactory ending to show that revenge itself is unsatisfactory. It would be both poetic and ironic."
+
+		pixel AspiringWriter as Aspiring Writer "Hmm... This is definitely worth thinking about."
+
+	- Closure
+		$Peace += 1
+		pixel AspiringWriter as Aspiring Writer "So he searches for peace in the end, huh?"
+
+		pixel AspiringWriter as Aspiring Writer "It wouldn't exactly make for a satisfying conclusion, for him to leave everything behind and move on."
+
+		pixel AspiringWriter as Aspiring Writer "Yet one could describe the road to closure itself to be unsatisfying until it isn't."
+
+		pixel AspiringWriter as Aspiring Writer "And I worry about possibly romanticizing his war against his oppressors."
+
+		pixel AspiringWriter as Aspiring Writer "After all, you cannot give the burden of changing society to the ordinary man."
+
+		pixel AspiringWriter as Aspiring Writer "But I suppose this is something I'll have to think about."
+}
+
+pixel AspiringWriter as Aspiring Writer "Thank you for your help."
+
+pixel Ahlai as <playerName> "You're welcome. And also..."
+
+pixel AspiringWriter as Aspiring Writer "Yes?"
+
+pixel Ahlai as <playerName> "Your story... It speaks to me on a personal level."
+
+pixel Ahlai as <playerName> "Thank you for writing about it. I hope you find success with it."
+
+pixel AspiringWriter as Aspiring Writer "Thank you. I hope I do you justice."
+
+HideTextbox(false)

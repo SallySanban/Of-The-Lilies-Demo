@@ -184,7 +184,9 @@ HideCredits()
 stopEvent(BGM_Scene4)
 [wait]Blackout()
 Wait(0.5)
+ScrollBackground(false)
 RemoveScene()
+[wait]ResetCamera(false)
 
 Ahlai as <playerName> "<i>I remember it all like it was yesterday</i>."
 

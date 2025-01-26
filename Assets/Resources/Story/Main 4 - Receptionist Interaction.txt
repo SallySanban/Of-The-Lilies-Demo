@@ -1,0 +1,33 @@
+if (!$ManjuTalkedTo)
+{
+	pixel Receptionist "Good day! Welcome to the Kuchai Library. How can I help you?"
+
+	pixel Ahlai as <playerName> "Good day. I'm looking for a book on the 100-year curse?"
+
+	pixel Receptionist "Ah, yes, the 100-year curse! There have been rumours that it might be true after all..."
+
+	pixel Ahlai as <playerName> "What makes you say that?"
+
+	pixel Receptionist "Haven't you noticed the signs? The Kanding river, murkier than usual… Crops, not growing properly... There have been numerous complaints."
+
+	pixel Receptionist "Of course, these are just things I hear from the folks that pass by the library!"
+
+	pixel Receptionist "You can find what you're looking for in the Magic section."
+
+	pixel Receptionist "Take a left here, and it should be at the far end of the room."
+
+	pixel Receptionist "If you need further assistance, feel free to ask any of our archivists around the library."
+
+	pixel Ahlai as <playerName> "Understood. Thank you!"
+
+	pixel Receptionist "You're welcome!"
+
+	HideTextbox(false)
+}
+else
+{
+	pixel Receptionist "Good day! Welcome to the Kuchai Library."
+
+	HideTextbox(false)
+}
+

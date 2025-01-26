@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Seiji told me to look for the book here on the first floor."
+
+HideTextbox(false)

@@ -1,0 +1,15 @@
+ShowUI("Bulletin Board")
+
+pixel Ahlai as <playerName> "'New Releases'"
+
+pixel Ahlai as <playerName> "'Poetry: Hana Abe - Bisasagi Beauty Through Words'"
+
+pixel Ahlai as <playerName> "'History: The History of Seiysla, Volume 8 and The Book of Dok'kale, 3rd Edition'"
+
+pixel Ahlai as <playerName> "'Magic: Basic Potion-Making, Volume 5 and Seiysla's 100-year Curse'"
+
+pixel Ahlai as <playerName> "'Culture: The Tribes of Seiysla'"
+
+$InteractedBulletinBoard = true
+HideUI()
+HideTextbox(false)

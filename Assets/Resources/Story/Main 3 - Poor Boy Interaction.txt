@@ -42,7 +42,7 @@ choice in -1
 		HideTextbox(false)
 		[wait]Blackout()
 		RemoveFromScene("PoorBoy")
-		ResetCamera()
+		ResetCamera(false)
 		FlipNPC("Ahlai" Left)
 		[wait]HideCG()
 
@@ -82,7 +82,7 @@ choice in -1
 		HideTextbox(false)
 		[wait]Blackout()
 		RemoveFromScene("PoorBoy")
-		ResetCamera()
+		ResetCamera(false)
 		FlipNPC("Ahlai" Left)
 		[wait]HideCG()
 
@@ -101,7 +101,7 @@ choice in -1
 
 		pixel Seiji "You're right, <playerName>. It's too dangerous. Let's go."
 
-		ResetCamera()
+		ResetCamera(true)
 }
 
 HideTextbox(false)

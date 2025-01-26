@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "The world we live in. Kuchai Town feels so small compared to the rest of Ambana."
+
+HideTextbox(false)

@@ -1,0 +1,23 @@
+pixel CoupleSit1 as Boyfriend "'He takes the seashell, the same one she gave him when they were kids, and hands it over to her, now forged into a wedding ring.'"
+
+pixel CoupleSit1 as Boyfriend "''That seashell! You remember the shell I gave you?' Kimi says. He smiles and replies, 'I had never forgotten.''"
+
+pixel CoupleSit2 as Girlfriend "Aww, that is so cute!"
+
+pixel CoupleSit1 as Boyfriend "But you know what would be even cuter?"
+
+pixel CoupleSit2 as Girlfriend "What?"
+
+pixel CoupleSit1 as Boyfriend "If I took that gem you gave me, and did the same thing!"
+
+pixel CoupleSit2 as Girlfriend "Honey, stop! You're making me blush!"
+
+pixel CoupleSit2 as Girlfriend "And don't spoil your surprise proposal for me!"
+
+pixel CoupleSit1 as Boyfriend "I can't help it, I love seeing you blush."
+
+pixel CoupleSit2 as Girlfriend "Oh, stop that!"
+
+pixel Ahlai as <playerName> "Ah..."
+
+HideTextbox(false)

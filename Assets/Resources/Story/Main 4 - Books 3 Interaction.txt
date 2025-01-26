@@ -1,0 +1,7 @@
+pixel Ahlai as <playerName> "'The Book of Dok'kale'"
+
+pixel Ahlai as <playerName> "'In the dawn of civilization, Dok'kale, the god of the forest, bestowed the gift of magic upon humanity, allowing them to harness the natural world's mystical energies.'"
+
+pixel Ahlai as <playerName> "'Nowadays, magic is being safeguarded by the renowned Order of La Liryo, who seals it within the power of potions.'"
+
+HideTextbox(false)

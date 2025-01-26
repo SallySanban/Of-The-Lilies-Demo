@@ -1,0 +1,3 @@
+pixel BusyLibrarian as Librarian "Welcome to the Kuchai Library! Feel free to talk to the receptionist upfront for any specific books you may be looking for."
+
+HideTextbox(false)

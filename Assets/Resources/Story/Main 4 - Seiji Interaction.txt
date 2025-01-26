@@ -1,0 +1,29 @@
+pixel Seiji "Who were you talking to back there, Ahlai?"
+
+pixel Ahlai as <playerName> "Oh, that was Taji. He's an archivist here. He helped me find the book we needed."
+
+pixel Ahlai as <playerName> "Is there something... wrong?"
+
+pixel Seiji "Didn't you see his robes? It's barely visible, but I caught sight of the crest of the <b>Order of Hotei</b>."
+
+pixel Ahlai as <playerName> "A-are you sure? They usually don't go out in the open. He even told me his name..."
+
+pixel Seiji "You should count on it not being his real one. Remember what Lady Sabina told us about them."
+
+pixel Seiji "They go against what our order stands for, against the safeguards we put in place through the potions we make. They believe that <b>people should be able to wield magic</b>. As if they’re equals with the gods!"
+
+pixel Seiji "The <b>Order of La Liryo has to ensure that magic is being used responsibly</b>. It's what the people know us for. It's why we make those potions every day."
+
+pixel Seiji "Just... be careful next time, okay?"
+
+pixel Ahlai as <playerName> "I will, Seiji. Thank you for worrying about me. All things considered, at least we've got the book."
+
+pixel Ahlai as <playerName> "And we're down to our last task of the day! Drinks for Lady Sabina, right?"
+
+pixel Seiji "Yeah, at the <b>tavern</b>."
+
+pixel Ahlai as <playerName> "Then, let's go!"
+
+HideTextbox(false)
+[wait]Blackout()
+[wait]SwitchScene("Scene 7" "Kuchai Town 3")
