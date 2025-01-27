@@ -468,6 +468,74 @@ MonoBehaviour:
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 8108714448560900514}
   stateChangedDuringStory: 0
+--- !u!1 &2425649223538056900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6316783476804430030}
+  - component: {fileID: 6134401491376121849}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6316783476804430030
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2425649223538056900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 261363955675411576}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.28365353, y: 0.22522995}
+  m_AnchorMax: {x: 0.28947636, y: 0.31800002}
+  m_AnchoredPosition: {x: -0.4987793, y: 0.5303955}
+  m_SizeDelta: {x: -1.6647713, y: -0.04200697}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6134401491376121849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2425649223538056900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 404284534
+      Data2: 1283621227
+      Data3: -1393036401
+      Data4: -753359265
+    Path: event:/SFX/SFX_Creek
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 10
 --- !u!1 &4775649138147092423
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +655,7 @@ RectTransform:
   m_Children:
   - {fileID: 7502912598493501790}
   - {fileID: 2697850876262133185}
+  - {fileID: 6316783476804430030}
   m_Father: {fileID: 4919658866022348391}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -723,7 +792,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17192, y: 1082.8945}
+    oldSize: {x: 17196.035, y: 1080}
     newSize: {x: 28.000002, y: 10.800782}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -768,7 +837,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17192, y: 1082.8945}
+    oldSize: {x: 17196.035, y: 1080}
     newSize: {x: 28.000002, y: 10.800782}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -813,7 +882,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17192, y: 1082.8945}
+    oldSize: {x: 17196.035, y: 1080}
     newSize: {x: 28.000002, y: 10.800782}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
