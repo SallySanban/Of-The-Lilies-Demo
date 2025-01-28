@@ -107,7 +107,7 @@ MonoBehaviour:
     - interactableName: Ladder
       interactableType: 2
       isInteractable: 1
-      storyToPlay: Main 1 - Ladder u
+      storyToPlay: Main 1 - Ladder Up Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Left Door
       interactableType: 2
