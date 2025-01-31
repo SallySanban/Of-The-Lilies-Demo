@@ -1,0 +1,40 @@
+pixel Manju as Taji "You ask interesting questions, don't you?"
+
+pixel Manju as Taji "Let me shift your perspective a little. Is there really only one way to stop the curses?"
+
+pixel Manju as Taji "Has it occurred to you that there's more than one answer?"
+
+choice in -1
+{
+	- That couldn't be.
+		pixel Ahlai as <playerName> "If what you're saying about the curses is right, then they seem to only be affecting the natural world around us."
+
+		pixel Ahlai as <playerName> "That would eventually affect the people in the town, and their livelihood."
+
+		pixel Ahlai as <playerName> "It would hurt them. Hurt this town. The curses have to be stopped the right way."
+
+		pixel Manju as Taji "You really love seeing things in black and white, don't you? The 'right' way?"
+
+		pixel Manju as Taji "Don't believe everything you hear."
+
+		pixel Manju as Taji "There's always a fine line between right and wrong."
+		
+	- How so?
+		$Manju += 1
+
+		pixel Ahlai as <playerName> "Are you telling me there's more than one way?"
+
+		pixel Manju as Taji "There's only so much you can understand if you rely on the information you hear about from others."
+
+		pixel Manju as Taji "There's no harm in finding things out on your own."
+
+		pixel Ahlai as <playerName> "A place to start would be nice, would it not?"
+
+		pixel Manju as Taji "..."
+}
+
+pixel Ahlai as <playerName> "You seem like you know a lot about the curses."
+
+pixel Manju as Taji "I have my sources."
+
+Load("Main 4 - Manju Repeating Dialogue")

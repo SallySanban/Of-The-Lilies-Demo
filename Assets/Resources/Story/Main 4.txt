@@ -16,3 +16,113 @@ pixel Ahlai as <playerName> "I'm looking for a book on a 100-year curse. You kno
 pixel Manju as ??? "Well, I <i>would</i> know where it is, if you <i>could</i> be more specific. A lot of books here cover curses that last a hundred years."
 
 pixel Ahlai as <playerName> "<i>What's his problem?</i>"
+
+choice in -1
+{
+	- <i>I'm not taking that attitude...</i>
+		pixel Ahlai as <playerName> "Is this how you treat every visitor at the library?"
+
+		pixel Manju as ??? "The truth would leave me without a job, but I would be leaving you without a book if that is all the information you have on hand."
+
+		pixel Ahlai as <playerName> "The receptionist spoke very highly of all the archivists here, so if I'm just left empty-handed, that would simply be... so unfortunate!"
+
+		pixel Manju as ??? "You-! You plan to speak with my boss about this?"
+
+		pixel Ahlai as <playerName> "Only if you don't get me that book."
+
+		pixel Manju as ??? "Damn, alright... ugh, how about we just start with the Magic section?"
+
+		pixel Ahlai as <playerName> "Good."
+
+		pixel Ahlai as <playerName> "<i>He's stopped talking and his expression's unreadable again. He seems to have gotten the message, though, with how much faster he's working.</i>"
+
+		pixel Manju as ??? "Perhaps there's a title you can recall...?"
+
+	- What do you mean?
+		$Manju += 1
+
+		pixel Ahlai as <playerName> "To be candid, you sound displeased that I couldn't be more specific. I apologize, but this really is all the information I have on hand. Any book will do, please."
+
+		pixel Manju as ??? "...Was my displeasure that obvious?"
+
+		pixel Ahlai as <playerName> "Hmm..."
+
+		pixel Ahlai as <playerName> "I could also just have a knack for reading people, don't you think?"
+
+		pixel Manju as ??? "More the type to read people than to read books, then?"
+
+		pixel Manju as ??? "I suppose both are handy skills to have."
+
+		pixel Ahlai as <playerName> "And what about you, then? If you don't mind me asking?"
+
+		pixel Manju as ??? "You said it yourself, you have a knack for reading people. Come up with your own conclusions."
+
+		pixel Ahlai as <playerName> "<i>When you put it like that, then...</i>"
+
+		pixel Manju as ??? "Hold on... I think I found what you're looking for."
+}
+
+pixel Ahlai as <playerName> "I believe the book is called-"
+
+pixel Manju as ??? "<i>Seiysla's 100-Year Curse?</i>"
+
+pixel Ahlai as <playerName> "<i>Seiysla's 100-Year Curse,</i> yes."
+
+pixel Manju as ??? "Is it... this one?"
+
+pixel Ahlai as <playerName> "Yes, it's this one!"
+
+pixel Manju as ??? "You seem relieved to find that book. Though, it isn't a myth."
+
+pixel Ahlai as <playerName> "Oh, really? How would you know? You couldn't have possibly been around during the last one."
+
+pixel Manju as ??? "Well, were <i>you</i> around during the last one? They only happen once in a hundred years, you know."
+
+pixel Ahlai as <playerName> "I suppose not."
+
+pixel Manju as ??? "That makes two of us, then. So... you plan to tell me any more about how this is all just a myth?"
+
+pixel Ahlai as <playerName> "Then what makes you so sure that it isn't a myth?"
+
+pixel Manju as ??? "I've been walking around recently. Kuchai Town is a bit different from how it was several weeks ago. Almost like the gods are giving us a sign that the curses are returning."
+
+pixel Ahlai as <playerName> "Do the gods have anything to do with it?"
+
+pixel Manju as ??? "Maybe they do. The <b>overuse of magic has been a problem ever since it was given to us by the gods</b>."
+
+pixel Manju as ??? "Isn't that what causes it?"
+
+pixel Manju as ??? "At least, that's what it says in the book you wanted to borrow. Here."
+
+pixel Manju as ??? "You should have noticed some changes, too. I see you around town. You work at Sabina's Salves, correct? You're always carrying potions around. You and that friend of yours."
+
+pixel Ahlai as <playerName> "I do. And his name is Seiji. We mostly make potion deliveries to our clients."
+
+pixel Manju as ??? "Your potion requests have increased in number, haven't they? Why do you think that's so?"
+
+pixel Ahlai as <playerName> "Well, I..."
+
+pixel Ahlai as <playerName> "How would you... know that?"
+
+pixel Manju as ??? "Oh, I just notice things. More and more unfortunate incidents have been happening around town, so I figured more people would need help from the potions in your shop."
+
+pixel Manju as ??? "Lucky guess?"
+
+pixel Ahlai as <playerName> "For someone who spends his day indoors, you're pretty observant."
+
+pixel Manju as ??? "You just seem to catch my eye."
+
+pixel Ahlai as <playerName> "Oh, well... I didn't get your name."
+
+pixel Manju as Taji "It's Taji."
+
+pixel Ahlai as <playerName> "It's nice to meet you... I'm <playerName>."
+
+pixel Manju as Taji "<playerName>... The name alone has me interested."
+
+pixel Ahlai as <playerName> "Why, 'cause it's pretty?"
+
+pixel Manju as Taji "You flatter yourself. But names do tell me stories - who they are, where they're from - yours is no exception."
+
+Load("Main 4 - Manju Repeating Dialogue")
+

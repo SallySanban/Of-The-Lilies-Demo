@@ -1,0 +1,79 @@
+pixel Manju as Taji "Did you need anything else, <playerName>? As much as you've made my time here at the library more eventful, I do have to get back to work."
+
+choice in -1
+{
+	- if (!$DoAlreadyChosen) What do you do as an archivist?
+		$DoAlreadyChosen = true
+		$ManjuDialogueOptions += 1
+		
+		pixel Manju as Taji "I collect books."
+
+		pixel Manju as Taji "I put them on the shelves or I bring them to the archives."
+
+		pixel Manju as Taji "It's a simple job."
+
+		Load("Main 4 - Manju Repeating Dialogue")
+
+	- if (!$ChooseWorkAlreadyChosen) Why did you choose to work here?
+		$ChooseWorkAlreadyChosen = true
+		$ManjuDialogueOptions += 1
+
+		pixel Manju as Taji "Information is more powerful than we think. The many books in this library contain such rich knowledge, but even the spread of information is often controlled by the government of Seiysla."
+
+		pixel Manju as Taji "It's knowledge that they can decide to share or hide from us."
+
+		pixel Manju as Taji "Though, I find that I value all sorts of knowledge, even the ones they don't want us to see."
+
+		Load("Main 4 - Manju Repeating Dialogue")
+
+	- if (!$FavouriteBookAlreadyChosen) What's your favourite type of book?
+		$FavouriteBookAlreadyChosen = true
+		$ManjuDialogueOptions += 1
+
+		Load("Main 4 - Manju Book Dialogue")
+
+	- if (!$ChangesAlreadyChosen) What changes have you noticed in Kuchai Town?
+		$ChangesAlreadyChosen = true
+		$ManjuDialogueOptions += 1
+
+		Load("Main 4 - Manju Changes Dialogue")
+
+	- if (!$CursesAlreadyChosen) If the curses are real, how do you stop them?
+		$CursesAlreadyChosen = true
+		$ManjuDialogueOptions += 1
+
+		Load("Main 4 - Manju Curses Dialogue")
+
+	- if ($ManjuDialogueOptions == 5) You're not much of a talker, are you?
+		$ManjuDialogueOptions += 1
+
+		pixel Manju as Taji "So you've noticed. Is that a problem?"
+
+		pixel Manju as Taji "I'm here to arrange and collect books. In a library."
+
+		pixel Manju as Taji "Talking isn't exactly needed here."
+
+		Load("Main 4 - Manju Repeating Dialogue")
+
+	- That's all
+		$ManjuTalkedTo = true
+
+		Seiji "<playerName>...?"
+
+		pixel Ahlai as <playerName> "Oh, my friend seems to be looking for me... He must've realized the book wasn't upstairs."
+
+		pixel Manju as Taji "Well, thank you for making my day job a little <i>less</i> boring."
+
+		pixel Manju as Taji "Make sure you return that book before it's due."
+
+		pixel Ahlai as <playerName> "Will you find me if I don't?"
+
+		pixel Manju as Taji "Yes. And it wouldn't be hard to do so."
+
+		pixel Manju as Taji "Take care."
+
+		HideTextbox(false)
+		ToggleInteractable("Scene 6" "Library 3" Manju false)
+		ToggleNPC("Scene 6" "Library 1" Seiji true)
+		ToggleInteractable("Scene 6" "Library 1" Seiji true)
+}

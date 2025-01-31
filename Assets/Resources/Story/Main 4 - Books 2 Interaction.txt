@@ -7,7 +7,7 @@ if ($RetiredVeteranQuest)
 	pixel Ahlai as <playerName> "I should take this to that man. He did say he wanted to see more of these landscapes..."
 
 	$RetiredVeteranBook = true
-	ToggleInteractable("Scene 6" "Library 1" "Books 2" false)
+	ToggleInteractable("Scene 6" "Library 2" "Books 2" false)
 }
 
 HideTextbox(false)

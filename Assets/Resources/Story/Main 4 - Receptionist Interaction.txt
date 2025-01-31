@@ -8,7 +8,7 @@ if (!$ManjuTalkedTo)
 
 	pixel Ahlai as <playerName> "What makes you say that?"
 
-	pixel Receptionist "Haven't you noticed the signs? The Kanding river, murkier than usual… Crops, not growing properly... There have been numerous complaints."
+	pixel Receptionist "Haven't you noticed the signs? The Kanding river, murkier than usual... Crops, not growing properly... There have been numerous complaints."
 
 	pixel Receptionist "Of course, these are just things I hear from the folks that pass by the library!"
 

@@ -8,5 +8,9 @@ else
 {
 	pixel Seiji "Hey, were you planning on leaving without me?"
 
+	HideTextbox(true)
+	[wait]MoveNPC(Ahlai -x -3.67 -y -2.51)
+	[wait]FlipNPC(Ahlai Right)
+
 	Load("Main 4 - Seiji Interaction")
 }

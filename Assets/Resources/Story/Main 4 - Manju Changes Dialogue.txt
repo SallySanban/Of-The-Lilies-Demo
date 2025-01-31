@@ -1,0 +1,19 @@
+pixel Manju as Taji "There are all sorts of signs. Pests, swarming over produce. The town's crops, decaying with each passing day. Not to mention the Kanding river."
+
+pixel Manju as Taji "If my understanding of the curses is right, then each calamity would be greater than the last."
+
+choice in -1
+{
+	- That sounds convincing.
+		$Manju += 1
+
+		pixel Manju as Taji "But I suppose only time will tell."
+
+	- Aren't they just coincidences?
+		pixel Manju as Taji "You're free to believe what you want."
+
+		pixel Manju as Taji "But all of this happening at the same time is a little strange, isn't it?"
+
+}
+
+Load("Main 4 - Manju Repeating Dialogue")

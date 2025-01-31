@@ -1348,3 +1348,327 @@ MonoBehaviour:
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
+  - sceneName: Scene 7
+    currentBackgroundName: Kuchai Town 3
+    showPlayer: 1
+    playerPosition: {x: 0, y: 0}
+    playerDirection: -1
+    npcsInScene:
+    - npcName: Seiji
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Laisa
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Lien
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: TownCrier
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Reader
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Sato
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier1
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier2
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier3
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    interactablesInScene:
+    - interactableName: Bridge
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Laisa
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Soldier1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Sato
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Reader
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: TownCrier
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Bridge
+      backgroundToGo: Kuchai Town 4
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 1701.75, y: -236.6}
+      playerDirectionInNextBackground: -1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 1833.35, y: -210.6}
+  - sceneName: Scene 7
+    currentBackgroundName: Kuchai Town 4
+    showPlayer: 1
+    playerPosition: {x: 0, y: 0}
+    playerDirection: -1
+    npcsInScene:
+    - npcName: Seiji
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Laisa
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Lien
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: TownCrier
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Reader
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Sato
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier1
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier2
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier3
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    interactablesInScene:
+    - interactableName: Bridge
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Laisa
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Soldier1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Sato
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Reader
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: TownCrier
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Bridge
+      backgroundToGo: Kuchai Town 4
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 1701.75, y: -236.6}
+      playerDirectionInNextBackground: -1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 1833.35, y: -210.6}
+  - sceneName: Scene 7
+    currentBackgroundName: Kuchai Town 2
+    showPlayer: 1
+    playerPosition: {x: 0, y: 0}
+    playerDirection: -1
+    npcsInScene:
+    - npcName: Seiji
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Laisa
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Lien
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: TownCrier
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Reader
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Sato
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier1
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier2
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier3
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    interactablesInScene:
+    - interactableName: Bridge
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Laisa
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Soldier1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Sato
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Reader
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: TownCrier
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Bridge
+      backgroundToGo: Kuchai Town 4
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 1701.75, y: -236.6}
+      playerDirectionInNextBackground: -1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 1833.35, y: -210.6}
+  - sceneName: Scene 7
+    currentBackgroundName: Kuchai Town 1
+    showPlayer: 1
+    playerPosition: {x: 0, y: 0}
+    playerDirection: -1
+    npcsInScene:
+    - npcName: Seiji
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Laisa
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Lien
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: TownCrier
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Reader
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Sato
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier1
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier2
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier3
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    interactablesInScene:
+    - interactableName: Bridge
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Laisa
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Soldier1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Sato
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Reader
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: TownCrier
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Bridge
+      backgroundToGo: Kuchai Town 4
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 1701.75, y: -236.6}
+      playerDirectionInNextBackground: -1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 1833.35, y: -210.6}

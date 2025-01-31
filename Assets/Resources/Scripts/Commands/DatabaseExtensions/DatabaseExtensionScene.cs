@@ -140,8 +140,6 @@ namespace Commands
 
         private static IEnumerator MoveNPC(string[] data)
         {
-            NPC npc = NPCManager.Instance.GetNPC(data[0]);
-
             var parameters = ConvertDataToParameters(data);
 
             float x;
@@ -154,7 +152,19 @@ namespace Commands
 
             Vector2 position = new Vector2(x, y);
 
-            yield return npc.MoveToPosition(npc.root, position, speed: spd);
+            if (data[0].Equals(SceneManager.Instance.MC_NAME))
+            {
+                PixelSprite player = SceneManager.Instance.player;
+                GameObject root = SceneManager.Instance.player.root;
+
+                yield return player.MoveToPosition(root, position, speed: spd);
+            }
+            else
+            {
+                NPC npc = NPCManager.Instance.GetNPC(data[0]);
+
+                yield return npc.MoveToPosition(npc.root, position, speed: spd);
+            }
         }
 
         private static void SetNPCPosition(string[] data)

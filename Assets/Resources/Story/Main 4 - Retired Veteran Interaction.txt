@@ -19,7 +19,7 @@ if (!$RetiredVeteranQuest)
 
 			pixel RetiredVeteran as Retired Veteran "I'll be waiting here."
 
-			pixel RetiredVeteran as Retired Veteran "A book on Bisasagi, huh?"
+			pixel Ahlai as <playerName> "A book on Bisasagi, huh?"
 
 			if ($InteractedBulletinBoard)
 			{
@@ -60,7 +60,7 @@ else
 
 		pixel RetiredVeteran as Retired Veteran "'I climb the peak so that I may adore you in your entirety. O Bisasagi, how your water nourishes me. The sunset welcomes our meeting and I fall for you again like it was my first time gazing upon you.'"
 
-		pixel RetiredVeteran as Retired Veteran "Heh, this poet’s good. And that description of hers is how I would describe seeing my wife on that mountaintop."
+		pixel RetiredVeteran as Retired Veteran "Heh, this poet's good. And that description of hers is how I would describe seeing my wife on that mountaintop."
 
 		pixel RetiredVeteran as Retired Veteran "It was like falling in love with her for the first time again. Proposing to her brought me back to my younger days, when I was afraid to even just talk to her."
 

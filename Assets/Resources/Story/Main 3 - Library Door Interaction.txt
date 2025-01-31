@@ -10,16 +10,20 @@ if ($LibraryQuest)
 	pixel Seiji "Come on, we might find the book faster if we split up. I'll look upstairs, and you can take this floor."
 
 	HideTextbox(false)
-	[wait]Blackout()
 	ToggleNPC("Scene 6" "Library 1" Seiji false)
 	[wait]SwitchScene("Scene 6" "Library 1")
-	[wait]HideCG()
 
 	$RetiredVeteranQuest = false
 	$RetiredVeteranBook = false
 	$ManjuTalkedTo = false
 	$GotBackToSeiji = false
 	$InteractedBulletinBoard = false
+	$DoAlreadyChosen = false
+	$ChooseWorkAlreadyChosen = false
+	$FavouriteBookAlreadyChosen = false
+	$ChangesAlreadyChosen = false
+	$CursesAlreadyChosen = false
+	$ManjuDialogueOptions = 0
 }
 else
 {
