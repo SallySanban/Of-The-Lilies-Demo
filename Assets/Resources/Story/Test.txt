@@ -1,15 +1,3 @@
 input
 
-$LibraryQuest = true
-$RetiredVeteranQuest = false
-$RetiredVeteranBook = false
-$ManjuTalkedTo = false
-$GotBackToSeiji = false
-$InteractedBulletinBoard = false
-$DoAlreadyChosen = false
-$ChooseWorkAlreadyChosen = false
-$FavouriteBookAlreadyChosen = false
-$ChangesAlreadyChosen = false
-$CursesAlreadyChosen = false
-$ManjuDialogueOptions = 0
-ShowScene("Scene 5" "Kuchai Town 3")
+ShowScene("Scene 7" "Kuchai Town 1")

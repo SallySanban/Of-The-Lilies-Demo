@@ -1,0 +1,5 @@
+pixel Quan as Mr. Quan "<playerName>! Sorry, but we're closed now."
+
+pixel Quan as Mr. Quan "Come back tomorrow morning!"
+
+HideTextbox(false)

@@ -1,0 +1,5 @@
+pixel Seiji "We're not done with our tasks yet!"
+
+pixel Seiji "Lady Sabina will give us a scolding if we come back without finishing them."
+
+HideTextbox(false)

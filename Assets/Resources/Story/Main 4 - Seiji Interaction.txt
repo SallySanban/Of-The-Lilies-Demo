@@ -26,3 +26,66 @@ pixel Ahlai as <playerName> "Then, let's go!"
 
 HideTextbox(false)
 [wait]SwitchScene("Scene 7" "Kuchai Town 3")
+FlipNPC(Seiji Left)
+[wait]PanCamera(-x -16.81 -spd 5)
+
+pixel TownCrier as Town Crier "Make way for the Seiyslan army!"
+
+pixel TownCrier as Town Crier "Ilaisaane, the Sea Serpent of the Sea Emperor pirate ship, has finally been captured by General Lien Hieu Van Hoa of the Seiyslan Imperial Army!"
+
+pixel TownCrier as Town Crier "Here is a message from General Lien himself!"
+
+HideTextbox(true)
+[wait]Blackout()
+[input]SwitchCG("Lien")
+
+Lien as General Lien "Citizens of Kuchai Town - self-declared criminals are nothing to the sheer might of the Seisylan Empire, a lesson that the Sea Emperor clearly has yet to learn."
+
+Lien as General Lien "Let this serve as a warning. Any threats or attacks will face the full force of the <b>Imperial Army of Seiysla</b>."
+
+Lien as General Lien "Our army remains dedicated to serving, protecting our nation, and ensuring the safety of our people. For the good of the Empire."
+
+HideTextbox(true)
+[wait]Blackout()
+
+Ahlai as <playerName> "For the good of the Empire, huh? He really hasn't changed..."
+
+HideTextbox(true)
+[wait]HideCG()
+
+pixel TownCrier as Town Crier "With the pirate in custody, she will now be facing swift and appropriate justice for her criminal acts against the Kingdom of Seiysla!"
+
+pixel TownCrier as Town Crier "She will be detained right here, in the holding cells of Kuchai Town Hall, as General Lien waits to bring the pirate to the capital!"
+
+HideTextbox(true)
+[wait]Blackout()
+ResetCamera(false)
+RemoveFromScene("Lien")
+SetNPCPosition("TownCrier" -x -1599.45 -y -193.32)
+FlipNPC("TownCrier" Left)
+[wait]HideCG()
+
+choice in -1
+{
+	- I want to get closer.
+		$Laisa += 1
+
+		pixel Seiji "<playerName>... We still have to buy those drinks, remember?"
+
+		pixel Seiji "And she could be dangerous... they caught her for a reason. She's a criminal, isn't she?"
+
+		pixel Ahlai as <playerName> "It'll only be for a little while, Seiji. We can get those drinks after."
+
+		$GetCloser = true
+
+	- Let's go get those drinks.
+		pixel Seiji "Good call, <playerName>."
+
+		$GetCloser = false
+}
+
+[wait]HideTextbox(false)
+FollowPlayer("Seiji")
+
+
+

@@ -1,0 +1,5 @@
+pixel GossipGirl2 as ??? "I talked to Myo Aciano! He's so nice! And so handsome! My ideal man..."
+
+pixel GossipGirl1 as ??? "I don't know, don't you think he's a little... flirty? You two just met and he's so... forward."
+
+HideTextbox(false)

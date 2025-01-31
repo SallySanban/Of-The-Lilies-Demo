@@ -1,0 +1,5 @@
+pixel MaleListener as ??? "Sabina's Salves is closing soon."
+
+pixel FemaleListener as ??? "They work so hard every day. Rumour has it that their jobs have become even more demanding with all these strange happenings going on."
+
+HideTextbox(false)

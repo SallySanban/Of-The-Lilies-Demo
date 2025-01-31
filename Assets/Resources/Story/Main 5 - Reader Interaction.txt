@@ -1,0 +1,5 @@
+pixel Reader as ??? "Incredible work from the Seiyslan army!"
+
+pixel Reader as ??? "I expected nothing less from the great General Lien!"
+
+HideTextbox(false)

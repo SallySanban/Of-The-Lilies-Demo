@@ -1,0 +1,3 @@
+pixel Salesperson3 as Salesperson "We're closed!"
+
+HideTextbox(false)

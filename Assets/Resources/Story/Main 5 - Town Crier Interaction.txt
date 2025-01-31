@@ -1,0 +1,30 @@
+if ($GetCloser)
+{
+	[wait]PanCamera(-x -17.3 -spd 2)
+
+	pixel Soldier1 as Seiyslan Soldier "Yeah! Good going, boy!"
+
+	pixel Soldier2 as Seiyslan Soldier "Brilliant speech!"
+
+	pixel Soldier2 as Seiyslan Soldier "You really sold us well to the people!"
+
+	pixel TownCrier as Town Crier "For the record, I am not proud of any of this..."
+
+	pixel Soldier3 as Seiyslan Soldier "Oh, lighten up! This will only strengthen the people's faith in the military."
+
+	pixel Soldier2 as Seiyslan Soldier "Yeah, and that'll get us more funding!"
+
+	pixel Soldier1 as Seiyslan Soldier "This sort of thing is good for us. Don't be so serious."
+
+	pixel TownCrier as Town Crier "Good for <i>you</i>. All I get is your constant tampering with my job..."
+
+	pixel Soldier1 as Seiyslan Soldier "Whatever you say, boy."
+
+	ResetCamera(true)
+}
+else
+{
+	pixel Seiji "Don't pay any mind to them, <playerName>. We should get going."
+}
+
+HideTextbox(false)

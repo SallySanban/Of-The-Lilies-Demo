@@ -835,7 +835,7 @@ MonoBehaviour:
       storyToPlay: 
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Tavern Door
-      interactableType: 1
+      interactableType: 2
       isInteractable: 1
       storyToPlay: Main 3 - Tavern Door Interaction
       moveToInteractPosition: {x: 0, y: 0}
@@ -868,6 +868,13 @@ MonoBehaviour:
       backgroundToGo: Main Shop
       keyToPress: 3
       playerPositionInNextBackground: {x: -2306.26, y: -262.05}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Tavern Door
+      backgroundToGo: Tavern
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -944,6 +951,11 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Nari
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Nari Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Right Side
@@ -1201,10 +1213,10 @@ MonoBehaviour:
     - interactableName: Door
       backgroundToGo: Kuchai Town 3
       keyToPress: 3
-      playerPositionInNextBackground: {x: 0, y: 0}
+      playerPositionInNextBackground: {x: 4082.26, y: -232.5}
       playerDirectionInNextBackground: -1
-      followPlayer: 
-      followPlayerPosition: {x: 0, y: 0}
+      followPlayer: Seiji
+      followPlayerPosition: {x: 4326.55, y: -210.6}
   - sceneName: Scene 6
     currentBackgroundName: Library 2
     showPlayer: 1
@@ -1351,43 +1363,43 @@ MonoBehaviour:
   - sceneName: Scene 7
     currentBackgroundName: Kuchai Town 3
     showPlayer: 1
-    playerPosition: {x: 0, y: 0}
+    playerPosition: {x: 4082.26, y: -232.51}
     playerDirection: -1
     npcsInScene:
     - npcName: Seiji
-      position: {x: 0, y: 0}
+      position: {x: 4326.55, y: -210.6}
       appear: 1
       animationState: Idle
     - npcName: Laisa
-      position: {x: 0, y: 0}
+      position: {x: -2082.45, y: -193.32}
       appear: 1
       animationState: Idle
     - npcName: Lien
-      position: {x: 0, y: 0}
+      position: {x: -1708.92, y: -150.67}
       appear: 1
       animationState: Idle
     - npcName: TownCrier
-      position: {x: 0, y: 0}
+      position: {x: -1287.45, y: -193.32}
       appear: 1
       animationState: Idle
     - npcName: Reader
-      position: {x: 0, y: 0}
+      position: {x: -496.45, y: -193.32}
       appear: 1
       animationState: Idle
     - npcName: Sato
-      position: {x: 0, y: 0}
+      position: {x: -4341.45, y: -193.32}
       appear: 1
       animationState: Idle
     - npcName: Soldier1
-      position: {x: 0, y: 0}
+      position: {x: -2419.45, y: -193.32}
       appear: 1
       animationState: Idle
     - npcName: Soldier2
-      position: {x: 0, y: 0}
+      position: {x: -2255.45, y: -193.32}
       appear: 1
       animationState: Idle
     - npcName: Soldier3
-      position: {x: 0, y: 0}
+      position: {x: -1897.45, y: -193.32}
       appear: 1
       animationState: Idle
     interactablesInScene:
@@ -1399,28 +1411,28 @@ MonoBehaviour:
     - interactableName: Laisa
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 5
+      moveToInteractPosition: {x: -15.49, y: -2.15}
     - interactableName: Soldier1
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 5 - Soldier Interaction
+      moveToInteractPosition: {x: -15.49, y: -2.15}
     - interactableName: Sato
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 5 - Sato Interaction
+      moveToInteractPosition: {x: -38.18, y: -2.15}
     - interactableName: Reader
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 5 - Reader Interaction
+      moveToInteractPosition: {x: -7.03, y: -2.15}
     - interactableName: TownCrier
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 5 - Town Crier Interaction
+      moveToInteractPosition: {x: -12.93, y: -2.15}
     backgroundsToGo:
     - interactableName: Bridge
       backgroundToGo: Kuchai Town 4
@@ -1432,243 +1444,225 @@ MonoBehaviour:
   - sceneName: Scene 7
     currentBackgroundName: Kuchai Town 4
     showPlayer: 1
-    playerPosition: {x: 0, y: 0}
-    playerDirection: -1
+    playerPosition: {x: -1523.99, y: -236.6}
+    playerDirection: 1
     npcsInScene:
+    - npcName: Boater
+      position: {x: -1089.65, y: -180.32}
+      appear: 1
+      animationState: Idle
+    - npcName: WaterLooker
+      position: {x: -70.65, y: -185.32}
+      appear: 1
+      animationState: Idle
     - npcName: Seiji
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Laisa
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Lien
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: TownCrier
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Reader
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Sato
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Soldier1
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Soldier2
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Soldier3
-      position: {x: 0, y: 0}
+      position: {x: -1747.12, y: -210.6}
       appear: 1
       animationState: Idle
     interactablesInScene:
-    - interactableName: Bridge
+    - interactableName: Boater
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3 - Boater Interaction
+      moveToInteractPosition: {x: -12.34, y: -2.19}
+    - interactableName: WaterLooker
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 3 - Water Looker Interaction
+      moveToInteractPosition: {x: -2.8, y: -2.19}
+    - interactableName: Left Side
       interactableType: 2
       isInteractable: 1
       storyToPlay: 
       moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Laisa
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Soldier1
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Sato
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Reader
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: TownCrier
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    backgroundsToGo:
-    - interactableName: Bridge
-      backgroundToGo: Kuchai Town 4
-      keyToPress: 3
-      playerPositionInNextBackground: {x: 1701.75, y: -236.6}
-      playerDirectionInNextBackground: -1
-      followPlayer: Seiji
-      followPlayerPosition: {x: 1833.35, y: -210.6}
-  - sceneName: Scene 7
-    currentBackgroundName: Kuchai Town 2
-    showPlayer: 1
-    playerPosition: {x: 0, y: 0}
-    playerDirection: -1
-    npcsInScene:
-    - npcName: Seiji
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Laisa
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Lien
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: TownCrier
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Reader
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Sato
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Soldier1
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Soldier2
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Soldier3
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    interactablesInScene:
-    - interactableName: Bridge
+    - interactableName: Right Side
       interactableType: 2
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Laisa
-      interactableType: 0
+      storyToPlay: Main 5 - Leave Bridge Interaction
+      moveToInteractPosition: {x: 14.77, y: -2.19}
+    - interactableName: Dock
+      interactableType: 1
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Soldier1
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Sato
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Reader
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: TownCrier
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Dock Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
-    - interactableName: Bridge
-      backgroundToGo: Kuchai Town 4
-      keyToPress: 3
-      playerPositionInNextBackground: {x: 1701.75, y: -236.6}
+    - interactableName: Left Side
+      backgroundToGo: Kuchai Town 1
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 4530.73, y: -244.74}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
-      followPlayerPosition: {x: 1833.35, y: -210.6}
+      followPlayerPosition: {x: 4749.48, y: -218.71}
+    - interactableName: Right Side
+      backgroundToGo: Kuchai Town 3
+      keyToPress: 1
+      playerPositionInNextBackground: {x: -3706.83, y: -232.51}
+      playerDirectionInNextBackground: 1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 7
     currentBackgroundName: Kuchai Town 1
     showPlayer: 1
-    playerPosition: {x: 0, y: 0}
+    playerPosition: {x: -3436.47, y: -244.74}
     playerDirection: -1
     npcsInScene:
+    - npcName: GossipGirl1
+      position: {x: 2021.04, y: -189.32}
+      appear: 1
+      animationState: Idle
+    - npcName: GossipGirl2
+      position: {x: 2187.04, y: -189.32}
+      appear: 1
+      animationState: Idle
+    - npcName: MaleListener
+      position: {x: 282.04, y: -189.32}
+      appear: 1
+      animationState: Idle
+    - npcName: FemaleListener
+      position: {x: 480.04, y: -189.32}
+      appear: 1
+      animationState: Idle
     - npcName: Seiji
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Laisa
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Lien
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: TownCrier
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Reader
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Sato
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Soldier1
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Soldier2
-      position: {x: 0, y: 0}
-      appear: 1
-      animationState: Idle
-    - npcName: Soldier3
-      position: {x: 0, y: 0}
+      position: {x: -3868.96, y: -217.32}
       appear: 1
       animationState: Idle
     interactablesInScene:
+    - interactableName: GossipGirl2
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Gossip Interaction
+      moveToInteractPosition: {x: 16.51, y: -2.27}
+    - interactableName: MaleListener
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Listener Interaction
+      moveToInteractPosition: {x: 6.71, y: -2.27}
+    - interactableName: Sabina Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 5 - Enter Sabina Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Tavern Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 5 - Enter Tavern Interaction
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Bridge
       interactableType: 2
       isInteractable: 1
       storyToPlay: 
       moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Laisa
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Soldier1
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Sato
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Reader
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: TownCrier
-      interactableType: 0
+    - interactableName: Market
+      interactableType: 2
       isInteractable: 1
       storyToPlay: 
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
+    - interactableName: Market
+      backgroundToGo: Kuchai Town 2
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 4050.6, y: -235.45}
+      playerDirectionInNextBackground: -1
+      followPlayer: Seiji
+      followPlayerPosition: {x: 0, y: 0}
     - interactableName: Bridge
       backgroundToGo: Kuchai Town 4
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1701.75, y: -236.6}
-      playerDirectionInNextBackground: -1
+      playerPositionInNextBackground: {x: -1523.99, y: -236.6}
+      playerDirectionInNextBackground: 1
       followPlayer: Seiji
-      followPlayerPosition: {x: 1833.35, y: -210.6}
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Tavern Door
+      backgroundToGo: Tavern
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 0, y: 0}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Sabina Door
+      backgroundToGo: Main Shop
+      keyToPress: 3
+      playerPositionInNextBackground: {x: -2306.26, y: -262.05}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+  - sceneName: Scene 7
+    currentBackgroundName: Kuchai Town 2
+    showPlayer: 1
+    playerPosition: {x: 4050.6, y: -235.45}
+    playerDirection: -1
+    npcsInScene:
+    - npcName: Quan
+      position: {x: -1436.34, y: -192.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Salesperson1
+      position: {x: -3983.34, y: -218.81}
+      appear: 1
+      animationState: Idle
+    - npcName: Salesperson2
+      position: {x: -2707.34, y: -192.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Salesperson3
+      position: {x: 2106.66, y: -192.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Seiji
+      position: {x: 4251.06, y: -209.45}
+      appear: 1
+      animationState: Idle
+    interactablesInScene:
+    - interactableName: Quan
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Quan Interaction
+      moveToInteractPosition: {x: -11.2, y: -2.18}
+    - interactableName: Salesperson1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Salesperson1 Interaction
+      moveToInteractPosition: {x: -34.84, y: -2.18}
+    - interactableName: Salesperson2
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Salesperson2 Interaction
+      moveToInteractPosition: {x: -23.04, y: -2.18}
+    - interactableName: Salesperson3
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Salesperson3 Interaction
+      moveToInteractPosition: {x: 21.51, y: -2.18}
+    - interactableName: Right Side
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Nari
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: Main 3 - Nari Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Right Side
+      backgroundToGo: Kuchai Town 1
+      keyToPress: 1
+      playerPositionInNextBackground: {x: -4888.15, y: -244.74}
+      playerDirectionInNextBackground: 1
+      followPlayer: Seiji
+      followPlayerPosition: {x: -5066.96, y: -218.57}
+  - sceneName: Scene 8
+    currentBackgroundName: Tavern
+    showPlayer: 1
+    playerPosition: {x: 0, y: 0}
+    playerDirection: 1
+    npcsInScene: []
+    interactablesInScene: []
+    backgroundsToGo:
+    - interactableName: Left Side
+      backgroundToGo: Kuchai Town 1
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 0, y: 0}
+      playerDirectionInNextBackground: 1
+      followPlayer: Seiji
+      followPlayerPosition: {x: -5066.96, y: -218.57}

@@ -1,0 +1,82 @@
+if ($GetCloser)
+{
+	[wait]PanCamera(-x -17.3 -spd 2)
+
+	pixel Soldier1 as Seiyslan Soldier "Hey, you! Don't get too close. This woman is dangerous."
+
+	pixel Ahlai as <playerName> "So you're the famous Ilaisaane of the Sea Emperor."
+
+	pixel Laisa as Ilaisaane "The one and only."
+
+	pixel Laisa as Ilaisaane "And more recently, the general's pain in the ass."
+
+	pixel Laisa as Ilaisaane "Look at all these chains. It takes a special kind of behavior to get this level of treatment."
+
+	pixel Ahlai as <playerName> "You must've really pissed him off, huh?"
+
+	pixel Laisa as Ilaisaane "Years of doing so, yes."
+
+	pixel Laisa as Ilaisaane "And I don't plan on today being the end of it."
+
+	pixel Ahlai as <playerName> "That's some dedication."
+
+	pixel Laisa as Ilaisaane "That's what happens when he gets in your way."
+
+	pixel Ahlai as <playerName> "..."
+
+	pixel Laisa as Ilaisaane "What's this? I can see it in your face."
+
+	pixel Laisa as Ilaisaane "You've had your own fair share of history with the general, haven't you?"
+
+	choice in -1
+	{
+		- Not as much as you.
+			$Laisa += 1
+
+			pixel Laisa as Ilaisaane "So you admit it."
+
+			pixel Laisa as Ilaisaane "That'd be an interesting story to hear on another day."
+
+			pixel Ahlai as <playerName> "You sound like you already know how you'll escape."
+
+			pixel Laisa as Ilaisaane "Well, time has a way of shifting in my favor."
+
+			pixel Soldier1 as Seiyslan Soldier "Not this time. Don't even think about trying to get away."
+
+		- I can't tell you that...
+			pixel Laisa as Ilaisaane "You don't have to hide it."
+
+			pixel Laisa as Ilaisaane "Those pretty little eyes of yours are telling me everything."
+
+			pixel Laisa as Ilaisaane "But I understand you'd want to keep your mouth shut in front of all these uptight grunts."
+	}
+
+	pixel Laisa as Ilaisaane "How about this, hmm?"
+
+	pixel Laisa as Ilaisaane "I'll listen to what you have to say if you do me a little favor. What do you say?"
+
+	choice in -1
+	{
+		- What favor?
+			$Laisa += 1
+
+			pixel Soldier1 as Seiyslan Soldier "You won't be doing any favors for the pirate today."
+
+			pixel Soldier1 as Seiyslan Soldier "You've talked to her enough. Hurry along before she does anything dangerous."
+
+		- I can't do that.
+			pixel Laisa as Ilaisaane "That's a shame. Not that I actually needed it."
+
+			pixel Soldier1 as Seiyslan Soldier "Okay, you've talked to the pirate enough. Hurry along before she does something dangerous."
+	}
+
+	pixel Laisa as Ilaisaane "Don't worry. We'll see each other again."
+
+	ResetCamera(true)
+}
+else
+{
+	pixel Seiji "It's too dangerous, <playerName>."
+}
+
+HideTextbox(false)

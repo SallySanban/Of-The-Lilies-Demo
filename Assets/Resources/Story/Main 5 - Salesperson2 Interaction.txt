@@ -1,0 +1,3 @@
+pixel Salesperson2 as Salesperson "Sorry pal, we're closed now. The market's only open in the morning."
+
+HideTextbox(false)

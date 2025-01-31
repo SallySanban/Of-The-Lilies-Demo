@@ -1,0 +1,5 @@
+pixel Sato as Mr. Sato "Oh, dear... Criminal activity..."
+
+pixel Sato as Mr. Sato "It makes me wonder if she was caught for the right reasons, don't you, <playerName>?"
+
+HideTextbox(false)
