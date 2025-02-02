@@ -105,22 +105,23 @@ public class PlayerInputManager : MonoBehaviour
 
     public void MovePlayer(InputAction.CallbackContext context)
     {
-        if (Player.Instance == null)
+        if (SceneManager.Instance.player == null)
         {
             return;
         }
 
         if ((isRunningConversation && !InteractableManager.Instance.playerInsideStopTrigger) || InteractableManager.Instance.playerInsideStopTrigger)
         {
-            Player.Instance.move = Vector2.zero;
+            SceneManager.Instance.player.StopMoving();
+
             return;
         }
 
-        Player.Instance.move = context.ReadValue<Vector2>();
+        SceneManager.Instance.player.move = context.ReadValue<Vector2>();
 
         if (context.canceled)
         {
-            Player.Instance.move = Vector2.zero;
+            SceneManager.Instance.player.StopMoving();
         }
     }
 

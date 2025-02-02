@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class Player : PixelSprite
@@ -15,7 +16,7 @@ public class Player : PixelSprite
     private const float SPEED = 3f;
     private const float STEPS = 2f;
 
-    public Player(GameObject prefab, Transform parent, Vector2 position, int direction)
+    public Player(GameObject prefab, Transform parent, Vector2 position, int direction, string animationState)
     {
         Instance = this;
         
@@ -24,6 +25,8 @@ public class Player : PixelSprite
         SetPosition(root, position);
 
         animator = root.GetComponentInChildren<Animator>();
+
+        animator.Play(animationState);
 
         animator.SetBool("Flipped", direction < 0);
 
@@ -46,6 +49,12 @@ public class Player : PixelSprite
         {
             animator.SetBool("isWalking", false);
         }
+    }
+
+    public void StopMoving()
+    {
+        animator.SetBool("isWalking", false);
+        move = Vector2.zero;
     }
 
     //uses world position

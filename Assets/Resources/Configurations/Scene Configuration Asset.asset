@@ -18,6 +18,7 @@ MonoBehaviour:
     showPlayer: 0
     playerPosition: {x: 0, y: 0}
     playerDirection: 0
+    playerAnimationState: 
     npcsInScene:
     - npcName: Dad
       position: {x: -184.94, y: -189.66}
@@ -40,8 +41,9 @@ MonoBehaviour:
   - sceneName: Scene 2
     currentBackgroundName: Tayabac House 2nd Floor
     showPlayer: 1
-    playerPosition: {x: -0.01, y: -67.71}
+    playerPosition: {x: -3.73, y: -82.32}
     playerDirection: -1
+    playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: Dad
       position: {x: -151.94, y: -197.66}
@@ -69,7 +71,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 1 - Banig Interaction
-      moveToInteractPosition: {x: -5.24, y: -0.62}
+      moveToInteractPosition: {x: -5.24, y: -0.76}
     - interactableName: Hearth
       interactableType: 1
       isInteractable: 1
@@ -79,12 +81,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Mom Interaction
-      moveToInteractPosition: {x: -3.9, y: -0.62}
+      moveToInteractPosition: {x: -3.9, y: -0.76}
     - interactableName: Dad
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Dad Interaction
-      moveToInteractPosition: {x: 0.68, y: -0.62}
+      moveToInteractPosition: {x: 0.68, y: -0.76}
     - interactableName: Ladder
       interactableType: 2
       isInteractable: 1
@@ -94,12 +96,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Laya Alonay Interaction
-      moveToInteractPosition: {x: 1.14, y: -0.62}
+      moveToInteractPosition: {x: 1.14, y: -0.76}
     - interactableName: Dalawi
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Dalawi Interaction
-      moveToInteractPosition: {x: 5.03, y: -0.62}
+      moveToInteractPosition: {x: 5.03, y: -0.76}
     backgroundsToGo:
     - interactableName: Ladder
       backgroundToGo: Tayabac House 1st Floor
@@ -113,6 +115,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -0.02, y: -227.17}
     playerDirection: -1
+    playerAnimationState: TayabacIdleLeft
     npcsInScene: []
     interactablesInScene:
     - interactableName: Pound Rice
@@ -158,8 +161,9 @@ MonoBehaviour:
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Village
     showPlayer: 1
-    playerPosition: {x: -1522.89, y: -238.22}
+    playerPosition: {x: -1522.89, y: -224.2}
     playerDirection: -1
+    playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: MaleNPC1
       position: {x: -3860.97, y: -173.84}
@@ -213,42 +217,42 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 1 - Cliffside Interaction
-      moveToInteractPosition: {x: -54.81, y: -2.11}
+      moveToInteractPosition: {x: -54.81, y: -2.08}
     - interactableName: MaleNPC1
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Cloud Rats Interaction
-      moveToInteractPosition: {x: -18.3, y: -2.11}
+      moveToInteractPosition: {x: -18.3, y: -2.08}
     - interactableName: MaleNPC2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - To Do Interaction
-      moveToInteractPosition: {x: 62.03, y: -2.11}
+      moveToInteractPosition: {x: 62.03, y: -2.08}
     - interactableName: MaleNPC3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Fixed Equipment Interaction
-      moveToInteractPosition: {x: -1.12, y: -2.11}
+      moveToInteractPosition: {x: -1.12, y: -2.08}
     - interactableName: MaleNPC4
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Combat Guy Interaction
-      moveToInteractPosition: {x: 73.23, y: -2.11}
+      moveToInteractPosition: {x: 73.23, y: -2.08}
     - interactableName: FemNPC1
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Crops Interaction
-      moveToInteractPosition: {x: 27, y: -2.11}
+      moveToInteractPosition: {x: 27, y: -2.08}
     - interactableName: FemNPC2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Question Interaction
-      moveToInteractPosition: {x: 4.85, y: -2.11}
+      moveToInteractPosition: {x: 4.85, y: -2.08}
     - interactableName: FemNPC3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Daniw Wife Interaction
-      moveToInteractPosition: {x: 47.96, y: -2.11}
+      moveToInteractPosition: {x: 47.96, y: -2.08}
     - interactableName: Turnip
       interactableType: 1
       isInteractable: 0
@@ -297,8 +301,9 @@ MonoBehaviour:
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Fireplace
     showPlayer: 1
-    playerPosition: {x: -39.03, y: -85.96}
+    playerPosition: {x: -39.03, y: -82.32}
     playerDirection: 1
+    playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: FemSittingNPC
       position: {x: -538.68, y: -300.18}
@@ -313,12 +318,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - FemSitting Interaction
-      moveToInteractPosition: {x: -2.98, y: -0.8}
+      moveToInteractPosition: {x: -2.98, y: -0.76}
     - interactableName: MaleSittingNPC
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - MaleSitting Interaction
-      moveToInteractPosition: {x: 3.1, y: -0.8}
+      moveToInteractPosition: {x: 3.1, y: -0.76}
     - interactableName: Village Entrance
       interactableType: 2
       isInteractable: 1
@@ -335,8 +340,9 @@ MonoBehaviour:
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Cliffside 1
     showPlayer: 1
-    playerPosition: {x: 1977.22, y: -227.17}
+    playerPosition: {x: 1977.22, y: -223.2}
     playerDirection: -1
+    playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: Aya
       position: {x: -2786.25, y: -580.6}
@@ -364,8 +370,9 @@ MonoBehaviour:
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Cliffside 2
     showPlayer: 1
-    playerPosition: {x: 1270.26, y: -227.17}
+    playerPosition: {x: 1270.26, y: -223.2}
     playerDirection: -1
+    playerAnimationState: TayabacIdleLeft
     npcsInScene: []
     interactablesInScene:
     - interactableName: Left Exit
@@ -394,8 +401,9 @@ MonoBehaviour:
   - sceneName: Scene 3
     currentBackgroundName: Tayabac Village Burning
     showPlayer: 1
-    playerPosition: {x: -7868.96, y: -228.19}
+    playerPosition: {x: -7868.96, y: -224.2}
     playerDirection: 1
+    playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: FemNPC1
       position: {x: 1446.07, y: -199.88}
@@ -459,14 +467,11 @@ MonoBehaviour:
     backgroundsToGo: []
   - sceneName: Scene 4
     currentBackgroundName: Riverside Pathway
-    showPlayer: 0
-    playerPosition: {x: 0, y: 0}
-    playerDirection: 0
-    npcsInScene:
-    - npcName: Ahlai
-      position: {x: -528.66, y: -500.41}
-      appear: 1
-      animationState: IdleRight
+    showPlayer: 1
+    playerPosition: {x: -528.66, y: -500.41}
+    playerDirection: 1
+    playerAnimationState: ChainedWalk
+    npcsInScene: []
     interactablesInScene: []
     backgroundsToGo: []
   - sceneName: Scene 5
@@ -474,6 +479,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -1001.34, y: -227.16}
     playerDirection: 1
+    playerAnimationState: IdleLeft
     npcsInScene: []
     interactablesInScene:
     - interactableName: Conspiracy Wall
@@ -539,6 +545,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -1277.97, y: -227.16}
     playerDirection: 1
+    playerAnimationState: IdleLeft
     npcsInScene: []
     interactablesInScene:
     - interactableName: Ahlai Door
@@ -594,6 +601,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: 1311.99, y: -227.16}
     playerDirection: -1
+    playerAnimationState: IdleLeft
     npcsInScene: []
     interactablesInScene:
     - interactableName: Barrels
@@ -651,6 +659,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: 2277.64, y: -262.05}
     playerDirection: -1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Sabina
       position: {x: 631.78, y: -218.32}
@@ -778,6 +787,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -3436.47, y: -244.74}
     playerDirection: -1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Myo
       position: {x: 3180.04, y: -189.32}
@@ -909,6 +919,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: 4050.6, y: -235.45}
     playerDirection: -1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: DesperateGirl
       position: {x: -257.34, y: -192.32}
@@ -996,6 +1007,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -3706.83, y: -232.51}
     playerDirection: 1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Sato
       position: {x: -4997.45, y: -193.32}
@@ -1076,6 +1088,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -1523.99, y: -236.6}
     playerDirection: 1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Boater
       position: {x: -1089.65, y: -180.32}
@@ -1144,6 +1157,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -554, y: -270.88}
     playerDirection: 1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Seiji
       position: {x: -211.58, y: -215.32}
@@ -1248,6 +1262,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -1984.83, y: -251.24}
     playerDirection: 1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: CoupleSit1
       position: {x: 698.31, y: -505.32}
@@ -1322,6 +1337,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: 1723.11, y: -251.24}
     playerDirection: 1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: StudentSit1
       position: {x: -269.59, y: -479.32}
@@ -1391,6 +1407,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: 4082.26, y: -232.51}
     playerDirection: -1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Seiji
       position: {x: 4326.55, y: -210.6}
@@ -1472,6 +1489,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -1523.99, y: -236.6}
     playerDirection: 1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Boater
       position: {x: -1089.65, y: -180.32}
@@ -1531,6 +1549,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -3436.47, y: -244.74}
     playerDirection: -1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: GossipGirl1
       position: {x: 2021.04, y: -189.32}
@@ -1617,6 +1636,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: 4050.6, y: -235.45}
     playerDirection: -1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Quan
       position: {x: -1436.34, y: -192.32}
@@ -1682,6 +1702,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -2249.73, y: -270.88}
     playerDirection: 1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: StudentSit3
       position: {x: 0, y: 0}

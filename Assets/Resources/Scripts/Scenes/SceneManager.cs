@@ -75,9 +75,16 @@ public class SceneManager : MonoBehaviour
 
     private void Update()
     {
-        if (player != null && !InteractableManager.Instance.playerInsideStopTrigger)
+        if (player != null)
         {
-            player.Move();
+            if (InteractableManager.Instance.playerInsideStopTrigger)
+            {
+                player.StopMoving();
+            }
+            else
+            {
+                player.Move();
+            }
         }
     }
 
@@ -160,6 +167,7 @@ public class SceneManager : MonoBehaviour
 
     public void RemoveScene()
     {
+        player = null;
         followPlayer = false;
         follower = null;
 
@@ -172,7 +180,7 @@ public class SceneManager : MonoBehaviour
 
     private void PutPlayerInScene(bool playerOverride = false, Vector2 playerPositionOverride = default, int playerDirectionOverride = 0)
     {
-        (bool playerInScene, Vector2 playerPosition, int playerDirection) = config.GetPlayerInfo(currentSceneName, currentBackground);
+        (bool playerInScene, Vector2 playerPosition, int playerDirection, string playerAnimationState) = config.GetPlayerInfo(currentSceneName, currentBackground);
 
         if(playerPositionOverride != playerPosition && playerPositionOverride != Vector2.zero)
         {
@@ -188,7 +196,7 @@ public class SceneManager : MonoBehaviour
         {
             GameObject playerPrefab = FilePaths.GetPrefabFromPath(FilePaths.spritesPrefabPath, MC_NAME);
 
-            player = new Player(playerPrefab, currentScene.transform.Find(SPRITES_OBJECTNAME), playerPosition, playerDirection);
+            player = new Player(playerPrefab, currentScene.transform.Find(SPRITES_OBJECTNAME), playerPosition, playerDirection, playerAnimationState);
 
             studioListener.attenuationObject = player.root;
         }

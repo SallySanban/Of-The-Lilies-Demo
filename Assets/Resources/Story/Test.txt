@@ -1,3 +1,4 @@
 input
 
-ShowScene("Scene 2" "Tayabac House 2nd Floor")
+$GotCoconut = true
+ShowScene("Scene 7" "Kuchai Town 1")

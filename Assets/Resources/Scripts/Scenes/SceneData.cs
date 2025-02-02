@@ -10,6 +10,7 @@ public class SceneData
     public bool showPlayer;
     public Vector2 playerPosition;
     public int playerDirection;
+    public string playerAnimationState;
 
     public NPCData[] npcsInScene;
     public InteractableData[] interactablesInScene;
@@ -25,6 +26,7 @@ public class SceneData
         result.showPlayer = showPlayer;
         result.playerPosition = playerPosition;
         result.playerDirection = playerDirection;
+        result.playerAnimationState = playerAnimationState;
 
         result.npcsInScene = npcsInScene?.Select(npc => npc.Copy()).ToArray();
         result.interactablesInScene = interactablesInScene?.Select(interactable => interactable.Copy()).ToArray();

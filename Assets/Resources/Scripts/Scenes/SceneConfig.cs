@@ -183,9 +183,9 @@ public class SceneConfig : ScriptableObject
         return null;
     }
 
-    public (bool, Vector2, int) GetPlayerInfo(string sceneName, string backgroundName)
+    public (bool, Vector2, int, string) GetPlayerInfo(string sceneName, string backgroundName)
     {
-        if (!initialized) return (false, Vector2.zero, 0);
+        if (!initialized) return (false, Vector2.zero, 0, "");
 
         sceneName = sceneName.ToLower();
         backgroundName = backgroundName.ToLower();
@@ -195,11 +195,11 @@ public class SceneConfig : ScriptableObject
             SceneData data = _runtimeScenes[i];
             if (string.Equals(sceneName, data.sceneName.ToLower()) && string.Equals(backgroundName, data.currentBackgroundName.ToLower()))
             {
-                return (data.showPlayer, data.playerPosition, data.playerDirection);
+                return (data.showPlayer, data.playerPosition, data.playerDirection, data.playerAnimationState);
             }
         }
 
-        return (false, Vector2.zero, 0);
+        return (false, Vector2.zero, 0, "");
     }
 }
 
