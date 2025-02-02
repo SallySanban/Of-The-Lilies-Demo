@@ -403,6 +403,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 2195848825473580501}
+  stateChangedDuringStory: 0
 --- !u!1 &3458017774465510512
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +684,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -875.5727, y: 0}
+  m_Offset: {x: -873.0214, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -694,7 +695,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 168.85461, y: 1080}
+  m_Size: {x: 173.95715, y: 1080}
   m_EdgeRadius: 0
 --- !u!61 &5225225446649504888
 BoxCollider2D:
@@ -728,7 +729,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 884.03204, y: 0}
+  m_Offset: {x: 858.1481, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -739,7 +740,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 151.93591, y: 1080}
+  m_Size: {x: 203.70392, y: 1080}
   m_EdgeRadius: 0
 --- !u!1 &4890160013655694191
 GameObject:
@@ -843,6 +844,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 3458017774465510512}
+  stateChangedDuringStory: 0
 --- !u!1 &5522210107343852033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,6 +1058,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 5522210107343852033}
+  stateChangedDuringStory: 0
 --- !u!1 &7876173172009220432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,7 +1130,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.8953705, y: -56.704224}
+  m_Offset: {x: -2.19285, y: -56.704224}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1138,7 +1141,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 118.553696, y: 90.059326}
+  m_Size: {x: 43.201145, y: 90.059326}
   m_EdgeRadius: 0
 --- !u!114 &2336495744319966579
 MonoBehaviour:
@@ -1158,6 +1161,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 8653014112581391082}
+  stateChangedDuringStory: 0
 --- !u!1 &8653014112581391082
 GameObject:
   m_ObjectHideFlags: 0

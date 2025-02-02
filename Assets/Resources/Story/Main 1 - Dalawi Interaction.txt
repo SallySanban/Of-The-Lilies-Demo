@@ -1,16 +1,18 @@
-ShowCharacterLeft(Mom -b Left_SmileLiwani_Body -e Left_SmileLiwani)
-[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Default)
+ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Default)
+[wait]ShowCharacterRight(Dalawi -b Right_Default_Body -e Right_Smile)
 
-Mom at 0 "Oh, <playerName>. It feels like only yesterday that I was cradling you in my arms, just like this."
+Dalawi at 1 "Oi, happy birthday, <playerName>. You've finally come of age."
 
-Mom at 0 "Isn't she cute, dear? Our baby Liwani."
+Dalawi at 1 "But you can always tell me if ya can't actually handle being chief! Haha!"
 
-ChangeBodyEmotion(Mom -b Left_Smile_Body -e Left_Smile)
+ChangeBodyEmotion(Ahlai -b Left_CrossArms_Body -e Left_CrossArmsAngry)
 
-Mom at 0 "Happy 14th birthday, <playerName>. My only wish for you is that you have a long, happy, and fulfilled life."
+Ahlai as <playerName> at 0 "Pfft! Just watch me!"
 
-Mom at 0 "Let's enjoy the celebration later, okay?"
+Dalawi at 1 "I'm waiting, then!"
+
+Dalawi at 1 "Haha, I'm joking. Honestly, Dad chose you for a good reason. So... good luck at the ritual, <playerName>. You'll need it."
 
 HideTextbox(true)
-HideCharacter(Mom)
 HideCharacter(Ahlai)
+HideCharacter(Dalawi)

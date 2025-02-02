@@ -45,7 +45,7 @@ MonoBehaviour:
     characterType: 1
   - name: Dalawi
     alias: dalawi
-    characterType: 0
+    characterType: 1
   - name: Laya
     alias: laya
-    characterType: 0
+    characterType: 1

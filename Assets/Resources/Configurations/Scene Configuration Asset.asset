@@ -28,11 +28,11 @@ MonoBehaviour:
       appear: 1
       animationState: Sitting
     - npcName: Laya
-      position: {x: 0, y: 0}
+      position: {x: 296.32, y: -149.32}
       appear: 1
       animationState: PlayingAlone
     - npcName: Dalawi
-      position: {x: 0, y: 0}
+      position: {x: 752.32, y: -148.32}
       appear: 1
       animationState: Idle
     interactablesInScene: []
@@ -40,7 +40,7 @@ MonoBehaviour:
   - sceneName: Scene 2
     currentBackgroundName: Tayabac House 2nd Floor
     showPlayer: 1
-    playerPosition: {x: -0.04, y: -86.29}
+    playerPosition: {x: -0.01, y: -67.71}
     playerDirection: -1
     npcsInScene:
     - npcName: Dad
@@ -52,9 +52,13 @@ MonoBehaviour:
       appear: 1
       animationState: Sitting
     - npcName: Laya
-      position: {x: 0, y: 0}
+      position: {x: 296.32, y: -149.32}
       appear: 1
       animationState: Playing
+    - npcName: Dalawi
+      position: {x: 752.32, y: -148.32}
+      appear: 1
+      animationState: Idle
     interactablesInScene:
     - interactableName: Chest
       interactableType: 1
@@ -65,7 +69,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 1 - Banig Interaction
-      moveToInteractPosition: {x: -5.24, y: -0.8}
+      moveToInteractPosition: {x: -5.24, y: -0.62}
     - interactableName: Hearth
       interactableType: 1
       isInteractable: 1
@@ -75,12 +79,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Mom Interaction
-      moveToInteractPosition: {x: -3.9, y: -0.8}
+      moveToInteractPosition: {x: -3.9, y: -0.62}
     - interactableName: Dad
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Dad Interaction
-      moveToInteractPosition: {x: 0.68, y: -0.8}
+      moveToInteractPosition: {x: 0.68, y: -0.62}
     - interactableName: Ladder
       interactableType: 2
       isInteractable: 1
@@ -89,13 +93,13 @@ MonoBehaviour:
     - interactableName: Laya
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 1 - Laya Alonay Interaction
+      moveToInteractPosition: {x: 1.14, y: -0.62}
     - interactableName: Dalawi
       interactableType: 0
       isInteractable: 1
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
+      storyToPlay: Main 1 - Dalawi Interaction
+      moveToInteractPosition: {x: 5.03, y: -0.62}
     backgroundsToGo:
     - interactableName: Ladder
       backgroundToGo: Tayabac House 1st Floor

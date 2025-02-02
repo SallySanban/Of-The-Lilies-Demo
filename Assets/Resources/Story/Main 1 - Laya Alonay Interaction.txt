@@ -1,16 +1,26 @@
-ShowCharacterLeft(Mom -b Left_SmileLiwani_Body -e Left_SmileLiwani)
-[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Default)
+ShowCharacterLeft(Alonay -b Left_Grumpy_Body -e Left_Grumpy)
+[wait]ShowCharacterRight(Laya -b Right_Default_Body -e Right_Default)
 
-Mom at 0 "Oh, <playerName>. It feels like only yesterday that I was cradling you in my arms, just like this."
+Alonay at 0 "Laya! Stop breaking Sir Dayami!"
 
-Mom at 0 "Isn't she cute, dear? Our baby Liwani."
+Laya at 1 "...but he's the bad guy, big 'sis."
 
-ChangeBodyEmotion(Mom -b Left_Smile_Body -e Left_Smile)
+Alonay at 0 "No, he's not! He's the prince!"
 
-Mom at 0 "Happy 14th birthday, <playerName>. My only wish for you is that you have a long, happy, and fulfilled life."
+ChangeBodyEmotion(Alonay -b Left_Excited_Body -e Left_Excited)
 
-Mom at 0 "Let's enjoy the celebration later, okay?"
+Alonay at 0 "<playerName>! Are you finally joining us to play?!"
+
+Laya at 1 "<playerName>'s got things to do..."
+
+ChangeBodyEmotion(Alonay -b Left_Grumpy_Body -e Left_Grumpy)
+
+Alonay at 0 "Hmph! I know that!"
+
+ChangeBodyEmotion(Alonay -b Left_Sad_Body -e Left_Sad)
+
+Alonay at 0 "Don't forget your promise, <playerName>! You have to play with us later!"
 
 HideTextbox(true)
-HideCharacter(Mom)
-HideCharacter(Ahlai)
+HideCharacter(Alonay)
+HideCharacter(Laya)
