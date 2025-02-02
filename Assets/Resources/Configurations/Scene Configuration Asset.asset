@@ -30,7 +30,7 @@ MonoBehaviour:
     - npcName: Laya
       position: {x: 0, y: 0}
       appear: 1
-      animationState: PlayingWithoutAlonay
+      animationState: PlayingAlone
     - npcName: Dalawi
       position: {x: 0, y: 0}
       appear: 1
@@ -85,6 +85,16 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 1 - Ladder Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Laya
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Dalawi
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Ladder

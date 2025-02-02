@@ -1,0 +1,16 @@
+ShowCharacterLeft(Mom -b Left_SmileLiwani_Body -e Left_SmileLiwani)
+[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Default)
+
+Mom at 0 "Oh, <playerName>. It feels like only yesterday that I was cradling you in my arms, just like this."
+
+Mom at 0 "Isn't she cute, dear? Our baby Liwani."
+
+ChangeBodyEmotion(Mom -b Left_Smile_Body -e Left_Smile)
+
+Mom at 0 "Happy 14th birthday, <playerName>. My only wish for you is that you have a long, happy, and fulfilled life."
+
+Mom at 0 "Let's enjoy the celebration later, okay?"
+
+HideTextbox(true)
+HideCharacter(Mom)
+HideCharacter(Ahlai)
