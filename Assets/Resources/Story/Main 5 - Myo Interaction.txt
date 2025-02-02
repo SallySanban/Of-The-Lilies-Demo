@@ -1,0 +1,272 @@
+if (!$BarkeepTalkedTo)
+{
+	pixel Ahlai as <playerName> "It's Sir Aciano! But... there are things I have to do first. I can talk to him later."
+
+	HideTextbox(false)
+}
+else
+{
+	pixel Myo "So, you say you want to reach out to the administration of the Seiyslan Imperial Academy of Arts and Letters, but… what exactly are you reaching out to them with if I appeal to take your son's artworks overseas?"
+
+	pixel SocialClimberSit2 as ??? "Sorry, what do you even mean by that? I just thought you were such a patron of, say, arts and culture around the Empire!"
+
+	pixel SocialClimberSit2 as ??? "And I cannot lie to you, Sir Aciano, I think my son would love your guidance in terms of, er, the direction he could take as an artist."
+
+	pixel SocialCilmberSit2 as ??? "I just think that he would have a far more secure future if he just focused more on the business he is set to inherit from me, but his time at the academy has had him lose more focus than I am comfortable with."
+
+	pixel Myo "Er, and how could I help you and him with this issue, then? Surely he has been equipped with the necessary knowledge and skills for your business, if you are so keen on having him be your successor?"
+
+	pixel SocialClimberSit2 as ??? "It's just... well, you are a more educated man than me, Sir Aciano! Help me out, here-my boy says that he wants to pick apart certain flaws in our fine Empire with both <i>his</i> art and <i>my</i> business."
+
+	pixel SocialClimberSit2 as ??? "But, please! He's only one man, and it's not as if he has plans to enter the government! Culture is culture, art is art, government is government, and business is business. I cannot see why he tries mixing them all together! Bachelors just aren't like what they used to be..."
+
+	pixel Myo "Well, anyone with or without an education can understand that the Seiyslan Empire has flaws, as any nation would. But have you considered that your son is actually exploring his own path, not quite losing focus of the goals you agreed upon with him? I am willing to consult with him, for your sake."
+
+	pixel SocialClimberSit2 as ??? "Oh? So that means you can pull some strings, yes? As thanks, I've got a fine deal and an even <i>finer</i> woman ready for you if you do this! For me <i>and</i> my son."
+
+	pixel SocialClimberSit2 as ??? "I'm even willing to donate to that university you teach at, if that helps. Anything for a man as charitable as yourself!"
+
+	pixel Myo "Oh, I'm flattered! But I don't just teach there, I have to clarify..."
+
+	pixel SocialClimberSit2 as ??? "Yes, yes..."
+
+	pixel SocialClimberSit2 as ??? "But, you <i>will</i> take on my son, then? I just don't want you misunderstanding me, you know!"
+
+	pixel Ahlai as <playerName> "<i>Why is this man so eager to have Sir Aciano endorse his son...?</i>"
+
+	pixel Myo "..."
+
+	pixel Myo "I understand, I truly do. But please, I would be happy to speak directly with your son before I proceed with anything..."
+
+	pixel Ahlai as <playerName> "<i>Some of the tavern's patrons go here to gather connections with the Empire's more esteemed guests. It really is no surprise that people flock to Sir Aciano.</i>"
+
+	pixel Ahlai as <playerName> "<i>Yet even with that friendly, cordial smile of his, he seems... a little bothered.</i>"
+
+	pixel Ahlai as <playerName> "<i>Though, I suppose approaching him for either a chat or information on my family is not much better...</i>"
+
+	pixel Ahlai as <playerName> "<i>Just how should I enter this conversation, though?</i>"
+
+	choice in -1
+	{
+		- <i>Maybe I could offer a solution to his tablemate.</i>
+			$Justice += 1
+			$Myo += 2
+
+			pixel Ahlai as <playerName> "Excuse me."
+
+			pixel Ahlai as <playerName> "I couldn't help but overhear this whole dilemma between you and Sir Aciano?"
+
+			pixel SocialClimberSit2 as ??? "Ooh, you were... listening in?"
+
+			pixel Ahlai as <playerName> "Well, I was actually here at the tavern to greet him. But even I was intrigued by what you had to say about your son!"
+
+			pixel Myo "You're intrigued, you say?"
+
+			pixel Ahlai as <playerName> "It's true."
+
+			pixel Ahlai as <playerName> "Consider it an insight from someone who appreciates the virtues of a good business sense."
+
+			pixel Ahlai as <playerName> "If you want your business to go overseas-or your son, at least-opening conversations with talks of arts and culture could be more productive than we think."
+
+			pixel Ahlai as <playerName> "You placed your trust in the Seiyslan Imperial Academy of Arts and Letters because they're educated by intellectuals of the Northernworld, just like Sir Aciano here!"
+
+			pixel Myo "Oh, <playerName>, you don't have to call me 'Sir Aciano'! Just call me Myo..."
+
+			pixel SocialClimberSit2 as ??? "I-oh, I didn't know you two were so closely acquainted...!"
+
+			pixel SocialClimberSit2 as ??? "Er, but wait. Aren't you that vendor who sells those potions? What could you possibly know about the Northernworld? I mean no offense, it's just... are you receiving financial aid to go to a college? Is that how you can speak with us here about this subject?"
+
+			pixel Ahlai as <playerName> "<i>How lofty you are, sir...</i>"
+
+			pixel Myo "There isn't anything wrong with selling potions! Were you not a potion-maker yourself? Before you started making a business out of that?"
+
+			pixel SocialClimberSit2 as ??? "I... well, yes, but I would just like to clarify...! My son is trying to pursue art while he goes overseas! I was hoping the good governor-general Sir Aciano could talk some sense into him by making sure he prioritizes the family business!"
+
+			pixel Ahlai as <playerName> "All I'm saying is that your son could actually secure even more sources of income, if he's guided in the right direction about his art..."
+
+			pixel Myo "Which I could definitely help with."
+
+			pixel Myo "I think what my good friend is trying to say-without imposing, of course-that everyone would be in a better position if we focused on encouraging collaboration with your son should he go abroad. And I can talk with him tomorrow. That's quite a good solution, if you ask me."
+
+			pixel SocialClimberSit2 as ??? "I... er, if you say so... I must thank you and apologize, then. I must retire, but I do look forward to our next meeting."
+
+			HideTextbox(true)
+			[wait]Blackout()
+			RemoveFromScene("SocialClimberSit2")
+			[wait]HideCG()
+
+			pixel Myo "Finally..."
+
+			pixel Ahlai as <playerName> "I hope I helped sort everything out for you?"
+
+			pixel Myo "Hah, more than you realize!"
+
+		- <i>Maybe I could have some fun from this conversation, too?</i>
+			$Vengeance += 1
+
+			pixel Ahlai as <playerName> "<i>Like those government officials at the other table, this one clearly plans to gain something out of Sir Aciano.</i>"
+
+			pixel Ahlai as <playerName> "<i>How about I set him up for a little embarrassing situation?</i>"
+
+			pixel Ahlai as <playerName> "Sir Aciano!"
+
+			pixel Myo "Oh, if it isn't the lovely shopkeep from Sabina's Salves! Come here. I am honored to have you sit here..."
+
+			pixel Ahlai as <playerName> "Only if you don't mind... Do you?"
+
+			pixel SocialClimberSit2 as ??? "Ahem!"
+
+			pixel SocialClimberSit2 as ??? "I apologize, but I was talking business with Sir Aciano, here. I'm a shopkeep myself, you see."
+
+			pixel Myo "I thought you came over here to chat with me?"
+
+			pixel Ahlai as <playerName> "Oh, what poor timing. Why mix together business and pleasure? Were you just here at this table to cut a deal with the governor-general?"
+
+			pixel Myo "Is this true...?"
+
+			pixel Ahlai as <playerName> "<i>Myo's tablemate looks embarrassed now...</i>"
+
+			pixel SocialClimberSit2 as ??? "Why-! Don't put words in my mouth, young one!"
+
+			pixel Ahlai as <playerName> "No worries. If you are just cutting yourself a deal, you seem quite ready to put words in your own mouth."
+
+			pixel SocialClimberSit2 as ??? "Myo, don't agree with this stranger! Oh, <i>please</i> don't misunderstand me! I'm only here to discuss <i>business</i>--I mean, I mean <i>art</i>--f-forgive me, I meant...!"
+
+			pixel Myo "I've heard <i>enough</i>, thank you. I understand you just fine, please."
+
+			pixel SocialClimberSit2 as ??? "I... oh, that's a relief. I knew I could count on you, sir!"
+
+			pixel SocialClimberSit2 as ??? "But as for <i>you</i>, I recommend you watch your own mouth when you speak with elders like myself!"
+
+			pixel Myo "I appreciate your efforts to help, but might I remind you that this person is no  <i>stranger</i>. I'm actually one of their loyalest customers, at Sabina's Salves."
+
+			pixel Myo "For someone who's so keen on making sure their business stays afloat, I think a very simple tip I'd love to give your son would be to show some common courtesy to the employees who run stores like yours. But I understand if your son isn't interested in hearing what I have to say!"
+
+			pixel SocialClimberSit2 as ??? "I...! No, please. I know when I've made a mistake. I'll go right to my son, this instant. I promise you won't regret dealing with him-oh! Good evening!"
+
+			HideTextbox(true)
+			[wait]Blackout()
+			RemoveFromScene("SocialClimberSit2")
+			[wait]HideCG()
+
+			pixel Myo "..."
+
+		- <i> I should follow up on that drink he offered this morning.</i>
+			$Peace += 1
+			$Myo += 1
+
+			pixel Ahlai as <playerName> "Sir Aciano, is that you?"
+
+			pixel Myo "<playerName>, you're here!"
+
+			pixel Ahlai as <playerName> "Yes! I thought about it, and maybe I would like that drink with you after all."
+
+			pixel Myo "Is there anything else you'd like, then?"
+
+			pixel Ahlai as <playerName> "I might have to think about it, but it's not <i>impossible</i>..."
+
+			pixel SocialClimberSit2 as ??? "I'm sorry, who is this? Who are you?"
+
+			pixel Myo "Someone I made a <i>promise</i> to, thanks to the fine deals they set up with me back at Sabina's Salves. An excellent establishment."
+
+			pixel SocialClimberSit2 as ??? "Well, erm... does that mean...?"
+
+			pixel Ahlai as <playerName> "Apologies, did I interrupt something?"
+
+			pixel SocialClimberSit2 as ??? "Well, I was just talking about-"
+
+			pixel Myo "Oh, you have <i>nothing</i> to apologize for. Look, we are both at a tavern. You said it yourself, a government is a government, then I think we can say a tavern is a tavern."
+
+			pixel Ahlai as <playerName> "And a drink is a drink!"
+
+			pixel Myo "Haha, exactly!"
+
+			pixel Myo "Look, I can pick up your drink, but I think it's better to discuss your matter another time. I'm not short on good deals to decide upon, either, so you hardly have to worry about that."
+
+			pixel SocialClimberSit2 as ??? "Oh, uh... I... of course, Sir Aciano. I'll just retire for the night then. Should I expect a word with you and my son?"
+
+			pixel Myo "I think <i>your</i> son should expect a word with me. You shouldn't have to worry about that."
+
+			pixel SocialClimberSit2 as ??? "Hmph..."
+
+			HideTextbox(true)
+			[wait]Blackout()
+			RemoveFromScene("SocialClimberSit2")
+			[wait]HideCG()
+
+			pixel Myo "..."
+
+			pixel Myo "And he's <i>finally</i> gone."
+	}
+
+	pixel Myo "You really saved me back there, <playerName>."
+
+	pixel Myo "You know, I did catch sight of you entering the tavern. Seeing you around is as lovely as ever."
+
+	pixel Myo "But I <i>was</i> wondering if you'd ever catch sight of me. Not that I'm hard to miss, of course."
+
+	choice in -1
+	{
+		- Are you so sure about that?
+			$Myo += 1
+
+			pixel Myo "Oh, you wouldn't?"
+
+			pixel Ahlai as <playerName> "All I’m saying... is that it is not often someone catches my eye. You might just be getting ahead of yourself when you say that you're hard to miss."
+
+			pixel Myo "I beg to differ, you know."
+
+			pixel Ahlai as <playerName> "You wish to prove me wrong?"
+
+			pixel Myo "Only if you'd like. May I?"
+
+			pixel Ahlai as <playerName> "You are more respectful than you let on. Maybe you <i>are</i> proving me wrong already..."
+
+			pixel Myo "Then, how about that drink, hmm?"
+
+		- Of course I'd notice you!
+			pixel Ahlai as <playerName> "Of course I'd notice you! You already stand out as it is."
+
+			pixel Myo "Tell me more, why don't you..."
+
+			pixel Ahlai as <playerName> "I mean, you regularly visit Sabina's Salves, you did promise me that drink, and many can tell that you are at least working in the government."
+
+			pixel Myo "Thank you, thank you... so, <i>that's</i> what you noticed?"
+
+			pixel Ahlai as <playerName> "Well, yes. Those are the first things that come to mind when it's you."
+
+			pixel Myo "...Oh, of course."
+
+			pixel Myo "Well, how about that drink, hmm?"
+
+		- Well, I did remember you this morning.
+			$Myo += 2
+
+			pixel Myo "You did? What for?"
+
+			pixel Ahlai as <playerName> "Nothing in particular, even with all the fanfare you come with."
+
+			pixel Ahlai as <playerName> "Which isn't necessarily a bad thing, either!"
+
+			pixel Ahlai as <playerName> "But I found it quite thoughtful that you remembered me, so I suppose it's only fair that I remember you in turn."
+
+			pixel Ahlai as <playerName> "You seem taken aback. Is everything alright with you...?"
+
+			pixel Myo "...I, er... of course it's alright! It's just a surprise, that's all."
+
+			pixel Myo "How about I thank you with that drink already, hmm?"
+	}
+
+	pixel Ahlai as <playerName> "I would love that."
+
+	pixel Ahlai as <playerName> "<i>This could be a good opportunity to get to know him better.</i>"
+
+	$TablemateChosen = false
+	$SabinaChosen = false
+	$FavouriteDrinkChosen = false
+	$HearLaisaChosen = false
+	$AskedAboutLien = false
+	$MyoChoicesPicked = 0
+
+	Load("Main 5 - Myo Repeating Dialogue")
+}

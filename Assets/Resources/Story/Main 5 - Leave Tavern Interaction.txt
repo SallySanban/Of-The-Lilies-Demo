@@ -1,0 +1,10 @@
+if (!$GotDrinks)
+{
+	pixel Ahlai as <playerName> "Those drinks aren't ready yet. I should talk to someone else while waiting."
+
+	HideTextbox(false)
+}
+else
+{
+	[wait]SwitchScene("Scene 9" "Kuchai Town 1")
+}

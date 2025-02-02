@@ -1,0 +1,112 @@
+pixel Myo "...Ah."
+
+pixel Myo "Well, aren't you a smart one? That <i>is</i> General Lien over there. Not that I have any plans of working with him myself. I have other men for that."
+
+pixel Myo "Why do you ask? Are you planning to talk to him?"
+
+pixel Ahlai as <playerName> "Not necessarily, he's just..."
+
+pixel Ahlai as <playerName> "<i>He's just someone I remember from when Tayabac was invaded...</i>"
+
+pixel Myo "Hmm, on second thought. Maybe you shouldn't answer that question. I apologize."
+
+pixel Ahlai as <playerName> "...?"
+
+pixel Myo "Call it a guess, but you seem like you do not wish to talk about your business with the General?"
+
+pixel Ahlai as <playerName> "<i>He seems like he would understand, but... is now the time?</i>"
+
+choice in -1
+{
+	- <i>He might be able to do something about it.</i>
+		$Vengeance += 1
+
+		pixel Ahlai as <playerName> "<i>I need to tell him about the invasion. He might be able to help me do something about General Lien.</i>"
+
+		pixel Ahlai as <playerName> "Well, Lien <i>is</i> part of the army, yes?"
+
+		pixel Ahlai as <playerName> "Let's just say I was there when the military invaded the Tayabac region."
+
+		pixel Ahlai as <playerName> "I want answers, but... it has been ten years. I do not think they will come easily. Least of all from the current General."
+
+		pixel Myo "...!"
+
+		pixel Myo "...Were you from Tayabac?"
+
+		pixel Ahlai as <playerName> "Yes, actually."
+
+		pixel Myo "It's no wonder you felt the need to tell me this, then."
+
+		pixel Myo "<playerName>, please-take it from me. Like Tayabac, Agon Province has a few ancestral lands that we try our best to protect, but..."
+
+		pixel Myo "People like Sir Lien aren't going to change their minds about this. Barely anyone in Seiysla's government will change their minds. At least not in the current state the Empire is at now."
+
+		pixel Myo "...But, you are free to talk to me about this, whenever you wish. Whatever helps you, <playerName>."
+
+		pixel Ahlai as <playerName> "...But, why would you?"
+
+		pixel Myo "Will anyone else?"
+
+		pixel Ahlai as <playerName> "...I'll remember that, then. Thank you."
+
+	- <i>It's a difficult conversation...</i>
+		$Justice += 1
+
+		pixel Ahlai as <playerName> "<i>Oh, I wish I could just tell him. But I don't have enough information, and it might not be wise to reveal so much to a governor...</i>"
+
+		pixel Ahlai as <playerName> "Well, General Lien just so happens to be the leader of the army now, correct?"
+
+		pixel Myo "Correct, yes."
+
+		pixel Ahlai as <playerName> "And the Seiyslan Empire obviously has its flaws, like anyone can point out..."
+
+		pixel Myo "Yes, yes..."
+
+		pixel Ahlai as <playerName> "I really appreciate how clearly you show your concern."
+
+		pixel Ahlai as <playerName> "But you are right, I can't help but want answers from the General about certain questions I have regarding the Tayabac region. Especially about the invasion."
+
+		pixel Ahlai as <playerName> "It's just that... given everything, it is a difficult conversation to have. I am not surprised."
+
+		pixel Myo "What kind of conversation? Should I be looking into this as well, or is this outside of my capacities as...?"
+
+		pixel Ahlai as <playerName> "We can save this for another day. You want to meet me again, don't you?"
+
+		pixel Myo "...Ah, so this is how my own words are used against me..."
+
+		pixel Myo "Then if that's the case, you don't have to go to Sir Lien if you don't want to. You do seem very pleased to be seated here next to me."
+
+		pixel Ahlai as <playerName> "At the very least, I'm pleased to have another round, too. You understand, yes?"
+
+		pixel Myo "As always, Ahlai..."
+
+	- <i>I shouldn't tell him about it yet.</i>
+		$Peace += 1
+
+		pixel Ahlai as <playerName> "<i>I shouldn't tell him. Not yet. Maybe, not ever... Either way, it will just dampen the mood tonight if I open up to him about this.</i>"
+
+		pixel Ahlai as <playerName> "Oh, well... It is rare to see anyone from the Kingdom stay in Kuchai Town for so long."
+
+		pixel Ahlai as <playerName> "But, if I <i>were</i> to approach General Lien, what should I expect?"
+
+		pixel Ahlai as <playerName> "Between you two, you seem a lot more open to talking with civilians and common people..."
+
+		pixel Myo "Psh, I appreciate the recognition from you, <playerName>!"
+
+		pixel Myo "Don't take this as my speaking against General Lien, but he and I have <i>always</i> clashed in the way we carry out our work as civil servants."
+
+		pixel Myo "Do <i>I</i> have a problem with that? Of course not! Any <i>healthy</i> competition in the Empire is exactly what ensures a balanced way of ruling over it. Or the Empire's provinces, whichever works."
+
+		pixel Myo "However, Sir Lien seems that he isn't one for that healthy dose of discourse. Including perspectives like mine would just get in the way of simply directing orders and having everyone do as he says."
+
+		pixel Ahlai as <playerName> "Does he really hold that much power in the kingdom? To just... compel people to do as he says?"
+
+		pixel Myo "Well, yes, but it's not <i>just</i> because he's leading the army. From his parents, to his uncle, to his cousin-thrice-removed, to his cousin-they're <i>all</i> meant to help the Emperor as they rule over the people."
+
+		pixel Myo "Including us two, believe it or not."
+
+		pixel Myo "He's also rather inflexible and rigid as a collaborator. I don't bother wasting any more time than I have to, and I recommend you do the same."
+}
+
+$AskedAboutLien = true
+Load("Main 5 - Myo Repeating Dialogue")

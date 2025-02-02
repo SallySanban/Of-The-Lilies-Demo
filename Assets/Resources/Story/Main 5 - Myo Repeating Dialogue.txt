@@ -1,0 +1,149 @@
+pixel Ahlai as <playerName> "<i>What should I ask?</i>"
+
+choice in -1
+{
+	- if ($TablemateChosen) Who was at the table with you just now?
+		pixel Ahlai as <playerName> "If you do not mind me asking, just who was that at the table with you just now?"
+
+		pixel Myo "Oh, forget about that."
+
+		pixel Myo "He already took up the time we could've spent enjoying each other's company."
+
+		pixel Myo "Though, I could be persuaded to tell you if you agree to meet like this again sometime."
+
+		pixel Ahlai as <playerName> "Then you've got yourself a deal."
+
+		pixel Myo "Wonderful. Well, if you must know, yes, that was Sir Gascon. He's actually based in Agon Province like me, but he is from the Kingdom of Seiysla."
+
+		pixel Ahlai as <playerName> "Why did he want to conduct business with you, then? Even I could tell from afar..."
+
+		pixel Myo "Ah, that's nothing new. We've worked together in the past. I'll probably see him next week!"
+
+		pixel Myo "I really do help out with businesses if they need it and if it's within my means, as I've mentioned."
+
+		pixel Myo "But honestly... I notice that men like Sir Gascon struggle to see value outside of their work. Aside from their careers as politicians, their businesses, what they wish to <i>gain</i> out of the life they live..."
+
+		pixel Myo "I just worried that if he got his way earlier, his son would have no chance to explore what he likes. And for his own sake, not his father's. I hope you understand?"
+
+		pixel Ahlai as <playerName> "I could see your point, yes..."
+
+		$TablemateChosen = false
+		$MyoChoicesPicked += 1
+		Load("Main 5 - Myo Repeating Dialogue")
+
+	- if ($SabinaChosen) What do you like about Sabina's Salves?
+		pixel Ahlai as <playerName> "I'm quite honored you endorsed Sabina's Salves to that tablemate of yours. Is there a reason you like our store so much?"
+
+		pixel Myo "Hmm, I <i>love</i> the people who work there."
+
+		pixel Ahlai as <playerName> "...I-"
+
+		pixel Ahlai as <playerName> "Is this an advance...?"
+
+		pixel Myo "What <i>ever</i> do you mean? Lady Sabina's an excellent seller! I always love the results we get whenever we work together!"
+
+		pixel Ahlai as <playerName> "...Oh, I thought you..."
+
+		pixel Myo "You thought what? That I was referring to you? I mean... you definitely could make a good case for why I should keep coming back to Sabina's Salves."
+
+		pixel Myo "Again... only if you're interested. But, that aside..."
+
+		pixel Myo "...I am genuine when I say that Lady Sabina is an amazing seller of her wares. A good business partner. She also knows how to explain a lot of the potions' good impact in Agon Province."
+
+		pixel Myo "I am personally very excited to see what else the store has up its sleeve. Especially if they've got anything like that Draught of Perpetuity!"
+
+		pixel Ahlai as <playerName> "Myo..."
+
+		pixel Myo "Yes, dear?"
+
+		pixel Ahlai as <playerName> "Damn, I walked into that one-"
+
+		pixel Ahlai as <playerName> "Alright, sir, as long as you remember what I told you. That potion has proper dosages you need to follow."
+
+		pixel Myo "I'll make sure to remember, <playerName>! But, alas, I may need that reminder from a secretary or my doctor, if next week's schedule is anything to go by... ugh..."
+
+		$SabinaChosen = false
+		$MyoChoicesPicked += 1
+		Load("Main 5 - Myo Repeating Dialogue")
+
+	- if ($FavouriteDrinkChosen) What's <i>your</i> favorite drink at this tavern, anyway?
+		pixel Ahlai as <playerName> "What's <i>your</i> favorite drink at this tavern, anyway? I'm curious."
+
+		pixel Myo "Oh, will it be your treat next time?"
+
+		pixel Ahlai as <playerName> "I said no such thing!"
+
+		pixel Myo "Then I have no favorite."
+
+		pixel Ahlai as <playerName> "Are you serious?!"
+
+		pixel Myo "...Maybe not, if you keep making those expressions..."
+
+		pixel Myo "Okay, I judge a tavern by the quality of their ale. And the Kuchai Tavern has good ale!"
+
+		pixel Ahlai as <playerName> "Hmm, I didn't expect you to like ale..."
+
+		$FavouriteDrinkChosen = false
+		$MyoChoicesPicked += 1
+		Load("Main 5 - Myo Repeating Dialogue")
+
+	- if (!$HearLaisaChosen) Did you hear about the pirate that was captured?
+		pixel Myo "Oh, Laisa... yes, I did hear."
+
+		pixel Myo "I already warned her to be good while she's still in Ihraye! Like I would tell any foreign national. Do you know how many <i>more</i> trips I need to take to the Gataran Empire to smooth things over?"
+
+		pixel Ahlai as <playerName> "Laisa...? You two are acquainted with each other?"
+
+		pixel Myo "Oh, you sound so surprised... let's just say you're right again. We're <i>very</i> well-acquainted with each other."
+
+		pixel Myo "But her piracy... Well, I didn't exactly know about it until the news came to our province's administrative center."
+
+		pixel Ahlai as <playerName> "Will she be detained?"
+
+		pixel Myo "She just might, this time."
+
+		pixel Myo "But I welcome a challenge, one way or another. I don't doubt her capabilities."
+
+		pixel Ahlai as <playerName> "<i>Huh. Unlike a lot of the other men in the government, Sir Aciano seems quite welcoming of Ilaisaane...</i>"
+
+		$HearLaisaChosen = true
+		$MyoChoicesPicked += 1
+		Load("Main 5 - Myo Repeating Dialogue")
+
+	- if (!$LienTalkedTo && !$AskedAboutLien) Isn't that the general of the Seiyslan army?
+		Load("Main 5 - Myo Lien Dialogue")
+
+	- if ($MyoOptions == 4) Are you always this forward with your intentions?
+		pixel Ahlai as <playerName> "<i>Ah, we've been talking for a while now. Some of the tavern patrons are already whispering and looking our way.</i>"
+
+		pixel Ahlai as <playerName> "<i>If the rumors are anything to go by, I'm currently on the receiving end of advances from the governor-general himself...</i>"
+
+		pixel Ahlai as <playerName> "You know, Sir Aciano. Myo. Are you always this forward with your intentions when you... speak with someone like me?"
+
+		pixel Myo "Yes, actually. Transparency's very important in the work I do, but perhaps the same could be said for the relationships I pursue."
+
+		pixel Myo "And why hide the fact that I'm already enamored? That I'm already taken with you?"
+
+		pixel Myo "I won't even force anything like marriage or something so serious with you, haha! Going on any rendezvous or outing with me is only as binding as you want..."
+
+		$MyoChoicesPicked += 1
+		Load("Main 5 - Myo Repeating Dialogue")
+
+	- It was great talking with you.
+		pixel Ahlai as <playerName> "Well, Myo... I had a lovely conversation with you."
+
+		pixel Myo "Leaving so soon, dear?"
+
+		pixel Ahlai as <playerName> "Lady Sabina might be expecting me. Seiji is actually waiting for me just outside the tavern..."
+
+		pixel Myo "Well, I won't stop you from getting where you need to be."
+
+		pixel Myo "I do hope we can do this again sometime, <playerName>."
+
+		pixel Ahlai as <playerName> "Likewise, sir."
+
+		HideTextbox(false)
+		ToggleInteractable("Scene 9" "Tavern" "Myo" false)
+
+		$MyoTalkedTo = true
+}

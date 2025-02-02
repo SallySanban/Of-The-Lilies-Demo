@@ -49,3 +49,6 @@ MonoBehaviour:
   - name: Laya
     alias: laya
     characterType: 1
+  - name: Soldier
+    alias: soldier
+    characterType: 0

@@ -1,0 +1,71 @@
+pixel Ahlai as <playerName> "What should I ask...?"
+
+choice in -1
+{
+	- Is the tavern usually this crowded?
+		pixel Barkeep "Well, yes. Being the only tavern in town does that."
+
+		Load("Main 5 - Barkeep Repeating Dialogue")
+
+	- Does Lady Sabina go here often?
+		pixel Barkeep "She does. She's a nice woman."
+
+		pixel Barkeep "If you happen to be working for her, tell her I say hello. And that her usual is always ready for her. I owe her, anyway."
+
+		Load("Main 5 - Barkeep Repeating Dialogue")
+
+	- Did you know that Lien and the army are here?
+		pixel Barkeep "Hmph. I don't care about him. Probably corrupt like everyone else. I don't plan to give him any more shit than he orders."
+
+		pixel Ahlai as <playerName> "I understand, but... may I ask why?"
+
+		pixel Barkeep "Same as anyone who doesn't care, really."
+
+		pixel Barkeep "He won't even be in town for long. Whatever. If he brings in more customers, that's fine by me."
+
+		Load("Main 5 - Barkeep Repeating Dialogue")
+
+	- Isn't that the Governor-General over there?
+		pixel Barkeep "Ah, Myo, right?"
+		
+		pixel Barkeep "He's a good man. Annoying sometimes with all the politics."
+
+		pixel Barkeep "But I guess that <i>is</i> his job. So he's welcome here any time."
+
+		pixel Barkeep "I'm also proud to say he keeps a large tab. Great for business."
+
+		Load("Main 5 - Barkeep Repeating Dialogue")
+
+	- That's all
+		pixel Barkeep "Oh, good. I can't spend my whole shift yapping with you."
+
+		pixel Barkeep "I won't get to do your order if you keep talking to me."
+
+		pixel Barkeep "There are plenty of people in here. Shouldn't be that hard to find someone to talk to."
+
+		HideTextbox(true)
+		[wait]Blackout()
+
+		Soldier as ??? "Make way for General Lien and the Seiyslan army!"
+
+		Lien as General Lien "That is not necessary. We are only here to get drinks, at your insistence."
+
+		Soldier as Seiyslan Soldier "O-oh... Sorry, sir."
+
+		Soldier as Seiyslan Soldier "Barkeep! Bring us a barrel of rum!"
+
+		HideTextbox(true)
+		[wait]RemoveScene("Scene 8" "Tavern")
+		[wait]ShowScene("Scene 9" "Tavern")
+
+		[wait]HideCG()
+
+		pixel Ahlai as <playerName> "They're here..."
+
+		HideTextbox(false)
+
+		$BarkeepTalkedTo = true
+		$MyoTalkedTo = false
+		$LienTalkedTo = false
+		$GotDrinks = false
+}

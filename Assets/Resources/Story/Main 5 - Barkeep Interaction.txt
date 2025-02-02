@@ -1,0 +1,35 @@
+if (!$BarkeepTalkedTo)
+{
+	pixel Barkeep "Welcome to the Kuchai Tavern."
+
+	pixel Barkeep "How can I help you?"
+
+	pixel Ahlai as <playerName> "Do you have any areka liquor?"
+
+	pixel Barkeep "The finest in Kuchai. How many flasks will it be?"
+
+	pixel Ahlai as <playerName> "Three flasks' worth. Do you know someone who goes by Lady Sabina? I'm ordering on her behalf. You can put it on her tab."
+
+	pixel Barkeep "Damn, three flasks? Well, I expected no less from the lady from the salves shop. Yeah, okay, but it'll take a while. And it'll cost ya extra."
+
+	pixel Ahlai as <playerName> "Then I can pass the time by talking to you."
+
+	Load("Main 5 - Barkeep Repeating Dialogue")
+}
+else
+{
+	if (!$MyoTalkedTo || !$LienTalkedTo)
+	{
+		pixel Barkeep "Your drinks aren't done yet!"
+	}
+	else
+	{
+		pixel Barkeep "Your drinks are ready. Here's your three flasks of areka."
+
+		pixel Barkeep "Come back again soon, pal. Any patron from Sabina's Salves is welcome here."
+
+		$GotDrinks = true
+	}
+
+	HideTextbox(false)
+}

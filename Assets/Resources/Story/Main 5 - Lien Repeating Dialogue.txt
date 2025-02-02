@@ -1,0 +1,100 @@
+if ($StartedLienRepeatingDialogue)
+{
+	pixel Lien as General Lien "Is there anything else?"
+}
+else
+{
+	$StartedLienRepeatingDialogue = true
+}
+
+choice in -1
+{
+	- if ($PunchOption) I apologize for causing a scene.
+		pixel Lien as General Lien "There is no need for you to apologize. That soldier's behavior towards you was unacceptable."
+
+		pixel Ahlai as <playerName> "<i>Interesting that this is coming from <b>you.</b></i>"
+
+		$PunchOption = false
+		Load("Main 5 - Lien Repeating Dialogue")
+
+	- if ($InfoOption) I apologize for taking up your time.
+		pixel Lien as General Lien "It is no waste of time. After all, it is clear that you were approaching me and my men for assistance."
+
+		pixel Lien as General Lien "So please, allow me to help if there is anything I could do."
+
+		pixel Ahlai as <playerName> "<i>Oh, if only you remembered...</i>"
+
+		$InfoOption = false
+		Load("Main 5 - Lien Repeating Dialogue")
+
+	- if ($FeedEgoOption) I apologize if I distracted your men...
+		pixel Lien as General Lien "The soldiers are off duty, but it is unbecoming of them to be so... brazen with their advances."		
+
+		pixel Lien as General Lien "Though, do not think I <i>don't</i> recognize what you're doing."
+
+		pixel Ahlai as <playerName> "...Uh-what do you mean?"
+
+		pixel Lien as General Lien "...You are skilled at flattery, that's all. I can respect that."
+
+		pixel Ahlai as <playerName> "Oh! Why, thank you."
+
+		pixel Ahlai as <playerName> "<i>Almost got caught... I think...</i>"
+
+		$FeedEgoOption = false
+		Load("Main 5 - Lien Repeating Dialogue")
+
+	- if (!$LongSoldiersChosen) How long will the soldiers be in Kuchai Town?
+		pixel Lien as General Lien "We leave by tomorrow, at sunrise."
+
+		pixel Lien as General Lien "Making it to the Kingdom is imperative. There's no time to waste given the amount of time we have set aside for the capture of Ilaisaane."
+
+		$LongSoldiersChosen = true
+		Load("Main 5 - Lien Repeating Dialogue")
+
+	- if (!$CatchLaisaChosen) Did you really catch Ilaisaane?
+		pixel Lien as General Lien "Yes. I can assure you that <i>pirate</i> has been dealt with accordingly."
+
+		pixel Lien as General Lien "If anyone thinks she can escape, I am obligated to prove them wrong."
+
+		pixel Ahlai as <playerName> "I see your efforts, then..."
+
+		$CatchLaisaChosen = true
+		Load("Main 5 - Lien Repeating Dialogue")
+
+	- if (!$AskedLienAboutFamily) I just wanted to ask you about...
+		Load("Main 5 - Lien Family Dialogue")
+
+	- if (!$MyoTalkedTo && !$AskedAboutMyo) Isn't that the governor-general of Agon Province?
+		pixel Lien as General Lien "...Yes, that would be him."
+
+		pixel Ahlai as <playerName> "They say he's quite friendly and helpful, when he isn't busy. Is this true?"
+
+		pixel Lien as General Lien "Of <i>course</i> they say that about him."
+
+		pixel Ahlai as <playerName> "I'd just like some reassurance if I happen to talk to him-you know each other, yes?"
+
+		pixel Lien as General Lien "...He and I are well-acquainted. We are both in the government. But unfortunately, I am not fit to provide you information about Myo-er, Sir Aciano. Neither is it a part of my duties."
+
+		pixel Ahlai as <playerName> "Oh... I apologize, then."
+
+		pixel Lien as General Lien "Put simply, <i>don't bother</i> asking the Seiyslan Army such questions. It would do you better to perhaps check in with him yourself."
+
+		pixel Ahlai as <playerName> "<i>Damn, even the soldiers got tense at the mention of Sir Aciano. I could still be wrong, but it seems likely they do have bad blood.</i>"
+
+		$AskedAboutMyo = true
+		Load("Main 5 - Lien Repeating Dialogue")
+
+	- if ($AskedLienAboutFamily) That's all
+		pixel Lien as General Lien "Is that all I can do for you, then?"
+
+		pixel Ahlai as <playerName> "Yes, that will be all. Thank you so much."
+
+		pixel Ahlai as <playerName> "And good evening."
+
+		pixel Lien as General Lien "...Yes. Good evening to you too."
+
+		HideTextbox(false)
+		ToggleInteractable("Scene 9" "Tavern" "Lien" false)
+
+		$LienTalkedTo = true
+}

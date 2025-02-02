@@ -1,0 +1,13 @@
+pixel Soldier1 as Seiyslan Soldier "Oi, haha!"
+
+pixel Soldier2 as Seiyslan Soldier "Hahaha!"
+
+pixel Ahlai as <playerName> "What's going on here?"
+
+pixel Soldier1 as Seiyslan Soldier "Hahaha, what?!"
+
+pixel Soldier2 as Seiyslan Soldier "Psh, let's get some more drinks! It's on me, lads!"
+
+pixel Ahlai as <playerName> "Maybe I should just sit back and leave them alone..."
+
+HideTextbox(false)

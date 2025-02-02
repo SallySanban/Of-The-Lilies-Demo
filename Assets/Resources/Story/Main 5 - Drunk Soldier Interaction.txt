@@ -1,0 +1,7 @@
+pixel Soldier3 as Seiyslan Soldier "B-Bar, buh, barkeep! Gimme another one of yer strongest...?"
+
+pixel Barkeep "I don't usually do this, but I think you've had enough to drink..."
+
+pixel Soldier3 as Seiyslan Soldier "Wha–what, ya think I can't...! Hurled my liquorr...! Hic...!"
+
+HideTextbox(false)

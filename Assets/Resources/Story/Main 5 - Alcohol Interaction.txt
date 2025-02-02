@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "I wonder what's their strongest here... for Lady Sabina, of course..."
+
+HideTextbox(false)

@@ -1,0 +1,19 @@
+pixel Ahlai as <playerName> "Ah, I wonder what these ladies are all looking at..."
+
+pixel AdmirerSit1 as ??? "By Dok'kale, do you really think I have a chance? Sir Aciano just has so many girls after him!"
+
+pixel AdmirerSit2 as ??? "Do you think he has a friend I could invite into my garden?"
+
+pixel AdmirerSit1 as ??? "A friend of Sir Aciano... hm, like General Lien? Now, that man... I've no idea how he has yet to marry..."
+
+pixel AdmirerSit2 as ??? "Friends? They were friends?"
+
+pixel AdmirerSit1 as ??? "Yes. Or so the town crier says..."
+
+pixel AdmirerSit1 as ??? "But not anymore. I heard they had a <i>terrible</i> falling out..."
+
+pixel AdmirerSit2 as ??? "Go on...?"
+
+pixel Ahlai as <playerName> "...Huh."
+
+HideTextbox(false)

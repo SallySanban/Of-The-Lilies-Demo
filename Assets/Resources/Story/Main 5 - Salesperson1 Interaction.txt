@@ -1,3 +1,0 @@
-pixel Salesperson1 as Salesperson "Can't you see we're closed?"
-
-HideTextbox(false)

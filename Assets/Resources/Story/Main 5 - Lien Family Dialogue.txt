@@ -1,0 +1,92 @@
+pixel Lien as General Lien "Yes, what is it?"
+
+choice in -1
+{
+	- Ask about Dad
+		pixel Ahlai as <playerName> "<i>Last I remember, Dad was shipped off to the Logresh Empire...</i>"
+
+		pixel Ahlai as <playerName> "I've been looking for any records on the Logresh Empire. Given how naturally <i>skilled</i> you are, what resources did you use to study up on topics like... the people that could be there?"
+
+		pixel Lien as General Lien "Are you searching for someone?"
+
+		pixel Lien as General Lien "If you would like to know more about the Logresh Empire, the library is always a good place to start. I'm afraid any records detailing the key figures in that Empire are classified."
+
+		pixel Ahlai as <playerName> "Of course..."
+
+		pixel Ahlai as <playerName> "<i>I've already searched the library over the past 10 years...</i>"
+
+	- Ask about Mom
+		pixel Ahlai as <playerName> "<i>Last I remember, they said they were taking Mom somewhere in the land of Haripura. I hope she's doing alright, but...</i>"
+
+		pixel Ahlai as <playerName> "Might I ask, do you know anything about Haripura?"
+
+		pixel Lien as General Lien "...What about Haripura?"
+
+		pixel Ahlai as <playerName> "I have been... thinking of going on a journey. How do you suppose I could get there?"
+
+		pixel Lien as General Lien "If you head south from Kuchai Town... it's not impossible to reach Haripura. But I recommend that you prepare for this trip with, say, your employer."
+
+		pixel Lien as General Lien "They have been taking in more foreigners, lately. So you could be welcomed, whether for a visit or otherwise."
+
+	- Ask about Dalawi
+		pixel Ahlai as <playerName> "<i>Last I remember, Dalawi was taken away to another empire. I think it was the Gataran Empire...</i>"
+
+		pixel Ahlai as <playerName> "With all this news about pirates from the Gataran Empire... forgive the question, but is Ilaisaane the only pirate at large?"
+
+		pixel Lien as General Lien "Certainly not. We still have yet to find the rest of her crew."
+
+		pixel Lien as General Lien "But if you want my opinion, the Gataran Empire should put in more effort in addressing how their pirates cause entire messes in our lands."
+
+		pixel Lien as General Lien "And knowing that we <i>have</i> Ilaisaane, well... I suppose you understand my stance on the Gataran Empire."
+
+		pixel Ahlai as <playerName> "Do you think the pirates report back to them?"
+
+		pixel Lien as General Lien "I am certain at least some of them do. For the pirate woman, I won't divulge."
+
+		pixel Lien as General Lien "But please, if you travel, do so in a legal manner."
+
+	- Ask about Laya
+		pixel Ahlai as <playerName> "<i>I remember they mentioned the mines... Laya was taken there. But there are so many mines-which one could I start with?</i>"
+
+		pixel Ahlai as <playerName> "Say, who could I speak to when it comes to the mines in Ihraye?"
+
+		pixel Ahlai as <playerName> "Well, Agon Province has several mineral deposits near its borders. Along with its neighboring territories. That’s likely the best place you could gather. Do you run a business for this sort of work?"
+
+		pixel Ahlai as <playerName> "Thank you! Well, no. But I have been thinking about it."
+
+		pixel Lien as General Lien "Hmm. Good luck on your endeavors, then."
+
+		pixel Ahlai as <playerName> "Oh, you make it sound like a challenge."
+
+		pixel Lien as General Lien "Only if you <i>really</i> want it to be."
+
+	- Ask about Alonay
+		pixel Ahlai as <playerName> "<i>I don't even know where they took Alonay... where would I start?</i>"
+
+		pixel Ahlai as <playerName> "If I were looking for someone... where should I begin?"
+
+		pixel Lien as General Lien "That would depend on who you are looking for. I suggest you bring this up with the local authorities here in Kuchai Town."
+
+		pixel Ahlai as <playerName> "Are there more... dangerous parts of the continent, then? That I might end up going to?"
+
+		pixel Lien as General Lien "That would also depend, but I believe you could prepare yourself for that."
+
+		pixel Ahlai as <playerName> "<i>I've already looked all over town. I'm at least sure that Alonay isn't here.</i>"
+
+		pixel Ahlai as <playerName> "<i>And if the Seiyslan authorities are anything like Lien... what help could I get from them, anyway?</i>"
+
+	- Ask about Liwani
+		pixel Ahlai as <playerName> "If I were to look for, say, orphaned infants or children, where could I look?"
+
+		pixel Lien as General Lien "...I apologize, I wouldn't know. You may want to speak with someone in the town hall."
+
+		pixel Ahlai as <playerName> "Oh..."
+
+	- Nevermind...
+		pixel Ahlai as <playerName> "<i>If I ask him about my family... What if he remembers me from before?</i>"
+
+		pixel Ahlai as <playerName> "On second thought, nevermind..."
+}
+
+$AskedLienAboutFamily = true
+Load("Main 5 - Lien Repeating Dialogue")

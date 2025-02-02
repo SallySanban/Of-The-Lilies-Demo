@@ -10,3 +10,4 @@ pixel Seiji "Okay, but be careful. Remember - Lady Sabina wants three flasks of 
 
 [wait]SwitchScene("Scene 8" "Tavern")
 
+$BarkeepTalkedTo = false

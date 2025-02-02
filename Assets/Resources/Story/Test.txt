@@ -1,4 +1,4 @@
 input
 
-$GotCoconut = true
-ShowScene("Scene 7" "Kuchai Town 1")
+$BarkeepTalkedTo = false
+ShowScene("Scene 8" "Tavern")

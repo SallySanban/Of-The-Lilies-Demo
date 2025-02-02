@@ -1,0 +1,226 @@
+pixel Soldier1 as Seiyslan Soldier "Why not have a drink, sir? You've earned it for yourself! One won't hurt!"
+
+pixel Soldier2 as Seiyslan Soldier "Yes, yes! The Sea Serpent's ours now, in any case!"
+
+pixel Soldier1 as Seiyslan Soldier "All thanks to you!"
+
+pixel Soldier2 as Seiyslan Soldier "We'll even toast to you, sir! To the General!"
+
+Soldier1 as Seiyslan Soldier "To the General!"
+
+pixel Lien as General Lien "Are you both drunk already? I'd rather not tempt fate when it comes to the <i>Sea Serpent</i>, of all criminals."
+
+pixel Soldier2 as Seiyslan Soldier "Damn, 'tempt fate', you say? After all..."
+
+pixel Soldier1 as Seiyslan Soldier "Tempting? If you mean the Sea Serpent, then..."
+
+pixel Soldier2 as Seiyslan Soldier "Between us, even I'd risk it all, if I were you, y'know...?"
+
+pixel Lien as General Lien "No, I wouldn't know. Quit your leering."
+
+pixel Ahlai as <playerName> "<i>'Wouldn't know', huh?</i>"
+
+pixel Ahlai as <playerName> "<i>Sir Lien is <b>right there</b>... But what could I even do? I should do something, shouldn't I?</i>"
+
+choice in -1
+{
+	- <i>I should punch him.</i>
+		$Vengeance += 2
+
+		pixel Ahlai as <playerName> "Excuse me..."
+
+		pixel Lien as General Lien "...?"
+
+		pixel Lien as General Lien "Who are you? And why are you looking at me like that?"
+
+		pixel Ahlai as <playerName> "<i>He doesn't know who I am?! This man is lucky I'm not punching him, like this...!</i>"
+
+		HideTextbox(true)
+		[wait]Blackout()
+
+		Ahlai as <playerName> "<i>Somehow, I feel... relieved.</i>"
+
+		[wait]HideCG()
+
+		pixel Lien as General Lien "...Is there something you need to tell me?"
+
+		pixel Ahlai as <playerName> "<i>I was imagining something dangerous there...</i>"
+
+		pixel Ahlai as <playerName> "<i>I guess... I'll just try my luck with getting information out of them...</i>"
+
+	- <i>I'm confronting him.</i>
+		$Justice += 2
+		$Lien += 1
+
+		pixel Ahlai as <playerName> "<i>I can't let this opportunity go to waste, as tough as it is to face him...</i>"
+
+		pixel Ahlai as <playerName> "<i>Okay, this won't be too hard if I play my cards right...</i>"
+
+		pixel Ahlai as <playerName> "Excuse me, General Lien?"
+
+		pixel Lien as General Lien "...?"
+
+		pixel Lien as General Lien "Who are you?"
+
+	- <i>I should just ignore him.</i>
+		$Peace += 2
+
+		pixel Ahlai as <playerName> "<i>...Well, it is still very tempting to do something about it.</i>"
+
+		pixel Ahlai as <playerName> "<i>But now isn't the time, and I suppose punching him would hardly resolve anything.</i>"
+
+		pixel Ahlai as <playerName> "<i>He might have a lead on where the rest of my family could be, but... how could I get that out of him?</i>"
+
+		pixel Ahlai as <playerName> "<i>It's worth a shot.</i>"
+
+		pixel Ahlai as <playerName> "Excuse me, General Lien?"
+
+		pixel Lien as General Lien "...?"
+
+		pixel Lien as General Lien "Who are you?"
+}
+
+pixel Ahlai as <playerName> "You don't... know who I am?"
+
+pixel Lien as General Lien "I'm afraid not. Did you have any business with the Imperial Army?"
+
+pixel Soldier1 as Seiyslan Soldier "No need to be so rigid, General! I'm sure this one couldn't help but throw themselves at ya! They look rather <i>fine</i>, don't ya think?!"
+
+pixel Ahlai as <playerName> "..."
+
+$PunchOption = false
+$InfoOption = false
+$FeedEgoOption = false
+
+choice in -1
+{
+	- <i>These guys flatter themselves, why don't I call them out...</i>
+		$Vengeance += 1
+
+		pixel Ahlai as <playerName> "I just said 'excuse me' and you all think I'm here to take someone home tonight?"
+
+		pixel Soldier1 as Seiyslan Soldier "Were you not?"
+
+		pixel Soldier1 as Seiyslan Soldier "If you are, take this one home, he hasn't had any in a good while-"
+
+		pixel Lien as General Lien "I already <i>said</i> I am not here for anyone to 'throw themselves' at. And not on alcohol..."
+
+		pixel Ahlai as <playerName> "Well, <i>you</i> heard the man. He said no."
+
+		pixel Soldier1 as Seiyslan Soldier "C'mon, look at you..."
+
+		pixel Ahlai as <playerName> "Now <i>I</i> would like to say no, thank you."
+
+		pixel Soldier1 as Seiyslan Soldier "You could just take the compliment. How often do you have us soldiers here in town, y'know? And with the General, too. To protect you! To thank us, really..."
+
+		pixel Ahlai as <playerName> "Frankly, this is hardly a compliment coming from <i>you</i>."
+
+		pixel Soldier2 as Seiyslan Soldier "Hah, you arne't wrong!"
+
+		pixel Soldier1 as Seiyslan Soldier "Wha-you're siding with this stranger?!"
+
+		pixel Ahlai as <playerName> "I wasn't interested and neither was your General."
+
+		pixel Soldier1 as Seiyslan Soldier "I'm just trying to set a man up with a good time!"
+
+		pixel Lien as General Lien "<i>Excuse me?</i>"
+
+		pixel Soldier1 as Seiyslan Soldier "If you don't want that, you can keep your legs shut and carry that stick up your arse, you ugly f-"
+
+		pixel Lien as General Lien "<i>Unacceptable!</i> You. Go back to your damn station."
+
+		pixel Soldier1 as Seiyslan Soldier "Sir, I-uh. Oh, you're, um. I'm sorry, didn't mean to upset you, sir, I just wanted you to have a good time-"
+
+		pixel Lien as General Lien "I said <i>no</i> and I said to to <i>go back</i> to your station."
+
+		pixel Soldier1 as Seiyslan Soldier "..."
+
+		HideTextbox(true)
+		[wait]Blackout()
+		RemoveFromScene("Soldier1")
+		[wait]HideCG()
+
+		pixel Ahlai as <playerName> "Oh, I apologize if I..."
+
+		pixel Lien as General Lien "<i>I</i> apologize for his earlier behavior. I will address him later."
+
+		pixel Lien as General Lien "Was there something that you needed from me?"
+
+		$PunchOption = true
+
+	- <i>I'll just ignore what they said and focus on the information...</i>
+		$Justice += 1
+		$Lien += 2
+
+		pixel Ahlai as <playerName> "<i>What a bad impression these soldiers are making. Maybe if they get drunk enough, that'll make things easier...</i>"
+
+		pixel Lien as General Lien "I have no plans to entertain <i>anyone</i> tonight. We still have <i>work</i>. This is your last chance before I have to write you up."
+
+		pixel Soldier1 as Seiyslan Soldier "Yeesh, fine..."
+
+		pixel Ahlai as <playerName> "Good evening, actually. I could not help but notice that you are all men in uniform, so..."
+
+		pixel Ahlai as <playerName> "If the General here wouldn't mind, then... could he perhaps do us all another service and help me out? While you're here in Kuchai Town?"
+
+		pixel Ahlai as <playerName> "Only if it's not too inconvenient, of course."
+
+		pixel Soldier as Seiyslan Soldier "I mean... are you gonna be, y'know, <i>thanking</i> him for his service?"
+
+		pixel Ahlai as <playerName> "Oh... thank him, how?"
+
+		pixel Lien as General Lien "You-! Ugh, ignore them. I can handle a few questions. <i>If</i> I can be of help."
+		
+		pixel Lien as General Lien "We are off duty right now, so forgive me if they happen to be unruly tonight."
+
+		pixel Ahlai as <playerName> "<i>Forgive you, huh...</i>"
+
+		pixel Lien as General Lien "What is it that you needed help with?"
+
+		$InfoOption = true
+
+	- <i>What if I lean into feeding their egos?</i>
+		$Peace += 1
+		$Lien += 1
+
+		pixel Ahlai as <playerName> "<i>These soldiers all want me to talk up their mighty general. I think I know what to do.</i>"
+
+		pixel Ahlai as <playerName> "I'm not just fine to look at, y'know, haha!"
+
+		pixel Soldier1 as Seiyslan Soldier "Oh?"
+
+		pixel Ahlai as <playerName> "I just figured that as one of the townspeople, I should make sure you all feel <i>welcome</i> while you are in Kuchai Town. Maybe even feel at home?"
+
+		pixel Soldier1 as Seiyslan Soldier "Hehe, how are you planning to do that, huh?"
+
+		pixel Ahlai as <playerName> "It's such an honor to even <i>meet</i> anyone from the capital-the Kingdom of Seiysla."
+
+		pixel Ahlai as <playerName> "So... I'd just like to hear <i>all</i> about the things you and your men do, General."
+
+		pixel Soldier1 as Seiyslan Soldier "He could also tell you the things he's about to do!"
+
+		pixel Lien as General Lien "I-what? Are you referring to the plans of the army? Because that information is classified."
+
+		pixel Soldier1 as Seiyslan Soldier "Pff, not unless you want that! Just read the room, sir!"
+
+		pixel Lien as General Lien "What is there to read?"
+
+		pixel Ahlai as <playerName> "Oh, forgive me. I suppose I shouldn't be hearing about these things, but I would be honored if you could help me with something. It is just for a while."
+
+		pixel Ahlai as <playerName> "I thought you and your men would be able to provide what I'm asking for..."
+
+		pixel Soldier1 as Seiyslan Soldier "C'mon, take 'em home, sir!"
+
+		pixel Lien as General Lien "...U-Uh, I think my men have derailed this conversation."
+
+		pixel Lien as General Lien "Yes, I can help you - what is it that you needed from me?"
+
+		$FeedEgoOption = true
+}
+
+$StartedLienRepeatingDialogue = false
+$AskedLienAboutFamily = false
+$LongSoldiersChosen = false
+$CatchLaisaChosen = false
+$AskedAboutMyo = false
+
+Load("Main 5 - Lien Repeating Dialogue")

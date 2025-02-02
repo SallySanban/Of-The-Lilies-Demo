@@ -1,0 +1,17 @@
+pixel StudentSit3 as Student "What is the point of liberty if its state is ineffective, violent, and brutal to its constituents?!"
+
+pixel StudentSit3 as Student "All these ideas from the Northernworld will just not work for a culture like ours."
+
+pixel StudentSit3 as Student "This is why General Sheng and General Lien show us all how it is critical to have an efficient, values-based, and state-centered approach to governance!"
+
+pixel StudentSit4 as Student "Um, actually, <i>you</i> should consider that the Generals are both members of the elite, all concentrated in the Kingdom! So <i>distant</i> and detached from Kuchai Town-"
+
+pixel StudentSit4 as Student "The only way to even <i>properly</i> manage territories like ours would be if you were to ensure resources in the form of economic stability, which requires a free market, and trade with other lands! We have literal proof in the form of Agon Province!"
+
+pixel StudentSit3 "And let possible <i>invaders</i> lay claim to our precious lands?"
+
+pixel StudentSit4 as Student "Mind your language! You call them invaders, but I call them <i>opportunities!</i>"
+
+pixel Ahlai as <playerName> "I guess if you're passionate enough, even politics can be talked about over dinner and drinks."
+
+HideTextbox(false)

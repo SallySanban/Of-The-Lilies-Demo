@@ -1,0 +1,21 @@
+pixel SocialClimberSit1 as ??? "You were right to pick this table, and these drinks too, Sir Gascon!"
+
+pixel SocialClimberSit2 as Sir Gascon "Indeed, Sir Fang! My tastes are <i>refined</i>, you know."
+
+pixel SocialClimberSit1 as Sir Fang "Ah, yes. A man with the company you keep would have such tastes, like with General Lien, yes?"
+
+pixel SocialClimberSit2 as Sir Gascon "Yes, actually."
+
+pixel SocialClimberSit1 as Sir Fang "Well, I do not mean to get <i>political</i> here..."
+
+pixel SocialClimberSit2 as Sir Gascon "Of course, of course..."
+
+pixel SocialClimberSit1 as Sir Fang "But I am just fascinated at how <i>interesting</i> his choices in policy are, are you not?"
+
+pixel SocialClimberSit1 as Sir Fang "Well, don't get me wrong! I'm only here for who does what's right. It doesn't matter if it's Lien or a rival of his, such as Myo..."
+
+pixel SocialClimberSit2 as Sir Gascon "Now, now-our bottom line is that we focus on our careers and families, not silly politics..."
+
+pixel Ahlai as <playerName> "I can just <i>smell</i> how desperate they are to advance their own positions..."
+
+HideTextbox(false)
