@@ -1,0 +1,1282 @@
+fileFormatVersion: 2
+guid: 292ff326cb87533468441ca57ae37b07
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Playing
+    second: {fileID: 7400000, guid: 88108022274a83f449bb2248b56e3a97, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: PlayingAlone
+    second: {fileID: 7400000, guid: bb9c3b012df6de54b8f0deb22a66bd76, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638741412952286291
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Laya_Frame_0
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 352
+      height: 224
+    spriteID: e262b3074b104f34ba246a4675dd8066
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Laya_Frame_13
+    originalName: 
+    pivot: {x: -0.29885063, y: -0.6111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1164
+      width: 348
+      height: 216
+    spriteID: a7a80d922febd0f48b78fadbd4df6ce5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1164}
+  - name: Laya_Frame_15
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 4
+      width: 352
+      height: 224
+    spriteID: 44cc98e8de3208c4981b1e28c4b3e97d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 4}
+  - name: Laya_Frame_1
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 4
+      width: 352
+      height: 224
+    spriteID: 9a5ef7f1ca38c9f468562859ea9b544b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 724, y: 4}
+  - name: Laya_Frame_2
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1084
+      y: 4
+      width: 352
+      height: 224
+    spriteID: 05dc45223a8ddf34eae669b622039350
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1084, y: 4}
+  - name: Laya_Frame_3
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1444
+      y: 4
+      width: 352
+      height: 224
+    spriteID: e5db6cae28906c348b46dbae49618bbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1444, y: 4}
+  - name: Laya_Frame_4
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 236
+      width: 352
+      height: 224
+    spriteID: 0e0bd4196e84f9943af1721e6f9fd313
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 236}
+  - name: Laya_Frame_5
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 236
+      width: 352
+      height: 224
+    spriteID: dd5d5cb5aa6b73c419bdb12eaa4022df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 236}
+  - name: Laya_Frame_6
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 236
+      width: 352
+      height: 224
+    spriteID: b7dc9aad3b0ebca4cbfc57a972ff61c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 724, y: 236}
+  - name: Laya_Frame_7
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1084
+      y: 236
+      width: 352
+      height: 224
+    spriteID: 89c508af166695b48815b63b1f668a1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1084, y: 236}
+  - name: Laya_Frame_8
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1444
+      y: 236
+      width: 352
+      height: 224
+    spriteID: 2d2b382b208649f41aafdabba706027d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1444, y: 236}
+  - name: Laya_Frame_9
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 468
+      width: 352
+      height: 224
+    spriteID: ba2de2f579c1b9547a1e16d3a9e7b1d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 468}
+  - name: Laya_Frame_10
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 468
+      width: 352
+      height: 224
+    spriteID: 4f502f37f6ce7964ebb0696b19cc1705
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 468}
+  - name: Laya_Frame_11
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 468
+      width: 352
+      height: 224
+    spriteID: d025923e5854e324e90b53295fc5139a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 724, y: 468}
+  - name: Laya_Frame_12
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1084
+      y: 468
+      width: 352
+      height: 224
+    spriteID: 293c8c1419a9aca4e9ff9a8d8b159de2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1084, y: 468}
+  - name: Laya_Frame_14
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1444
+      y: 468
+      width: 352
+      height: 224
+    spriteID: c5ecf7eb232ce644eb1236436b5298f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1444, y: 468}
+  - name: Laya_Frame_16
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 700
+      width: 352
+      height: 224
+    spriteID: b67e419aaa847bb4bbbab8b3744e1b1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 700}
+  - name: Laya_Frame_17
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 700
+      width: 352
+      height: 224
+    spriteID: 3b83ea232c0017342a17df85b3ee75ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 700}
+  - name: Laya_Frame_18
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1084
+      y: 932
+      width: 352
+      height: 216
+    spriteID: 022ba69a616417b48b3154d9e310395b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1084, y: 932}
+  - name: Laya_Frame_19
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1444
+      y: 932
+      width: 352
+      height: 216
+    spriteID: baec341a80360fe4db22d9a6623a9a89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1444, y: 932}
+  - name: Laya_Frame_20
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 700
+      width: 352
+      height: 224
+    spriteID: 83e60c3cf234acd4c9d1fb08a223ab88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 724, y: 700}
+  - name: Laya_Frame_21
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1084
+      y: 700
+      width: 352
+      height: 224
+    spriteID: 209f9349bd8e2904db949223236f1cd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1084, y: 700}
+  - name: Laya_Frame_22
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1444
+      y: 700
+      width: 352
+      height: 224
+    spriteID: 17140f4bdaefe664684e21a015878f09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1444, y: 700}
+  - name: Laya_Frame_23
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 932
+      width: 352
+      height: 224
+    spriteID: 6826f250192e0374e9474ec858ee0639
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 932}
+  - name: Laya_Frame_24
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 932
+      width: 352
+      height: 224
+    spriteID: a4769356878c5ae47b3a218a2f4fd540
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 932}
+  - name: Laya_Frame_25
+    originalName: 
+    pivot: {x: -0.2954546, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 932
+      width: 352
+      height: 224
+    spriteID: 3c91317596d362a4d97af8f429da869d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 724, y: 932}
+  - name: Laya_Frame_26
+    originalName: 
+    pivot: {x: -2.677419, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1804
+      y: 932
+      width: 124
+      height: 224
+    spriteID: 347b22a0570a001459147eea3b5f0115
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1804, y: 932}
+  - name: Laya_Frame_27
+    originalName: 
+    pivot: {x: -1.1730772, y: -0.6111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1804
+      y: 4
+      width: 208
+      height: 216
+    spriteID: 899c99f8c5fcb3543a184ae7333fa00f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1804, y: 4}
+  - name: Laya_Frame_29
+    originalName: 
+    pivot: {x: -1.7804879, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1804
+      y: 236
+      width: 164
+      height: 224
+    spriteID: b10b31e9a7e4f044085be3b37e0aba4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1804, y: 236}
+  - name: Laya_Frame_28
+    originalName: 
+    pivot: {x: -1.7804879, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1804
+      y: 468
+      width: 164
+      height: 224
+    spriteID: 7df22ecaaf2a52f439dd87078b80a417
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1804, y: 468}
+  - name: Laya_Frame_30
+    originalName: 
+    pivot: {x: -1.7804879, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1804
+      y: 700
+      width: 164
+      height: 224
+    spriteID: 4c821889ebb00294cba59e026da02c13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1804, y: 700}
+  - name: Laya_Frame_31
+    originalName: 
+    pivot: {x: -2.677419, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1388
+      width: 124
+      height: 224
+    spriteID: 93699ae38ae3acc4bae12e5c6bedaba3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1388}
+  - name: Laya_Frame_32
+    originalName: 
+    pivot: {x: -2.677419, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 1388
+      width: 124
+      height: 216
+    spriteID: ca6960a51f071b440bf787478a9ed1e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 1388}
+  - name: Laya_Frame_33
+    originalName: 
+    pivot: {x: -2.677419, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 664
+      y: 1388
+      width: 124
+      height: 216
+    spriteID: 67d112b6d3b49504c86248e628d253df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 664, y: 1388}
+  - name: Laya_Frame_34
+    originalName: 
+    pivot: {x: -2.677419, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 1388
+      width: 124
+      height: 224
+    spriteID: 196ff04cee119fb498050f3eee16d910
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 136, y: 1388}
+  - name: Laya_Frame_35
+    originalName: 
+    pivot: {x: -2.677419, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1388
+      width: 124
+      height: 224
+    spriteID: 74fcc1e0272166f43b7c604347b5ec12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 1388}
+  - name: Laya_Frame_36
+    originalName: 
+    pivot: {x: -2.677419, y: -0.6428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 400
+      y: 1388
+      width: 124
+      height: 224
+    spriteID: afdf687d7bd771b4fb951b4e3f9b224b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 400, y: 1388}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1040613621
+    name: Laya
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Laya_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: e262b3074b104f34ba246a4675dd8066
+    - name: Laya_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 132
+        width: 348
+        height: 216
+      spriteId: a7a80d922febd0f48b78fadbd4df6ce5
+    - name: Laya_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 44cc98e8de3208c4981b1e28c4b3e97d
+    - name: Laya_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 9a5ef7f1ca38c9f468562859ea9b544b
+    - name: Laya_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 05dc45223a8ddf34eae669b622039350
+    - name: Laya_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: e5db6cae28906c348b46dbae49618bbf
+    - name: Laya_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 0e0bd4196e84f9943af1721e6f9fd313
+    - name: Laya_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: dd5d5cb5aa6b73c419bdb12eaa4022df
+    - name: Laya_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: b7dc9aad3b0ebca4cbfc57a972ff61c0
+    - name: Laya_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 89c508af166695b48815b63b1f668a1e
+    - name: Laya_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 2d2b382b208649f41aafdabba706027d
+    - name: Laya_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: ba2de2f579c1b9547a1e16d3a9e7b1d2
+    - name: Laya_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 4f502f37f6ce7964ebb0696b19cc1705
+    - name: Laya_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: d025923e5854e324e90b53295fc5139a
+    - name: Laya_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 293c8c1419a9aca4e9ff9a8d8b159de2
+    - name: Laya_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: c5ecf7eb232ce644eb1236436b5298f6
+    - name: Laya_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: b67e419aaa847bb4bbbab8b3744e1b1c
+    - name: Laya_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 3b83ea232c0017342a17df85b3ee75ac
+    - name: Laya_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 216
+      spriteId: 022ba69a616417b48b3154d9e310395b
+    - name: Laya_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 216
+      spriteId: baec341a80360fe4db22d9a6623a9a89
+    - name: Laya_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 83e60c3cf234acd4c9d1fb08a223ab88
+    - name: Laya_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 209f9349bd8e2904db949223236f1cd5
+    - name: Laya_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 17140f4bdaefe664684e21a015878f09
+    - name: Laya_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 6826f250192e0374e9474ec858ee0639
+    - name: Laya_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: a4769356878c5ae47b3a218a2f4fd540
+    - name: Laya_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 1064
+        y: 144
+        width: 352
+        height: 224
+      spriteId: 3c91317596d362a4d97af8f429da869d
+    - name: Laya_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 1292
+        y: 144
+        width: 124
+        height: 224
+      spriteId: 347b22a0570a001459147eea3b5f0115
+    - name: Laya_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 1204
+        y: 132
+        width: 208
+        height: 216
+      spriteId: 899c99f8c5fcb3543a184ae7333fa00f
+    - name: Laya_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 1252
+        y: 144
+        width: 164
+        height: 224
+      spriteId: b10b31e9a7e4f044085be3b37e0aba4b
+    - name: Laya_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 1252
+        y: 144
+        width: 164
+        height: 224
+      spriteId: 7df22ecaaf2a52f439dd87078b80a417
+    - name: Laya_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 1252
+        y: 144
+        width: 164
+        height: 224
+      spriteId: 4c821889ebb00294cba59e026da02c13
+    - name: Laya_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 1292
+        y: 144
+        width: 124
+        height: 224
+      spriteId: 93699ae38ae3acc4bae12e5c6bedaba3
+    - name: Laya_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 1292
+        y: 144
+        width: 124
+        height: 216
+      spriteId: ca6960a51f071b440bf787478a9ed1e9
+    - name: Laya_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 1292
+        y: 144
+        width: 124
+        height: 216
+      spriteId: 67d112b6d3b49504c86248e628d253df
+    - name: Laya_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 1292
+        y: 144
+        width: 124
+        height: 224
+      spriteId: 196ff04cee119fb498050f3eee16d910
+    - name: Laya_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 1292
+        y: 144
+        width: 124
+        height: 224
+      spriteId: 74fcc1e0272166f43b7c604347b5ec12
+    - name: Laya_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 1292
+        y: 144
+        width: 124
+        height: 224
+      spriteId: afdf687d7bd771b4fb951b4e3f9b224b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1920, y: 1080}

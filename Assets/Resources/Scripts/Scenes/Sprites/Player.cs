@@ -36,7 +36,7 @@ public class Player : PixelSprite
     {
         if (move.x != 0)
         {
-            //animator.SetBool("IsWalking", true);
+            animator.SetBool("isWalking", true);
             animator.SetBool("Flipped", move.x < 0);
             
             Vector3 movement = new Vector3(move.x * STEPS, 0, 0) * SPEED * Time.deltaTime;
@@ -44,7 +44,7 @@ public class Player : PixelSprite
         }
         else
         {
-            //animator.SetBool("IsWalking", false);
+            animator.SetBool("isWalking", false);
         }
     }
 
@@ -62,14 +62,14 @@ public class Player : PixelSprite
             
             movedLeft = direction.x < 0;
             
-            //animator.SetBool("IsWalking", true);
+            animator.SetBool("isWalking", true);
             animator.SetBool("Flipped", movedLeft); //true means going left
             
             root.transform.position += new Vector3(direction.x, 0, 0) * SPEED * Time.deltaTime;
             yield return null;
         }
         
-        //animator.SetBool("IsWalking", false);
+        animator.SetBool("isWalking", false);
         animator.SetBool("Flipped", !movedLeft);
 
         if(SceneManager.Instance.followPlayer) yield return SceneManager.Instance.follower.GoBehindPlayer(movedLeft);

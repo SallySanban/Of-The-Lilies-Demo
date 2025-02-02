@@ -27,6 +27,14 @@ MonoBehaviour:
       position: {x: -612.94, y: -192.34}
       appear: 1
       animationState: Sitting
+    - npcName: Laya
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: PlayingWithoutAlonay
+    - npcName: Dalawi
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
     interactablesInScene: []
     backgroundsToGo: []
   - sceneName: Scene 2
@@ -43,6 +51,10 @@ MonoBehaviour:
       position: {x: -612.94, y: -192.34}
       appear: 1
       animationState: Sitting
+    - npcName: Laya
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Playing
     interactablesInScene:
     - interactableName: Chest
       interactableType: 1
@@ -864,17 +876,17 @@ MonoBehaviour:
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Tavern Door
+      backgroundToGo: Tavern
+      keyToPress: 3
+      playerPositionInNextBackground: {x: -2249.73, y: -270.88}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
     - interactableName: Sabina Door
       backgroundToGo: Main Shop
       keyToPress: 3
       playerPositionInNextBackground: {x: -2306.26, y: -262.05}
-      playerDirectionInNextBackground: 1
-      followPlayer: 
-      followPlayerPosition: {x: 0, y: 0}
-    - interactableName: Tavern Door
-      backgroundToGo: Tavern
-      keyToPress: 3
-      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -1654,10 +1666,103 @@ MonoBehaviour:
   - sceneName: Scene 8
     currentBackgroundName: Tavern
     showPlayer: 1
-    playerPosition: {x: 0, y: 0}
+    playerPosition: {x: -2249.73, y: -270.88}
     playerDirection: 1
-    npcsInScene: []
-    interactablesInScene: []
+    npcsInScene:
+    - npcName: StudentSit3
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: StudentSit4
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Barkeep
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Myo
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: AdmirerSit1
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: AdmirerSit2
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: SocialClimberSit1
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: SocialClimberSit2
+      position: {x: 0, y: 0}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier1
+      position: {x: 0, y: 0}
+      appear: 0
+      animationState: Idle
+    - npcName: Soldier2
+      position: {x: 0, y: 0}
+      appear: 0
+      animationState: Idle
+    - npcName: Soldier3
+      position: {x: 0, y: 0}
+      appear: 0
+      animationState: Idle
+    - npcName: Lien
+      position: {x: 0, y: 0}
+      appear: 0
+      animationState: Idle
+    interactablesInScene:
+    - interactableName: Barkeep
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Myo
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Student3
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: AdmirerSit2
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: SocialClimberSit1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Alcohol
+      interactableType: 1
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Soldier1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Lien
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Left Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Left Side
       backgroundToGo: Kuchai Town 1
