@@ -267,9 +267,9 @@ GameObject:
   - component: {fileID: 2671795219586830684}
   - component: {fileID: 633529819929462598}
   - component: {fileID: 2144996415485550871}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

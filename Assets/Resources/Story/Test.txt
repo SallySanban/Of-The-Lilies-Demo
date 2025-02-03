@@ -5,4 +5,5 @@ $BarkeepTalkedTo = true
 $MyoTalkedTo = false
 $LienTalkedTo = false
 $GotDrinks = false
+
 ShowScene("Scene 2" "Tayabac Village")
