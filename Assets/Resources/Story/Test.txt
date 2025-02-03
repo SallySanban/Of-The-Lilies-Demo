@@ -1,4 +1,3 @@
 input
 
-$BarkeepTalkedTo = false
-ShowScene("Scene 8" "Tavern")
+ShowScene("Scene 2" "Tayabac Village")

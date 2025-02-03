@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Arrow
   - Slider
+  - Grass
+  - Wood
+  - Stone
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - Slider
   - Arrow
   - 
-  - 
+  - Surface
   - 
   - 
   - 
