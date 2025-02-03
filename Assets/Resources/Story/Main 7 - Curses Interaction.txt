@@ -1,0 +1,34 @@
+[input]Blackout()
+[wait]SwitchCG("Curses Appear")
+
+Ahlai as <playerName> "<i>What's happening...?</i>"
+
+Ahlai as <playerName> "<i>What's happening...?</i>"
+
+Laisa as Ilaisaane "And <i>that</i> is my cue to run along."
+
+Lien as General Lien "Find her! We can't let her escape in this mist!"
+
+if ($LaisaNoTrouble)
+{
+	Ahlai as <playerName> "Laisa? Laisa, where are you?"
+
+	Laisa "Over here."
+
+	Load("Main 7 - Laisa Interaction")
+}
+else
+{
+	if ($LaisaNoWorries)
+	{
+		Ahlai as <playerName> "Ilaisaane? Ilaisaane, where are you?"
+
+		Laisa "<i>You</i> can call me Laisa."
+
+		Load("Main 7 - Laisa Interaction")
+	}
+	else
+	{
+		Load("Main 7")
+	}
+}

@@ -130,7 +130,6 @@ stopEvent(BGM_Scene3)
 
 Ahlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
 
-
 ??? "Sir Lien!"
 
 playSFX(SFX_LienFall)
@@ -244,7 +243,7 @@ Dalawi "He said not to hurt him! What are you doing?! Unhand me or I'm <i>going 
 
 HideTextbox(true)
 playSFX(SFX_Knockout)
-[wait]Blackout()
+[wait]Blackout(-i true)
 
 [input]SwitchCG("Alonay Chained")
 
@@ -259,7 +258,7 @@ playSFX(SFX_DoorSlam)
 stopEvent(BGM_Scene4-2)
 stopEvent(Amb_Leather)
 
-[wait]Blackout()
+[wait]Blackout(-i true)
 
 Ahlai as <playerName> "NO!"
 

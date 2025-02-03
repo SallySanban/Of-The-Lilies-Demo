@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Commands
 {
@@ -24,6 +25,7 @@ namespace Commands
             database.AddCommand("MovePlayerToInteract", new Func<string[], IEnumerator>(MovePlayerToInteract));
             database.AddCommand("PanCamera", new Func<string[], IEnumerator>(PanCamera));
             database.AddCommand("ResetCamera", new Action<string>(ResetCamera));
+            database.AddCommand("SetCamera", new Action<string[]>(SetCamera));
             database.AddCommand("ScrollBackground", new Action<string>(ScrollBackground));
             database.AddCommand("SetNPCPosition", new Action<string[]>(SetNPCPosition));
             database.AddCommand("SetCameraFollow", new Action<string>(SetCameraFollow));
@@ -171,7 +173,7 @@ namespace Commands
 
         private static void SetNPCPosition(string[] data)
         {
-            NPC npc = NPCManager.Instance.GetNPC(data[0]);
+            string npcName = data[0];
 
             var parameters = ConvertDataToParameters(data);
 
@@ -183,7 +185,20 @@ namespace Commands
 
             Vector2 position = new Vector2(x, y);
 
-            npc.SetPosition(npc.root, position);
+            if (npcName.Equals(SceneManager.Instance.MC_NAME))
+            {
+                PixelSprite player = SceneManager.Instance.player;
+                GameObject root = SceneManager.Instance.player.root;
+
+                player.SetPosition(root, position);
+            }
+            else
+            {
+                NPC npc = NPCManager.Instance.GetNPC(npcName);
+
+                npc.SetPosition(npc.root, position);
+            }
+            
         }
 
         private static IEnumerator MovePlayerToInteract(string[] data)
@@ -214,6 +229,21 @@ namespace Commands
             parameters.TryGetValue(spdParameter, out spd, defaultValue: 0);
 
             yield return SceneManager.Instance.PanCamera(x, y, spd);
+        }
+
+        private static void SetCamera(string[] data)
+        {
+            var parameters = ConvertDataToParameters(data);
+
+            float x;
+            float y;
+
+            parameters.TryGetValue(xParameter, out x, defaultValue: 0);
+            parameters.TryGetValue(yParameter, out y, defaultValue: 0);
+
+            Vector2 newPosition = new Vector2(x, y);
+
+            SceneManager.Instance.SetCamera(newPosition);
         }
 
         private static void ResetCamera(string data)

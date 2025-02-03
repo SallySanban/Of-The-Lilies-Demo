@@ -1,6 +1,6 @@
 input
 
 $SeijiHesitation = false
-$LaisaTalkedTo = true
+$LaisaTalkedTo = false
 
 Load("Main 6")

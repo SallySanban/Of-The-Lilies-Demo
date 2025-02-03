@@ -69,7 +69,7 @@ choice in -1
 		}
 }
 
-pixel Laisa as Ilaisaane "That's very tempting, but I can handle things well alone. While I'd be more than happy to lend you a hand, it's best if you weren’t entangled with a pirate."
+pixel Laisa as Ilaisaane "That's very tempting, but I can handle things well alone. While I'd be more than happy to lend you a hand, it's best if you weren't entangled with a pirate."
 
 pixel Laisa as Ilaisaane "At least, not in the way you suggest."
 
@@ -78,3 +78,6 @@ pixel Laisa as Ilaisaane "But you're an interesting one. I might just come to yo
 pixel Ahlai as <playerName> "It's <playerName>."
 
 pixel Laisa as Ilaisaane "<playerName>... I'll make sure to remember. And you can call me Laisa."
+
+HideTextbox(true)
+Load("Main 6 - Laisa Lien Interaction")

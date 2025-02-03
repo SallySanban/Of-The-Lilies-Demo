@@ -1,14 +1,18 @@
 using System;
 using System.Collections;
+using System.Data.Common;
 using UnityEngine;
 
 namespace Commands
 {
     public class DatabaseExtensionUI : CommandDatabaseExtension
     {
+        private static string immediateParameter => "-i";
+
+
         new public static void Extend(CommandDatabase database)
         {
-            database.AddCommand("Blackout", new Func<IEnumerator>(Blackout));
+            database.AddCommand("Blackout", new Func<string[], IEnumerator>(Blackout));
             database.AddCommand("ShowCG", new Func<string, IEnumerator>(ShowCG));
             database.AddCommand("HideCG", new Func<IEnumerator>(HideCG));
             database.AddCommand("SwitchCG", new Func<string, IEnumerator>(SwitchCG));
@@ -17,15 +21,35 @@ namespace Commands
             database.AddCommand("HideCredits", new Func<IEnumerator>(HideCredits));
         }
 
-        private static IEnumerator Blackout()
+        private static IEnumerator Blackout(string[] data)
         {
-            if (UIManager.Instance.currentCG == null)
+            var parameters = ConvertDataToParameters(data);
+
+            bool immediate;
+
+            parameters.TryGetValue(immediateParameter, out immediate, defaultValue: false);
+
+            if (immediate)
             {
-                yield return ShowCG("Blackout");
+                GraphicPanel graphicPanel = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
+
+                graphicPanel.Show(true);
+
+                while (graphicPanel.isCGShowing)
+                {
+                    yield return null;
+                }
             }
             else
             {
-                yield return SwitchCG("Blackout");
+                if (UIManager.Instance.currentCG == null)
+                {
+                    yield return ShowCG("Blackout");
+                }
+                else
+                {
+                    yield return SwitchCG("Blackout");
+                }
             }
         }
 

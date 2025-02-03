@@ -1,0 +1,62 @@
+[input]Blackout()
+[wait]SwitchCG("Laisa")
+
+Laisa "Did you miss me already?"
+
+Laisa "You tried your best, my pearl. But I still need you for <i>one</i> more thing."
+
+Laisa "How good are you at keeping a secret, hmm?"
+
+Ahlai as <playerName> "...!"
+
+choice in 2
+{
+	- I'm good at keeping secrets.
+		$Laisa += 1
+
+		Ahlai as <playerName> "You won't have to worry."
+
+		Laisa "I knew I could count on you. "
+
+		Laisa "I need you to make sure what happened between us stays a secret from here on out. Don't let them know where I've gone."
+
+		Ahlai as <playerName> "But, Laisa, I can help you!"
+
+		Laisa "Sure, but I can't let you be involved in this any further."
+
+	- I'm terrible at keeping secrets.
+		Ahlai as <playerName> "But I suppose I could pretend that nothing happened..."
+
+		Laisa "Am I that easy to forget?"
+
+		Ahlai as <playerName> "H-Hey, that is not what I meant..."
+
+		Laisa "Oh, I'm kidding. But I cannot hold it against you."
+
+		Laisa "Don't worry about me. I'll be gone before you know it."
+
+	- I can't promise anything.
+		Ahlai as <playerName> "Isn't it too risky?"
+
+		Laisa "Ugh, really? Sweetheart, avoiding risk flew right out the window when you helped me out."
+
+		Laisa "Would it not be riskier if you cried out the news to the entire town?"
+
+		Ahlai as <playerName> "Well... uh..."
+
+		Laisa "People don't care about details if the bottomline is that you got entangled with me. So don't let them know where I've gone."
+}
+
+Ahlai as <playerName> "Will... I see you again?"
+
+Laisa "Who knows? If you're as clever as you think you are... then you might just get to find me again."
+
+Laisa "Goodbye, my pearl."
+
+[wait]Blackout()
+
+Ahlai as <playerName> "<i>Did... that just happen...?</i>"
+
+[wait]SwitchCG("Curses Appear")
+
+Load("Main 7")

@@ -1,0 +1,21 @@
+Soldier "Damn it, General! We can't find the pirate anymore!"
+
+Lien as General Lien "That is no excuse. Go secure the perimeter, cover <i>all</i> exits out of Kuchai! <i>This is an order!</i>"
+
+Soldiers "Sir, yes sir!"
+
+Soldier "Sir, what about the curses?!"
+
+Lien as General Lien "This fog will not deter <i>me</i>, it will not deter you either."
+
+Ahlai as <playerName> "<i>I have to find a way out of here...</i>"
+
+Seiji "<playerName>! There you are!"
+
+Ahlai as <playerName> "Seiji!"
+
+Seiji "When the skies began to change and you still weren't home... I started to worry! I'm so glad you're safe!"
+
+Seiji "Hurry, <playerName>. Let's go back to Sabina's Salves. We'll be safe there."
+
+[wait]Blackout()

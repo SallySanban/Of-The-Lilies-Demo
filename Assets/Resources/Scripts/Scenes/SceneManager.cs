@@ -256,10 +256,19 @@ public class SceneManager : MonoBehaviour
         panCamera.transform.position = targetPosition;
     }
 
+    public void SetCamera(Vector2 position)
+    {
+        panCamera.Priority = 2;
+        cinemachineBrain.m_DefaultBlend.m_Time = 0;
+
+        panCamera.transform.position = new Vector2(position.x, playerCamera.transform.position.y);
+    }
+
     public void ResetCamera(bool smooth)
     {
         if(smooth)
         {
+            cinemachineBrain.m_DefaultBlend.m_Time = DEFAULT_BLEND;
             panCamera.Priority = 0;
         }
         else

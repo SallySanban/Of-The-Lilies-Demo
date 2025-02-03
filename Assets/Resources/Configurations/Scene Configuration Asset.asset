@@ -1975,7 +1975,23 @@ MonoBehaviour:
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Laisa
-      position: {x: -2141.96, y: -209.32}
+      position: {x: -3488.96, y: -221.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Lien
+      position: {x: 2491.29, y: -220.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier1
+      position: {x: 2740.04, y: -220.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier2
+      position: {x: 2943.04, y: -220.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Soldier3
+      position: {x: 3146.04, y: -220.32}
       appear: 1
       animationState: Idle
     interactablesInScene: []

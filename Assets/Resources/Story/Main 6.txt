@@ -1,7 +1,7 @@
 [wait]Blackout()
 RemoveScene()
 [wait]ShowScene("Scene 10" "Main Shop")
-[wait]PanCamera(-x -10.26 -spd 1)
+[wait]SetCamera(-x -10.26 -spd 1)
 Wait(0.5)
 [wait]HideCG()
 
@@ -89,15 +89,15 @@ HideTextbox(false)
 [wait]ResetCamera(true)
 Wait(0.05)
 [wait]MoveNPC(Ahlai -x -27.35 -y -2.31 -spd 5)
-[wait]SwitchScene("Scene 11" "Kuchai Town 1")
-Wait(1)
-[wait]MoveNPC(Laisa -x -31.88 -y -1.94 -spd 5)
 [wait]Blackout()
+RemoveScene()
+[wait]ShowScene("Scene 11" "Kuchai Town 1")
 
 Ahlai as <playerName> "Hey!"
 
 Ahlai as <playerName> "Wait... aren't you-"
 
+HideTextbox(true)
 [wait]FlipNPC("Ahlai" Right)
 [wait]HideCG()
 
@@ -116,14 +116,19 @@ else
 	pixel Laisa as Ilaisaane "And what are you going to do about it?"
 }
 
+$LaisaNoTrouble = false
+$LaisaNoWorries = false
+
 choice in -1
 {
 	- Nothing! I don't intend to put you in trouble.
 		$Laisa += 1
+		$LaisaNoTrouble = true
 
 		Load("Main 6 - Laisa No Trouble Dialogue")
 
 	- That depends on you.
+		Load("Main 6 - Laisa Depends Dialogue")
 }
 
 
