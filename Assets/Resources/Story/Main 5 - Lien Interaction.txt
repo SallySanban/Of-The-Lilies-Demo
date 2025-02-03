@@ -6,7 +6,7 @@ pixel Soldier1 as Seiyslan Soldier "All thanks to you!"
 
 pixel Soldier2 as Seiyslan Soldier "We'll even toast to you, sir! To the General!"
 
-Soldier1 as Seiyslan Soldier "To the General!"
+pixel Soldier1 as Seiyslan Soldier "To the General!"
 
 pixel Lien as General Lien "Are you both drunk already? I'd rather not tempt fate when it comes to the <i>Sea Serpent</i>, of all criminals."
 
@@ -94,7 +94,7 @@ $FeedEgoOption = false
 
 choice in -1
 {
-	- <i>These guys flatter themselves, why don't I call them out...</i>
+	- <i>They flatter themselves, why don't I call them out...</i>
 		$Vengeance += 1
 
 		pixel Ahlai as <playerName> "I just said 'excuse me' and you all think I'm here to take someone home tonight?"
@@ -115,7 +115,7 @@ choice in -1
 
 		pixel Ahlai as <playerName> "Frankly, this is hardly a compliment coming from <i>you</i>."
 
-		pixel Soldier2 as Seiyslan Soldier "Hah, you arne't wrong!"
+		pixel Soldier2 as Seiyslan Soldier "Hah, you aren't wrong!"
 
 		pixel Soldier1 as Seiyslan Soldier "Wha-you're siding with this stranger?!"
 
@@ -148,7 +148,7 @@ choice in -1
 
 		$PunchOption = true
 
-	- <i>I'll just ignore what they said and focus on the information...</i>
+	- <i>I'll ignore what they said and focus on information...</i>
 		$Justice += 1
 		$Lien += 2
 
@@ -164,7 +164,7 @@ choice in -1
 
 		pixel Ahlai as <playerName> "Only if it's not too inconvenient, of course."
 
-		pixel Soldier as Seiyslan Soldier "I mean... are you gonna be, y'know, <i>thanking</i> him for his service?"
+		pixel Soldier1 as Seiyslan Soldier "I mean... are you gonna be, y'know, <i>thanking</i> him for his service?"
 
 		pixel Ahlai as <playerName> "Oh... thank him, how?"
 

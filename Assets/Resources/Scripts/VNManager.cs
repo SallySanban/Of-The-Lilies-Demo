@@ -60,7 +60,7 @@ public class VNManager : MonoBehaviour
 
         if(moveToInteractPosition != Vector2.zero)
         {
-            yield return Player.Instance.MoveToInteract(moveToInteractPosition);
+            yield return SceneManager.Instance.player.MoveToInteract(moveToInteractPosition);
         }
 
         yield return LoadFile(storyToPlay);

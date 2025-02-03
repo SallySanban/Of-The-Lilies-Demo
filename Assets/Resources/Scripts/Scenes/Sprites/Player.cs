@@ -28,6 +28,9 @@ public class Player : PixelSprite
     [SerializeField] private Color raycastColor = Color.green; // Color of the Raycast line
     [SerializeField] private float raycastDistance = 10f; // Distance of the Raycast
 
+    public bool movingToInteract = false;
+
+
     public Player(GameObject prefab, Transform parent, Vector2 position, int direction, string animationState)
     {
         Instance = this;
@@ -75,6 +78,8 @@ public class Player : PixelSprite
     //uses world position
     public IEnumerator MoveToInteract(Vector2 position)
     {
+        movingToInteract = true;
+
         Vector2 targetPos = position;
         Vector2 currentPos = root.transform.position;
         bool movedLeft = false;
@@ -101,6 +106,8 @@ public class Player : PixelSprite
         animator.SetBool("Flipped", !movedLeft);
 
         if(SceneManager.Instance.followPlayer) yield return SceneManager.Instance.follower.GoBehindPlayer(movedLeft);
+
+        movingToInteract = false;
     }
 
     public void Flip(int direction)

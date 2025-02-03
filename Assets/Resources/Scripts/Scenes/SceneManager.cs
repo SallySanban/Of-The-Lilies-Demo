@@ -44,6 +44,8 @@ public class SceneManager : MonoBehaviour
 
     private const float DEFAULT_BLEND = 2f;
 
+    private bool isRunningConversation => DialogueManager.Instance.conversationManager.isRunning;
+
     private void Awake()
     {
         if (Instance == null)
@@ -75,7 +77,7 @@ public class SceneManager : MonoBehaviour
 
     private void Update()
     {
-        if (player != null)
+        if (player != null && !player.movingToInteract && !isRunningConversation)
         {
             if (InteractableManager.Instance.playerInsideStopTrigger)
             {
