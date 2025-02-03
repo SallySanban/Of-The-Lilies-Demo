@@ -37,7 +37,7 @@ if($GotCoconut == true)
 }
 else
 {
-	[wait]MovePlayerToInteract(-x -11.65 -y -2.10)
+	[wait]MovePlayerToInteract(-x -11.70 -y -1.98)
 	
 	pixel Ahlai as <playerName> "I need to find a coconut first."
 

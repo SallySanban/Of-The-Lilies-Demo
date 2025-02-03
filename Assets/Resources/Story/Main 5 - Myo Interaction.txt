@@ -6,13 +6,13 @@ if (!$BarkeepTalkedTo)
 }
 else
 {
-	pixel Myo "So, you say you want to reach out to the administration of the Seiyslan Imperial Academy of Arts and Letters, but… what exactly are you reaching out to them with if I appeal to take your son's artworks overseas?"
+	pixel Myo "So, you say you want to reach out to the administration of the Seiyslan Imperial Academy of Arts and Letters, but... what exactly are you reaching out to them with if I appeal to take your son's artworks overseas?"
 
 	pixel SocialClimberSit2 as ??? "Sorry, what do you even mean by that? I just thought you were such a patron of, say, arts and culture around the Empire!"
 
 	pixel SocialClimberSit2 as ??? "And I cannot lie to you, Sir Aciano, I think my son would love your guidance in terms of, er, the direction he could take as an artist."
 
-	pixel SocialCilmberSit2 as ??? "I just think that he would have a far more secure future if he just focused more on the business he is set to inherit from me, but his time at the academy has had him lose more focus than I am comfortable with."
+	pixel SocialClimberSit2 as ??? "I just think that he would have a far more secure future if he just focused more on the business he is set to inherit from me, but his time at the academy has had him lose more focus than I am comfortable with."
 
 	pixel Myo "Er, and how could I help you and him with this issue, then? Surely he has been equipped with the necessary knowledge and skills for your business, if you are so keen on having him be your successor?"
 
@@ -101,7 +101,7 @@ else
 
 			pixel Myo "Hah, more than you realize!"
 
-		- <i>Maybe I could have some fun from this conversation, too?</i>
+		- <i>Maybe I could have some fun from this, too?</i>
 			$Vengeance += 1
 
 			pixel Ahlai as <playerName> "<i>Like those government officials at the other table, this one clearly plans to gain something out of Sir Aciano.</i>"

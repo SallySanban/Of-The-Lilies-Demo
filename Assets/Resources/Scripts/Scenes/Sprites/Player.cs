@@ -16,6 +16,8 @@ public class Player : PixelSprite
     private const float SPEED = 3f;
     private const float STEPS = 2f;
 
+    public bool movingToInteract = false;
+
     public Player(GameObject prefab, Transform parent, Vector2 position, int direction, string animationState)
     {
         Instance = this;
@@ -60,6 +62,8 @@ public class Player : PixelSprite
     //uses world position
     public IEnumerator MoveToInteract(Vector2 position)
     {
+        movingToInteract = true;
+
         Vector2 targetPos = position;
         Vector2 currentPos = root.transform.position;
         bool movedLeft = false;
@@ -82,6 +86,8 @@ public class Player : PixelSprite
         animator.SetBool("Flipped", !movedLeft);
 
         if(SceneManager.Instance.followPlayer) yield return SceneManager.Instance.follower.GoBehindPlayer(movedLeft);
+
+        movingToInteract = false;
     }
 
     public void Flip(int direction)

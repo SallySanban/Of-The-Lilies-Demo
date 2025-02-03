@@ -1,4 +1,8 @@
 input
 
 $BarkeepTalkedTo = false
-ShowScene("Scene 8" "Tavern")
+$BarkeepTalkedTo = true
+$MyoTalkedTo = false
+$LienTalkedTo = false
+$GotDrinks = false
+ShowScene("Scene 2" "Tayabac Village")

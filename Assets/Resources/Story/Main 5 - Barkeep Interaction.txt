@@ -29,6 +29,7 @@ else
 		pixel Barkeep "Come back again soon, pal. Any patron from Sabina's Salves is welcome here."
 
 		$GotDrinks = true
+		ToggleInteractable("Scene 9" "Tavern" "Barkeep" false)
 	}
 
 	HideTextbox(false)

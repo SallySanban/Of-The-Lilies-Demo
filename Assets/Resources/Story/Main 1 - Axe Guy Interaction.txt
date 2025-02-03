@@ -1,4 +1,4 @@
-[wait]MovePlayerToInteract(-x 73.12 -y -2.11)
+[wait]MovePlayerToInteract(-x 73.12 -y -2.08)
 
 pixel MaleNPC4 as Uncle "Don't bother him, <playerName>. He's practicing."
 
