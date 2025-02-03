@@ -1777,7 +1777,7 @@ MonoBehaviour:
       storyToPlay: Main 5 - Leave Tavern Interaction
       moveToInteractPosition: {x: -19.67, y: -2.47}
     backgroundsToGo:
-    - interactableName: Left Side
+    - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
       playerPositionInNextBackground: {x: 0, y: 0}
@@ -1865,7 +1865,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Rowdy Soldier Interaction
-      moveToInteractPosition: {x: 9.28, y: -2.47}
+      moveToInteractPosition: {x: 9.28, y: -2.39}
     - interactableName: Lien
       interactableType: 0
       isInteractable: 1
@@ -1880,9 +1880,9 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Drunk Soldier Interaction
-      moveToInteractPosition: {x: -2.78, y: -2.47}
+      moveToInteractPosition: {x: -1.29, y: -2.39}
     backgroundsToGo:
-    - interactableName: Left Side
+    - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
       playerPositionInNextBackground: {x: 0, y: 0}
