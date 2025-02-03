@@ -6,6 +6,9 @@ public class PixelSprite
 {
     private bool spriteCurrentlyMoving = false;
 
+    public GameObject root = null;
+    protected Animator animator = null;
+
     //uses local position
     public void SetPosition(GameObject npc, Vector2 targetPosition)
     {
@@ -15,9 +18,9 @@ public class PixelSprite
     }
 
     //uses world position
-    public IEnumerator MoveToPosition(GameObject npc, Vector2 targetPosition, float speed = 4f, bool smooth = false)
+    public IEnumerator MoveToPosition(PixelSprite npc, Vector2 targetPosition, float speed = 4f, bool smooth = false)
     {
-        Transform npcTransform = npc.transform;
+        Transform npcTransform = npc.root.transform;
         Vector3 startPosition = npcTransform.position;
         Vector3 target = new Vector3(targetPosition.x, targetPosition.y, startPosition.z);
         
@@ -27,6 +30,11 @@ public class PixelSprite
 
         while (Vector3.Distance(npcTransform.position, target) > 0.01f)
         {
+            Vector2 direction = (target - npcTransform.position).normalized;
+
+            animator.SetBool("isWalking", true);
+            animator.SetBool("Flipped", direction.x < 0); //true means going left
+
             if (smooth)
             {
                 npcTransform.position = Vector3.Lerp(
@@ -46,6 +54,7 @@ public class PixelSprite
             yield return null;
         }
 
+        animator.SetBool("isWalking", false);
         npcTransform.position = target;
     }
 

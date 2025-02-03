@@ -9,10 +9,6 @@ public class Player : PixelSprite
 {
     public static Player Instance { get; private set; }
 
-    public GameObject root = null;
-    
-    private Animator animator = null;
-
     public Vector3 move = Vector3.zero;
     private const float SPEED = 3f;
     private const float STEPS = 2f;

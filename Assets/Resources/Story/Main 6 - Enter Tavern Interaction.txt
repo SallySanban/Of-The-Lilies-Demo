@@ -1,0 +1,3 @@
+pixel Seiji "We've got the drinks. We don't need to go back."
+
+HideTextbox(false)

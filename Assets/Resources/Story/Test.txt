@@ -1,9 +1,6 @@
 input
 
-$BarkeepTalkedTo = false
-$BarkeepTalkedTo = true
-$MyoTalkedTo = false
-$LienTalkedTo = false
-$GotDrinks = false
+$SeijiHesitation = false
+$LaisaTalkedTo = true
 
-ShowScene("Scene 2" "Tayabac Village")
+Load("Main 6")

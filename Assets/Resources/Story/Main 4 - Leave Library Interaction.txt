@@ -12,5 +12,7 @@ else
 	[wait]MoveNPC(Ahlai -x -3.67 -y -2.51)
 	[wait]FlipNPC(Ahlai Right)
 
+	$LaisaTalkedTo = false
+
 	Load("Main 4 - Seiji Interaction")
 }

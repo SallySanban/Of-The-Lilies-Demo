@@ -1,5 +1,7 @@
 if (!$MyoTalkedTo || !$LienTalkedTo)
 {
+	[wait]MovePlayerToInteract(-x -19.67 -y -2.47)
+
 	pixel Ahlai as <playerName> "Those drinks aren't ready yet. I should talk to someone else while waiting."
 
 	HideTextbox(false)
@@ -8,12 +10,16 @@ else
 {
 	if ($GotDrinks)
 	{
-		[wait]SwitchScene("Scene 9" "Kuchai Town 1")
+		[wait]SwitchScene("Scene 10" "Kuchai Town 1")
+
+		Load("Main 6 - Seiji Interaction")
 	}
 	else
 	{
-		pixel Ahlai as <playerName> "I need to get those drinks first."
-	}
+		[wait]MovePlayerToInteract(-x -19.67 -y -2.47)
 
-	HideTextbox(false)
+		pixel Ahlai as <playerName> "I need to get those drinks first."
+		
+		HideTextbox(false)
+	}
 }

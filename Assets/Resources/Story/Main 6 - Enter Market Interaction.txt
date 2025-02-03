@@ -1,0 +1,3 @@
+pixel Seiji "The market's closed now, <playerName>."
+
+HideTextbox(false)

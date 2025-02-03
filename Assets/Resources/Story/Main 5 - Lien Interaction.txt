@@ -40,6 +40,7 @@ choice in -1
 
 		Ahlai as <playerName> "<i>Somehow, I feel... relieved.</i>"
 
+		HideTextbox(true)
 		[wait]HideCG()
 
 		pixel Lien as General Lien "...Is there something you need to tell me?"

@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class NPC : PixelSprite
 {
-    public GameObject root = null;
-
     public string name;
     public Vector2 lastPosition = Vector2.zero;
     public string lastAnimationState;
@@ -17,6 +15,8 @@ public class NPC : PixelSprite
     {
         root = Object.Instantiate(prefab, Vector2.zero, Quaternion.identity);
         root.transform.SetParent(parent, false);
+
+        animator = root.GetComponentInChildren<Animator>();
 
         name = npcData.npcName;
         root.name = name;
@@ -32,7 +32,7 @@ public class NPC : PixelSprite
 
     public void SetupNPC(bool appear, Vector2 position, string animationState)
     {
-        root.GetComponentInChildren<Animator>().Play(animationState);
+        animator.Play(animationState);
         SetPosition(root, position);
 
         if (appear)

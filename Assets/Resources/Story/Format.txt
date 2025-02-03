@@ -93,7 +93,7 @@ RemoveFromScene("Interactable/NPC Name") //removes interactable/NPC from screen
 MoveNPC(NPCName/Ahlai -x xPosition -y yPosition -spd speed) //moves NPC to target local position
 MovePlayerToInteract(-x xPosition -y yPosition)
 PanCamera(-x xPosition -y yPosition -spd speed)
-ResetCamera()
+ResetCamera(true/false) //smooth or not
 RemoveScene()
 SetCameraFollow("NPC Name")
 FlipNPC("NPC Name/Ahlai" "Left/Right")

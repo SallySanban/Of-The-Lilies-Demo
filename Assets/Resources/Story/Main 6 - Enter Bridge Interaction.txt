@@ -1,0 +1,3 @@
+pixel Seiji "<playerName>, where are you going? Lady Sabina is waiting for us."
+
+HideTextbox(false)

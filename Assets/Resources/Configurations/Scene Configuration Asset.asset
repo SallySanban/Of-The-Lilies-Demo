@@ -907,7 +907,7 @@ MonoBehaviour:
     - interactableName: Tavern Door
       backgroundToGo: Tavern
       keyToPress: 3
-      playerPositionInNextBackground: {x: -2249.73, y: -270.88}
+      playerPositionInNextBackground: {x: -2249.73, y: -266.93}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -1624,7 +1624,7 @@ MonoBehaviour:
     - interactableName: Tavern Door
       backgroundToGo: Tavern
       keyToPress: 3
-      playerPositionInNextBackground: {x: 0, y: 0}
+      playerPositionInNextBackground: {x: -2249.73, y: -266.93}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -1775,15 +1775,15 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 5 - Leave Tavern Interaction
-      moveToInteractPosition: {x: -19.67, y: -2.47}
+      moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 0, y: 0}
+      playerPositionInNextBackground: {x: 2753.3, y: -231.71}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
-      followPlayerPosition: {x: -5066.96, y: -218.57}
+      followPlayerPosition: {x: 2315.04, y: -217.32}
   - sceneName: Scene 9
     currentBackgroundName: Tavern
     showPlayer: 1
@@ -1875,7 +1875,7 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 5 - Leave Tavern Interaction
-      moveToInteractPosition: {x: -19.67, y: -2.47}
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Soldier3
       interactableType: 0
       isInteractable: 1
@@ -1885,7 +1885,98 @@ MonoBehaviour:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 0, y: 0}
+      playerPositionInNextBackground: {x: 2753.3, y: -231.71}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
-      followPlayerPosition: {x: -5066.96, y: -218.57}
+      followPlayerPosition: {x: 2315.04, y: -217.32}
+  - sceneName: Scene 10
+    currentBackgroundName: Kuchai Town 1
+    showPlayer: 1
+    playerPosition: {x: 2753.3, y: -231.71}
+    playerDirection: -1
+    playerAnimationState: IdleLeft
+    npcsInScene:
+    - npcName: Seiji
+      position: {x: 2315.04, y: -217.32}
+      appear: 1
+      animationState: Idle
+    interactablesInScene:
+    - interactableName: Sabina Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 6
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Tavern Door
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 6 - Enter Tavern Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Bridge
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 6 - Enter Bridge Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Market
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: Main 6 - Enter Market Interaction
+      moveToInteractPosition: {x: 0, y: 0}
+    backgroundsToGo:
+    - interactableName: Market
+      backgroundToGo: Kuchai Town 2
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 4050.6, y: -235.45}
+      playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Bridge
+      backgroundToGo: Kuchai Town 4
+      keyToPress: 3
+      playerPositionInNextBackground: {x: -1523.99, y: -236.6}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Tavern Door
+      backgroundToGo: Tavern
+      keyToPress: 3
+      playerPositionInNextBackground: {x: -2249.73, y: -266.93}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Sabina Door
+      backgroundToGo: Main Shop
+      keyToPress: 3
+      playerPositionInNextBackground: {x: -928.56, y: -249.14}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+  - sceneName: Scene 10
+    currentBackgroundName: Main Shop
+    showPlayer: 1
+    playerPosition: {x: -928.56, y: -249.14}
+    playerDirection: 1
+    playerAnimationState: IdleLeft
+    npcsInScene:
+    - npcName: Sabina
+      position: {x: -164.22, y: -218.32}
+      appear: 1
+      animationState: Idle
+    - npcName: Seiji
+      position: {x: -711.22, y: -219.32}
+      appear: 1
+      animationState: Idle
+    interactablesInScene: []
+    backgroundsToGo: []
+  - sceneName: Scene 11
+    currentBackgroundName: Kuchai Town 1
+    showPlayer: 1
+    playerPosition: {x: -3742.79, y: -231.72}
+    playerDirection: -1
+    playerAnimationState: IdleLeft
+    npcsInScene:
+    - npcName: Laisa
+      position: {x: -2141.96, y: -209.32}
+      appear: 1
+      animationState: Idle
+    interactablesInScene: []
+    backgroundsToGo: []

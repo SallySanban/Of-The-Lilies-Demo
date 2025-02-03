@@ -1,0 +1,129 @@
+[wait]Blackout()
+RemoveScene()
+[wait]ShowScene("Scene 10" "Main Shop")
+[wait]PanCamera(-x -10.26 -spd 1)
+Wait(0.5)
+[wait]HideCG()
+
+pixel Sabina as Lady Sabina "Oh, you two are back! Thank Dok'kale. You are both such blessings to me!"
+
+pixel Sabina as Lady Sabina "Thank you both for your help with the errands, darlings. Just great work as always."
+
+pixel Ahlai as <playerName> "It's our pleasure, Lady Sabina. We're thankful for your trust in us."
+
+pixel Ahlai as <playerName> "In fact, I feel like I do not say this enough, Lady Sabina. I am always grateful for how you've taken care of me, taught me so many things... to find shelter, if not a home."
+
+pixel Ahlai as <playerName> "Yet you never ask me for anything in return."
+
+pixel Sabina as Lady Sabina "Well, that's because you don't have to return any favors, dear."
+
+pixel Sabina as Lady Sabina "I knew I saw something in you the moment we met. Potential and so much more."
+
+pixel Sabina as Lady Sabina "Seeing you grow into the amazing people you've become is enough of a reward. Think of me as your second guardian or mother, please."
+
+pixel Sabina as Lady Sabina "And you too, Seiji."
+
+pixel Sabina as Lady Sabina "But what's with all this sentimentality? Is there something you wish to tell me?"
+
+pixel Ahlai as <playerName> "Yes, there is, Lady. I want to ask for your help again."
+
+pixel Sabina as Lady Sabina "What is it? What can I do?"
+
+pixel Ahlai as <playerName> "I'd like your permission to journey out of Kuchai to find my family. I want to know how they're doing, and where they are."
+
+pixel Ahlai as <playerName> "If I could find them and see that they're safe... it would bring me peace. And I'll never trouble you with a request like this ever again."
+
+if (!$SeijiHesitation)
+{
+	pixel Ahlai as <playerName> "I was thinking I could start in Agon Province. I might be able to get some help from Sir Aciano."
+
+	pixel Seiji "And, I'll be right by <possessivePronoun> side, Lady. I promise... I'll protect <objectPronoun> with everything I do. You'll have nothing to worry about."
+}
+else
+{
+	pixel Ahlai as <playerName> "I was thinking I could start in Agon Province. I might be able to get some help from Sir Aciano."
+
+	pixel Seiji "He's also one of the people you trust, isn't he? If this is what <playerName> really wants... he might be able to keep <objectPronoun> safe..."
+
+	pixel Seiji "It'll help. Even if I'm not there to protect them, or uh, especially if I'm not there!"
+}
+
+pixel Sabina as Lady Sabina "..."
+
+pixel Seiji "Lady Sabina? What do you say?"
+
+pixel Sabina as Lady Sabina "<playerName>, I know--I can only imagine just how much pain you've been through. For all those years, really, I don't think that pain of losing your family and your people ever really went away. Even as you got older."
+
+pixel Sabina as Lady Sabina "I am thankful that you even trust me enough to speak to me about this."
+
+pixel Sabina as Lady Sabina "But I hope you understand when I say... it may be too soon for us to discuss such plans."
+
+pixel Ahlai as <playerName> "But how is it too soon? I am of age, and I've got a lot of experience... so, please, I-"
+
+pixel Sabina as Lady Sabina "I do not <i>doubt</i> that you are capable, <playerName>. You and Seiji have been training under the Order since I took you both in. But there are just too many things lurking in our world right now that even I'm not fully prepared for."
+
+pixel Sabina as Lady Sabina "You heard about the strange happenings, yes?"
+
+pixel Ahlai as <playerName> "Well, yes..."
+
+pixel Sabina as Lady Sabina "I am truly sorry, dear. But now just isn't the time. I have some suspicions, but we need to find out what's going on before I can let you leave... It's just not safe out there."
+
+pixel Ahlai as <playerName> "I... I understand, Lady Sabina."
+
+pixel Sabina as Lady Sabina "I'm glad you understand, dear."
+
+pixel Sabina as Lady Sabina "Now get some rest, you two. We've got another day ahead of us."
+
+HideTextbox(true)
+[wait]Blackout()
+RemoveFromScene("Sabina")
+[wait]HideCG()
+[wait]MoveNPC("Seiji" -x -11.47 -y -2.04 -spd 2)
+[wait]FlipNPC("Seiji" Left)
+
+pixel Seiji "<playerName>... Are you okay?"
+
+pixel Ahlai as <playerName> "I... I'm fine, Seiji... I just need to catch some air. Please... let me be alone for a while."
+
+HideTextbox(false)
+[wait]ResetCamera(true)
+Wait(0.05)
+[wait]MoveNPC(Ahlai -x -27.35 -y -2.31 -spd 5)
+[wait]SwitchScene("Scene 11" "Kuchai Town 1")
+Wait(1)
+[wait]MoveNPC(Laisa -x -31.88 -y -1.94 -spd 5)
+[wait]Blackout()
+
+Ahlai as <playerName> "Hey!"
+
+Ahlai as <playerName> "Wait... aren't you-"
+
+[wait]FlipNPC("Ahlai" Right)
+[wait]HideCG()
+
+if ($LaisaTalkedTo)
+{
+	pixel Ahlai as <playerName> "You... you really escaped!"
+
+	pixel Laisa as Ilaisaane "I told you I would, didn't I?"
+
+	pixel Laisa as Ilaisaane "Now what are you going to do about it?"
+}
+else
+{
+	pixel Ahlai as <playerName> "You... you really escaped!"
+
+	pixel Laisa as Ilaisaane "And what are you going to do about it?"
+}
+
+choice in -1
+{
+	- Nothing! I don't intend to put you in trouble.
+		$Laisa += 1
+
+		Load("Main 6 - Laisa No Trouble Dialogue")
+
+	- That depends on you.
+}
+
+

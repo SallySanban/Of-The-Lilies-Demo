@@ -8,7 +8,7 @@ public class VNManager : MonoBehaviour
 {
     public static VNManager Instance { get; private set; }
 
-    private const string DIALOGUE_FILE = "Main 1";
+    private const string DIALOGUE_FILE = "Test";
 
     private void Awake()
     {
@@ -56,6 +56,8 @@ public class VNManager : MonoBehaviour
 
     public IEnumerator PlayCollidingInteractableStory(string storyToPlay, Vector2 moveToInteractPosition = default)
     {
+        SceneManager.Instance.player.StopMoving();
+
         InteractableManager.Instance.SetInteractablesAfterInteraction();
 
         if(moveToInteractPosition != Vector2.zero)
