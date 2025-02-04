@@ -5,7 +5,7 @@ pixel Seiji "We need to make a <b>delivery to Mr. Quan</b> today. Then we have t
 pixel Seiji "Are you good for a trip around Kuchai Town with me? We should go soon if we don't want to keep Mr. Quan waiting."
 
 HideTextbox(true)
-PlaySFX("Doorbell ringing")
+playSFX(SFX_DoorbellPanned)
 
 [wait]FlipNPC("Ahlai" "Left")
 

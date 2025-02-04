@@ -636,7 +636,7 @@ MonoBehaviour:
     - interactableName: Door
       interactableType: 2
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Door Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Stairs
       interactableType: 2

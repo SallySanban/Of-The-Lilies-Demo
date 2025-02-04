@@ -425,3 +425,4 @@ $Laisa = 0
 $Lien = 0
 [wait]ShowScene("Scene 5" "Ahlai's Bedroom")
 [wait]HideCG()
+playMusic(BGM_Scene5)
