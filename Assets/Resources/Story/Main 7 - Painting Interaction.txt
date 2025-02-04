@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Dok'kale... Will I be able to find my family soon?"
+
+HideTextbox(false)

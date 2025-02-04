@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Is he still asleep? Why did Lady Sabina only wake... me?"
+
+HideTextbox(false)

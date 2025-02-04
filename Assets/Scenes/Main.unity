@@ -959,6 +959,7 @@ MonoBehaviour:
   inputPanelPrefab: {fileID: 7070416639536612416, guid: 8ae69301c5d8e014f8cca39cc5c54a6e, type: 3}
   graphicPanelPrefab: {fileID: 8166317433575027938, guid: 0b8e445c76421704f972ddc58d83aba5, type: 3}
   creditsText: {fileID: 429757942}
+  liScreenPrefab: {fileID: 3634595384269191386, guid: 4d89567f3d05b5e4c9cd5404d8d0edd5, type: 3}
 --- !u!1 &922456480
 GameObject:
   m_ObjectHideFlags: 0

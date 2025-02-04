@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Lady Sabina is waiting for me."
+
+HideTextbox(false)

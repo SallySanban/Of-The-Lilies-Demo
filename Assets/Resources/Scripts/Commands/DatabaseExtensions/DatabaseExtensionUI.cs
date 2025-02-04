@@ -19,6 +19,7 @@ namespace Commands
             database.AddCommand("ShowCredits", new Func<string, IEnumerator>(ShowCredits));
             database.AddCommand("SwitchCredits", new Func<string, IEnumerator>(SwitchCredits));
             database.AddCommand("HideCredits", new Func<IEnumerator>(HideCredits));
+            database.AddCommand("ShowLIScreen", new Action(ShowLIScreen));
         }
 
         private static IEnumerator Blackout(string[] data)
@@ -136,6 +137,11 @@ namespace Commands
         private static IEnumerator SwitchCredits(string data)
         {
             yield return UIManager.Instance.creditsPanel.SwitchCredits(data);
+        }
+
+        private static void ShowLIScreen()
+        {
+            UIManager.Instance.CreateUI<LIScreen>();
         }
     }
 }

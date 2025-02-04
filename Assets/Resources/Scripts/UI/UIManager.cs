@@ -11,11 +11,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject inputPanelPrefab;
     [SerializeField] private GameObject graphicPanelPrefab;
     [SerializeField] public TextMeshProUGUI creditsText;
+    [SerializeField] public GameObject liScreenPrefab;
     public RectTransform graphicsContainer => _graphicsContainer;
 
     public InputPanel inputPanel;
     public GraphicPanel currentCG;
     public CreditsPanel creditsPanel;
+    public LIScreen liScreen;
 
     private void Awake()
     {
@@ -50,6 +52,12 @@ public class UIManager : MonoBehaviour
         else if(typeof(T) == typeof(CreditsPanel))
         {
             creditsPanel = new CreditsPanel(creditsText, data);
+
+            return creditsPanel as T;
+        }
+        else if(typeof(T) == typeof(LIScreen))
+        {
+            liScreen = new LIScreen(liScreenPrefab);
 
             return creditsPanel as T;
         }

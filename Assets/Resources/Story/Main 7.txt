@@ -19,3 +19,82 @@ Seiji "When the skies began to change and you still weren't home... I started to
 Seiji "Hurry, <playerName>. Let's go back to Sabina's Salves. We'll be safe there."
 
 [wait]Blackout()
+[wait]ShowScene("Scene 11" "Main Shop")
+[wait]SetCamera(-x -10.26 -spd 1)
+Wait(0.5)
+[wait]HideCG()
+
+pixel Sabina as Lady Sabina "Oh, <playerName>! Seiji! By Dok'kale, both of you better quit making me worry! Thank goodness you're both safe!"
+
+pixel Ahlai as <playerName> "We apologize for making you worry, Lady Sabina..."
+
+pixel Sabina as Lady Sabina "That sorry won't do much if you end up dead, my dear! Please!"
+
+pixel Sabina as Lady Sabina "It was a good thing Seiji ran out immediately when he saw the fog... and that you're both back here in one piece..."
+
+pixel Seiji "Huh, why? We have gone through storms and fogs in previous years, yes?"
+
+pixel Sabina as Lady Sabina "No, this sort of weather feels more off than our usual rains..."
+
+pixel Ahlai as <playerName> "..."
+
+pixel Ahlai as <playerName> "<i>She's right... something in the air feels unnerving...</i>"
+
+pixel Sabina as Lady Sabina "What I <i>can</i> say for now is that I need to speak with the rest of the Order of La Liryo..."
+
+pixel Ahlai as <playerName> "An issue for La Liryo? Lady Sabina, could it be... the curses?"
+
+pixel Ahlai as <playerName> "It wasn't a myth, was it? Has a century already passed?"
+
+pixel Sabina as Lady Sabina "It's hard to think of any other explanation. Rain and storms are expected to hit Kuchai Town in the next few months. For these to happen so soon? If it's the curses, that's no good for any of us."
+
+pixel Ahlai as <playerName> "What do we need to do, Lady?"
+
+pixel Sabina as Lady Sabina "The curses can only be stopped with the <b>Ritual of Respite</b>."
+
+pixel Sabina as Lady Sabina "It is obviously an advanced magical ritual, but we still require gathering the necessary components the way we would for making, say, a potion or a salve."
+
+pixel Ahlai as <playerName> "What kinds of components?"
+
+pixel Sabina as Lady Sabina "To complete the ritual, you will need to seek out a sacred <b>dagger</b>, and <b>one of the gods' ancient artifacts</b>. They have been lost to time, but they surely lie beyond Kuchai's borders."
+
+pixel Sabina as Lady Sabina "You will need to prepare for a journey. This is what you've been training for."
+
+pixel Sabina as Lady Sabina "I will still have to confirm details with the rest of La Liryo's council. But if you can find the components in time, <playerName> - I give you my permission to go and find your family."
+
+pixel Ahlai as <playerName> "Really? Are you being serious, Lady Sabina?"
+
+pixel Sabina as Lady Sabina "Yes, dear. It's the least I can do. You've helped me here at the shop for the past ten years."
+
+pixel Ahlai as <playerName> "I... Thank you so much, Lady Sabina...! I won't let you down."
+
+pixel Sabina as Lady Sabina "I know you won't. Both of you."
+
+pixel Sabina as Lady Sabina "Now, it's been a long day for everyone. You should get some rest for the night. I'll call you both again in the morning once I have verified the existence of the curses with the council."
+
+pixel Sabina as Lady Sabina "And <i>whatever</i> you do, do <i>not</i> go out until we know more."
+
+[wait]Blackout()
+RemoveFromScene("Sabina")
+HideCG()
+[wait]MoveNPC("Seiji" -x -11.47 -y -2.04 -spd 2)
+[wait]FlipNPC("Seiji" Left)
+
+pixel Ahlai as <playerName> "Did you hear that, Seiji? I'll finally have the chance to search for my family!"
+
+pixel Seiji "I'm happy for you, <playerName>. You've been trying to find them ever since we met."
+
+pixel Seiji "But the curses are dangerous. I just hope that... you'll bring me along to protect you."
+
+pixel Seiji "Until we know more about it, we should wait for Lady Sabina's instructions."
+
+pixel Seiji "I'll see you tomorrow. Good night, <playerName>. I hope... you have sweet dreams."
+
+pixel Ahlai as <playerName> "Good night, Seiji. I hope so too."
+
+[wait]MoveNPC("Seiji" -x -11.47 -y -2.04 -spd 2)
+RemoveFromScene("Seiji")
+
+pixel Ahlai as <playerName> "I should go back to my room."
+
+HideTextbox(false)

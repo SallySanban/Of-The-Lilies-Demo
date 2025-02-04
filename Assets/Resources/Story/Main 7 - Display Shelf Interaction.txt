@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "Looks like the shop's had a busy day."
+
+pixel Ahlai as <playerName> "I don't know if we'll be open tomorrow with these curses happening, but if we are, I'll have to restock."
+
+HideTextbox(false)

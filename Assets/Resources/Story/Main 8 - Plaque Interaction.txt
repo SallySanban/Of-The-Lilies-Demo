@@ -1,0 +1,5 @@
+pixel Ahlai as <playerName> "'Order of La Liryo'"
+
+pixel Ahlai as <playerName> "'Preserving Dok'kale's sacred gifts for the safety of the Seiyslan Empire'"
+
+HideTextbox(false)

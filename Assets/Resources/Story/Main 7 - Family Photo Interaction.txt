@@ -1,0 +1,6 @@
+ShowUI("Family photo")
+
+pixel Ahlai as <playerName> "I'll finally be able to see you again."
+
+HideUI()
+HideTextbox(false)

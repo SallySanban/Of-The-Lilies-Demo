@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "He should be asleep. I shouldn't disturb him."
+
+HideTextbox(false)

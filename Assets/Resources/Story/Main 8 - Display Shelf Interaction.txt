@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Maybe we won't be opening today after all..."
+
+HideTextbox(false)

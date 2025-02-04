@@ -1,0 +1,6 @@
+ShowUI("Family photo")
+
+pixel Ahlai as <playerName> "Mom, Dad... keep me strong again today."
+
+HideUI()
+HideTextbox(false)

@@ -1,0 +1,5 @@
+playSFX(SFX_LockedDoor)
+
+pixel Ahlai as <playerName> "Locked. Lady Sabina might be inside right now, contacting the council of La Liryo."
+
+HideTextbox(false)

@@ -1,0 +1,3 @@
+pixel Ahlai as <playerName> "Sir Lien... I still can't believe he doesn't remember me."
+
+HideTextbox(false)

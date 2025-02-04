@@ -1,0 +1,55 @@
+[wait]SwitchScene("Scene 12" "La Liryo Room")
+
+pixel Sabina as Lady Sabina "Good, you made it. It pains me to say this, and I suppose you already have an idea about it, but... I've confirmed with the Order of La Liryo."
+
+pixel Sabina as Lady Sabina "The curses are back, and much earlier than anyone would expect. It hasn't yet been 100 years since the last one."
+
+pixel Sabina as Lady Sabina "Well, I won't waste any more of your time. We'll want to work quickly if we want to make any sort of progress for a problem this serious."
+
+pixel Sabina as Lady Sabina "There is something you need to know about the ritual."
+
+pixel Ahlai as <playerName> "What is it?"
+
+pixel Sabina as Lady Sabina "Do you know how magic works, <playerName>?"
+
+pixel Ahlai as <playerName> "Yes. It was given to us by the gods, and can be used through the potions that we make."
+
+pixel Sabina as Lady Sabina "There is a <i>little</i> more to it than that."
+
+pixel Sabina as Lady Sabina "The gods are fond of nature. This is why the curses manifest themselves in the form of calamities."
+
+pixel Sabina as Lady Sabina "When they bestowed upon us their magic, they did so in the form of essence. This is the energy that is only present in nature. Plants, animals, and even... people."
+
+pixel Ahlai as <playerName> "So people have essence, yes, and...?"
+
+pixel Sabina as Lady Sabina "Yes, indeed. The potions that we brew are designed to harness this essence, allowing people to use it to produce magic."
+
+pixel Sabina as Lady Sabina "Some people may have more essence than others, making them more receptive to magic. Seiji is one of these people."
+
+pixel Ahlai as <playerName> "He is? Is he aware of this?"
+
+pixel Sabina as Lady Sabina "No. I found out when he was young, but I chose not to tell him to keep him safe. And I trust you'll keep this information from him as well."
+
+pixel Ahlai as <playerName> "Why does this even have to be a secret? Doesn't Seiji... we all trust him here, don't we?"
+
+pixel Sabina as Lady Sabina "When I told you both about the Ritual of Respite, I left out the most critical component needed to perform the ritual. I didn't want to tell you in front of Seiji... he has a good heart."
+
+pixel Sabina as Lady Sabina "But we <i>will</i> need to make a choice, and I am leaving this at your discretion. <b>The ritual requires a single sacrifice to be made, as an offering to the gods</b>. And given the amount of essence he possesses... <b>he is one of the most suitable candidates</b>."
+
+pixel Ahlai as <playerName> "Seiji? As a... sacrifice?"
+
+pixel Sabina as Lady Sabina "There are a few others you can choose from, <playerName>. The choice is there for you to take. But think very, very hard about what you want, knowing all you've been through."
+
+pixel Sabina as Lady Sabina "With what I know... and with what the Ritual of Respite demands of us..."
+
+pixel Sabina as Lady Sabina "Ultimately, you can only <b>choose one</b>."
+
+$SeijiPaperInteracted = false
+$MyoPaperInteracted = false
+$ManjuPaperInteracted = false
+$LaisaPaperInteracted = false
+$LienPaperInteracted = false
+
+[wait]Blackout()
+ShowLIScreen()
+[wait]HideCG()
