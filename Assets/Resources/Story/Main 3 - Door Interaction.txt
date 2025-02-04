@@ -1,0 +1,5 @@
+[wait]Blackout()
+RemoveScene()
+[wait]ShowScene("Scene 5" "Main Shop")
+playMusic(BGM_Scene5)
+[wait]HideCG()
