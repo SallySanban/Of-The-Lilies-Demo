@@ -80,7 +80,7 @@ public class Player : PixelSprite
         Vector2 currentPos = root.transform.position;
         bool movedLeft = false;
         
-        while (Vector2.Distance(currentPos, targetPos) > 0.1f)
+        while (Mathf.Abs(currentPos.x - targetPos.x) > 0.1f)
         {
             currentPos = root.transform.position;
             Vector2 direction = (targetPos - currentPos).normalized;
