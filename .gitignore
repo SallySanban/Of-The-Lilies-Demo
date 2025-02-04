@@ -75,3 +75,4 @@ crashlytics-build.properties
 # Ignore FMOD cache and logs
 fmod_editor.log
 Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+Assets/Resources/Story/Test.txt
