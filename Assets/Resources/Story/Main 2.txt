@@ -243,7 +243,7 @@ Dalawi "He said not to hurt him! What are you doing?! Unhand me or I'm <i>going 
 
 HideTextbox(true)
 playSFX(SFX_Knockout)
-[wait]Blackout(-i true)
+[input]Blackout(-i true)
 
 [input]SwitchCG("Alonay Chained")
 

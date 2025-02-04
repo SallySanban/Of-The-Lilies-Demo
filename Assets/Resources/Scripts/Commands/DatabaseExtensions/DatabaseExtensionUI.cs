@@ -31,13 +31,37 @@ namespace Commands
 
             if (immediate)
             {
-                GraphicPanel graphicPanel = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
-
-                graphicPanel.Show(true);
-
-                while (graphicPanel.isCGShowing)
+                if (UIManager.Instance.currentCG == null)
                 {
-                    yield return null;
+                    GraphicPanel graphicPanel = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
+
+                    graphicPanel.Show(true);
+
+                    while (graphicPanel.isCGShowing)
+                    {
+                        yield return null;
+                    }
+                }
+                else
+                {
+                    GraphicPanel newGraphicPanel = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
+                    GraphicPanel currentGraphicPanel = UIManager.Instance.currentCG;
+
+                    newGraphicPanel.Show(true);
+
+                    while (newGraphicPanel.isCGShowing)
+                    {
+                        yield return null;
+                    }
+
+                    currentGraphicPanel.Hide(true);
+
+                    while (currentGraphicPanel.isCGHiding)
+                    {
+                        yield return null;
+                    }
+
+                    UIManager.Instance.currentCG = newGraphicPanel;
                 }
             }
             else
