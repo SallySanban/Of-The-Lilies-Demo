@@ -135,6 +135,8 @@ else
 				pixel PrayingGirl as Mai "Thank you so much... I guess I won't be needing these anymore."
 			}
 
+			playSFX("SFX_UI InventoryPickup")
+
 			pixel PrayingGirl as Mai "I'll visit you at Sabina's Salves again soon!"
 
 			$SilverleafSprigs = true

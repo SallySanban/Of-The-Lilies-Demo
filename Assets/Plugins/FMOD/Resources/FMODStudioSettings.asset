@@ -334,11 +334,14 @@ MonoBehaviour:
   Banks:
   - Player
   - Scene 1
+  - Scene 10
+  - Scene 11
   - Scene 2
   - Scene 3
   - Scene 4
   - Scene 5
   - Scene 6
+  - Scene 9
   - UI
   BanksToLoad: []
   LiveUpdatePort: 9264

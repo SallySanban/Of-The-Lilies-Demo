@@ -8,9 +8,11 @@ choice in -1
 
 		pixel Salesperson3 as Salesperson "That would be two gold coins."
 
-		PlaySFX("Coins jiggling")
+		playSFX(SFX_CoinsJiggle)
 
 		pixel Salesperson3 as Salesperson "Come again!"
+
+		playSFX("SFX_UI InventoryPickup")
 
 		$QuanIngredients += 1
 		$EverbarkFlakes = true
