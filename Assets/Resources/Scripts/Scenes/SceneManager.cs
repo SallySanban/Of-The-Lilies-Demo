@@ -77,7 +77,7 @@ public class SceneManager : MonoBehaviour
 
     private void Update()
     {
-        if (player != null && !player.movingToInteract && !isRunningConversation)
+        if (player != null && !player.movingToInteract && (!isRunningConversation || InteractableManager.Instance.playerInsideStoryTrigger))
         {
             if (InteractableManager.Instance.playerInsideStopTrigger)
             {

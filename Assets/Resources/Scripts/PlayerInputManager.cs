@@ -110,7 +110,7 @@ public class PlayerInputManager : MonoBehaviour
             return;
         }
 
-        if ((isRunningConversation && !InteractableManager.Instance.playerInsideStopTrigger) || InteractableManager.Instance.playerInsideStopTrigger)
+        if ((isRunningConversation && !InteractableManager.Instance.playerInsideStoryTrigger) || InteractableManager.Instance.playerInsideStopTrigger)
         {
             SceneManager.Instance.player.StopMoving();
 

@@ -37,6 +37,10 @@ public class Interactable : MonoBehaviour
             {
                 InteractableManager.Instance.playerInsideStopTrigger = true;
             }
+            else
+            {
+                InteractableManager.Instance.playerInsideStoryTrigger = true;
+            }
 
             StartCoroutine(HandleTriggerStory());
             return;
