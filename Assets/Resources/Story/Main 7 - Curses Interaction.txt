@@ -1,4 +1,7 @@
 [input]Blackout()
+playSFX(SFX_ThunderCurse)
+playAmbience(AMB_SwordClash)
+playAmbience(AMB_Thunder)
 [wait]SwitchCG("Curses Appear")
 
 Ahlai as <playerName> "<i>What's happening...?</i>"

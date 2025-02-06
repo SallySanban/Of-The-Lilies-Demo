@@ -1,6 +1,8 @@
 [input]Blackout()
 [wait]SwitchCG("Laisa")
 
+stopEvent(AMB_SwordClash)
+
 Laisa "Did you miss me already?"
 
 Laisa "You tried your best, my pearl. But I still need you for <i>one</i> more thing."
@@ -58,5 +60,6 @@ Laisa "Goodbye, my pearl."
 Ahlai as <playerName> "<i>Did... that just happen...?</i>"
 
 [wait]SwitchCG("Curses Appear")
+playSFX(SFX_ThunderCurse)
 
 Load("Main 7")

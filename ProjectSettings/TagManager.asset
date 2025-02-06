@@ -9,6 +9,7 @@ TagManager:
   - Grass
   - Wood
   - Stone
+  - Wood2
   layers:
   - Default
   - TransparentFX

@@ -111,6 +111,74 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2377253854748746163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3896701406130465651}
+  - component: {fileID: 5261721434086110446}
+  m_Layer: 5
+  m_Name: AmbTavern
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3896701406130465651
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2377253854748746163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5660956883863797290}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.48887855, y: 0.82050276}
+  m_AnchorMax: {x: 0.5095472, y: 0.9121249}
+  m_AnchoredPosition: {x: 0.8393822, y: -0.52337646}
+  m_SizeDelta: {x: -0.059405327, y: -0.41757917}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5261721434086110446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2377253854748746163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 120761929
+      Data2: 1249887624
+      Data3: 85281196
+      Data4: 357061957
+    Path: event:/Ambience/AMB_Tavern
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2508855814403882633
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,9 +192,9 @@ GameObject:
   - component: {fileID: 6090278582034442834}
   - component: {fileID: 7316144613573955909}
   - component: {fileID: 7609559263201112107}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: Wood2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -689,6 +757,7 @@ RectTransform:
   m_Children:
   - {fileID: 4257877717914044726}
   - {fileID: 5469554814393205996}
+  - {fileID: 3896701406130465651}
   m_Father: {fileID: 166906813603587604}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

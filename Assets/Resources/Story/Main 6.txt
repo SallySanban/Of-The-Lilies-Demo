@@ -90,6 +90,7 @@ HideTextbox(false)
 Wait(0.05)
 [wait]MoveNPC(Ahlai -x -27.35 -y -2.31 -spd 5)
 [wait]Blackout()
+playSFX(SFX_LaisaBumping)
 RemoveScene()
 [wait]ShowScene("Scene 11" "Kuchai Town 1")
 

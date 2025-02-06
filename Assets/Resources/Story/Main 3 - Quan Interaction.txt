@@ -32,6 +32,8 @@ choice in -1
 
 		pixel Quan as Mr. Quan "Take this bag of coins, go help yourself to anything you'd like after you buy the components!"
 
+		playSFX(SFX_CoinsJiggle)
+		
 		pixel Ahlai as <playerName> "We'll be back with your potion, sir!"
 
 		$QuanDeliverQuest = false

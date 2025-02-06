@@ -22,9 +22,11 @@ choice in -1
 
 		pixel Ahlai as <playerName> "Okay, four gold coins it is, sir. Here you go."
 
-		PlaySFX("Coins jiggling")
+		playSFX(SFX_CoinsJiggle)
 
 		pixel Ahlai as <playerName> "Hmph! What insolent youngsters!"
+
+		playSFX("SFX_UI InventoryPickup")
 
 		$QuanIngredients += 1
 		$PearlShellPowder = true

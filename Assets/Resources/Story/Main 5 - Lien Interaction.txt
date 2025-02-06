@@ -38,6 +38,8 @@ choice in -1
 		HideTextbox(true)
 		[wait]Blackout()
 
+		playSFX(SFX_Whack)
+
 		Ahlai as <playerName> "<i>Somehow, I feel... relieved.</i>"
 
 		HideTextbox(true)

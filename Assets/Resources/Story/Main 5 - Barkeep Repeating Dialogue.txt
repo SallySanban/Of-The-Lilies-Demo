@@ -52,6 +52,8 @@ choice in -1
 
 		Soldier as Seiyslan Soldier "O-oh... Sorry, sir."
 
+		playSFX(SFX_WalkingSitting)
+
 		Soldier as Seiyslan Soldier "Barkeep! Bring us a barrel of rum!"
 
 		HideTextbox(true)

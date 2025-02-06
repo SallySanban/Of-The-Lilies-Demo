@@ -19,6 +19,7 @@ Seiji "When the skies began to change and you still weren't home... I started to
 Seiji "Hurry, <playerName>. Let's go back to Sabina's Salves. We'll be safe there."
 
 [wait]Blackout()
+stopEvent(AMB_Thunder)
 [wait]ShowScene("Scene 11" "Main Shop")
 [wait]SetCamera(-x -10.26 -spd 1)
 Wait(0.5)
