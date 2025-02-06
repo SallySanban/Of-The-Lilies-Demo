@@ -116,9 +116,9 @@ GameObject:
   - component: {fileID: 5995504246419530167}
   - component: {fileID: 1447145749726332193}
   - component: {fileID: 3859981984209758902}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
