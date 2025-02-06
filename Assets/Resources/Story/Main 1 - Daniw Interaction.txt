@@ -15,7 +15,6 @@ pixel Ahlai as <playerName> "Of course, Uncle. Leave it to me. Where did you say
 
 pixel MaleNPC3 as Uncle Daniw "Over there by the river. Some kids must have been toying with it... Oh, my dear fishing equipment..."
 
-$QuestsCompleted = 0
 $GotDaniwQuest = true
 $GotCropsQuest = false
 $DaniwItems = 0

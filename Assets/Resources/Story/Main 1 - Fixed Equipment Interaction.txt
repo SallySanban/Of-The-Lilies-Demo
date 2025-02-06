@@ -20,15 +20,6 @@ else
 	Wait(0.5)
 	RemoveFromScene("MaleNPC3")
 	[wait]HideCG()
-
-	if ($QuestsCompleted == 0)
-	{
-		$QuestsCompleted = 1
-	}
-	else
-	{
-		$QuestsCompleted = 2
-	}
 	
 	$DaniwQuestCompleted = true
 }

@@ -76,7 +76,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 1 - Hearth Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 4.62, y: -0.68}
     - interactableName: Mom
       interactableType: 0
       isInteractable: 1

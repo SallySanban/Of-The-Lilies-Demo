@@ -5,12 +5,12 @@ choice in -1
 
 		pixel MaleNPC4 as Uncle "You never know when danger will arise. We always have to be ready."
 
-		if ($QuestsCompleted < 3)
+		if (!$DaniwQuestCompleted || !$CropsQuestCompleted)
 		{
 			pixel MaleNPC4 as Uncle "You have to help out, don't you? Come by later when you're done for some sparring practice."
 		}
 		
-	- if ($QuestsCompleted == 2) Can I help with sparring practice?
+	- if ($DaniwQuestCompleted && $CropsQuestCompleted) Can I help with sparring practice?
 		pixel MaleNPC4 as Uncle "<playerName>! Finished with the preparations, are we?"
 
 		pixel MaleNPC4 as Uncle "We couldn't start without you. Come on."
@@ -27,8 +27,6 @@ choice in -1
 		pixel MaleNPC4 as Uncle "It's getting late. You'll be meeting with your dad at the cliff for the Hinukaw Ritual, right?"
 
 		pixel MaleNPC4 as Uncle "Good luck with that. We'll be waiting for you to start the grand celebration."
-
-		$QuestsCompleted = 3
 }
 
 HideTextbox(false)

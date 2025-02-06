@@ -28,15 +28,6 @@ else
 
 			pixel FemNPC1 as Auntie "We'll prepare a feast just for you!"
 
-			if ($QuestsCompleted == 0)
-			{
-				$QuestsCompleted = 1
-			}
-			else
-			{
-				$QuestsCompleted = 2
-			}
-
 			$CropsQuestCompleted = true
 		}
 	}
