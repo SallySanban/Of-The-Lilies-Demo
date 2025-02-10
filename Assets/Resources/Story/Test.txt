@@ -1,6 +1,2 @@
 input
-
-$SeijiHesitation = false
-$LaisaTalkedTo = false
-
-Load("Main 6")
+ShowLIScreen()

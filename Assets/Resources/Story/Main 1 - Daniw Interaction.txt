@@ -24,5 +24,6 @@ $KnowThreadLocation = false
 $KnowWoodLocation = false
 $DaniwQuestCompleted = false
 $CropsQuestCompleted = false
+$CombatQuestCompleted = false
 
 HideTextbox(false)
