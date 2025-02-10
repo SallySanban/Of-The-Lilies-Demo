@@ -1,0 +1,36 @@
+if (!$ManjuPaperInteracted)
+{
+	Sabina as Lady Sabina "Ugh, <i>him</i>..."
+
+	Sabina as Lady Sabina "If people like him would just <i>stop</i> with all their meddling... we wouldn't have to waste our resources on such a terrible organization."
+
+	Ahlai as <playerName> "You mean...?"
+
+	Sabina as Lady Sabina "That one's a member of the Order of Hotei, yes. I've perhaps told you this story countless times..."
+
+	Sabina as Lady Sabina "We at La Liryo simply could not agree to disagree with them on our stances on magic... among other things. But that aside..."
+
+	Sabina as Lady Sabina "The Manjushage got his moniker for a reason--cross paths with him and prepare for the worst."
+
+	Sabina as Lady Sabina "His grasp of magic extends into the forbidden. He's fallen into that whole trap of thinking potions aren't enough magic for us to wield!"
+
+	Sabina as Lady Sabina "My source says even among the already radical members of the Order of Hotei, he has no qualms resorting to even the most drastic methods. Attempting to sacrifice this one will be quite dangerous."
+
+	Sabina as Lady Sabina "But if you ask me? Put very lightly, having him out of the way would be excellent for the Order of La Liryo."
+
+	$ManjuPaperInteracted = true
+}
+
+Sabina as Lady Sabina "Do you want to pick The Manjushage as a sacrifice?"
+
+choice in 2
+{
+	- Yes
+		$Manju += 5
+
+		HideTextbox(true)
+		[wait]Blackout()
+
+	- Keep looking
+		HideTextbox(true)
+}

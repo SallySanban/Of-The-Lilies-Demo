@@ -1,70 +1,64 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
+using Dialogue;
+using System.Collections;
 
 public class LIScreen
 {
     public GameObject root;
     public UIManager uiManager => UIManager.Instance;
-    private List<Image> imageList = new List<Image>();
+
+    private List<Button> liButtons = new List<Button>();
+
+    private bool isRunningConversation => DialogueManager.Instance.conversationManager.isRunning;
+
+    private static readonly string liName = "<liName>";
+    private string liButtonName = $"Main 8 - {liName} Paper Interaction";
+
+    public static bool liScreenVisible = false;
 
     public LIScreen(GameObject prefab)
     {
         if (prefab != null)
         {
+            liScreenVisible = true;
+
             root = Object.Instantiate(prefab, uiManager.graphicsContainer);
             root.SetActive(true);
 
-            // Collect all Image components that are children of the root
-            imageList.AddRange(root.GetComponentsInChildren<Image>());
+            root.transform.SetSiblingIndex(0);
 
-            // Add event listeners to each image
-            foreach (var image in imageList)
+            liButtons.AddRange(root.GetComponentsInChildren<Button>());
+
+            foreach(Button button in liButtons)
             {
-                AddEventListeners(image);
+                button.onClick.AddListener(() => UIManager.Instance.StartCoroutine(OnButtonClick(button)));
             }
         }
     }
 
-    private void AddEventListeners(Image image)
+    private IEnumerator OnButtonClick(Button button)
     {
-        EventTrigger trigger = image.gameObject.AddComponent<EventTrigger>();
+        if (!isRunningConversation)
+        {
+            SetButtonsInteractable(false);
 
-        // Pointer Enter event
-        EventTrigger.Entry pointerEnter = new EventTrigger.Entry();
-        pointerEnter.eventID = EventTriggerType.PointerEnter;
-        pointerEnter.callback.AddListener((data) => { OnHoverEnter(image); });
-        trigger.triggers.Add(pointerEnter);
+            string filename = FormatStoryFilename(liButtonName, button.name);
+            Debug.Log(filename);
+            yield return VNManager.Instance.LoadFile(filename);
 
-        // Pointer Exit event
-        EventTrigger.Entry pointerExit = new EventTrigger.Entry();
-        pointerExit.eventID = EventTriggerType.PointerExit;
-        pointerExit.callback.AddListener((data) => { OnHoverExit(image); });
-        trigger.triggers.Add(pointerExit);
-
-        // Pointer Click event
-        EventTrigger.Entry pointerClick = new EventTrigger.Entry();
-        pointerClick.eventID = EventTriggerType.PointerClick;
-        pointerClick.callback.AddListener((data) => { OnClick(image); });
-        trigger.triggers.Add(pointerClick);
+            SetButtonsInteractable(true);
+        }
     }
 
-    private void OnHoverEnter(Image image)
+    private void SetButtonsInteractable(bool interactable)
     {
-        // Move the image upwards
-        image.transform.localPosition += new Vector3(0, 10, 0);
+        foreach (Button btn in liButtons)
+        {
+            btn.interactable = interactable;
+        }
     }
 
-    private void OnHoverExit(Image image)
-    {
-        // Move the image back to its original position
-        image.transform.localPosition -= new Vector3(0, 10, 0);
-    }
-
-    private void OnClick(Image image)
-    {
-        VNManager.Instance.PlayCollidingInteractableStory("Main 8 - " + image.name + " Paper Interaction");
-    }
+    public string FormatStoryFilename(string filename, string textToReplace) => filename.Replace(liName, textToReplace);
 }

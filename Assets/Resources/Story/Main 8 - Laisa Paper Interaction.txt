@@ -1,0 +1,30 @@
+if (!$LaisaPaperInteracted)
+{
+	Ahlai as <playerName> "Huh, Ilaisaane..."
+
+	Sabina as Lady Sabina "You're interested in that one? The pirate?"
+
+	Ahlai as <playerName> "Well, I just recognized the name because I just met her a day ago, actually."
+
+	Sabina as Lady Sabina "Hmm, I only really received that name from a source I have in the east. I don't know how long she'll be staying in Seiysla, let alone Kuchai Town, or even Ihraye..."
+
+	Sabina as Lady Sabina "Though, last I recall... her ship, it's from the Gataran Empire, yes? I wonder if that poses any real risk to us..."
+
+	Sabina as Lady Sabina "Though, a pirate who isn't even from here... hmm, we could live with her, we could live without her, I say. She could certainly be a good candidate for that very reason!"
+
+	$LaisaPaperInteracted = true
+}
+
+Sabina as Lady Sabina "Do you want to pick Ilaisaane as a sacrifice?"
+
+choice in 2
+{
+	- Yes
+		$Laisa += 5
+
+		HideTextbox(true)
+		[wait]Blackout()
+
+	- Keep looking
+		HideTextbox(true)
+}

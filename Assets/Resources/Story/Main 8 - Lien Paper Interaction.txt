@@ -1,0 +1,34 @@
+if (!$LienPaperInteracted)
+{
+	Ahlai as <playerName> "..."
+
+	Sabina as Lady Sabina "<playerName>..."
+
+	Ahlai as <playerName> "...How long did you know about this, Lady?"
+
+	Sabina as Lady Sabina "Same as you. I promise."
+
+	Sabina as Lady Sabina "<playerName>..."
+
+	Sabina as Lady Sabina "I know you share a past with the General. A painful one, which is putting it lightly."
+
+	Sabina as Lady Sabina "But I cannot lie to you, this is a dangerous option for you to take. And the Empire of Seiysla itself will never be the same  if you proceed to take him out. Do you want that weight on you?"
+
+	Sabina as Lady Sabina "But if you choose him... I truly cannot blame you at all."
+
+	$LienPaperInteracted = true
+}
+
+Sabina as Lady Sabina "Do you want to pick General Lien as a sacrifice?"
+
+choice in 2
+{
+	- Yes
+		$Lien += 5
+
+		HideTextbox(true)
+		[wait]Blackout()
+
+	- Keep looking
+		HideTextbox(true)
+}

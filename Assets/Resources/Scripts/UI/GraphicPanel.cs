@@ -24,8 +24,15 @@ public class GraphicPanel
         {
             root = Object.Instantiate(prefab, uiManager.graphicsContainer);
 
-            root.transform.SetSiblingIndex(0);
-
+            if (LIScreen.liScreenVisible)
+            {
+                root.transform.SetSiblingIndex(1);
+            }
+            else
+            {
+                root.transform.SetSiblingIndex(0);
+            }
+            
             root.SetActive(true);
 
             rootImage = root.GetComponentInChildren<Image>();
@@ -33,7 +40,7 @@ public class GraphicPanel
 
             if (!blackout)
             {
-                rootImage.sprite = Resources.Load<UnityEngine.Sprite>(imagePath);
+                rootImage.sprite = Resources.Load<Sprite>(imagePath);
                 rootImage.color = Color.white;
             }
             else
@@ -87,6 +94,11 @@ public class GraphicPanel
         if (immediate)
         {
             self.alpha = targetAlpha;
+
+            if (self.alpha == 0f)
+            {
+                Object.Destroy(self.gameObject);
+            }
         }
         else
         {

@@ -14,10 +14,9 @@ choice in 2
 	- Yes
 		$Seiji += 5
 
+		HideTextbox(true)
 		[wait]Blackout()
 
 	- Keep looking
-		[wait]Blackout()
-		ShowLIScreen()
-		[wait]HideCG()
+		HideTextbox(true)
 }

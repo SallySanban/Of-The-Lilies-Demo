@@ -1,0 +1,26 @@
+if (!$MyoPaperInteracted)
+{
+	Sabina as Lady Sabina "Ah, the Governor of Agon Province. He has a fair amount of enemies, for all his wealth and power. Maybe <i>because</i> of all his wealth and power?"
+
+	Sabina as Lady Sabina "It's nothing <i>personal</i> if we pick him. I would say he'd be missed, since he is a good governor... but again, it is no surprise that the Empire wants to silence him."
+
+	Sabina as Lady Sabina "We're meant to sacrifice this one at the Order of La Liryo, but if the Empire already wants him gone for reasons very much out of our control..."
+
+	Sabina as Lady Sabina "Just how much of his blood is on our hands?"
+
+	$MyoPaperInteracted = true
+}
+
+Sabina as Lady Sabina "Do you want to pick Myo as a sacrifice?"
+
+choice in 2
+{
+	- Yes
+		$Myo += 5
+
+		HideTextbox(true)
+		[wait]Blackout()
+
+	- Keep looking
+		HideTextbox(true)
+}

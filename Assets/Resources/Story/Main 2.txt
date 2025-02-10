@@ -243,9 +243,9 @@ Dalawi "He said not to hurt him! What are you doing?! Unhand me or I'm <i>going 
 
 HideTextbox(true)
 playSFX(SFX_Knockout)
-[input]Blackout(-i true)
+[wait]Blackout(-i true)
 
-[input]SwitchCG("Alonay Chained")
+[input]ShowCG("Alonay Chained")
 
 Alonay "No... Don't touch me! H-Help! <playerName>, I'm scared!"
 
@@ -288,7 +288,7 @@ stopEvent(Amb_MuffledVoices)
 ??? "Hand them to me."
 
 HideTextbox(true)
-[input]SwitchCG("Lady Sabina Save")
+[input]ShowCG("Lady Sabina Save")
 
 Ahlai as <playerName> "...Who are you?"
 

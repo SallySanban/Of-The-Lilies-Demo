@@ -45,15 +45,7 @@ namespace Commands
                 }
                 else
                 {
-                    GraphicPanel newGraphicPanel = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
                     GraphicPanel currentGraphicPanel = UIManager.Instance.currentCG;
-
-                    newGraphicPanel.Show(true);
-
-                    while (newGraphicPanel.isCGShowing)
-                    {
-                        yield return null;
-                    }
 
                     currentGraphicPanel.Hide(true);
 
@@ -61,8 +53,6 @@ namespace Commands
                     {
                         yield return null;
                     }
-
-                    UIManager.Instance.currentCG = newGraphicPanel;
                 }
             }
             else
