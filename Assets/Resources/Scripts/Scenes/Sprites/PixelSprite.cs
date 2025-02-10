@@ -58,40 +58,39 @@ public class PixelSprite
         npcTransform.position = target;
     }
 
-    public IEnumerator FollowPlayer(GameObject npc, float followDistance = 2f, float speed = 6f)
+    public IEnumerator FollowPlayer(GameObject npc, float followDistance = 3f, float speed = 6f)
     {
         Transform npcTransform = npc.transform;
         Transform playerTransform = SceneManager.Instance.player.root.transform;
 
         while (SceneManager.Instance.followPlayer)
         {
+            if (spriteCurrentlyMoving)
+            {
+                yield return null;
+                continue;
+            }
+
             Vector3 npcPosition = npcTransform.position;
             Vector3 playerPosition = new Vector2(playerTransform.position.x, npcPosition.y);
 
             float distanceToPlayer = Vector3.Distance(npcPosition, playerPosition);
+            Vector3 directionToPlayer = (playerPosition - npcPosition).normalized;
 
-
-            if (!spriteCurrentlyMoving)
+            if (distanceToPlayer > followDistance && !SceneManager.Instance.player.movingToInteract)
             {
-                Vector3 directionToPlayer = (playerPosition - npcPosition).normalized;
+                animator.SetBool("Flipped", directionToPlayer.x < 0);
+                animator.SetBool("isWalking", true);
 
-                if (directionToPlayer.x > 0)
-                {
-                    npcTransform.localScale = new Vector3(Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
-                }
-                else if (directionToPlayer.x < 0)
-                {
-                    npcTransform.localScale = new Vector3(-Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
-                }
-
-                if (distanceToPlayer > followDistance)
-                {
-                    npcTransform.position = Vector3.MoveTowards(
-                        npcPosition,
-                        playerPosition,
-                        speed * Time.deltaTime
-                    );
-                }
+                npcTransform.position = Vector3.MoveTowards(
+                    npcPosition,
+                    playerPosition,
+                    speed * Time.deltaTime
+                );
+            }
+            else
+            {
+                animator.SetBool("isWalking", false);
             }
 
             yield return null;
@@ -113,49 +112,28 @@ public class PixelSprite
             npcTransform.position.z
         );
 
-        while (Vector3.Distance(npcTransform.position, targetPosition) > 0.01f)
-        {
-            Vector3 directionOfMotion = targetPosition - npcTransform.position;
+        bool direction = (targetPosition.x - npcTransform.position.x) < 0;
+        animator.SetBool("Flipped", direction);
 
-            if (directionOfMotion.x > 0)
+        float distanceToTarget = Vector3.Distance(npcTransform.position, targetPosition);
+        if (distanceToTarget > 0.01f)
+        {
+            animator.SetBool("isWalking", true);
+            
+            while (Vector3.Distance(npcTransform.position, targetPosition) > 0.01f)
             {
-                npcTransform.localScale = new Vector3(
-                    Mathf.Abs(npcTransform.localScale.x),
-                    npcTransform.localScale.y,
-                    npcTransform.localScale.z
+                npcTransform.position = Vector3.MoveTowards(
+                    npcTransform.position,
+                    targetPosition,
+                    speed * Time.deltaTime
                 );
+                yield return null;
             }
-            else if (directionOfMotion.x < 0)
-            {
-                npcTransform.localScale = new Vector3(
-                    -Mathf.Abs(npcTransform.localScale.x),
-                    npcTransform.localScale.y,
-                    npcTransform.localScale.z
-                );
-            }
-
-            npcTransform.position = Vector3.MoveTowards(
-                npcTransform.position,
-                targetPosition,
-                speed * Time.deltaTime
-            );
-
-            yield return null;
         }
 
-        Vector3 directionToPlayer = playerTransform.position - npcTransform.position;
-
-        if (directionToPlayer.x > 0)
-        {
-            npcTransform.localScale = new Vector3(Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
-        }
-        else if (directionToPlayer.x < 0)
-        {
-            npcTransform.localScale = new Vector3(-Mathf.Abs(npcTransform.localScale.x), npcTransform.localScale.y, npcTransform.localScale.z);
-        }
-
-        yield return null;
-
+        animator.SetBool("isWalking", false);
+        animator.SetBool("Flipped", !direction);
+        
         spriteCurrentlyMoving = false;
     }
 }

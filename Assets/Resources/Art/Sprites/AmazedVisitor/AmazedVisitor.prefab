@@ -30,7 +30,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4259080204869310569}
+  - {fileID: 2266877905408971233}
   - {fileID: 2432754424539152272}
   - {fileID: 2993323088994579894}
   m_Father: {fileID: 0}
@@ -663,7 +663,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!1 &5062515841905414704
 GameObject:
@@ -1191,6 +1191,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6e87a1052227ebb47af2f36f96509cc7, type: 2}
+    - target: {fileID: 3626916397498700004, guid: d55ecb52cddae23478bf18e9a72b4e94, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: d55ecb52cddae23478bf18e9a72b4e94, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1240,7 +1244,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: d55ecb52cddae23478bf18e9a72b4e94, type: 3}
---- !u!4 &4259080204869310569 stripped
+--- !u!4 &2266877905408971233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: d55ecb52cddae23478bf18e9a72b4e94, type: 3}
   m_PrefabInstance: {fileID: 8223595657708777196}

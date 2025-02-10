@@ -1130,7 +1130,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.020891823}
   m_AnchorMax: {x: 0.042718504, y: 0.558}
-  m_AnchoredPosition: {x: -2.0792236, y: 0.44934082}
+  m_AnchoredPosition: {x: -2.0793457, y: 0.44934082}
   m_SizeDelta: {x: -2.9957364, y: -0.6261349}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &3970662911442397852
@@ -1274,7 +1274,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -173,7 +173,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8865591828574652942}
+  - {fileID: 8443723763745633590}
   - {fileID: 6035592871955777633}
   - {fileID: 374793447670431815}
   m_Father: {fileID: 0}
@@ -688,7 +688,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!1 &5411246496476440053
 GameObject:
@@ -1187,6 +1187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StudSit1
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 331dfc9a41f364b43aaeb716deea6f27, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 331dfc9a41f364b43aaeb716deea6f27, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1236,7 +1240,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 331dfc9a41f364b43aaeb716deea6f27, type: 3}
---- !u!4 &8865591828574652942 stripped
+--- !u!4 &8443723763745633590 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 331dfc9a41f364b43aaeb716deea6f27, type: 3}
   m_PrefabInstance: {fileID: 1764188230848956987}

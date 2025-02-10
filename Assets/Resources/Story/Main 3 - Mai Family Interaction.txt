@@ -2,13 +2,13 @@ if ($MaiQuest)
 {
 	pixel Ahlai as <playerName> "Are you Mai's mother?"
 
-	pixel Mother as Mai's Mother "You know about Mai...? Yes, I'm her mother!"
+	pixel MotherAndDaughter as Mai's Mother "You know about Mai...? Yes, I'm her mother!"
 
-	pixel Mother as Mai's Mother "Have you seen her? Where is she?"
+	pixel MotherAndDaughter as Mai's Mother "Have you seen her? Where is she?"
 
 	pixel Ahlai as <playerName> "She's all the way in Kuchai Market, waiting for you."
 
-	pixel Mother as Mai's Mother "Oh, thank Dok'kale! Bless you both."
+	pixel MotherAndDaughter as Mai's Mother "Oh, thank Dok'kale! Bless you both."
 
 	HideTextbox(false)
 	[wait]Blackout()
@@ -23,7 +23,7 @@ if ($MaiQuest)
 }
 else
 {
-	pixel Mother as ??? "My daughter... Where is she..."
+	pixel MotherAndDaughter as ??? "My daughter... Where is she..."
 }
 
 HideTextbox(false)

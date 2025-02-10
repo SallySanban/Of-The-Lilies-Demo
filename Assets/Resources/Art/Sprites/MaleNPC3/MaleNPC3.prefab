@@ -358,6 +358,7 @@ MonoBehaviour:
   storyToPlay: 
   moveToInteractPosition: {x: 0, y: 0}
   icon: {fileID: 61074764341831829}
+  stateChangedDuringStory: 0
 --- !u!1 &4200026076627314864
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +784,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!1 &8325519562959609152
 GameObject:

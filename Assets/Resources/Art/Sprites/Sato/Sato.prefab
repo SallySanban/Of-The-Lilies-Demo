@@ -170,7 +170,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!1 &4020109820953800093
 GameObject:
@@ -1191,6 +1191,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: c8a6dd5a2010fc64ca789d901c265d2c, type: 2}
+    - target: {fileID: 3626916397498700004, guid: 12a64169b56795141802cdb0198f009d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 12a64169b56795141802cdb0198f009d, type: 3}
       propertyPath: m_RootOrder
       value: 0
