@@ -151,6 +151,7 @@ choice in -1
 
 		pixel Myo "Yes... Well, until then, <playerName>."
 
+		HideTextbox(true)
 		[wait]Blackout()
 		ResetCamera(false)
 		RemoveFromScene("Myo")
