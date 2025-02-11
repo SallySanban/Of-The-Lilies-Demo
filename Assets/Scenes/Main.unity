@@ -520,7 +520,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 721752254}
   m_Father: {fileID: 206041528}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -796,7 +797,6 @@ GameObject:
   - component: {fileID: 721752257}
   - component: {fileID: 721752258}
   - component: {fileID: 721752259}
-  - component: {fileID: 721752260}
   m_Layer: 5
   m_Name: VN Scene
   m_TagString: Untagged
@@ -813,20 +813,20 @@ RectTransform:
   m_GameObject: {fileID: 721752253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.009259259, y: 0.009259259, z: 0.009259259}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1666336655}
   - {fileID: 1393507274}
   - {fileID: 1049106803}
   - {fileID: 1534821054}
-  m_Father: {fileID: 1557597938}
+  m_Father: {fileID: 519420032}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920.0001, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &721752256
 CanvasRenderer:
@@ -888,18 +888,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &721752260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721752253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c416209daeaa049961473acd087ea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &835192702
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,7 +933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pixelContainer: {fileID: 151385053}
-  _vnContainerFollowCamera: {fileID: 721752260}
+  _vnContainerFollowCamera: {fileID: 0}
   studioListener: {fileID: 519420034}
   _config: {fileID: 11400000, guid: 71d91a719a99b984dbd0490fb6b960c5, type: 2}
   playerCamera: {fileID: 1928837673}
@@ -1564,7 +1552,6 @@ RectTransform:
   m_Children:
   - {fileID: 631915578}
   - {fileID: 151385053}
-  - {fileID: 721752254}
   m_Father: {fileID: 1911301056}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

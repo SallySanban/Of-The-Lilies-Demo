@@ -77,9 +77,10 @@ public class PixelSprite
             float distanceToPlayer = Vector3.Distance(npcPosition, playerPosition);
             Vector3 directionToPlayer = (playerPosition - npcPosition).normalized;
 
+            animator.SetBool("Flipped", directionToPlayer.x < 0);
+
             if (distanceToPlayer > followDistance && !SceneManager.Instance.player.movingToInteract)
             {
-                animator.SetBool("Flipped", directionToPlayer.x < 0);
                 animator.SetBool("isWalking", true);
 
                 npcTransform.position = Vector3.MoveTowards(

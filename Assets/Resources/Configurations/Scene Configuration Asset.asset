@@ -676,7 +676,7 @@ MonoBehaviour:
     - npcName: Seiji
       position: {x: 311.68, y: -168.32}
       appear: 1
-      animationState: IdleRight
+      animationState: IdleLeft
     - npcName: Sato
       position: {x: -1201.53, y: -227.32}
       appear: 1
@@ -791,7 +791,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -3436.47, y: -244.74}
     playerDirection: -1
-    playerAnimationState: IdleLeft
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Myo
       position: {x: 3180.04, y: -189.32}
@@ -926,37 +926,37 @@ MonoBehaviour:
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: DesperateGirl
-      position: {x: -257.34, y: -192.32}
+      position: {x: -257.34, y: -278.32}
       appear: 0
-      animationState: Idle
+      animationState: IdleRight
     - npcName: Quan
-      position: {x: -1436.34, y: -192.32}
+      position: {x: -1436.34, y: -202.32}
       appear: 1
-      animationState: Idle
+      animationState: IdleRight
     - npcName: PrayingGirl
-      position: {x: 741.66, y: -192.32}
+      position: {x: 774.66, y: -238.32}
       appear: 1
-      animationState: Idle
+      animationState: PrayLeft
     - npcName: MaleCustomer
-      position: {x: -47.34, y: -192.32}
+      position: {x: -47.34, y: -200.32}
       appear: 0
-      animationState: Idle
+      animationState: IdleLeft
     - npcName: Salesperson1
-      position: {x: -3983.34, y: -218.81}
+      position: {x: -3983.34, y: -193.32}
       appear: 1
-      animationState: Idle
+      animationState: IdleRight
     - npcName: Salesperson2
-      position: {x: -2707.34, y: -192.32}
+      position: {x: -2707.34, y: -187.32}
       appear: 1
-      animationState: Idle
+      animationState: IdleRight
     - npcName: Salesperson3
-      position: {x: 2106.66, y: -192.32}
+      position: {x: 2106.66, y: -195.32}
       appear: 1
-      animationState: Idle
+      animationState: IdleRight
     - npcName: Seiji
-      position: {x: 4251.06, y: -209.45}
+      position: {x: 4251.06, y: -189.32}
       appear: 1
-      animationState: Idle
+      animationState: IdleLeft
     interactablesInScene:
     - interactableName: DesperateGirl
       interactableType: 0
@@ -1005,13 +1005,13 @@ MonoBehaviour:
       playerPositionInNextBackground: {x: -4888.15, y: -244.74}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
-      followPlayerPosition: {x: -5066.96, y: -218.57}
+      followPlayerPosition: {x: -5066.96, y: -191.32}
   - sceneName: Scene 5
     currentBackgroundName: Kuchai Town 3
     showPlayer: 1
     playerPosition: {x: -3706.83, y: -232.51}
     playerDirection: 1
-    playerAnimationState: IdleLeft
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sato
       position: {x: -4997.45, y: -193.32}
@@ -1092,24 +1092,24 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -1523.99, y: -236.6}
     playerDirection: 1
-    playerAnimationState: IdleLeft
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Boater
       position: {x: -1089.65, y: -180.32}
       appear: 1
-      animationState: Idle
+      animationState: IdleRight
     - npcName: WaterLooker
-      position: {x: -70.65, y: -185.32}
+      position: {x: -70.65, y: -171.32}
       appear: 1
-      animationState: Idle
+      animationState: IdleRight
     - npcName: MotherAndDaughter
       position: {x: 1014.35, y: -182.32}
       appear: 1
-      animationState: Idle
+      animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -1747.12, y: -210.6}
+      position: {x: -1747.12, y: -188.32}
       appear: 1
-      animationState: Idle
+      animationState: IdleRight
     interactablesInScene:
     - interactableName: MotherAndDaughter
       interactableType: 0
@@ -1148,7 +1148,7 @@ MonoBehaviour:
       playerPositionInNextBackground: {x: 4530.73, y: -244.74}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
-      followPlayerPosition: {x: 4749.48, y: -218.71}
+      followPlayerPosition: {x: 4749.48, y: -191.32}
     - interactableName: Right Side
       backgroundToGo: Kuchai Town 3
       keyToPress: 1
