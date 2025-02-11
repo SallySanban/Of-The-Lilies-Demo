@@ -14,7 +14,6 @@ namespace Commands
         private const string SFX_FILEPATH = "event:/SFX/";
         private const string AMB_FILEPATH = "event:/Ambience/";
 
-
         new public static void Extend(CommandDatabase database)
         {
 
@@ -96,8 +95,8 @@ namespace Commands
             if (activeEvents.ContainsKey(fullPath))
             {
                 EventInstance eventToPause = activeEvents[fullPath];
-                eventToPause.setPaused(true);
-                Debug.Log("Paused Event: " + fullPath);
+                CoroutineRunner.Instance.StartCoroutine(FadeOutAndPause(eventToPause, 1.0f)); // Fade out over 1 second
+                Debug.Log("Pausing Event with Fade Out: " + fullPath);
             }
             else
             {
@@ -116,12 +115,69 @@ namespace Commands
             if (activeEvents.ContainsKey(fullPath))
             {
                 EventInstance eventToResume = activeEvents[fullPath];
-                eventToResume.setPaused(false);
-                Debug.Log("Resumed Event: " + fullPath);
+                CoroutineRunner.Instance.StartCoroutine(FadeInAndResume(eventToResume, 1.0f)); // Fade in over 1 second
+                Debug.Log("Resuming Event with Fade In: " + fullPath);
             }
             else
             {
                 Debug.LogWarning("Event not found: " + filename);
+            }
+        }
+
+        // Fade out the event and then pause it
+        private static IEnumerator FadeOutAndPause(EventInstance eventInstance, float fadeDuration)
+        {
+            float currentVolume = 1.0f;
+            float fadeSpeed = 1.0f / fadeDuration;
+
+            while (currentVolume > 0)
+            {
+                currentVolume -= fadeSpeed * Time.deltaTime;
+                eventInstance.setVolume(currentVolume);
+                yield return null;
+            }
+
+            // Pause the event after fading out
+            eventInstance.setPaused(true);
+            Debug.Log("Event paused after fade out.");
+        }
+
+        // Fade in the event and then resume it
+        private static IEnumerator FadeInAndResume(EventInstance eventInstance, float fadeDuration)
+        {
+            // Unpause the event before fading in
+            eventInstance.setPaused(false);
+
+            float currentVolume = 0.0f;
+            float fadeSpeed = 1.0f / fadeDuration;
+
+            while (currentVolume < 1.0f)
+            {
+                currentVolume += fadeSpeed * Time.deltaTime;
+                eventInstance.setVolume(currentVolume);
+                yield return null;
+            }
+
+            Debug.Log("Event resumed with fade in.");
+        }
+
+        // Singleton coroutine runner to handle coroutines in a non-MonoBehaviour class
+        public class CoroutineRunner : MonoBehaviour
+        {
+            private static CoroutineRunner _instance;
+
+            public static CoroutineRunner Instance
+            {
+                get
+                {
+                    if (_instance == null)
+                    {
+                        GameObject obj = new GameObject("CoroutineRunner");
+                        _instance = obj.AddComponent<CoroutineRunner>();
+                        DontDestroyOnLoad(obj);
+                    }
+                    return _instance;
+                }
             }
         }
     }
