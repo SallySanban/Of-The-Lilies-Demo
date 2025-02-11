@@ -11,7 +11,6 @@ public class SceneManager : MonoBehaviour
     public static SceneManager Instance { get; private set; }
 
     [SerializeField] private RectTransform _pixelContainer = null;
-    [SerializeField] private FollowCamera _vnContainerFollowCamera;
     [SerializeField] private StudioListener studioListener;
     public RectTransform pixelContainer => _pixelContainer;
 
