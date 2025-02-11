@@ -1,0 +1,17 @@
+FlipNPC("PrayingGirlFamily" "Left")
+
+pixel PrayingGirlFamily as Mai "You helped me find them!"
+
+if (!$MaiThankYou)
+{
+	pixel PrayingGirlFamily as Mai "Thank you so much... I guess I won't be needing these anymore."
+}
+
+playSFX("SFX_UI InventoryPickup")
+
+pixel PrayingGirlFamily as Mai "I'll visit you at Sabina's Salves again soon!"
+
+$SilverleafSprigs = true
+$QuanIngredients += 1
+HideTextbox(false)
+$MaiThankYou = true

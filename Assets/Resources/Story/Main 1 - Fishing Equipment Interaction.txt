@@ -12,7 +12,7 @@ else
 	HideTextbox(true)
 	playSFX(SFX_ReelFix)
 	Wait(2.0)
-	ChangeAnimationState("Fishing Equipment" Fixed)
+	ChangeAnimationState("Fishing Equipment" Fixed true)
 	[wait]HideCG()
 
 	pixel Ahlai as <playerName> "All fixed! I should let Uncle Daniw know."

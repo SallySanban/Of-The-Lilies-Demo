@@ -88,7 +88,7 @@ Blackout() //adds blackout image on top of screen
 ShowScene("Scene Name" "Background Prefab Name") //shows pixel background immediately, ALWAYS do this behind black screen 
 SwitchScene("Scene Name" "Background Prefab Name") //for same background but different NPC configurations
 ToggleInteractable("Scene Name" "Background Name" InteractableName true/false) //changes isInteractable on/off
-ChangeAnimationState("Interactable/NPC Name" TriggerName) //triggers animation for interactable/NPC
+ChangeAnimationState("Interactable/NPC Name" BoolName true/false) //triggers animation for interactable/NPC
 RemoveFromScene("Interactable/NPC Name") //removes interactable/NPC from screen
 MoveNPC(NPCName/Ahlai -x xPosition -y yPosition -spd speed) //moves NPC to target local position
 MovePlayerToInteract(-x xPosition -y yPosition)

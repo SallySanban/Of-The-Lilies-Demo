@@ -33,7 +33,7 @@ Dad at 1 "Now, go! I have another fight to settle..."
 HideTextbox(true)
 HideCharacter(Dad)
 HideCharacter(Ahlai)
-ChangeAnimationState(Dad Run)
+ChangeAnimationState(Dad Run true)
 [wait]MoveNPC(Dad -x 76.74 -y -2.59 -spd 5)
 
 ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_WorriedAngry)
