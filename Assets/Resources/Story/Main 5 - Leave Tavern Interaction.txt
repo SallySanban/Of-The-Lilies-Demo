@@ -10,8 +10,10 @@ else
 {
 	if ($GotDrinks)
 	{
+		
 		[wait]SwitchScene("Scene 10" "Kuchai Town 1")
-
+		stopEvent(AMB_Tavern)
+		resumeEvent(BGM_KuchaiTown)
 		Load("Main 6 - Seiji Interaction")
 	}
 	else

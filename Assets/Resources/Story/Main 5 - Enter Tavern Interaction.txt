@@ -9,5 +9,8 @@ pixel Ahlai as <playerName> "I'll be fine, Seiji. I'm just getting drinks. I'll 
 pixel Seiji "Okay, but be careful. Remember - Lady Sabina wants three flasks of <b>areka liquor</b>."
 
 [wait]SwitchScene("Scene 8" "Tavern")
+pauseEvent(BGM_KuchaiTown)
+playMusic(BGM_KuchaiTavern)
+playAmbience(AMB_Tavern)
 
 $BarkeepTalkedTo = false

@@ -919,7 +919,7 @@ MonoBehaviour:
     - interactableName: Sabina Door
       interactableType: 2
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 3 - Sabina Door Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Tavern Door
       interactableType: 2
