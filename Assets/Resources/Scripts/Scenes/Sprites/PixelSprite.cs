@@ -32,8 +32,15 @@ public class PixelSprite
         {
             Vector2 direction = (target - npcTransform.position).normalized;
 
-            animator.SetBool("isWalking", true);
-            animator.SetBool("Flipped", direction.x < 0); //true means going left
+            if (HasParameter(animator, "isWalking"))
+            {
+                animator.SetBool("isWalking", true);
+            }
+            
+            if (HasParameter(animator, "Flipped"))
+            {
+                animator.SetBool("Flipped", direction.x < 0); //true means going left
+            }
 
             if (smooth)
             {
@@ -54,7 +61,11 @@ public class PixelSprite
             yield return null;
         }
 
-        animator.SetBool("isWalking", false);
+        if (HasParameter(animator, "isWalking"))
+        {
+            animator.SetBool("isWalking", false);
+        }
+
         npcTransform.position = target;
     }
 
@@ -136,5 +147,24 @@ public class PixelSprite
         animator.SetBool("Flipped", !direction);
         
         spriteCurrentlyMoving = false;
+    }
+
+    public bool HasParameter(Animator animator, string paramName)
+    {
+        foreach (AnimatorControllerParameter param in animator.parameters)
+        {
+            if (param.name == paramName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void Flip(int direction)
+    {
+        bool flipDirection = direction < 0; //-1 is true => left
+
+        animator.SetBool("Flipped", flipDirection);
     }
 }

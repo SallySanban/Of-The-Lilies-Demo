@@ -933,7 +933,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pixelContainer: {fileID: 151385053}
-  _vnContainerFollowCamera: {fileID: 0}
   studioListener: {fileID: 519420034}
   _config: {fileID: 11400000, guid: 71d91a719a99b984dbd0490fb6b960c5, type: 2}
   playerCamera: {fileID: 1928837673}

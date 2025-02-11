@@ -109,13 +109,6 @@ public class Player : PixelSprite
         movingToInteract = false;
     }
 
-    public void Flip(int direction)
-    {
-        bool flipDirection = direction < 0; //-1 is true => left
-
-        animator.SetBool("Flipped", flipDirection);
-    }
-
     private void PlayFootstepSound()
     {
         footstepTimer += Time.deltaTime;

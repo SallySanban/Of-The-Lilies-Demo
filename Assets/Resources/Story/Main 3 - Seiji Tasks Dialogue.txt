@@ -155,6 +155,7 @@ choice in -1
 		[wait]Blackout()
 		ResetCamera(false)
 		RemoveFromScene("Myo")
+		FlipNPC("Ahlai" "Right")
 		[wait]HideCG()
 
 		pixel Ahlai as <playerName> "That's a little protective even for <i>you</i>, Seiji."

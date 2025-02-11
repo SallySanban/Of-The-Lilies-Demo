@@ -23,18 +23,22 @@ MonoBehaviour:
     - npcName: Dad
       position: {x: -184.94, y: -189.66}
       appear: 1
+      flipped: 0
       animationState: SittingTogether
     - npcName: Mom
       position: {x: -612.94, y: -192.34}
       appear: 1
+      flipped: 0
       animationState: Sitting
     - npcName: Laya
       position: {x: 296.32, y: -149.32}
       appear: 1
+      flipped: 0
       animationState: PlayingAlone
     - npcName: Dalawi
       position: {x: 752.32, y: -148.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene: []
     backgroundsToGo: []
@@ -48,18 +52,22 @@ MonoBehaviour:
     - npcName: Dad
       position: {x: -151.94, y: -197.66}
       appear: 1
+      flipped: 0
       animationState: Sitting
     - npcName: Mom
       position: {x: -612.94, y: -192.34}
       appear: 1
+      flipped: 0
       animationState: Sitting
     - npcName: Laya
       position: {x: 296.32, y: -149.32}
       appear: 1
+      flipped: 0
       animationState: Playing
     - npcName: Dalawi
       position: {x: 752.32, y: -148.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Chest
@@ -168,34 +176,42 @@ MonoBehaviour:
     - npcName: MaleNPC1
       position: {x: -3860.97, y: -173.84}
       appear: 1
+      flipped: 0
       animationState: LGMaleNPCStandingIdle
     - npcName: MaleNPC2
       position: {x: 4813.24, y: -188.68}
       appear: 1
+      flipped: 0
       animationState: RMaleNPCStandingIdle
     - npcName: MaleNPC3
       position: {x: -2014.94, y: -192.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: MaleNPC4
       position: {x: 6445.06, y: -190.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: MaleNPC5
       position: {x: 7395.09, y: -199.26}
       appear: 1
+      flipped: 0
       animationState: Swinging
     - npcName: FemNPC1
       position: {x: 1442.06, y: -206.88}
       appear: 1
+      flipped: 0
       animationState: DBFemNPCStandingIdle
     - npcName: FemNPC2
       position: {x: -924.26, y: -222.38}
       appear: 1
+      flipped: 0
       animationState: RFemStandingIdle
     - npcName: FemNPC3
       position: {x: 3729.21, y: -171.82}
       appear: 1
+      flipped: 0
       animationState: PFemNPCStandingIdle
     interactablesInScene:
     - interactableName: Fishing Equipment
@@ -308,10 +324,12 @@ MonoBehaviour:
     - npcName: FemSittingNPC
       position: {x: -538.68, y: -300.18}
       appear: 1
+      flipped: 0
       animationState: Sitting NPC - Fem
     - npcName: MaleSittingNPC
       position: {x: 561.36, y: -408.84}
       appear: 1
+      flipped: 0
       animationState: SittingIdle
     interactablesInScene:
     - interactableName: FemSittingNPC
@@ -347,6 +365,7 @@ MonoBehaviour:
     - npcName: Aya
       position: {x: -2786.25, y: -580.6}
       appear: 1
+      flipped: 0
       animationState: Aya bird
     interactablesInScene:
     - interactableName: Left Exit
@@ -408,30 +427,37 @@ MonoBehaviour:
     - npcName: FemNPC1
       position: {x: 1446.07, y: -199.88}
       appear: 1
+      flipped: 0
       animationState: DBFemNPCPanic
     - npcName: FemNPC2
       position: {x: -960.22, y: -202.38}
       appear: 1
+      flipped: 0
       animationState: RFemNPCPanic
     - npcName: MaleNPC1
       position: {x: -4497.97, y: -184.73}
       appear: 1
+      flipped: 0
       animationState: LGMaleNPCPanic
     - npcName: MaleNPC2
       position: {x: 3131.25, y: -182.68}
       appear: 1
+      flipped: 0
       animationState: RMaleNPCPanic
     - npcName: FemNPC3
       position: {x: -2605.79, y: -231.82}
       appear: 1
+      flipped: 0
       animationState: PFemNPCPanic
     - npcName: Dad
       position: {x: 5244.91, y: -279.66}
       appear: 1
+      flipped: 0
       animationState: Combat
     - npcName: Lien
       position: {x: 5786.91, y: -190.47}
       appear: 1
+      flipped: 0
       animationState: Lien10Yrs
     interactablesInScene:
     - interactableName: FemNPC1 Trigger
@@ -475,6 +501,7 @@ MonoBehaviour:
     - npcName: Ahlai
       position: {x: -528.62, y: -871.12}
       appear: 1
+      flipped: 0
       animationState: ChainedWalk
     interactablesInScene: []
     backgroundsToGo: []
@@ -668,42 +695,52 @@ MonoBehaviour:
     - npcName: Sabina
       position: {x: 631.78, y: -218.32}
       appear: 1
+      flipped: 1
       animationState: Idle
     - npcName: RookieJournalist
       position: {x: -2131.22, y: -190.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: Seiji
       position: {x: 311.68, y: -168.32}
       appear: 1
+      flipped: 1
       animationState: IdleLeft
     - npcName: Sato
       position: {x: -1201.53, y: -227.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: RichSeiyslan
       position: {x: -1482.22, y: -213.32}
       appear: 1
-      animationState: IdleRight
+      flipped: 1
+      animationState: IdleLeft
     - npcName: MotherWithSon
       position: {x: 2099.78, y: -219.32}
       appear: 1
+      flipped: 1
       animationState: IdleLeft
     - npcName: DesperateGirl
       position: {x: -525.22, y: -298.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: AmazedVisitor
       position: {x: 1306.78, y: -219.32}
       appear: 1
+      flipped: 1
       animationState: IdleLeft
     - npcName: SonWithMother
       position: {x: 1928.78, y: -303.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: Myo
       position: {x: -2678.22, y: -262.05}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Potion Cabinet
@@ -791,47 +828,57 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -3436.47, y: -244.74}
     playerDirection: -1
-    playerAnimationState: IdleRight
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Myo
       position: {x: 3180.04, y: -189.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: GossipGirl1
       position: {x: 2027.04, y: -198.32}
       appear: 1
+      flipped: 0
       animationState: GossipRight
     - npcName: GossipGirl2
       position: {x: 2161.04, y: -194.32}
       appear: 1
+      flipped: 0
       animationState: GossipLeft
     - npcName: TownCrier
       position: {x: -206.96, y: -165.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: MaleListener
       position: {x: 260.04, y: -201.32}
       appear: 1
+      flipped: 0
       animationState: IdleLeft
     - npcName: FemaleListener
       position: {x: 437.04, y: -174.32}
       appear: 1
+      flipped: 0
       animationState: IdleLeft
     - npcName: RichSeiyslan
       position: {x: -2737.96, y: -189.32}
       appear: 0
-      animationState: IdleRight
+      flipped: 0
+      animationState: BlondeRight
     - npcName: RichSeiyslanCrush
       position: {x: -2518.96, y: -192.32}
       appear: 1
+      flipped: 0
       animationState: IdleLeft
     - npcName: RichSeiyslanFriend
       position: {x: -1441.96, y: -199.32}
       appear: 1
+      flipped: 0
       animationState: IdleLeft
     - npcName: Seiji
       position: {x: -3819.96, y: -191.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     interactablesInScene:
     - interactableName: Myo
@@ -928,34 +975,42 @@ MonoBehaviour:
     - npcName: DesperateGirl
       position: {x: -257.34, y: -278.32}
       appear: 0
+      flipped: 0
       animationState: IdleRight
     - npcName: Quan
       position: {x: -1436.34, y: -202.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: PrayingGirl
       position: {x: 774.66, y: -238.32}
       appear: 1
+      flipped: 0
       animationState: PrayLeft
     - npcName: MaleCustomer
       position: {x: -47.34, y: -200.32}
       appear: 0
+      flipped: 0
       animationState: IdleLeft
     - npcName: Salesperson1
       position: {x: -3983.34, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: Salesperson2
       position: {x: -2707.34, y: -187.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: Salesperson3
       position: {x: 2106.66, y: -195.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: Seiji
       position: {x: 4251.06, y: -189.32}
       appear: 1
+      flipped: 0
       animationState: IdleLeft
     interactablesInScene:
     - interactableName: DesperateGirl
@@ -1016,30 +1071,37 @@ MonoBehaviour:
     - npcName: Sato
       position: {x: -4997.45, y: -193.32}
       appear: 0
+      flipped: 0
       animationState: Idle
     - npcName: Soldier1
       position: {x: -252.45, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier2
       position: {x: 166.55, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier3
       position: {x: 1625.55, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: PoorBoy
       position: {x: -57.45, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Reader
       position: {x: 3174.05, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Seiji
       position: {x: -3908.45, y: -206.51}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Reader
@@ -1097,18 +1159,22 @@ MonoBehaviour:
     - npcName: Boater
       position: {x: -1089.65, y: -180.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: WaterLooker
       position: {x: -70.65, y: -171.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     - npcName: MotherAndDaughter
       position: {x: 1014.35, y: -182.32}
       appear: 1
+      flipped: 0
       animationState: IdleLeft
     - npcName: Seiji
       position: {x: -1747.12, y: -188.32}
       appear: 1
+      flipped: 0
       animationState: IdleRight
     interactablesInScene:
     - interactableName: MotherAndDaughter
@@ -1166,22 +1232,27 @@ MonoBehaviour:
     - npcName: Seiji
       position: {x: -211.58, y: -215.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: BusyLibrarian
       position: {x: 1849.42, y: -196.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Receptionist
       position: {x: 1154.42, y: -144.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: FatherWithDaughter
       position: {x: -1197.58, y: -203.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: DaughterWithFather
       position: {x: -1027.58, y: -203.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: FatherWithDaughter
@@ -1271,26 +1342,32 @@ MonoBehaviour:
     - npcName: CoupleSit1
       position: {x: 698.31, y: -505.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: CoupleSit2
       position: {x: 1549.31, y: -494.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: RetiredVeteran
       position: {x: -1539.69, y: -185.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: GossipSit1
       position: {x: 259.31, y: -490.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: GossipSit2
       position: {x: -504.69, y: -499.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: BathroomGuy
       position: {x: 1712.05, y: -161.84}
       appear: 1
+      flipped: 0
       animationState: 
     interactablesInScene:
     - interactableName: CoupleSit1
@@ -1346,26 +1423,32 @@ MonoBehaviour:
     - npcName: StudentSit1
       position: {x: -269.59, y: -479.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: StudentSit2
       position: {x: 472.41, y: -497.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: AspiringWriterSit
       position: {x: -749.59, y: -489.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: GossipGirl3
       position: {x: 1008.41, y: -190.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: GossipGirl4
       position: {x: 1180.41, y: -185.32}
       appear: 1
+      flipped: 0
       animationState: 
     - npcName: Manju
       position: {x: -1576.59, y: -188.32}
       appear: 1
+      flipped: 0
       animationState: 
     interactablesInScene:
     - interactableName: GossipGirl3
@@ -1416,38 +1499,47 @@ MonoBehaviour:
     - npcName: Seiji
       position: {x: 4326.55, y: -210.6}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Laisa
       position: {x: -2082.45, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Lien
       position: {x: -1708.92, y: -150.67}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: TownCrier
       position: {x: -1287.45, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Reader
       position: {x: -496.45, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Sato
       position: {x: -4341.45, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier1
       position: {x: -2419.45, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier2
       position: {x: -2255.45, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier3
       position: {x: -1897.45, y: -193.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Bridge
@@ -1498,14 +1590,17 @@ MonoBehaviour:
     - npcName: Boater
       position: {x: -1089.65, y: -180.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: WaterLooker
       position: {x: -70.65, y: -185.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Seiji
       position: {x: -1747.12, y: -210.6}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Boater
@@ -1558,22 +1653,27 @@ MonoBehaviour:
     - npcName: GossipGirl1
       position: {x: 2021.04, y: -189.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: GossipGirl2
       position: {x: 2187.04, y: -189.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: MaleListener
       position: {x: 282.04, y: -189.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: FemaleListener
       position: {x: 480.04, y: -189.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Seiji
       position: {x: -3868.96, y: -217.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: GossipGirl2
@@ -1645,22 +1745,27 @@ MonoBehaviour:
     - npcName: Quan
       position: {x: -1436.34, y: -192.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Salesperson1
       position: {x: -3983.34, y: -218.81}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Salesperson2
       position: {x: -2707.34, y: -192.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Salesperson3
       position: {x: 2106.66, y: -192.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Seiji
       position: {x: 4251.06, y: -209.45}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Quan
@@ -1711,34 +1816,42 @@ MonoBehaviour:
     - npcName: StudentSit3
       position: {x: -1279.27, y: -489.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: StudentSit4
       position: {x: -450.27, y: -485.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Barkeep
       position: {x: -298.27, y: -145.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Myo
       position: {x: -864.27, y: -163.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: AdmirerSit1
       position: {x: 88.73, y: -482.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: AdmirerSit2
       position: {x: 935.73, y: -482.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: SocialClimberSit1
       position: {x: 1200.73, y: -219.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: SocialClimberSit2
       position: {x: 1445.73, y: -219.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Barkeep
@@ -1794,46 +1907,57 @@ MonoBehaviour:
     - npcName: StudentSit3
       position: {x: -1279.27, y: -489.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: StudentSit4
       position: {x: -450.27, y: -485.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Barkeep
       position: {x: -298.27, y: -145.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Myo
       position: {x: -864.27, y: -163.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: AdmirerSit1
       position: {x: 88.73, y: -482.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: AdmirerSit2
       position: {x: 935.73, y: -482.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: SocialClimberSit2
       position: {x: -691.27, y: -182.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier1
       position: {x: 639.73, y: -177.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier2
       position: {x: 810.73, y: -172.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier3
       position: {x: 75.73, y: -204.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Lien
       position: {x: 455.1, y: -161.67}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Barkeep
@@ -1899,6 +2023,7 @@ MonoBehaviour:
     - npcName: Seiji
       position: {x: 2315.04, y: -217.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Sabina Door
@@ -1960,10 +2085,12 @@ MonoBehaviour:
     - npcName: Sabina
       position: {x: -164.22, y: -218.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Seiji
       position: {x: -711.22, y: -219.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene: []
     backgroundsToGo: []
@@ -1977,22 +2104,27 @@ MonoBehaviour:
     - npcName: Laisa
       position: {x: -3488.96, y: -221.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Lien
       position: {x: 2491.29, y: -220.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier1
       position: {x: 2740.04, y: -220.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier2
       position: {x: 2943.04, y: -220.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Soldier3
       position: {x: 3146.04, y: -220.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene: []
     backgroundsToGo: []
@@ -2006,10 +2138,12 @@ MonoBehaviour:
     - npcName: Sabina
       position: {x: -164.22, y: -218.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     - npcName: Seiji
       position: {x: -711.22, y: -219.32}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Potion Cabinet
@@ -2194,6 +2328,7 @@ MonoBehaviour:
     - npcName: Sabina
       position: {x: 0, y: 0}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene:
     - interactableName: Conspiracy Wall
@@ -2423,6 +2558,7 @@ MonoBehaviour:
     - npcName: Sabina
       position: {x: 0, y: 0}
       appear: 1
+      flipped: 0
       animationState: Idle
     interactablesInScene: []
     backgroundsToGo: []
