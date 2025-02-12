@@ -11,10 +11,8 @@ public class SceneManager : MonoBehaviour
     public static SceneManager Instance { get; private set; }
 
     [SerializeField] private RectTransform _pixelContainer = null;
-    [SerializeField] private FollowCamera _vnContainerFollowCamera;
     [SerializeField] private StudioListener studioListener;
     public RectTransform pixelContainer => _pixelContainer;
-    public FollowCamera vnContainerFollowCamera => _vnContainerFollowCamera;
 
     [SerializeField] private SceneConfig _config = null;
     public SceneConfig config => _config;
@@ -119,11 +117,6 @@ public class SceneManager : MonoBehaviour
         panCamConfiner.m_BoundingShape2D = currentScene.GetComponent<PolygonCollider2D>();
 
         cinemachineBrain.m_DefaultBlend.m_Time = DEFAULT_BLEND;
-
-        if (vnContainerFollowCamera != null)
-        {
-            vnContainerFollowCamera.enabled = true;
-        }
     }
 
     //changes the background

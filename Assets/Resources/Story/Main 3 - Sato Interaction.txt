@@ -17,7 +17,7 @@ if (!$SatoQuest)
 
 			pixel Ahlai as <playerName> "I'll go make you that potion."
 
-			pixel Sato as Mr. Sato "Thank you, Ahlai! Always so reliable."
+			pixel Sato as Mr. Sato "Thank you, <playerName>! Always so reliable."
 
 			$SatoPotionDone = false
 			$SatoQuest = true
@@ -36,7 +36,7 @@ else
 {
 	if ($SatoQuest && !$SatoPotionDone)
 	{
-		pixel Sato as Mr. Sato "I'm looking forward to your potion, Ahlai!"
+		pixel Sato as Mr. Sato "I'm looking forward to your potion, <playerName>!"
 
 		HideTextbox(false)
 	}
@@ -44,7 +44,7 @@ else
 	{
 		pixel Ahlai as <playerName> "Here you go, Mr. Sato! One fertilizer potion!"
 
-		pixel Sato as Mr. Sato "Splendid! Thank you, Ahlai!"
+		pixel Sato as Mr. Sato "Splendid! Thank you, <playerName>!"
 
 		pixel Sato as Mr. Sato "It'll be ready just in time for the missus!"
 
@@ -68,7 +68,7 @@ else
 
 		pixel Sato as Mr. Sato "Anyway, gotta get farming! Those flowers ain't gonna grow themselves."
 
-		pixel Sato as Mr. Sato "See you, Ahlai! Thanks again!"
+		pixel Sato as Mr. Sato "See you, <playerName>! Thanks again!"
 
 		pixel Ahlai as <playerName> "No problem, Mr. Sato. See you!"
 

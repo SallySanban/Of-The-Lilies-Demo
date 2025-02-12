@@ -10,6 +10,7 @@ public class NPC : PixelSprite
     public string lastAnimationState;
     public Vector2 lastInteractablePosition = Vector2.zero;
     public bool appear = true;
+    public bool flipped = false;
 
     public NPC(GameObject prefab, Transform parent, NPCData npcData)
     {
@@ -23,16 +24,23 @@ public class NPC : PixelSprite
         lastPosition = npcData.position;
         lastAnimationState = npcData.animationState;
         appear = npcData.appear;
+        flipped = npcData.flipped;
 
-        SetupNPC(appear, lastPosition, lastAnimationState);
+        SetupNPC(appear, lastPosition, lastAnimationState, flipped);
 
         //FOR DEBUGGING PURPOSES
         //root.AddComponent<PositionDebugger>();
     }
 
-    public void SetupNPC(bool appear, Vector2 position, string animationState)
+    public void SetupNPC(bool appear, Vector2 position, string animationState, bool flipped)
     {
         animator.Play(animationState);
+
+        if (HasParameter(animator, "Flipped"))
+        {
+            animator.SetBool("Flipped", flipped);
+        }
+
         SetPosition(root, position);
 
         if (appear)

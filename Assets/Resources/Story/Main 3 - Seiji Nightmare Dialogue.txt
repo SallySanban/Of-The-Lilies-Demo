@@ -65,7 +65,7 @@ choice in -1
 
 		Seiji "Of course."
 
-		Seiji "I'm here for you, Ahlai."
+		Seiji "I'm here for you, <playerName>."
 
 		HideTextbox(true)
 		[wait]Blackout()

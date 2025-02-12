@@ -12,7 +12,7 @@ if ($MaiQuest)
 
 	HideTextbox(false)
 	[wait]Blackout()
-	RemoveFromScene("MotherAndDaughter")
+	RemoveFromScene("Mother")
 	[wait]HideCG()
 
 	pixel Seiji "What did I tell you? I knew we'd find them."

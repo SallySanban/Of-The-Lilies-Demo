@@ -151,9 +151,11 @@ choice in -1
 
 		pixel Myo "Yes... Well, until then, <playerName>."
 
+		HideTextbox(true)
 		[wait]Blackout()
 		ResetCamera(false)
 		RemoveFromScene("Myo")
+		FlipNPC("Ahlai" "Right")
 		[wait]HideCG()
 
 		pixel Ahlai as <playerName> "That's a little protective even for <i>you</i>, Seiji."

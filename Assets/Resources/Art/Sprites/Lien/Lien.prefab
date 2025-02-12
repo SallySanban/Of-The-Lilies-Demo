@@ -325,7 +325,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 7
   m_TargetDisplay: 0
 --- !u!1 &2913089094419116851
 GameObject:
@@ -496,7 +496,7 @@ RectTransform:
   - {fileID: 235722182050400171}
   - {fileID: 5231732527392279986}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19547199, y: 0.123325154}
   m_AnchorMax: {x: 0.57100004, y: 0.6202445}

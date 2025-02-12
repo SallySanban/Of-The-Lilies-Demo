@@ -293,7 +293,7 @@ namespace Commands
             {
                 NPC npc = NPCManager.Instance.GetNPC(data[0]);
 
-                //TODO: Add flip code for NPC
+                npc.Flip(direction);
             }
         }
     }

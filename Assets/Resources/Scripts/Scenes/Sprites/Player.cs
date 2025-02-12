@@ -98,17 +98,17 @@ public class Player : PixelSprite
         animator.SetBool("isWalking", false);
         animator.SetBool("Flipped", !movedLeft);
 
-        if(SceneManager.Instance.followPlayer) yield return SceneManager.Instance.follower.GoBehindPlayer(movedLeft);
+        // Wait a small frame to ensure the player has completely stopped
+        yield return new WaitForSeconds(0.1f);
+
+        if (SceneManager.Instance.followPlayer)
+        {
+            yield return SceneManager.Instance.follower.GoBehindPlayer(movedLeft);
+        }
 
         movingToInteract = false;
     }
 
-    public void Flip(int direction)
-    {
-        bool flipDirection = direction < 0; //-1 is true => left
-
-        animator.SetBool("Flipped", flipDirection);
-    }
     private void PlayFootstepSound()
     {
         footstepTimer += Time.deltaTime;
@@ -142,8 +142,8 @@ public class Player : PixelSprite
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit Object: " + hit.collider.gameObject.name);
-            Debug.Log("Hit Tag: " + hit.collider.tag);
+            //Debug.Log("Hit Object: " + hit.collider.gameObject.name);
+            //Debug.Log("Hit Tag: " + hit.collider.tag);
 
             // Check the surface tag or layer
             if (hit.collider.CompareTag("Grass"))
