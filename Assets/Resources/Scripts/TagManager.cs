@@ -9,7 +9,12 @@ public class TagManager
 {
     public static Dictionary<string, Func<string>> tags = new Dictionary<string, Func<string>>()
     {
-        { "<playerName>", () => string.IsNullOrEmpty(UIManager.Instance.inputPanel.name) ? "Ahlai" : UIManager.Instance.inputPanel.name },
+        { "<playerName>", () => 
+            {
+                var name = UIManager.Instance.inputPanel.name;
+                return string.IsNullOrEmpty(name) ? "Ahlai" : char.ToUpper(name[0]) + name.Substring(1).ToLower();
+            }
+        },
         { "<subjectPronoun>", () => string.IsNullOrEmpty(UIManager.Instance.inputPanel.subjectPronoun) ? "they" : UIManager.Instance.inputPanel.subjectPronoun },
         { "<objectPronoun>", () => string.IsNullOrEmpty(UIManager.Instance.inputPanel.objectPronoun) ? "them" : UIManager.Instance.inputPanel.objectPronoun },
         { "<possessivePronoun>", () => string.IsNullOrEmpty(UIManager.Instance.inputPanel.possessivePronoun) ? "their" : UIManager.Instance.inputPanel.possessivePronoun },
@@ -36,11 +41,23 @@ public class TagManager
     {
         if (tagRegex.IsMatch(value))
         {
+            var sentenceEndings = new[] { '.', '!', '?' };
             foreach (Match match in tagRegex.Matches(value))
             {
                 if (tags.TryGetValue(match.Value, out var tagValueRequest))
                 {
-                    value = value.Replace(match.Value, tagValueRequest());
+                    var tagValue = tagValueRequest();
+                    int tagIndex = match.Index;
+
+                    bool capitalize = tagIndex == 0 || 
+                                      (tagIndex > 0 && sentenceEndings.Contains(value[tagIndex - 2]));
+
+                    if (capitalize)
+                    {
+                        tagValue = char.ToUpper(tagValue[0]) + tagValue.Substring(1);
+                    }
+
+                    value = value.Replace(match.Value, tagValue);
                 }
             }
         }

@@ -663,7 +663,7 @@ MonoBehaviour:
     - interactableName: Door
       interactableType: 2
       isInteractable: 1
-      storyToPlay: Main 3 - Door Interaction
+      storyToPlay: Main 3 - Sabina Door Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Stairs
       interactableType: 2
@@ -919,7 +919,7 @@ MonoBehaviour:
     - interactableName: Sabina Door
       interactableType: 2
       isInteractable: 1
-      storyToPlay: Main 3 - Sabina Door Interaction
+      storyToPlay: 
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Tavern Door
       interactableType: 2
@@ -1062,7 +1062,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Complete Family Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 5.32, y: -2.06}
     backgroundsToGo:
     - interactableName: Right Side
       backgroundToGo: Kuchai Town 1
