@@ -16,7 +16,6 @@ choice in -1
 		pixel FemSittingNPC as Auntie "You can chop some down, you know. Tayabac's filled with trees."
 
 		$KnowWoodLocation = true
-		ToggleInteractable("Scene 2" "Tayabac Village" Trees true)
 }
 
 HideTextbox(false)

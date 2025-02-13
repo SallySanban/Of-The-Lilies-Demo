@@ -8,5 +8,6 @@ ToggleInteractable("Scene 2" "Tayabac Village" Trees false)
 [wait]HideCG()
 
 $DaniwItems += 1
+$KnowWoodLocation = true
 
 HideTextbox(false)

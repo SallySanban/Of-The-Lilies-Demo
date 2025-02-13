@@ -3,6 +3,7 @@ if ($DaniwItems < 2)
 	pixel Ahlai as <playerName> "I need to find some fishing thread and some wood to fix this, huh?"
 	
 	$KnowDaniwItems = true
+	ToggleInteractable("Scene 2" "Tayabac Village" Trees true)
 }
 else
 {
