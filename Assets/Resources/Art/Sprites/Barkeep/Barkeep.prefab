@@ -1195,6 +1195,10 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 49b595b1b2fa0a04ab2979815869a17b, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 49b595b1b2fa0a04ab2979815869a17b, type: 3}
       propertyPath: m_RootOrder
       value: 0
