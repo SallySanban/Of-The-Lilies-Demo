@@ -1079,7 +1079,7 @@ MonoBehaviour:
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sato
-      position: {x: -4997.45, y: -193.32}
+      position: {x: -4997.45, y: -202.32}
       appear: 0
       flipped: 0
       animationState: IdleRight
@@ -1099,17 +1099,17 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: PoorBoy
-      position: {x: -57.45, y: -193.32}
+      position: {x: -57.45, y: -397.32}
       appear: 1
       flipped: 0
       animationState: CrouchRight
     - npcName: Reader
-      position: {x: 3174.05, y: -193.32}
+      position: {x: 3174.05, y: -162.32}
       appear: 1
-      flipped: 0
-      animationState: IdleRight
+      flipped: 1
+      animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -3908.45, y: -206.51}
+      position: {x: -3908.45, y: -193.32}
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -1228,7 +1228,7 @@ MonoBehaviour:
     - interactableName: Right Side
       backgroundToGo: Kuchai Town 3
       keyToPress: 1
-      playerPositionInNextBackground: {x: -3706.83, y: -232.51}
+      playerPositionInNextBackground: {x: -3706.83, y: -193.32}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
@@ -1240,30 +1240,30 @@ MonoBehaviour:
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Seiji
-      position: {x: -211.58, y: -215.32}
+      position: {x: -211.58, y: -197.32}
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: BusyLibrarian
-      position: {x: 1849.42, y: -196.32}
-      appear: 1
-      flipped: 1
-      animationState: IdleLeft
-    - npcName: Receptionist
-      position: {x: 1154.42, y: -144.32}
+      position: {x: 1849.42, y: -211.32}
       appear: 1
       flipped: 0
       animationState: IdleRight
+    - npcName: Receptionist
+      position: {x: 1222.42, y: -140.32}
+      appear: 1
+      flipped: 1
+      animationState: IdleLeft
     - npcName: FatherWithDaughter
-      position: {x: -1197.58, y: -203.32}
+      position: {x: -1118.58, y: -216.32}
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: DaughterWithFather
-      position: {x: -1027.58, y: -203.32}
+      position: {x: -972.58, y: -299.32}
       appear: 1
-      flipped: 0
-      animationState: IdleRight
+      flipped: 1
+      animationState: IdleLeft
     interactablesInScene:
     - interactableName: FatherWithDaughter
       interactableType: 0
