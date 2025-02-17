@@ -27,6 +27,8 @@ choice in -1
 	- <i>I should punch him.</i>
 		$Vengeance += 2
 
+		pauseEvent(BGM_Lien)
+
 		pixel Ahlai as <playerName> "Excuse me..."
 
 		pixel Lien as General Lien "...?"
@@ -41,6 +43,8 @@ choice in -1
 		playSFX(SFX_Whack)
 
 		Ahlai as <playerName> "<i>Somehow, I feel... relieved.</i>"
+
+		resumeEvent(BGM_Lien)
 
 		HideTextbox(true)
 		[wait]HideCG()

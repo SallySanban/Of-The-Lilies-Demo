@@ -38,7 +38,7 @@ namespace Commands
                 EventInstance music = RuntimeManager.CreateInstance(fullPath);
                 music.start();
                 activeEvents.Add(fullPath, music);
-                //Debug.Log("Playing Music: " + fullPath);
+                Debug.Log("Playing Music: " + fullPath);
             }
             else
             {
@@ -54,7 +54,7 @@ namespace Commands
                 EventInstance ambience = RuntimeManager.CreateInstance(fullPath);
                 ambience.start();
                 activeEvents.Add(fullPath, ambience);
-                //Debug.Log("Playing Ambience: " + fullPath);
+                Debug.Log("Playing Ambience: " + fullPath);
             }
             else
             {

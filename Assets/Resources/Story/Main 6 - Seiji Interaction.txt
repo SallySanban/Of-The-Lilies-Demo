@@ -84,5 +84,6 @@ choice in -1
 		pixel Seiji "Let's head back. She might be worried that we've been out so late."
 }
 
+resumeEvent(BGM_KuchaiTown)
 HideTextbox(false)
 FollowPlayer("Seiji")
