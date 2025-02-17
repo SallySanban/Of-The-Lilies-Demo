@@ -11,7 +11,7 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
-      name: IdleRight
+      name: IdleRIght
     second: {fileID: 7400000, guid: bba92624dc6ffae468e9345681cc4857, type: 2}
   serializedVersion: 2
   userData: 
@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748077261194477
+  platformSettingsDirtyTick: 638754062340392854
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -133,7 +133,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: BusyLibrarian_Frame_0
     originalName: 
-    pivot: {x: 0.43589744, y: -0.12745099}
+    pivot: {x: 1.1538461, y: -0.13}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,8 +141,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 156
-      height: 408
-    spriteID: 9b9836cddbc187c43871415883d866b3
+      height: 400
+    spriteID: 0a319d076e94b5140aee33f5cfabb5d7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,7 +153,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: BusyLibrarian_Frame_1
     originalName: 
-    pivot: {x: 0.25641027, y: -0.12745099}
+    pivot: {x: 1.1025641, y: -0.13}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,8 +161,8 @@ ScriptedImporter:
       x: 168
       y: 4
       width: 156
-      height: 408
-    spriteID: 7ef384adaf28e4742ba14e4428ba2e6d
+      height: 400
+    spriteID: c3092f891e867644d806e82d21b41175
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -184,20 +184,20 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 188
+        x: 76
         y: 52
         width: 156
-        height: 408
-      spriteId: 9b9836cddbc187c43871415883d866b3
+        height: 400
+      spriteId: 0a319d076e94b5140aee33f5cfabb5d7
     - name: BusyLibrarian_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 216
+        x: 84
         y: 52
         width: 156
-        height: 408
-      spriteId: 7ef384adaf28e4742ba14e4428ba2e6d
+        height: 400
+      spriteId: c3092f891e867644d806e82d21b41175
     linkedCells: []
     parentIndex: -1
   platformSettings:
