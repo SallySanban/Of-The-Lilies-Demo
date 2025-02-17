@@ -1,7 +1,7 @@
 playSFX(SFX_BushRustle)
 playSFX(SFX_AyaWalk)
 
-ChangeAnimationState("Aya" Hop)
+ChangeAnimationState("Aya" Hop true)
 
 [wait]MoveNPC(Aya -x -18.52 -y -5.43 -spd 5)
 
@@ -11,7 +11,7 @@ pixel Ahlai as <playerName> "That can't be a good sign."
 
 HideTextbox(false)
 
-ChangeAnimationState("Aya" Fly)
+ChangeAnimationState("Aya" Fly true)
 
 Wait(0.3)
 

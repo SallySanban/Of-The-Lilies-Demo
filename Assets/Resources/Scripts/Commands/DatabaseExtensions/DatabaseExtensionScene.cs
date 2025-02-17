@@ -105,19 +105,22 @@ namespace Commands
         private static void ChangeAnimationState(string[] data)
         {
             string name = data[0];
-            string state = data[1];
+            string parameter = data[1];
 
-            Interactable interactable = InteractableManager.Instance.GetInteractable(name);
-
-            if (interactable == null)
+            if (bool.TryParse(data[2], out bool state))
             {
-                NPC npc = NPCManager.Instance.GetNPC(name);
+                Interactable interactable = InteractableManager.Instance.GetInteractable(name);
 
-                npc.root.GetComponentInChildren<Animator>().SetTrigger(state);
-            }
-            else
-            {
-                interactable.GetComponentInChildren<Animator>().SetTrigger(state);
+                if (interactable == null)
+                {
+                    NPC npc = NPCManager.Instance.GetNPC(name);
+
+                    npc.root.GetComponentInChildren<Animator>().SetBool(parameter, state);
+                }
+                else
+                {
+                    interactable.GetComponentInChildren<Animator>().SetBool(parameter, state);
+                }
             }
         }
 

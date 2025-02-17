@@ -12,6 +12,8 @@ else
 {
 	if (!$MaiQuest && !$MaiFamilyFound)
 	{
+		ChangeAnimationState("PrayingGirl" Pray false)
+
 		pixel Ahlai as <playerName> "Hey, kid, do you happen to have any silverleaf sprigs?"
 
 		pixel PrayingGirl as ??? "Oh, these? Yes, these are definitely silverleaf sprigs... But why do you need them?"
@@ -126,25 +128,7 @@ else
 	}
 	else
 	{
-		if ($MaiQuest && $MaiFamilyFound)
-		{
-			pixel PrayingGirl as Mai "You helped me find them!"
-
-			if (!$MaiThankYou)
-			{
-				pixel PrayingGirl as Mai "Thank you so much... I guess I won't be needing these anymore."
-			}
-
-			playSFX("SFX_UI InventoryPickup")
-
-			pixel PrayingGirl as Mai "I'll visit you at Sabina's Salves again soon!"
-
-			$SilverleafSprigs = true
-			$QuanIngredients += 1
-			HideTextbox(false)
-			$MaiThankYou = true
-		}
-		else
+		if ($MaiQuest && !$MaiFamilyFound)
 		{
 			pixel PrayingGirl as Mai "Where could they be...?"
 

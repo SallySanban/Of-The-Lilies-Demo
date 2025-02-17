@@ -34,11 +34,14 @@ public class NPC : PixelSprite
 
     public void SetupNPC(bool appear, Vector2 position, string animationState, bool flipped)
     {
-        animator.Play(animationState);
-
-        if (HasParameter(animator, "Flipped"))
+        if(animator != null)
         {
-            animator.SetBool("Flipped", flipped);
+            animator.Play(animationState);
+
+            if (HasParameter(animator, "Flipped"))
+            {
+                animator.SetBool("Flipped", flipped);
+            }
         }
 
         SetPosition(root, position);

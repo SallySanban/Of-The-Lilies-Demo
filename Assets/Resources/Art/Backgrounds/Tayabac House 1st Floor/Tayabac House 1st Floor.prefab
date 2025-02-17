@@ -1116,11 +1116,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1219.19, y: -541.23474}
+    - - {x: -1215.9297, y: -539.75275}
       - {x: -125.58618, y: -538.68445}
-      - {x: 1217.865, y: -538.6752}
-      - {x: 1218.8926, y: 540.757}
-      - {x: -1217.7961, y: 540.09534}
+      - {x: 1215.9263, y: -539.91766}
+      - {x: 1216.1483, y: 539.84235}
+      - {x: -1216.0178, y: 539.7989}
   m_UseDelaunayMesh: 0
 --- !u!1 &6045123047038183651
 GameObject:
@@ -1631,7 +1631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1245, y: 0}
+  m_AnchoredPosition: {x: -1226, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &4458832556620175752

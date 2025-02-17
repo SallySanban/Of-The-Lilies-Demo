@@ -9,7 +9,7 @@ pixel RichSeiyslanCrush as ??? "Don't come near me again..."
 HideTextbox(false)
 [wait]Blackout()
 RemoveFromScene("RichSeiyslanCrush")
-ChangeAnimationState("RichSeiyslan" Cry)
+ChangeAnimationState("RichSeiyslan" Cry true)
 SetNPCPosition("RichSeiyslanFriend" -x -2518.96 -y -199.32)
 [wait]HideCG()
 

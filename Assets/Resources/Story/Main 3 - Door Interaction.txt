@@ -1,4 +1,0 @@
-[wait]Blackout()
-RemoveScene()
-[wait]ShowScene("Scene 5" "Main Shop")
-[wait]HideCG()

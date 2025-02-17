@@ -27,6 +27,9 @@ choice in -1
 		[wait]Blackout()
 		RemoveFromScene("Soldier1")
 		RemoveFromScene("Soldier2")
+		ChangeAnimationState("PoorBoy" Stand true)
+		SetNPCPosition("PoorBoy" -x -57.45 -y -281.32)
+		FlipNPC("PoorBoy" Left)
 		[wait]HideCG()
 
 		pixel Ahlai as <playerName> "Are you okay?"
@@ -67,6 +70,9 @@ choice in -1
 		[wait]Blackout()
 		RemoveFromScene("Soldier1")
 		RemoveFromScene("Soldier2")
+		ChangeAnimationState("PoorBoy" Stand true)
+		SetNPCPosition("PoorBoy" -x -57.45 -y -281.32)
+		FlipNPC("PoorBoy" Left)
 		[wait]HideCG()
 
 		pixel Ahlai as <playerName> "Are you okay?"
@@ -100,6 +106,8 @@ choice in -1
 		pixel Ahlai as <playerName> "I shouldn't get involved in this..."
 
 		pixel Seiji "You're right, <playerName>. It's too dangerous. Let's go."
+
+		ToggleInteractable("Scene 5" "Kuchai Town 3" PoorBoy false)
 
 		ResetCamera(true)
 }

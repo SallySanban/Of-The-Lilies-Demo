@@ -51,6 +51,15 @@ public class ChoiceContainer
 
             choiceButton.choiceText.text = listOfChoices[i];
             choiceButton.arrow.SetActive(i == 0);
+
+            if (i == 0)
+            {
+                choiceButton.choiceText.color = new Color(0.95f, 0.7f, 0.05f);
+            }
+            else
+            {
+                choiceButton.choiceText.color = Color.white;
+            }
         }
 
         GridLayoutGroup gridLayout = choices.GetComponent<GridLayoutGroup>();
@@ -74,12 +83,14 @@ public class ChoiceContainer
         if (!isWaitingForUserChoice) return;
 
         buttons[currentSelectedIndex].arrow.SetActive(false);
+        buttons[currentSelectedIndex].choiceText.color = Color.white;
         
         currentSelectedIndex += direction;
         if (currentSelectedIndex < 0) currentSelectedIndex = buttons.Count - 1;
         if (currentSelectedIndex >= buttons.Count) currentSelectedIndex = 0;
 
         buttons[currentSelectedIndex].arrow.SetActive(true);
+        buttons[currentSelectedIndex].choiceText.color = new Color(0.95f, 0.7f, 0.05f);
     }
 
     public void AcceptChoice()
