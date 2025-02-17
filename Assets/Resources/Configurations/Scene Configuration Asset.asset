@@ -1365,12 +1365,12 @@ MonoBehaviour:
       flipped: 0
       animationState: IdleRight
     - npcName: GossipSit1
-      position: {x: 259.31, y: -490.32}
+      position: {x: -504.69, y: -499.32}
       appear: 1
       flipped: 0
       animationState: 
     - npcName: GossipSit2
-      position: {x: -504.69, y: -499.32}
+      position: {x: 259.31, y: -490.32}
       appear: 1
       flipped: 0
       animationState: 
@@ -1446,15 +1446,15 @@ MonoBehaviour:
       flipped: 0
       animationState: 
     - npcName: GossipGirl3
-      position: {x: 1008.41, y: -190.32}
+      position: {x: 1040.41, y: -184.32}
       appear: 1
       flipped: 0
-      animationState: 
+      animationState: GossipRight
     - npcName: GossipGirl4
       position: {x: 1180.41, y: -185.32}
       appear: 1
       flipped: 0
-      animationState: 
+      animationState: GossipLeft
     - npcName: Manju
       position: {x: -1576.59, y: -188.32}
       appear: 1
@@ -1507,7 +1507,7 @@ MonoBehaviour:
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Seiji
-      position: {x: 4326.55, y: -210.6}
+      position: {x: 4326.55, y: -193.32}
       appear: 1
       flipped: 1
       animationState: IdleLeft
@@ -1527,12 +1527,12 @@ MonoBehaviour:
       flipped: 0
       animationState: IdleRight
     - npcName: Reader
-      position: {x: -496.45, y: -193.32}
+      position: {x: -496.45, y: -166.32}
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Sato
-      position: {x: -4341.45, y: -193.32}
+      position: {x: -4341.45, y: -202.32}
       appear: 1
       flipped: 0
       animationState: IdleRight
