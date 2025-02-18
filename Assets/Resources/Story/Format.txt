@@ -76,7 +76,12 @@ ChangeBodyEmotion(CurrentCharacter -e EmotionFilename -b BodyFilename) //changes
 HideCharacter(CurrentCharacter) //moves character either on left or right outside screen depending where they are
 
 === Audio ===
-PlaySFX("Sound Effect Filename") //plays sound effects
+playSFX(filename) //plays sound effects
+playMusic(filename) //plays music audio event
+playAmbience(filename) //plays ambience audio event
+stopEvent(filename) //stops audio event
+pauseEvent(filename) //pauses audio event with fadeout
+resumeEvent(filename) //resumes audio event with fadeout
 
 === CG ===
 ShowCG("CG Filename") //fades in CG

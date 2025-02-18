@@ -1,4 +1,6 @@
 [wait]Blackout()
+resumeEvent(BGM_Scene5)
+pauseEvent(BGM_KuchaiTown)
 RemoveScene()
 [wait]ShowScene("Scene 10" "Main Shop")
 [wait]SetCamera(-x -10.26 -spd 1)
@@ -97,6 +99,8 @@ RemoveScene()
 Ahlai as <playerName> "Hey!"
 
 Ahlai as <playerName> "Wait... aren't you-"
+
+playMusic(BGM_Laisa)
 
 HideTextbox(true)
 [wait]FlipNPC("Ahlai" Right)

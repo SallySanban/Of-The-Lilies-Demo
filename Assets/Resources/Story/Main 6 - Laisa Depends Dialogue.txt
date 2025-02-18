@@ -39,6 +39,9 @@ choice in -1
 
 		pixel Ahlai as <playerName> "What do you mean, then? If you still don't want my help, I'll be on my way. But if you need somewhere new to hide, I might know a place."
 
+		pauseEvent(BGM_KuchaiTown)
+		playMusic(BGM_Lein)
+
 		HideTextbox(true)
 		Load("Main 6 - Laisa Lien Interaction")
 
@@ -54,6 +57,9 @@ choice in -1
 		pixel Ahlai as <playerName> "We'll see about that."
 
 		pixel Ahlai as <playerName> "Help! The Sea Emperor has escaped!"
+
+		pauseEvent(BGM_KuchaiTown)
+		playMusic(BGM_Lien)
 
 		HideTextbox(true)
 		[wait]PanCamera(-x 25.74 -spd 7)

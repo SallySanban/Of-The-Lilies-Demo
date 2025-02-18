@@ -96,5 +96,8 @@ choice in -1
 		HideTextbox(false)
 		ToggleInteractable("Scene 9" "Tavern" "Lien" false)
 
+		stopEvent(BGM_Lien)
+		resumeEvent(BGM_KuchaiTavern)
+
 		$LienTalkedTo = true
 }

@@ -13,7 +13,7 @@ else
 		
 		[wait]SwitchScene("Scene 10" "Kuchai Town 1")
 		stopEvent(AMB_Tavern)
-		resumeEvent(BGM_KuchaiTown)
+		stopEvent(BGM_KuchaiTavern)
 		Load("Main 6 - Seiji Interaction")
 	}
 	else

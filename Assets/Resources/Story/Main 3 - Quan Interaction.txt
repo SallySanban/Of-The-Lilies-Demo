@@ -14,7 +14,7 @@ choice in -1
 
 		pixel Quan as Mr. Quan "Well, it's exactly your great service that made me a loyal patron of your business. Here's my payment."
 
-		PlaySFX("Coins jiggling")
+		playSFX(SFX_CoinsJiggle)
 
 		pixel Quan as Mr. Quan "Just as expected, the potions are in excellent condition!"
 
@@ -49,6 +49,8 @@ choice in -1
 		pixel Quan as Mr. Quan "With this Everguard Elixir, I can keep the pests off my produce! They have been bothering me more often than usual lately. I wonder if it's the change in weather?"
 
 		pixel Quan as Mr. Quan "Anyway, nothing you two need to worry about! Here is the extra fee I promised."
+
+		playSFX(SFX_CoinsJiggle)
 
 		pixel Ahlai as <playerName> "It's always a pleasure working with you, Mr. Quan."
 

@@ -1,5 +1,7 @@
 [wait]PanCamera(-x 25.74 -spd 7)
 
+
+
 pixel Soldier1 as Seiyslan Soldier "Hey, isn't that..."
 
 pixel Lien as General Lien "The pirate has escaped! Capture her at once!"
@@ -24,5 +26,7 @@ pixel Lien as General Lien "You have broken laws and are resisting your arrest, 
 pixel Laisa as Ilaisaane "Tell me, does it ever bother you that you're always just one step behind?"
 
 pixel Lien as General Lien "That's enough. If you continue to refuse to comply, I will have no choice but to use force."
+
+pauseEvent(BGM_Laisa)
 
 Load("Main 7 - Curses Interaction")

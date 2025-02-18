@@ -1,7 +1,7 @@
 [input]Blackout()
 [wait]SwitchCG("Laisa")
 
-stopEvent(AMB_SwordClash)
+resumeEvent(BGM_Laisa)
 
 Laisa "Did you miss me already?"
 
@@ -55,11 +55,16 @@ Laisa "Who knows? If you're as clever as you think you are... then you might jus
 
 Laisa "Goodbye, my pearl."
 
+stopEvent(BGM_Laisa)
+
 [wait]Blackout()
 
 Ahlai as <playerName> "<i>Did... that just happen...?</i>"
 
+stopEvent(AMB_SwordClash)
+
 [wait]SwitchCG("Curses Appear")
 playSFX(SFX_ThunderCurse)
+stopEvent(BGM_Lien)
 
 Load("Main 7")

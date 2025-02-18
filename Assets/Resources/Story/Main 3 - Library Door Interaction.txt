@@ -2,6 +2,7 @@ if ($LibraryQuest)
 {
 	[wait]SwitchScene("Scene 6" "Library 1")
 	pauseEvent(BGM_KuchaiTown)
+	playMusic(BGM_Library)
 
 	pixel Seiji "It's been a good while since I've been here."
 

@@ -25,6 +25,8 @@ pixel Seiji "Yeah, at the <b>tavern</b>."
 pixel Ahlai as <playerName> "Then, let's go!"
 
 HideTextbox(false)
+stopEvent(BGM_Library)
+playMusic(BGM_Lien)
 [wait]SwitchScene("Scene 7" "Kuchai Town 3")
 FlipNPC(Seiji Left)
 [wait]PanCamera(-x -16.81 -spd 5)
@@ -82,6 +84,8 @@ choice in -1
 		pixel Seiji "Good call, <playerName>."
 
 		$GetCloser = false
+		stopEvent(BGM_Lien)
+		resumeEvent(BGM_KuchaiTown)
 }
 
 [wait]HideTextbox(false)
