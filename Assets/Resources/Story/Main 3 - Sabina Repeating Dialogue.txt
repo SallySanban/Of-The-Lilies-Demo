@@ -84,5 +84,6 @@ choice in -1
 	- That's all
 		pixel Sabina as Lady Sabina "Alright, I won't keep you any longer. Good luck with your tasks for the day, dear."
 
+		ToggleInteractable("Scene 5" "Main Shop" Sabina false)
 		HideTextbox(false)
 }

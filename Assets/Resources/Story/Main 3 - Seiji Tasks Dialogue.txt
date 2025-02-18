@@ -12,10 +12,9 @@ playSFX(SFX_DoorbellPanned)
 pixel Ahlai as <playerName> "Oh!"
 
 HideTextbox(false)
-[wait]SetNPCPosition(Myo -x -2308.22 -y -259.32)
-[wait]PanCamera(-x -20.38 -spd 5)
-SetCameraFollow(Myo)
-[wait]MoveNPC(Myo -x -7.06 -y -2.40 -spd 3)
+[wait]Blackout()
+[wait]SetNPCPosition(Myo -x -167.22 -y -259.32)
+[wait]HideCG()
 
 pixel Ahlai as <playerName> "Sir Aciano? Welcome to Sabina's Salves!"
 

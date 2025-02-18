@@ -1,6 +1,3 @@
-[wait]Blackout()
-RemoveScene()
-[wait]ShowScene("Scene 5" "Main Shop")
-[wait]HideCG()
+[wait]SwitchScene("Scene 5" "Main Shop")
 pauseEvent(BGM_KuchaiTown)
 resumeEvent(BGM_Scene5)

@@ -26,7 +26,6 @@ public class SceneManager : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera panCamera;
     private CinemachineConfiner playerCamConfiner;
     private CinemachineConfiner panCamConfiner;
-    private CinemachineComponentBase playerCamComponentBase;
     private CinemachineBrain cinemachineBrain;
 
     [HideInInspector] public GameObject currentScene = null;
@@ -69,7 +68,6 @@ public class SceneManager : MonoBehaviour
 
         playerCamConfiner = playerCamera.GetComponent<CinemachineConfiner>();
         panCamConfiner = panCamera.GetComponent<CinemachineConfiner>();
-        playerCamComponentBase = playerCamera.GetCinemachineComponent(CinemachineCore.Stage.Body);
         cinemachineBrain = Camera.main.GetComponent<CinemachineBrain>();
     }
 
@@ -89,7 +87,7 @@ public class SceneManager : MonoBehaviour
     }
 
     //creates, sets up, and shows a background, including its NPCs, player, and interactables
-    public void CreateScene(string sceneName, string backgroundFilename, bool playerOverride = false, Vector2 playerPositionInNextBackground = default, int playerDirectionInNextBackground = 0)
+    public void CreateScene(string sceneName, string backgroundFilename, Vector2 playerPositionInNextBackground = default, int playerDirectionInNextBackground = 0)
     {
         GameObject backgroundPrefab = FilePaths.GetPrefabFromPath(FilePaths.backgroundPrefabPath, backgroundFilename);
 
@@ -104,7 +102,7 @@ public class SceneManager : MonoBehaviour
         currentScene.SetActive(true);
 
         npcManager.PopulateNPCs(currentScene.transform.Find(SPRITES_OBJECTNAME));
-        PutPlayerInScene(playerOverride, playerPositionInNextBackground, playerDirectionInNextBackground);
+        PutPlayerInScene(playerPositionInNextBackground, playerDirectionInNextBackground);
         interactableManager.GetInteractablesInScene(currentScene);
 
         if (player != null)
@@ -173,7 +171,7 @@ public class SceneManager : MonoBehaviour
         DestroyImmediate(currentScene);
     }
 
-    private void PutPlayerInScene(bool playerOverride = false, Vector2 playerPositionOverride = default, int playerDirectionOverride = 0)
+    private void PutPlayerInScene(Vector2 playerPositionOverride = default, int playerDirectionOverride = 0)
     {
         (bool playerInScene, Vector2 playerPosition, int playerDirection, string playerAnimationState) = config.GetPlayerInfo(currentSceneName, currentBackground);
 
