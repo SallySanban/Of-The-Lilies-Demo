@@ -43,6 +43,8 @@ public class SceneManager : MonoBehaviour
 
     private bool isRunningConversation => DialogueManager.Instance.conversationManager.isRunning;
 
+    public Interactable currentBackgroundInteractable = null;
+
     private void Awake()
     {
         if (Instance == null)
@@ -120,8 +122,46 @@ public class SceneManager : MonoBehaviour
     //changes the background
     public IEnumerator SwitchBackground(BackgroundData.KeyToPress keyToPress, Interactable collidingInteractable)
     {
+        currentBackgroundInteractable = collidingInteractable;
+
         string storyToPlay = collidingInteractable.storyToPlay;
         Vector2 moveToInteractPosition = collidingInteractable.moveToInteractPosition;
+
+        BackgroundData backgroundData = GetBackgroundData(collidingInteractable);
+
+        if (keyToPress == backgroundData.keyToPress)
+        {
+            if (!string.IsNullOrEmpty(storyToPlay)) //background will switch through the txt file & NPC will follow Ahlai through txt file
+            {
+                yield return VNManager.Instance.PlayCollidingInteractableStory(storyToPlay, moveToInteractPosition);
+            }
+            else
+            {
+                GraphicPanel blackout = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
+
+                yield return blackout.Show();
+
+                RemoveScene();
+
+                CreateScene(currentSceneName, backgroundData.backgroundToGo, playerPositionInNextBackground: backgroundData.playerPositionInNextBackground, playerDirectionInNextBackground: backgroundData.playerDirectionInNextBackground);
+
+                yield return new WaitForSeconds(TRANSITION_WAIT_TIME);
+
+                if (!string.IsNullOrEmpty(backgroundData.followPlayer)) FollowPlayer(backgroundData.followPlayer, backgroundData.followPlayerPosition);
+
+                yield return blackout.Hide();
+            }
+        }
+
+        currentBackgroundInteractable = null;
+    }
+
+    public BackgroundData GetBackgroundData(Interactable collidingInteractable)
+    {
+        if (collidingInteractable == null)
+        {
+            return null;
+        }
 
         BackgroundData[] backgroundsToGoInScene = config.GetBackgroundsToGoInScene(currentSceneName, currentBackground);
 
@@ -129,33 +169,11 @@ public class SceneManager : MonoBehaviour
         {
             if (backgroundData.interactableName.Equals(collidingInteractable.interactableName))
             {
-                if (keyToPress == backgroundData.keyToPress)
-                {
-                    if (!string.IsNullOrEmpty(storyToPlay)) //background will switch through the txt file & NPC will follow Ahlai through txt file
-                    {
-                        yield return VNManager.Instance.PlayCollidingInteractableStory(storyToPlay, moveToInteractPosition);
-                    }
-                    else
-                    {
-                        GraphicPanel blackout = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
-
-                        yield return blackout.Show();
-
-                        RemoveScene();
-
-                        CreateScene(currentSceneName, backgroundData.backgroundToGo, playerPositionInNextBackground: backgroundData.playerPositionInNextBackground, playerDirectionInNextBackground: backgroundData.playerDirectionInNextBackground);
-
-                        yield return new WaitForSeconds(TRANSITION_WAIT_TIME);
-
-                        if (!string.IsNullOrEmpty(backgroundData.followPlayer)) FollowPlayer(backgroundData.followPlayer, backgroundData.followPlayerPosition);
-
-                        yield return blackout.Hide();
-                    }
-
-                    break;
-                }
+                return backgroundData.Copy();
             }
         }
+
+        return null;
     }
 
     public void RemoveScene()

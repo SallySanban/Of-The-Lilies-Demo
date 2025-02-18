@@ -51,13 +51,15 @@ namespace Commands
             string sceneName = data[0];
             string backgroundName = data[1];
 
+            BackgroundData backgroundData = SceneManager.Instance.GetBackgroundData(SceneManager.Instance.currentBackgroundInteractable);
+
             GraphicPanel blackout = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
 
             yield return blackout.Show();
 
             SceneManager.Instance.RemoveScene();
 
-            SceneManager.Instance.CreateScene(sceneName, backgroundName);
+            SceneManager.Instance.CreateScene(sceneName, backgroundName, playerPositionInNextBackground: backgroundData.playerPositionInNextBackground, playerDirectionInNextBackground: backgroundData.playerDirectionInNextBackground);
 
             yield return new WaitForSeconds(SceneManager.Instance.TRANSITION_WAIT_TIME);
 
