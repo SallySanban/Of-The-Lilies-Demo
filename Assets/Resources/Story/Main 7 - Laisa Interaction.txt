@@ -1,4 +1,5 @@
-[input]Blackout()
+[wait]Blackout()
+HideTextbox(true)
 [wait]SwitchCG("Laisa")
 
 resumeEvent(BGM_Laisa)
@@ -56,13 +57,14 @@ Laisa "Who knows? If you're as clever as you think you are... then you might jus
 Laisa "Goodbye, my pearl."
 
 stopEvent(BGM_Laisa)
-
+HideTextbox(true)
 [wait]Blackout()
 
 Ahlai as <playerName> "<i>Did... that just happen...?</i>"
 
 stopEvent(AMB_SwordClash)
 
+HideTextbox(true)
 [wait]SwitchCG("Curses Appear")
 playSFX(SFX_ThunderCurse)
 stopEvent(BGM_Lien)

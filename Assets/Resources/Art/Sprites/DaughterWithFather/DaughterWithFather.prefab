@@ -1187,6 +1187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DaughterWithFather
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 78817435043eaae4b8a4188ca0024d37, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a112bd619cbcbc346a6158f00be01f86, type: 2}
     - target: {fileID: 3626916397498700004, guid: 78817435043eaae4b8a4188ca0024d37, type: 3}
       propertyPath: m_SortingLayer
       value: 0

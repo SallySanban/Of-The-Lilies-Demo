@@ -38,7 +38,16 @@ namespace Commands
             string sceneName = data[0];
             string backgroundName = data[1];
 
-            SceneManager.Instance.CreateScene(sceneName, backgroundName);
+            BackgroundData backgroundData = SceneManager.Instance.GetBackgroundData(SceneManager.Instance.currentBackgroundInteractableName);
+
+            if (backgroundData != null)
+            {
+                SceneManager.Instance.CreateScene(sceneName, backgroundName, playerPositionInNextBackground: backgroundData.playerPositionInNextBackground, playerDirectionInNextBackground: backgroundData.playerDirectionInNextBackground);
+            }
+            else
+            {
+                SceneManager.Instance.CreateScene(sceneName, backgroundName);
+            }
         }
 
         private static void RemoveScene()
@@ -51,7 +60,7 @@ namespace Commands
             string sceneName = data[0];
             string backgroundName = data[1];
 
-            BackgroundData backgroundData = SceneManager.Instance.GetBackgroundData(SceneManager.Instance.currentBackgroundInteractable);
+            BackgroundData backgroundData = SceneManager.Instance.GetBackgroundData(SceneManager.Instance.currentBackgroundInteractableName);
 
             GraphicPanel blackout = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
 
@@ -59,7 +68,14 @@ namespace Commands
 
             SceneManager.Instance.RemoveScene();
 
-            SceneManager.Instance.CreateScene(sceneName, backgroundName, playerPositionInNextBackground: backgroundData.playerPositionInNextBackground, playerDirectionInNextBackground: backgroundData.playerDirectionInNextBackground);
+            if(backgroundData != null)
+            {
+                SceneManager.Instance.CreateScene(sceneName, backgroundName, playerPositionInNextBackground: backgroundData.playerPositionInNextBackground, playerDirectionInNextBackground: backgroundData.playerDirectionInNextBackground);
+            }
+            else
+            {
+                SceneManager.Instance.CreateScene(sceneName, backgroundName);
+            }
 
             yield return new WaitForSeconds(SceneManager.Instance.TRANSITION_WAIT_TIME);
 

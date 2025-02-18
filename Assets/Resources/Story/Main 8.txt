@@ -1,4 +1,8 @@
-[wait]SwitchScene("Scene 12" "La Liryo Room")
+[wait]Blackout()
+RemoveScene()
+[wait]SetCamera(-x -0.2)
+[wait]ShowScene("Scene 12" "La Liryo Room")
+[wait]HideCG()
 
 pixel Sabina as Lady Sabina "Good, you made it. It pains me to say this, and I suppose you already have an idea about it, but... I've confirmed with the Order of La Liryo."
 
@@ -50,6 +54,7 @@ $ManjuPaperInteracted = false
 $LaisaPaperInteracted = false
 $LienPaperInteracted = false
 
+HideTextbox(true)
 [wait]Blackout()
 ShowLIScreen()
 [wait]HideCG()

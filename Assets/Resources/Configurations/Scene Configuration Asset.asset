@@ -627,6 +627,13 @@ MonoBehaviour:
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Ahlai Door
+      backgroundToGo: Ahlai's Bedroom
+      keyToPress: 3
+      playerPositionInNextBackground: {x: -122.45, y: -213.89}
+      playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: 1st Floor Hallway
     showPlayer: 1
@@ -688,7 +695,7 @@ MonoBehaviour:
   - sceneName: Scene 5
     currentBackgroundName: Main Shop
     showPlayer: 1
-    playerPosition: {x: 2277.64, y: -262.05}
+    playerPosition: {x: 2277.65, y: -249.14}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
@@ -961,7 +968,7 @@ MonoBehaviour:
     - interactableName: Sabina Door
       backgroundToGo: Main Shop
       keyToPress: 3
-      playerPositionInNextBackground: {x: -2306.26, y: -262.05}
+      playerPositionInNextBackground: {x: -2306.26, y: -249.14}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -1237,7 +1244,7 @@ MonoBehaviour:
     showPlayer: 1
     playerPosition: {x: -554, y: -270.88}
     playerDirection: 1
-    playerAnimationState: IdleLeft
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Seiji
       position: {x: -211.58, y: -197.32}
@@ -1903,8 +1910,8 @@ MonoBehaviour:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 2753.3, y: -231.71}
-      playerDirectionInNextBackground: 1
+      playerPositionInNextBackground: {x: 2753.3, y: -244.74}
+      playerDirectionInNextBackground: -1
       followPlayer: Seiji
       followPlayerPosition: {x: 2315.04, y: -217.32}
   - sceneName: Scene 9
@@ -2019,19 +2026,19 @@ MonoBehaviour:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 2753.3, y: -231.71}
-      playerDirectionInNextBackground: 1
+      playerPositionInNextBackground: {x: 2753.3, y: -244.74}
+      playerDirectionInNextBackground: -1
       followPlayer: Seiji
-      followPlayerPosition: {x: 2315.04, y: -217.32}
+      followPlayerPosition: {x: 2315.04, y: -191.32}
   - sceneName: Scene 10
     currentBackgroundName: Kuchai Town 1
     showPlayer: 1
-    playerPosition: {x: 2753.3, y: -231.71}
+    playerPosition: {x: 2753.3, y: -244.74}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Seiji
-      position: {x: 2315.04, y: -217.32}
+      position: {x: 2315.04, y: -191.32}
       appear: 1
       flipped: 0
       animationState: Idle
@@ -2217,7 +2224,7 @@ MonoBehaviour:
     - interactableName: Stairs
       interactableType: 2
       isInteractable: 1
-      storyToPlay: Main 3 - Stairs Interaction Up
+      storyToPlay: Main 7 - Stairs Interaction Up
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Door
@@ -2270,7 +2277,7 @@ MonoBehaviour:
     - interactableName: Stairs
       interactableType: 2
       isInteractable: 1
-      storyToPlay: Main 3 - Stairs Interaction
+      storyToPlay: Main 7 - Stairs Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Stairs
@@ -2283,15 +2290,15 @@ MonoBehaviour:
     - interactableName: Ahlai Door
       backgroundToGo: Ahlai's Bedroom
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1311.99, y: -223.2}
+      playerPositionInNextBackground: {x: -122.45, y: -213.89}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 11
     currentBackgroundName: Ahlai's Bedroom
     showPlayer: 1
-    playerPosition: {x: -1001.34, y: -223.16}
-    playerDirection: 1
+    playerPosition: {x: -122.45, y: -213.89}
+    playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
     interactablesInScene:
@@ -2331,15 +2338,15 @@ MonoBehaviour:
   - sceneName: Scene 12
     currentBackgroundName: Ahlai's Bedroom
     showPlayer: 1
-    playerPosition: {x: -1001.34, y: -223.16}
+    playerPosition: {x: -1001.34, y: -213.89}
     playerDirection: 1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Sabina
-      position: {x: 0, y: 0}
+      position: {x: -511.46, y: -226.32}
       appear: 1
-      flipped: 0
-      animationState: Idle
+      flipped: 1
+      animationState: IdleLeft
     interactablesInScene:
     - interactableName: Conspiracy Wall
       interactableType: 1
@@ -2410,7 +2417,7 @@ MonoBehaviour:
     - interactableName: Stairs
       interactableType: 2
       isInteractable: 1
-      storyToPlay: Main 3 - Stairs Interaction
+      storyToPlay: Main 8 - Stairs Interaction
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Stairs
@@ -2423,7 +2430,7 @@ MonoBehaviour:
     - interactableName: Ahlai Door
       backgroundToGo: Ahlai's Bedroom
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1311.99, y: -223.2}
+      playerPositionInNextBackground: {x: -122.45, y: -213.89}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -2448,7 +2455,7 @@ MonoBehaviour:
     - interactableName: Stairs
       interactableType: 2
       isInteractable: 1
-      storyToPlay: Main 3 - Stairs Interaction Up
+      storyToPlay: Main 8 - Stairs Interaction Up
       moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Door

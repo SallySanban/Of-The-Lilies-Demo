@@ -1,5 +1,6 @@
 pixel Ahlai as <playerName> "I hope I don't get nightmares again."
 
+HideTextbox(true)
 [wait]Blackout()
 
 Sabina as ??? "<i>Ahlai, wake up</i>."
@@ -8,8 +9,9 @@ Ahlai as <playerName> "<i>Ugh... so early... I really am not a morning person...
 
 Ahlai as <playerName> "<i>Either that or I really do have trouble sleeping...</i>"
 
-[wait]SwitchScene("Scene 12" "Ahlai's Bedroom")
-
+HideTextbox(true)
+RemoveScene()
+[wait]ShowScene("Scene 12" "Ahlai's Bedroom")
 [wait]HideCG()
 
 pixel Ahlai as <playerName> "Lady Sabina...? What time is it?"

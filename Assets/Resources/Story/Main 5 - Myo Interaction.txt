@@ -212,7 +212,7 @@ else
 
 			pixel Myo "Oh, you wouldn't?"
 
-			pixel Ahlai as <playerName> "All I’m saying... is that it is not often someone catches my eye. You might just be getting ahead of yourself when you say that you're hard to miss."
+			pixel Ahlai as <playerName> "All I'm saying... is that it is not often someone catches my eye. You might just be getting ahead of yourself when you say that you're hard to miss."
 
 			pixel Myo "I beg to differ, you know."
 

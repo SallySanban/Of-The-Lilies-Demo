@@ -18,8 +18,10 @@ Seiji "When the skies began to change and you still weren't home... I started to
 
 Seiji "Hurry, <playerName>. Let's go back to Sabina's Salves. We'll be safe there."
 
+HideTextbox(true)
 [wait]Blackout()
 stopEvent(AMB_Thunder)
+[wait]RemoveScene()
 [wait]ShowScene("Scene 11" "Main Shop")
 [wait]SetCamera(-x -10.26 -spd 1)
 Wait(0.5)
@@ -75,6 +77,7 @@ pixel Sabina as Lady Sabina "Now, it's been a long day for everyone. You should 
 
 pixel Sabina as Lady Sabina "And <i>whatever</i> you do, do <i>not</i> go out until we know more."
 
+HideTextbox(true)
 [wait]Blackout()
 RemoveFromScene("Sabina")
 HideCG()
@@ -93,8 +96,11 @@ pixel Seiji "I'll see you tomorrow. Good night, <playerName>. I hope... you have
 
 pixel Ahlai as <playerName> "Good night, Seiji. I hope so too."
 
-[wait]MoveNPC("Seiji" -x -11.47 -y -2.04 -spd 2)
-RemoveFromScene("Seiji")
+HideTextbox(true)
+[wait]Blackout()
+[wait]RemoveFromScene("Seiji")
+ResetCamera(false)
+[wait]HideCG()
 
 pixel Ahlai as <playerName> "I should go back to my room."
 

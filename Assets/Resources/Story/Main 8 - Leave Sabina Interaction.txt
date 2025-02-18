@@ -1,3 +1,5 @@
+[wait]MovePlayerToInteract(-x -25.02 -y -2.43)
+
 pixel Ahlai as <playerName> "Lady Sabina is waiting for me."
 
 HideTextbox(false)

@@ -1,0 +1,6 @@
+[wait]Blackout()
+playSFX(SFX_Ladder)
+Wait(1.5)
+RemoveScene()
+[wait]ShowScene("Scene 11" "2nd Floor Hallway")
+[wait]HideCG()

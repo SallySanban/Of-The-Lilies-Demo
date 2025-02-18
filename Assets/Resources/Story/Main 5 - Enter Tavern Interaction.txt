@@ -1,3 +1,5 @@
+FlipNPC("Ahlai" Left)
+
 pixel Seiji "It's open."
 
 pixel Ahlai as <playerName> "How about you wait outside, Seiji? It shouldn't take more than a few minutes."
@@ -8,6 +10,7 @@ pixel Ahlai as <playerName> "I'll be fine, Seiji. I'm just getting drinks. I'll 
 
 pixel Seiji "Okay, but be careful. Remember - Lady Sabina wants three flasks of <b>areka liquor</b>."
 
+HideTextbox(true)
 [wait]SwitchScene("Scene 8" "Tavern")
 pauseEvent(BGM_KuchaiTown)
 playMusic(BGM_KuchaiTavern)

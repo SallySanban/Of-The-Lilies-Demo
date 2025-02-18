@@ -43,7 +43,7 @@ public class SceneManager : MonoBehaviour
 
     private bool isRunningConversation => DialogueManager.Instance.conversationManager.isRunning;
 
-    public Interactable currentBackgroundInteractable = null;
+    public string currentBackgroundInteractableName = "";
 
     private void Awake()
     {
@@ -122,12 +122,12 @@ public class SceneManager : MonoBehaviour
     //changes the background
     public IEnumerator SwitchBackground(BackgroundData.KeyToPress keyToPress, Interactable collidingInteractable)
     {
-        currentBackgroundInteractable = collidingInteractable;
+        currentBackgroundInteractableName = collidingInteractable.name;
 
         string storyToPlay = collidingInteractable.storyToPlay;
         Vector2 moveToInteractPosition = collidingInteractable.moveToInteractPosition;
 
-        BackgroundData backgroundData = GetBackgroundData(collidingInteractable);
+        BackgroundData backgroundData = GetBackgroundData(currentBackgroundInteractableName);
 
         if (keyToPress == backgroundData.keyToPress)
         {
@@ -153,12 +153,12 @@ public class SceneManager : MonoBehaviour
             }
         }
 
-        currentBackgroundInteractable = null;
+        currentBackgroundInteractableName = "";
     }
 
-    public BackgroundData GetBackgroundData(Interactable collidingInteractable)
+    public BackgroundData GetBackgroundData(string collidingInteractableName)
     {
-        if (collidingInteractable == null)
+        if (string.IsNullOrEmpty(collidingInteractableName))
         {
             return null;
         }
@@ -167,7 +167,7 @@ public class SceneManager : MonoBehaviour
 
         foreach (BackgroundData backgroundData in backgroundsToGoInScene)
         {
-            if (backgroundData.interactableName.Equals(collidingInteractable.interactableName))
+            if (backgroundData.interactableName.Equals(collidingInteractableName))
             {
                 return backgroundData.Copy();
             }

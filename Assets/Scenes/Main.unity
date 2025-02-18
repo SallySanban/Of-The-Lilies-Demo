@@ -855,6 +855,7 @@ MonoBehaviour:
   TRANSITION_WAIT_TIME: 0.5
   scrollBackground: 0
   followPlayer: 0
+  currentBackgroundInteractableName: 
 --- !u!1 &898236848
 GameObject:
   m_ObjectHideFlags: 0

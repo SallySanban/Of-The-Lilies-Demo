@@ -1,4 +1,4 @@
-[input]Blackout()
+[wait]Blackout()
 playSFX(SFX_ThunderCurse)
 playAmbience(AMB_SwordClash)
 playAmbience(AMB_Thunder)
@@ -6,7 +6,7 @@ playAmbience(AMB_Thunder)
 
 Ahlai as <playerName> "<i>What's happening...?</i>"
 
-Ahlai as <playerName> "<i>What's happening...?</i>"
+Ahlai as <playerName> "<i>Is it the curses? This has never happened before...</i>"
 
 Laisa as Ilaisaane "And <i>that</i> is my cue to run along."
 
@@ -18,6 +18,7 @@ if ($LaisaNoTrouble)
 
 	Laisa "Over here."
 
+	HideTextbox(true)
 	Load("Main 7 - Laisa Interaction")
 }
 else
@@ -28,6 +29,7 @@ else
 
 		Laisa "<i>You</i> can call me Laisa."
 
+		HideTextbox(true)
 		Load("Main 7 - Laisa Interaction")
 	}
 	else

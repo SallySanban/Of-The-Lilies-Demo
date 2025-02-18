@@ -1,2 +1,2 @@
-[wait]SwitchScene("Scene 12" "La Liryo Room")
+[wait]SwitchScene("Scene 12" "La Liryo Hallway")
 playMusic(BGM_LaLiryoRoom)

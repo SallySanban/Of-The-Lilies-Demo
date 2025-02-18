@@ -38,7 +38,7 @@ choice in -1
 		pixel Ahlai as <playerName> "<i>He doesn't know who I am?! This man is lucky I'm not punching him, like this...!</i>"
 
 		HideTextbox(true)
-		[wait]Blackout()
+		[wait]Blackout(-i true)
 
 		playSFX(SFX_Whack)
 
