@@ -8,7 +8,7 @@ HideTextbox(false)
 Dad at 0 "<playerName>... You made it back..."
 
 HideTextbox(true)
-[wait]ShowCharacterRight(Lien -b Right_Default_Body -e Right_Proud)
+[wait]ShowCharacterRight(Lien -b TayabacRight_Default_Body -e TayabacRight_Proud)
 
 Lien at 1 as ??? "So this is the rumoured chieftain-to-be."
 
@@ -38,7 +38,7 @@ ChangeAnimationState(Dad Run true)
 [wait]MoveNPC(Dad -x 76.74 -y -2.59 -spd 5)
 
 ShowCharacterLeft(Ahlai -b TayabacLeft_Default_Body -e TayabacLeft_WorriedAngry)
-[wait]ShowCharacterRight(Lien -b Right_Default_Body -e Right_Proud)
+[wait]ShowCharacterRight(Lien -b TayabacRight_Default_Body -e TayabacRight_Proud)
 
 Lien at 1 as ??? "Listen, I do not want to hurt you. Stand down."
 
@@ -103,7 +103,7 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "We have done nothing to destroy your peace. Let us go."
 
-		ChangeBodyEmotion(Lien -e Right_Conflicted)
+		ChangeBodyEmotion(Lien -e TayabacRight_Conflicted)
 
 		Lien as ??? at 1 "I'm sorry... It's already been decided. There is nothing I can do."
 
@@ -113,7 +113,7 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "If we surrender our land... Will you promise to keep my people safe?"
 
-		ChangeBodyEmotion(Lien -e Right_LookAway)
+		ChangeBodyEmotion(Lien -e TayabacRight_LookAway)
 
 		Lien as ??? at 1 "I will... do my best."
 
