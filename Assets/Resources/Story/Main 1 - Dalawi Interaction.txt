@@ -1,11 +1,11 @@
-ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Default)
+ShowCharacterLeft(Ahlai -b TayabacLeft_Default_Body -e TayabacLeft_Default)
 [wait]ShowCharacterRight(Dalawi -b Right_Default_Body -e Right_Smile)
 
 Dalawi at 1 "Oi, happy birthday, <playerName>. You've finally come of age."
 
 Dalawi at 1 "But you can always tell me if ya can't actually handle being chief! Haha!"
 
-ChangeBodyEmotion(Ahlai -b Left_CrossArms_Body -e Left_CrossArmsAngry)
+ChangeBodyEmotion(Ahlai -b TayabacLeft_CrossArms_Body -e TayabacLeft_CrossArmsAngry)
 
 Ahlai as <playerName> at 0 "Pfft! Just watch me!"
 
