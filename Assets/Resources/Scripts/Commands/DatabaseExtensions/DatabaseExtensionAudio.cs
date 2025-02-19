@@ -23,7 +23,7 @@ namespace Commands
             database.AddCommand("stopEvent", new Action<string>(stopEvent));
             database.AddCommand("pauseEvent", new Action<string>(pauseEvent));
             database.AddCommand("resumeEvent", new Action<string>(resumeEvent));
-            database.AddCommand("setEventParameter", new Action<string, string, int>(SetEventParameter));
+            database.AddCommand("setEventParameter", new Action<string[]>(SetEventParameter));
         }
 
         private static void playSFX(string filename)
@@ -157,26 +157,32 @@ namespace Commands
             return MUSIC_FILEPATH + filename; // Default to Music if unknown
         }
 
-        private static void SetEventParameter(string filename, string parameterName, int value)
+        private static void SetEventParameter(string[] data)
         {
-            string fullPath = GetFullPath(filename);
+            string filename = data[0];
+            string parameterName = data[1];
 
-            if (activeEvents.TryGetValue(fullPath, out EventInstance eventInstance) && eventInstance.isValid())
+            if (int.TryParse(data[2], out int value))
             {
-                // Validate discrete values 
-                int[] validValues = { 0, 1, 2, 3, 4, 5};
-                if (!Array.Exists(validValues, v => v == value))
+                string fullPath = GetFullPath(filename);
+
+                if (activeEvents.TryGetValue(fullPath, out EventInstance eventInstance) && eventInstance.isValid())
                 {
-                    Debug.LogWarning($"Invalid value {value} for discrete parameter '{parameterName}'. Allowed: {string.Join(", ", validValues)}");
-                    return;
-                }
+                    // Validate discrete values 
+                    int[] validValues = { 0, 1, 2, 3, 4, 5 };
+                    if (!Array.Exists(validValues, v => v == value))
+                    {
+                        Debug.LogWarning($"Invalid value {value} for discrete parameter '{parameterName}'. Allowed: {string.Join(", ", validValues)}");
+                        return;
+                    }
 
-                eventInstance.setParameterByName(parameterName, value);
-                Debug.Log($"Set discrete parameter '{parameterName}' to {value} for {fullPath}");
-            }
-            else
-            {
-                Debug.LogWarning($"Event not found or invalid: {filename}");
+                    eventInstance.setParameterByName(parameterName, value);
+                    Debug.Log($"Set discrete parameter '{parameterName}' to {value} for {fullPath}");
+                }
+                else
+                {
+                    Debug.LogWarning($"Event not found or invalid: {filename}");
+                }
             }
         }
 
