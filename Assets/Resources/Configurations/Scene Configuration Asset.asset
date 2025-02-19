@@ -623,7 +623,7 @@ MonoBehaviour:
     - interactableName: Stairs
       backgroundToGo: 1st Floor Hallway
       keyToPress: 4
-      playerPositionInNextBackground: {x: 1311.99, y: -223.2}
+      playerPositionInNextBackground: {x: 1275.84, y: -246.51}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -637,7 +637,7 @@ MonoBehaviour:
   - sceneName: Scene 5
     currentBackgroundName: 1st Floor Hallway
     showPlayer: 1
-    playerPosition: {x: 1311.99, y: -223.2}
+    playerPosition: {x: 1275.84, y: -246.51}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -833,7 +833,7 @@ MonoBehaviour:
     - interactableName: Right Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 1
-      playerPositionInNextBackground: {x: -2275.36, y: -226.71}
+      playerPositionInNextBackground: {x: -2271.75, y: -246.51}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -2206,14 +2206,14 @@ MonoBehaviour:
     - interactableName: Right Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 1
-      playerPositionInNextBackground: {x: -2275.36, y: -226.71}
+      playerPositionInNextBackground: {x: -2271.75, y: -246.51}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 11
     currentBackgroundName: 1st Floor Hallway
     showPlayer: 1
-    playerPosition: {x: 1311.99, y: -223.2}
+    playerPosition: {x: 1275.84, y: -246.51}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -2297,7 +2297,7 @@ MonoBehaviour:
     - interactableName: Stairs
       backgroundToGo: 1st Floor Hallway
       keyToPress: 4
-      playerPositionInNextBackground: {x: 1311.99, y: -223.2}
+      playerPositionInNextBackground: {x: 1275.84, y: -246.51}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -2437,7 +2437,7 @@ MonoBehaviour:
     - interactableName: Stairs
       backgroundToGo: 1st Floor Hallway
       keyToPress: 4
-      playerPositionInNextBackground: {x: 1311.99, y: -223.2}
+      playerPositionInNextBackground: {x: 1275.84, y: -246.51}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -2451,7 +2451,7 @@ MonoBehaviour:
   - sceneName: Scene 12
     currentBackgroundName: 1st Floor Hallway
     showPlayer: 1
-    playerPosition: {x: 1311.99, y: -223.2}
+    playerPosition: {x: 1275.84, y: -246.51}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -2537,7 +2537,7 @@ MonoBehaviour:
     - interactableName: Right Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 1
-      playerPositionInNextBackground: {x: -2275.36, y: -226.71}
+      playerPositionInNextBackground: {x: -2271.75, y: -246.51}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -2568,7 +2568,7 @@ MonoBehaviour:
     - interactableName: Sabina Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1291.88, y: -214.13}
+      playerPositionInNextBackground: {x: -1275.75, y: -246.51}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
