@@ -580,7 +580,7 @@ MonoBehaviour:
     npcsInScene: []
     interactablesInScene:
     - interactableName: Ahlai Door
-      interactableType: 1
+      interactableType: 2
       isInteractable: 1
       storyToPlay: Main 3 - Ahlai Door Interaction
       moveToInteractPosition: {x: 0, y: 0}
@@ -663,7 +663,7 @@ MonoBehaviour:
       storyToPlay: Main 3 - Boxes Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Double Door
-      interactableType: 1
+      interactableType: 2
       isInteractable: 1
       storyToPlay: Main 3 - Locked Door Interaction
       moveToInteractPosition: {x: 0, y: 0}
@@ -689,6 +689,13 @@ MonoBehaviour:
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
       playerPositionInNextBackground: {x: 802.43, y: -227.16}
+      playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Double Door
+      backgroundToGo: La Liryo Hallway
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 1280.18, y: -237.06}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -2212,7 +2219,7 @@ MonoBehaviour:
     npcsInScene: []
     interactablesInScene:
     - interactableName: Double Door
-      interactableType: 1
+      interactableType: 2
       isInteractable: 1
       storyToPlay: Main 7 - Locked Door Interaction
       moveToInteractPosition: {x: 0, y: 0}
@@ -2238,6 +2245,13 @@ MonoBehaviour:
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
       playerPositionInNextBackground: {x: 802.43, y: -227.16}
+      playerDirectionInNextBackground: -1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: Double Door
+      backgroundToGo: La Liryo Hallway
+      keyToPress: 3
+      playerPositionInNextBackground: {x: 1280.18, y: -237.06}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -2475,8 +2489,8 @@ MonoBehaviour:
     - interactableName: Double Door
       backgroundToGo: La Liryo Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: 802.43, y: -227.16}
-      playerDirectionInNextBackground: 1
+      playerPositionInNextBackground: {x: 1280.18, y: -237.06}
+      playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 12
@@ -2530,8 +2544,8 @@ MonoBehaviour:
   - sceneName: Scene 12
     currentBackgroundName: La Liryo Hallway
     showPlayer: 1
-    playerPosition: {x: -928.56, y: -249.14}
-    playerDirection: 1
+    playerPosition: {x: 1280.18, y: -237.06}
+    playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
     interactablesInScene:
@@ -2554,26 +2568,26 @@ MonoBehaviour:
     - interactableName: Sabina Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: -3436.47, y: -244.74}
+      playerPositionInNextBackground: {x: -1291.88, y: -214.13}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: La Liryo Door
       backgroundToGo: La Liryo Room
       keyToPress: 3
-      playerPositionInNextBackground: {x: -2275.36, y: -226.71}
+      playerPositionInNextBackground: {x: -278.57, y: -253.32}
       playerDirectionInNextBackground: 1
-      followPlayer: 
+      followPlayer: IdleRight
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 12
     currentBackgroundName: La Liryo Room
     showPlayer: 1
-    playerPosition: {x: -928.56, y: -249.14}
+    playerPosition: {x: -278.57, y: -253.32}
     playerDirection: 1
-    playerAnimationState: IdleLeft
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sabina
-      position: {x: 0, y: 0}
+      position: {x: 255.57, y: -251.77}
       appear: 1
       flipped: 0
       animationState: Idle
