@@ -1,6 +1,6 @@
 [wait]Blackout()
 resumeEvent(BGM_Scene5)
-pauseEvent(BGM_KuchaiTown)
+stopEvent(BGM_KuchaiTown)
 RemoveScene()
 [wait]ShowScene("Scene 10" "Main Shop")
 [wait]SetCamera(-x -10.26 -spd 1)
@@ -87,8 +87,6 @@ pixel Seiji "<playerName>... Are you okay?"
 
 pixel Ahlai as <playerName> "I... I'm fine, Seiji... I just need to catch some air. Please... let me be alone for a while."
 
-pauseEvent(BGM_KuchaiTown)
-
 HideTextbox(false)
 [wait]ResetCamera(true)
 Wait(0.05)
@@ -97,12 +95,15 @@ playSFX(SFX_AhlaiWalk)
 [wait]Blackout()
 playSFX(SFX_LaisaBumping)
 RemoveScene()
+Wait(1.5)
+stopEvent(BGM_Scene5)
 [wait]ShowScene("Scene 11" "Kuchai Town 1")
 
 Ahlai as <playerName> "Hey!"
 
 Ahlai as <playerName> "Wait... aren't you-"
 
+pauseEvent(BGM_KuchaiTown)
 playMusic(BGM_Laisa)
 
 HideTextbox(true)

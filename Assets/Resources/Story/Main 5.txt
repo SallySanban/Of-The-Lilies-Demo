@@ -71,7 +71,7 @@ if ($GetCloser)
 	}
 
 	pixel Laisa as Ilaisaane "Don't worry. We'll see each other again."
-	stopEvent(BGM_Lien)
+	pauseEvent(BGM_Lien)
 	resumeEvent(BGM_KuchaiTown)
 
 	$LaisaTalkedTo = true
