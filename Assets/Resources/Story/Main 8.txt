@@ -2,6 +2,7 @@
 RemoveScene()
 [wait]SetCamera(-x -0.2)
 [wait]ShowScene("Scene 12" "La Liryo Room")
+setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 1)
 [wait]HideCG()
 
 pixel Sabina as Lady Sabina "Good, you made it. It pains me to say this, and I suppose you already have an idea about it, but... I've confirmed with the Order of La Liryo."
@@ -13,6 +14,8 @@ pixel Sabina as Lady Sabina "Well, I won't waste any more of your time. We'll wa
 pixel Sabina as Lady Sabina "There is something you need to know about the ritual."
 
 pixel Ahlai as <playerName> "What is it?"
+
+setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 2)
 
 pixel Sabina as Lady Sabina "Do you know how magic works, <playerName>?"
 
@@ -38,6 +41,8 @@ pixel Ahlai as <playerName> "Why does this even have to be a secret? Doesn't Sei
 
 pixel Sabina as Lady Sabina "When I told you both about the Ritual of Respite, I left out the most critical component needed to perform the ritual. I didn't want to tell you in front of Seiji... he has a good heart."
 
+setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 3)
+
 pixel Sabina as Lady Sabina "But we <i>will</i> need to make a choice, and I am leaving this at your discretion. <b>The ritual requires a single sacrifice to be made, as an offering to the gods</b>. And given the amount of essence he possesses... <b>he is one of the most suitable candidates</b>."
 
 pixel Ahlai as <playerName> "Seiji? As a... sacrifice?"
@@ -47,6 +52,8 @@ pixel Sabina as Lady Sabina "There are a few others you can choose from, <player
 pixel Sabina as Lady Sabina "With what I know... and with what the Ritual of Respite demands of us..."
 
 pixel Sabina as Lady Sabina "Ultimately, you can only <b>choose one</b>."
+
+setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 4)
 
 $SeijiPaperInteracted = false
 $MyoPaperInteracted = false

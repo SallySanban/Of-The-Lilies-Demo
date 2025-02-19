@@ -27,6 +27,7 @@ choice in 2
 		$Lien += 5
 
 		HideTextbox(true)
+		setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 5)
 		[wait]Blackout()
 
 	- Keep looking

@@ -46,7 +46,7 @@ choice in -1
 		HideTextbox(true)
 
 		pauseEvent(BGM_KuchaiTavern)
-		playMusic(BGM_Lien)
+		resumeEvent(BGM_Lien)
 
 		[wait]Blackout()
 

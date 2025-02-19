@@ -19,6 +19,7 @@ choice in 2
 		$Myo += 5
 
 		HideTextbox(true)
+		setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 5)
 		[wait]Blackout()
 
 	- Keep looking

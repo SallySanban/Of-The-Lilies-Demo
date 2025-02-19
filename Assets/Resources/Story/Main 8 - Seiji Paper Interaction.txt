@@ -15,6 +15,7 @@ choice in 2
 		$Seiji += 5
 
 		HideTextbox(true)
+		setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 5)
 		[wait]Blackout()
 
 	- Keep looking

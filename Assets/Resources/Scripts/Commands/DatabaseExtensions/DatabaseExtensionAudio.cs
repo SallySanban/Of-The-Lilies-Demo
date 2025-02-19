@@ -23,6 +23,7 @@ namespace Commands
             database.AddCommand("stopEvent", new Action<string>(stopEvent));
             database.AddCommand("pauseEvent", new Action<string>(pauseEvent));
             database.AddCommand("resumeEvent", new Action<string>(resumeEvent));
+            database.AddCommand("setEventParameter", new Action<string[]>(SetEventParameter));
         }
 
         private static void playSFX(string filename)
@@ -64,11 +65,7 @@ namespace Commands
 
         private static void stopEvent(string filename)
         {
-            string fullPath = MUSIC_FILEPATH + filename;
-            if (!activeEvents.ContainsKey(fullPath))
-            {
-                fullPath = AMB_FILEPATH + filename; // Check if it's an ambience event
-            }
+            string fullPath = GetFullPath(filename);
 
             if (activeEvents.ContainsKey(fullPath))
             {
@@ -86,11 +83,7 @@ namespace Commands
 
         private static void pauseEvent(string filename)
         {
-            string fullPath = MUSIC_FILEPATH + filename;
-            if (!activeEvents.ContainsKey(fullPath))
-            {
-                fullPath = AMB_FILEPATH + filename; // Check if it's an ambience event
-            }
+            string fullPath = GetFullPath(filename);
 
             if (activeEvents.ContainsKey(fullPath))
             {
@@ -106,11 +99,7 @@ namespace Commands
 
         private static void resumeEvent(string filename)
         {
-            string fullPath = MUSIC_FILEPATH + filename;
-            if (!activeEvents.ContainsKey(fullPath))
-            {
-                fullPath = AMB_FILEPATH + filename; // Check if it's an ambience event
-            }
+            string fullPath = GetFullPath(filename);
 
             if (activeEvents.ContainsKey(fullPath))
             {
@@ -132,7 +121,7 @@ namespace Commands
 
             while (currentVolume > 0)
             {
-                currentVolume -= fadeSpeed * Time.deltaTime;
+                currentVolume = Mathf.Max(0, currentVolume - fadeSpeed * Time.deltaTime);
                 eventInstance.setVolume(currentVolume);
                 yield return null;
             }
@@ -153,12 +142,48 @@ namespace Commands
 
             while (currentVolume < 1.0f)
             {
-                currentVolume += fadeSpeed * Time.deltaTime;
+                currentVolume = Mathf.Min(1.0f, currentVolume + fadeSpeed * Time.deltaTime);
                 eventInstance.setVolume(currentVolume);
                 yield return null;
             }
 
             Debug.Log("Event resumed with fade in.");
+        }
+
+        private static string GetFullPath(string filename)
+        {
+            if (activeEvents.ContainsKey(MUSIC_FILEPATH + filename)) return MUSIC_FILEPATH + filename;
+            if (activeEvents.ContainsKey(AMB_FILEPATH + filename)) return AMB_FILEPATH + filename;
+            return MUSIC_FILEPATH + filename; // Default to Music if unknown
+        }
+
+        private static void SetEventParameter(string[] data)
+        {
+            string filename = data[0];
+            string parameterName = data[1];
+
+            if (int.TryParse(data[2], out int value))
+            {
+                string fullPath = GetFullPath(filename);
+
+                if (activeEvents.TryGetValue(fullPath, out EventInstance eventInstance) && eventInstance.isValid())
+                {
+                    // Validate discrete values 
+                    int[] validValues = { 0, 1, 2, 3, 4, 5 };
+                    if (!Array.Exists(validValues, v => v == value))
+                    {
+                        Debug.LogWarning($"Invalid value {value} for discrete parameter '{parameterName}'. Allowed: {string.Join(", ", validValues)}");
+                        return;
+                    }
+
+                    eventInstance.setParameterByName(parameterName, value);
+                    Debug.Log($"Set discrete parameter '{parameterName}' to {value} for {fullPath}");
+                }
+                else
+                {
+                    Debug.LogWarning($"Event not found or invalid: {filename}");
+                }
+            }
         }
 
         // Singleton coroutine runner to handle coroutines in a non-MonoBehaviour class
