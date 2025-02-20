@@ -1,48 +1,61 @@
-pixel Seiji "Hey..."
+ChangeBodyEmotion(Ahlai -e Left_Conflicted)
+ChangeBodyEmotion(Seiji -e Right_Sad)
 
-pixel Seiji "Do you want to talk about your nightmare?"
+Seiji at 1 "Hey..."
 
-pixel Seiji "I know it's a sensitive topic but... I just think it'll lift that weight on your chest a little."
+Seiji at 1 "Do you want to talk about your nightmare?"
 
-pixel Ahlai as <playerName> "It starts off nice. I see my family, warm smiles across their faces."
+Seiji at 1 "I know it's a sensitive topic but... I just think it'll lift that weight on your chest a little."
 
-pixel Ahlai as <playerName> "They laugh, they banter. My father sends me off to do chores and I meet the rest of my village."
+ChangeBodyEmotion(Ahlai -e Left_ApologeticSmile)
 
-pixel Ahlai as <playerName> "My father tells me to join him at the cliff overlooking our beautiful village."
+Ahlai as <playerName> at 0 "It starts off nice. I see my family, warm smiles across their faces."
 
-pixel Ahlai as <playerName> "I go there and... he's not there."
+Ahlai as <playerName> at 0 "They laugh, they banter. My father sends me off to do chores and I meet the rest of my village."
 
-pixel Ahlai as <playerName> "And the only thing I see up there... is my village in flames."
+Ahlai as <playerName> at 0 "My father tells me to join him at the cliff overlooking our beautiful village."
 
-pixel Seiji "..."
+ChangeBodyEmotion(Ahlai -e Left_Conflicted)
 
-pixel Ahlai as <playerName> "I run down as fast as I can, but I see people screaming and dying everywhere I look."
+Ahlai as <playerName> at 0 "I go there and... he's not there."
 
-pixel Ahlai as <playerName> "And that's when I see him: <b>Lien</b>."
+Ahlai as <playerName> at 0 "And the only thing I see up there... is my village in flames."
 
-pixel Ahlai as <playerName> "He led the invasion..."
+Seiji at 1 "..."
 
-pixel Ahlai as <playerName> "I fight him with everything I have, but it's not enough."
+ChangeBodyEmotion(Ahlai -e Left_Traumatized)
 
-pixel Ahlai as <playerName> "I'm knocked down to the ground and the last thing I see is his cruel smile..."
+Ahlai as <playerName> at 0 "I run down as fast as I can, but I see people screaming and dying everywhere I look."
 
-pixel Ahlai as <playerName> "His smile, which has cemented its place in my mind as a lingering ghost..."
+Ahlai as <playerName> at 0 "And that's when I see him: <b>Lien</b>."
 
-pixel Seiji "<playerName>... I'm so sorry to hear about that..."
+Ahlai as <playerName> at 0 "He led the invasion..."
 
-pixel Seiji "If I could do anything to help you with your sleep, I would."
+Ahlai as <playerName> at 0 "I fight him with everything I have, but it's not enough."
 
-pixel Ahlai as <playerName> "Thanks, Seiji..."
+Ahlai as <playerName> at 0 "I'm knocked down to the ground and the last thing I see is his cruel smile..."
 
-pixel Seiji "..."
+ChangeBodyEmotion(Ahlai -e Left_Conflicted)
 
-pixel Seiji "Would you... like a hug?"
+Ahlai as <playerName> at 0 "His smile, which has cemented its place in my mind as a lingering ghost..."
 
-pixel Ahlai as <playerName> "What?"
+Seiji at 1 "<playerName>... I'm so sorry to hear about that..."
 
-pixel Seiji "I think a nightmare like that deserves a hug."
+Seiji at 1 "If I could do anything to help you with your sleep, I would."
 
-pixel Seiji "Do you want one?"
+ChangeBodyEmotion(Ahlai -e Left_ApologeticSmile)
+
+Ahlai as <playerName> at 0 "Thanks, Seiji..."
+
+Seiji at 1 "..."
+
+Seiji at 1 "Would you... like a hug?"
+
+Ahlai as <playerName> at 0 "What?"
+
+Seiji at 1 "I think a nightmare like that deserves a hug."
+
+Seiji at 1 "Do you want one?"
 
 choice in -1
 {
@@ -72,9 +85,13 @@ choice in -1
 		[wait]HideCG()
 
 	- No
-		pixel Seiji "I see..."
+		ChangeBodyEmotion(Seiji -e Right_Pout)
 
-		pixel Ahlai as <playerName> "Well, if you ever need one, I'm always here for you."
+		Seiji at 1 "I see..."
+
+		ChangeBodyEmotion(Seiji -e Right_ApologeticSmile)
+
+		Seiji at 1 "Well, if you ever need one, I'm always here for you."
 }
 
 Load("Main 3 - Seiji Repeating Dialogue")

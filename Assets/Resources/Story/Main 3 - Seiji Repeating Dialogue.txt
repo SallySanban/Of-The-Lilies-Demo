@@ -1,22 +1,31 @@
-pixel Seiji "Lady Sabina gave us some tasks to complete for the shop. Is there anything you want to talk about before we go?"
+ChangeBodyEmotion(Ahlai -e Left_Smile)
+ChangeBodyEmotion(Seiji -e Right_Smile)
+
+Seiji at 1 "Lady Sabina gave us some tasks to complete for the shop. Is there anything you want to talk about before we go?"
 
 choice in -1
 {
 	- if (!$ShopAlreadyChosen) How's the shop been?
 		$ShopAlreadyChosen = true
-		pixel Seiji "The shop is pretty packed today."
+		Seiji at 1 "The shop is pretty packed today."
 
-		pixel Seiji "So many people with so many different problems."
+		Seiji at 1 "So many people with so many different problems."
 
-		pixel Seiji "We're getting a growing reputation here in Kuchai Town."
+		Seiji at 1 "We're getting a growing reputation here in Kuchai Town."
 
-		pixel Seiji "And with that reporter writing an article on us, we're just bound to get more customers!"
+		ChangeBodyEmotion(Seiji -e Right_Grinning)
 
-		pixel Seiji "Maybe Lady Sabina will finally give us a raise!"
+		Seiji at 1 "And with that reporter writing an article on us, we're just bound to get more customers!"
 
-		pixel Seiji "I'll be sure to treat you to dinner when it happens."
+		Seiji at 1 "Maybe Lady Sabina will finally give us a raise!"
 
-		pixel Ahlai as <playerName> "I will hold you to that."
+		ChangeBodyEmotion(Seiji -e Right_BlushingSmile)
+
+		Seiji at 1 "I'll be sure to treat you to dinner when it happens."
+
+		ChangeBodyEmotion(Ahlai -e Left_Blush)
+
+		Ahlai as <playerName> at 0 "I will hold you to that."
 
 		Load("Main 3 - Seiji Repeating Dialogue")
 

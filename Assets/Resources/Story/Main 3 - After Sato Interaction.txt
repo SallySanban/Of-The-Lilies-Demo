@@ -1,16 +1,22 @@
-pixel Ahlai as <playerName> "Mr. Sato! You've got beautiful flowers. Looks like the potion's doing wonders."
+[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Smile)
+
+Ahlai as <playerName> at 1 "Mr. Sato! You've got beautiful flowers. Looks like the potion's doing wonders."
 
 pixel Sato as Mr. Sato "It's all thanks to you, <playerName>. I'll be visiting Sabina's Salves again soon enough. I'm not sure why these strange occurrences are happening, but it's been more difficult to keep them alive lately."
 
-pixel Ahlai as <playerName> "But where's your wife? You mentioned it was your wedding anniversary."
+ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
+
+Ahlai as <playerName> at 1 "But where's your wife? You mentioned it was your wedding anniversary."
 
 pixel Sato as Mr. Sato "Oh... well, she's in a happier place now. I believe she is."
 
-pixel Ahlai as <playerName> "Oh, I... I'm sorry, Mr. Sato."
+ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Sad)
+
+Ahlai as <playerName> at 1 "Oh, I... I'm sorry, Mr. Sato."
 
 pixel Sato as Mr. Sato "Don't worry about it. It's been a few years already. Sometimes, I do think... What if things happened differently? But there's no point in dwelling over that now."
 
-pixel Ahlai as <playerName> "If you don't mind me asking, sir, what happened?"
+Ahlai as <playerName> at 1 "If you don't mind me asking, sir, what happened?"
 
 pixel Sato as Mr. Sato "They told me that my wife got into an argument with one of the Seiyslan soldiers. I can't remember all the details... but according to them, things didn't go smoothly."
 
@@ -18,14 +24,16 @@ pixel Sato as Mr. Sato "And she was already in fragile health. So when tensions 
 
 pixel Sato as Mr. Sato "At least, that's the story they shared with me... If only I was there to help her..."
 
-choice in -1
+choice in 1
 {
 	- I knew it was them.
 		$Vengeance += 1
 
-		pixel Ahlai as <playerName> "I knew it. I knew it all along."
+		ChangeBodyEmotion(Ahlai -e Right_Angry)
 
-		pixel Ahlai as <playerName> "Those Seiyslan soldiers... someone has to put them in their place."
+		Ahlai as <playerName> at 1 "I knew it. I knew it all along."
+
+		Ahlai as <playerName> at 1 "Those Seiyslan soldiers... someone has to put them in their place."
 
 		pixel Sato as Mr. Sato "Oh, <playerName>... I know how you feel. I was angry at them once, too."
 
@@ -35,10 +43,11 @@ choice in -1
 
 		pixel Sato as Mr. Sato "You have my appreciation."
 
+		ChangeBodyEmotion(Ahlai -e Right_Sad)
 	- What caused the argument?
 		$Justice += 1
 
-		pixel Ahlai as <playerName> "What was it that caused the argument? Were the soldiers... violent with her?"
+		Ahlai as <playerName> at 1 "What was it that caused the argument? Were the soldiers... violent with her?"
 
 		pixel Sato as Mr. Sato "They made it seem like my wife was the cause of the conflict. But I know her - she was always calm and kind. She would never start a fight."
 
@@ -53,14 +62,14 @@ choice in -1
 	- I'm sorry for bringing it up.
 		$Peace += 1
 
-		pixel Ahlai as <playerName> "I didn't know... These must be painful memories for you, sir. I'm sorry for bringing it up."
+		Ahlai as <playerName> at 1 "I didn't know... These must be painful memories for you, sir. I'm sorry for bringing it up."
 
 		pixel Sato as Mr. Sato "No worries, child. They may be painful memories, but I still find joy in remembering my wife every now and then."
 }
 
-pixel Ahlai as <playerName> "...Mr. Sato, I'm really sorry for your loss."
+Ahlai as <playerName> at 1 "...Mr. Sato, I'm really sorry for your loss."
 
-pixel Ahlai as <playerName> "It's just that, something similar happened to me... And I'm having a hard time moving on."
+Ahlai as <playerName> at 1 "It's just that, something similar happened to me... And I'm having a hard time moving on."
 
 pixel Sato as Mr. Sato "It happens to the best of us. I do hope you'll come to terms with your loss as well, <playerName>."
 
@@ -68,11 +77,17 @@ pixel Sato as Mr. Sato "You have your friend, Seiji, here with you. I'm sure Lad
 
 pixel Sato as Mr. Sato "And now that we've shared our troubles, feel free to come by any time and we can talk about it."
 
-pixel Ahlai as <playerName> "Thank you, Mr. Sato. I'll keep that in mind."
+ChangeBodyEmotion(Ahlai -e Right_ApologeticSmile)
+
+Ahlai as <playerName> at 1 "Thank you, Mr. Sato. I'll keep that in mind."
+
+HideTextbox(true)
+[wait]SwitchCharacter(Ahlai Seiji -p 1 -b Right_Default_Body -e Right_ApologeticSmile)
 
 pixel Seiji "Your story is safe with us, sir. I'll take good care of <playerName>."
 
 pixel Sato as Mr. Sato "I'm sure you will, son."
 
+HideCharacter(Seiji)
 HideTextbox(false)
 ToggleInteractable("Scene 5" "Kuchai Town 3" Sato false)

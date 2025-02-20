@@ -14,117 +14,178 @@ else
 	{
 		ChangeAnimationState("PrayingGirl" Pray false)
 
-		pixel Ahlai as <playerName> "Hey, kid, do you happen to have any silverleaf sprigs?"
+		[wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Default)
+
+		Ahlai as <playerName> at 0 "Hey, kid, do you happen to have any silverleaf sprigs?"
 
 		pixel PrayingGirl as ??? "Oh, these? Yes, these are definitely silverleaf sprigs... But why do you need them?"
 
-		pixel Seiji "We need them to make a potion for a client. Would you be so kind as to give us a few?"
+		HideTextbox(false)
+		[wait]SwitchCharacter(Ahlai Seiji -p 0 -b Left_Default_Body -e Left_ApologeticSmile)
+
+		Seiji at 0 "We need them to make a potion for a client. Would you be so kind as to give us a few?"
 
 		pixel PrayingGirl as ??? "No! I worked really hard to pick these from the Kadlagan Forest!"
 
 		pixel PrayingGirl as ??? "But a potion, you say? Do you brew potions?"
 
-		pixel Seiji "Yes, we do. We work at Sabina's Salves."
+		Seiji at 0 "Yes, we do. We work at Sabina's Salves."
 
 		pixel PrayingGirl as ??? "Sabina's Salves? The one that's run by the Order of La Liryo?"
 
-		pixel Ahlai as <playerName> "Yes, that one. Do you want a potion in exchange for those sprigs?"
+		HideTextbox(false)
+		[wait]SwitchCharacter(Seiji Ahlai -p 0 -b Left_Default_Body -e Left_Default)
 
-		pixel PrayingGirl as ??? "Well... It'd just be great if I could have a potion that would help me find my mother and sister... I lost them, and I don't know if we'll ever see each other again..."
+		Ahlai as <playerName> at 0 "Yes, that one. Do you want a potion in exchange for those sprigs?"
 
-		pixel Ahlai as <playerName> "I'm... sorry, but we don't have potions for that..."
+		pixel PrayingGirl as ??? "Well... It'd just be great if I could have a potion that would help me find my <b>mother and sister</b>... I lost them, and I don't know if we'll ever see each other again..."
 
-		pixel Ahlai as <playerName> "If we did, I'd have used it years ago... I tried to make one, but..."
+		ChangeBodyEmotion(Ahlai -e Left_Conflicted)
 
-		pixel Ahlai as <playerName> "Our tracking potions can only find people that are nearby."
+		Ahlai as <playerName> at 0 "I'm... sorry, but we don't have potions for that..."
 
-		pixel Ahlai as <playerName> "If her family situation is anything like mine, then... She won't be able to find them."
+		ChangeBodyEmotion(Ahlai -e Left_ConflictedLookAway)
 
-		choice in -1
+		Ahlai as <playerName> at 0 "<i>If we did, I'd have used it years ago... I tried to make one, but...</i>"
+
+		ChangeBodyEmotion(Ahlai -e Left_Conflicted)
+
+		Ahlai as <playerName> at 0 "Our tracking potions can only find people that are nearby."
+
+		ChangeBodyEmotion(Ahlai -e Left_ConflictedLookAway)
+
+		Ahlai as <playerName> at 0 "<i>If her family situation is anything like mine, then... She won't be able to find them.</i>"
+
+		choice in 0
 		{
 			- Who did this to you?
 				$Vengeance += 1
 
-				pixel Ahlai as <playerName> "Was your family taken away from you, too?"
+				ChangeBodyEmotion(Ahlai -e Left_Upset)
 
-				pixel Ahlai as <playerName> "Who was it? Who did this to you?"
+				Ahlai as <playerName> at 0 "Was your family taken away from you, too?"
 
-				pixel Ahlai as <playerName> "Was it the Seiyslan soldiers? Tell me, and I'll do something about them."
+				ChangeBodyEmotion(Ahlai -e Left_Angry)
+
+				Ahlai as <playerName> at 0 "Who was it? Who did this to you?"
+
+				Ahlai as <playerName> at 0 "Was it the Seiyslan soldiers? Tell me, and I'll do something about them."
 
 				pixel PrayingGirl as ??? "What? No! I just lost them in the crowd!"
 
-				pixel Seiji "Calm down, <playerName>. I'm sure her situation is different from yours. They could be just around the corner."
+				HideTextbox(false)
+				[wait]SwitchCharacter(Ahlai Seiji -p 0 -b Left_Default_Body -e Left_Stern)
 
-				pixel Ahlai as <playerName> "I... I..."
+				Seiji at 0 "Calm down, <playerName>. I'm sure her situation is different from yours. They could be just around the corner."
 
-				pixel Seiji "What's your name, kid?"
+				HideTextbox(true)
+				[wait]SwitchCharacter(Seiji Ahlai -p 0 -b Left_Default_Body -e Left_Upset)
+
+				Ahlai as <playerName> at 0 "I... I..."
+
+				HideTextbox(true)
+				[wait]SwitchCharacter(Ahlai Seiji -p 0 -b Left_Default_Body -e Left_ApologeticSmile)
+
+				Seiji at 0 "What's your name, kid?"
 
 				pixel PrayingGirl as Mai "I'm... Mai."
 
-				pixel Seiji "Don't worry, Mai. We'll help you find your family. Just stay right here, okay?"
+				Seiji at 0 "Don't worry, Mai. We'll help you find your family. Just stay right here, okay?"
 
 				pixel PrayingGirl as Mai "Okay... Thank you so much."
 
+				HideTextbox(false)
+				ChangeBodyEmotion(Seiji -e Left_Worried)
 			- Do you want us to help you?
 				$Justice += 1
 
-				pixel Ahlai as <playerName> "Do you need some help, kid? What's your name?"
+				ChangeBodyEmotion(Ahlai -e Left_ApologeticSmile)
+
+				Ahlai as <playerName> at 0 "Do you need some help, kid? What's your name?"
 
 				pixel PrayingGirl as Mai "I'm... Mai."
 
-				pixel Ahlai as <playerName> "I'm sure your family's here somewhere, Mai. We'll find them for you."
+				ChangeBodyEmotion(Ahlai -e Left_Smile)
 
-				pixel Ahlai as <playerName> "I just hope that... they really are just around the corner."
+				Ahlai as <playerName> at 0 "I'm sure your family's here somewhere, Mai. We'll find them for you."
+
+				ChangeBodyEmotion(Ahlai -e Left_ConflictedLookAway)
+
+				Ahlai as <playerName> at 0 "<i>I just hope that... they really are just around the corner.</i>"
 
 				pixel PrayingGirl as Mai "R-Really? Oh, thank you so much!"
+
+				HideTextbox(true)
+				[wait]SwitchCharacter(Ahlai Seiji -p 0 -b Left_Default_Body -e Left_Worried)
 
 			- Maybe they're gone for good.
 				$Peace += 1
 
-				pixel Ahlai as <playerName> "I'm sorry you lost your family, kid. But maybe there's no bringing them back. Maybe you just have to... let it go."
+				ChangeBodyEmotion(Ahlai -e Left_Upset)
+
+				Ahlai as <playerName> at 0 "I'm sorry you lost your family, kid. But maybe there's no bringing them back. Maybe you just have to... let it go."
 
 				pixel PrayingGirl as ??? "No! I just lost them in the crowd... They were with me just a second ago!"
 
-				pixel Seiji "<playerName>, I know you might be feeling that way about your family... but you shouldn't make the kid lose hope. They could be just around the corner."
+				HideTextbox(false)
+				[wait]SwitchCharacter(Ahlai Seiji -p 0 -b Left_Default_Body -e Left_Sad)
 
-				pixel Seiji "What's your name?"
+				Seiji at 0 "<playerName>, I know you might be feeling that way about your family... but you shouldn't make the kid lose hope. They could be just around the corner."
+
+				ChangeBodyEmotion(Seiji -e Left_ApologeticSmile)
+
+				Seiji at 0 "What's your name?"
 
 				pixel PrayingGirl as Mai "I'm... Mai."
 
-				pixel Seiji "Your family should be around here somewhere, Mai. Don't give up."
+				Seiji at 0 "Your family should be around here somewhere, Mai. Don't give up."
 
 				pixel PrayingGirl as Mai "Okay..."
 
-				pixel Seiji "Just stay right here, and we'll help you find them."
+				Seiji at 0 "Just stay right here, and we'll help you find them."
 
 				pixel PrayingGirl as Mai "O-okay! I'm counting on you, mister!"
+
+				HideTextbox(false)
+				ChangeBodyEmotion(Seiji -e Left_Worried)
 		}
 
 		$MaiQuest = true
 		$MaiThankYou = false
 		FlipNPC("Ahlai" Left)
+		[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Sad)
 
-		pixel Seiji "<playerName>, what's wrong?"
+		Seiji at 0 "<playerName>, what's wrong?"
 
-		pixel Ahlai as <playerName> "I just... I'm not confident we'll be able to find them. If they were separated for some crappy reason like 'for the good of the Empire', then..."
+		Ahlai as <playerName> at 1 "I just... I'm not confident we'll be able to find them. If they were separated for some crappy reason like 'for the good of the Empire', then..."
 
-		pixel Ahlai as <playerName> "Mai may never actually find them. And she might end up like me. Still living in the past..."
+		Ahlai as <playerName> at 1 "Mai may never actually find them. And she might end up like me. Still living in the past..."
 
-		pixel Seiji "When you lost your family ten years ago, you never stopped looking for them, remember?"
+		Seiji at 0 "When you lost your family ten years ago, you never stopped looking for them, remember?"
 
-		pixel Seiji "You'd sneak out of Sabina's Salves to find information, as much as you can find here in Kuchai Town."
+		Seiji at 0 "You'd sneak out of Sabina's Salves to find information, as much as you can find here in Kuchai Town."
 
-		pixel Seiji "And even now, you still haven't given up on them. You still have some fight left in you, <playerName>."
+		ChangeBodyEmotion(Seiji -e Left_ApologeticSmile)
 
-		pixel Seiji "That's what I lo- I mean, that's what I admire about you."
+		Seiji at 0 "And even now, you still haven't given up on them. You still have some fight left in you, <playerName>."
 
-		pixel Seiji "I think Mai's the same."
+		ChangeBodyEmotion(Seiji -e Left_Blush)
 
-		pixel Ahlai as <playerName> "You... you might be right. You always know how to cheer me up, Seiji."
+		Seiji at 0 "That's what I lo- I mean, that's what I admire about you."
 
-		pixel Ahlai as <playerName> "Let's hope we can find her family."
+		ChangeBodyEmotion(Seiji -e Left_ApologeticSmile)
 
-		HideTextbox(false)
+		Seiji at 0 "I think Mai's the same."
+
+		ChangeBodyEmotion(Ahlai -e Right_ApologeticSmile)
+
+		Ahlai as <playerName> at 1 "You... you might be right. You always know how to cheer me up, Seiji."
+
+		Ahlai as <playerName> at 1 "Let's hope we can find her family."
+
+		HideCharacter(Ahlai)
+		HideCharacter(Seiji)
+		HideTextbox(true)
 	}
 	else
 	{

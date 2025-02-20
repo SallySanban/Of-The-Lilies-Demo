@@ -1,40 +1,58 @@
 if (!$TasksAlreadyChosen)
 {
-	pixel Seiji "<playerName>! Good morning!"
+	ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_ApologeticSmile)
+	[wait]ShowCharacterRight(Seiji -b Right_Default_Body -e Right_Smile)
 
-	pixel Ahlai as <playerName> "Good morning, Seiji."
+	Seiji at 1 "<playerName>! Good morning!"
 
-	pixel Seiji "Lady Sabina told me you woke up from a terrible nightmare. Are you okay?"
+	Ahlai as <playerName> at 0 "Good morning, Seiji."
 
-	pixel Ahlai as <playerName> "Yeah, I'm fine."
+	ChangeBodyEmotion(Seiji -e Right_Worried)
 
-	pixel Seiji "Are you sure?"
+	Seiji at 1 "Lady Sabina told me you woke up from a terrible nightmare. Are you okay?"
 
-	pixel Seiji "She said you were sweating a lot in your sleep."
+	Ahlai as <playerName> at 0 "Yeah, I'm fine."
 
-	pixel Seiji "Did you have a nightmare about running up a hill?"
+	Seiji at 1 "Are you sure?"
 
-	pixel Ahlai as <playerName> "Heh, I wish."
+	Seiji at 1 "She said you were sweating a lot in your sleep."
 
-	pixel Ahlai as <playerName> "That would've been more pleasant than what I actually got."
+	ChangeBodyEmotion(Seiji -e Right_ApologeticSmile)
 
-	pixel Ahlai as <playerName> "I had a nightmare about them again, Seiji. About my family..."
+	Seiji at 1 "Did you have a nightmare about running up a hill?"
 
-	pixel Seiji "Oh..."
+	Ahlai as <playerName> at 0 "Heh, I wish."
 
-	pixel Ahlai as <playerName> "The memory... It's just so painful..."
+	Ahlai as <playerName> at 0 "That would've been more pleasant than what I actually got."
 
-	pixel Ahlai as <playerName> "I don't think I can ever get the invasion out of my head..."
+	ChangeBodyEmotion(Ahlai -e Left_Conflicted)
+	ChangeBodyEmotion(Seiji -e Right_Sad)
 
-	pixel Seiji "I'm so sorry, <playerName>. I shouldn't have asked."
+	Ahlai as <playerName> at 0 "I had a nightmare about them again, Seiji. About my family..."
 
-	pixel Ahlai as <playerName> "No, it's okay. You were just checking up on me."
+	Seiji at 1 "Oh..."
 
-	pixel Seiji "Still... I know this isn't something pleasant for you to talk about."
+	Ahlai as <playerName> at 0 "The memory... It's just so painful..."
 
-	pixel Ahlai as <playerName> "You're always so considerate of me. Thank you, Seiji."
+	Ahlai as <playerName> at 0 "I don't think I can ever get the invasion out of my head..."
 
-	pixel Seiji "I-it's no problem. I'm always here for you, <playerName>."
+	Seiji at 1 "I'm so sorry, <playerName>. I shouldn't have asked."
+
+	ChangeBodyEmotion(Ahlai -e Left_ApologeticSmile)
+
+	Ahlai as <playerName> at 0 "No, it's okay. You were just checking up on me."
+
+	ChangeBodyEmotion(Seiji -e Right_LookingAway)
+
+	Seiji at 1 "Still... I know this isn't something pleasant for you to talk about."
+
+	ChangeBodyEmotion(Ahlai -e Left_Smile)
+
+	Ahlai as <playerName> at 0 "You're always so considerate of me. Thank you, Seiji."
+
+	ChangeBodyEmotion(Seiji -e Right_Blush)
+
+	Seiji at 1 "I-it's no problem. I'm always here for you, <playerName>."
 
 	Load("Main 3 - Seiji Repeating Dialogue")
 }

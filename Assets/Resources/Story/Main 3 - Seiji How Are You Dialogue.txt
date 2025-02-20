@@ -1,38 +1,54 @@
-pixel Seiji "Me?"
+ChangeBodyEmotion(Seiji -e Right_Surprised)
 
-pixel Seiji "I'm doing well, thanks for asking."
+Seiji at 1 "Me?"
 
-pixel Seiji "Lady Sabina bought me dinner after working overtime yesterday."
+ChangeBodyEmotion(Seiji -e Right_Smile)
 
-pixel Ahlai as <playerName> "Did she also buy you that thing you're carrying?"
+Seiji at 1 "I'm doing well, thanks for asking."
 
-pixel Seiji "Oh, my little sister made me this!"
+Seiji at 1 "Lady Sabina bought me dinner after working overtime yesterday."
 
-pixel Seiji "I keep it around as a good luck charm. I even put it on the counter when I'm working."
+ChangeBodyEmotion(Ahlai -b Left_Question_Body -e Left_Question)
+
+Ahlai as <playerName> at 0 "Did she also buy you that thing you're carrying?"
+
+Seiji at 1 "Oh, my little sister made me this!"
+
+ChangeBodyEmotion(Seiji -e Right_ReallyHappy)
+
+Seiji at 1 "I keep it around as a good luck charm. I even put it on the counter when I'm working."
 
 choice in -1
 {
 	- That's sweet, Seiji.
 		$Seiji += 1
 
-		pixel Ahlai as <playerName> "It's nice that you think of your sister so fondly like that."
+		ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Smile)
 
-		pixel Seiji "Thank you. I knew you'd understand."
+		Ahlai as <playerName> at 0 "It's nice that you think of your sister so fondly like that."
 
-		pixel Seiji "These kinds of gifts from family, they're important."
+		ChangeBodyEmotion(Seiji -e Right_Smile)
 
-		pixel Seiji "They remind me just why I work so hard."
+		Seiji at 1 "Thank you. I knew you'd understand."
 
-		pixel Ahlai as <playerName> "I agree..."
+		Seiji at 1 "These kinds of gifts from family, they're important."
+
+		Seiji at 1 "They remind me just why I work so hard."
+
+		Ahlai as <playerName> at 0 "I agree..."
 
 	- That's unprofessional.
-		pixel Ahlai as <playerName> "You shouldn't put things like that on the counter. It's unprofessional."
+		ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Upset)
 
-		pixel Seiji "...I suppose you're right..."
+		Ahlai as <playerName> at 0 "You shouldn't put things like that on the counter. It's unprofessional."
 
-		pixel Seiji "Although, I thought you'd understand just how important these mementos are..."
+		ChangeBodyEmotion(Seiji -e Right_Frown)
 
-		pixel Ahlai as <playerName> "..."
+		Seiji at 1 "...I suppose you're right..."
+
+		Seiji at 1 "Although, I thought you'd understand just how important these mementos are..."
+
+		Ahlai as <playerName> at 0 "..."
 }
 
 Load("Main 3 - Seiji Repeating Dialogue")

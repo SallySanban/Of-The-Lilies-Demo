@@ -15,10 +15,10 @@ MonoBehaviour:
   characters:
   - name: Seiji
     alias: seiji
-    characterType: 0
+    characterType: 1
   - name: Myo
     alias: myo
-    characterType: 0
+    characterType: 1
   - name: Sabina
     alias: sabina
     characterType: 0
@@ -27,13 +27,13 @@ MonoBehaviour:
     characterType: 1
   - name: Manju
     alias: manju
-    characterType: 0
+    characterType: 1
   - name: Lien
     alias: lien
     characterType: 1
   - name: Laisa
     alias: laisa
-    characterType: 0
+    characterType: 1
   - name: Dad
     alias: dad
     characterType: 1
