@@ -1,18 +1,18 @@
-ShowCharacterLeft(Ahlai -b TayabacLeft_Default_Body -e TayabacLeft_Default)
+ShowCharacterLeft(TayabacAhlai -b TayabacLeft_Default_Body -e TayabacLeft_Default)
 [wait]ShowCharacterRight(Dalawi -b Right_Default_Body -e Right_Smile)
 
 Dalawi at 1 "Oi, happy birthday, <playerName>. You've finally come of age."
 
 Dalawi at 1 "But you can always tell me if ya can't actually handle being chief! Haha!"
 
-ChangeBodyEmotion(Ahlai -b TayabacLeft_CrossArms_Body -e TayabacLeft_CrossArmsAngry)
+ChangeBodyEmotion(TayabacAhlai -b TayabacLeft_CrossArms_Body -e TayabacLeft_CrossArmsAngry)
 
-Ahlai as <playerName> at 0 "Pfft! Just watch me!"
+TayabacAhlai as <playerName> at 0 "Pfft! Just watch me!"
 
 Dalawi at 1 "I'm waiting, then!"
 
 Dalawi at 1 "Haha, I'm joking. Honestly, Dad chose you for a good reason. So... good luck at the ritual, <playerName>. You'll need it."
 
 HideTextbox(true)
-HideCharacter(Ahlai)
+HideCharacter(TayabacAhlai)
 HideCharacter(Dalawi)

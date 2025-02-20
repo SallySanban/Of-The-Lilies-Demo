@@ -1,5 +1,5 @@
 ShowCharacterLeft(Dad -b Left_Default_Body -e Left_Apologetic)
-[wait]ShowCharacterRight(Ahlai -b TayabacRight_Default_Body -e TayabacRight_Default)
+[wait]ShowCharacterRight(TayabacAhlai -b TayabacRight_Default_Body -e TayabacRight_Default)
 
 Dad at 0 "I know I've always been hard on you, <playerName>."
 
@@ -17,4 +17,4 @@ Dad at 0 "I have no doubt that you'll be able to lead well. Happy birthday, <pla
 
 HideTextbox(true)
 HideCharacter(Dad)
-HideCharacter(Ahlai)
+HideCharacter(TayabacAhlai)

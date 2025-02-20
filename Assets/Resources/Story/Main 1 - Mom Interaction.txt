@@ -1,5 +1,5 @@
 ShowCharacterLeft(Mom -b Left_SmileLiwani_Body -e Left_SmileLiwani)
-[wait]ShowCharacterRight(Ahlai -b TayabacRight_Default_Body -e TayabacRight_Default)
+[wait]ShowCharacterRight(TayabacAhlai -b TayabacRight_Default_Body -e TayabacRight_Default)
 
 Mom at 0 "Oh, <playerName>. It feels like only yesterday that I was cradling you in my arms, just like this."
 
@@ -13,4 +13,4 @@ Mom at 0 "Let's enjoy the celebration later, okay?"
 
 HideTextbox(true)
 HideCharacter(Mom)
-HideCharacter(Ahlai)
+HideCharacter(TayabacAhlai)

@@ -52,3 +52,9 @@ MonoBehaviour:
   - name: Soldier
     alias: soldier
     characterType: 0
+  - name: TayabacAhlai
+    alias: tayabacahlai
+    characterType: 1
+  - name: TayabacLien
+    alias: tayabaclien
+    characterType: 1

@@ -8,21 +8,21 @@ HideTextbox(false)
 Dad at 0 "<playerName>... You made it back..."
 
 HideTextbox(true)
-[wait]ShowCharacterRight(Lien -b TayabacRight_Default_Body -e TayabacRight_Proud)
+[wait]ShowCharacterRight(TayabacLien -b TayabacRight_Default_Body -e TayabacRight_Proud)
 
-Lien at 1 as ??? "So this is the rumoured chieftain-to-be."
-
-HideTextbox(true)
-[wait]SwitchCharacter(Dad Ahlai -p 0 -b TayabacLeft_Default_Body -e TayabacLeft_WorriedAngry)
-
-Ahlai at 0 as <playerName> "What is it that you want with us?"
-
-Lien at 1 as ??? "You will have to come with us. I'm sorry, but this has to be done. For the good of the <b>Seiyslan Empire</b>."
-
-Ahlai at 0 as <playerName> "<i><b>Seiyslan Empire?</b> Why does that name bring me so much... pain?</i>"
+TayabacLien at 1 as ??? "So this is the rumoured chieftain-to-be."
 
 HideTextbox(true)
-[wait]SwitchCharacter(Lien Dad -p 1 -b Right_Battered_Body -e Right_Battered)
+[wait]SwitchCharacter(Dad TayabacAhlai -p 0 -b TayabacLeft_Default_Body -e TayabacLeft_WorriedAngry)
+
+TayabacAhlai at 0 as <playerName> "What is it that you want with us?"
+
+TayabacLien at 1 as ??? "You will have to come with us. I'm sorry, but this has to be done. For the good of the <b>Seiyslan Empire</b>."
+
+TayabacAhlai at 0 as <playerName> "<i><b>Seiyslan Empire?</b> Why does that name bring me so much... pain?</i>"
+
+HideTextbox(true)
+[wait]SwitchCharacter(TayabacLien Dad -p 1 -b Right_Battered_Body -e Right_Battered)
 
 Dad at 1 "Don't listen to his lies, <playerName>. They want to take over Tayabac. We <b>can't</b> let that happen."
 
@@ -32,15 +32,15 @@ Dad at 1 "Now, go! I have another fight to settle..."
 
 HideTextbox(true)
 HideCharacter(Dad)
-HideCharacter(Ahlai)
+HideCharacter(TayabacAhlai)
 playSFX(SFX_DadWalk)
 ChangeAnimationState(Dad Run true)
 [wait]MoveNPC(Dad -x 76.74 -y -2.59 -spd 5)
 
-ShowCharacterLeft(Ahlai -b TayabacLeft_Default_Body -e TayabacLeft_WorriedAngry)
-[wait]ShowCharacterRight(Lien -b TayabacRight_Default_Body -e TayabacRight_Proud)
+ShowCharacterLeft(TayabacAhlai -b TayabacLeft_Default_Body -e TayabacLeft_WorriedAngry)
+[wait]ShowCharacterRight(TayabacLien -b TayabacRight_Default_Body -e TayabacRight_Proud)
 
-Lien at 1 as ??? "Listen, I do not want to hurt you. Stand down."
+TayabacLien at 1 as ??? "Listen, I do not want to hurt you. Stand down."
 
 choice in 0
 {
@@ -49,17 +49,17 @@ choice in 0
 		$Justice = 0
 		$Peace = 0
 
-		ChangeBodyEmotion(Ahlai -e TayabacLeft_Angry -b TayabacLeft_Angry_Body)
+		ChangeBodyEmotion(TayabacAhlai -e TayabacLeft_Angry -b TayabacLeft_Angry_Body)
 
-		Ahlai as <playerName> at 0 "And yet you've hurt the people I care the most about?"
+		TayabacAhlai as <playerName> at 0 "And yet you've hurt the people I care the most about?"
 
-		Ahlai as <playerName> at 0 "Do you think you can replace what you've taken from us?"
+		TayabacAhlai as <playerName> at 0 "Do you think you can replace what you've taken from us?"
 
-		Ahlai as <playerName> at 0 "The lives of our people? Our homes?"
+		TayabacAhlai as <playerName> at 0 "The lives of our people? Our homes?"
 
-		Ahlai as <playerName> at 0 "You don't want to hurt us? How dare you? <b>You already have.</b>"
+		TayabacAhlai as <playerName> at 0 "You don't want to hurt us? How dare you? <b>You already have.</b>"
 
-		Ahlai as <playerName> at 0 "You don't have the right to tell us to stand down"
+		TayabacAhlai as <playerName> at 0 "You don't have the right to tell us to stand down"
 
 		HideTextbox(true)
 		[wait]Blackout()
@@ -71,21 +71,21 @@ choice in 0
 		$Justice = 2
 		$Peace = 0
 		
-		ChangeBodyEmotion(Ahlai -e TayabacLeft_Incredulous -b TayabacLeft_Default_Body)
+		ChangeBodyEmotion(TayabacAhlai -e TayabacLeft_Incredulous -b TayabacLeft_Default_Body)
 	
-		Ahlai as <playerName> at 0 "No, no. This isn't right."
+		TayabacAhlai as <playerName> at 0 "No, no. This isn't right."
 
-		Ahlai as <playerName> at 0 "You say you don't want to hurt us, but what about the people you've killed? What about our homes?"
+		TayabacAhlai as <playerName> at 0 "You say you don't want to hurt us, but what about the people you've killed? What about our homes?"
 
-		Ahlai as <playerName> at 0 "You have to leave. I don't want to fight you."
+		TayabacAhlai as <playerName> at 0 "You have to leave. I don't want to fight you."
 
-		Lien as ??? at 1 "There is nothing I can do about this. It's already been decided."
+		TayabacLien as ??? at 1 "There is nothing I can do about this. It's already been decided."
 
-		Ahlai as <playerName> at 0 "I won't let you get in the way of our tribe. I'm giving you one last chance."
+		TayabacAhlai as <playerName> at 0 "I won't let you get in the way of our tribe. I'm giving you one last chance."
 
-		Ahlai as <playerName> at 0 "Leave or I'll make you leave."
+		TayabacAhlai as <playerName> at 0 "Leave or I'll make you leave."
 
-		Lien as ??? at 1 "It doesn't seem like we have a choice, do we?"
+		TayabacLien as ??? at 1 "It doesn't seem like we have a choice, do we?"
 
 		HideTextbox(true)
 		[wait]Blackout()
@@ -97,39 +97,39 @@ choice in 0
 		$Justice = 0
 		$Peace = 2
 
-		ChangeBodyEmotion(Ahlai -e TayabacLeft_Plead -b TayabacLeft_Plead_Body)
+		ChangeBodyEmotion(TayabacAhlai -e TayabacLeft_Plead -b TayabacLeft_Plead_Body)
 
-		Ahlai as <playerName> at 0 "I don't know why you're here or what you need from us, but there has to be a way you can leave us be."
+		TayabacAhlai as <playerName> at 0 "I don't know why you're here or what you need from us, but there has to be a way you can leave us be."
 
-		Ahlai as <playerName> at 0 "We have done nothing to destroy your peace. Let us go."
+		TayabacAhlai as <playerName> at 0 "We have done nothing to destroy your peace. Let us go."
 
-		ChangeBodyEmotion(Lien -e TayabacRight_Conflicted)
+		ChangeBodyEmotion(TayabacLien -e TayabacRight_Conflicted)
 
-		Lien as ??? at 1 "I'm sorry... It's already been decided. There is nothing I can do."
+		TayabacLien as ??? at 1 "I'm sorry... It's already been decided. There is nothing I can do."
 
-		Lien as ??? at 1 "Believe me. This is for the greater good."
+		TayabacLien as ??? at 1 "Believe me. This is for the greater good."
 
-		Ahlai as <playerName> at 0 "I don't want to fight you. But I don't want anyone else to get hurt."
+		TayabacAhlai as <playerName> at 0 "I don't want to fight you. But I don't want anyone else to get hurt."
 
-		Ahlai as <playerName> at 0 "If we surrender our land... Will you promise to keep my people safe?"
+		TayabacAhlai as <playerName> at 0 "If we surrender our land... Will you promise to keep my people safe?"
 
-		ChangeBodyEmotion(Lien -e TayabacRight_LookAway)
+		ChangeBodyEmotion(TayabacLien -e TayabacRight_LookAway)
 
-		Lien as ??? at 1 "I will... do my best."
+		TayabacLien as ??? at 1 "I will... do my best."
 
 		HideTextbox(true)
 		[wait]Blackout()
 }
 
 [wait]RemoveScene()
-HideCharacter(Ahlai)
-HideCharacter(Lien)
+HideCharacter(TayabacAhlai)
+HideCharacter(TayabacLien)
 
 stopEvent(Amb_Fire)
 stopEvent(Amb_SwordRiot)
 stopEvent(BGM_Scene3)
 
-Ahlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
+TayabacAhlai as <playerName> "<i>I never got to play with Alonay after all...</i>"
 
 ??? "Sir Lien!"
 
@@ -139,11 +139,11 @@ playSFX(SFX_LienFall)
 
 ??? "Someone get Sir Lien!"
 
-Lien "I'm fine. This is all... <b>for the good of the Seiyslan Empire.</b>"
+TayabacLien "I'm fine. This is all... <b>for the good of the Seiyslan Empire.</b>"
 
-Ahlai as <playerName> "<b><i>Lien...</b></i>"
+TayabacAhlai as <playerName> "<b><i>Lien...</b></i>"
 
-Ahlai as <playerName> "<b><i>I won't forget that name...</b></i>"
+TayabacAhlai as <playerName> "<b><i>I won't forget that name...</b></i>"
 
 HideTextbox(true)
 playMusic(BGM_Scene4)
@@ -188,18 +188,18 @@ ScrollBackground(false)
 RemoveScene()
 [wait]ResetCamera(false)
 
-Ahlai as <playerName> "<i>I remember it all like it was yesterday</i>."
+TayabacAhlai as <playerName> "<i>I remember it all like it was yesterday</i>."
 
 playMusic(BGM_Scene4-2)
 HideTextbox(true)
 [input]SwitchCG("Family Chained")
 
-Ahlai as <playerName> "<i>Our land was taken from us. Our people, killed</i>."
+TayabacAhlai as <playerName> "<i>Our land was taken from us. Our people, killed</i>."
 
 HideTextbox(true)
 [wait]Blackout()
 
-Ahlai as <playerName> "<i>And slowly... my family disappeared too.</i>"
+TayabacAhlai as <playerName> "<i>And slowly... my family disappeared too.</i>"
 
 HideTextbox(true)
 [input]SwitchCG("Dad Chained")
@@ -252,7 +252,7 @@ Alonay "No... Don't touch me! H-Help! <playerName>, I'm scared!"
 
 ??? "Hehe. Don't worry, little girl. There's a place for you too. I'll take <i>good</i> care of you..."
 
-Ahlai as <playerName> "Alonay!"
+TayabacAhlai as <playerName> "Alonay!"
 
 HideTextbox(true)
 playSFX(SFX_DoorSlam)
@@ -261,13 +261,13 @@ stopEvent(Amb_Leather)
 
 [wait]Blackout(-i true)
 
-Ahlai as <playerName> "NO!"
+TayabacAhlai as <playerName> "NO!"
 
 playAmbience(Amb_MuffledVoices)
 
-Ahlai as <playerName> "..."
+TayabacAhlai as <playerName> "..."
 
-Ahlai as <playerName> "<i>There are people talking outside... Is it not over?</i>"
+TayabacAhlai as <playerName> "<i>There are people talking outside... Is it not over?</i>"
 
 ??? "That one looks strong. I hear it was in line to be the next chief?"
 
@@ -291,13 +291,13 @@ stopEvent(Amb_MuffledVoices)
 HideTextbox(true)
 [input]ShowCG("Lady Sabina Save")
 
-Ahlai as <playerName> "...Who are you?"
+TayabacAhlai as <playerName> "...Who are you?"
 
 ??? "Don't worry, child. I'm here to help you."
 
 Sabina as Lady Sabina "You can call me... Lady Sabina."
 
-Ahlai as <playerName> "What do you want with me? Where did they take my family?"
+TayabacAhlai as <playerName> "What do you want with me? Where did they take my family?"
 
 Sabina as Lady Sabina "...I was too late for them. I'm sorry. But it's not too late for you."
 
@@ -312,9 +312,9 @@ choice in 2
 	- I need to avenge my family.
 		$Vengeance += 1
 
-		Ahlai as <playerName> "If it means I get to avenge my family... I do."
+		TayabacAhlai as <playerName> "If it means I get to avenge my family... I do."
 
-		Ahlai as <playerName> "It's their fault. <b><i>Lien</i></b> and the Seiyslan Empire... They took my family away from me. Did you even see what they did to my land? My tribe?"
+		TayabacAhlai as <playerName> "It's their fault. <b><i>Lien</i></b> and the Seiyslan Empire... They took my family away from me. Did you even see what they did to my land? My tribe?"
 
 		Sabina as Lady Sabina "I know you're hurting, child. I'll let you take your time to process what happened."
 
@@ -323,11 +323,11 @@ choice in 2
 	- Yes, to make things right.
 		$Justice += 1
 
-		Ahlai as <playerName> "If I go with you... will you help me make things right?"
+		TayabacAhlai as <playerName> "If I go with you... will you help me make things right?"
 
-		Ahlai as <playerName> "I... want to do something about what happened. I need to find my family, at least."
+		TayabacAhlai as <playerName> "I... want to do something about what happened. I need to find my family, at least."
 
-		Ahlai as <playerName> "I do not know if you understand, but... please, I have to do something! It's not right that they can just... take them away!"
+		TayabacAhlai as <playerName> "I do not know if you understand, but... please, I have to do something! It's not right that they can just... take them away!"
 
 		Sabina as Lady Sabina "You can take all the time you need to find the right answer for you."
 
@@ -336,9 +336,9 @@ choice in 2
 	- Please make this all end.
 		$Peace += 1
 		
-		Ahlai as <playerName> "Please, save me. I want it all to end..."
+		TayabacAhlai as <playerName> "Please, save me. I want it all to end..."
 
-		Ahlai as <playerName> "My family was taken away... I can't handle much more..."
+		TayabacAhlai as <playerName> "My family was taken away... I can't handle much more..."
 
 		Sabina as Lady Sabina "Shh, I understand, child. You're all right now. You no longer have to worry."
 }
@@ -372,7 +372,7 @@ choice in 2
 
 		Sabina as Lady Sabina "Ugh. You know I'm concerned for you, so you might as well be honest with me..."
 
-		Ahlai as <playerName> "Thank you for your concern, Lady Sabina..."
+		TayabacAhlai as <playerName> "Thank you for your concern, Lady Sabina..."
 }
 
 Sabina as Lady Sabina "Go get ready and head downstairs. Seiji's already manning the counter."
@@ -381,7 +381,7 @@ Sabina as Lady Sabina "I'll see to it that I prepare something for your sleep."
 
 Sabina as Lady Sabina "If you don't feel well, you tell me, okay?"
 
-Ahlai as <playerName> "Yes, ma'am."
+TayabacAhlai as <playerName> "Yes, ma'am."
 
 Sabina as Lady Sabina "Good."
 
