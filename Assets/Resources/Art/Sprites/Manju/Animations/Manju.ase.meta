@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748216397002746
+  platformSettingsDirtyTick: 638757762305711246
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -138,11 +138,211 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 168
       y: 4
       width: 148
       height: 404
-    spriteID: 612fcad2bd392594584b1b6a8c5ea339
+    spriteID: 61eaca9c343e9f248b1081fb51a9f9e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 4}
+  - name: Manju_Frame_1
+    originalName: 
+    pivot: {x: 1.3235295, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 4
+      width: 136
+      height: 400
+    spriteID: a900405d91437fc4283ccfac2031ab2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 480, y: 4}
+  - name: Manju_Frame_3
+    originalName: 
+    pivot: {x: 1.2368422, y: -0.8137255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 836
+      width: 152
+      height: 408
+    spriteID: b1dcc412ae7f8fd4ca71610112a3c0a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 836}
+  - name: Manju_Frame_2
+    originalName: 
+    pivot: {x: 1.2702702, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 416
+      width: 148
+      height: 404
+    spriteID: 3f9fbf2f1d153584f93b97eaaacac6f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 416}
+  - name: Manju_Frame_4
+    originalName: 
+    pivot: {x: 1.2702702, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 828
+      width: 148
+      height: 404
+    spriteID: e4f4137b67350a341a10ba07d79d2fe0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 828}
+  - name: Manju_Frame_5
+    originalName: 
+    pivot: {x: 1.3235295, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 412
+      width: 136
+      height: 400
+    spriteID: c55aecca8f6f27d4e924ff8ec767b2a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 480, y: 412}
+  - name: Manju_Frame_6
+    originalName: 
+    pivot: {x: 1.2702702, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 1240
+      width: 148
+      height: 404
+    spriteID: bca2b4bf27563654aadd962498748987
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 1240}
+  - name: Manju_Frame_7
+    originalName: 
+    pivot: {x: 1.2368422, y: -0.8137255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1252
+      width: 152
+      height: 408
+    spriteID: 00c4e2b334e654f4c8d17b6d6f6974a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1252}
+  - name: Manju_Frame_8
+    originalName: 
+    pivot: {x: 1.1351352, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 4
+      width: 148
+      height: 404
+    spriteID: 002e93da352ef19419e8f8e6e9408de4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 4}
+  - name: Manju_Frame_9
+    originalName: 
+    pivot: {x: 1.2058824, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 820
+      width: 136
+      height: 400
+    spriteID: cddd959687846424a87003077e89d838
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 480, y: 820}
+  - name: Manju_Frame_11
+    originalName: 
+    pivot: {x: 1.1025642, y: -0.8137255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 156
+      height: 408
+    spriteID: 07e9c1e5bcc91be4787da3f137eb9413
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +351,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Manju_Frame_1
+  - name: Manju_Frame_10
     originalName: 
-    pivot: {x: 1.2972972, y: -0.8217822}
+    pivot: {x: 1.1351352, y: -0.8217822}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 160
-      y: 4
+      x: 324
+      y: 416
       width: 148
       height: 404
-    spriteID: e0894fa1b2ab7ba4cac43a18c630a664
+    spriteID: 204fef442a92c4b42bd743cfab5512da
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +370,87 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 160, y: 4}
+    uvTransform: {x: 324, y: 416}
+  - name: Manju_Frame_12
+    originalName: 
+    pivot: {x: 1.1351352, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 828
+      width: 148
+      height: 404
+    spriteID: b31ae618b213fab41a90eca6abef7585
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 828}
+  - name: Manju_Frame_13
+    originalName: 
+    pivot: {x: 1.2058824, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 1228
+      width: 136
+      height: 400
+    spriteID: 278b655af5152c54cb534155324bafa2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 480, y: 1228}
+  - name: Manju_Frame_14
+    originalName: 
+    pivot: {x: 1.1351352, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 1240
+      width: 148
+      height: 404
+    spriteID: efa69151259d8404cb3f42edb53937c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 1240}
+  - name: Manju_Frame_15
+    originalName: 
+    pivot: {x: 1.1025642, y: -0.8137255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 420
+      width: 156
+      height: 408
+    spriteID: 0d39ffce0f1fbf8499a3c945cdaa4ffb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 420}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -188,16 +468,142 @@ ScriptedImporter:
         y: 332
         width: 148
         height: 404
-      spriteId: 612fcad2bd392594584b1b6a8c5ea339
+      spriteId: 61eaca9c343e9f248b1081fb51a9f9e2
     - name: Manju_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 768
+        x: 780
+        y: 332
+        width: 136
+        height: 400
+      spriteId: a900405d91437fc4283ccfac2031ab2c
+    - name: Manju_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 332
+        width: 152
+        height: 408
+      spriteId: b1dcc412ae7f8fd4ca71610112a3c0a1
+    - name: Manju_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
         y: 332
         width: 148
         height: 404
-      spriteId: e0894fa1b2ab7ba4cac43a18c630a664
+      spriteId: 3f9fbf2f1d153584f93b97eaaacac6f2
+    - name: Manju_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 332
+        width: 148
+        height: 404
+      spriteId: e4f4137b67350a341a10ba07d79d2fe0
+    - name: Manju_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 780
+        y: 332
+        width: 136
+        height: 400
+      spriteId: c55aecca8f6f27d4e924ff8ec767b2a3
+    - name: Manju_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 332
+        width: 148
+        height: 404
+      spriteId: bca2b4bf27563654aadd962498748987
+    - name: Manju_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 332
+        width: 152
+        height: 408
+      spriteId: 00c4e2b334e654f4c8d17b6d6f6974a6
+    - name: Manju_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 332
+        width: 148
+        height: 404
+      spriteId: 002e93da352ef19419e8f8e6e9408de4
+    - name: Manju_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 796
+        y: 332
+        width: 136
+        height: 400
+      spriteId: cddd959687846424a87003077e89d838
+    - name: Manju_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 788
+        y: 332
+        width: 156
+        height: 408
+      spriteId: 07e9c1e5bcc91be4787da3f137eb9413
+    - name: Manju_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 332
+        width: 148
+        height: 404
+      spriteId: 204fef442a92c4b42bd743cfab5512da
+    - name: Manju_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 332
+        width: 148
+        height: 404
+      spriteId: b31ae618b213fab41a90eca6abef7585
+    - name: Manju_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 796
+        y: 332
+        width: 136
+        height: 400
+      spriteId: 278b655af5152c54cb534155324bafa2
+    - name: Manju_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 332
+        width: 148
+        height: 404
+      spriteId: efa69151259d8404cb3f42edb53937c9
+    - name: Manju_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 788
+        y: 332
+        width: 156
+        height: 408
+      spriteId: 0d39ffce0f1fbf8499a3c945cdaa4ffb
     linkedCells: []
     parentIndex: -1
   platformSettings:
