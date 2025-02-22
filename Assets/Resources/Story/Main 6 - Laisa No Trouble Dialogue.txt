@@ -1,8 +1,12 @@
-pixel Ahlai as <playerName> "But I should let you know that the general is currently with his men at the tavern."
+ChangeBodyEmotion(Ahlai -e Left_Concerned)
 
-pixel Ahlai as <playerName> "You should hurry if you don't want to get caught. I'm more than ready to help you."
+Ahlai as <playerName> at 0 "But I should let you know that the general is currently with his men at the tavern."
 
-pixel Laisa as Ilaisaane "That's a first. Just what would you gain from helping me?"
+Ahlai as <playerName> at 0 "You should hurry if you don't want to get caught. I'm more than ready to help you."
+
+ChangeBodyEmotion(Laisa -e Right_Smirk)
+
+Laisa as Ilaisaane at 1 "That's a first. Just what would you gain from helping me?"
 
 choice in -1
 {
@@ -11,73 +15,108 @@ choice in -1
 
 		if (!$LaisaTalkedTo)
 		{
-			pixel Laisa as Ilaisaane "What's this? Is that a grudge I'm hearing?"
+			ChangeBodyEmotion(Ahlai -e Left_Conflicted)
 
-			pixel Ahlai as <playerName> "Let's just say I have some... history with him."
+			Laisa as Ilaisaane at 1 "What's this? Is that a grudge I'm hearing?"
 
-			pixel Ahlai as <playerName> "So, believe me, I'm here to help you. If you have the information I need, I know a place you can hide."
+			Ahlai as <playerName> at 0 "Let's just say I have some... history with him."
+
+			ChangeBodyEmotion(Ahlai -e Left_Stern)
+
+			Ahlai as <playerName> at 0 "So, believe me, I'm here to help you. If you have the information I need, I know a place you can hide."
 		}
 		else
 		{
-			pixel Laisa as Ilaisaane "Ah, that's right. You have history with the general."
+			ChangeBodyEmotion(Laisa -e Right_Thought)
+			ChangeBodyEmotion(Ahlai -e Left_Stern)
 
-			pixel Ahlai as <playerName> "Yes. So, believe me, I'm here to help you. If you have the information I need, I know a place you can hide."
+			Laisa as Ilaisaane at 1 "Ah, that's right. You have history with the general."
+
+			Ahlai as <playerName> at 0 "Yes. So, believe me, I'm here to help you. If you have the information I need, I know a place you can hide."
 		}
 
 	- I need help finding my family.
 		$Justice += 1
 
-		pixel Laisa as Ilaisaane "Your family?"
+		ChangeBodyEmotion(Laisa -e Right_Thought)
 
-		pixel Ahlai as <playerName> "You're a pirate, yes? I might be able to find them if I join you on your ship."
+		Laisa as Ilaisaane at 1 "Your family?"
+
+		ChangeBodyEmotion(Ahlai -e Left_Stern)
+
+		Ahlai as <playerName> at 0 "You're a pirate, yes? I might be able to find them if I join you on your ship."
+
+		ChangeBodyEmotion(Ahlai -e Left_Conflicted)
 
 		if (!$LaisaTalkedTo)
 		{
-			pixel Ahlai as <playerName> "I know just what the general is capable of. It was him that... took my family away from me."
+			Ahlai as <playerName> at 0 "I know just what the general is capable of. It was him that... took my family away from me."
 
-			pixel Ahlai as <playerName> "And I don't want you to suffer the same fate. I'm here to help you if you wish."
+			ChangeBodyEmotion(Ahlai -e Left_Stern)
 
-			pixel Laisa as Ilaisaane "I mean, I don't have a <i>family</i> unless my crew counts. But I get it."
+			Ahlai as <playerName> at 0 "And I don't want you to suffer the same fate. I'm here to help you if you wish."
+
+			Laisa as Ilaisaane at 1 "I mean, I don't have a <i>family</i> unless my crew counts. But I get it."
 		}
 		else
 		{
-			pixel Ahlai as <playerName> "You asked about my history with the general earlier. It was him that... took them away from me."
+			Ahlai as <playerName> at 0 "You asked about my history with the general earlier. It was him that... took them away from me."
 
-			pixel Ahlai as <playerName> "If you can help me, I know a place you can hide."
+			ChangeBodyEmotion(Ahlai -e Left_Stern)
 
-			pixel Laisa as Ilaisaane "Good."
+			Ahlai as <playerName> at 0 "If you can help me, I know a place you can hide."
+
+			Laisa as Ilaisaane at 1 "Good."
 		}
 
 	- I just want to help you.
 		$Peace += 1
 
-		pixel Ahlai as <playerName> "I don't need anything from you. I just thought we might have the same feelings towards the general."
+		ChangeBodyEmotion(Ahlai -e Left_Stern)
+
+		Ahlai as <playerName> at 0 "I don't need anything from you. I just thought we might have the same feelings towards the general."
 
 		if (!$LaisaTalkedTo)
 		{
-			pixel Laisa as Ilaisaane "Ah, you're not a fan of the general either, huh?"
+			Laisa as Ilaisaane at 1 "Ah, you're not a fan of the general either, huh?"
 
-			pixel Ahlai as <playerName> "Let's just say I have some... history with him."
+			ChangeBodyEmotion(Ahlai -e Left_Conflicted)
 
-			pixel Ahlai as <playerName> "So, believe me, I'm here to help you if you wish."
+			Ahlai as <playerName> at 0 "Let's just say I have some... history with him."
+
+			ChangeBodyEmotion(Ahlai -e Left_Stern)
+
+			Ahlai as <playerName> at 0 "So, believe me, I'm here to help you if you wish."
 		}
 		else
 		{
-			pixel Laisa as Ilaisaane "Ah, that's right. You have history with the general."
+			ChangeBodyEmotion(Laisa -e Right_Thought)
 
-			pixel Ahlai as <playerName> "Yes. So, believe me, I'm here to help you if you wish."
+			Laisa as Ilaisaane at 1 "Ah, that's right. You have history with the general."
+
+			Ahlai as <playerName> at 0 "Yes. So, believe me, I'm here to help you if you wish."
 		}
 }
 
-pixel Laisa as Ilaisaane "That's very tempting, but I can handle things well alone. While I'd be more than happy to lend you a hand, it's best if you weren't entangled with a pirate."
+ChangeBodyEmotion(Laisa -e Right_Smirk)
 
-pixel Laisa as Ilaisaane "At least, not in the way you suggest."
+Laisa as Ilaisaane at 1 "That's very tempting, but I can handle things well alone. While I'd be more than happy to lend you a hand, it's best if you weren't entangled with a pirate."
 
-pixel Laisa as Ilaisaane "But you're an interesting one. I might just come to you if I'm in need of assistance. What did you say your name was?"
+ChangeBodyEmotion(Laisa -e Right_Wink)
 
-pixel Ahlai as <playerName> "It's <playerName>."
+Laisa as Ilaisaane at 1 "At least, not in the way you suggest."
 
-pixel Laisa as Ilaisaane "<playerName>... I'll make sure to remember. And you can call me Laisa."
+ChangeBodyEmotion(Laisa -e Right_Smirk)
 
+Laisa as Ilaisaane at 1 "But you're an interesting one. I might just come to you if I'm in need of assistance. What did you say your name was?"
+
+ChangeBodyEmotion(Ahlai -e Left_Smile)
+
+Ahlai as <playerName> at 0 "It's <playerName>."
+
+Laisa as Ilaisaane at 1 "<playerName>... I'll make sure to remember. And you can call me Laisa."
+
+HideCharacter(Laisa)
+HideCharacter(Ahlai)
 HideTextbox(true)
 Load("Main 6 - Laisa Lien Interaction")

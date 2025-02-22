@@ -18,140 +18,176 @@ pixel Soldier2 as Seiyslan Soldier "Between us, even I'd risk it all, if I were 
 
 pixel Lien as General Lien "No, I wouldn't know. Quit your leering."
 
-pixel Ahlai as <playerName> "<i>'Wouldn't know', huh?</i>"
+[wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Thought)
 
-pixel Ahlai as <playerName> "<i>Sir Lien is <b>right there</b>... But what could I even do? I should do something, shouldn't I?</i>"
+Ahlai as <playerName> at 0 "<i>'Wouldn't know', huh?</i>"
 
-choice in -1
+Ahlai as <playerName> at 0 "<i>Sir Lien is <b>right there</b>... But what could I even do? I should do something, shouldn't I?</i>"
+
+choice in 0
 {
 	- <i>I should punch him.</i>
 		$Vengeance += 2
 
 		pauseEvent(BGM_Lien)
+		ChangeBodyEmotion(Ahlai -e Left_Angry)
 
-		pixel Ahlai as <playerName> "Excuse me..."
-
-		pixel Lien as General Lien "...?"
-
-		pixel Lien as General Lien "Who are you? And why are you looking at me like that?"
-
-		pixel Ahlai as <playerName> "<i>He doesn't know who I am?! This man is lucky I'm not punching him, like this...!</i>"
+		Ahlai as <playerName> at 0 "Excuse me..."
 
 		HideTextbox(true)
-		[wait]Blackout(-i true)
+		[wait]ShowCharacterRight(Lien -b Right_Default_Body -e Right_Stern)
 
+		Lien as General Lien at 1 "...?"
+
+		Lien as General Lien at 1 "Who are you? And why are you looking at me like that?"
+
+		Ahlai as <playerName> at 0 "<i>He doesn't know who I am?! This man is lucky I'm not punching him, like this...!</i>"
+
+		HideTextbox(true)
 		playSFX(SFX_Whack)
+		[wait]Blackout(-i true)
 
 		Ahlai as <playerName> "<i>Somehow, I feel... relieved.</i>"
 
 		resumeEvent(BGM_Lien)
 
 		HideTextbox(true)
+		ChangeBodyEmotion(Ahlai -e Left_Surprised)
 		[wait]HideCG()
 
-		pixel Lien as General Lien "...Is there something you need to tell me?"
+		Lien as General Lien at 1 "...Is there something you need to tell me?"
 
-		pixel Ahlai as <playerName> "<i>I was imagining something dangerous there...</i>"
+		ChangeBodyEmotion(Ahlai -e Left_Conflicted)
 
-		pixel Ahlai as <playerName> "<i>I guess... I'll just try my luck with getting information out of them...</i>"
+		Ahlai as <playerName> at 0 "<i>I was imagining something dangerous there...</i>"
+
+		Ahlai as <playerName> at 0 "<i>I guess... I'll just try my luck with getting information out of them...</i>"
 
 	- <i>I'm confronting him.</i>
 		$Justice += 2
 		$Lien += 1
 
-		pixel Ahlai as <playerName> "<i>I can't let this opportunity go to waste, as tough as it is to face him...</i>"
+		ChangeBodyEmotion(Ahlai -e Left_Thought)
 
-		pixel Ahlai as <playerName> "<i>Okay, this won't be too hard if I play my cards right...</i>"
+		Ahlai as <playerName> at 0 "<i>I can't let this opportunity go to waste, as tough as it is to face him...</i>"
 
-		pixel Ahlai as <playerName> "Excuse me, General Lien?"
+		Ahlai as <playerName> at 0 "<i>Okay, this won't be too hard if I play my cards right...</i>"
 
-		pixel Lien as General Lien "...?"
+		ChangeBodyEmotion(Ahlai -e Left_Pursed)
 
-		pixel Lien as General Lien "Who are you?"
+		Ahlai as <playerName> at 0 "Excuse me, General Lien?"
 
+		HideTextbox(true)
+		[wait]ShowCharacterRight(Lien -b Right_Default_Body -e Right_Stern)
+
+		Lien as General Lien at 1 "...?"
+
+		Lien as General Lien at 1 "Who are you?"
+
+		ChangeBodyEmotion(Ahlai -e Left_Surprised)
 	- <i>I should just ignore him.</i>
 		$Peace += 2
 
-		pixel Ahlai as <playerName> "<i>...Well, it is still very tempting to do something about it.</i>"
+		ChangeBodyEmotion(Ahlai -e Left_Thought)
 
-		pixel Ahlai as <playerName> "<i>But now isn't the time, and I suppose punching him would hardly resolve anything.</i>"
+		Ahlai as <playerName> at 0 "<i>...Well, it is still very tempting to do something about it.</i>"
 
-		pixel Ahlai as <playerName> "<i>He might have a lead on where the rest of my family could be, but... how could I get that out of him?</i>"
+		Ahlai as <playerName> at 0 "<i>But now isn't the time, and I suppose punching him would hardly resolve anything.</i>"
 
-		pixel Ahlai as <playerName> "<i>It's worth a shot.</i>"
+		Ahlai as <playerName> at 0 "<i>He might have a lead on where the rest of my family could be, but... how could I get that out of him?</i>"
 
-		pixel Ahlai as <playerName> "Excuse me, General Lien?"
+		Ahlai as <playerName> at 0 "<i>It's worth a shot.</i>"
 
-		pixel Lien as General Lien "...?"
+		ChangeBodyEmotion(Ahlai -e Left_Pursed)
 
-		pixel Lien as General Lien "Who are you?"
+		Ahlai as <playerName> at 0 "Excuse me, General Lien?"
+
+		HideTextbox(true)
+		[wait]ShowCharacterRight(Lien -b Right_Default_Body -e Right_Stern)
+
+		Lien as General Lien at 1 "...?"
+
+		Lien as General Lien at 1 "Who are you?"
+
+		ChangeBodyEmotion(Ahlai -e Left_Surprised)
 }
 
-pixel Ahlai as <playerName> "You don't... know who I am?"
+Ahlai as <playerName> at 0 "You don't... know who I am?"
 
-pixel Lien as General Lien "I'm afraid not. Did you have any business with the Imperial Army?"
+Lien as General Lien at 1 "I'm afraid not. Did you have any business with the Imperial Army?"
 
 pixel Soldier1 as Seiyslan Soldier "No need to be so rigid, General! I'm sure this one couldn't help but throw themselves at ya! They look rather <i>fine</i>, don't ya think?!"
 
-pixel Ahlai as <playerName> "..."
+ChangeBodyEmotion(Ahlai -e Left_Thought)
+
+Ahlai as <playerName> at 0 "..."
 
 $PunchOption = false
 $InfoOption = false
 $FeedEgoOption = false
 
-choice in -1
+choice in 0
 {
 	- <i>They flatter themselves, why don't I call them out...</i>
 		$Vengeance += 1
 
-		pixel Ahlai as <playerName> "I just said 'excuse me' and you all think I'm here to take someone home tonight?"
+		ChangeBodyEmotion(Ahlai -e Left_Disgusted)
+
+		Ahlai as <playerName> at 0 "I just said 'excuse me' and you all think I'm here to take someone home tonight?"
 
 		pixel Soldier1 as Seiyslan Soldier "Were you not?"
 
 		pixel Soldier1 as Seiyslan Soldier "If you are, take this one home, he hasn't had any in a good while-"
 
-		pixel Lien as General Lien "I already <i>said</i> I am not here for anyone to 'throw themselves' at. And not on alcohol..."
+		Lien as General Lien at 1 "I already <i>said</i> I am not here for anyone to 'throw themselves' at. And not on alcohol..."
 
-		pixel Ahlai as <playerName> "Well, <i>you</i> heard the man. He said no."
+		Ahlai as <playerName> at 0 "Well, <i>you</i> heard the man. He said no."
 
 		pixel Soldier1 as Seiyslan Soldier "C'mon, look at you..."
 
-		pixel Ahlai as <playerName> "Now <i>I</i> would like to say no, thank you."
+		Ahlai as <playerName> at 0 "Now <i>I</i> would like to say no, thank you."
 
 		pixel Soldier1 as Seiyslan Soldier "You could just take the compliment. How often do you have us soldiers here in town, y'know? And with the General, too. To protect you! To thank us, really..."
 
-		pixel Ahlai as <playerName> "Frankly, this is hardly a compliment coming from <i>you</i>."
+		Ahlai as <playerName> at 0 "Frankly, this is hardly a compliment coming from <i>you</i>."
 
 		pixel Soldier2 as Seiyslan Soldier "Hah, you aren't wrong!"
 
 		pixel Soldier1 as Seiyslan Soldier "Wha-you're siding with this stranger?!"
 
-		pixel Ahlai as <playerName> "I wasn't interested and neither was your General."
+		ChangeBodyEmotion(Ahlai -e Left_Stern)
+
+		Ahlai as <playerName> at 0 "I wasn't interested and neither was your General."
 
 		pixel Soldier1 as Seiyslan Soldier "I'm just trying to set a man up with a good time!"
 
-		pixel Lien as General Lien "<i>Excuse me?</i>"
+		ChangeBodyEmotion(Lien -e Right_Frown)
+
+		Lien as General Lien at 1 "<i>Excuse me?</i>"
 
 		pixel Soldier1 as Seiyslan Soldier "If you don't want that, you can keep your legs shut and carry that stick up your arse, you ugly f-"
 
-		pixel Lien as General Lien "<i>Unacceptable!</i> You. Go back to your damn station."
+		ChangeBodyEmotion(Ahlai -e Left_Surprised)
+
+		Lien as General Lien at 1 "<i>Unacceptable!</i> You. Go back to your damn station."
 
 		pixel Soldier1 as Seiyslan Soldier "Sir, I-uh. Oh, you're, um. I'm sorry, didn't mean to upset you, sir, I just wanted you to have a good time-"
 
-		pixel Lien as General Lien "I said <i>no</i> and I said to to <i>go back</i> to your station."
+		Lien as General Lien at 1 "I said <i>no</i> and I said to to <i>go back</i> to your station."
 
 		pixel Soldier1 as Seiyslan Soldier "..."
 
 		HideTextbox(true)
 		[wait]Blackout()
 		RemoveFromScene("Soldier1")
+		ChangeBodyEmotion(Lien -e Right_Stern)
 		[wait]HideCG()
 
-		pixel Ahlai as <playerName> "Oh, I apologize if I..."
+		Ahlai as <playerName> at 0 "Oh, I apologize if I..."
 
-		pixel Lien as General Lien "<i>I</i> apologize for his earlier behavior. I will address him later."
+		Lien as General Lien at 1 "<i>I</i> apologize for his earlier behavior. I will address him later."
 
-		pixel Lien as General Lien "Was there something that you needed from me?"
+		Lien as General Lien at 1 "Was there something that you needed from me?"
 
 		$PunchOption = true
 
@@ -159,29 +195,39 @@ choice in -1
 		$Justice += 1
 		$Lien += 2
 
-		pixel Ahlai as <playerName> "<i>What a bad impression these soldiers are making. Maybe if they get drunk enough, that'll make things easier...</i>"
+		Ahlai as <playerName> at 0 "<i>What a bad impression these soldiers are making. Maybe if they get drunk enough, that'll make things easier...</i>"
 
-		pixel Lien as General Lien "I have no plans to entertain <i>anyone</i> tonight. We still have <i>work</i>. This is your last chance before I have to write you up."
+		ChangeBodyEmotion(Lien -e Right_Frown)
+
+		Lien as General Lien at 1 "I have no plans to entertain <i>anyone</i> tonight. We still have <i>work</i>. This is your last chance before I have to write you up."
 
 		pixel Soldier1 as Seiyslan Soldier "Yeesh, fine..."
 
-		pixel Ahlai as <playerName> "Good evening, actually. I could not help but notice that you are all men in uniform, so..."
+		ChangeBodyEmotion(Ahlai -e Left_Smile)
 
-		pixel Ahlai as <playerName> "If the General here wouldn't mind, then... could he perhaps do us all another service and help me out? While you're here in Kuchai Town?"
+		Ahlai as <playerName> at 0 "Good evening, actually. I could not help but notice that you are all men in uniform, so..."
 
-		pixel Ahlai as <playerName> "Only if it's not too inconvenient, of course."
+		Ahlai as <playerName> at 0 "If the General here wouldn't mind, then... could he perhaps do us all another service and help me out? While you're here in Kuchai Town?"
+
+		Ahlai as <playerName> at 0 "Only if it's not too inconvenient, of course."
 
 		pixel Soldier1 as Seiyslan Soldier "I mean... are you gonna be, y'know, <i>thanking</i> him for his service?"
 
-		pixel Ahlai as <playerName> "Oh... thank him, how?"
+		ChangeBodyEmotion(Ahlai -b Left_Question_Body -e Left_Question)
 
-		pixel Lien as General Lien "You-! Ugh, ignore them. I can handle a few questions. <i>If</i> I can be of help."
+		Ahlai as <playerName> at 0 "Oh... thank him, how?"
+
+		ChangeBodyEmotion(Lien -e Right_Flustered)
+
+		Lien as General Lien at 1 "You-! Ugh, ignore them. I can handle a few questions. <i>If</i> I can be of help."
 		
-		pixel Lien as General Lien "We are off duty right now, so forgive me if they happen to be unruly tonight."
+		ChangeBodyEmotion(Lien -e Right_Stern)
 
-		pixel Ahlai as <playerName> "<i>Forgive you, huh...</i>"
+		Lien as General Lien at 1 "We are off duty right now, so forgive me if they happen to be unruly tonight."
 
-		pixel Lien as General Lien "What is it that you needed help with?"
+		Ahlai as <playerName> at 0 "<i>Forgive you, huh...</i>"
+
+		Lien as General Lien at 1 "What is it that you needed help with?"
 
 		$InfoOption = true
 
@@ -189,37 +235,45 @@ choice in -1
 		$Peace += 1
 		$Lien += 1
 
-		pixel Ahlai as <playerName> "<i>These soldiers all want me to talk up their mighty general. I think I know what to do.</i>"
+		Ahlai as <playerName> at 0 "<i>These soldiers all want me to talk up their mighty general. I think I know what to do.</i>"
 
-		pixel Ahlai as <playerName> "I'm not just fine to look at, y'know, haha!"
+		ChangeBodyEmotion(Ahlai -e Left_FlirtTease)
+
+		Ahlai as <playerName> at 0 "I'm not just fine to look at, y'know, haha!"
 
 		pixel Soldier1 as Seiyslan Soldier "Oh?"
 
-		pixel Ahlai as <playerName> "I just figured that as one of the townspeople, I should make sure you all feel <i>welcome</i> while you are in Kuchai Town. Maybe even feel at home?"
+		Ahlai as <playerName> at 0 "I just figured that as one of the townspeople, I should make sure you all feel <i>welcome</i> while you are in Kuchai Town. Maybe even feel at home?"
 
 		pixel Soldier1 as Seiyslan Soldier "Hehe, how are you planning to do that, huh?"
 
-		pixel Ahlai as <playerName> "It's such an honor to even <i>meet</i> anyone from the capital-the Kingdom of Seiysla."
+		Ahlai as <playerName> at 0 "It's such an honor to even <i>meet</i> anyone from the capital-the Kingdom of Seiysla."
 
-		pixel Ahlai as <playerName> "So... I'd just like to hear <i>all</i> about the things you and your men do, General."
+		Ahlai as <playerName> at 0 "So... I'd just like to hear <i>all</i> about the things you and your men do, General."
 
 		pixel Soldier1 as Seiyslan Soldier "He could also tell you the things he's about to do!"
 
-		pixel Lien as General Lien "I-what? Are you referring to the plans of the army? Because that information is classified."
+		ChangeBodyEmotion(Lien -e Right_Frown)
+
+		Lien as General Lien at 1 "I-what? Are you referring to the plans of the army? Because that information is classified."
 
 		pixel Soldier1 as Seiyslan Soldier "Pff, not unless you want that! Just read the room, sir!"
 
-		pixel Lien as General Lien "What is there to read?"
+		Lien as General Lien at 1 "What is there to read?"
 
-		pixel Ahlai as <playerName> "Oh, forgive me. I suppose I shouldn't be hearing about these things, but I would be honored if you could help me with something. It is just for a while."
+		Ahlai as <playerName> at 0 "Oh, forgive me. I suppose I shouldn't be hearing about these things, but I would be honored if you could help me with something. It is just for a while."
 
-		pixel Ahlai as <playerName> "I thought you and your men would be able to provide what I'm asking for..."
+		Ahlai as <playerName> at 0 "I thought you and your men would be able to provide what I'm asking for..."
 
 		pixel Soldier1 as Seiyslan Soldier "C'mon, take 'em home, sir!"
 
-		pixel Lien as General Lien "...U-Uh, I think my men have derailed this conversation."
+		ChangeBodyEmotion(Lien -e Right_Flustered)
 
-		pixel Lien as General Lien "Yes, I can help you - what is it that you needed from me?"
+		Lien as General Lien at 1 "...U-Uh, I think my men have derailed this conversation."
+
+		ChangeBodyEmotion(Lien -e Right_Stern)
+
+		Lien as General Lien at 1 "Yes, I can help you - what is it that you needed from me?"
 
 		$FeedEgoOption = true
 }

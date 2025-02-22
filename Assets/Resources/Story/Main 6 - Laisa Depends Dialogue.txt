@@ -1,12 +1,16 @@
-pixel Ahlai as <playerName> "The general is with his men at the tavern right now, you know."
+ChangeBodyEmotion(Ahlai -e Left_Suspicious)
 
-pixel Ahlai as <playerName> "I could alert him and have you captured again, or I could offer you my help. All you need to do is ask."
+Ahlai as <playerName> at 0 "The general is with his men at the tavern right now, you know."
 
-pixel Ahlai as <playerName> "I won't be your enemy if you don't make one of me, anyway. You can trust that much."
+Ahlai as <playerName> at 0 "I could alert him and have you captured again, or I could offer you my help. All you need to do is ask."
 
-pixel Laisa as Ilaisaane "Then you can trust me when I say I'm more than capable of handling things on my own. I do not need your pity, or to find myself owing a stranger anything."
+Ahlai as <playerName> at 0 "I won't be your enemy if you don't make one of me, anyway. You can trust that much."
 
-pixel Laisa as Ilaisaane "But I do need to make sure you'll never say anything about seeing me to anyone. Shall we do this the easy way or the hard way?"
+ChangeBodyEmotion(Laisa -e Right_Smirk)
+
+Laisa as Ilaisaane at 1 "Then you can trust me when I say I'm more than capable of handling things on my own. I do not need your pity, or to find myself owing a stranger anything."
+
+Laisa as Ilaisaane at 1 "But I do need to make sure you'll never say anything about seeing me to anyone. Shall we do this the easy way or the hard way?"
 
 choice in -1
 {
@@ -14,53 +18,77 @@ choice in -1
 		$Laisa += 1
 		$LaisaNoWorries = true
 
-		pixel Ahlai as <playerName> "I know just what the general is capable of. I wouldn't want you to suffer the same fate."
+		ChangeBodyEmotion(Ahlai -e Left_Conflicted)
+
+		Ahlai as <playerName> at 0 "I know just what the general is capable of. I wouldn't want you to suffer the same fate."
+
+		ChangeBodyEmotion(Laisa -e Right_Thought)
 
 		if (!$LaisaTalkedTo)
 		{
-			pixel Laisa as Ilaisaane "You're not a fan of the general either, huh?"
+			Laisa as Ilaisaane at 1 "You're not a fan of the general either, huh?"
 		
-			pixel Ahlai as <playerName> "Let's just say I have some... history with him."
+			Ahlai as <playerName> at 0 "Let's just say I have some... history with him."
 
-			pixel Ahlai as <playerName> "So, believe me, I'm here to help you if you wish."
+			ChangeBodyEmotion(Ahlai -e Left_Concerned)
+
+			Ahlai as <playerName> at 0 "So, believe me, I'm here to help you if you wish."
 		}
 		else
 		{
-			pixel Laisa as Ilaisaane "Ah, that's right. You have history with the general."
+			Laisa as Ilaisaane at 1 "Ah, that's right. You have history with the general."
 
-			pixel Ahlai as <playerName> "Yes. So, believe me, I'm here to help you if you wish."
+			ChangeBodyEmotion(Ahlai -e Left_Concerned)
+
+			Ahlai as <playerName> at 0 "Yes. So, believe me, I'm here to help you if you wish."
 		}
 
-		pixel Laisa as Ilaisaane "I don't doubt you. But I don't think it's wise for you to get tangled with the likes of me."
+		ChangeBodyEmotion(Laisa -e Right_Smirk)
 
-		pixel Ahlai as <playerName> "You think I'm too fragile for danger?"
+		Laisa as Ilaisaane at 1 "I don't doubt you. But I don't think it's wise for you to get tangled with the likes of me."
 
-		pixel Laisa as Ilaisaane "I only think you're too precious for all this trouble. You're the only one whose first instinct wasn't to run from me. That's something, don't you think?"
+		ChangeBodyEmotion(Ahlai -e Left_Upset)
 
-		pixel Ahlai as <playerName> "What do you mean, then? If you still don't want my help, I'll be on my way. But if you need somewhere new to hide, I might know a place."
+		Ahlai as <playerName> at 0 "You think I'm too fragile for danger?"
+
+		Laisa as Ilaisaane at 1 "I only think you're too precious for all this trouble. You're the only one whose first instinct wasn't to run from me. That's something, don't you think?"
+
+		ChangeBodyEmotion(Ahlai -e Left_Pursed)
+
+		Ahlai as <playerName> at 0 "What do you mean, then? If you still don't want my help, I'll be on my way. But if you need somewhere new to hide, I might know a place."
 
 		pauseEvent(BGM_KuchaiTown)
 		playMusic(BGM_Lein)
-
+		HideCharacter(Laisa)
+		HideCharacter(Ahlai)
 		HideTextbox(true)
 		Load("Main 6 - Laisa Lien Interaction")
 
 	- It seems your life is in my hands.
-		pixel Ahlai as <playerName> "Shouldn't you be more courteous with me?"
+		Ahlai as <playerName> at 0 "Shouldn't you be more courteous with me?"
 
-		pixel Laisa as Ilaisaane "I don't give courtesies to people I can't trust."
+		ChangeBodyEmotion(Laisa -e Right_Stern)
+		ChangeBodyEmotion(Ahlai -e Left_Challenge)
 
-		pixel Laisa as Ilaisaane "Listen, and listen well. I'll be generous this time and spare your life. But remember this - you may know of me, but I guarantee you, you'll never be able to find me."
+		Laisa as Ilaisaane at 1 "I don't give courtesies to people I can't trust."
 
-		pixel Laisa as Ilaisaane "But finding you? Easier than you think. So you better think twice before opening that pretty little mouth of yours while you're with me."
+		Laisa as Ilaisaane at 1 "Listen, and listen well. I'll be generous this time and spare your life. But remember this - you may know of me, but I guarantee you, you'll never be able to find me."
 
-		pixel Ahlai as <playerName> "We'll see about that."
+		ChangeBodyEmotion(Laisa -e Right_Smirk)
 
-		pixel Ahlai as <playerName> "Help! The Sea Emperor has escaped!"
+		Laisa as Ilaisaane at 1 "But finding you? Easier than you think. So you better think twice before opening that pretty little mouth of yours while you're with me."
+
+		Ahlai as <playerName> at 0 "We'll see about that."
+
+		ChangeBodyEmotion(Laisa -e Right_Angry)
+		ChangeBodyEmotion(Ahlai -e Left_Shout)
+
+		Ahlai as <playerName> at 0 "Help! The Sea Emperor has escaped!"
 
 		pauseEvent(BGM_KuchaiTown)
 		playMusic(BGM_Lien)
-
+		HideCharacter(Ahlai)
+		HideCharacter(Laisa)
 		HideTextbox(true)
 		[wait]PanCamera(-x 25.74 -spd 7)
 
@@ -77,13 +105,21 @@ choice in -1
 		SetNPCPosition("Lien" -x -3052.96 -y -219.47)
 		[wait]HideCG()
 
-		pixel Laisa as Ilaisaane "You vermin."
+		ShowCharacterRight(Laisa -b Right_Default_Body -e Right_Angry)
+		[wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Challenge)
+
+		Laisa as Ilaisaane at 1 "You vermin."
+
+		HideTextbox(true)
+		[wait]SwitchCharacter(Ahlai Lien -b Left_Default_Body -e Left_Stern)
 
 		FlipNPC(Laisa Right)
 
-		pixel Lien as General Lien "If you thought you could escape from me again, you would be dead wrong."
+		Lien as General Lien at 0 "If you thought you could escape from me again, you would be dead wrong."
 
-		pixel Laisa as Ilaisaane "Try and stop me, General!"
+		ChangeBodyEmotion(Laisa -e Right_Smirk)
+
+		Laisa as Ilaisaane at 1 "Try and stop me, General!"
 
 		Load("Main 7 - Curses Interaction")
 }

@@ -14,16 +14,19 @@ RemoveScene()
 [wait]ShowScene("Scene 12" "Ahlai's Bedroom")
 [wait]HideCG()
 
-pixel Ahlai as <playerName> "Lady Sabina...? What time is it?"
+[wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Concerned)
+
+Ahlai as <playerName> at 0 "Lady Sabina...? What time is it?"
 
 pixel Sabina as Lady Sabina "Just before dawn. Was it the nightmares, dear? You look distressed."
 
-pixel Ahlai as <playerName> "Yes, the nightmares... They just won't stop."
+Ahlai as <playerName> at 0 "Yes, the nightmares... They just won't stop."
 
 pixel Sabina as Lady Sabina "..."
 
 pixel Sabina as Lady Sabina "I'll give you some time to recover. When you do, <b>come down to the Order of La Liryo room</b>. There is something important I need to tell you."
 
+HideCharacter(Ahlai)
 HideTextbox(true)
 [wait]Blackout()
 RemoveFromScene("Sabina")

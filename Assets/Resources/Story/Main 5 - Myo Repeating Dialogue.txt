@@ -1,110 +1,168 @@
-pixel Ahlai as <playerName> "<i>What should I ask?</i>"
+ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
+ChangeBodyEmotion(Myo -e Left_Smile)
+
+Ahlai as <playerName> at 1 "<i>What should I ask?</i>"
 
 choice in -1
 {
 	- if ($TablemateChosen) Who was at the table with you just now?
-		pixel Ahlai as <playerName> "If you do not mind me asking, just who was that at the table with you just now?"
+		Ahlai as <playerName> at 1 "If you do not mind me asking, just who was that at the table with you just now?"
 
-		pixel Myo "Oh, forget about that."
+		Myo at 0 "Oh, forget about that."
 
-		pixel Myo "He already took up the time we could've spent enjoying each other's company."
+		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Blush)
 
-		pixel Myo "Though, I could be persuaded to tell you if you agree to meet like this again sometime."
+		Myo at 0 "He already took up the time we could've spent enjoying each other's company."
 
-		pixel Ahlai as <playerName> "Then you've got yourself a deal."
+		Myo at 0 "Though, I could be persuaded to tell you if you agree to meet like this again sometime."
 
-		pixel Myo "Wonderful. Well, if you must know, yes, that was Sir Gascon. He's actually based in Agon Province like me, but he is from the Kingdom of Seiysla."
+		Ahlai as <playerName> at 1 "Then you've got yourself a deal."
 
-		pixel Ahlai as <playerName> "Why did he want to conduct business with you, then? Even I could tell from afar..."
+		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
 
-		pixel Myo "Ah, that's nothing new. We've worked together in the past. I'll probably see him next week!"
+		Myo at 0 "Wonderful. Well, if you must know, yes, that was Sir Gascon. He's actually based in Agon Province like me, but he is from the Kingdom of Seiysla."
 
-		pixel Myo "I really do help out with businesses if they need it and if it's within my means, as I've mentioned."
+		Ahlai as <playerName> at 1 "Why did he want to conduct business with you, then? Even I could tell from afar..."
 
-		pixel Myo "But honestly... I notice that men like Sir Gascon struggle to see value outside of their work. Aside from their careers as politicians, their businesses, what they wish to <i>gain</i> out of the life they live..."
+		Myo at 0 "Ah, that's nothing new. We've worked together in the past. I'll probably see him next week!"
 
-		pixel Myo "I just worried that if he got his way earlier, his son would have no chance to explore what he likes. And for his own sake, not his father's. I hope you understand?"
+		Myo at 0 "I really do help out with businesses if they need it and if it's within my means, as I've mentioned."
 
-		pixel Ahlai as <playerName> "I could see your point, yes..."
+		ChangeBodyEmotion(Myo -e Left_Thought)
+
+		Myo at 0 "But honestly... I notice that men like Sir Gascon struggle to see value outside of their work. Aside from their careers as politicians, their businesses, what they wish to <i>gain</i> out of the life they live..."
+
+		Myo at 0 "I just worried that if he got his way earlier, his son would have no chance to explore what he likes. And for his own sake, not his father's. I hope you understand?"
+
+		Ahlai as <playerName> at 1 "I could see your point, yes..."
 
 		$TablemateChosen = false
 		$MyoChoicesPicked += 1
 		Load("Main 5 - Myo Repeating Dialogue")
 
 	- if ($SabinaChosen) What do you like about Sabina's Salves?
-		pixel Ahlai as <playerName> "I'm quite honored you endorsed Sabina's Salves to that tablemate of yours. Is there a reason you like our store so much?"
+		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Smile)
 
-		pixel Myo "Hmm, I <i>love</i> the people who work there."
+		Ahlai as <playerName> at 1 "I'm quite honored you endorsed Sabina's Salves to that tablemate of yours. Is there a reason you like our store so much?"
 
-		pixel Ahlai as <playerName> "...I-"
+		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
 
-		pixel Ahlai as <playerName> "Is this an advance...?"
+		Myo at 0 "Hmm, I <i>love</i> the people who work there."
 
-		pixel Myo "What <i>ever</i> do you mean? Lady Sabina's an excellent seller! I always love the results we get whenever we work together!"
+		ChangeBodyEmotion(Ahlai -e Right_BlushSurprised)
 
-		pixel Ahlai as <playerName> "...Oh, I thought you..."
+		Ahlai as <playerName> at 1 "...I-"
 
-		pixel Myo "You thought what? That I was referring to you? I mean... you definitely could make a good case for why I should keep coming back to Sabina's Salves."
+		Ahlai as <playerName> at 1 "Is this an advance...?"
 
-		pixel Myo "Again... only if you're interested. But, that aside..."
+		ChangeBodyEmotion(Myo -e Left_Smile)
 
-		pixel Myo "...I am genuine when I say that Lady Sabina is an amazing seller of her wares. A good business partner. She also knows how to explain a lot of the potions' good impact in Agon Province."
+		Myo at 0 "What <i>ever</i> do you mean? Lady Sabina's an excellent seller! I always love the results we get whenever we work together!"
 
-		pixel Myo "I am personally very excited to see what else the store has up its sleeve. Especially if they've got anything like that Draught of Perpetuity!"
+		ChangeBodyEmotion(Ahlai -e Right_ApologeticSmile)
 
-		pixel Ahlai as <playerName> "Myo..."
+		Ahlai as <playerName> at 1 "...Oh, I thought you..."
 
-		pixel Myo "Yes, dear?"
+		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
 
-		pixel Ahlai as <playerName> "Damn, I walked into that one-"
+		Myo at 0 "You thought what? That I was referring to you? I mean... you definitely could make a good case for why I should keep coming back to Sabina's Salves."
 
-		pixel Ahlai as <playerName> "Alright, sir, as long as you remember what I told you. That potion has proper dosages you need to follow."
+		ChangeBodyEmotion(Myo -e Left_Smile)
 
-		pixel Myo "I'll make sure to remember, <playerName>! But, alas, I may need that reminder from a secretary or my doctor, if next week's schedule is anything to go by... ugh..."
+		Myo at 0 "Again... only if you're interested. But, that aside..."
+
+		Myo at 0 "...I am genuine when I say that Lady Sabina is an amazing seller of her wares. A good business partner. She also knows how to explain a lot of the potions' good impact in Agon Province."
+
+		Myo at 0 "I am personally very excited to see what else the store has up its sleeve. Especially if they've got anything like that Draught of Perpetuity!"
+
+		ChangeBodyEmotion(Ahlai -e Right_Hopeful)
+
+		Ahlai as <playerName> at 1 "Myo..."
+
+		ChangeBodyEmotion(Myo -e Left_Teasing)
+
+		Myo at 0 "Yes, dear?"
+
+		ChangeBodyEmotion(Ahlai -e Right_BlushEmbarrassed)
+
+		Ahlai as <playerName> at 1 "Damn, I walked into that one-"
+
+		ChangeBodyEmotion(Ahlai -e Right_ApologeticSmile)
+
+		Ahlai as <playerName> at 1 "Alright, sir, as long as you remember what I told you. That potion has proper dosages you need to follow."
+
+		ChangeBodyEmotion(Myo -e Left_ApologeticSmile)
+
+		Myo at 0 "I'll make sure to remember, <playerName>! But, alas, I may need that reminder from a secretary or my doctor, if next week's schedule is anything to go by... ugh..."
 
 		$SabinaChosen = false
 		$MyoChoicesPicked += 1
 		Load("Main 5 - Myo Repeating Dialogue")
 
 	- if ($FavouriteDrinkChosen) What's <i>your</i> favorite drink at this tavern, anyway?
-		pixel Ahlai as <playerName> "What's <i>your</i> favorite drink at this tavern, anyway? I'm curious."
+		Ahlai as <playerName> at 1 "What's <i>your</i> favorite drink at this tavern, anyway? I'm curious."
 
-		pixel Myo "Oh, will it be your treat next time?"
+		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
 
-		pixel Ahlai as <playerName> "I said no such thing!"
+		Myo at 0 "Oh, will it be your treat next time?"
 
-		pixel Myo "Then I have no favorite."
+		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_BlushSurprised)
 
-		pixel Ahlai as <playerName> "Are you serious?!"
+		Ahlai as <playerName> at 1 "I said no such thing!"
 
-		pixel Myo "...Maybe not, if you keep making those expressions..."
+		ChangeBodyEmotion(Myo -e Left_Smile)
 
-		pixel Myo "Okay, I judge a tavern by the quality of their ale. And the Kuchai Tavern has good ale!"
+		Myo at 0 "Then I have no favorite."
 
-		pixel Ahlai as <playerName> "Hmm, I didn't expect you to like ale..."
+		Ahlai as <playerName> at 1 "Are you serious?!"
+
+		ChangeBodyEmotion(Myo -e Left_Teasing)
+
+		Myo at 0 "...Maybe not, if you keep making those expressions..."
+
+		ChangeBodyEmotion(Myo -e Left_Smile)
+
+		Myo at 0 "Okay, I judge a tavern by the quality of their ale. And the Kuchai Tavern has good ale!"
+
+		ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
+
+		Ahlai as <playerName> at 1 "Hmm, I didn't expect you to like ale..."
 
 		$FavouriteDrinkChosen = false
 		$MyoChoicesPicked += 1
 		Load("Main 5 - Myo Repeating Dialogue")
 
 	- if (!$HearLaisaChosen) Did you hear about the pirate that was captured?
-		pixel Myo "Oh, Laisa... yes, I did hear."
+		ChangeBodyEmotion(Myo -e Left_NotSurprised)
+		
+		Myo at 0 "Oh, Laisa... yes, I did hear."
 
-		pixel Myo "I already warned her to be good while she's still in Ihraye! Like I would tell any foreign national. Do you know how many <i>more</i> trips I need to take to the Gataran Empire to smooth things over?"
+		Myo at 0 "I already warned her to be good while she's still in Ihraye! Like I would tell any foreign national. Do you know how many <i>more</i> trips I need to take to the Gataran Empire to smooth things over?"
 
-		pixel Ahlai as <playerName> "Laisa...? You two are acquainted with each other?"
+		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Surprised)
 
-		pixel Myo "Oh, you sound so surprised... let's just say you're right again. We're <i>very</i> well-acquainted with each other."
+		Ahlai as <playerName> at 1 "Laisa...? You two are acquainted with each other?"
 
-		pixel Myo "But her piracy... Well, I didn't exactly know about it until the news came to our province's administrative center."
+		ChangeBodyEmotion(Myo -e Left_Smile)
 
-		pixel Ahlai as <playerName> "Will she be detained?"
+		Myo at 0 "Oh, you sound so surprised... let's just say you're right again. We're <i>very</i> well-acquainted with each other."
 
-		pixel Myo "She just might, this time."
+		ChangeBodyEmotion(Myo -e Left_Concerned)
+		ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
 
-		pixel Myo "But I welcome a challenge, one way or another. I don't doubt her capabilities."
+		Myo at 0 "But her piracy... Well, I didn't exactly know about it until the news came to our province's administrative center."
 
-		pixel Ahlai as <playerName> "<i>Huh. Unlike a lot of the other men in the government, Sir Aciano seems quite welcoming of Ilaisaane...</i>"
+		Ahlai as <playerName> at 1 "Will she be detained?"
+
+		Myo at 0 "She just might, this time."
+
+		ChangeBodyEmotion(Myo -e Left_Smile)
+
+		Myo at 0 "But I welcome a challenge, one way or another. I don't doubt her capabilities."
+
+		Ahlai as <playerName> at 1 "<i>Huh. Unlike a lot of the other men in the government, Sir Aciano seems quite welcoming of Ilaisaane...</i>"
 
 		$HearLaisaChosen = true
 		$MyoChoicesPicked += 1
@@ -114,34 +172,48 @@ choice in -1
 		Load("Main 5 - Myo Lien Dialogue")
 
 	- if ($MyoOptions == 4) Are you always this forward with your intentions?
-		pixel Ahlai as <playerName> "<i>Ah, we've been talking for a while now. Some of the tavern patrons are already whispering and looking our way.</i>"
+		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Thought)
+		
+		Ahlai as <playerName> at 1 "<i>Ah, we've been talking for a while now. Some of the tavern patrons are already whispering and looking our way.</i>"
 
-		pixel Ahlai as <playerName> "<i>If the rumors are anything to go by, I'm currently on the receiving end of advances from the governor-general himself...</i>"
+		Ahlai as <playerName> at 1 "<i>If the rumors are anything to go by, I'm currently on the receiving end of advances from the governor-general himself...</i>"
 
-		pixel Ahlai as <playerName> "You know, Sir Aciano. Myo. Are you always this forward with your intentions when you... speak with someone like me?"
+		Ahlai as <playerName> at 1 "You know, Sir Aciano. Myo. Are you always this forward with your intentions when you... speak with someone like me?"
 
-		pixel Myo "Yes, actually. Transparency's very important in the work I do, but perhaps the same could be said for the relationships I pursue."
+		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
 
-		pixel Myo "And why hide the fact that I'm already enamored? That I'm already taken with you?"
+		Myo at 0 "Yes, actually. Transparency's very important in the work I do, but perhaps the same could be said for the relationships I pursue."
 
-		pixel Myo "I won't even force anything like marriage or something so serious with you, haha! Going on any rendezvous or outing with me is only as binding as you want..."
+		Myo at 0 "And why hide the fact that I'm already enamored? That I'm already taken with you?"
+
+		ChangeBodyEmotion(Myo -e Left_Laugh)
+
+		Myo at 0 "I won't even force anything like marriage or something so serious with you, haha! Going on any rendezvous or outing with me is only as binding as you want..."
 
 		$MyoChoicesPicked += 1
 		Load("Main 5 - Myo Repeating Dialogue")
 
 	- It was great talking with you.
-		pixel Ahlai as <playerName> "Well, Myo... I had a lovely conversation with you."
+		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_ApologeticSmile)
+		
+		Ahlai as <playerName> at 1 "Well, Myo... I had a lovely conversation with you."
 
-		pixel Myo "Leaving so soon, dear?"
+		ChangeBodyEmotion(Myo -e Left_Teasing)
 
-		pixel Ahlai as <playerName> "Lady Sabina might be expecting me. Seiji is actually waiting for me just outside the tavern..."
+		Myo at 0 "Leaving so soon, dear?"
 
-		pixel Myo "Well, I won't stop you from getting where you need to be."
+		Ahlai as <playerName> at 1 "Lady Sabina might be expecting me. Seiji is actually waiting for me just outside the tavern..."
 
-		pixel Myo "I do hope we can do this again sometime, <playerName>."
+		Myo at 0 "Well, I won't stop you from getting where you need to be."
 
-		pixel Ahlai as <playerName> "Likewise, sir."
+		Myo at 0 "I do hope we can do this again sometime, <playerName>."
 
+		ChangeBodyEmotion(Ahlai -e Right_Smile)
+
+		Ahlai as <playerName> at 1 "Likewise, sir."
+
+		HideCharacter(Ahlai)
+		HideCharacter(Myo)
 		HideTextbox(false)
 		ToggleInteractable("Scene 9" "Tavern" "Myo" false)
 

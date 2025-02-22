@@ -10,6 +10,9 @@ Lien as General Lien "This fog will not deter <i>me</i>, it will not deter you e
 
 Ahlai as <playerName> "<i>I have to find a way out of here...</i>"
 
+HideTextbox(true)
+[wait]Blackout()
+
 Seiji "<playerName>! There you are!"
 
 Ahlai as <playerName> "Seiji!"
@@ -19,7 +22,6 @@ Seiji "When the skies began to change and you still weren't home... I started to
 Seiji "Hurry, <playerName>. Let's go back to Sabina's Salves. We'll be safe there."
 
 HideTextbox(true)
-[wait]Blackout()
 stopEvent(AMB_Thunder)
 [wait]RemoveScene()
 [wait]ShowScene("Scene 11" "Main Shop")
@@ -27,37 +29,47 @@ stopEvent(AMB_Thunder)
 Wait(0.5)
 [wait]HideCG()
 
+[wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Apologetic)
+
 pixel Sabina as Lady Sabina "Oh, <playerName>! Seiji! By Dok'kale, both of you better quit making me worry! Thank goodness you're both safe!"
 
-pixel Ahlai as <playerName> "We apologize for making you worry, Lady Sabina..."
+Ahlai as <playerName> at 0 "We apologize for making you worry, Lady Sabina..."
 
 pixel Sabina as Lady Sabina "That sorry won't do much if you end up dead, my dear! Please!"
 
 pixel Sabina as Lady Sabina "It was a good thing Seiji ran out immediately when he saw the fog... and that you're both back here in one piece..."
 
-pixel Seiji "Huh, why? We have gone through storms and fogs in previous years, yes?"
+HideTextbox(true)
+[wait]SwitchCharacter(Ahlai Seiji -p 0 -b Left_Default_Body -e Left_Thought)
 
-pixel Sabina as Lady Sabina "No, this sort of weather feels more off than our usual rains..."
+Seiji at 0 "Huh, why? We have gone through storms and fogs in previous years, yes?"
 
-pixel Ahlai as <playerName> "..."
+pixel Sabina as Lady Sabina "No, this sort of weather feels more <i>off</i> than our usual rains..."
 
-pixel Ahlai as <playerName> "<i>She's right... something in the air feels unnerving...</i>"
+HideTextbox(true)
+[wait]SwitchCharacter(Seiji Ahlai -p 0 -b Left_Default_Body -e Left_Concerned)
+
+Ahlai as <playerName> at 0 "..."
+
+Ahlai as <playerName> at 0 "<i>She's right... something in the air feels unnerving...</i>"
 
 pixel Sabina as Lady Sabina "What I <i>can</i> say for now is that I need to speak with the rest of the Order of La Liryo..."
 
-pixel Ahlai as <playerName> "An issue for La Liryo? Lady Sabina, could it be... the curses?"
+Ahlai as <playerName> at 0 "An issue for La Liryo? Lady Sabina, could it be... the curses?"
 
-pixel Ahlai as <playerName> "It wasn't a myth, was it? Has a century already passed?"
+Ahlai as <playerName> at 0 "It wasn't a myth, was it? Has a century already passed?"
 
 pixel Sabina as Lady Sabina "It's hard to think of any other explanation. Rain and storms are expected to hit Kuchai Town in the next few months. For these to happen so soon? If it's the curses, that's no good for any of us."
 
-pixel Ahlai as <playerName> "What do we need to do, Lady?"
+ChangeBodyEmotion(Ahlai -e Left_Thought)
+
+Ahlai as <playerName> at 0 "What do we need to do, Lady?"
 
 pixel Sabina as Lady Sabina "The curses can only be stopped with the <b>Ritual of Respite</b>."
 
 pixel Sabina as Lady Sabina "It is obviously an advanced magical ritual, but we still require gathering the necessary components the way we would for making, say, a potion or a salve."
 
-pixel Ahlai as <playerName> "What kinds of components?"
+Ahlai as <playerName> at 0 "What kinds of components?"
 
 pixel Sabina as Lady Sabina "To complete the ritual, you will need to seek out a sacred <b>dagger</b>, and <b>one of the gods' ancient artifacts</b>. They have been lost to time, but they surely lie beyond Kuchai's borders."
 
@@ -65,11 +77,15 @@ pixel Sabina as Lady Sabina "You will need to prepare for a journey. This is wha
 
 pixel Sabina as Lady Sabina "I will still have to confirm details with the rest of La Liryo's council. But if you can find the components in time, <playerName> - I give you my permission to go and find your family."
 
-pixel Ahlai as <playerName> "Really? Are you being serious, Lady Sabina?"
+ChangeBodyEmotion(Ahlai -e Left_Surprised)
+
+Ahlai as <playerName> at 0 "Really? Are you being serious, Lady Sabina?"
+
+ChangeBodyEmotion(Ahlai -e Left_Thankful)
 
 pixel Sabina as Lady Sabina "Yes, dear. It's the least I can do. You've helped me here at the shop for the past ten years."
 
-pixel Ahlai as <playerName> "I... Thank you so much, Lady Sabina...! I won't let you down."
+Ahlai as <playerName> at 0 "I... Thank you so much, Lady Sabina...! I won't let you down."
 
 pixel Sabina as Lady Sabina "I know you won't. Both of you."
 
@@ -77,25 +93,36 @@ pixel Sabina as Lady Sabina "Now, it's been a long day for everyone. You should 
 
 pixel Sabina as Lady Sabina "And <i>whatever</i> you do, do <i>not</i> go out until we know more."
 
+HideCharacter(Ahlai)
+HideCharacter(Seiji)
 HideTextbox(true)
 [wait]Blackout()
 RemoveFromScene("Sabina")
 HideCG()
-[wait]MoveNPC("Seiji" -x -11.47 -y -2.04 -spd 2)
 [wait]FlipNPC("Seiji" Left)
 
-pixel Ahlai as <playerName> "Did you hear that, Seiji? I'll finally have the chance to search for my family!"
+ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Excited)
+[wait]ShowCharacterRight(Seiji -b Right_Default_Body -e Right_ApologeticSmile)
 
-pixel Seiji "I'm happy for you, <playerName>. You've been trying to find them ever since we met."
+Ahlai as <playerName> at 0 "Did you hear that, Seiji? I'll finally have the chance to search for my family!"
 
-pixel Seiji "But the curses are dangerous. I just hope that... you'll bring me along to protect you."
+Seiji at 0 "I'm happy for you, <playerName>. You've been trying to find them ever since we met."
 
-pixel Seiji "Until we know more about it, we should wait for Lady Sabina's instructions."
+ChangeBodyEmotion(Ahlai -e Left_ApologeticSmile)
+ChangeBodyEmotion(Seiji -e Right_Worried)
 
-pixel Seiji "I'll see you tomorrow. Good night, <playerName>. I hope... you have sweet dreams."
+Seiji at 0 "But the curses are dangerous. I just hope that... you'll bring me along to protect you."
 
-pixel Ahlai as <playerName> "Good night, Seiji. I hope so too."
+Seiji at 0 "Until we know more about it, we should wait for Lady Sabina's instructions."
 
+ChangeBodyEmotion(Seiji -e Right_Blush)
+
+Seiji at 0 "I'll see you tomorrow. Good night, <playerName>. I hope... you have sweet dreams."
+
+Ahlai as <playerName> at 0 "Good night, Seiji. I hope so too."
+
+HideCharacter(Ahlai)
+HideCharacter(Seiji)
 HideTextbox(true)
 [wait]Blackout()
 [wait]RemoveFromScene("Seiji")

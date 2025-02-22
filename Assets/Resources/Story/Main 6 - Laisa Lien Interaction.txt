@@ -15,15 +15,21 @@ SetNPCPosition("Laisa" -x -3795.96 -y -221.32)
 SetNPCPosition("Ahlai" -x -3595.43 -y -231.73)
 [wait]HideCG()
 
-pixel Lien as General Lien "I suggest you do the right thing and step aside. Hand over the Sea Serpent or there will be consequences."
+ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Surprised)
+[wait]ShowCharacterRight(Lien -b Right_Default_Body -e Right_Stern)
 
-pixel Laisa as Ilaisaane "You don't have to take your anger out on this poor passerby! There's no rush here, General. Do you plan to kill me on sight, or are you just that excited to see me?"
+Lien as General Lien at 1 "I suggest you do the right thing and step aside. Hand over the Sea Serpent or there will be consequences."
 
-pixel Lien as General Lien "You have broken laws and are resisting your arrest, so I am holding you accountable to the laws you violate. Do not test my patience, pirate."
+HideTextbox(true)
+[wait]SwitchCharacter(Ahlai Laisa -p 0 -b Left_Default_Body -e Left_Smirk)
 
-pixel Laisa as Ilaisaane "Tell me, does it ever bother you that you're always just one step behind?"
+Laisa as Ilaisaane at 0 "You don't have to take your anger out on this poor passerby! There's no rush here, General. Do you plan to kill me on sight, or are you just that excited to see me?"
 
-pixel Lien as General Lien "That's enough. If you continue to refuse to comply, I will have no choice but to use force."
+Lien as General Lien at 1 "You have broken laws and are resisting your arrest, so I am holding you accountable to the laws you violate. Do not test my patience, pirate."
+
+Laisa as Ilaisaane at 0 "Tell me, does it ever bother you that you're always just one step behind?"
+
+Lien as General Lien at 1 "That's enough. If you continue to refuse to comply, I will have no choice but to use force."
 
 HideTextbox(true)
 pauseEvent(BGM_Laisa)

@@ -1,4 +1,6 @@
 [wait]Blackout()
+HideCharacter(Laisa)
+HideCharacter(Lien)
 playSFX(SFX_ThunderCurse)
 playAmbience(AMB_SwordClash)
 playAmbience(AMB_Thunder)
@@ -16,6 +18,9 @@ if ($LaisaNoTrouble)
 {
 	Ahlai as <playerName> "Laisa? Laisa, where are you?"
 
+	HideTextbox(true)
+	[wait]Blackout()
+
 	Laisa "Over here."
 
 	HideTextbox(true)
@@ -26,6 +31,9 @@ else
 	if ($LaisaNoWorries)
 	{
 		Ahlai as <playerName> "Ilaisaane? Ilaisaane, where are you?"
+
+		HideTextbox(true)
+		[wait]Blackout()
 
 		Laisa "<i>You</i> can call me Laisa."
 

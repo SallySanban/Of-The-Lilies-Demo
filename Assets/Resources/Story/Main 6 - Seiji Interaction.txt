@@ -1,89 +1,115 @@
-pixel Seiji "Oh, <playerName>, you're finally out. What took you so long?"
+ShowCharacterLeft(Seiji -b Left_Default_Body -e Left_Worried)
+[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Conflicted)
 
-pixel Ahlai as <playerName> "Lady Sabina wanted three flasks of areka, right? The order took a while."
+Seiji at 0 "Oh, <playerName>, you're finally out. What took you so long?"
 
-pixel Seiji "Is there something wrong...?"
+Ahlai as <playerName> at 1 "Lady Sabina wanted three flasks of areka, right? The order took a while."
 
-pixel Ahlai as <playerName> "What makes you say that?"
+Seiji at 0 "Is there something wrong...?"
 
-pixel Seiji "I can see it in your face, <playerName>. I know you. What happened?"
+Ahlai as <playerName> at 1 "What makes you say that?"
 
-pixel Ahlai as <playerName> "I had a chat with Sir Aciano. And... General Lien."
+Seiji at 0 "I can see it in your face, <playerName>. I know you. What happened?"
 
-pixel Seiji "General Lien?! I saw him enter, but I thought you'd be out soon. I didn't expect you to take this long to get those drinks..."
+Ahlai as <playerName> at 1 "I had a chat with Sir Aciano. And... General Lien."
 
-pixel Seiji "Did he do anything to you? Did he hurt you, anything? Ugh, I knew I should've come in with you..."
+Seiji at 0 "General Lien?! I saw him enter, but I thought you'd be out soon. I didn't expect you to take this long to get those drinks..."
 
-pixel Ahlai as <playerName> "No, we just talked. I wanted to ask him for clues about where my family could be... but I didn't get much information."
+Seiji at 0 "Did he do anything to you? Did he hurt you, anything? Ugh, I knew I should've come in with you..."
 
-pixel Ahlai as <playerName> "All I know is, I can't stop my search here in Kuchai Town."
+Ahlai as <playerName> at 1 "No, we just talked. I wanted to ask him for clues about where my family could be... but I didn't get much information."
 
-pixel Ahlai as <playerName> "There are lots of places I could look. I could even start in Agon Province, with the help of Sir Aciano..."
+Ahlai as <playerName> at 1 "All I know is, I can't stop my search here in Kuchai Town."
 
-pixel Seiji "You want to leave... Kuchai Town?"
+Ahlai as <playerName> at 1 "There are lots of places I could look. I could even start in Agon Province, with the help of Sir Aciano..."
 
-pixel Ahlai as <playerName> "It's just something I've been thinking about. I don't even know if they're still alive... but they were taken away right in front of my eyes."
+Seiji at 0 "You want to leave... Kuchai Town?"
 
-pixel Ahlai as <playerName> "And I've lived for 10 years not knowing if they're okay or not."
+Ahlai as <playerName> at 1 "It's just something I've been thinking about. I don't even know if they're still alive... but they were taken away right in front of my eyes."
 
-pixel Ahlai as <playerName> "I'm sorry, Seiji. But it's my family..."
+Ahlai as <playerName> at 1 "And I've lived for 10 years not knowing if they're okay or not."
 
-pixel Ahlai as <playerName> "I know that I should be focusing on my duties at the Order of La Liryo."
+Ahlai as <playerName> at 1 "I'm sorry, Seiji. But it's my family..."
 
-pixel Ahlai as <playerName> "And chasing after ghosts isn't my priority. It shouldn't be."
+Ahlai as <playerName> at 1 "I know that I should be focusing on my duties at the Order of La Liryo."
 
-pixel Ahlai as <playerName> "But, I just wish I could move forward..."
+Ahlai as <playerName> at 1 "And chasing after ghosts isn't my priority. It shouldn't be."
 
-pixel Seiji "I mean... well... you are, right? Or..."
+Ahlai as <playerName> at 1 "But, I just wish I could move forward..."
 
-pixel Ahlai as <playerName> "Tough question..."
+ChangeBodyEmotion(Seiji -e Left_ApologeticSmile)
 
-pixel Seiji "Hey, you want to find your family. I can at least understand that."
+Seiji at 0 "I mean... well... you are, right? Or..."
 
-pixel Seiji "I mean, it would drive anyone crazy not being able to do anything about it. Or maybe there is something you could do?"
+Ahlai as <playerName> at 1 "Tough question..."
 
-pixel Seiji "How about we ask Lady Sabina if we could go together?"
+Seiji at 0 "Hey, you want to find your family. I can at least understand that."
 
-pixel Ahlai as <playerName> "What do you mean?"
+ChangeBodyEmotion(Seiji -e Left_Worried)
 
-pixel Seiji "We can leave Kuchai Town together. You could look for your family, and I could be there to help you. What do you think?"
+Seiji at 0 "I mean, it would drive anyone crazy not being able to do anything about it. Or maybe there is something you could do?"
 
-choice in -1
+ChangeBodyEmotion(Seiji -e Left_ApologeticSmile)
+
+Seiji at 0 "How about we ask Lady Sabina if we could go together?"
+
+ChangeBodyEmotion(Ahlai -e Right_Sad)
+
+Ahlai as <playerName> at 1 "What do you mean?"
+
+Seiji at 0 "We can leave Kuchai Town together. You could look for your family, and I could be there to help you. What do you think?"
+
+choice in 1
 {
 	- You would do that for me?
 		$Seiji += 1
 		$SeijiHesitation = false
 
-		pixel Seiji "Of course I would, <playerName>. I know how important this is to you."
+		ChangeBodyEmotion(Ahlai -e Right_Hopeful)
 
-		pixel Ahlai as <playerName> "But what if Lady Sabina doesn't let me go? She's always been protective of me, and we are her employees, in any case..."
+		Seiji at 0 "Of course I would, <playerName>. I know how important this is to you."
 
-		pixel Seiji "Then that's just even more of a reason for me to come with you. Just try to ask her, <playerName>."
+		ChangeBodyEmotion(Ahlai -e Right_Conflicted)
 
-		pixel Seiji "I know that Lady Sabina would want to do what she can to ease your worries."
+		Ahlai as <playerName> at 1 "But what if Lady Sabina doesn't let me go? She's always been protective of me, and we are her employees, in any case..."
 
-		pixel Ahlai as <playerName> "...You're right, Seiji."
+		Seiji at 0 "Then that's just even more of a reason for me to come with you. Just try to ask her, <playerName>."
 
-		pixel Seiji "Let's head back. She might be worried that we've been out so late. We can ask her then."
+		Seiji at 0 "I know that Lady Sabina would want to do what she can to ease your worries."
+
+		ChangeBodyEmotion(Ahlai -e Right_ApologeticSmile)
+
+		Ahlai as <playerName> at 1 "...You're right, Seiji."
+
+		Seiji at 0 "Let's head back. She might be worried that we've been out so late. We can ask her then."
 
 	- That could work...
 		$SeijiHesitation = true
 
-		pixel Seiji "You sound hesitant... What's the matter?"
+		ChangeBodyEmotion(Seiji -e Left_Sad)
+		ChangeBodyEmotion(Ahlai -e Right_Conflicted)
 
-		pixel Ahlai as <playerName> "I just feel like I should go with someone with more influence. Like Sir Aciano. He's also been places, so I imagine he would know his way around."
+		Seiji at 0 "You sound hesitant... What's the matter?"
 
-		pixel Seiji "Oh... I understand."
+		Ahlai as <playerName> at 1 "I just feel like I should go with someone with more influence. Like Sir Aciano. He's also been places, so I imagine he would know his way around."
 
-		pixel Ahlai as <playerName> "And, would Lady Sabina really let me go? She's always been protective of me, and we are her employees, in any case..."
+		Seiji at 0 "Oh... I understand."
 
-		pixel Seiji "I'll help you convince her. I know this is important to you, <playerName>."
+		Ahlai as <playerName> at 1 "And, would Lady Sabina really let me go? She's always been protective of me, and we are her employees, in any case..."
 
-		pixel Ahlai as <playerName> "Thank you, Seiji."
+		ChangeBodyEmotion(Seiji -e Left_SadSmile)
 
-		pixel Seiji "Let's head back. She might be worried that we've been out so late."
+		Seiji at 0 "I'll help you convince her. I know this is important to you, <playerName>."
+
+		ChangeBodyEmotion(Ahlai -e Right_ApologeticSmile)
+
+		Ahlai as <playerName> at 1 "Thank you, Seiji."
+
+		Seiji at 0 "Let's head back. She might be worried that we've been out so late."
 }
 
+HideCharacter(Seiji)
+HideCharacter(Ahlai)
 resumeEvent(BGM_KuchaiTown)
 HideTextbox(false)
 FollowPlayer("Seiji")

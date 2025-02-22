@@ -1,5 +1,3 @@
-[wait]Blackout()
-HideTextbox(true)
 [wait]SwitchCG("Laisa")
 
 resumeEvent(BGM_Laisa)
