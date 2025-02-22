@@ -1357,64 +1357,64 @@ MonoBehaviour:
       followPlayer: Seiji
       followPlayerPosition: {x: 4326.55, y: -210.6}
   - sceneName: Scene 6
-    currentBackgroundName: Library 2
+    currentBackgroundName: Library 3
     showPlayer: 1
     playerPosition: {x: -1984.83, y: -251.24}
     playerDirection: 1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: CoupleSit1
-      position: {x: 698.31, y: -505.32}
+      position: {x: -1760.69, y: -462.32}
       appear: 1
       flipped: 0
       animationState: 
     - npcName: CoupleSit2
-      position: {x: 1549.31, y: -494.32}
+      position: {x: -810.69, y: -462.32}
       appear: 1
       flipped: 0
       animationState: 
     - npcName: RetiredVeteran
-      position: {x: -1539.69, y: -185.32}
+      position: {x: 1669.31, y: -199.32}
       appear: 1
-      flipped: 0
-      animationState: IdleRight
+      flipped: 1
+      animationState: IdleLeft
     - npcName: GossipSit1
-      position: {x: -504.69, y: -499.32}
+      position: {x: -441.69, y: -461.32}
       appear: 1
       flipped: 0
       animationState: 
     - npcName: GossipSit2
-      position: {x: 259.31, y: -490.32}
+      position: {x: 462.31, y: -462.32}
       appear: 1
       flipped: 0
       animationState: 
     - npcName: BathroomGuy
-      position: {x: 1712.05, y: -161.84}
+      position: {x: -1702.95, y: -161.84}
       appear: 1
       flipped: 0
       animationState: 
     interactablesInScene:
-    - interactableName: CoupleSit1
+    - interactableName: CoupleSit2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Couple Interaction
-      moveToInteractPosition: {x: 10.2, y: -2.33}
+      moveToInteractPosition: {x: -12.31, y: -2.2}
     - interactableName: RetiredVeteran
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Retired Veteran Interaction
-      moveToInteractPosition: {x: -12.49, y: -2.33}
+      moveToInteractPosition: {x: 13.36, y: -2.2}
     - interactableName: GossipSit2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Gossip Sit Interaction
-      moveToInteractPosition: {x: -1.26, y: -2.33}
+      moveToInteractPosition: {x: 0.33, y: -2.2}
     - interactableName: Books 1
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 4 - Books 1 Interaction
       moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Left Door
+    - interactableName: Right Door
       interactableType: 2
       isInteractable: 1
       storyToPlay: 
@@ -1428,74 +1428,74 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 4 - Bathroom Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -13.82, y: -2.2}
     backgroundsToGo:
-    - interactableName: Left Door
+    - interactableName: Right Door
       backgroundToGo: Library 1
-      keyToPress: 2
-      playerPositionInNextBackground: {x: 2394.23, y: -270.88}
-      playerDirectionInNextBackground: -1
+      keyToPress: 1
+      playerPositionInNextBackground: {x: -2438.99, y: -270.88}
+      playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 6
-    currentBackgroundName: Library 3
+    currentBackgroundName: Library 2
     showPlayer: 1
     playerPosition: {x: 1723.11, y: -251.24}
     playerDirection: 1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: StudentSit1
-      position: {x: -269.59, y: -479.32}
+      position: {x: -466.05, y: -493.32}
       appear: 1
       flipped: 0
       animationState: 
     - npcName: StudentSit2
-      position: {x: 472.41, y: -497.32}
+      position: {x: 449.95, y: -492.32}
       appear: 1
       flipped: 0
       animationState: 
     - npcName: AspiringWriterSit
-      position: {x: -749.59, y: -489.32}
+      position: {x: -828.05, y: -481.32}
       appear: 1
       flipped: 0
       animationState: 
     - npcName: GossipGirl3
-      position: {x: 1040.41, y: -184.32}
+      position: {x: -1697.05, y: -209.32}
       appear: 1
       flipped: 0
       animationState: GossipRight
     - npcName: GossipGirl4
-      position: {x: 1180.41, y: -185.32}
+      position: {x: -1557.05, y: -210.32}
       appear: 1
       flipped: 0
       animationState: GossipLeft
     - npcName: Manju
-      position: {x: -1576.59, y: -188.32}
+      position: {x: 1665.96, y: -201.32}
       appear: 1
-      flipped: 0
-      animationState: IdleRight
+      flipped: 1
+      animationState: IdleLeft
     interactablesInScene:
     - interactableName: GossipGirl3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Gossip Stand Interaction
-      moveToInteractPosition: {x: 12.85, y: -2.33}
+      moveToInteractPosition: {x: -12.36, y: -2.2}
     - interactableName: AspiringWriterSit
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Aspiring Writer Interaction
-      moveToInteractPosition: {x: -9, y: -2.33}
+      moveToInteractPosition: {x: -10.25, y: -2.2}
     - interactableName: StudentSit2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Student Sit Interaction
-      moveToInteractPosition: {x: 0.95, y: -2.33}
+      moveToInteractPosition: {x: -0.2, y: -2.2}
     - interactableName: Books
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 4 - Books 3 Interaction
       moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: Right Door
+    - interactableName: Left Door
       interactableType: 2
       isInteractable: 1
       storyToPlay: 
@@ -1504,13 +1504,13 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4
-      moveToInteractPosition: {x: -12.75, y: -2.33}
+      moveToInteractPosition: {x: 13.42, y: -2.2}
     backgroundsToGo:
-    - interactableName: Right Door
+    - interactableName: Left Door
       backgroundToGo: Library 1
-      keyToPress: 1
-      playerPositionInNextBackground: {x: -2438.99, y: -270.88}
-      playerDirectionInNextBackground: 1
+      keyToPress: 2
+      playerPositionInNextBackground: {x: 2394.23, y: -270.88}
+      playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 7
