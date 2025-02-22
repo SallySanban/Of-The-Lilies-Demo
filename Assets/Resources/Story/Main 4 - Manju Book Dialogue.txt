@@ -1,50 +1,71 @@
-pixel Manju as Taji "Favorite type of book?"
+ChangeBodyEmotion(Manju -e Right_Surprised)
 
-pixel Manju as Taji "Are you trying to get to know me better, <playerName>?"
+Manju as Taji at 1 "Favorite type of book?"
 
-pixel Ahlai as <playerName> "Is it really that surprising of a question? You're an archivist. You spend time here."
+ChangeBodyEmotion(Manju -e Right_SlightSmile)
 
-pixel Ahlai as <playerName> "And I'm just trying to spark some conversation."
+Manju as Taji at 1 "Are you trying to get to know me better, <playerName>?"
 
-pixel Manju as Taji "Hmm... and you're so sure about that, aren't you?"
+ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_BlushPursed)
 
-pixel Manju as Taji "I suppose I prefer reading about magic. I'm interested in how it works, the history behind it, and... the extent of which it can be used."
+Ahlai as <playerName> at 0 "Is it really that surprising of a question? You're an archivist. You spend time here."
 
-pixel Ahlai as <playerName> "Well, you said it yourself. Magic has been overused since the beginning. That's why we use potions."
+Ahlai as <playerName> at 0 "And I'm just trying to spark some conversation."
 
-pixel Ahlai as <playerName> "It's just safer that way. But everyone already knows that."
+ChangeBodyEmotion(Ahlai -b Left_Question_Body -e Left_Question)
+ChangeBodyEmotion(Manju -e Right_LookingDown)
 
-pixel Manju as Taji "Then why don't I ask you this? If Sabina's Salves' potions really kept us safe, then why do the curses continue to happen?"
+Manju as Taji at 1 "Hmm... and you're so sure about that, aren't you?"
 
-pixel Manju as Taji "But that wouldn't matter if it really was just a myth, would it? Maybe I've said too much."
+Manju as Taji at 1 "I suppose I prefer reading about magic. I'm interested in how it works, the history behind it, and... the extent of which it can be used."
 
-pixel Manju as Taji "You've asked me about my favorite type of book. What about yours?"
+ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Smile)
+ChangeBodyEmotion(Manju -e Right_StraightThreatening)
 
-choice in -1
+Ahlai as <playerName> at 0 "Well, you said it yourself. Magic has been overused since the beginning. That's why we use potions."
+
+Ahlai as <playerName> at 0 "It's just safer that way. But everyone already knows that."
+
+ChangeBodyEmotion(Manju -e Right_SmileScaryEyes)
+ChangeBodyEmotion(Ahlai -b Left_Question_Body -e Left_Question)
+
+Manju as Taji at 1 "Then why don't I ask you this? If Sabina's Salves' potions really kept us safe, then why do the curses continue to happen?"
+
+ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
+
+Manju as Taji at 1 "But that wouldn't matter if it really was just a myth, would it? Maybe I've said too much."
+
+ChangeBodyEmotion(Manju -e Right_SlightSmile)
+
+Manju as Taji at 1 "You've asked me about my favorite type of book. What about yours?"
+
+choice in 0
 {
 	- I like history.
 		$Manju += 1
 
-		pixel Manju as Taji "History, huh?"
+		Manju as Taji at 1 "History, huh?"
 
-		pixel Manju as Taji "You have a good eye. What about history, specifically, though? Do you mean a certain time period, or do you mean how history is written, or the history of...?"
+		Manju as Taji at 1 "You have a good eye. What about history, specifically, though? Do you mean a certain time period, or do you mean how history is written, or the history of...?"
 
-		pixel Ahlai as <playerName> "Oh, uh... the history around potions. Not to be so obvious, but that is true."
+		Ahlai as <playerName> at 0 "Oh, uh... the history around potions. Not to be so obvious, but that is true."
 
-		pixel Manju as Taji "The legal kinds of potions?"
+		Manju as Taji at 1 "The legal kinds of potions?"
 
-		pixel Ahlai as <playerName> "...Of course."
+		Ahlai as <playerName> at 0 "...Of course."
 
 	- ...I like magic, too!
-		pixel Manju as Taji "...Really?"
+		ChangeBodyEmotion(Manju -e Right_Amused)
 
-		pixel Manju as Taji "Nice try."
+		Manju as Taji at 1 "...Really?"
 
-		pixel Manju as Taji "I can hear the hesitation in your voice."
+		Manju as Taji at 1 "Nice try."
 
-		pixel Manju as Taji "I can tell we think differently about magic. You don't need to try so hard."
+		Manju as Taji at 1 "I can hear the hesitation in your voice."
 
-		pixel Manju as Taji "But the attempt is endearing."
+		Manju as Taji at 1 "I can tell we think differently about magic. You don't need to try so hard."
+
+		Manju as Taji at 1 "But the attempt is endearing."
 
 }
 

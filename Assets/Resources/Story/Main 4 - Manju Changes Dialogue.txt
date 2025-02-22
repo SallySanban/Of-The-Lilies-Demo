@@ -1,18 +1,26 @@
-pixel Manju as Taji "There are all sorts of signs. Pests, swarming over produce. The town's crops, decaying with each passing day. Not to mention the Kanding river."
+ChangeBodyEmotion(Manju -e Right_SmileScaryEyes)
 
-pixel Manju as Taji "If my understanding of the curses is right, then each calamity would be greater than the last."
+Manju as Taji at 1 "There are all sorts of signs. Pests, swarming over produce. The town's crops, decaying with each passing day. Not to mention the Kanding river."
 
-choice in -1
+Manju as Taji at 1 "If my understanding of the curses is right, then each calamity would be greater than the last."
+
+choice in 0
 {
 	- That sounds convincing.
 		$Manju += 1
 
-		pixel Manju as Taji "But I suppose only time will tell."
+		ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
+
+		Manju as Taji at 1 "But I suppose only time will tell."
 
 	- Aren't they just coincidences?
-		pixel Manju as Taji "You're free to believe what you want."
+		ChangeBodyEmotion(Manju -e Right_StraightThreatening)
 
-		pixel Manju as Taji "But all of this happening at the same time is a little strange, isn't it?"
+		Manju as Taji at 1 "You're free to believe what you want."
+
+		ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
+
+		Manju as Taji at 1 "But all of this happening at the same time is a little strange, isn't it?"
 
 }
 

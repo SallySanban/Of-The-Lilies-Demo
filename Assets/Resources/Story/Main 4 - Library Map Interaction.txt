@@ -1,8 +1,8 @@
 ShowUI("Library map")
 
-pixel Ahlai as <playerName> "'Magic and history on the left.'"
+pixel Ahlai as <playerName> "'Magic and history on the right.'"
 
-pixel Ahlai as <playerName> "'Poetry, short stories, and culture on the right.'"
+pixel Ahlai as <playerName> "'Poetry, short stories, and culture on the left.'"
 
 HideUI()
 HideTextbox(false)

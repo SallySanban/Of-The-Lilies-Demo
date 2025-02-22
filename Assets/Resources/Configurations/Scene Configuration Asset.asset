@@ -1254,10 +1254,10 @@ MonoBehaviour:
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Seiji
-      position: {x: -211.58, y: -197.32}
+      position: {x: -989.58, y: -197.32}
       appear: 1
-      flipped: 1
-      animationState: IdleLeft
+      flipped: 0
+      animationState: IdleRight
     - npcName: BusyLibrarian
       position: {x: 1849.42, y: -211.32}
       appear: 1
@@ -1269,15 +1269,15 @@ MonoBehaviour:
       flipped: 1
       animationState: IdleLeft
     - npcName: FatherWithDaughter
-      position: {x: -1118.58, y: -216.32}
+      position: {x: -1769.58, y: -216.32}
       appear: 1
-      flipped: 1
-      animationState: IdleLeft
+      flipped: 0
+      animationState: IdleRight
     - npcName: DaughterWithFather
-      position: {x: -972.58, y: -299.32}
+      position: {x: -1930.58, y: -299.32}
       appear: 1
-      flipped: 1
-      animationState: IdleLeft
+      flipped: 0
+      animationState: IdleRight
     interactablesInScene:
     - interactableName: FatherWithDaughter
       interactableType: 0

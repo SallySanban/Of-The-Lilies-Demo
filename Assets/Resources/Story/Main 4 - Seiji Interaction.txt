@@ -1,29 +1,47 @@
-pixel Seiji "Who were you talking to back there, Ahlai?"
+ShowCharacterLeft(Seiji -b Left_Default_Body -e Left_Worried)
+[wait]ShowCharacterRight(Ahlai -b Right_Question_Body -e Right_Question)
 
-pixel Ahlai as <playerName> "Oh, that was Taji. He's an archivist here. He helped me find the book we needed."
+Seiji at 0 "Who were you talking to back there, Ahlai?"
 
-pixel Ahlai as <playerName> "Is there something... wrong?"
+ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Smile)
 
-pixel Seiji "Didn't you see his robes? It's barely visible, but I caught sight of the crest of the <b>Order of Hotei</b>."
+Ahlai as <playerName> at 1 "Oh, that was Taji. He's an archivist here. He helped me find the book we needed."
 
-pixel Ahlai as <playerName> "A-are you sure? They usually don't go out in the open. He even told me his name..."
+ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
 
-pixel Seiji "You should count on it not being his real one. Remember what Lady Sabina told us about them."
+Ahlai as <playerName> at 1 "Is there something... wrong?"
 
-pixel Seiji "They go against what our order stands for, against the safeguards we put in place through the potions we make. They believe that <b>people should be able to wield magic</b>. As if they're equals with the gods!"
+Seiji at 0 "Didn't you see his robes? It's barely visible, but I caught sight of the crest of the <b>Order of Hotei</b>."
 
-pixel Seiji "The <b>Order of La Liryo has to ensure that magic is being used responsibly</b>. It's what the people know us for. It's why we make those potions every day."
+ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Surprised)
 
-pixel Seiji "Just... be careful next time, okay?"
+Ahlai as <playerName> at 1 "A-are you sure? They usually don't go out in the open. He even told me his name..."
 
-pixel Ahlai as <playerName> "I will, Seiji. Thank you for worrying about me. All things considered, at least we've got the book."
+Seiji at 0 "You should count on it not being his real one. Remember what Lady Sabina told us about them."
 
-pixel Ahlai as <playerName> "And we're down to our last task of the day! Drinks for Lady Sabina, right?"
+Seiji at 0 "They go against what our order stands for, against the safeguards we put in place through the potions we make. They believe that <b>people should be able to wield magic</b>. As if they're equals with the gods!"
 
-pixel Seiji "Yeah, at the <b>tavern</b>."
+Seiji at 0 "The <b>Order of La Liryo has to ensure that magic is being used responsibly</b>. It's what the people know us for. It's why we make those potions every day."
 
-pixel Ahlai as <playerName> "Then, let's go!"
+Seiji at 0 "Just... be careful next time, okay?"
 
+ChangeBodyEmotion(Ahlai -e Right_ApologeticSmile)
+
+Ahlai as <playerName> at 1 "I will, Seiji. Thank you for worrying about me. All things considered, at least we've got the book."
+
+ChangeBodyEmotion(Ahlai -e Right_ClosedEyeSmile)
+
+Ahlai as <playerName> at 1 "And we're down to our last task of the day! Drinks for Lady Sabina, right?"
+
+ChangeBodyEmotion(Seiji -e Left_ApologeticSmile)
+ChangeBodyEmotion(Ahlai -e Right_Smile)
+
+Seiji at 0 "Yeah, at the <b>tavern</b>."
+
+Ahlai as <playerName> at 1 "Then, let's go!"
+
+HideCharacter(Ahlai)
+HideCharacter(Seiji)
 HideTextbox(false)
 stopEvent(BGM_Library)
 playMusic(BGM_Lien)
@@ -76,7 +94,7 @@ choice in -1
 
 		pixel Seiji "And she could be dangerous... they caught her for a reason. She's a criminal, isn't she?"
 
-		pixel Ahlai as <playerName> "It'll only be for a little while, Seiji. We can get those drinks after."
+		pixel Ahlai as <playerName> at 1 "It'll only be for a little while, Seiji. We can get those drinks after."
 
 		$GetCloser = true
 

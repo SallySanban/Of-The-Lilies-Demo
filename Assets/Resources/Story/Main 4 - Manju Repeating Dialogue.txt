@@ -1,16 +1,19 @@
-pixel Manju as Taji "Did you need anything else, <playerName>? As much as you've made my time here at the library more eventful, I do have to get back to work."
+ChangeBodyEmotion(Ahlai -b Left_Question_Body -e Left_Question)
+ChangeBodyEmotion(Manju -e Right_SlightSmile)
 
-choice in -1
+Manju as Taji at 1 "Did you need anything else, <playerName>? As much as you've made my time here at the library more eventful, I do have to get back to work."
+
+choice in 0
 {
 	- if (!$DoAlreadyChosen) What do you do as an archivist?
 		$DoAlreadyChosen = true
 		$ManjuDialogueOptions += 1
 		
-		pixel Manju as Taji "I collect books."
+		Manju as Taji at 1 "I collect books."
 
-		pixel Manju as Taji "I put them on the shelves or I bring them to the archives."
+		Manju as Taji at 1 "I put them on the shelves or I bring them to the archives."
 
-		pixel Manju as Taji "It's a simple job."
+		Manju as Taji at 1 "It's a simple job."
 
 		Load("Main 4 - Manju Repeating Dialogue")
 
@@ -18,11 +21,15 @@ choice in -1
 		$ChooseWorkAlreadyChosen = true
 		$ManjuDialogueOptions += 1
 
-		pixel Manju as Taji "Information is more powerful than we think. The many books in this library contain such rich knowledge, but even the spread of information is often controlled by the government of Seiysla."
+		Manju as Taji at 1 "Information is more powerful than we think. The many books in this library contain such rich knowledge, but even the spread of information is often controlled by the government of Seiysla."
 
-		pixel Manju as Taji "It's knowledge that they can decide to share or hide from us."
+		ChangeBodyEmotion(Manju -e Right_StraightThreatening)
 
-		pixel Manju as Taji "Though, I find that I value all sorts of knowledge, even the ones they don't want us to see."
+		Manju as Taji at 1 "It's knowledge that they can decide to share or hide from us."
+
+		ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
+
+		Manju as Taji at 1 "Though, I find that I value all sorts of knowledge, even the ones they don't want us to see."
 
 		Load("Main 4 - Manju Repeating Dialogue")
 
@@ -47,31 +54,48 @@ choice in -1
 	- if ($ManjuDialogueOptions == 5) You're not much of a talker, are you?
 		$ManjuDialogueOptions += 1
 
-		pixel Manju as Taji "So you've noticed. Is that a problem?"
+		ChangeBodyEmotion(Manju -e Right_Chuckle)
 
-		pixel Manju as Taji "I'm here to arrange and collect books. In a library."
+		Manju as Taji at 1 "So you've noticed. Is that a problem?"
 
-		pixel Manju as Taji "Talking isn't exactly needed here."
+		ChangeBodyEmotion(Manju -e Right_SlightSmile)
+
+		Manju as Taji at 1 "I'm here to arrange and collect books. In a library."
+
+		Manju as Taji at 1 "Talking isn't exactly needed here."
 
 		Load("Main 4 - Manju Repeating Dialogue")
 
 	- That's all
 		$ManjuTalkedTo = true
 
+		ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Surprised)
+
 		Seiji "<playerName>...?"
 
-		pixel Ahlai as <playerName> "Oh, my friend seems to be looking for me... He must've realized the book wasn't upstairs."
+		Ahlai as <playerName> at 0 "Oh, my friend seems to be looking for me... He must've realized the book wasn't upstairs."
 
-		pixel Manju as Taji "Well, thank you for making my day job a little <i>less</i> boring."
+		ChangeBodyEmotion(Manju -e Right_Chuckle)
+		ChangeBodyEmotion(Ahlai -e Left_Smile)
 
-		pixel Manju as Taji "Make sure you return that book before it's due."
+		Manju as Taji at 1 "Well, thank you for making my day job a little <i>less</i> boring."
 
-		pixel Ahlai as <playerName> "Will you find me if I don't?"
+		ChangeBodyEmotion(Manju -e Right_SlightSmile)
 
-		pixel Manju as Taji "Yes. And it wouldn't be hard to do so."
+		Manju as Taji at 1 "Make sure you return that book before it's due."
 
-		pixel Manju as Taji "Take care."
+		Ahlai as <playerName> at 0 "Will you find me if I don't?"
 
+		ChangeBodyEmotion(Manju -e Right_SmileScaryEyes)
+
+		Manju as Taji at 1 "Yes. And it wouldn't be hard to do so."
+
+		ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
+
+		Manju as Taji at 1 "Take care."
+
+		HideCharacter(Ahlai)
+		HideCharacter(Manju)
 		HideTextbox(false)
 		ToggleInteractable("Scene 6" "Library 3" Manju false)
 		ToggleNPC("Scene 6" "Library 1" Seiji true)

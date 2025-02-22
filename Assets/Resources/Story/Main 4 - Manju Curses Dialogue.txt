@@ -1,40 +1,56 @@
-pixel Manju as Taji "You ask interesting questions, don't you?"
+Manju as Taji at 1 "You ask interesting questions, don't you?"
 
-pixel Manju as Taji "Let me shift your perspective a little. Is there really only one way to stop the curses?"
+ChangeBodyEmotion(Manju -e Right_SmileScaryEyes)
 
-pixel Manju as Taji "Has it occurred to you that there's more than one answer?"
+Manju as Taji at 1 "Let me shift your perspective a little. Is there really only one way to stop the curses?"
+
+ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Suspicious)
+
+Manju as Taji at 1 "Has it occurred to you that there's more than one answer?"
 
 choice in -1
 {
 	- That couldn't be.
-		pixel Ahlai as <playerName> "If what you're saying about the curses is right, then they seem to only be affecting the natural world around us."
+		ChangeBodyEmotion(Manju -e Right_StraightThreatening)
 
-		pixel Ahlai as <playerName> "That would eventually affect the people in the town, and their livelihood."
+		Ahlai as <playerName> at 0 "If what you're saying about the curses is right, then they seem to only be affecting the natural world around us."
 
-		pixel Ahlai as <playerName> "It would hurt them. Hurt this town. The curses have to be stopped the right way."
+		Ahlai as <playerName> at 0 "That would eventually affect the people in the town, and their livelihood."
 
-		pixel Manju as Taji "You really love seeing things in black and white, don't you? The 'right' way?"
+		Ahlai as <playerName> at 0 "It would hurt them. Hurt this town. The curses have to be stopped the right way."
 
-		pixel Manju as Taji "Don't believe everything you hear."
+		ChangeBodyEmotion(Manju -e Right_SmileScaryEyes)
 
-		pixel Manju as Taji "There's always a fine line between right and wrong."
+		Manju as Taji at 1 "You really love seeing things in black and white, don't you? The 'right' way?"
+
+		Manju as Taji at 1 "Don't believe everything you hear."
+
+		ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
+
+		Manju as Taji at 1 "There's always a fine line between right and wrong."
 		
 	- How so?
 		$Manju += 1
 
-		pixel Ahlai as <playerName> "Are you telling me there's more than one way?"
+		Ahlai as <playerName> at 0 "Are you telling me there's more than one way?"
 
-		pixel Manju as Taji "There's only so much you can understand if you rely on the information you hear about from others."
+		ChangeBodyEmotion(Manju -e Right_SmileScaryEyes)
 
-		pixel Manju as Taji "There's no harm in finding things out on your own."
+		Manju as Taji at 1 "There's only so much you can understand if you rely on the information you hear about from others."
 
-		pixel Ahlai as <playerName> "A place to start would be nice, would it not?"
+		ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
 
-		pixel Manju as Taji "..."
+		Manju as Taji at 1 "There's no harm in finding things out on your own."
+
+		Ahlai as <playerName> at 0 "A place to start would be nice, would it not?"
+
+		Manju as Taji at 1 "..."
 }
 
-pixel Ahlai as <playerName> "You seem like you know a lot about the curses."
+Ahlai as <playerName> at 0 "You seem like you know a lot about the curses."
 
-pixel Manju as Taji "I have my sources."
+ChangeBodyEmotion(Manju -e Right_Chuckle)
+
+Manju as Taji at 1 "I have my sources."
 
 Load("Main 4 - Manju Repeating Dialogue")

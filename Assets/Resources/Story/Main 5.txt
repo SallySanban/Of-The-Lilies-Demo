@@ -4,58 +4,71 @@ if ($GetCloser)
 
 	pixel Soldier1 as Seiyslan Soldier "Hey, you! Don't get too close. This woman is dangerous."
 
-	pixel Ahlai as <playerName> "So you're the famous Ilaisaane of the Sea Emperor."
+	ShowCharacterLeft(Laisa -b Left_Default_Body -e Left_SmirkClosed)
+	[wait]ShowCharacterRight(Ahlai -b Right_Question_Body -e Right_Question)
 
-	pixel Laisa as Ilaisaane "The one and only."
+	Ahlai as <playerName> at 1 "So you're the famous Ilaisaane of the Sea Emperor."
 
-	pixel Laisa as Ilaisaane "And more recently, the general's pain in the ass."
+	Laisa as Ilaisaane at 0 "The one and only."
 
-	pixel Laisa as Ilaisaane "Look at all these chains. It takes a special kind of behavior to get this level of treatment."
+	Laisa as Ilaisaane at 0 "And more recently, the general's pain in the ass."
 
-	pixel Ahlai as <playerName> "You must've really pissed him off, huh?"
+	Laisa as Ilaisaane at 0 "Look at all these chains. It takes a special kind of behavior to get this level of treatment."
 
-	pixel Laisa as Ilaisaane "Years of doing so, yes."
+	Ahlai as <playerName> at 1 "You must've really pissed him off, huh?"
 
-	pixel Laisa as Ilaisaane "And I don't plan on today being the end of it."
+	Laisa as Ilaisaane at 0 "Years of doing so, yes."
 
-	pixel Ahlai as <playerName> "That's some dedication."
+	ChangeBodyEmotion(Laisa -e Left_Smirk)
 
-	pixel Laisa as Ilaisaane "That's what happens when he gets in your way."
+	Laisa as Ilaisaane at 0 "And I don't plan on today being the end of it."
 
-	pixel Ahlai as <playerName> "..."
+	Ahlai as <playerName> at 1 "That's some dedication."
 
-	pixel Laisa as Ilaisaane "What's this? I can see it in your face."
+	Laisa as Ilaisaane at 0 "That's what happens when he gets in your way."
 
-	pixel Laisa as Ilaisaane "You've had your own fair share of history with the general, haven't you?"
+	ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Conflicted)
 
-	choice in -1
+	Ahlai as <playerName> at 1 "..."
+
+	Laisa as Ilaisaane at 0 "What's this? I can see it in your face."
+
+	Laisa as Ilaisaane at 0 "You've had your own fair share of history with the general, haven't you?"
+
+	choice in 1
 	{
 		- Not as much as you.
 			$Laisa += 1
 
-			pixel Laisa as Ilaisaane "So you admit it."
+			Laisa as Ilaisaane at 0 "So you admit it."
 
-			pixel Laisa as Ilaisaane "That'd be an interesting story to hear on another day."
+			Laisa as Ilaisaane at 0 "That'd be an interesting story to hear on another day."
 
-			pixel Ahlai as <playerName> "You sound like you already know how you'll escape."
+			ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
 
-			pixel Laisa as Ilaisaane "Well, time has a way of shifting in my favor."
+			Ahlai as <playerName> at 1 "You sound like you already know how you'll escape."
+
+			Laisa as Ilaisaane at 0 "Well, time has a way of shifting in my favor."
 
 			pixel Soldier1 as Seiyslan Soldier "Not this time. Don't even think about trying to get away."
 
+			ChangeBodyEmotion(Laisa -e Left_SmirkClosed)
+
 		- I can't tell you that...
-			pixel Laisa as Ilaisaane "You don't have to hide it."
+			ChangeBodyEmotion(Laisa -e Left_SmirkClosed)
 
-			pixel Laisa as Ilaisaane "Those pretty little eyes of yours are telling me everything."
+			Laisa as Ilaisaane at 0 "You don't have to hide it."
 
-			pixel Laisa as Ilaisaane "But I understand you'd want to keep your mouth shut in front of all these uptight grunts."
+			Laisa as Ilaisaane at 0 "Those pretty little eyes of yours are telling me everything."
+
+			Laisa as Ilaisaane at 0 "But I understand you'd want to keep your mouth shut in front of all these uptight grunts."
 	}
 
-	pixel Laisa as Ilaisaane "How about this, hmm?"
+	Laisa as Ilaisaane at 0 "How about this, hmm?"
 
-	pixel Laisa as Ilaisaane "I'll listen to what you have to say if you do me a little favor. What do you say?"
+	Laisa as Ilaisaane at 0 "I'll listen to what you have to say if you do me a little favor. What do you say?"
 
-	choice in -1
+	choice in 1
 	{
 		- What favor?
 			$Laisa += 1
@@ -65,15 +78,19 @@ if ($GetCloser)
 			pixel Soldier1 as Seiyslan Soldier "You've talked to her enough. Hurry along before she does anything dangerous."
 
 		- I can't do that.
-			pixel Laisa as Ilaisaane "That's a shame. Not that I actually needed it."
+			Laisa as Ilaisaane at 0 "That's a shame. Not that I actually needed it."
 
 			pixel Soldier1 as Seiyslan Soldier "Okay, you've talked to the pirate enough. Hurry along before she does something dangerous."
 	}
 
-	pixel Laisa as Ilaisaane "Don't worry. We'll see each other again."
+	ChangeBodyEmotion(Laisa -e Left_Smirk)
+
+	Laisa as Ilaisaane at 0 "Don't worry. We'll see each other again."
+
 	pauseEvent(BGM_Lien)
 	resumeEvent(BGM_KuchaiTown)
-
+	HideCharacter(Laisa)
+	HideCharacter(Ahlai)
 	$LaisaTalkedTo = true
 	ResetCamera(true)
 }

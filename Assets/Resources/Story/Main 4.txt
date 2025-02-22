@@ -11,118 +11,155 @@ HideTextbox(true)
 [wait]Blackout()
 [wait]HideCG()
 
-pixel Ahlai as <playerName> "I'm looking for a book on a 100-year curse. You know, that myth? Do you happen to know where it is?"
+ShowCharacterLeft(Ahlai -b Left_Question_Body -e Left_Question)
+[wait]ShowCharacterRight(Manju -b Right_Default_Body -e Right_SlightSmile)
 
-pixel Manju as ??? "Well, I <i>would</i> know where it is, if you <i>could</i> be more specific. A lot of books here cover curses that last a hundred years."
+Ahlai as <playerName> at 0 "I'm looking for a book on a 100-year curse. You know, that myth? Do you happen to know where it is?"
 
-pixel Ahlai as <playerName> "<i>What's his problem?</i>"
+ChangeBodyEmotion(Manju -e Right_LookingDown)
 
-choice in -1
+Manju as ??? at 1 "Well, I <i>would</i> know where it is, if you <i>could</i> be more specific. A lot of books here cover curses that last a hundred years."
+
+ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Suspicious)
+
+Ahlai as <playerName> at 0 "<i>What's his problem?</i>"
+
+choice in 0
 {
 	- <i>I'm not taking that attitude...</i>
-		pixel Ahlai as <playerName> "Is this how you treat every visitor at the library?"
+		Ahlai as <playerName> at 0 "Is this how you treat every visitor at the library?"
 
-		pixel Manju as ??? "The truth would leave me without a job, but I would be leaving you without a book if that is all the information you have on hand."
+		Manju as ??? at 1 "The truth would leave me without a job, but I would be leaving you without a book if that is all the information you have on hand."
 
-		pixel Ahlai as <playerName> "The receptionist spoke very highly of all the archivists here, so if I'm just left empty-handed, that would simply be... so unfortunate!"
+		Ahlai as <playerName> at 0 "The receptionist spoke very highly of all the archivists here, so if I'm just left empty-handed, that would simply be... so unfortunate!"
 
-		pixel Manju as ??? "You-! You plan to speak with my boss about this?"
+		Manju as ??? at 1 "You-! You plan to speak with my boss about this?"
 
-		pixel Ahlai as <playerName> "Only if you don't get me that book."
+		Ahlai as <playerName> at 0 "Only if you don't get me that book."
 
-		pixel Manju as ??? "Damn, alright... ugh, how about we just start with the Magic section?"
+		Manju as ??? at 1 "Damn, alright... ugh, how about we just start with the Magic section?"
 
-		pixel Ahlai as <playerName> "Good."
+		Ahlai as <playerName> at 0 "Good."
 
-		pixel Ahlai as <playerName> "<i>He's stopped talking and his expression's unreadable again. He seems to have gotten the message, though, with how much faster he's working.</i>"
+		Ahlai as <playerName> at 0 "<i>He's stopped talking and his expression's unreadable again. He seems to have gotten the message, though, with how much faster he's working.</i>"
 
-		pixel Manju as ??? "Perhaps there's a title you can recall...?"
+		Manju as ??? at 1 "Perhaps there's a title you can recall...?"
 
 	- What do you mean?
 		$Manju += 1
 
-		pixel Ahlai as <playerName> "To be candid, you sound displeased that I couldn't be more specific. I apologize, but this really is all the information I have on hand. Any book will do, please."
+		Ahlai as <playerName> at 0 "To be candid, you sound displeased that I couldn't be more specific. I apologize, but this really is all the information I have on hand. Any book will do, please."
 
-		pixel Manju as ??? "...Was my displeasure that obvious?"
+		Manju as ??? at 1 "...Was my displeasure that obvious?"
 
-		pixel Ahlai as <playerName> "Hmm..."
+		Ahlai as <playerName> at 0 "Hmm..."
 
-		pixel Ahlai as <playerName> "I could also just have a knack for reading people, don't you think?"
+		Ahlai as <playerName> at 0 "I could also just have a knack for reading people, don't you think?"
 
-		pixel Manju as ??? "More the type to read people than to read books, then?"
+		Manju as ??? at 1 "More the type to read people than to read books, then?"
 
-		pixel Manju as ??? "I suppose both are handy skills to have."
+		Manju as ??? at 1 "I suppose both are handy skills to have."
 
-		pixel Ahlai as <playerName> "And what about you, then? If you don't mind me asking?"
+		Ahlai as <playerName> at 0 "And what about you, then? If you don't mind me asking?"
 
-		pixel Manju as ??? "You said it yourself, you have a knack for reading people. Come up with your own conclusions."
+		Manju as ??? at 1 "You said it yourself, you have a knack for reading people. Come up with your own conclusions."
 
-		pixel Ahlai as <playerName> "<i>When you put it like that, then...</i>"
+		Ahlai as <playerName> at 0 "<i>When you put it like that, then...</i>"
 
-		pixel Manju as ??? "Hold on... I think I found what you're looking for."
+		Manju as ??? at 1 "Hold on... I think I found what you're looking for."
 }
 
-pixel Ahlai as <playerName> "I believe the book is called-"
+Ahlai as <playerName> at 0 "I believe the book is called-"
 
-pixel Manju as ??? "<i>Seiysla's 100-Year Curse?</i>"
+Manju as ??? at 1 "<i>Seiysla's 100-Year Curse?</i>"
 
-pixel Ahlai as <playerName> "<i>Seiysla's 100-Year Curse,</i> yes."
+Ahlai as <playerName> at 0 "<i>Seiysla's 100-Year Curse,</i> yes."
 
-pixel Manju as ??? "Is it... this one?"
+Manju as ??? at 1 "Is it... this one?"
 
-pixel Ahlai as <playerName> "Yes, it's this one!"
+ChangeBodyEmotion(Ahlai -e Left_Smile)
 
-pixel Manju as ??? "You seem relieved to find that book. Though, it isn't a myth."
+Ahlai as <playerName> at 0 "Yes, it's this one!"
 
-pixel Ahlai as <playerName> "Oh, really? How would you know? You couldn't have possibly been around during the last one."
+Manju as ??? at 1 "You seem relieved to find that book. Though, it isn't a myth."
 
-pixel Manju as ??? "Well, were <i>you</i> around during the last one? They only happen once in a hundred years, you know."
+ChangeBodyEmotion(Ahlai -e Left_Suspicious)
 
-pixel Ahlai as <playerName> "I suppose not."
+Ahlai as <playerName> at 0 "Oh, really? How would you know? You couldn't have possibly been around during the last one."
 
-pixel Manju as ??? "That makes two of us, then. So... you plan to tell me any more about how this is all just a myth?"
+ChangeBodyEmotion(Manju -e Right_Chuckle)
 
-pixel Ahlai as <playerName> "Then what makes you so sure that it isn't a myth?"
+Manju as ??? at 1 "Well, were <i>you</i> around during the last one? They only happen once in a hundred years, you know."
 
-pixel Manju as ??? "I've been walking around recently. Kuchai Town is a bit different from how it was several weeks ago. Almost like the gods are giving us a sign that the curses are returning."
+ChangeBodyEmotion(Manju -e Right_SlightSmile)
 
-pixel Ahlai as <playerName> "Do the gods have anything to do with it?"
+Ahlai as <playerName> at 0 "I suppose not."
 
-pixel Manju as ??? "Maybe they do. The <b>overuse of magic has been a problem ever since it was given to us by the gods</b>."
+Manju as ??? at 1 "That makes two of us, then. So... you plan to tell me any more about how this is all just a myth?"
 
-pixel Manju as ??? "Isn't that what causes it?"
+ShowCharacterLeft(Ahlai -b Left_Question_Body -e Left_Question)
 
-pixel Manju as ??? "At least, that's what it says in the book you wanted to borrow. Here."
+Ahlai as <playerName> at 0 "Then what makes you so sure that it isn't a myth?"
 
-pixel Manju as ??? "You should have noticed some changes, too. I see you around town. You work at Sabina's Salves, correct? You're always carrying potions around. You and that friend of yours."
+Manju as ??? at 1 "I've been walking around recently. Kuchai Town is a bit different from how it was several weeks ago. Almost like the gods are giving us a sign that the curses are returning."
 
-pixel Ahlai as <playerName> "I do. And his name is Seiji. We mostly make potion deliveries to our clients."
+Ahlai as <playerName> at 0 "Do the gods have anything to do with it?"
 
-pixel Manju as ??? "Your potion requests have increased in number, haven't they? Why do you think that's so?"
+ChangeBodyEmotion(Manju -e Right_StraightThreatening)
 
-pixel Ahlai as <playerName> "Well, I..."
+Manju as ??? at 1 "Maybe they do. The <b>overuse of magic has been a problem ever since it was given to us by the gods</b>."
 
-pixel Ahlai as <playerName> "How would you... know that?"
+Manju as ??? at 1 "Isn't that what causes it?"
 
-pixel Manju as ??? "Oh, I just notice things. More and more unfortunate incidents have been happening around town, so I figured more people would need help from the potions in your shop."
+ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
 
-pixel Manju as ??? "Lucky guess?"
+Manju as ??? at 1 "At least, that's what it says in the book you wanted to borrow. Here."
 
-pixel Ahlai as <playerName> "For someone who spends his day indoors, you're pretty observant."
+ChangeBodyEmotion(Manju -e Right_SlightSmile)
 
-pixel Manju as ??? "You just seem to catch my eye."
+Manju as ??? at 1 "You should have noticed some changes, too. I see you around town. You work at Sabina's Salves, correct? You're always carrying potions around. You and that friend of yours."
 
-pixel Ahlai as <playerName> "Oh, well... I didn't get your name."
+Ahlai as <playerName> at 0 "I do. And his name is Seiji. We mostly make potion deliveries to our clients."
 
-pixel Manju as Taji "It's Taji."
+Manju as ??? at 1 "Your potion requests have increased in number, haven't they? Why do you think that's so?"
 
-pixel Ahlai as <playerName> "It's nice to meet you... I'm <playerName>."
+Ahlai as <playerName> at 0 "Well, I..."
 
-pixel Manju as Taji "<playerName>... The name alone has me interested."
+ChangeBodyEmotion(Ahlai -e Left_Suspicious)
 
-pixel Ahlai as <playerName> "Why, 'cause it's pretty?"
+Ahlai as <playerName> at 0 "How would you... know that?"
 
-pixel Manju as Taji "You flatter yourself. But names do tell me stories - who they are, where they're from - yours is no exception."
+ChangeBodyEmotion(Manju -e Right_SmileScaryEyes)
+
+Manju as ??? at 1 "Oh, I just notice things. More and more unfortunate incidents have been happening around town, so I figured more people would need help from the potions in your shop."
+
+ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
+
+Manju as ??? at 1 "Lucky guess?"
+
+Ahlai as <playerName> at 0 "For someone who spends his day indoors, you're pretty observant."
+
+ChangeBodyEmotion(Manju -e Right_SlightSmile)
+
+Manju as ??? at 1 "You just seem to catch my eye."
+
+ChangeBodyEmotion(Ahlai -e Left_BlushSurprised)
+
+Ahlai as <playerName> at 0 "Oh, well... I didn't get your name."
+
+Manju as Taji at 1 "It's Taji."
+
+Ahlai as <playerName> at 0 "It's nice to meet you... I'm <playerName>."
+
+Manju as Taji at 1 "<playerName>... The name alone has me interested."
+
+ChangeBodyEmotion(Ahlai -b Left_Question_Body -e Left_Question)
+
+Ahlai as <playerName> at 0 "Why, 'cause it's pretty?"
+
+ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
+
+Manju as Taji at 1 "You flatter yourself. But names do tell me stories - who they are, where they're from - yours is no exception."
 
 Load("Main 4 - Manju Repeating Dialogue")
 
