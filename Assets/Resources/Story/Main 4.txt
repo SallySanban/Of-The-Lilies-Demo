@@ -97,11 +97,13 @@ Ahlai as <playerName> at 0 "I suppose not."
 
 Manju as ??? at 1 "That makes two of us, then. So... you plan to tell me any more about how this is all just a myth?"
 
-ShowCharacterLeft(Ahlai -b Left_Question_Body -e Left_Question)
+ChangeBodyEmotion(Ahlai -b Left_Question_Body -e Left_Question)
 
 Ahlai as <playerName> at 0 "Then what makes you so sure that it isn't a myth?"
 
-Manju as ??? at 1 "I've been walking around recently. Kuchai Town is a bit different from how it was several weeks ago. Almost like the gods are giving us a sign that the curses are returning."
+Manju as ??? at 1 "I've been walking around recently. Kuchai Town is a bit different from how it was several weeks ago."
+
+Manju as ??? at 1 "Almost like the gods are giving us a sign that the curses are returning."
 
 Ahlai as <playerName> at 0 "Do the gods have anything to do with it?"
 
@@ -117,7 +119,9 @@ Manju as ??? at 1 "At least, that's what it says in the book you wanted to borro
 
 ChangeBodyEmotion(Manju -e Right_SlightSmile)
 
-Manju as ??? at 1 "You should have noticed some changes, too. I see you around town. You work at Sabina's Salves, correct? You're always carrying potions around. You and that friend of yours."
+Manju as ??? at 1 "You should have noticed some changes, too. I see you around town. You work at Sabina's Salves, correct?"
+
+Manju as ??? at 1 "You're always carrying potions around. You and that friend of yours."
 
 Ahlai as <playerName> at 0 "I do. And his name is Seiji. We mostly make potion deliveries to our clients."
 
@@ -125,13 +129,15 @@ Manju as ??? at 1 "Your potion requests have increased in number, haven't they? 
 
 Ahlai as <playerName> at 0 "Well, I..."
 
-ChangeBodyEmotion(Ahlai -e Left_Suspicious)
+ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Suspicious)
 
 Ahlai as <playerName> at 0 "How would you... know that?"
 
 ChangeBodyEmotion(Manju -e Right_SmileScaryEyes)
 
-Manju as ??? at 1 "Oh, I just notice things. More and more unfortunate incidents have been happening around town, so I figured more people would need help from the potions in your shop."
+Manju as ??? at 1 "Oh, I just notice things."
+
+Manju as ??? at 1 "More and more unfortunate incidents have been happening around town, so I figured more people would need help from the potions in your shop."
 
 ChangeBodyEmotion(Manju -e Right_SmileEyesClosed)
 

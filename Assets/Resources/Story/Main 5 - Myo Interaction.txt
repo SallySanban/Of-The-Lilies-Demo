@@ -6,9 +6,9 @@ if (!$BarkeepTalkedTo)
 }
 else
 {
-	[wait]ShowCharacterLeft(Myo -b Left_Default_Body -e Left_Thought)
+	pixel Myo "So, you say you want to reach out to the administration of the Seiyslan Imperial Academy of Arts and Letters, but...
 	
-	Myo at 0 "So, you say you want to reach out to the administration of the Seiyslan Imperial Academy of Arts and Letters, but... what exactly are you reaching out to them with if I appeal to take your son's artworks overseas?"
+	pixel Myo "What exactly are you reaching out to them with if I appeal to take your son's artworks overseas?"
 
 	pixel SocialClimberSit2 as ??? "Sorry, what do you even mean by that? I just thought you were such a patron of, say, arts and culture around the Empire!"
 
@@ -16,39 +16,51 @@ else
 
 	pixel SocialClimberSit2 as ??? "I just think that he would have a far more secure future if he just focused more on the business he is set to inherit from me, but his time at the academy has had him lose more focus than I am comfortable with."
 
-	Myo at 0 "Er, and how could I help you and him with this issue, then? Surely he has been equipped with the necessary knowledge and skills for your business, if you are so keen on having him be your successor?"
+	pixel Myo "Er, and how could I help you and him with this issue, then?"
+	
+	pixel Myo "Surely he has been equipped with the necessary knowledge and skills for your business, if you are so keen on having him be your successor?"
 
-	pixel SocialClimberSit2 as ??? "It's just... well, you are a more educated man than me, Sir Aciano! Help me out, here-my boy says that he wants to pick apart certain flaws in our fine Empire with both <i>his</i> art and <i>my</i> business."
+	pixel SocialClimberSit2 as ??? "It's just... well, you are a more educated man than me, Sir Aciano!"
+	
+	pixel SocialClimberSit2 as ??? "Help me out, here-my boy says that he wants to pick apart certain flaws in our fine Empire with both <i>his</i> art and <i>my</i> business."
 
-	pixel SocialClimberSit2 as ??? "But, please! He's only one man, and it's not as if he has plans to enter the government! Culture is culture, art is art, government is government, and business is business. I cannot see why he tries mixing them all together! Bachelors just aren't like what they used to be..."
+	pixel SocialClimberSit2 as ??? "But, please! He's only one man, and it's not as if he has plans to enter the government!"
+	
+	pixel SocialClimberSit2 as ??? "Culture is culture, art is art, government is government, and business is business. I cannot see why he tries mixing them all together!"
+	
+	pixel SocialClimberSit2 as ??? "Bachelors just aren't like what they used to be..."
 
-	Myo at 0 "Well, anyone with or without an education can understand that the Seiyslan Empire has flaws, as any nation would. But have you considered that your son is actually exploring his own path, not quite losing focus of the goals you agreed upon with him? I am willing to consult with him, for your sake."
+	pixel Myo "Well, anyone with or without an education can understand that the Seiyslan Empire has flaws, as any nation would."
+	
+	pixel Myo "But have you considered that your son is actually exploring his own path, not quite losing focus of the goals you agreed upon with him?"
+	
+	pixel Myo "I am willing to consult with him, for your sake."
 
-	pixel SocialClimberSit2 as ??? "Oh? So that means you can pull some strings, yes? As thanks, I've got a fine deal and an even <i>finer</i> woman ready for you if you do this! For me <i>and</i> my son."
+	pixel SocialClimberSit2 as ??? "Oh? So that means you can pull some strings, yes?"
+	
+	pixel SocialClimberSit2 as ??? "As thanks, I've got a fine deal and an even <i>finer</i> woman ready for you if you do this! For me <i>and</i> my son."
 
 	pixel SocialClimberSit2 as ??? "I'm even willing to donate to that university you teach at, if that helps. Anything for a man as charitable as yourself!"
 
-	ChangeBodyEmotion(Myo -e Left_Smile)
-
-	Myo at 0 "Oh, I'm flattered! But I don't just teach there, I have to clarify..."
+	pixel Myo "Oh, I'm flattered! But I don't just teach there, I have to clarify..."
 
 	pixel SocialClimberSit2 as ??? "Yes, yes..."
 
 	pixel SocialClimberSit2 as ??? "But, you <i>will</i> take on my son, then? I just don't want you misunderstanding me, you know!"
 
-	ChangeBodyEmotion(Myo -e Left_Concerned)
+	HideTextbox(false)
 	[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Thought)
 
 	Ahlai as <playerName> at 1 "<i>Why is this man so eager to have Sir Aciano endorse his son...?</i>"
 
-	[wait]HideCharacter(Ahlai)
-	ChangeBodyEmotion(Myo -e Left_ConcernedSmile)
+	HideTextbox(true)
+	HideCharacter(Ahlai)
 
-	Myo at 0 "..."
+	pixel Myo "..."
 
-	Myo at 0 "I understand, I truly do. But please, I would be happy to speak directly with your son before I proceed with anything..."
+	pixel Myo "I understand, I truly do. But please, I would be happy to speak directly with your son before I proceed with anything..."
 
-	[wait]HideCharacter(Myo)
+	HideTextbox(false)
 	[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Thought)
 
 	Ahlai as <playerName> at 1 "<i>Some of the tavern's patrons go here to gather connections with the Empire's more esteemed guests. It really is no surprise that people flock to Sir Aciano.</i>"
@@ -75,6 +87,7 @@ else
 
 			Ahlai as <playerName> at 1 "Well, I was actually here at the tavern to greet him. But even I was intrigued by what you had to say about your son!"
 
+			HideTextbox(true)
 			[wait]ShowCharacterLeft(Myo -b Left_Default_Body -e Left_Surprised)
 
 			Myo at 0 "You're intrigued, you say?"
@@ -95,7 +108,9 @@ else
 
 			pixel SocialClimberSit2 as ??? "I-oh, I didn't know you two were so closely acquainted...!"
 
-			pixel SocialClimberSit2 as ??? "Er, but wait. Aren't you that vendor who sells those potions? What could you possibly know about the Northernworld? I mean no offense, it's just... are you receiving financial aid to go to a college? Is that how you can speak with us here about this subject?"
+			pixel SocialClimberSit2 as ??? "Er, but wait. Aren't you that vendor who sells those potions? What could you possibly know about the Northernworld?"
+			
+			pixel SocialClimberSit2 as ??? "I mean no offense, it's just... are you receiving financial aid to go to a college? Is that how you can speak with us here about this subject?"
 
 			ChangeBodyEmotion(Ahlai -e Right_Pursed)
 
@@ -103,7 +118,9 @@ else
 
 			Myo at 0 "There isn't anything wrong with selling potions! Were you not a potion-maker yourself? Before you started making a business out of that?"
 
-			pixel SocialClimberSit2 as ??? "I... well, yes, but I would just like to clarify...! My son is trying to pursue art while he goes overseas! I was hoping the good governor-general Sir Aciano could talk some sense into him by making sure he prioritizes the family business!"
+			pixel SocialClimberSit2 as ??? "I... well, yes, but I would just like to clarify...! My son is trying to pursue art while he goes overseas!"
+			
+			pixel SocialClimberSit2 as ??? "I was hoping the good governor-general Sir Aciano could talk some sense into him by making sure he prioritizes the family business!"
 
 			ChangeBodyEmotion(Ahlai -e Right_Smile)
 
@@ -111,7 +128,11 @@ else
 
 			Myo at 0 "Which I could definitely help with."
 
-			Myo at 0 "I think what my good friend is trying to say-without imposing, of course-that everyone would be in a better position if we focused on encouraging collaboration with your son should he go abroad. And I can talk with him tomorrow. That's quite a good solution, if you ask me."
+			Myo at 0 "I think what my good friend is trying to say-without imposing, of course-"
+			
+			Myo at 0 "That everyone would be in a better position if we focused on encouraging collaboration with your son should he go abroad."
+			
+			Myo at 0 "And I can talk with him tomorrow. That's quite a good solution, if you ask me."
 
 			pixel SocialClimberSit2 as ??? "I... er, if you say so... I must thank you and apologize, then. I must retire, but I do look forward to our next meeting."
 
@@ -140,7 +161,8 @@ else
 
 			Ahlai as <playerName> at 1 "Sir Aciano!"
 
-			ChangeBodyEmotion(Myo -e Left_PleasantSurprise)
+			HideTextbox(true)
+			[wait]ShowCharacterLeft(Myo -b Left_Default_Body -e Left_PleasantSurprise)
 
 			Myo at 0 "Oh, if it isn't the lovely shopkeep from Sabina's Salves! Come here. I am honored to have you sit here..."
 
@@ -158,7 +180,9 @@ else
 
 			ChangeBodyEmotion(Ahlai -e Right_ApologeticSmile)
 
-			Ahlai as <playerName> at 1 "Oh, what poor timing. Why mix together business and pleasure? Were you just here at this table to cut a deal with the governor-general?"
+			Ahlai as <playerName> at 1 "Oh, what poor timing. Why mix together business and pleasure?"
+			
+			Ahlai as <playerName> at 1 "Were you just here at this table to cut a deal with the governor-general?"
 
 			Myo at 0 "Is this true...?"
 
@@ -180,11 +204,17 @@ else
 
 			pixel SocialClimberSit2 as ??? "But as for <i>you</i>, I recommend you watch your own mouth when you speak with elders like myself!"
 
-			Myo at 0 "I appreciate your efforts to help, but might I remind you that this person is no  <i>stranger</i>. I'm actually one of their loyalest customers, at Sabina's Salves."
+			Myo at 0 "I appreciate your efforts to help, but might I remind you that this person is no  <i>stranger</i>."
+			
+			Myo at 0 "I'm actually one of their loyalest customers, at Sabina's Salves."
 
-			Myo at 0 "For someone who's so keen on making sure their business stays afloat, I think a very simple tip I'd love to give your son would be to show some common courtesy to the employees who run stores like yours. But I understand if your son isn't interested in hearing what I have to say!"
+			Myo at 0 "For someone who's so keen on making sure their business stays afloat, I think a very simple tip I'd love to give your son would be to show some common courtesy to the employees who run stores like yours."
+			
+			Myo at 0 "But I understand if your son isn't interested in hearing what I have to say!"
 
-			pixel SocialClimberSit2 as ??? "I...! No, please. I know when I've made a mistake. I'll go right to my son, this instant. I promise you won't regret dealing with him-oh! Good evening!"
+			pixel SocialClimberSit2 as ??? "I...! No, please. I know when I've made a mistake. I'll go right to my son, this instant."
+			
+			pixel SocialClimberSit2 as ??? "I promise you won't regret dealing with him-oh! Good evening!"
 
 			HideTextbox(true)
 			[wait]Blackout()
@@ -203,7 +233,8 @@ else
 
 			Ahlai as <playerName> at 1 "Sir Aciano, is that you?"
 
-			ChangeBodyEmotion(Myo -e Left_Relieved)
+			HideTextbox(true)
+			[wait]ShowCharacterLeft(Myo -b Left_Default_Body -e Left_Relieved)
 
 			Myo at 0 "<playerName>, you're here!"
 
@@ -231,7 +262,9 @@ else
 
 			pixel SocialClimberSit2 as ??? "Well, I was just talking about-"
 
-			Myo at 0 "Oh, you have <i>nothing</i> to apologize for. Look, we are both at a tavern. You said it yourself, a government is a government, then I think we can say a tavern is a tavern."
+			Myo at 0 "Oh, you have <i>nothing</i> to apologize for. Look, we are both at a tavern."
+			
+			Myo at 0 "You said it yourself, a government is a government, then I think we can say a tavern is a tavern."
 
 			ChangeBodyEmotion(Ahlai -e Right_Smile)
 
@@ -243,7 +276,9 @@ else
 
 			ChangeBodyEmotion(Myo -e Left_Stern)
 
-			Myo at 0 "Look, I can pick up your drink, but I think it's better to discuss your matter another time. I'm not short on good deals to decide upon, either, so you hardly have to worry about that."
+			Myo at 0 "Look, I can pick up your drink, but I think it's better to discuss your matter another time."
+			
+			Myo at 0 "I'm not short on good deals to decide upon, either, so you hardly have to worry about that."
 
 			pixel SocialClimberSit2 as ??? "Oh, uh... I... of course, Sir Aciano. I'll just retire for the night then. Should I expect a word with you and my son?"
 
@@ -271,7 +306,7 @@ else
 
 	Myo at 0 "But I <i>was</i> wondering if you'd ever catch sight of me. Not that I'm hard to miss, of course."
 
-	choice in -1
+	choice in 1
 	{
 		- Are you so sure about that?
 			$Myo += 1
@@ -280,7 +315,9 @@ else
 
 			Myo at 0 "Oh, you wouldn't?"
 
-			Ahlai as <playerName> at 1 "All I'm saying... is that it is not often someone catches my eye. You might just be getting ahead of yourself when you say that you're hard to miss."
+			Ahlai as <playerName> at 1 "All I'm saying... is that it is not often someone catches my eye."
+			
+			Ahlai as <playerName> at 1 "You might just be getting ahead of yourself when you say that you're hard to miss."
 
 			ChangeBodyEmotion(Myo -e Left_FlirtySmile)
 

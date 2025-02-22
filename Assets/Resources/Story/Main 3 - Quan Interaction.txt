@@ -7,6 +7,7 @@ choice in -1
 
 		HideTextbox(false)
 	- if ($QuanDeliverQuest) Delivery from Sabina's Salves!
+		HideTextbox(true)
 		[wait]ShowCharacterRight(Seiji -b Right_Default_Body -e Right_Smile)
 
 		pixel Quan as Mr. Quan "Oh, has my potion finally arrived?"
@@ -60,7 +61,9 @@ choice in -1
 	- if ($QuanPotionQuest && $QuanPotionDone) Here's your potion, sir!
 		pixel Quan as Mr. Quan "Marvelous work, <playerName>! Thank you for all your help."
 
-		pixel Quan as Mr. Quan "With this Everguard Elixir, I can keep the pests off my produce! They have been bothering me more often than usual lately. I wonder if it's the change in weather?"
+		pixel Quan as Mr. Quan "With this Everguard Elixir, I can keep the pests off my produce!"
+		
+		pixel Quan as Mr. Quan "They have been bothering me more often than usual lately. I wonder if it's the change in weather?"
 
 		pixel Quan as Mr. Quan "Anyway, nothing you two need to worry about! Here is the extra fee I promised."
 
@@ -78,13 +81,17 @@ choice in -1
 
 		Ahlai as <playerName> at 0 "Where to next?"
 
-		Seiji at 1 "Lady Sabina wants us to borrow a book at the library. She told me that she suspects something strange is happening, and she needs more information."
+		Seiji at 1 "Lady Sabina wants us to borrow a book at the library."
+		
+		Seiji at 1 "She told me that she suspects something strange is happening, and she needs more information."
 
 		Ahlai as <playerName> at 0 "What's the book about?"
 
 		Seiji at 1 "The 100-year curse."
 
-		Ahlai as <playerName> at 0 "That curse? What's Lady Sabina suspecting about that? We don't even know whether it's real or a myth. Nobody would live long enough to experience it twice."
+		Ahlai as <playerName> at 0 "That curse? What's Lady Sabina suspecting about that?"
+		
+		Ahlai as <playerName> at 0 "We don't even know whether it's real or a myth. Nobody would live long enough to experience it twice."
 
 		Seiji at 1 "Who knows. We might be able to find out more when we get our hands on that book."
 

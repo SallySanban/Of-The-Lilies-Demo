@@ -1,3 +1,5 @@
+[wait]PanCamera(-x 0.5 -y 0 -spd 2)
+
 pixel StudentSit1 as Student "We're going to fail..."
 
 pixel StudentSit2 as Student "Relax! We still have 3 days until our exam on the history of the Seiyslan Empire."
@@ -13,3 +15,4 @@ pixel StudentSit2 as Student "But I only brought my mathematics notes. I left my
 pixel StudentSit1 as Student "We're going to fail..."
 
 HideTextbox(false)
+ResetCamera(true)

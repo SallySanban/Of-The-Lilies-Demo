@@ -8,7 +8,7 @@ ChangeBodyEmotion(Laisa -e Right_Smirk)
 
 Laisa as Ilaisaane at 1 "That's a first. Just what would you gain from helping me?"
 
-choice in -1
+choice in 0
 {
 	- I need information on Lien.
 		$Vengeance += 1

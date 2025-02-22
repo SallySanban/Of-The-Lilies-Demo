@@ -45,15 +45,23 @@ Ahlai as <playerName> at 0 "Why does this even have to be a secret? Doesn't Seij
 
 ChangeBodyEmotion(Ahlai -e Left_Concerned)
 
-pixel Sabina as Lady Sabina "When I told you both about the Ritual of Respite, I left out the most critical component needed to perform the ritual. I didn't want to tell you in front of Seiji... he has a good heart."
+pixel Sabina as Lady Sabina "When I told you both about the Ritual of Respite, I left out the most critical component needed to perform the ritual."
+
+pixel Sabina as Lady Sabina "I didn't want to tell you in front of Seiji... he has a good heart."
 
 setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 3)
 
-pixel Sabina as Lady Sabina "But we <i>will</i> need to make a choice, and I am leaving this at your discretion. <b>The ritual requires a single sacrifice to be made, as an offering to the gods</b>. And given the amount of essence he possesses... <b>he is one of the most suitable candidates</b>."
+pixel Sabina as Lady Sabina "But we <i>will</i> need to make a choice, and I am leaving this at your discretion."
+
+pixel Sabina as Lady Sabina "<b>The ritual requires a single sacrifice to be made, as an offering to the gods</b>. And given the amount of essence he possesses...
+
+pixel Sabina as Lady Sabina "<b>He is one of the most suitable candidates</b>."
 
 Ahlai as <playerName> at 0 "Seiji? As a... sacrifice?"
 
-pixel Sabina as Lady Sabina "There are a few others you can choose from, <playerName>. The choice is there for you to take. But think very, very hard about what you want, knowing all you've been through."
+pixel Sabina as Lady Sabina "There are a few others you can choose from, <playerName>. The choice is there for you to take."
+
+pixel Sabina as Lady Sabina "But think very, very hard about what you want, knowing all you've been through."
 
 pixel Sabina as Lady Sabina "With what I know... and with what the Ritual of Respite demands of us..."
 

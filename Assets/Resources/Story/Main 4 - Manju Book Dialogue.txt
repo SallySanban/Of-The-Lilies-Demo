@@ -46,7 +46,9 @@ choice in 0
 
 		Manju as Taji at 1 "History, huh?"
 
-		Manju as Taji at 1 "You have a good eye. What about history, specifically, though? Do you mean a certain time period, or do you mean how history is written, or the history of...?"
+		Manju as Taji at 1 "You have a good eye. What about history, specifically, though?"
+		
+		Manju as Taji at 1 "Do you mean a certain time period, or do you mean how history is written, or the history of...?"
 
 		Ahlai as <playerName> at 0 "Oh, uh... the history around potions. Not to be so obvious, but that is true."
 

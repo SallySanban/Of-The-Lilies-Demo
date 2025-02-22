@@ -21,7 +21,9 @@ choice in 0
 		$ChooseWorkAlreadyChosen = true
 		$ManjuDialogueOptions += 1
 
-		Manju as Taji at 1 "Information is more powerful than we think. The many books in this library contain such rich knowledge, but even the spread of information is often controlled by the government of Seiysla."
+		Manju as Taji at 1 "Information is more powerful than we think."
+		
+		Manju as Taji at 1 "The many books in this library contain such rich knowledge, but even the spread of information is often controlled by the government of Seiysla."
 
 		ChangeBodyEmotion(Manju -e Right_StraightThreatening)
 
@@ -97,7 +99,7 @@ choice in 0
 		HideCharacter(Ahlai)
 		HideCharacter(Manju)
 		HideTextbox(false)
-		ToggleInteractable("Scene 6" "Library 3" Manju false)
+		ToggleInteractable("Scene 6" "Library 2" Manju false)
 		ToggleNPC("Scene 6" "Library 1" Seiji true)
 		ToggleInteractable("Scene 6" "Library 1" Seiji true)
 }

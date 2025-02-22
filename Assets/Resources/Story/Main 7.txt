@@ -17,7 +17,9 @@ Seiji "<playerName>! There you are!"
 
 Ahlai as <playerName> "Seiji!"
 
-Seiji "When the skies began to change and you still weren't home... I started to worry! I'm so glad you're safe!"
+Seiji "When the skies began to change and you still weren't home... I started to worry!"
+
+Seiji "I'm so glad you're safe!"
 
 Seiji "Hurry, <playerName>. Let's go back to Sabina's Salves. We'll be safe there."
 
@@ -59,7 +61,9 @@ Ahlai as <playerName> at 0 "An issue for La Liryo? Lady Sabina, could it be... t
 
 Ahlai as <playerName> at 0 "It wasn't a myth, was it? Has a century already passed?"
 
-pixel Sabina as Lady Sabina "It's hard to think of any other explanation. Rain and storms are expected to hit Kuchai Town in the next few months. For these to happen so soon? If it's the curses, that's no good for any of us."
+pixel Sabina as Lady Sabina "It's hard to think of any other explanation. All sorts of calamities are expected to hit Kuchai Town in the next few months."
+
+pixel Sabina as Lady Sabina "For these to happen so soon? If it's the curses, that's no good for any of us."
 
 ChangeBodyEmotion(Ahlai -e Left_Thought)
 
@@ -71,11 +75,15 @@ pixel Sabina as Lady Sabina "It is obviously an advanced magical ritual, but we 
 
 Ahlai as <playerName> at 0 "What kinds of components?"
 
-pixel Sabina as Lady Sabina "To complete the ritual, you will need to seek out a sacred <b>dagger</b>, and <b>one of the gods' ancient artifacts</b>. They have been lost to time, but they surely lie beyond Kuchai's borders."
+pixel Sabina as Lady Sabina "To complete the ritual, you will need to seek out a sacred <b>dagger</b>, and <b>one of the gods' ancient artifacts</b>."
+
+pixel Sabina as Lady Sabina "They have been lost to time, but they surely lie beyond Kuchai's borders."
 
 pixel Sabina as Lady Sabina "You will need to prepare for a journey. This is what you've been training for."
 
-pixel Sabina as Lady Sabina "I will still have to confirm details with the rest of La Liryo's council. But if you can find the components in time, <playerName> - I give you my permission to go and find your family."
+pixel Sabina as Lady Sabina "I will still have to confirm details with the rest of La Liryo's council."
+
+pixel Sabina as Lady Sabina "But if you can find the components in time, <playerName> - I give you my permission to go and find your family."
 
 ChangeBodyEmotion(Ahlai -e Left_Surprised)
 
@@ -89,7 +97,9 @@ Ahlai as <playerName> at 0 "I... Thank you so much, Lady Sabina...! I won't let 
 
 pixel Sabina as Lady Sabina "I know you won't. Both of you."
 
-pixel Sabina as Lady Sabina "Now, it's been a long day for everyone. You should get some rest for the night. I'll call you both again in the morning once I have verified the existence of the curses with the council."
+pixel Sabina as Lady Sabina "Now, it's been a long day for everyone. You should get some rest for the night."
+
+pixel Sabina as Lady Sabina "I'll call you both again in the morning once I have verified the existence of the curses with the council."
 
 pixel Sabina as Lady Sabina "And <i>whatever</i> you do, do <i>not</i> go out until we know more."
 
@@ -98,26 +108,27 @@ HideCharacter(Seiji)
 HideTextbox(true)
 [wait]Blackout()
 RemoveFromScene("Sabina")
-HideCG()
+[wait]SetCamera(-x -12.68)
 [wait]FlipNPC("Seiji" Left)
+HideCG()
 
 ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Excited)
 [wait]ShowCharacterRight(Seiji -b Right_Default_Body -e Right_ApologeticSmile)
 
 Ahlai as <playerName> at 0 "Did you hear that, Seiji? I'll finally have the chance to search for my family!"
 
-Seiji at 0 "I'm happy for you, <playerName>. You've been trying to find them ever since we met."
+Seiji at 1 "I'm happy for you, <playerName>. You've been trying to find them ever since we met."
 
 ChangeBodyEmotion(Ahlai -e Left_ApologeticSmile)
 ChangeBodyEmotion(Seiji -e Right_Worried)
 
-Seiji at 0 "But the curses are dangerous. I just hope that... you'll bring me along to protect you."
+Seiji at 1 "But the curses are dangerous. I just hope that... you'll bring me along to protect you."
 
-Seiji at 0 "Until we know more about it, we should wait for Lady Sabina's instructions."
+Seiji at 1 "Until we know more about it, we should wait for Lady Sabina's instructions."
 
 ChangeBodyEmotion(Seiji -e Right_Blush)
 
-Seiji at 0 "I'll see you tomorrow. Good night, <playerName>. I hope... you have sweet dreams."
+Seiji at 1 "I'll see you tomorrow. Good night, <playerName>. I hope... you have sweet dreams."
 
 Ahlai as <playerName> at 0 "Good night, Seiji. I hope so too."
 

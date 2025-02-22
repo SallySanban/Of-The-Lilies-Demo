@@ -14,7 +14,9 @@ if (!$ManjuPaperInteracted)
 
 	Sabina as Lady Sabina "His grasp of magic extends into the forbidden. He's fallen into that whole trap of thinking potions aren't enough magic for us to wield!"
 
-	Sabina as Lady Sabina "My source says even among the already radical members of the Order of Hotei, he has no qualms resorting to even the most drastic methods. Attempting to sacrifice this one will be quite dangerous."
+	Sabina as Lady Sabina "My source says even among the already radical members of the Order of Hotei, he has no qualms resorting to even the most drastic methods."
+	
+	Sabina as Lady Sabina "Attempting to sacrifice this one will be quite dangerous."
 
 	Sabina as Lady Sabina "But if you ask me? Put very lightly, having him out of the way would be excellent for the Order of La Liryo."
 
@@ -31,6 +33,7 @@ choice in 2
 		HideTextbox(true)
 		setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 5)
 		[wait]Blackout()
+		[wait]SwitchCG("Thanks")
 
 	- Keep looking
 		HideTextbox(true)

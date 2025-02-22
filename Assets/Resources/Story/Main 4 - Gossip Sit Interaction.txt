@@ -1,3 +1,5 @@
+[wait]PanCamera(-x 0.5 -y 0 -spd 2)
+
 pixel GossipSit1 as ??? "Did you hear? Apparently Ilaisaane was finally captured."
 
 pixel GossipSit2 as ??? "Ilaisaane? You mean the Sea Serpent? From the famous Sea Emperor pirate ship?"
@@ -13,3 +15,4 @@ pixel GossipSit2 as ??? "Capturing one criminal after the other."
 pixel GossipSit1 as ??? "He's really keeping our streets - and our seas - safe."
 
 HideTextbox(false)
+ResetCamera(true)

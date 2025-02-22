@@ -3,7 +3,7 @@ ChangeBodyEmotion(Seiji -e Right_Smile)
 
 Seiji at 1 "Lady Sabina gave us some tasks to complete for the shop. Is there anything you want to talk about before we go?"
 
-choice in -1
+choice in 0
 {
 	- if (!$ShopAlreadyChosen) How's the shop been?
 		$ShopAlreadyChosen = true

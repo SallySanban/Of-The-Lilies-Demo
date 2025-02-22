@@ -2,19 +2,21 @@ pixel Ahlai as <playerName> "What should I ask...?"
 
 choice in -1
 {
-	- Is the tavern usually this crowded?
+	- if ($Crowded) Is the tavern usually this crowded?
 		pixel Barkeep "Well, yes. Being the only tavern in town does that."
 
+		$Crowded = false
 		Load("Main 5 - Barkeep Repeating Dialogue")
 
-	- Does Lady Sabina go here often?
+	- if ($LadySabinaGo) Does Lady Sabina go here often?
 		pixel Barkeep "She does. She's a nice woman."
 
 		pixel Barkeep "If you happen to be working for her, tell her I say hello. And that her usual is always ready for her. I owe her, anyway."
 
+		$LadySabinaGo = false
 		Load("Main 5 - Barkeep Repeating Dialogue")
 
-	- Did you know that Lien and the army are here?
+	- if ($LienHere) Did you know that Lien and the army are here?
 		pixel Barkeep "Hmph. I don't care about him. Probably corrupt like everyone else. I don't plan to give him any more shit than he orders."
 
 		pixel Ahlai as <playerName> "I understand, but... may I ask why?"
@@ -23,9 +25,10 @@ choice in -1
 
 		pixel Barkeep "He won't even be in town for long. Whatever. If he brings in more customers, that's fine by me."
 
+		$LienHere = false
 		Load("Main 5 - Barkeep Repeating Dialogue")
 
-	- Isn't that the Governor-General over there?
+	- if ($MyoHere) Isn't that the Governor-General over there?
 		pixel Barkeep "Ah, Myo, right?"
 		
 		pixel Barkeep "He's a good man. Annoying sometimes with all the politics."
@@ -34,6 +37,7 @@ choice in -1
 
 		pixel Barkeep "I'm also proud to say he keeps a large tab. Great for business."
 
+		$MyoHere = false
 		Load("Main 5 - Barkeep Repeating Dialogue")
 
 	- That's all

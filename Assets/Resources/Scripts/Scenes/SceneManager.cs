@@ -233,10 +233,20 @@ public class SceneManager : MonoBehaviour
 
     public IEnumerator PanCamera(float targetX, float targetY, float duration)
     {
+        Vector3 originalPosition;
+
+        if (panCamera.Priority == 2)
+        {
+            originalPosition = panCamera.transform.position;
+        }
+        else
+        {
+            originalPosition = playerCamera.transform.position;
+        }
+
         panCamera.Priority = 2;
         cinemachineBrain.m_DefaultBlend.m_Time = DEFAULT_BLEND;
 
-        Vector3 originalPosition = playerCamera.transform.position;
         Vector3 targetPosition = Vector3.zero;
 
         if (targetX == 0)

@@ -64,7 +64,9 @@ Ahlai as <playerName> at 1 "Oh, yes, the Draught of Perpetuity. And you ordered.
 ChangeBodyEmotion(Myo -e Left_Laugh)
 ChangeBodyEmotion(Ahlai -e Right_ApologeticSmile)
 
-Myo at 0 "What can I say? I have plenty on my plate-overseeing Agon Province, writing publications and conducting research for the university, teaching students, managing my family's business..."
+Myo at 0 "What can I say? I have plenty on my plate-"
+
+Myo at 0 "Overseeing Agon Province, writing publications and conducting research for the university, teaching students, managing my family's business..."
 
 Myo at 0 "I mean, you're going to want to drink these too, or you just wouldn't get anything done, don't you think?"
 
@@ -73,13 +75,21 @@ ChangeBodyEmotion(Ahlai -e Right_Concerned)
 
 Ahlai as <playerName> at 1 "I don't envy you, Sir- um, Myo. But please, you're only allowed to drink one vial a day."
 
-Ahlai as <playerName> at 1 "This potion is not a substitute for proper rest and a good night's sleep, since it only heightens your functionality. It doesn't necessarily relieve any tension or anxiety on your end."
+Ahlai as <playerName> at 1 "This potion is not a substitute for proper rest and a good night's sleep, since it only heightens your functionality."
 
-Myo at 0 "I'll keep that in mind, <playerName>. Any tension of mine shouldn't be your problem to address, but it must be unfortunate if I've already got you worrying..."
+Ahlai as <playerName> at 1 "It doesn't necessarily relieve any tension or anxiety on your end."
+
+Myo at 0 "I'll keep that in mind, <playerName>."
+
+Myo at 0 "Any tension of mine shouldn't be your problem to address, but it must be unfortunate if I've already got you worrying..."
 
 Myo at 0 "Lady Sabina mentioned to me how complicated it was to make this draught, and here I requested a dozen!"
 
-Ahlai as <playerName> at 1 "Yes... <b>Magic does only come from the gods</b>. But that's what we do here at Sabina's Salves. <b>We craft the potions so ordinary people like us can use the magic too</b>. It's nothing we cannot handle. Please, don't feel too bothered by it."
+Ahlai as <playerName> at 1 "Yes... <b>Magic does only come from the gods</b>. But that's what we do here at Sabina's Salves."
+
+Ahlai as <playerName> at 1 "<b>We craft the potions so ordinary people like us can use the magic too</b>. It's nothing we cannot handle."
+
+Ahlai as <playerName> at 1 "Please, don't feel too bothered by it."
 
 Myo at 0 "Well, if you insist..."
 
@@ -87,7 +97,7 @@ ChangeBodyEmotion(Myo -e Left_FlirtySmile)
 
 Myo at 0 "But allow me to pose the question back to you, <playerName>. How are you faring today? You seem a little pale."
 
-choice in -1
+choice in 1
 {
 	- I'm alright, I guess...
 		$FlirtMyo = false
@@ -157,7 +167,7 @@ HideTextbox(true)
 
 Myo at 0 "What do you say, dear? Will you take me up on my offer?"
 
-choice in -1
+choice in 1
 {
 	- Well, it would be rude of me to say no.
 		$Myo += 1
@@ -188,15 +198,17 @@ choice in -1
 		RemoveFromScene("Myo")
 		FlipNPC("Ahlai" "Right")
 		HideCharacter(Myo)
-		HideCharacter(Ahlai)
+		[wait]HideCharacter(Ahlai)
 		[wait]HideCG()
 
-		ShowCharacterLeft(Seiji -b Right_Default_Body -e Right_Pout)
-		[wait]ShowCharacterRight(Ahlai -b Left_Default_Body -e Left_ApologeticSmile)
+		ShowCharacterRight(Seiji -b Right_Default_Body -e Right_Pout)
+		[wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_ApologeticSmile)
 
 		Seiji at 1 "<playerName>, I hope you're being careful about the people you spend time with."
 
-		Seiji at 1 "Sir Aciano has all this wealth and great accomplishments to go for, but... are you not bothered by how many people are put off by him? I hear he's like this with everyone."
+		Seiji at 1 "Sir Aciano has all this wealth and great accomplishments to go for, but..."
+		
+		Seiji at 1 "Are you not bothered by how many people are put off by him? I hear he's like this with everyone."
 
 		ChangeBodyEmotion(Ahlai -e Left_FlirtTease)
 
@@ -235,7 +247,7 @@ choice in -1
 		RemoveFromScene("Myo")
 		FlipNPC("Ahlai" "Right")
 		HideCharacter(Myo)
-		HideCharacter(Seiji)
+		[wait]HideCharacter(Seiji)
 		[wait]HideCG()
 
 		ShowCharacterLeft(Seiji -b Right_Default_Body -e Right_Pout)

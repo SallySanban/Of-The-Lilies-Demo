@@ -8,11 +8,13 @@ Ahlai as <playerName> at 0 "I won't be your enemy if you don't make one of me, a
 
 ChangeBodyEmotion(Laisa -e Right_Smirk)
 
-Laisa as Ilaisaane at 1 "Then you can trust me when I say I'm more than capable of handling things on my own. I do not need your pity, or to find myself owing a stranger anything."
+Laisa as Ilaisaane at 1 "Then you can trust me when I say I'm more than capable of handling things on my own."
+
+Laisa as Ilaisaane at 1 "I do not need your pity, or to find myself owing a stranger anything."
 
 Laisa as Ilaisaane at 1 "But I do need to make sure you'll never say anything about seeing me to anyone. Shall we do this the easy way or the hard way?"
 
-choice in -1
+choice in 0
 {
 	- You don't have to worry about that.
 		$Laisa += 1
@@ -47,13 +49,15 @@ choice in -1
 
 		Laisa as Ilaisaane at 1 "I don't doubt you. But I don't think it's wise for you to get tangled with the likes of me."
 
-		ChangeBodyEmotion(Ahlai -e Left_Upset)
+		ChangeBodyEmotion(Ahlai -e Left_Frown)
 
 		Ahlai as <playerName> at 0 "You think I'm too fragile for danger?"
 
-		Laisa as Ilaisaane at 1 "I only think you're too precious for all this trouble. You're the only one whose first instinct wasn't to run from me. That's something, don't you think?"
+		Laisa as Ilaisaane at 1 "I only think you're too precious for all this trouble."
+		
+		Laisa as Ilaisaane at 1 "You're the only one whose first instinct wasn't to run from me. That's something, don't you think?"
 
-		ChangeBodyEmotion(Ahlai -e Left_Pursed)
+		ChangeBodyEmotion(Ahlai -e Left_Determined)
 
 		Ahlai as <playerName> at 0 "What do you mean, then? If you still don't want my help, I'll be on my way. But if you need somewhere new to hide, I might know a place."
 
@@ -65,14 +69,17 @@ choice in -1
 		Load("Main 6 - Laisa Lien Interaction")
 
 	- It seems your life is in my hands.
+		ChangeBodyEmotion(Ahlai -e Left_Challenge)
+
 		Ahlai as <playerName> at 0 "Shouldn't you be more courteous with me?"
 
 		ChangeBodyEmotion(Laisa -e Right_Stern)
-		ChangeBodyEmotion(Ahlai -e Left_Challenge)
 
 		Laisa as Ilaisaane at 1 "I don't give courtesies to people I can't trust."
 
-		Laisa as Ilaisaane at 1 "Listen, and listen well. I'll be generous this time and spare your life. But remember this - you may know of me, but I guarantee you, you'll never be able to find me."
+		Laisa as Ilaisaane at 1 "Listen, and listen well. I'll be generous this time and spare your life."
+		
+		Laisa as Ilaisaane at 1 "But remember this - you may know of me, but I guarantee you, you'll never be able to find me."
 
 		ChangeBodyEmotion(Laisa -e Right_Smirk)
 
@@ -121,5 +128,6 @@ choice in -1
 
 		Laisa as Ilaisaane at 1 "Try and stop me, General!"
 
+		HideTextbox(true)
 		Load("Main 7 - Curses Interaction")
 }

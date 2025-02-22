@@ -23,7 +23,9 @@ Lien as General Lien at 1 "I suggest you do the right thing and step aside. Hand
 HideTextbox(true)
 [wait]SwitchCharacter(Ahlai Laisa -p 0 -b Left_Default_Body -e Left_Smirk)
 
-Laisa as Ilaisaane at 0 "You don't have to take your anger out on this poor passerby! There's no rush here, General. Do you plan to kill me on sight, or are you just that excited to see me?"
+Laisa as Ilaisaane at 0 "You don't have to take your anger out on this poor passerby! There's no rush here, General."
+
+Laisa as Ilaisaane at 0 "Do you plan to kill me on sight, or are you just that excited to see me?"
 
 Lien as General Lien at 1 "You have broken laws and are resisting your arrest, so I am holding you accountable to the laws you violate. Do not test my patience, pirate."
 

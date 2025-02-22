@@ -992,7 +992,7 @@ MonoBehaviour:
       flipped: 0
       animationState: IdleRight
     - npcName: Quan
-      position: {x: -1436.34, y: -202.32}
+      position: {x: -1330.34, y: -202.32}
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -1017,12 +1017,12 @@ MonoBehaviour:
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson2
-      position: {x: -2707.34, y: -187.32}
+      position: {x: -2485.34, y: -187.32}
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson3
-      position: {x: 2106.66, y: -195.32}
+      position: {x: 1915.66, y: -195.32}
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -1041,7 +1041,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Quan Interaction
-      moveToInteractPosition: {x: -11.2, y: -2.18}
+      moveToInteractPosition: {x: -10.15, y: -2.06}
     - interactableName: PrayingGirl
       interactableType: 0
       isInteractable: 1
@@ -1056,12 +1056,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Salesperson2 Interaction
-      moveToInteractPosition: {x: -23.04, y: -2.18}
+      moveToInteractPosition: {x: -21.06, y: -2.06}
     - interactableName: Salesperson3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Salesperson3 Interaction
-      moveToInteractPosition: {x: 21.51, y: -2.18}
+      moveToInteractPosition: {x: 19.48, y: -2.06}
     - interactableName: Right Side
       interactableType: 2
       isInteractable: 1
@@ -1250,8 +1250,8 @@ MonoBehaviour:
     currentBackgroundName: Library 1
     showPlayer: 1
     playerPosition: {x: -554, y: -270.88}
-    playerDirection: 1
-    playerAnimationState: IdleRight
+    playerDirection: -1
+    playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Seiji
       position: {x: -989.58, y: -197.32}
@@ -1283,7 +1283,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Father Daughter Interaction
-      moveToInteractPosition: {x: -13.15, y: -2.51}
+      moveToInteractPosition: {x: -14.07, y: -2.39}
     - interactableName: Receptionist
       interactableType: 0
       isInteractable: 1
@@ -1333,12 +1333,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 0
       storyToPlay: Main 4 - Seiji Interaction
-      moveToInteractPosition: {x: -3.67, y: -2.51}
+      moveToInteractPosition: {x: -6.87, y: -2.39}
     backgroundsToGo:
     - interactableName: Left Door
       backgroundToGo: Library 3
       keyToPress: 2
-      playerPositionInNextBackground: {x: 1723.11, y: -251.24}
+      playerPositionInNextBackground: {x: 1891.79, y: -238.2}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -1359,8 +1359,8 @@ MonoBehaviour:
   - sceneName: Scene 6
     currentBackgroundName: Library 3
     showPlayer: 1
-    playerPosition: {x: -1984.83, y: -251.24}
-    playerDirection: 1
+    playerPosition: {x: 1891.79, y: -238.2}
+    playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: CoupleSit1
@@ -1440,9 +1440,9 @@ MonoBehaviour:
   - sceneName: Scene 6
     currentBackgroundName: Library 2
     showPlayer: 1
-    playerPosition: {x: 1723.11, y: -251.24}
+    playerPosition: {x: -1984.83, y: -251.24}
     playerDirection: 1
-    playerAnimationState: IdleLeft
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: StudentSit1
       position: {x: -466.05, y: -493.32}
@@ -1656,7 +1656,7 @@ MonoBehaviour:
     - interactableName: Left Side
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 4530.73, y: -244.74}
+      playerPositionInNextBackground: {x: 4530.73, y: -191.32}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
       followPlayerPosition: {x: 4749.48, y: -218.71}
@@ -1687,18 +1687,18 @@ MonoBehaviour:
     - npcName: MaleListener
       position: {x: 260.04, y: -201.32}
       appear: 1
-      flipped: 0
-      animationState: IdleRight
+      flipped: 1
+      animationState: IdleLeft
     - npcName: FemaleListener
       position: {x: 437.04, y: -174.32}
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -3868.96, y: -191.32}
+      position: {x: -3819.96, y: -191.32}
       appear: 1
-      flipped: 1
-      animationState: IdleLeft
+      flipped: 0
+      animationState: IdleRight
     interactablesInScene:
     - interactableName: GossipGirl2
       interactableType: 0
@@ -1755,7 +1755,7 @@ MonoBehaviour:
     - interactableName: Sabina Door
       backgroundToGo: Main Shop
       keyToPress: 3
-      playerPositionInNextBackground: {x: -2306.26, y: -262.05}
+      playerPositionInNextBackground: {x: -2306.26, y: -249.14}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -1767,7 +1767,7 @@ MonoBehaviour:
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Quan
-      position: {x: -1436.34, y: -202.32}
+      position: {x: -1330.34, y: -202.32}
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -1777,12 +1777,12 @@ MonoBehaviour:
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson2
-      position: {x: -2707.34, y: -187.32}
+      position: {x: -2485.34, y: -187.32}
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson3
-      position: {x: 2106.66, y: -195.32}
+      position: {x: 1915.66, y: -195.32}
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -1796,7 +1796,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Quan Interaction
-      moveToInteractPosition: {x: -11.2, y: -2.18}
+      moveToInteractPosition: {x: -10.15, y: -2.06}
     - interactableName: Salesperson1
       interactableType: 0
       isInteractable: 1
@@ -1806,12 +1806,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Salesperson2 Interaction
-      moveToInteractPosition: {x: -23.04, y: -2.18}
+      moveToInteractPosition: {x: -21.06, y: -2.06}
     - interactableName: Salesperson3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Salesperson3 Interaction
-      moveToInteractPosition: {x: 21.51, y: -2.18}
+      moveToInteractPosition: {x: 19.48, y: -2.18}
     - interactableName: Right Side
       interactableType: 2
       isInteractable: 1
@@ -1829,7 +1829,7 @@ MonoBehaviour:
       playerPositionInNextBackground: {x: -4888.15, y: -244.74}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
-      followPlayerPosition: {x: -5066.96, y: -218.57}
+      followPlayerPosition: {x: -5066.96, y: -191.32}
   - sceneName: Scene 8
     currentBackgroundName: Tavern
     showPlayer: 1
@@ -1838,17 +1838,17 @@ MonoBehaviour:
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: StudentSit3
-      position: {x: -1279.27, y: -489.32}
+      position: {x: 185.73, y: -489.32}
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: StudentSit4
-      position: {x: -450.27, y: -485.32}
+      position: {x: 1050.73, y: -488.32}
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Barkeep
-      position: {x: -298.27, y: -145.32}
+      position: {x: -298.27, y: -178.32}
       appear: 1
       flipped: 0
       animationState: Idle
@@ -1858,12 +1858,12 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: AdmirerSit1
-      position: {x: 88.73, y: -482.32}
+      position: {x: -1415.27, y: -474.32}
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: AdmirerSit2
-      position: {x: 935.73, y: -482.32}
+      position: {x: -534.27, y: -474.32}
       appear: 1
       flipped: 0
       animationState: Idle
@@ -1892,12 +1892,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Student Interaction
-      moveToInteractPosition: {x: -8.08, y: -2.47}
-    - interactableName: AdmirerSit2
+      moveToInteractPosition: {x: 5.95, y: -2.39}
+    - interactableName: AdmirerSit1
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Admirer Interaction
-      moveToInteractPosition: {x: 4.18, y: -2.47}
+      moveToInteractPosition: {x: -8.95, y: -2.39}
     - interactableName: SocialClimberSit2
       interactableType: 0
       isInteractable: 1
@@ -1924,22 +1924,22 @@ MonoBehaviour:
   - sceneName: Scene 9
     currentBackgroundName: Tavern
     showPlayer: 1
-    playerPosition: {x: -113.06, y: -257.87}
+    playerPosition: {x: -119.72, y: -257.86}
     playerDirection: 1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: StudentSit3
-      position: {x: -1279.27, y: -489.32}
+      position: {x: 185.73, y: -489.32}
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: StudentSit4
-      position: {x: -450.27, y: -485.32}
+      position: {x: 1050.73, y: -488.32}
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Barkeep
-      position: {x: -298.27, y: -145.32}
+      position: {x: -298.27, y: -178.32}
       appear: 1
       flipped: 0
       animationState: Idle
@@ -1949,12 +1949,12 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: AdmirerSit1
-      position: {x: 88.73, y: -482.32}
+      position: {x: -1415.27, y: -474.32}
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: AdmirerSit2
-      position: {x: 935.73, y: -482.32}
+      position: {x: -534.27, y: -474.32}
       appear: 1
       flipped: 0
       animationState: Idle
@@ -1998,12 +1998,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Student Interaction
-      moveToInteractPosition: {x: -8.08, y: -2.47}
-    - interactableName: AdmirerSit2
+      moveToInteractPosition: {x: 5.95, y: -2.39}
+    - interactableName: AdmirerSit1
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Admirer Interaction
-      moveToInteractPosition: {x: 4.18, y: -2.47}
+      moveToInteractPosition: {x: -8.95, y: -2.39}
     - interactableName: Alcohol
       interactableType: 1
       isInteractable: 1

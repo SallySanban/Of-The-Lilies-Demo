@@ -4,6 +4,7 @@ if ($GetCloser)
 
 	pixel Soldier1 as Seiyslan Soldier "Hey, you! Don't get too close. This woman is dangerous."
 
+	HideTextbox(true)
 	ShowCharacterLeft(Laisa -b Left_Default_Body -e Left_SmirkClosed)
 	[wait]ShowCharacterRight(Ahlai -b Right_Question_Body -e Right_Question)
 
@@ -73,14 +74,14 @@ if ($GetCloser)
 		- What favor?
 			$Laisa += 1
 
-			pixel Soldier1 as Seiyslan Soldier "You won't be doing any favors for the pirate today."
+			pixel Soldier3 as Seiyslan Soldier "You won't be doing any favors for the pirate today."
 
-			pixel Soldier1 as Seiyslan Soldier "You've talked to her enough. Hurry along before she does anything dangerous."
+			pixel Soldier3 as Seiyslan Soldier "You've talked to her enough. Hurry along before she does anything dangerous."
 
 		- I can't do that.
 			Laisa as Ilaisaane at 0 "That's a shame. Not that I actually needed it."
 
-			pixel Soldier1 as Seiyslan Soldier "Okay, you've talked to the pirate enough. Hurry along before she does something dangerous."
+			pixel Soldier3 as Seiyslan Soldier "Okay, you've talked to the pirate enough. Hurry along before she does something dangerous."
 	}
 
 	ChangeBodyEmotion(Laisa -e Left_Smirk)

@@ -7,13 +7,17 @@ choice in 0
 		
 		Ahlai as <playerName> at 0 "<i>Last I remember, Dad was shipped off to the Logresh Empire...</i>"
 
-		ChangeBodyEmotion(Ahlai -e Left_Pursed)
+		ChangeBodyEmotion(Ahlai -e Left_Determined)
 
-		Ahlai as <playerName> at 0 "I've been looking for any records on the Logresh Empire. Given how naturally <i>skilled</i> you are, what resources did you use to study up on topics like... the people that could be there?"
+		Ahlai as <playerName> at 0 "I've been looking for any records on the Logresh Empire."
+		
+		Ahlai as <playerName> at 0 "Given how naturally <i>skilled</i> you are, what resources did you use to study up on topics like... the people that could be there?"
 
 		Lien as General Lien at 1 "Are you searching for someone?"
 
-		Lien as General Lien at 1 "If you would like to know more about the Logresh Empire, the library is always a good place to start. I'm afraid any records detailing the key figures in that Empire are classified."
+		Lien as General Lien at 1 "If you would like to know more about the Logresh Empire, the library is always a good place to start."
+		
+		Lien as General Lien at 1 "I'm afraid any records detailing the key figures in that Empire are classified."
 
 		ChangeBodyEmotion(Ahlai -e Left_Conflicted)
 
@@ -26,7 +30,7 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "<i>Last I remember, they said they were taking Mom somewhere in the land of Haripura. I hope she's doing alright, but...</i>"
 
-		ChangeBodyEmotion(Ahlai -e Left_Pursed)
+		ChangeBodyEmotion(Ahlai -e Left_Determined)
 
 		Ahlai as <playerName> at 0 "Might I ask, do you know anything about Haripura?"
 
@@ -34,7 +38,9 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "I have been... thinking of going on a journey. How do you suppose I could get there?"
 
-		Lien as General Lien at 1 "If you head south from Kuchai Town... it's not impossible to reach Haripura. But I recommend that you prepare for this trip with, say, your employer."
+		Lien as General Lien at 1 "If you head south from Kuchai Town... it's not impossible to reach Haripura."
+		
+		Lien as General Lien at 1 "But I recommend that you prepare for this trip with, say, your employer."
 
 		Lien as General Lien at 1 "They have been taking in more foreigners, lately. So you could be welcomed, whether for a visit or otherwise."
 
@@ -43,7 +49,7 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "<i>Last I remember, Dalawi was taken away to another empire. I think it was the Gataran Empire...</i>"
 
-		ChangeBodyEmotion(Ahlai -e Left_Pursed)
+		ChangeBodyEmotion(Ahlai -e Left_Determined)
 
 		Ahlai as <playerName> at 0 "With all this news about pirates from the Gataran Empire... forgive the question, but is Ilaisaane the only pirate at large?"
 
@@ -64,11 +70,13 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "<i>I remember they mentioned the mines... Laya was taken there. But there are so many mines-which one could I start with?</i>"
 
-		ChangeBodyEmotion(Ahlai -e Left_Pursed)
+		ChangeBodyEmotion(Ahlai -e Left_Determined)
 
 		Ahlai as <playerName> at 0 "Say, who could I speak to when it comes to the mines in Ihraye?"
 
-		Ahlai as <playerName> at 0 "Well, Agon Province has several mineral deposits near its borders. Along with its neighboring territories. That’s likely the best place you could gather. Do you run a business for this sort of work?"
+		Lien as General Lien at 1 "Well, Agon Province has several mineral deposits near its borders. Along with its neighboring territories."
+		
+		Lien as General Lien at 1 "That's likely the best place you could gather. Do you run a business for this sort of work?"
 
 		ChangeBodyEmotion(Ahlai -e Left_Sheepish)
 
@@ -89,7 +97,7 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "<i>I don't even know where they took Alonay... where would I start?</i>"
 
-		ChangeBodyEmotion(Ahlai -e Left_Pursed)
+		ChangeBodyEmotion(Ahlai -e Left_Determined)
 
 		Ahlai as <playerName> at 0 "If I were looking for someone... where should I begin?"
 
@@ -106,7 +114,7 @@ choice in 0
 		Ahlai as <playerName> at 0 "<i>And if the Seiyslan authorities are anything like Lien... what help could I get from them, anyway?</i>"
 
 	- Ask about Liwani
-		ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Pursed)
+		ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Determined)
 
 		Ahlai as <playerName> at 0 "If I were to look for, say, orphaned infants or children, where could I look?"
 

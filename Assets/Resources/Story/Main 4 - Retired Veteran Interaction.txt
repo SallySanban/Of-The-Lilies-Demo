@@ -58,7 +58,9 @@ else
 
 		pixel RetiredVeteran as Retired Veteran "There's this mountain overlooking the Eijiko River. I proposed to my wife on that very mountaintop."
 
-		pixel RetiredVeteran as Retired Veteran "'I climb the peak so that I may adore you in your entirety. O Bisasagi, how your water nourishes me. The sunset welcomes our meeting and I fall for you again like it was my first time gazing upon you.'"
+		pixel RetiredVeteran as Retired Veteran "'I climb the peak so that I may adore you in your entirety. O Bisasagi, how your water nourishes me.'"
+		
+		pixel RetiredVeteran as Retired Veteran "'The sunset welcomes our meeting and I fall for you again like it was my first time gazing upon you.'"
 
 		pixel RetiredVeteran as Retired Veteran "Heh, this poet's good. And that description of hers is how I would describe seeing my wife on that mountaintop."
 
@@ -88,7 +90,7 @@ else
 
 		pixel RetiredVeteran as Retired Veteran "I would like that very much. Thank you."
 
-		ToggleInteractable("Scene 6" "Library 2" RetiredVeteran false)
+		ToggleInteractable("Scene 6" "Library 3" RetiredVeteran false)
 	}
 	else
 	{

@@ -1,6 +1,8 @@
 ChangeBodyEmotion(Manju -e Right_SmileScaryEyes)
 
-Manju as Taji at 1 "There are all sorts of signs. Pests, swarming over produce. The town's crops, decaying with each passing day. Not to mention the Kanding river."
+Manju as Taji at 1 "There are all sorts of signs."
+
+Manju as Taji at 1 "Pests, swarming over produce. The town's crops, decaying with each passing day. Not to mention the Kanding river."
 
 Manju as Taji at 1 "If my understanding of the curses is right, then each calamity would be greater than the last."
 

@@ -2,7 +2,9 @@ if (!$SeijiPaperInteracted)
 {
 	Sabina as Lady Sabina "Are you sure about this, <playerName>? There are other options."
 
-	Sabina as Lady Sabina "Just... be careful not to tell him about this. If Seiji ever finds out, I fear he'd throw himself at the ritual, if it meant it would be for the greater good..."
+	Sabina as Lady Sabina "Just... be careful not to tell him about this."
+	
+	Sabina as Lady Sabina "If Seiji ever finds out, I fear he'd throw himself at the ritual, if it meant it would be for the greater good..."
 
 	$SeijiPaperInteracted = true
 }
@@ -17,6 +19,7 @@ choice in 2
 		HideTextbox(true)
 		setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 5)
 		[wait]Blackout()
+		[wait]SwitchCG("Thanks")
 
 	- Keep looking
 		HideTextbox(true)

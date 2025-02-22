@@ -2,7 +2,9 @@
 
 Ahlai as <playerName> at 1 "Mr. Sato! You've got beautiful flowers. Looks like the potion's doing wonders."
 
-pixel Sato as Mr. Sato "It's all thanks to you, <playerName>. I'll be visiting Sabina's Salves again soon enough. I'm not sure why these strange occurrences are happening, but it's been more difficult to keep them alive lately."
+pixel Sato as Mr. Sato "It's all thanks to you, <playerName>. I'll be visiting Sabina's Salves again soon enough."
+
+pixel Sato as Mr. Sato "I'm not sure why these strange occurrences are happening, but it's been more difficult to keep them alive lately."
 
 ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
 
@@ -14,11 +16,15 @@ ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Sad)
 
 Ahlai as <playerName> at 1 "Oh, I... I'm sorry, Mr. Sato."
 
-pixel Sato as Mr. Sato "Don't worry about it. It's been a few years already. Sometimes, I do think... What if things happened differently? But there's no point in dwelling over that now."
+pixel Sato as Mr. Sato "Don't worry about it. It's been a few years already."
+
+pixel Sato "Sometimes, I do think... What if things happened differently? But there's no point in dwelling over that now."
 
 Ahlai as <playerName> at 1 "If you don't mind me asking, sir, what happened?"
 
-pixel Sato as Mr. Sato "They told me that my wife got into an argument with one of the Seiyslan soldiers. I can't remember all the details... but according to them, things didn't go smoothly."
+pixel Sato as Mr. Sato "They told me that my wife got into an argument with one of the Seiyslan soldiers."
+
+pixel Sato as Mr. Sato "I can't remember all the details... but according to them, things didn't go smoothly."
 
 pixel Sato as Mr. Sato "And she was already in fragile health. So when tensions rose, she became overwhelmed and fainted, and she... never woke up since."
 
@@ -84,7 +90,7 @@ Ahlai as <playerName> at 1 "Thank you, Mr. Sato. I'll keep that in mind."
 HideTextbox(true)
 [wait]SwitchCharacter(Ahlai Seiji -p 1 -b Right_Default_Body -e Right_ApologeticSmile)
 
-pixel Seiji "Your story is safe with us, sir. I'll take good care of <playerName>."
+Seiji at 1 "Your story is safe with us, sir. I'll take good care of <playerName>."
 
 pixel Sato as Mr. Sato "I'm sure you will, son."
 

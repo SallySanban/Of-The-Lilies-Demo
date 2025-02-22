@@ -7,7 +7,6 @@ if ($LibraryQuest)
 	pixel Seiji "It's been a good while since I've been here."
 
 	HideTextbox(true)
-	[wait]FlipNPC("Seiji" Left)
 
 	pixel Seiji "Come on, we might find the book faster if we split up. I'll look upstairs, and you can take this floor."
 

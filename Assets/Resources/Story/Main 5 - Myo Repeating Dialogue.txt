@@ -3,9 +3,9 @@ ChangeBodyEmotion(Myo -e Left_Smile)
 
 Ahlai as <playerName> at 1 "<i>What should I ask?</i>"
 
-choice in -1
+choice in 1
 {
-	- if ($TablemateChosen) Who was at the table with you just now?
+	- if (!$TablemateChosen) Who was at the table with you just now?
 		Ahlai as <playerName> at 1 "If you do not mind me asking, just who was that at the table with you just now?"
 
 		Myo at 0 "Oh, forget about that."
@@ -22,7 +22,9 @@ choice in -1
 		ChangeBodyEmotion(Myo -e Left_Smile)
 		ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
 
-		Myo at 0 "Wonderful. Well, if you must know, yes, that was Sir Gascon. He's actually based in Agon Province like me, but he is from the Kingdom of Seiysla."
+		Myo at 0 "Wonderful. Well, if you must know, yes, that was Sir Gascon."
+		
+		Myo at 0 "He's actually based in Agon Province like me, but he is from the Kingdom of Seiysla."
 
 		Ahlai as <playerName> at 1 "Why did he want to conduct business with you, then? Even I could tell from afar..."
 
@@ -32,17 +34,21 @@ choice in -1
 
 		ChangeBodyEmotion(Myo -e Left_Thought)
 
-		Myo at 0 "But honestly... I notice that men like Sir Gascon struggle to see value outside of their work. Aside from their careers as politicians, their businesses, what they wish to <i>gain</i> out of the life they live..."
+		Myo at 0 "But honestly... I notice that men like Sir Gascon struggle to see value outside of their work."
+		
+		Myo at 0 "Aside from their careers as politicians, their businesses, what they wish to <i>gain</i> out of the life they live..."
 
-		Myo at 0 "I just worried that if he got his way earlier, his son would have no chance to explore what he likes. And for his own sake, not his father's. I hope you understand?"
+		Myo at 0 "I just worried that if he got his way earlier, his son would have no chance to explore what he likes."
+		
+		Myo at 0 "And for his own sake, not his father's. I hope you understand?"
 
 		Ahlai as <playerName> at 1 "I could see your point, yes..."
 
-		$TablemateChosen = false
+		$TablemateChosen = true
 		$MyoChoicesPicked += 1
 		Load("Main 5 - Myo Repeating Dialogue")
 
-	- if ($SabinaChosen) What do you like about Sabina's Salves?
+	- if (!$SabinaChosen) What do you like about Sabina's Salves?
 		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Smile)
 
 		Ahlai as <playerName> at 1 "I'm quite honored you endorsed Sabina's Salves to that tablemate of yours. Is there a reason you like our store so much?"
@@ -67,13 +73,17 @@ choice in -1
 
 		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
 
-		Myo at 0 "You thought what? That I was referring to you? I mean... you definitely could make a good case for why I should keep coming back to Sabina's Salves."
+		Myo at 0 "You thought what? That I was referring to you?"
+		
+		Myo at 0 "I mean... you definitely could make a good case for why I should keep coming back to Sabina's Salves."
 
 		ChangeBodyEmotion(Myo -e Left_Smile)
 
 		Myo at 0 "Again... only if you're interested. But, that aside..."
 
-		Myo at 0 "...I am genuine when I say that Lady Sabina is an amazing seller of her wares. A good business partner. She also knows how to explain a lot of the potions' good impact in Agon Province."
+		Myo at 0 "...I am genuine when I say that Lady Sabina is an amazing seller of her wares. A good business partner."
+		
+		Myo at 0 "She also knows how to explain a lot of the potions' good impact in Agon Province."
 
 		Myo at 0 "I am personally very excited to see what else the store has up its sleeve. Especially if they've got anything like that Draught of Perpetuity!"
 
@@ -95,13 +105,15 @@ choice in -1
 
 		ChangeBodyEmotion(Myo -e Left_ApologeticSmile)
 
-		Myo at 0 "I'll make sure to remember, <playerName>! But, alas, I may need that reminder from a secretary or my doctor, if next week's schedule is anything to go by... ugh..."
+		Myo at 0 "I'll make sure to remember, <playerName>!"
+		
+		Myo at 0 "But, alas, I may need that reminder from a secretary or my doctor, if next week's schedule is anything to go by... ugh..."
 
-		$SabinaChosen = false
+		$SabinaChosen = true
 		$MyoChoicesPicked += 1
 		Load("Main 5 - Myo Repeating Dialogue")
 
-	- if ($FavouriteDrinkChosen) What's <i>your</i> favorite drink at this tavern, anyway?
+	- if (!$FavouriteDrinkChosen) What's <i>your</i> favorite drink at this tavern?
 		Ahlai as <playerName> at 1 "What's <i>your</i> favorite drink at this tavern, anyway? I'm curious."
 
 		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
@@ -130,7 +142,7 @@ choice in -1
 
 		Ahlai as <playerName> at 1 "Hmm, I didn't expect you to like ale..."
 
-		$FavouriteDrinkChosen = false
+		$FavouriteDrinkChosen = true
 		$MyoChoicesPicked += 1
 		Load("Main 5 - Myo Repeating Dialogue")
 
@@ -139,7 +151,9 @@ choice in -1
 		
 		Myo at 0 "Oh, Laisa... yes, I did hear."
 
-		Myo at 0 "I already warned her to be good while she's still in Ihraye! Like I would tell any foreign national. Do you know how many <i>more</i> trips I need to take to the Gataran Empire to smooth things over?"
+		Myo at 0 "I already warned her to be good while she's still in Ihraye! Like I would tell any foreign national."
+		
+		Myo at 0 "Do you know how many <i>more</i> trips I need to take to the Gataran Empire to smooth things over?"
 
 		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Surprised)
 

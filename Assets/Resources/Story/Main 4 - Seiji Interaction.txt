@@ -19,9 +19,13 @@ Ahlai as <playerName> at 1 "A-are you sure? They usually don't go out in the ope
 
 Seiji at 0 "You should count on it not being his real one. Remember what Lady Sabina told us about them."
 
-Seiji at 0 "They go against what our order stands for, against the safeguards we put in place through the potions we make. They believe that <b>people should be able to wield magic</b>. As if they're equals with the gods!"
+Seiji at 0 "They go against what our order stands for, against the safeguards we put in place through the potions we make."
 
-Seiji at 0 "The <b>Order of La Liryo has to ensure that magic is being used responsibly</b>. It's what the people know us for. It's why we make those potions every day."
+Seiji at 0 "They believe that <b>people should be able to wield magic</b>. As if they're equals with the gods!"
+
+Seiji at 0 "The <b>Order of La Liryo has to ensure that magic is being used responsibly</b>."
+
+Seiji at 0 "It's what the people know us for. It's why we make those potions every day."
 
 Seiji at 0 "Just... be careful next time, okay?"
 
@@ -59,7 +63,9 @@ HideTextbox(true)
 [wait]Blackout()
 [input]SwitchCG("Lien")
 
-Lien as General Lien "Citizens of Kuchai Town - self-declared criminals are nothing to the sheer might of the Seisylan Empire, a lesson that the Sea Emperor clearly has yet to learn."
+Lien as General Lien "Citizens of Kuchai Town-"
+
+Lien as General Lien "Self-declared criminals are nothing to the sheer might of the Seisylan Empire, a lesson that the Sea Emperor clearly has yet to learn."
 
 Lien as General Lien "Let this serve as a warning. Any threats or attacks will face the full force of the <b>Imperial Army of Seiysla</b>."
 

@@ -8,7 +8,7 @@ ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Suspicious)
 
 Manju as Taji at 1 "Has it occurred to you that there's more than one answer?"
 
-choice in -1
+choice in 0
 {
 	- That couldn't be.
 		ChangeBodyEmotion(Manju -e Right_StraightThreatening)

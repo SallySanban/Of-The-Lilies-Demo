@@ -1,3 +1,5 @@
+[wait]PanCamera(-x 5.85 -spd 2)
+
 pixel Soldier1 as Seiyslan Soldier "Why not have a drink, sir? You've earned it for yourself! One won't hurt!"
 
 pixel Soldier2 as Seiyslan Soldier "Yes, yes! The Sea Serpent's ours now, in any case!"
@@ -18,6 +20,7 @@ pixel Soldier2 as Seiyslan Soldier "Between us, even I'd risk it all, if I were 
 
 pixel Lien as General Lien "No, I wouldn't know. Quit your leering."
 
+HideTextbox(false)
 [wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Thought)
 
 Ahlai as <playerName> at 0 "<i>'Wouldn't know', huh?</i>"
@@ -73,7 +76,7 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "<i>Okay, this won't be too hard if I play my cards right...</i>"
 
-		ChangeBodyEmotion(Ahlai -e Left_Pursed)
+		ChangeBodyEmotion(Ahlai -e Left_Determined)
 
 		Ahlai as <playerName> at 0 "Excuse me, General Lien?"
 
@@ -98,7 +101,7 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "<i>It's worth a shot.</i>"
 
-		ChangeBodyEmotion(Ahlai -e Left_Pursed)
+		ChangeBodyEmotion(Ahlai -e Left_Determined)
 
 		Ahlai as <playerName> at 0 "Excuse me, General Lien?"
 
@@ -131,7 +134,7 @@ choice in 0
 	- <i>They flatter themselves, why don't I call them out...</i>
 		$Vengeance += 1
 
-		ChangeBodyEmotion(Ahlai -e Left_Disgusted)
+		ChangeBodyEmotion(Ahlai -e Left_Disgust)
 
 		Ahlai as <playerName> at 0 "I just said 'excuse me' and you all think I'm here to take someone home tonight?"
 
@@ -147,7 +150,9 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "Now <i>I</i> would like to say no, thank you."
 
-		pixel Soldier1 as Seiyslan Soldier "You could just take the compliment. How often do you have us soldiers here in town, y'know? And with the General, too. To protect you! To thank us, really..."
+		pixel Soldier1 as Seiyslan Soldier "You could just take the compliment. How often do you have us soldiers here in town, y'know?"
+		
+		pixel Soldier1 as Seiyslan Soldier "And with the General, too. To protect you! To thank us, really..."
 
 		Ahlai as <playerName> at 0 "Frankly, this is hardly a compliment coming from <i>you</i>."
 

@@ -15,7 +15,9 @@ if ($GetCloser)
 
 			pixel Soldier1 as Seiyslan Soldier "They managed to land in Seiysla without us knowing. Through the ports in Agon Province."
 
-			pixel Soldier1 as Seiyslan Soldier "They've been taking things from people for weeks. Who knows what other crimes they've committed? Thank Dok'kale we finally got our hands on their first mate."
+			pixel Soldier1 as Seiyslan Soldier "They've been taking things from people for weeks. Who knows what other crimes they've committed?"
+			
+			pixel Soldier1 as Seiyslan Soldier "Thank Dok'kale we finally got our hands on their first mate."
 
 			pixel Ahlai as <playerName> "It's that easy to sneak into the continent, then...?"
 

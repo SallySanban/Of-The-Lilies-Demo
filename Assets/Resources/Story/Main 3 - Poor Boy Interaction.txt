@@ -55,6 +55,7 @@ choice in 0
 
 		pixel PoorBoy as Boy "I-I will. Thank you!"
 
+		HideCharacter(Seiji)
 		HideTextbox(false)
 		[wait]Blackout()
 		RemoveFromScene("PoorBoy")
@@ -62,13 +63,16 @@ choice in 0
 		FlipNPC("Ahlai" Left)
 		[wait]HideCG()
 
+		ShowCharacterLeft(Seiji -b Left_Default_Body -e Left_Worried)
 		[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Stern)
 
 		Seiji at 0 "<playerName>, what were you thinking? You scared me."
 
 		Seiji at 0 "It's best not to get involved in things like these... You know how they happen all the time."
 
-		Ahlai as <playerName> at 1 "That's impossible, Seiji. If I can't have them pay for what they've done before... I should at least stop them from harming others now. Especially if I can."
+		Ahlai as <playerName> at 1 "That's impossible, Seiji. If I can't have them pay for what they've done before..."
+		
+		Ahlai as <playerName> at 1 "I should at least stop them from harming others now. Especially if I can."
 
 		Seiji at 0 "You scare me sometimes, <playerName>..."
 
@@ -112,6 +116,7 @@ choice in 0
 
 		pixel PoorBoy as Boy "I-I will. Thank you!"
 
+		HideCharacter(Seiji)
 		HideTextbox(false)
 		[wait]Blackout()
 		RemoveFromScene("PoorBoy")
@@ -119,6 +124,7 @@ choice in 0
 		FlipNPC("Ahlai" Left)
 		[wait]HideCG()
 
+		ShowCharacterLeft(Seiji -b Left_Default_Body -e Left_Worried)
 		[wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Stern)
 
 		Seiji at 0 "<playerName>, what were you thinking? You scared me."

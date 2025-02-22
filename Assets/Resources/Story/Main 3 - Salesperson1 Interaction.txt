@@ -24,7 +24,7 @@ choice in -1
 
 		playSFX(SFX_CoinsJiggle)
 
-		pixel Ahlai as <playerName> "Hmph! What insolent youngsters!"
+		pixel Salesperson1 as Salesperson "Hmph! What insolent youngsters!"
 
 		playSFX("SFX_UI InventoryPickup")
 

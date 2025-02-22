@@ -1,8 +1,12 @@
 if (!$MyoPaperInteracted)
 {
-	Sabina as Lady Sabina "Ah, the Governor of Agon Province. He has a fair amount of enemies, for all his wealth and power. Maybe <i>because</i> of all his wealth and power?"
+	Sabina as Lady Sabina "Ah, the Governor of Agon Province. He has a fair amount of enemies, for all his wealth and power."
+	
+	Sabina as Lady Sabina "Maybe <i>because</i> of all his wealth and power?"
 
-	Sabina as Lady Sabina "It's nothing <i>personal</i> if we pick him. I would say he'd be missed, since he is a good governor... but again, it is no surprise that the Empire wants to silence him."
+	Sabina as Lady Sabina "It's nothing <i>personal</i> if we pick him. I would say he'd be missed, since he is a good governor...
+	
+	Sabina as Lady Sabina "But again, it is no surprise that the Empire wants to silence him."
 
 	Sabina as Lady Sabina "We're meant to sacrifice this one at the Order of La Liryo, but if the Empire already wants him gone for reasons very much out of our control..."
 
@@ -21,6 +25,7 @@ choice in 2
 		HideTextbox(true)
 		setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 5)
 		[wait]Blackout()
+		[wait]SwitchCG("Thanks")
 
 	- Keep looking
 		HideTextbox(true)

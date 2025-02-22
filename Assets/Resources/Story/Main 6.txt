@@ -15,7 +15,9 @@ pixel Sabina as Lady Sabina "Thank you both for your help with the errands, darl
 
 Ahlai as <playerName> at 0 "It's our pleasure, Lady Sabina. We're thankful for your trust in us."
 
-Ahlai as <playerName> at 0 "In fact, I feel like I do not say this enough, Lady Sabina. I am always grateful for how you've taken care of me, taught me so many things... to find shelter, if not a home."
+Ahlai as <playerName> at 0 "In fact, I feel like I do not say this enough, Lady Sabina."
+
+Ahlai as <playerName> at 0 "I am always grateful for how you've taken care of me, taught me so many things... to find shelter, if not a home."
 
 Ahlai as <playerName> at 0 "Yet you never ask me for anything in return."
 
@@ -67,7 +69,9 @@ Seiji at 0 "Lady Sabina? What do you say?"
 
 [wait]SwitchCharacter(Seiji Ahlai -p 0 -b Left_Default_Body -e Left_Concerned)
 
-pixel Sabina as Lady Sabina "<playerName>, I know--I can only imagine just how much pain you've been through. For all those years, really, I don't think that pain of losing your family and your people ever really went away. Even as you got older."
+pixel Sabina as Lady Sabina "<playerName>, I know--I can only imagine just how much pain you've been through."
+
+pixel Sabina as Lady Sabina "For all those years, really, I don't think that pain of losing your family and your people ever really went away. Even as you got older."
 
 pixel Sabina as Lady Sabina "I am thankful that you even trust me enough to speak to me about this."
 
@@ -77,13 +81,19 @@ ChangeBodyEmotion(Ahlai -e Left_Sad)
 
 Ahlai as <playerName> at 0 "But how is it too soon? I am of age, and I've got a lot of experience... so, please, I-"
 
-pixel Sabina as Lady Sabina "I do not <i>doubt</i> that you are capable, <playerName>. You and Seiji have been training under the Order since I took you both in. But there are just too many things lurking in our world right now that even I'm not fully prepared for."
+pixel Sabina as Lady Sabina "I do not <i>doubt</i> that you are capable, <playerName>."
+
+pixel Sabina as Lady Sabina "You and Seiji have been training under the Order since I took you both in."
+
+pixel Sabina as Lady Sabina "But there are just too many things lurking in our world right now that even I'm not fully prepared for."
 
 pixel Sabina as Lady Sabina "You heard about the strange happenings, yes?"
 
 Ahlai as <playerName> at 0 "Well, yes..."
 
-pixel Sabina as Lady Sabina "I am truly sorry, dear. But now just isn't the time. I have some suspicions, but we need to find out what's going on before I can let you leave... It's just not safe out there."
+pixel Sabina as Lady Sabina "I am truly sorry, dear. But now just isn't the time."
+
+pixel Sabina as Lady Sabina "I have some suspicions, but we need to find out what's going on before I can let you leave... It's just not safe out there."
 
 Ahlai as <playerName> at 0 "I... I understand, Lady Sabina."
 
@@ -96,6 +106,7 @@ HideTextbox(true)
 [wait]Blackout()
 RemoveFromScene("Sabina")
 [wait]FlipNPC("Seiji" Left)
+[wait]SetCamera(-x -12.68)
 [wait]HideCG()
 
 ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Sad)
@@ -128,13 +139,14 @@ playMusic(BGM_Laisa)
 
 HideTextbox(true)
 [wait]FlipNPC("Ahlai" Right)
+[wait]SetCamera(-x -33.64)
 [wait]HideCG()
 
 ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Surprised)
 
 if ($LaisaTalkedTo)
 {
-	[wait]ShowCharacterRight(Laisa -b Right_Default_Body -b Right_Smirk)
+	[wait]ShowCharacterRight(Laisa -b Right_Default_Body -e Right_Smirk)
 
 	Ahlai as <playerName> at 0 "You... you really escaped!"
 
@@ -144,7 +156,7 @@ if ($LaisaTalkedTo)
 }
 else
 {
-	[wait]ShowCharacterRight(Laisa -b Right_Default_Body -b Right_Stern)
+	[wait]ShowCharacterRight(Laisa -b Right_Default_Body -e Right_Stern)
 
 	Ahlai as <playerName> at 0 "You... you really escaped!"
 
@@ -154,7 +166,7 @@ else
 $LaisaNoTrouble = false
 $LaisaNoWorries = false
 
-choice in -1
+choice in 0
 {
 	- Nothing! I don't intend to put you in trouble.
 		$Laisa += 1

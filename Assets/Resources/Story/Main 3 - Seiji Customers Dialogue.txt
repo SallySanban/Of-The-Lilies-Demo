@@ -37,7 +37,7 @@ ChangeBodyEmotion(Seiji -e Right_Laugh)
 
 Seiji at 1 "Haha! It's safe to say that she's banned from even coming inside now."
 
-choice in -1
+choice in 0
 {
 	- I hope you're okay.
 		$Seiji += 1

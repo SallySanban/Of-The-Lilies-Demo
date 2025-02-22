@@ -1,3 +1,5 @@
+[wait]PanCamera(-x -12 -y 0 -spd 2)
+
 pixel CoupleSit1 as Boyfriend "'He takes the seashell, the same one she gave him when they were kids, and hands it over to her, now forged into a wedding ring.'"
 
 pixel CoupleSit1 as Boyfriend "''That seashell! You remember the shell I gave you?' Kimi says. He smiles and replies, 'I had never forgotten.''"
@@ -21,3 +23,4 @@ pixel CoupleSit2 as Girlfriend "Oh, stop that!"
 pixel Ahlai as <playerName> "Ah..."
 
 HideTextbox(false)
+ResetCamera(true)

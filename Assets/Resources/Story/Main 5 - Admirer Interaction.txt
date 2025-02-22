@@ -1,3 +1,5 @@
+[wait]PanCamera(-x -8.84 -y 0 -spd 1)
+
 pixel Ahlai as <playerName> "Ah, I wonder what these ladies are all looking at..."
 
 pixel AdmirerSit1 as ??? "By Dok'kale, do you really think I have a chance? Sir Aciano just has so many girls after him!"
@@ -17,3 +19,4 @@ pixel AdmirerSit2 as ??? "Go on...?"
 pixel Ahlai as <playerName> "...Huh."
 
 HideTextbox(false)
+ResetCamera(true)

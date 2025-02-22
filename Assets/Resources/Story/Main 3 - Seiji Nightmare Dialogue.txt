@@ -57,7 +57,7 @@ Seiji at 1 "I think a nightmare like that deserves a hug."
 
 Seiji at 1 "Do you want one?"
 
-choice in -1
+choice in 0
 {
 	- Yes
 		$Seiji += 1

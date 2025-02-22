@@ -137,10 +137,10 @@ RectTransform:
   m_Father: {fileID: 7674477209052371012}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.52053666, y: 0.11145878}
-  m_AnchorMax: {x: 0.5676644, y: 0.62100005}
-  m_AnchoredPosition: {x: -0.38043213, y: -1.1613159}
-  m_SizeDelta: {x: -0.47696853, y: -1.0878088}
+  m_AnchorMin: {x: 0.43076596, y: 0.10912697}
+  m_AnchorMax: {x: 0.47789368, y: 0.6233318}
+  m_AnchoredPosition: {x: -1.7296448, y: -1.1688538}
+  m_SizeDelta: {x: -2.001488, y: -6.1397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &318836562878385913
 BoxCollider2D:

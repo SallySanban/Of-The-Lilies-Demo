@@ -38,7 +38,9 @@ else
 
 		Ahlai as <playerName> at 0 "Yes, that one. Do you want a potion in exchange for those sprigs?"
 
-		pixel PrayingGirl as ??? "Well... It'd just be great if I could have a potion that would help me find my <b>mother and sister</b>... I lost them, and I don't know if we'll ever see each other again..."
+		pixel PrayingGirl as ??? "Well... It'd just be great if I could have a potion that would help me find my <b>mother and sister</b>..."
+		
+		pixel PrayingGirl as ??? "I lost them, and I don't know if we'll ever see each other again..."
 
 		ChangeBodyEmotion(Ahlai -e Left_Conflicted)
 
@@ -61,7 +63,7 @@ else
 			- Who did this to you?
 				$Vengeance += 1
 
-				ChangeBodyEmotion(Ahlai -e Left_Upset)
+				ChangeBodyEmotion(Ahlai -e Left_Frown)
 
 				Ahlai as <playerName> at 0 "Was your family taken away from you, too?"
 
@@ -79,7 +81,7 @@ else
 				Seiji at 0 "Calm down, <playerName>. I'm sure her situation is different from yours. They could be just around the corner."
 
 				HideTextbox(true)
-				[wait]SwitchCharacter(Seiji Ahlai -p 0 -b Left_Default_Body -e Left_Upset)
+				[wait]SwitchCharacter(Seiji Ahlai -p 0 -b Left_Default_Body -e Left_Frown)
 
 				Ahlai as <playerName> at 0 "I... I..."
 
@@ -121,7 +123,7 @@ else
 			- Maybe they're gone for good.
 				$Peace += 1
 
-				ChangeBodyEmotion(Ahlai -e Left_Upset)
+				ChangeBodyEmotion(Ahlai -e Left_Frown)
 
 				Ahlai as <playerName> at 0 "I'm sorry you lost your family, kid. But maybe there's no bringing them back. Maybe you just have to... let it go."
 
@@ -130,7 +132,9 @@ else
 				HideTextbox(false)
 				[wait]SwitchCharacter(Ahlai Seiji -p 0 -b Left_Default_Body -e Left_Sad)
 
-				Seiji at 0 "<playerName>, I know you might be feeling that way about your family... but you shouldn't make the kid lose hope. They could be just around the corner."
+				Seiji at 0 "<playerName>, I know you might be feeling that way about your family... but you shouldn't make the kid lose hope."
+				
+				Seiji at 0 "They could be just around the corner."
 
 				ChangeBodyEmotion(Seiji -e Left_ApologeticSmile)
 

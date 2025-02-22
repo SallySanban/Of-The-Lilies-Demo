@@ -10,7 +10,7 @@ else
 	$StartedLienRepeatingDialogue = true
 }
 
-choice in -1
+choice in 0
 {
 	- if ($PunchOption) I apologize for causing a scene.
 		ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Pursed)
@@ -90,19 +90,25 @@ choice in -1
 
 		Ahlai as <playerName> at 0 "I'd just like some reassurance if I happen to talk to him-you know each other, yes?"
 
-		Lien as General Lien at 1 "...He and I are well-acquainted. We are both in the government. But unfortunately, I am not fit to provide you information about Myo-er, Sir Aciano. Neither is it a part of my duties."
+		Lien as General Lien at 1 "...He and I are well-acquainted. We are both in the government."
+		
+		Lien as General Lien at 1 "But unfortunately, I am not fit to provide you information about Myo-er, Sir Aciano. Neither is it a part of my duties."
 
-		ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Upset)
+		ChangeBodyEmotion(Ahlai -b Left_Default_Body -e Left_Frown)
 
 		Ahlai as <playerName> at 0 "Oh... I apologize, then."
 
 		ChangeBodyEmotion(Lien -e Right_Stern)
 
-		Lien as General Lien at 1 "Put simply, <i>don't bother</i> asking the Seiyslan Army such questions. It would do you better to perhaps check in with him yourself."
+		Lien as General Lien at 1 "Put simply, <i>don't bother</i> asking the Seiyslan Army such questions."
+		
+		Lien as General Lien at 1 "It would do you better to perhaps check in with him yourself."
 
 		ChangeBodyEmotion(Ahlai -b Left_Question_Body -e Left_Question)
 
-		Ahlai as <playerName> at 0 "<i>Damn, even the soldiers got tense at the mention of Sir Aciano. I could still be wrong, but it seems likely they do have bad blood.</i>"
+		Ahlai as <playerName> at 0 "<i>Damn, even the soldiers got tense at the mention of Sir Aciano."
+		
+		Ahlai as <playerName> at 0 "I could still be wrong, but it seems likely they do have bad blood.</i>"
 
 		$AskedAboutMyo = true
 		Load("Main 5 - Lien Repeating Dialogue")
@@ -127,4 +133,6 @@ choice in -1
 		HideCharacter(Lien)
 
 		$LienTalkedTo = true
+
+		ResetCamera(true)
 }

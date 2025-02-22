@@ -2,11 +2,13 @@ ChangeBodyEmotion(Myo -e Left_Uncomfortable)
 
 Myo at 0 "...Ah."
 
-Myo at 0 "Well, aren't you a smart one? That <i>is</i> General Lien over there. Not that I have any plans of working with him myself. I have other men for that."
+Myo at 0 "Well, aren't you a smart one? That <i>is</i> General Lien over there."
+
+Myo at 0 "Not that I have any plans of working with him myself. I have other men for that."
 
 Myo at 0 "Why do you ask? Are you planning to talk to him?"
 
-ChangeBodyEmotion(Ahlai -e Right_Conflicted)
+ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Conflicted)
 
 Ahlai as <playerName> at 1 "Not necessarily, he's just..."
 
@@ -58,7 +60,9 @@ choice in 1
 
 		Myo at 0 "<playerName>, please-take it from me. Like Tayabac, Agon Province has a few ancestral lands that we try our best to protect, but..."
 
-		Myo at 0 "People like Sir Lien aren't going to change their minds about this. Barely anyone in Seiysla's government will change their minds. At least not in the current state the Empire is at now."
+		Myo at 0 "People like Sir Lien aren't going to change their minds about this. Barely anyone in Seiysla's government will change their minds."
+		
+		Myo at 0 "At least not in the current state the Empire is at now."
 
 		Myo at 0 "...But, you are free to talk to me about this, whenever you wish. Whatever helps you, <playerName>."
 

@@ -18,7 +18,7 @@ ChangeBodyEmotion(Seiji -e Right_ReallyHappy)
 
 Seiji at 1 "I keep it around as a good luck charm. I even put it on the counter when I'm working."
 
-choice in -1
+choice in 0
 {
 	- That's sweet, Seiji.
 		$Seiji += 1
