@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: c278e9f099a483c46a6b5ec52967e015
+guid: 5ee05092da6658049bbf298f730ac666
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
-      name: Idle
-    second: {fileID: 7400000, guid: 5bc609593aa7ff5419f44efb10c7e5fa, type: 2}
+      name: Sit
+    second: {fileID: 7400000, guid: fa873a4608901c048812eb55608b83e0, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -102,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638702713208392894
+  platformSettingsDirtyTick: 638759375915891578
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -126,18 +126,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: MaleNPC3_Frame_0
+  - name: Social Climber 1_Frame_0
     originalName: 
-    pivot: {x: 0.3250003, y: -1.7227724}
+    pivot: {x: -4.8055563, y: -0.41758242}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 176
+      x: 156
       y: 4
-      width: 160
-      height: 404
-    spriteID: 02c538017f42512469636659d20e199b
+      width: 144
+      height: 364
+    spriteID: 43f865837aba4d849babc707bdb467e4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -145,19 +145,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 176, y: 4}
-  - name: MaleNPC3_Frame_1
+    uvTransform: {x: 156, y: 4}
+  - name: Social Climber 1_Frame_1
     originalName: 
-    pivot: {x: 0.31578916, y: -1.74}
+    pivot: {x: -4.8055563, y: -0.42222226}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 512
+      x: 460
       y: 4
-      width: 152
-      height: 400
-    spriteID: f65d8b71b40bb1b4caf47e29ba292b83
+      width: 144
+      height: 360
+    spriteID: d30b15354264774488400757739cdff2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -165,39 +165,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 512, y: 4}
-  - name: MaleNPC3_Frame_2
+    uvTransform: {x: 460, y: 4}
+  - name: Social Climber 1_Frame_3
     originalName: 
-    pivot: {x: 0.3250003, y: -1.7227724}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 176
-      y: 416
-      width: 160
-      height: 404
-    spriteID: c8d610ff5bf30184ea358fdd286de156
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 176, y: 416}
-  - name: MaleNPC3_Frame_3
-    originalName: 
-    pivot: {x: 0.31707346, y: -1.7058823}
+    pivot: {x: -4.8055563, y: -0.41304347}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 164
-      height: 408
-    spriteID: 1adf44aa7dcab234583a0b194fae29a4
+      width: 144
+      height: 368
+    spriteID: d34552071f5687e4cb501f27db748d95
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -206,18 +186,38 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: MaleNPC3_Frame_4
+  - name: Social Climber 1_Frame_4
     originalName: 
-    pivot: {x: 0.3250003, y: -1.7227724}
+    pivot: {x: -4.8055563, y: -0.41758242}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 344
+      x: 156
+      y: 376
+      width: 144
+      height: 364
+    spriteID: 36ca43eacc3d0124aafa7ee25912b2f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 156, y: 376}
+  - name: Social Climber 1_Frame_2
+    originalName: 
+    pivot: {x: -4.8055563, y: -0.41758242}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
       y: 4
-      width: 160
-      height: 404
-    spriteID: d150ade6600d7d14abdb906955a3dc93
+      width: 144
+      height: 364
+    spriteID: 1b52b2b29d472f8499a1d7208310954d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -225,19 +225,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 344, y: 4}
-  - name: MaleNPC3_Frame_5
+    uvTransform: {x: 308, y: 4}
+  - name: Social Climber 1_Frame_5
     originalName: 
-    pivot: {x: 0.31578916, y: -1.74}
+    pivot: {x: -4.8055563, y: -0.42222226}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 512
-      y: 412
-      width: 152
-      height: 400
-    spriteID: c44c5de2c8362c842942269e9791d4bd
+      x: 460
+      y: 372
+      width: 144
+      height: 360
+    spriteID: a9c83298eae222b4da9bf76fadcd6ee4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -245,19 +245,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 512, y: 412}
-  - name: MaleNPC3_Frame_6
+    uvTransform: {x: 460, y: 372}
+  - name: Social Climber 1_Frame_6
     originalName: 
-    pivot: {x: 0.3250003, y: -1.7227724}
+    pivot: {x: -4.8055563, y: -0.41758242}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 344
-      y: 416
-      width: 160
-      height: 404
-    spriteID: adb2e2fd82230a54ea59dbd522ab3143
+      x: 308
+      y: 376
+      width: 144
+      height: 364
+    spriteID: 0119741081ebbff4688c1abc901aea9d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -265,19 +265,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 344, y: 416}
-  - name: MaleNPC3_Frame_7
+    uvTransform: {x: 308, y: 376}
+  - name: Social Climber 1_Frame_7
     originalName: 
-    pivot: {x: 0.31707346, y: -1.7058823}
+    pivot: {x: -4.8055563, y: -0.41304347}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 420
-      width: 164
-      height: 408
-    spriteID: 1b8aa5411af63d54390cf82ade5f0ed5
+      y: 380
+      width: 144
+      height: 368
+    spriteID: b18d12bbcbf19c041941667c100a4151
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -285,88 +285,88 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 420}
+    uvTransform: {x: 4, y: 380}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2058862327
-    name: MaleNPC3
+    guid: -1036535692
+    name: Social Climber 1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: MaleNPC3_Frame_0
+    - name: Social Climber 1_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 1548
-        y: 696
-        width: 160
-        height: 404
-      spriteId: 02c538017f42512469636659d20e199b
-    - name: MaleNPC3_Frame_1
+        x: 1940
+        y: 152
+        width: 144
+        height: 364
+      spriteId: 43f865837aba4d849babc707bdb467e4
+    - name: Social Climber 1_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 1552
-        y: 696
-        width: 152
-        height: 400
-      spriteId: f65d8b71b40bb1b4caf47e29ba292b83
-    - name: MaleNPC3_Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 1548
-        y: 696
-        width: 160
-        height: 404
-      spriteId: c8d610ff5bf30184ea358fdd286de156
-    - name: MaleNPC3_Frame_3
+        x: 1940
+        y: 152
+        width: 144
+        height: 360
+      spriteId: d30b15354264774488400757739cdff2
+    - name: Social Climber 1_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 1548
-        y: 696
-        width: 164
-        height: 408
-      spriteId: 1adf44aa7dcab234583a0b194fae29a4
-    - name: MaleNPC3_Frame_4
+        x: 1940
+        y: 152
+        width: 144
+        height: 368
+      spriteId: d34552071f5687e4cb501f27db748d95
+    - name: Social Climber 1_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 1548
-        y: 696
-        width: 160
-        height: 404
-      spriteId: d150ade6600d7d14abdb906955a3dc93
-    - name: MaleNPC3_Frame_5
+        x: 1940
+        y: 152
+        width: 144
+        height: 364
+      spriteId: 36ca43eacc3d0124aafa7ee25912b2f6
+    - name: Social Climber 1_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 1940
+        y: 152
+        width: 144
+        height: 364
+      spriteId: 1b52b2b29d472f8499a1d7208310954d
+    - name: Social Climber 1_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
-        x: 1552
-        y: 696
-        width: 152
-        height: 400
-      spriteId: c44c5de2c8362c842942269e9791d4bd
-    - name: MaleNPC3_Frame_6
+        x: 1940
+        y: 152
+        width: 144
+        height: 360
+      spriteId: a9c83298eae222b4da9bf76fadcd6ee4
+    - name: Social Climber 1_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
-        x: 1548
-        y: 696
-        width: 160
-        height: 404
-      spriteId: adb2e2fd82230a54ea59dbd522ab3143
-    - name: MaleNPC3_Frame_7
+        x: 1940
+        y: 152
+        width: 144
+        height: 364
+      spriteId: 0119741081ebbff4688c1abc901aea9d
+    - name: Social Climber 1_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
-        x: 1548
-        y: 696
-        width: 164
-        height: 408
-      spriteId: 1b8aa5411af63d54390cf82ade5f0ed5
+        x: 1940
+        y: 152
+        width: 144
+        height: 368
+      spriteId: b18d12bbcbf19c041941667c100a4151
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -433,4 +433,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 3200, y: 1800}
+  canvasSize: {x: 2496, y: 1096}

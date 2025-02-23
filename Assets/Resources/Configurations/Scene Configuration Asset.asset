@@ -1868,7 +1868,7 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: SocialClimberSit1
-      position: {x: 1200.73, y: -219.32}
+      position: {x: 1161.73, y: -182.32}
       appear: 1
       flipped: 0
       animationState: Idle
