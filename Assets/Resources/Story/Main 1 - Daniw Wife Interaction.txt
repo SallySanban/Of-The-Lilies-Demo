@@ -12,6 +12,7 @@ choice in -1
 
 		pixel FemNPC3 as Auntie "I do have some. Here you go."
 		playSFX("SFX_UI InventoryPickup")
+		Wait(0.5)
 
 		pixel FemNPC3 as Auntie "I hope we'll have a great celebration later."
 

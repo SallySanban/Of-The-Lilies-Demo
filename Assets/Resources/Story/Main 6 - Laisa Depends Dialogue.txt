@@ -62,7 +62,6 @@ choice in 0
 		Ahlai as <playerName> at 0 "What do you mean, then? If you still don't want my help, I'll be on my way. But if you need somewhere new to hide, I might know a place."
 
 		pauseEvent(BGM_KuchaiTown)
-		playMusic(BGM_Lein)
 		HideCharacter(Laisa)
 		HideCharacter(Ahlai)
 		HideTextbox(true)
@@ -93,7 +92,6 @@ choice in 0
 		Ahlai as <playerName> at 0 "Help! The Sea Emperor has escaped!"
 
 		pauseEvent(BGM_KuchaiTown)
-		playMusic(BGM_Lien)
 		HideCharacter(Ahlai)
 		HideCharacter(Laisa)
 		HideTextbox(true)
@@ -105,6 +103,7 @@ choice in 0
 
 		HideTextbox(true)
 		[wait]Blackout()
+		playSFX(SFX_KuchaiWalkout2)
 		[wait]SetCamera(-x -31.6)
 		SetNPCPosition("Soldier1" -x -2832.96 -y -218.32)
 		SetNPCPosition("Soldier2" -x -2660.96 -y -218.32)

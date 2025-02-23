@@ -79,6 +79,8 @@ else
 
 		HideTextbox(false)
 		[wait]Blackout()
+		playSFX(SFX_KuchaiWalkout)
+		Wait(0.5)
 		RemoveFromScene("DesperateGirl")
 		ToggleNPC("Scene 5" "Kuchai Town 2" "DesperateGirl" true)
 		ToggleNPC("Scene 5" "Kuchai Town 2" "MaleCustomer" true)

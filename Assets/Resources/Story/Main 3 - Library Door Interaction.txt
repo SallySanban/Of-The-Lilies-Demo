@@ -11,6 +11,7 @@ if ($LibraryQuest)
 	pixel Seiji "Come on, we might find the book faster if we split up. I'll look upstairs, and you can take this floor."
 
 	HideTextbox(false)
+	playSFX(SFX_KuchaiWalkout)
 	ToggleNPC("Scene 6" "Library 1" Seiji false)
 	[wait]SwitchScene("Scene 6" "Library 1")
 

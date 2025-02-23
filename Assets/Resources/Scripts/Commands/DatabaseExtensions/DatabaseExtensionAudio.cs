@@ -88,7 +88,7 @@ namespace Commands
             if (activeEvents.ContainsKey(fullPath))
             {
                 EventInstance eventToPause = activeEvents[fullPath];
-                CoroutineRunner.Instance.StartCoroutine(FadeOutAndPause(eventToPause, 5.0f)); // Fade out over 1 second
+                CoroutineRunner.Instance.StartCoroutine(FadeOutAndPause(eventToPause, 2.5f)); // Fade out over 2.5 seconds
                 Debug.Log("Pausing Event with Fade Out: " + fullPath);
             }
             else
@@ -104,7 +104,7 @@ namespace Commands
             if (activeEvents.ContainsKey(fullPath))
             {
                 EventInstance eventToResume = activeEvents[fullPath];
-                CoroutineRunner.Instance.StartCoroutine(FadeInAndResume(eventToResume, 5.0f)); // Fade in over 1 second
+                CoroutineRunner.Instance.StartCoroutine(FadeInAndResume(eventToResume, 2.5f)); // Fade in over 2.5 seconds
                 Debug.Log("Resuming Event with Fade In: " + fullPath);
             }
             else

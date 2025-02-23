@@ -49,6 +49,8 @@ pixel RookieJournalist as Dean "Thank you!"
 
 HideTextbox(false)
 [wait]Blackout()
+playSFX(SFX_KuchaiWalkout)
+Wait(0.5)
 RemoveFromScene("RookieJournalist")
 $RookieJournalistDone = true
 [wait]HideCG()

@@ -57,6 +57,8 @@ Laisa "Goodbye, my pearl."
 stopEvent(BGM_Laisa)
 HideTextbox(true)
 [wait]Blackout()
+playSFX(SFX_Running)
+Wait(0.5)
 
 Ahlai as <playerName> "<i>Did... that just happen...?</i>"
 

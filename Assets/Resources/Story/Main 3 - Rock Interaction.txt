@@ -8,6 +8,7 @@ pixel Ahlai as <playerName> "It feels like yesterday when she made it for me..."
 
 playSFX("SFX_UI InventoryPickup")
 RemoveFromScene("Rock")
+Wait(0.5)
 
 pixel Ahlai as <playerName> "A piece of her to take with me."
 

@@ -1,5 +1,6 @@
 pixel Ahlai as <playerName> "This will do for the ritual."
 playSFX("SFX_UI InventoryPickup")
+Wait(0.5)
 
 pixel Ahlai as <playerName> "Dad still isn't here... Maybe he's waiting at the top of the cliff?"
 

@@ -9,6 +9,7 @@ choice in -1
 		pixel Salesperson3 as Salesperson "That would be two gold coins."
 
 		playSFX(SFX_CoinsJiggle)
+		Wait(0.5)
 
 		pixel Salesperson3 as Salesperson "Come again!"
 

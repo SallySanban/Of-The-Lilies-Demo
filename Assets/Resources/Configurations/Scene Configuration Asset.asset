@@ -1569,7 +1569,7 @@ MonoBehaviour:
     - interactableName: Bridge
       interactableType: 2
       isInteractable: 1
-      storyToPlay: 
+      storyToPlay: Main 5 - Bridge Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Laisa
       interactableType: 0

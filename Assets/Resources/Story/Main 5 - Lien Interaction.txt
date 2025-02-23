@@ -184,6 +184,8 @@ choice in 0
 
 		HideTextbox(true)
 		[wait]Blackout()
+		playSFX(SFX_KuchaiWalkout3)
+		Wait(0.5)
 		RemoveFromScene("Soldier1")
 		ChangeBodyEmotion(Lien -e Right_Stern)
 		[wait]HideCG()
