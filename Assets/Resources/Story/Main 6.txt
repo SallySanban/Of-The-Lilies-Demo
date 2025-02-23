@@ -104,6 +104,8 @@ pixel Sabina as Lady Sabina "Now get some rest, you two. We've got another day a
 HideCharacter(Ahlai)
 HideTextbox(true)
 [wait]Blackout()
+playSFX(SFX_KuchaiWalkout)
+Wait(0.5)
 RemoveFromScene("Sabina")
 [wait]FlipNPC("Seiji" Left)
 [wait]SetCamera(-x -12.68)

@@ -7,6 +7,7 @@ if (!$MaiThankYou)
 	pixel PrayingGirlFamily as Mai "Thank you so much... I guess I won't be needing these anymore."
 
 	playSFX("SFX_UI InventoryPickup")
+	Wait(0.5)
 }
 
 pixel PrayingGirlFamily as Mai "I'll visit you at Sabina's Salves again soon!"

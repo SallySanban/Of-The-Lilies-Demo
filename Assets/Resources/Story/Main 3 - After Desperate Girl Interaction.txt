@@ -16,8 +16,10 @@ pixel DesperateGirl as Customer "I... um..."
 
 HideTextbox(false)
 [wait]Blackout()
+playSFX(SFX_Running)
+Wait(0.5)
 RemoveFromScene("DesperateGirl")
-PlaySFX("Running")
+
 
 Ahlai as <playerName> "Hey!"
 

@@ -134,6 +134,7 @@ TayabacAhlai as <playerName> "<i>I never got to play with Alonay after all...</i
 ??? "Sir Lien!"
 
 playSFX(SFX_LienFall)
+Wait(0.5)
 
 ??? "Sir Lien! Are you okay?!"
 
@@ -280,6 +281,7 @@ TayabacAhlai as <playerName> "<i>There are people talking outside... Is it not o
 ??? "Then how about I offer you more?"
 
 playSFX(SFX_CoinsJiggle)
+Wait(0.5)
 
 ??? "..."
 

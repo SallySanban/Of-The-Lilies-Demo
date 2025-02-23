@@ -6,6 +6,9 @@ if ($RetiredVeteranQuest)
 {
 	pixel Ahlai as <playerName> "I should take this to that man. He did say he wanted to see more of these landscapes..."
 
+	playSFX("SFX_UI InventoryPickup")
+	Wait(0.5)
+
 	$RetiredVeteranBook = true
 	ToggleInteractable("Scene 6" "Library 2" "Books 2" false)
 }

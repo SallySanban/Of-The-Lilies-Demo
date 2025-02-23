@@ -23,6 +23,7 @@ choice in -1
 		pixel Ahlai as <playerName> "Okay, four gold coins it is, sir. Here you go."
 
 		playSFX(SFX_CoinsJiggle)
+		Wait(0.5)
 
 		pixel Salesperson1 as Salesperson "Hmph! What insolent youngsters!"
 

@@ -67,11 +67,14 @@ else
 		pixel RichSeiyslan as Customer "Understood! Here's my payment. My regards to you and the rest of the staff."
 
 		playSFX(SFX_CoinsJiggle)
+		Wait(0.5)
 
 		pixel RichSeiyslan as Customer "Farewell!"
 
 		HideTextbox(false)
 		[wait]Blackout()
+		playSFX(SFX_KuchaiWalkout)
+		Wait(0.5)
 		RemoveFromScene("RichSeiyslan")
 		ToggleNPC("Scene 5" "Kuchai Town 1" "RichSeiyslan" true)
 		ToggleInteractable("Scene 5" "Kuchai Town 1" "RichSeiyslanCrush" false)

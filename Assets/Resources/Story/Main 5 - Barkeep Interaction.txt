@@ -32,6 +32,7 @@ else
 		pixel Barkeep "Your drinks are ready. Here's your three flasks of areka."
 
 		playSFX("SFX_UI InventoryPickup")
+		Wait(0.5)
 
 		pixel Barkeep "Come back again soon, pal. Any patron from Sabina's Salves is welcome here."
 

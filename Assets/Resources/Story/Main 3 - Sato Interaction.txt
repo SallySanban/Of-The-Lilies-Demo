@@ -74,6 +74,8 @@ else
 
 		HideTextbox(false)
 		[wait]Blackout()
+		playSFX(SFX_KuchaiWalkout)
+		Wait(0.5)
 		RemoveFromScene("Sato")
 		ToggleNPC("Scene 5" "Kuchai Town 3" "Sato" true)
 		$FinishedSatoQuest = true
