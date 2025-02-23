@@ -153,6 +153,8 @@ public class PixelSprite
                     targetPosition,
                     speed * Time.deltaTime
                 );
+
+                PlayFootstepSound();
                 yield return null;
             }
         }

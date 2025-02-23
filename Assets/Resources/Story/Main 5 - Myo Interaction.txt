@@ -138,6 +138,8 @@ else
 
 			HideTextbox(true)
 			[wait]Blackout()
+			playSFX(SFX_KuchaiWalkout3)
+			Wait(0.5)
 			RemoveFromScene("SocialClimberSit2")
 			ChangeBodyEmotion(Myo -e Left_Relieved)
 			[wait]HideCG()
@@ -218,6 +220,8 @@ else
 
 			HideTextbox(true)
 			[wait]Blackout()
+			playSFX(SFX_KuchaiWalkout3)
+			Wait(0.5)
 			RemoveFromScene("SocialClimberSit2")
 			ChangeBodyEmotion(Myo -e Left_Relieved)
 			ChangeBodyEmotion(Ahlai -e Right_Smile)
@@ -288,6 +292,8 @@ else
 
 			HideTextbox(true)
 			[wait]Blackout()
+			playSFX(SFX_KuchaiWalkout3)
+			Wait(0.5)
 			RemoveFromScene("SocialClimberSit2")
 			ChangeBodyEmotion(Myo -e Left_Relieved)
 			ChangeBodyEmotion(Ahlai -e Right_Smile)
