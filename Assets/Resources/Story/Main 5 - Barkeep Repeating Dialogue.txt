@@ -65,7 +65,7 @@ choice in -1
 		Soldier as Seiyslan Soldier "Barkeep! Bring us a barrel of rum!"
 
 		HideTextbox(true)
-		[wait]RemoveScene("Scene 8" "Tavern")
+		[wait]RemoveScene()
 		[wait]ShowScene("Scene 9" "Tavern")
 
 		[wait]HideCG()

@@ -1873,10 +1873,10 @@ MonoBehaviour:
       flipped: 0
       animationState: Sit
     - npcName: SocialClimberSit2
-      position: {x: 1445.73, y: -219.32}
+      position: {x: 1518.73, y: -173.32}
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: SideSit
     interactablesInScene:
     - interactableName: Barkeep
       interactableType: 0
@@ -1902,7 +1902,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Social Climber Interaction
-      moveToInteractPosition: {x: 15.19, y: -2.47}
+      moveToInteractPosition: {x: 15.72, y: -2.39}
     - interactableName: Alcohol
       interactableType: 1
       isInteractable: 1
@@ -1959,10 +1959,10 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: SocialClimberSit2
-      position: {x: -691.27, y: -182.32}
+      position: {x: -665.27, y: -189.32}
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: BackSit
     - npcName: Soldier1
       position: {x: 639.73, y: -177.32}
       appear: 1
@@ -2004,11 +2004,6 @@ MonoBehaviour:
       isInteractable: 1
       storyToPlay: Main 5 - Admirer Interaction
       moveToInteractPosition: {x: -8.95, y: -2.39}
-    - interactableName: Alcohol
-      interactableType: 1
-      isInteractable: 1
-      storyToPlay: Main 5 - Alcohol Interaction
-      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Soldier1
       interactableType: 0
       isInteractable: 1
