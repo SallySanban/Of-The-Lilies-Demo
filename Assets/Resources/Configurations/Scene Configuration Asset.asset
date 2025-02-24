@@ -1445,7 +1445,7 @@ MonoBehaviour:
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: StudentSit1
-      position: {x: -466.05, y: -493.32}
+      position: {x: -460.05, y: -491.32}
       appear: 1
       flipped: 0
       animationState: 

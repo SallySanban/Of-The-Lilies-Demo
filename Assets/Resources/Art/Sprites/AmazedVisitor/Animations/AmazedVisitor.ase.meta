@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748075600043149
+  platformSettingsDirtyTick: 638760247225838942
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: AmazedVisitor_Frame_0
+  - name: AmazedVisitor_Frame_8
     originalName: 
-    pivot: {x: 0.43589744, y: -0.12745099}
+    pivot: {x: 0.2820513, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 4
+      width: 156
+      height: 408
+    spriteID: 9eb599add252c5a48acdc079d2d44295
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 4}
+  - name: AmazedVisitor_Frame_9
+    originalName: 
+    pivot: {x: 0.2702703, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 4
+      width: 148
+      height: 404
+    spriteID: 2251f72463006ed49ad71cb5b79eecdc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 4}
+  - name: AmazedVisitor_Frame_11
+    originalName: 
+    pivot: {x: 0.3, y: -0.1262136}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 156
-      height: 408
-    spriteID: 59939e6c5a0a54b428945efec116fefb
+      width: 160
+      height: 412
+    spriteID: 7b9a745ee5fb24142b3b9b056943b637
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: AmazedVisitor_Frame_1
+  - name: AmazedVisitor_Frame_10
     originalName: 
-    pivot: {x: 0.25641027, y: -0.12745099}
+    pivot: {x: 0.2820513, y: -0.12745099}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 4
+      x: 172
+      y: 420
       width: 156
       height: 408
-    spriteID: e67906ba55dad084b8892a4241012e3a
+    spriteID: 391e842da8d256244836f2bd2b8a610c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 4}
+    uvTransform: {x: 172, y: 420}
+  - name: AmazedVisitor_Frame_12
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 836
+      width: 156
+      height: 408
+    spriteID: 8c01ee25c071c704190e6d24b7dcda8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 836}
+  - name: AmazedVisitor_Frame_13
+    originalName: 
+    pivot: {x: 0.2702703, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 416
+      width: 148
+      height: 404
+    spriteID: eaa2c83ec07b56f468c66cd12974d364
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 416}
+  - name: AmazedVisitor_Frame_14
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1252
+      width: 156
+      height: 408
+    spriteID: 22bb9368af48785469c7c75524fee180
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1252}
+  - name: AmazedVisitor_Frame_15
+    originalName: 
+    pivot: {x: 0.3, y: -0.1262136}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 424
+      width: 160
+      height: 412
+    spriteID: aacc6ef4ea242c34b80714433c70a106
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 424}
+  - name: AmazedVisitor_Frame_0
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 4
+      width: 156
+      height: 408
+    spriteID: 7ff055e9e5959214c8476bdadc527394
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 4}
+  - name: AmazedVisitor_Frame_1
+    originalName: 
+    pivot: {x: 0.43243244, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 828
+      width: 148
+      height: 404
+    spriteID: 3026435750aa92f4fb51bc86ef419ca1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 828}
+  - name: AmazedVisitor_Frame_3
+    originalName: 
+    pivot: {x: 0.425, y: -0.1262136}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 844
+      width: 160
+      height: 412
+    spriteID: 37f5ce11b6007dd43822826178f3ba53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 844}
+  - name: AmazedVisitor_Frame_2
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 420
+      width: 156
+      height: 408
+    spriteID: 642ed6a50b15c5946a99570bc39b13f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 420}
+  - name: AmazedVisitor_Frame_4
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 836
+      width: 156
+      height: 408
+    spriteID: 8951191f6eee7fa448f269f2c713889a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 836}
+  - name: AmazedVisitor_Frame_5
+    originalName: 
+    pivot: {x: 0.43243244, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 1240
+      width: 148
+      height: 404
+    spriteID: 95892f8805145c543b795f001945117d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 1240}
+  - name: AmazedVisitor_Frame_6
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 1252
+      width: 156
+      height: 408
+    spriteID: 7c8605db7a6460646ade4cdf1fd20503
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 1252}
+  - name: AmazedVisitor_Frame_7
+    originalName: 
+    pivot: {x: 0.425, y: -0.1262136}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1264
+      width: 160
+      height: 412
+    spriteID: 54723792cdd312a459e2764bd0d67cb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1264}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,6 +460,78 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: AmazedVisitor_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 9eb599add252c5a48acdc079d2d44295
+    - name: AmazedVisitor_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 52
+        width: 148
+        height: 404
+      spriteId: 2251f72463006ed49ad71cb5b79eecdc
+    - name: AmazedVisitor_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 52
+        width: 160
+        height: 412
+      spriteId: 7b9a745ee5fb24142b3b9b056943b637
+    - name: AmazedVisitor_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 391e842da8d256244836f2bd2b8a610c
+    - name: AmazedVisitor_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 8c01ee25c071c704190e6d24b7dcda8c
+    - name: AmazedVisitor_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 52
+        width: 148
+        height: 404
+      spriteId: eaa2c83ec07b56f468c66cd12974d364
+    - name: AmazedVisitor_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 22bb9368af48785469c7c75524fee180
+    - name: AmazedVisitor_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 52
+        width: 160
+        height: 412
+      spriteId: aacc6ef4ea242c34b80714433c70a106
     - name: AmazedVisitor_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -188,16 +540,70 @@ ScriptedImporter:
         y: 52
         width: 156
         height: 408
-      spriteId: 59939e6c5a0a54b428945efec116fefb
+      spriteId: 7ff055e9e5959214c8476bdadc527394
     - name: AmazedVisitor_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 216
+        x: 192
+        y: 52
+        width: 148
+        height: 404
+      spriteId: 3026435750aa92f4fb51bc86ef419ca1
+    - name: AmazedVisitor_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 160
+        height: 412
+      spriteId: 37f5ce11b6007dd43822826178f3ba53
+    - name: AmazedVisitor_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
         y: 52
         width: 156
         height: 408
-      spriteId: e67906ba55dad084b8892a4241012e3a
+      spriteId: 642ed6a50b15c5946a99570bc39b13f6
+    - name: AmazedVisitor_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 8951191f6eee7fa448f269f2c713889a
+    - name: AmazedVisitor_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 192
+        y: 52
+        width: 148
+        height: 404
+      spriteId: 95892f8805145c543b795f001945117d
+    - name: AmazedVisitor_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 7c8605db7a6460646ade4cdf1fd20503
+    - name: AmazedVisitor_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 160
+        height: 412
+      spriteId: 54723792cdd312a459e2764bd0d67cb1
     linkedCells: []
     parentIndex: -1
   platformSettings:

@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748054596061426
+  platformSettingsDirtyTick: 638760249842832481
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: RetiredVeteran_Frame_0
+  - name: RetiredVeteran_Frame_8
     originalName: 
-    pivot: {x: 0.43589744, y: -0.12745099}
+    pivot: {x: 0.2820513, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 4
+      width: 156
+      height: 408
+    spriteID: fece2eed60433704583ab6677af1ed0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 4}
+  - name: RetiredVeteran_Frame_9
+    originalName: 
+    pivot: {x: 0.2702703, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 4
+      width: 148
+      height: 404
+    spriteID: a4e969b0aca5b40418002c2bb921653c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 4}
+  - name: RetiredVeteran_Frame_11
+    originalName: 
+    pivot: {x: 0.3, y: -0.1262136}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 156
-      height: 408
-    spriteID: bdfbbd9554fc4414ea84f4129a5320b1
+      width: 160
+      height: 412
+    spriteID: f2f5df9bf2e86724e8b47c3e6b5b89c7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: RetiredVeteran_Frame_1
+  - name: RetiredVeteran_Frame_10
     originalName: 
-    pivot: {x: 0.25641027, y: -0.12745099}
+    pivot: {x: 0.2820513, y: -0.12745099}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 4
+      x: 172
+      y: 420
       width: 156
       height: 408
-    spriteID: 2ed9c6763b428904897ef7f3d453e09b
+    spriteID: 5e8bd16363b7b174491e52ee6010e43e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 4}
+    uvTransform: {x: 172, y: 420}
+  - name: RetiredVeteran_Frame_12
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 836
+      width: 156
+      height: 408
+    spriteID: 5ff18b6f78321df4591bd6e397c55829
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 836}
+  - name: RetiredVeteran_Frame_13
+    originalName: 
+    pivot: {x: 0.2702703, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 416
+      width: 148
+      height: 404
+    spriteID: 885e919ad1968824e84702f6849cd470
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 416}
+  - name: RetiredVeteran_Frame_14
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1252
+      width: 156
+      height: 408
+    spriteID: 6c7eaeeeed7df7043b5f31872c415fa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1252}
+  - name: RetiredVeteran_Frame_15
+    originalName: 
+    pivot: {x: 0.3, y: -0.1262136}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 424
+      width: 160
+      height: 412
+    spriteID: 1ab054de020524846a341ee06396f3e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 424}
+  - name: RetiredVeteran_Frame_0
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 4
+      width: 156
+      height: 408
+    spriteID: 43e14ee098bfbea4bb7f383cc3215bbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 4}
+  - name: RetiredVeteran_Frame_1
+    originalName: 
+    pivot: {x: 0.43243244, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 828
+      width: 148
+      height: 404
+    spriteID: 00015268bed9a3645a1c5cc40cf9b287
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 828}
+  - name: RetiredVeteran_Frame_3
+    originalName: 
+    pivot: {x: 0.425, y: -0.1262136}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 844
+      width: 160
+      height: 412
+    spriteID: 5507cc33d64e63f478eb11d9fb91b1e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 844}
+  - name: RetiredVeteran_Frame_2
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 420
+      width: 156
+      height: 408
+    spriteID: 42ed6ec153026ac49ab502866fe078f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 420}
+  - name: RetiredVeteran_Frame_4
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 836
+      width: 156
+      height: 408
+    spriteID: 558cd3da1d78c3743a95aad4033219a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 836}
+  - name: RetiredVeteran_Frame_5
+    originalName: 
+    pivot: {x: 0.43243244, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 1240
+      width: 148
+      height: 404
+    spriteID: eb29a2274fd7d4247bceb8271b88bcb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 1240}
+  - name: RetiredVeteran_Frame_6
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 1252
+      width: 156
+      height: 408
+    spriteID: 1b55177c2e1ec47429f3a56286bbe289
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 1252}
+  - name: RetiredVeteran_Frame_7
+    originalName: 
+    pivot: {x: 0.425, y: -0.1262136}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1264
+      width: 160
+      height: 412
+    spriteID: a890d4f86aa16b744a94c3e77323d24f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1264}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,6 +460,78 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: RetiredVeteran_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: fece2eed60433704583ab6677af1ed0e
+    - name: RetiredVeteran_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 52
+        width: 148
+        height: 404
+      spriteId: a4e969b0aca5b40418002c2bb921653c
+    - name: RetiredVeteran_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 52
+        width: 160
+        height: 412
+      spriteId: f2f5df9bf2e86724e8b47c3e6b5b89c7
+    - name: RetiredVeteran_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 5e8bd16363b7b174491e52ee6010e43e
+    - name: RetiredVeteran_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 5ff18b6f78321df4591bd6e397c55829
+    - name: RetiredVeteran_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 52
+        width: 148
+        height: 404
+      spriteId: 885e919ad1968824e84702f6849cd470
+    - name: RetiredVeteran_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 6c7eaeeeed7df7043b5f31872c415fa8
+    - name: RetiredVeteran_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 52
+        width: 160
+        height: 412
+      spriteId: 1ab054de020524846a341ee06396f3e6
     - name: RetiredVeteran_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -188,16 +540,70 @@ ScriptedImporter:
         y: 52
         width: 156
         height: 408
-      spriteId: bdfbbd9554fc4414ea84f4129a5320b1
+      spriteId: 43e14ee098bfbea4bb7f383cc3215bbb
     - name: RetiredVeteran_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 216
+        x: 192
+        y: 52
+        width: 148
+        height: 404
+      spriteId: 00015268bed9a3645a1c5cc40cf9b287
+    - name: RetiredVeteran_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 160
+        height: 412
+      spriteId: 5507cc33d64e63f478eb11d9fb91b1e4
+    - name: RetiredVeteran_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
         y: 52
         width: 156
         height: 408
-      spriteId: 2ed9c6763b428904897ef7f3d453e09b
+      spriteId: 42ed6ec153026ac49ab502866fe078f1
+    - name: RetiredVeteran_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 558cd3da1d78c3743a95aad4033219a4
+    - name: RetiredVeteran_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 192
+        y: 52
+        width: 148
+        height: 404
+      spriteId: eb29a2274fd7d4247bceb8271b88bcb3
+    - name: RetiredVeteran_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 1b55177c2e1ec47429f3a56286bbe289
+    - name: RetiredVeteran_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 160
+        height: 412
+      spriteId: a890d4f86aa16b744a94c3e77323d24f
     linkedCells: []
     parentIndex: -1
   platformSettings:

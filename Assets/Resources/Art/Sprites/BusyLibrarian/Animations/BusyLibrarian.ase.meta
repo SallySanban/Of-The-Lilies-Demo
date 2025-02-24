@@ -11,7 +11,7 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
-      name: IdleRIght
+      name: IdleRight
     second: {fileID: 7400000, guid: bba92624dc6ffae468e9345681cc4857, type: 2}
   serializedVersion: 2
   userData: 
@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638754062340392854
+  platformSettingsDirtyTick: 638760260108883326
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: BusyLibrarian_Frame_0
+  - name: BusyLibrarian_Frame_8
     originalName: 
-    pivot: {x: 1.1538461, y: -0.13}
+    pivot: {x: 0.25641027, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 4
+      width: 156
+      height: 400
+    spriteID: a6f9876bfc5c07d4487499590cca9f6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 4}
+  - name: BusyLibrarian_Frame_9
+    originalName: 
+    pivot: {x: 0.22222222, y: -0.14141414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 1228
+      width: 144
+      height: 396
+    spriteID: a039f3e934ea1084aa98a88eebf6da49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 1228}
+  - name: BusyLibrarian_Frame_11
+    originalName: 
+    pivot: {x: 0.275, y: -0.13861386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 156
-      height: 400
-    spriteID: 0a319d076e94b5140aee33f5cfabb5d7
+      width: 160
+      height: 404
+    spriteID: 06f61ae648133e146bde66ffa1e5ae21
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: BusyLibrarian_Frame_1
+  - name: BusyLibrarian_Frame_10
     originalName: 
-    pivot: {x: 1.1025641, y: -0.13}
+    pivot: {x: 0.25641027, y: -0.14}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 4
+      x: 172
+      y: 412
       width: 156
       height: 400
-    spriteID: c3092f891e867644d806e82d21b41175
+    spriteID: 64e3384452983804687967d795434ab8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 4}
+    uvTransform: {x: 172, y: 412}
+  - name: BusyLibrarian_Frame_12
+    originalName: 
+    pivot: {x: 0.25641027, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 820
+      width: 156
+      height: 400
+    spriteID: 2c60a42555dbcd24c977d9e8135c18f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 820}
+  - name: BusyLibrarian_Frame_13
+    originalName: 
+    pivot: {x: 0.22222222, y: -0.14141414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 1632
+      width: 144
+      height: 396
+    spriteID: bada9186701bad148b6fbcb27cb95d4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 1632}
+  - name: BusyLibrarian_Frame_14
+    originalName: 
+    pivot: {x: 0.25641027, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1228
+      width: 156
+      height: 400
+    spriteID: 67b75c02fbe953d4caac7ac9c1aaecec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1228}
+  - name: BusyLibrarian_Frame_15
+    originalName: 
+    pivot: {x: 0.275, y: -0.13861386}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 416
+      width: 160
+      height: 404
+    spriteID: 8ee7d6117df78dc4696329fa6298af66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 416}
+  - name: BusyLibrarian_Frame_0
+    originalName: 
+    pivot: {x: 0.4871795, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1636
+      width: 156
+      height: 400
+    spriteID: 027bc0261a532174b995c46f7b348eac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1636}
+  - name: BusyLibrarian_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.14141414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 4
+      width: 144
+      height: 396
+    spriteID: 744b95c102c582a47a706dfae6a13dfc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 4}
+  - name: BusyLibrarian_Frame_3
+    originalName: 
+    pivot: {x: 0.475, y: -0.13861386}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 828
+      width: 160
+      height: 404
+    spriteID: 85901fc09b224174b98ec66714e4ceb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 828}
+  - name: BusyLibrarian_Frame_2
+    originalName: 
+    pivot: {x: 0.4871795, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 4
+      width: 156
+      height: 400
+    spriteID: 3657dba0a0c45a04eb47e66813515902
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 4}
+  - name: BusyLibrarian_Frame_4
+    originalName: 
+    pivot: {x: 0.4871795, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 412
+      width: 156
+      height: 400
+    spriteID: b8e65748ec77fec40b416a2f8d1e2bab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 412}
+  - name: BusyLibrarian_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.14141414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 408
+      width: 144
+      height: 396
+    spriteID: 31fd63c3956f60147a6fa45d192c4254
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 408}
+  - name: BusyLibrarian_Frame_6
+    originalName: 
+    pivot: {x: 0.4871795, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 820
+      width: 156
+      height: 400
+    spriteID: 1e7155e1f8580db42b10be8bfc27dd04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 820}
+  - name: BusyLibrarian_Frame_7
+    originalName: 
+    pivot: {x: 0.475, y: -0.13861386}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1240
+      width: 160
+      height: 404
+    spriteID: ece9e2ed0de408e479db446ff68afbc0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1240}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,24 +460,150 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: BusyLibrarian_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 56
+        width: 156
+        height: 400
+      spriteId: a6f9876bfc5c07d4487499590cca9f6f
+    - name: BusyLibrarian_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 224
+        y: 56
+        width: 144
+        height: 396
+      spriteId: a039f3e934ea1084aa98a88eebf6da49
+    - name: BusyLibrarian_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 56
+        width: 160
+        height: 404
+      spriteId: 06f61ae648133e146bde66ffa1e5ae21
+    - name: BusyLibrarian_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 56
+        width: 156
+        height: 400
+      spriteId: 64e3384452983804687967d795434ab8
+    - name: BusyLibrarian_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 56
+        width: 156
+        height: 400
+      spriteId: 2c60a42555dbcd24c977d9e8135c18f0
+    - name: BusyLibrarian_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 224
+        y: 56
+        width: 144
+        height: 396
+      spriteId: bada9186701bad148b6fbcb27cb95d4b
+    - name: BusyLibrarian_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 56
+        width: 156
+        height: 400
+      spriteId: 67b75c02fbe953d4caac7ac9c1aaecec
+    - name: BusyLibrarian_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 56
+        width: 160
+        height: 404
+      spriteId: 8ee7d6117df78dc4696329fa6298af66
     - name: BusyLibrarian_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 76
-        y: 52
+        x: 180
+        y: 56
         width: 156
         height: 400
-      spriteId: 0a319d076e94b5140aee33f5cfabb5d7
+      spriteId: 027bc0261a532174b995c46f7b348eac
     - name: BusyLibrarian_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 84
-        y: 52
+        x: 184
+        y: 56
+        width: 144
+        height: 396
+      spriteId: 744b95c102c582a47a706dfae6a13dfc
+    - name: BusyLibrarian_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 180
+        y: 56
+        width: 160
+        height: 404
+      spriteId: 85901fc09b224174b98ec66714e4ceb7
+    - name: BusyLibrarian_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 180
+        y: 56
         width: 156
         height: 400
-      spriteId: c3092f891e867644d806e82d21b41175
+      spriteId: 3657dba0a0c45a04eb47e66813515902
+    - name: BusyLibrarian_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 180
+        y: 56
+        width: 156
+        height: 400
+      spriteId: b8e65748ec77fec40b416a2f8d1e2bab
+    - name: BusyLibrarian_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 184
+        y: 56
+        width: 144
+        height: 396
+      spriteId: 31fd63c3956f60147a6fa45d192c4254
+    - name: BusyLibrarian_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 180
+        y: 56
+        width: 156
+        height: 400
+      spriteId: 1e7155e1f8580db42b10be8bfc27dd04
+    - name: BusyLibrarian_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 180
+        y: 56
+        width: 160
+        height: 404
+      spriteId: ece9e2ed0de408e479db446ff68afbc0
     linkedCells: []
     parentIndex: -1
   platformSettings:

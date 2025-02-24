@@ -205,10 +205,10 @@ RectTransform:
   m_Father: {fileID: 6770346568084815783}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.4416124, y: 0.8147}
-  m_AnchorMax: {x: 0.5506124, y: 0.9695862}
-  m_AnchoredPosition: {x: 1, y: -0.5}
-  m_SizeDelta: {x: -80.11841, y: -86.93764}
+  m_AnchorMin: {x: 0.44845727, y: 0.8147}
+  m_AnchorMax: {x: 0.5563165, y: 0.9742382}
+  m_AnchoredPosition: {x: 0.4531859, y: -1.7331079}
+  m_SizeDelta: {x: -79.29628, y: -89.40401}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &6079671183794234899
 SpriteRenderer:
@@ -1192,6 +1192,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: 1de2eb2752a3b144081b5e5c5faff83d, type: 2}
     - target: {fileID: 3626916397498700004, guid: 6db6e0efbb4dafe41a25319f0bd04cbb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8475832895940917504, guid: 6db6e0efbb4dafe41a25319f0bd04cbb, type: 3}
+    - target: {fileID: 3626916397498700004, guid: 6db6e0efbb4dafe41a25319f0bd04cbb, type: 3}
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
@@ -1205,7 +1209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 6db6e0efbb4dafe41a25319f0bd04cbb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -305
+      value: -312
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 6db6e0efbb4dafe41a25319f0bd04cbb, type: 3}
       propertyPath: m_LocalPosition.z

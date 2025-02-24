@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748046256773000
+  platformSettingsDirtyTick: 638760244059225787
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: TownCrier_Frame_0
+  - name: TownCrier_Frame_8
     originalName: 
-    pivot: {x: 0.43589744, y: -0.14}
+    pivot: {x: 0.20512821, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 4
+      width: 156
+      height: 400
+    spriteID: 0cfaf5d9e4ad8294c93c6f63440620e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 4}
+  - name: TownCrier_Frame_9
+    originalName: 
+    pivot: {x: 0.16666667, y: -0.14141414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 1228
+      width: 144
+      height: 396
+    spriteID: fcc7efdc7d7002644804e3ec0cbaad1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 1228}
+  - name: TownCrier_Frame_11
+    originalName: 
+    pivot: {x: 0.22500001, y: -0.13861386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 156
-      height: 400
-    spriteID: 01babcdb216f4434896be9d7991beb0b
+      width: 160
+      height: 404
+    spriteID: 011d0eaac9fca37498565b105614aa55
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: TownCrier_Frame_1
+  - name: TownCrier_Frame_10
     originalName: 
-    pivot: {x: 0.25641027, y: -0.14}
+    pivot: {x: 0.20512821, y: -0.14}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 4
+      x: 172
+      y: 412
       width: 156
       height: 400
-    spriteID: a016b2bf819e22e4abe046dc6db7939d
+    spriteID: db136af6f6b60df4c9ab390fd6e9a669
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 4}
+    uvTransform: {x: 172, y: 412}
+  - name: TownCrier_Frame_12
+    originalName: 
+    pivot: {x: 0.20512821, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 820
+      width: 156
+      height: 400
+    spriteID: 2c7069559913ca840a90e28d56061f02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 820}
+  - name: TownCrier_Frame_13
+    originalName: 
+    pivot: {x: 0.16666667, y: -0.14141414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 1632
+      width: 144
+      height: 396
+    spriteID: 178086bc8f62d8248885a5e1f52b096c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 1632}
+  - name: TownCrier_Frame_14
+    originalName: 
+    pivot: {x: 0.20512821, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1228
+      width: 156
+      height: 400
+    spriteID: 7a453b86e44791e4cbf8cdccbbf06b94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1228}
+  - name: TownCrier_Frame_15
+    originalName: 
+    pivot: {x: 0.22500001, y: -0.13861386}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 416
+      width: 160
+      height: 404
+    spriteID: 8e373523512804842b42fb78927fda38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 416}
+  - name: TownCrier_Frame_0
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1636
+      width: 156
+      height: 400
+    spriteID: e8f5cbd7d44641f4a812ba9af30518a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1636}
+  - name: TownCrier_Frame_1
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.14141414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 4
+      width: 144
+      height: 396
+    spriteID: 7d3f0c8a4a8bc31469bf6dd72888c053
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 4}
+  - name: TownCrier_Frame_3
+    originalName: 
+    pivot: {x: 0.425, y: -0.13861386}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 828
+      width: 160
+      height: 404
+    spriteID: d29207be7d1661148b543f874a073759
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 828}
+  - name: TownCrier_Frame_2
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 4
+      width: 156
+      height: 400
+    spriteID: 9505ef684b83b274c8d5a1c063a770be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 4}
+  - name: TownCrier_Frame_4
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 412
+      width: 156
+      height: 400
+    spriteID: 8315a4c2847f4cd4cb1f741a0f57d552
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 412}
+  - name: TownCrier_Frame_5
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.14141414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 408
+      width: 144
+      height: 396
+    spriteID: 337064773926014469eb44f49e4fe380
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 408}
+  - name: TownCrier_Frame_6
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 820
+      width: 156
+      height: 400
+    spriteID: 32f6a0a04a5adb448a93cdc507fbb4a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 820}
+  - name: TownCrier_Frame_7
+    originalName: 
+    pivot: {x: 0.425, y: -0.13861386}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1240
+      width: 160
+      height: 404
+    spriteID: 02499f6fe65ec184cb63b8bc85d00589
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1240}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,6 +460,78 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: TownCrier_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 224
+        y: 56
+        width: 156
+        height: 400
+      spriteId: 0cfaf5d9e4ad8294c93c6f63440620e7
+    - name: TownCrier_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 232
+        y: 56
+        width: 144
+        height: 396
+      spriteId: fcc7efdc7d7002644804e3ec0cbaad1b
+    - name: TownCrier_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 220
+        y: 56
+        width: 160
+        height: 404
+      spriteId: 011d0eaac9fca37498565b105614aa55
+    - name: TownCrier_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 224
+        y: 56
+        width: 156
+        height: 400
+      spriteId: db136af6f6b60df4c9ab390fd6e9a669
+    - name: TownCrier_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 224
+        y: 56
+        width: 156
+        height: 400
+      spriteId: 2c7069559913ca840a90e28d56061f02
+    - name: TownCrier_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 232
+        y: 56
+        width: 144
+        height: 396
+      spriteId: 178086bc8f62d8248885a5e1f52b096c
+    - name: TownCrier_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 224
+        y: 56
+        width: 156
+        height: 400
+      spriteId: 7a453b86e44791e4cbf8cdccbbf06b94
+    - name: TownCrier_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 220
+        y: 56
+        width: 160
+        height: 404
+      spriteId: 8e373523512804842b42fb78927fda38
     - name: TownCrier_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -188,16 +540,70 @@ ScriptedImporter:
         y: 56
         width: 156
         height: 400
-      spriteId: 01babcdb216f4434896be9d7991beb0b
+      spriteId: e8f5cbd7d44641f4a812ba9af30518a5
     - name: TownCrier_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 216
+        x: 192
+        y: 56
+        width: 144
+        height: 396
+      spriteId: 7d3f0c8a4a8bc31469bf6dd72888c053
+    - name: TownCrier_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 56
+        width: 160
+        height: 404
+      spriteId: d29207be7d1661148b543f874a073759
+    - name: TownCrier_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
         y: 56
         width: 156
         height: 400
-      spriteId: a016b2bf819e22e4abe046dc6db7939d
+      spriteId: 9505ef684b83b274c8d5a1c063a770be
+    - name: TownCrier_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 56
+        width: 156
+        height: 400
+      spriteId: 8315a4c2847f4cd4cb1f741a0f57d552
+    - name: TownCrier_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 192
+        y: 56
+        width: 144
+        height: 396
+      spriteId: 337064773926014469eb44f49e4fe380
+    - name: TownCrier_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 56
+        width: 156
+        height: 400
+      spriteId: 32f6a0a04a5adb448a93cdc507fbb4a3
+    - name: TownCrier_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 56
+        width: 160
+        height: 404
+      spriteId: 02499f6fe65ec184cb63b8bc85d00589
     linkedCells: []
     parentIndex: -1
   platformSettings:

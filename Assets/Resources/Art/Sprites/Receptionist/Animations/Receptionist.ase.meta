@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748056698889629
+  platformSettingsDirtyTick: 638760206033776172
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Receptionist_Frame_0
+  - name: Receptionist_Frame_8
     originalName: 
-    pivot: {x: 0.43589744, y: -0.0925926}
+    pivot: {x: 0.2820513, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 4
+      width: 156
+      height: 432
+    spriteID: fd1a34f0cde433e459678904ac5b8702
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 4}
+  - name: Receptionist_Frame_9
+    originalName: 
+    pivot: {x: 0.25, y: -0.09345794}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 4
+      width: 144
+      height: 428
+    spriteID: 8345ec5aa9a95ca4f956dbd20d93831a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 4}
+  - name: Receptionist_Frame_11
+    originalName: 
+    pivot: {x: 0.3, y: -0.09174311}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 156
-      height: 432
-    spriteID: edd972c4a10297a47b4e87ee4e3c1d4b
+      width: 160
+      height: 436
+    spriteID: b743afc542bebbb4d868e987150d17b6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Receptionist_Frame_1
+  - name: Receptionist_Frame_10
     originalName: 
-    pivot: {x: 0.25641027, y: -0.0925926}
+    pivot: {x: 0.2820513, y: -0.0925926}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 4
+      x: 172
+      y: 444
       width: 156
       height: 432
-    spriteID: 6bc1b91edebbfa0448f607c570292798
+    spriteID: a4d3f6930f3354f43abac4b206acfe12
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 4}
+    uvTransform: {x: 172, y: 444}
+  - name: Receptionist_Frame_12
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 884
+      width: 156
+      height: 432
+    spriteID: c805b52cd7e411d498dc071a9f42425a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 884}
+  - name: Receptionist_Frame_13
+    originalName: 
+    pivot: {x: 0.25, y: -0.09345794}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 440
+      width: 144
+      height: 428
+    spriteID: 15f868e809e6fba4a8b91b180fa14ffb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 440}
+  - name: Receptionist_Frame_14
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1324
+      width: 156
+      height: 432
+    spriteID: 7cc963f71a525b04b95ee8251723a2c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1324}
+  - name: Receptionist_Frame_15
+    originalName: 
+    pivot: {x: 0.3, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 448
+      width: 160
+      height: 436
+    spriteID: 3c0c5c0ba46eb3345b09f4877576546c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 448}
+  - name: Receptionist_Frame_0
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 4
+      width: 156
+      height: 432
+    spriteID: aec17cff160a0464aa47589f4794e610
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 4}
+  - name: Receptionist_Frame_1
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.09345794}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 876
+      width: 144
+      height: 428
+    spriteID: e5f4c1f0cdee76c4c86de8abf0c7bcd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 876}
+  - name: Receptionist_Frame_3
+    originalName: 
+    pivot: {x: 0.425, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 892
+      width: 160
+      height: 436
+    spriteID: c9540b2a44477254691a79dd40bb15b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 892}
+  - name: Receptionist_Frame_2
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 444
+      width: 156
+      height: 432
+    spriteID: 5718fceaa393c7a41b24d07d58330515
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 444}
+  - name: Receptionist_Frame_4
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 884
+      width: 156
+      height: 432
+    spriteID: 7b3c276b59e0a7040ac9037d8db7ae2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 884}
+  - name: Receptionist_Frame_5
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.09345794}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 1312
+      width: 144
+      height: 428
+    spriteID: e218ebbb349175f47a93520e40fc97d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 1312}
+  - name: Receptionist_Frame_6
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 1324
+      width: 156
+      height: 432
+    spriteID: c5abcaf870974334298decb81e48f7c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 1324}
+  - name: Receptionist_Frame_7
+    originalName: 
+    pivot: {x: 0.425, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1336
+      width: 160
+      height: 436
+    spriteID: c4853c1046016b1439bb933ee3b093ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1336}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,6 +460,78 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: Receptionist_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 40
+        width: 156
+        height: 432
+      spriteId: fd1a34f0cde433e459678904ac5b8702
+    - name: Receptionist_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 220
+        y: 40
+        width: 144
+        height: 428
+      spriteId: 8345ec5aa9a95ca4f956dbd20d93831a
+    - name: Receptionist_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 40
+        width: 160
+        height: 436
+      spriteId: b743afc542bebbb4d868e987150d17b6
+    - name: Receptionist_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 40
+        width: 156
+        height: 432
+      spriteId: a4d3f6930f3354f43abac4b206acfe12
+    - name: Receptionist_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 40
+        width: 156
+        height: 432
+      spriteId: c805b52cd7e411d498dc071a9f42425a
+    - name: Receptionist_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 220
+        y: 40
+        width: 144
+        height: 428
+      spriteId: 15f868e809e6fba4a8b91b180fa14ffb
+    - name: Receptionist_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 40
+        width: 156
+        height: 432
+      spriteId: 7cc963f71a525b04b95ee8251723a2c6
+    - name: Receptionist_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 40
+        width: 160
+        height: 436
+      spriteId: 3c0c5c0ba46eb3345b09f4877576546c
     - name: Receptionist_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -188,16 +540,70 @@ ScriptedImporter:
         y: 40
         width: 156
         height: 432
-      spriteId: edd972c4a10297a47b4e87ee4e3c1d4b
+      spriteId: aec17cff160a0464aa47589f4794e610
     - name: Receptionist_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 216
+        x: 192
+        y: 40
+        width: 144
+        height: 428
+      spriteId: e5f4c1f0cdee76c4c86de8abf0c7bcd2
+    - name: Receptionist_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 40
+        width: 160
+        height: 436
+      spriteId: c9540b2a44477254691a79dd40bb15b0
+    - name: Receptionist_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
         y: 40
         width: 156
         height: 432
-      spriteId: 6bc1b91edebbfa0448f607c570292798
+      spriteId: 5718fceaa393c7a41b24d07d58330515
+    - name: Receptionist_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 40
+        width: 156
+        height: 432
+      spriteId: 7b3c276b59e0a7040ac9037d8db7ae2d
+    - name: Receptionist_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 192
+        y: 40
+        width: 144
+        height: 428
+      spriteId: e218ebbb349175f47a93520e40fc97d1
+    - name: Receptionist_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 40
+        width: 156
+        height: 432
+      spriteId: c5abcaf870974334298decb81e48f7c8
+    - name: Receptionist_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 40
+        width: 160
+        height: 436
+      spriteId: c4853c1046016b1439bb933ee3b093ed
     linkedCells: []
     parentIndex: -1
   platformSettings:

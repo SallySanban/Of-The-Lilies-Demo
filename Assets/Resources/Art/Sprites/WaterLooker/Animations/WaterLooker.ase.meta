@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748035464308236
+  platformSettingsDirtyTick: 638760252317138830
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: WaterLooker_Frame_0
+  - name: WaterLooker_Frame_8
     originalName: 
-    pivot: {x: 0.43589744, y: -0.12745099}
+    pivot: {x: 0.2820513, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 4
+      width: 156
+      height: 408
+    spriteID: 271e10e534d170249bef42e3a9c214f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 4}
+  - name: WaterLooker_Frame_9
+    originalName: 
+    pivot: {x: 0.2702703, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 4
+      width: 148
+      height: 404
+    spriteID: a2d77a30de4219945aba0eea19cb949a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 4}
+  - name: WaterLooker_Frame_11
+    originalName: 
+    pivot: {x: 0.3, y: -0.1262136}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 156
-      height: 408
-    spriteID: e885612181340664f9bed56680e9da1e
+      width: 160
+      height: 412
+    spriteID: e13bfbce8a7cb39438d28ddf53329c2c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: WaterLooker_Frame_1
+  - name: WaterLooker_Frame_10
     originalName: 
-    pivot: {x: 0.25641027, y: -0.12745099}
+    pivot: {x: 0.2820513, y: -0.12745099}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 4
+      x: 172
+      y: 420
       width: 156
       height: 408
-    spriteID: 4108481d22c82ba409fc237845c8e6ec
+    spriteID: 96652f1435c719448bf28927b83cc779
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 4}
+    uvTransform: {x: 172, y: 420}
+  - name: WaterLooker_Frame_12
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 836
+      width: 156
+      height: 408
+    spriteID: 62b64c5c483741048aab2f1f9c3b9d38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 836}
+  - name: WaterLooker_Frame_13
+    originalName: 
+    pivot: {x: 0.2702703, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 416
+      width: 148
+      height: 404
+    spriteID: 70f441ab296f5af45ba28ccd1b0d842f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 416}
+  - name: WaterLooker_Frame_14
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1252
+      width: 156
+      height: 408
+    spriteID: 8794c243abbc0644aa2e9d791f4619be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1252}
+  - name: WaterLooker_Frame_15
+    originalName: 
+    pivot: {x: 0.3, y: -0.1262136}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 424
+      width: 160
+      height: 412
+    spriteID: f572fd570c4347a4189575db0a5f6849
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 424}
+  - name: WaterLooker_Frame_0
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 4
+      width: 156
+      height: 408
+    spriteID: bed7720fa1a1bea4d87c3dee2e05a1a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 4}
+  - name: WaterLooker_Frame_1
+    originalName: 
+    pivot: {x: 0.43243244, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 828
+      width: 148
+      height: 404
+    spriteID: e4cee1d7c4af004469c621b97f603a9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 828}
+  - name: WaterLooker_Frame_3
+    originalName: 
+    pivot: {x: 0.425, y: -0.1262136}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 844
+      width: 160
+      height: 412
+    spriteID: d74ea4f738cf1074fbcb972b4cb5f2e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 844}
+  - name: WaterLooker_Frame_2
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 420
+      width: 156
+      height: 408
+    spriteID: 3b9879d1e50dbad47866cb493ca27454
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 420}
+  - name: WaterLooker_Frame_4
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 836
+      width: 156
+      height: 408
+    spriteID: 861dd1c6f6c749d4c8fcf093262dfbd4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 836}
+  - name: WaterLooker_Frame_5
+    originalName: 
+    pivot: {x: 0.43243244, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 1240
+      width: 148
+      height: 404
+    spriteID: 4b8c0126994d23445a25bdfd82f8f92e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 1240}
+  - name: WaterLooker_Frame_6
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 1252
+      width: 156
+      height: 408
+    spriteID: 5354a443b00a9054986e48b7bcc24cfd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 1252}
+  - name: WaterLooker_Frame_7
+    originalName: 
+    pivot: {x: 0.425, y: -0.1262136}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1264
+      width: 160
+      height: 412
+    spriteID: e1be883397c84f04abdf1e3e953fa646
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1264}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,6 +460,78 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: WaterLooker_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 271e10e534d170249bef42e3a9c214f3
+    - name: WaterLooker_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 52
+        width: 148
+        height: 404
+      spriteId: a2d77a30de4219945aba0eea19cb949a
+    - name: WaterLooker_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 52
+        width: 160
+        height: 412
+      spriteId: e13bfbce8a7cb39438d28ddf53329c2c
+    - name: WaterLooker_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 96652f1435c719448bf28927b83cc779
+    - name: WaterLooker_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 62b64c5c483741048aab2f1f9c3b9d38
+    - name: WaterLooker_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 216
+        y: 52
+        width: 148
+        height: 404
+      spriteId: 70f441ab296f5af45ba28ccd1b0d842f
+    - name: WaterLooker_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 8794c243abbc0644aa2e9d791f4619be
+    - name: WaterLooker_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 52
+        width: 160
+        height: 412
+      spriteId: f572fd570c4347a4189575db0a5f6849
     - name: WaterLooker_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -188,16 +540,70 @@ ScriptedImporter:
         y: 52
         width: 156
         height: 408
-      spriteId: e885612181340664f9bed56680e9da1e
+      spriteId: bed7720fa1a1bea4d87c3dee2e05a1a8
     - name: WaterLooker_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 216
+        x: 192
+        y: 52
+        width: 148
+        height: 404
+      spriteId: e4cee1d7c4af004469c621b97f603a9a
+    - name: WaterLooker_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 160
+        height: 412
+      spriteId: d74ea4f738cf1074fbcb972b4cb5f2e4
+    - name: WaterLooker_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
         y: 52
         width: 156
         height: 408
-      spriteId: 4108481d22c82ba409fc237845c8e6ec
+      spriteId: 3b9879d1e50dbad47866cb493ca27454
+    - name: WaterLooker_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 861dd1c6f6c749d4c8fcf093262dfbd4
+    - name: WaterLooker_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 192
+        y: 52
+        width: 148
+        height: 404
+      spriteId: 4b8c0126994d23445a25bdfd82f8f92e
+    - name: WaterLooker_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 156
+        height: 408
+      spriteId: 5354a443b00a9054986e48b7bcc24cfd
+    - name: WaterLooker_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 52
+        width: 160
+        height: 412
+      spriteId: e1be883397c84f04abdf1e3e953fa646
     linkedCells: []
     parentIndex: -1
   platformSettings:

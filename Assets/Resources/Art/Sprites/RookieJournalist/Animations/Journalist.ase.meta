@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748069439642376
+  platformSettingsDirtyTick: 638760208852674163
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Journalist_Frame_0
+  - name: Journalist_Frame_8
     originalName: 
-    pivot: {x: 0.43589744, y: -0.0925926}
+    pivot: {x: 0.2820513, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 4
+      width: 156
+      height: 432
+    spriteID: b1801767bc33bcb449666b6de7f749e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 4}
+  - name: Journalist_Frame_9
+    originalName: 
+    pivot: {x: 0.25, y: -0.09345794}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 4
+      width: 144
+      height: 428
+    spriteID: 4daa6a8a7e0c97d4dad621cba4ac1184
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 4}
+  - name: Journalist_Frame_11
+    originalName: 
+    pivot: {x: 0.3, y: -0.09174311}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 156
-      height: 432
-    spriteID: 173e473099f919d4592ffe6d52eaba62
+      width: 160
+      height: 436
+    spriteID: bf13050790296944e825f4e95c766b5b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Journalist_Frame_1
+  - name: Journalist_Frame_10
     originalName: 
-    pivot: {x: 0.25641027, y: -0.0925926}
+    pivot: {x: 0.2820513, y: -0.0925926}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 4
+      x: 172
+      y: 444
       width: 156
       height: 432
-    spriteID: e9052f59126477d48bb071d6ca48484e
+    spriteID: 0579132febc545b46b3852544b5d3daa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 4}
+    uvTransform: {x: 172, y: 444}
+  - name: Journalist_Frame_12
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 884
+      width: 156
+      height: 432
+    spriteID: 6c32e24ed59c6914e9bc2cd5414a7ff6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 884}
+  - name: Journalist_Frame_13
+    originalName: 
+    pivot: {x: 0.25, y: -0.09345794}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 440
+      width: 144
+      height: 428
+    spriteID: ab2403369081bd443b96562886e81ec6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 440}
+  - name: Journalist_Frame_14
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 1324
+      width: 156
+      height: 432
+    spriteID: bd497524db5af9249a2dc67d978e047c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 1324}
+  - name: Journalist_Frame_15
+    originalName: 
+    pivot: {x: 0.3, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 448
+      width: 160
+      height: 436
+    spriteID: f93a7e6c5855c9542b848c6547e6066d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 448}
+  - name: Journalist_Frame_0
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 4
+      width: 156
+      height: 432
+    spriteID: e78be4659ffbb7247982a343e152ee68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 4}
+  - name: Journalist_Frame_1
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.09345794}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 876
+      width: 144
+      height: 428
+    spriteID: 2305ec6394ed4964b919725dbf04ead4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 876}
+  - name: Journalist_Frame_3
+    originalName: 
+    pivot: {x: 0.425, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 892
+      width: 160
+      height: 436
+    spriteID: 817e99b1429736f4592664c46780076d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 892}
+  - name: Journalist_Frame_2
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 444
+      width: 156
+      height: 432
+    spriteID: b6ce56c2ae946a747965d34b524433e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 444}
+  - name: Journalist_Frame_4
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 884
+      width: 156
+      height: 432
+    spriteID: e32e06f6b37d9f7479e8fa2b626d112e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 884}
+  - name: Journalist_Frame_5
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.09345794}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 1312
+      width: 144
+      height: 428
+    spriteID: 6f6a1b87b5814ea41b93ef33d3900ca1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 1312}
+  - name: Journalist_Frame_6
+    originalName: 
+    pivot: {x: 0.43589744, y: -0.0925926}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 1324
+      width: 156
+      height: 432
+    spriteID: dbfa8beb645af7149ab2b5772a393c46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 1324}
+  - name: Journalist_Frame_7
+    originalName: 
+    pivot: {x: 0.425, y: -0.09174311}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1336
+      width: 160
+      height: 436
+    spriteID: d7f5582252ebf6e498cbe54996778e7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1336}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,6 +460,78 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: Journalist_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 40
+        width: 156
+        height: 432
+      spriteId: b1801767bc33bcb449666b6de7f749e8
+    - name: Journalist_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 220
+        y: 40
+        width: 144
+        height: 428
+      spriteId: 4daa6a8a7e0c97d4dad621cba4ac1184
+    - name: Journalist_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 40
+        width: 160
+        height: 436
+      spriteId: bf13050790296944e825f4e95c766b5b
+    - name: Journalist_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 40
+        width: 156
+        height: 432
+      spriteId: 0579132febc545b46b3852544b5d3daa
+    - name: Journalist_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 40
+        width: 156
+        height: 432
+      spriteId: 6c32e24ed59c6914e9bc2cd5414a7ff6
+    - name: Journalist_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 220
+        y: 40
+        width: 144
+        height: 428
+      spriteId: ab2403369081bd443b96562886e81ec6
+    - name: Journalist_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 212
+        y: 40
+        width: 156
+        height: 432
+      spriteId: bd497524db5af9249a2dc67d978e047c
+    - name: Journalist_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 208
+        y: 40
+        width: 160
+        height: 436
+      spriteId: f93a7e6c5855c9542b848c6547e6066d
     - name: Journalist_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -188,16 +540,70 @@ ScriptedImporter:
         y: 40
         width: 156
         height: 432
-      spriteId: 173e473099f919d4592ffe6d52eaba62
+      spriteId: e78be4659ffbb7247982a343e152ee68
     - name: Journalist_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 216
+        x: 192
+        y: 40
+        width: 144
+        height: 428
+      spriteId: 2305ec6394ed4964b919725dbf04ead4
+    - name: Journalist_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 40
+        width: 160
+        height: 436
+      spriteId: 817e99b1429736f4592664c46780076d
+    - name: Journalist_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
         y: 40
         width: 156
         height: 432
-      spriteId: e9052f59126477d48bb071d6ca48484e
+      spriteId: b6ce56c2ae946a747965d34b524433e3
+    - name: Journalist_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 40
+        width: 156
+        height: 432
+      spriteId: e32e06f6b37d9f7479e8fa2b626d112e
+    - name: Journalist_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 192
+        y: 40
+        width: 144
+        height: 428
+      spriteId: 6f6a1b87b5814ea41b93ef33d3900ca1
+    - name: Journalist_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 40
+        width: 156
+        height: 432
+      spriteId: dbfa8beb645af7149ab2b5772a393c46
+    - name: Journalist_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 40
+        width: 160
+        height: 436
+      spriteId: d7f5582252ebf6e498cbe54996778e7c
     linkedCells: []
     parentIndex: -1
   platformSettings:

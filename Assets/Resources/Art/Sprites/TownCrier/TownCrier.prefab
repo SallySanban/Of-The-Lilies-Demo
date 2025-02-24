@@ -33,10 +33,10 @@ RectTransform:
   m_Father: {fileID: 2331626975176890701}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.4416124, y: 0.8147}
-  m_AnchorMax: {x: 0.5506124, y: 0.9695862}
-  m_AnchoredPosition: {x: 1, y: -0.5}
-  m_SizeDelta: {x: -80.11841, y: -86.93764}
+  m_AnchorMin: {x: 0.44719556, y: 0.81318223}
+  m_AnchorMax: {x: 0.55619556, y: 0.9695862}
+  m_AnchoredPosition: {x: 0.033065796, y: -0.09770203}
+  m_SizeDelta: {x: -80.34593, y: -87.74232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &7663144919900817414
 SpriteRenderer:
