@@ -9,11 +9,6 @@ public class SpeechBubble : DialogueContainer
 {
     public Vector3 playerOffset = new Vector2(0f, 4f);
 
-    private const int dialogueSpacing = 20;
-    private const int dialoguePadding = 40;
-    private const int choiceSpacing = -30;
-    private const int choicePadding = 0;
-
     private const string SPEECHBUBBLE_OBJECT = "SpeechBubble";
 
     public SpeechBubble(GameObject speakerSprite, string speakerName = "", string[] listOfChoices = null)
@@ -25,17 +20,22 @@ public class SpeechBubble : DialogueContainer
         textboxImage = root.transform.Find(TEXTBOX_OBJECTNAME).gameObject;
         name = textboxImage.transform.Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         dialogue = textboxImage.transform.Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
-        choices = textboxImage.transform.Find(CHOICES_OBJECTNAME).transform;
-        choiceTemplate = choices.Find(CHOICETEMPLATE_OBJECTNAME).gameObject;
 
+        if(speakerSprite.tag == "Player")
+        {
+            choices = textboxImage.transform.Find(CHOICES_OBJECTNAME)?.transform;
+
+            if(choices != null)
+            {
+                choiceText = choices.Find(CHOICETEXT_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+                choices.gameObject.SetActive(false);
+            }
+        }
+        
         textboxType = ContainerType.SpeechBubble;
         name.text = speakerName.ToUpper();
 
         dialogue.gameObject.SetActive(true);
-        choices.gameObject.SetActive(false);
-
-        textboxImage.GetComponent<VerticalLayoutGroup>().spacing = dialogueSpacing;
-        textboxImage.GetComponent<VerticalLayoutGroup>().padding.bottom = dialoguePadding;
 
         if (listOfChoices != null)
         {
@@ -49,17 +49,11 @@ public class SpeechBubble : DialogueContainer
     public override void ShowChoices(string[] listOfChoices)
     {
         base.ShowChoices(listOfChoices);
-
-        textboxImage.GetComponent<VerticalLayoutGroup>().spacing = choiceSpacing;
-        textboxImage.GetComponent<VerticalLayoutGroup>().padding.bottom = choicePadding;
     }
 
     public override void HideChoices()
     {
         base.HideChoices();
-
-        textboxImage.GetComponent<VerticalLayoutGroup>().spacing = dialogueSpacing;
-        textboxImage.GetComponent<VerticalLayoutGroup>().padding.bottom = dialoguePadding;
     }
 
     public override IEnumerator Hiding()

@@ -7,9 +7,6 @@ using Dialogue;
 
 public class ChoiceContainer
 {
-    private const string ARROW_OBJECTNAME = "Arrow";
-    private const string CHOICETEXT_OBJECTNAME = "Choice Text";
-
     private DialogueContainer dialogueContainer;
 
     private List<ChoiceButton> buttons = new List<ChoiceButton>();
@@ -19,7 +16,7 @@ public class ChoiceContainer
 
     private int currentSelectedIndex = 0;
 
-    public ChoiceContainer(DialogueContainer dialogueContainer, string[] listOfChoices, Transform choices, GameObject choiceTemplate)
+    public ChoiceContainer(DialogueContainer dialogueContainer, string[] listOfChoices, TextMeshProUGUI choiceText)
     {
         this.dialogueContainer = dialogueContainer;
         lastChoicePicked = new ChoicePanelDecision(listOfChoices);
@@ -34,44 +31,19 @@ public class ChoiceContainer
             }
             else
             {
-                GameObject newChoice = Object.Instantiate(choiceTemplate, choices);
-                newChoice.SetActive(true);
-
-                GameObject arrow = newChoice.transform.Find(ARROW_OBJECTNAME).gameObject;
-                TextMeshProUGUI choiceText = newChoice.transform.Find(CHOICETEXT_OBJECTNAME).GetComponent<TextMeshProUGUI>();
-
                 choiceButton = new ChoiceButton {
-                    root = newChoice,
-                    choiceText = choiceText,
-                    arrow = arrow
+                    choiceText = choiceText
                 };
 
                 buttons.Add(choiceButton);
             }
 
             choiceButton.choiceText.text = listOfChoices[i];
-            choiceButton.arrow.SetActive(i == 0);
-
-            if (i == 0)
-            {
-                choiceButton.choiceText.color = new Color(0.95f, 0.7f, 0.05f);
-            }
-            else
-            {
-                choiceButton.choiceText.color = Color.white;
-            }
         }
 
-        GridLayoutGroup gridLayout = choices.GetComponent<GridLayoutGroup>();
-        if (gridLayout != null)
+        if (buttons.Count > 0)
         {
-            int cellsPerRow = Mathf.Max(1, Mathf.FloorToInt(((RectTransform)choices).rect.width / gridLayout.cellSize.x));
-            int numberOfRows = Mathf.CeilToInt((float)listOfChoices.Length / cellsPerRow);
-
-            float totalHeight = (numberOfRows * gridLayout.cellSize.y) +
-                               (numberOfRows - 1) * gridLayout.spacing.y;
-
-            choices.GetComponent<LayoutElement>().preferredHeight = totalHeight;
+            buttons[0].choiceText.text = listOfChoices[0];
         }
 
         isWaitingForUserChoice = true;
@@ -81,16 +53,18 @@ public class ChoiceContainer
     public void MoveSelection(int direction)
     {
         if (!isWaitingForUserChoice) return;
-
-        buttons[currentSelectedIndex].arrow.SetActive(false);
-        buttons[currentSelectedIndex].choiceText.color = Color.white;
         
         currentSelectedIndex += direction;
         if (currentSelectedIndex < 0) currentSelectedIndex = buttons.Count - 1;
         if (currentSelectedIndex >= buttons.Count) currentSelectedIndex = 0;
 
-        buttons[currentSelectedIndex].arrow.SetActive(true);
-        buttons[currentSelectedIndex].choiceText.color = new Color(0.95f, 0.7f, 0.05f);
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            if (i == currentSelectedIndex)
+            {
+                buttons[i].choiceText.text = lastChoicePicked.choices[i];
+            }
+        }
     }
 
     public void AcceptChoice()
@@ -98,17 +72,11 @@ public class ChoiceContainer
         if (currentSelectedIndex < 0 || currentSelectedIndex > buttons.Count - 1) return;
 
         isWaitingForUserChoice = false;
-        buttons[currentSelectedIndex].arrow.SetActive(false);
 
         lastChoicePicked.answerIndex = currentSelectedIndex;
         isWaitingForUserChoice = false;
 
         dialogueContainer.HideChoices();
-
-        foreach (ChoiceButton choice in buttons)
-        {
-            Object.DestroyImmediate(choice.root);
-        }
 
         buttons.Clear();
     }
@@ -128,8 +96,6 @@ public class ChoiceContainer
 
     private struct ChoiceButton
     {
-        public GameObject root;
-        public GameObject arrow;
         public TextMeshProUGUI choiceText;
     }
 }

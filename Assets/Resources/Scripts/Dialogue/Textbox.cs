@@ -32,7 +32,7 @@ public class Textbox : DialogueContainer
         name = textboxImage.transform.Find(NAMEPLATE_OBJECTNAME).Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         dialogue = textboxImage.transform.Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         choices = textboxImage.transform.Find(CHOICES_OBJECTNAME).transform;
-        choiceTemplate = choices.Find(CHOICETEMPLATE_OBJECTNAME).gameObject;
+        choiceText = choices.Find(CHOICETEXT_OBJECTNAME).GetComponent<TextMeshProUGUI>();
 
         this.textboxType = textboxType;
         name.text = speakerName.ToUpper();
@@ -57,16 +57,10 @@ public class Textbox : DialogueContainer
     public override void ShowChoices(string[] listOfChoices)
     {
         base.ShowChoices(listOfChoices);
-
-        textboxImage.GetComponent<VerticalLayoutGroup>().padding.top = choicePadding;
-        textboxImage.GetComponent<VerticalLayoutGroup>().padding.bottom = choicePadding;
     }
 
     public override void HideChoices()
     {
         base.HideChoices();
-
-        textboxImage.GetComponent<VerticalLayoutGroup>().padding.top = dialoguePadding;
-        textboxImage.GetComponent<VerticalLayoutGroup>().padding.bottom = dialoguePadding;
     }
 }
