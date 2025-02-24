@@ -49,6 +49,7 @@ public class DialogueContainer
     {
         dialogue.gameObject.SetActive(false);
         choices.gameObject.SetActive(true);
+        dialogue.text = "";
 
         currentChoiceContainer = new ChoiceContainer(this, listOfChoices, choiceText, leftArrow, rightArrow);
     }

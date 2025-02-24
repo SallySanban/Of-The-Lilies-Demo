@@ -1841,17 +1841,17 @@ MonoBehaviour:
       position: {x: 185.73, y: -489.32}
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: Sit
     - npcName: StudentSit4
       position: {x: 1050.73, y: -488.32}
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: Sit
     - npcName: Barkeep
       position: {x: -298.27, y: -178.32}
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: IdleRight
     - npcName: Myo
       position: {x: -864.27, y: -163.32}
       appear: 1
@@ -1861,12 +1861,12 @@ MonoBehaviour:
       position: {x: -1415.27, y: -474.32}
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: Sit
     - npcName: AdmirerSit2
       position: {x: -534.27, y: -474.32}
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: Sit
     - npcName: SocialClimberSit1
       position: {x: 1161.73, y: -182.32}
       appear: 1
@@ -1928,33 +1928,13 @@ MonoBehaviour:
     playerDirection: 1
     playerAnimationState: IdleLeft
     npcsInScene:
-    - npcName: StudentSit3
-      position: {x: 185.73, y: -489.32}
-      appear: 1
-      flipped: 0
-      animationState: Idle
-    - npcName: StudentSit4
-      position: {x: 1050.73, y: -488.32}
-      appear: 1
-      flipped: 0
-      animationState: Idle
     - npcName: Barkeep
       position: {x: -298.27, y: -178.32}
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: IdleRight
     - npcName: Myo
       position: {x: -864.27, y: -163.32}
-      appear: 1
-      flipped: 0
-      animationState: Idle
-    - npcName: AdmirerSit1
-      position: {x: -1415.27, y: -474.32}
-      appear: 1
-      flipped: 0
-      animationState: Idle
-    - npcName: AdmirerSit2
-      position: {x: -534.27, y: -474.32}
       appear: 1
       flipped: 0
       animationState: Idle

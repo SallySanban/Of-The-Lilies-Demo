@@ -926,7 +926,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ksfh aslkjhf lakshf lkasjhf lskjhdf lshfl
+  m_text: AKsdhlahdlk adhka hdljas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ac8b32e34b4cc845a1e5322d6e56584, type: 2}
   m_sharedMaterial: {fileID: -315567941548918596, guid: 1ac8b32e34b4cc845a1e5322d6e56584, type: 2}
@@ -956,9 +956,9 @@ MonoBehaviour:
   m_fontSize: 35
   m_fontSizeBase: 35
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 35
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -989,7 +989,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -244.88669, y: -10.965038, z: -244.88657, w: -10.965027}
+  m_margin: {x: -222.836, y: -10.965038, z: -220.73587, w: -10.965027}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
