@@ -18,6 +18,8 @@ public class DialogueContainer
     public TextMeshProUGUI dialogue;
     public Transform choices;
     public TextMeshProUGUI choiceText;
+    public GameObject leftArrow;
+    public GameObject rightArrow;
 
     protected string TEXTBOX_OBJECTNAME = "Textbox Image";
     protected string NAMEPLATE_OBJECTNAME = "Name Plate";
@@ -25,6 +27,8 @@ public class DialogueContainer
     protected string DIALOGUE_OBJECTNAME = "Dialogue Text";
     protected string CHOICES_OBJECTNAME = "Choice";
     protected string CHOICETEXT_OBJECTNAME = "Choice Text";
+    protected string LEFTARROW_OBJECTNAME = "Right Arrow";
+    protected string RIGHTARROW_OBJECTNAME = "Left Arrow";
 
     protected const float FADE_SPEED = 3f;
 
@@ -46,7 +50,7 @@ public class DialogueContainer
         dialogue.gameObject.SetActive(false);
         choices.gameObject.SetActive(true);
 
-        currentChoiceContainer = new ChoiceContainer(this, listOfChoices, choiceText);
+        currentChoiceContainer = new ChoiceContainer(this, listOfChoices, choiceText, leftArrow, rightArrow);
     }
 
     public virtual void HideChoices()

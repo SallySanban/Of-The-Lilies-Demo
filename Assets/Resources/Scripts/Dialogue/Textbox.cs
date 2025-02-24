@@ -33,6 +33,8 @@ public class Textbox : DialogueContainer
         dialogue = textboxImage.transform.Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         choices = textboxImage.transform.Find(CHOICES_OBJECTNAME).transform;
         choiceText = choices.Find(CHOICETEXT_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+        leftArrow = choices.Find(LEFTARROW_OBJECTNAME).gameObject;
+        rightArrow = choices.Find(RIGHTARROW_OBJECTNAME).gameObject;
 
         this.textboxType = textboxType;
         name.text = speakerName.ToUpper();

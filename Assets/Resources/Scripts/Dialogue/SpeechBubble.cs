@@ -28,6 +28,9 @@ public class SpeechBubble : DialogueContainer
             if(choices != null)
             {
                 choiceText = choices.Find(CHOICETEXT_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+                leftArrow = choices.Find(LEFTARROW_OBJECTNAME).gameObject;
+                rightArrow = choices.Find(RIGHTARROW_OBJECTNAME).gameObject;
+
                 choices.gameObject.SetActive(false);
             }
         }

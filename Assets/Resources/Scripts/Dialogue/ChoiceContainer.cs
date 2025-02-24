@@ -16,10 +16,27 @@ public class ChoiceContainer
 
     private int currentSelectedIndex = 0;
 
-    public ChoiceContainer(DialogueContainer dialogueContainer, string[] listOfChoices, TextMeshProUGUI choiceText)
+    public ChoiceContainer(DialogueContainer dialogueContainer, string[] listOfChoices, TextMeshProUGUI choiceText, GameObject leftArrow, GameObject rightArrow)
     {
         this.dialogueContainer = dialogueContainer;
         lastChoicePicked = new ChoicePanelDecision(listOfChoices);
+
+        if(listOfChoices.Length > 1)
+        {
+            leftArrow.GetComponentInChildren<Image>().color = Color.white;
+            leftArrow.GetComponentInChildren<Animator>().enabled = true;
+
+            rightArrow.GetComponentInChildren<Image>().color = Color.white;
+            rightArrow.GetComponentInChildren<Animator>().enabled = true;
+        }
+        else
+        {
+            leftArrow.GetComponentInChildren<Image>().color = Color.grey;
+            leftArrow.GetComponentInChildren<Animator>().enabled = false;
+
+            rightArrow.GetComponentInChildren<Image>().color = Color.grey;
+            rightArrow.GetComponentInChildren<Animator>().enabled = false;
+        }
 
         for (int i = 0; i < listOfChoices.Length; i++)
         {
