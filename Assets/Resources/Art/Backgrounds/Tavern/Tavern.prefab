@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 5190402250756826701}
   m_Layer: 11
   m_Name: Background
-  m_TagString: Wood2
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 7956391630375544010}
   m_Layer: 11
   m_Name: Background (1)
-  m_TagString: Wood
+  m_TagString: CarpetedStone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
