@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638757762305711246
+  platformSettingsDirtyTick: 638761152294730797
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -293,7 +293,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 1252}
   - name: Manju_Frame_8
     originalName: 
-    pivot: {x: 1.1351352, y: -0.8217822}
+    pivot: {x: 1.0945945, y: -0.8217822}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -313,7 +313,7 @@ ScriptedImporter:
     uvTransform: {x: 324, y: 4}
   - name: Manju_Frame_9
     originalName: 
-    pivot: {x: 1.2058824, y: -0.83000004}
+    pivot: {x: 1.1617646, y: -0.83000004}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -333,7 +333,7 @@ ScriptedImporter:
     uvTransform: {x: 480, y: 820}
   - name: Manju_Frame_11
     originalName: 
-    pivot: {x: 1.1025642, y: -0.8137255}
+    pivot: {x: 1.0641025, y: -0.8137255}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -353,7 +353,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Manju_Frame_10
     originalName: 
-    pivot: {x: 1.1351352, y: -0.8217822}
+    pivot: {x: 1.0945945, y: -0.8217822}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -373,7 +373,7 @@ ScriptedImporter:
     uvTransform: {x: 324, y: 416}
   - name: Manju_Frame_12
     originalName: 
-    pivot: {x: 1.1351352, y: -0.8217822}
+    pivot: {x: 1.0945945, y: -0.8217822}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -393,7 +393,7 @@ ScriptedImporter:
     uvTransform: {x: 324, y: 828}
   - name: Manju_Frame_13
     originalName: 
-    pivot: {x: 1.2058824, y: -0.83000004}
+    pivot: {x: 1.1617646, y: -0.83000004}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -413,7 +413,7 @@ ScriptedImporter:
     uvTransform: {x: 480, y: 1228}
   - name: Manju_Frame_14
     originalName: 
-    pivot: {x: 1.1351352, y: -0.8217822}
+    pivot: {x: 1.0945945, y: -0.8217822}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -433,7 +433,7 @@ ScriptedImporter:
     uvTransform: {x: 324, y: 1240}
   - name: Manju_Frame_15
     originalName: 
-    pivot: {x: 1.1025642, y: -0.8137255}
+    pivot: {x: 1.0641025, y: -0.8137255}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -536,7 +536,7 @@ ScriptedImporter:
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
-        x: 792
+        x: 798
         y: 332
         width: 148
         height: 404
@@ -545,7 +545,7 @@ ScriptedImporter:
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
-        x: 796
+        x: 802
         y: 332
         width: 136
         height: 400
@@ -554,7 +554,7 @@ ScriptedImporter:
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
-        x: 788
+        x: 794
         y: 332
         width: 156
         height: 408
@@ -563,7 +563,7 @@ ScriptedImporter:
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
-        x: 792
+        x: 798
         y: 332
         width: 148
         height: 404
@@ -572,7 +572,7 @@ ScriptedImporter:
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
-        x: 792
+        x: 798
         y: 332
         width: 148
         height: 404
@@ -581,7 +581,7 @@ ScriptedImporter:
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
-        x: 796
+        x: 802
         y: 332
         width: 136
         height: 400
@@ -590,7 +590,7 @@ ScriptedImporter:
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
-        x: 792
+        x: 798
         y: 332
         width: 148
         height: 404
@@ -599,7 +599,7 @@ ScriptedImporter:
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
-        x: 788
+        x: 794
         y: 332
         width: 156
         height: 408

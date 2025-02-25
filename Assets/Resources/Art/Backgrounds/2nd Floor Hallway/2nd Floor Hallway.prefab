@@ -30,7 +30,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8863638300649694188}
   m_RootOrder: -1
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 633324624992917534}
   - component: {fileID: 5004464325695224058}
   - component: {fileID: 3635259286998680733}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Ahlai Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 8347430201466794938}
   - component: {fileID: 2322004831187788203}
   - component: {fileID: 3827905163283872923}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5455450160301593252}
   - component: {fileID: 3334613040545614796}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -539,7 +539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4909616258576203259}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 2510314169982929682}
   - component: {fileID: 8084980432702053033}
   - component: {fileID: 8435413437116747439}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Seiji Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 8863638300649694188}
   - component: {fileID: 3194707147956615150}
   - component: {fileID: 3940010496318850803}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: 2nd Floor Hallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -778,11 +778,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2559.3079, y: -539.9583}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 2561.0657, y: -538.6752}
-      - {x: 2561.397, y: 539.9814}
-      - {x: -2557.4246, y: 540.39386}
+    - - {x: -2557.4873, y: -649.2001}
+      - {x: -118.30344, y: -647.9262}
+      - {x: 2557.4243, y: -647.917}
+      - {x: 2558.834, y: 645.06177}
+      - {x: -2559.245, y: 647.81494}
   m_UseDelaunayMesh: 0
 --- !u!1 &3323695811269964319
 GameObject:
@@ -795,7 +795,7 @@ GameObject:
   - component: {fileID: 5769773838856759842}
   - component: {fileID: 340895669987616770}
   - component: {fileID: 6972822888302793197}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -906,7 +906,7 @@ GameObject:
   - component: {fileID: 1554820395548455656}
   - component: {fileID: 8824965154065450377}
   - component: {fileID: 1132865466199751427}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 5430374309930774855}
   - component: {fileID: 8119786002307942201}
   - component: {fileID: 5455310685187533174}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 8944355014965539843}
   - component: {fileID: 5953709788679061394}
   - component: {fileID: 5900605968730799328}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1231,7 +1231,7 @@ GameObject:
   - component: {fileID: 7106097604189724407}
   - component: {fileID: 3819282334777714882}
   - component: {fileID: 1674775923486418223}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1342,7 @@ GameObject:
   - component: {fileID: 8650145161290122625}
   - component: {fileID: 7124831707576304208}
   - component: {fileID: 9198674161837278971}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1445,7 +1445,7 @@ GameObject:
   - component: {fileID: 5581571445875119858}
   - component: {fileID: 734035011648984154}
   - component: {fileID: 1302943958213608161}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Books 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1548,7 +1548,7 @@ GameObject:
   - component: {fileID: 9026021937602705743}
   - component: {fileID: 3903167934264173365}
   - component: {fileID: 2723653524786832574}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Books 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1651,7 +1651,7 @@ GameObject:
   - component: {fileID: 1702351204046443721}
   - component: {fileID: 773410299536468930}
   - component: {fileID: 2216977565420994791}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Flowers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1754,7 +1754,7 @@ GameObject:
   - component: {fileID: 7650270061626389052}
   - component: {fileID: 4560488653975354975}
   - component: {fileID: 1753869671752820729}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1865,7 +1865,7 @@ GameObject:
   - component: {fileID: 2916621018242713409}
   - component: {fileID: 2407795381047774530}
   - component: {fileID: 3587250508331088904}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Books 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1966,7 +1966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6080056437041251614}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 5133712644202269409}
   - component: {fileID: 958688726230869521}
   - component: {fileID: 7877886780928202938}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2123,7 +2123,7 @@ GameObject:
   - component: {fileID: 6514636079775386647}
   - component: {fileID: 2519102499909375394}
   - component: {fileID: 6086783201366891217}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

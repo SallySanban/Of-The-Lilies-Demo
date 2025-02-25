@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 787856841652552432}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5023816036894296760}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 145073585571694531}
   - component: {fileID: 1265418197469491306}
   - component: {fileID: 1709953033006229874}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Riverside Pathway
   m_TagString: Untagged
   m_Icon: {fileID: 0}

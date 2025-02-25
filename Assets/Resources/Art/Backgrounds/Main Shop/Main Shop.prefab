@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3010587131035954371}
   - component: {fileID: 7988323268182760116}
   - component: {fileID: 5836095799499024068}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 5995695170622493540}
   - component: {fileID: 4419366712430674560}
   - component: {fileID: 3515426673133700930}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Main Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,11 +220,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2559.2239, y: -541.23474}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 2561.5198, y: -535.30963}
-      - {x: 2565.2168, y: 543.54224}
-      - {x: -2557.933, y: 539.24274}
+    - - {x: -2559.2239, y: -647.5736}
+      - {x: -121.7426, y: -647.5857}
+      - {x: 2384.7153, y: -648.05444}
+      - {x: 2558.9573, y: -646.77313}
+      - {x: 2560.092, y: 647.99066}
+      - {x: -2559.2144, y: 645.5816}
   m_UseDelaunayMesh: 0
 --- !u!1 &951927456011602267
 GameObject:
@@ -237,7 +238,7 @@ GameObject:
   - component: {fileID: 8644382916076947317}
   - component: {fileID: 8424405652672403473}
   - component: {fileID: 5338892880472108357}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Left Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +341,7 @@ GameObject:
   - component: {fileID: 5665870306998392699}
   - component: {fileID: 4892005145109804914}
   - component: {fileID: 2649652866928557170}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Display Shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -669,7 +670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7310354794697537907}
   - component: {fileID: 7516632495040312298}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,7 +760,7 @@ GameObject:
   - component: {fileID: 6803604514840808945}
   - component: {fileID: 7811119713171508284}
   - component: {fileID: 5714253263757379898}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -868,7 +869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6446036906627251284}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -911,7 +912,7 @@ GameObject:
   - component: {fileID: 6623727414783031714}
   - component: {fileID: 6011144536141975910}
   - component: {fileID: 6185936879727218505}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Potion Cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1014,7 +1015,7 @@ GameObject:
   - component: {fileID: 638676194482736599}
   - component: {fileID: 7958443875678103634}
   - component: {fileID: 7705661979177078213}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1125,7 +1126,7 @@ GameObject:
   - component: {fileID: 2788041596222341973}
   - component: {fileID: 642964669642282382}
   - component: {fileID: 9123301906147505095}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1235,7 +1236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4736717490581549292}
   - component: {fileID: 7614453614913422433}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1326,7 +1327,7 @@ GameObject:
   - component: {fileID: 680962010078508215}
   - component: {fileID: 7152142789719046690}
   - component: {fileID: 5481699097066036105}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Cauldron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1460,7 +1461,7 @@ GameObject:
   - component: {fileID: 9116380804337585436}
   - component: {fileID: 4251988052651868}
   - component: {fileID: 2983297279582178858}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1569,7 +1570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1172587803803241835}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1607,7 +1608,7 @@ GameObject:
   - component: {fileID: 2311626322815595062}
   - component: {fileID: 4566006940264022511}
   - component: {fileID: 5751952635280412575}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Right Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1708,7 +1709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2389251102390728579}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

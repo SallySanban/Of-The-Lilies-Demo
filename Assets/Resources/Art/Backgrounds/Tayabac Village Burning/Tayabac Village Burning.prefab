@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6240500529353961502}
   - component: {fileID: 8991056307180590503}
   - component: {fileID: 1290873532162382590}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: MaleNPC1 Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4740781439173867355}
   - component: {fileID: 5434497036928475056}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 602603759225768598}
   - component: {fileID: 7475472375913136771}
   - component: {fileID: 1645326997500049153}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8458210746304956851}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 8201057757718761135}
   - component: {fileID: 4777095118373502100}
   - component: {fileID: 8006499799877705196}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Tayabac Village Burning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -619,12 +619,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -8027.4653, y: -536.4565}
-      - {x: -1998.1498, y: -538.1565}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 8018.95, y: -538.5718}
-      - {x: 8021.8936, y: 538.9559}
-      - {x: -8030.8506, y: 540.09534}
+    - - {x: -8027.4653, y: -645.4675}
+      - {x: -2005.8768, y: -648.10944}
+      - {x: -127.93616, y: -649.5561}
+      - {x: 8021.219, y: -647.5012}
+      - {x: 8019.6235, y: 647.8853}
+      - {x: -8029.3774, y: 647.6333}
   m_UseDelaunayMesh: 0
 --- !u!1 &2335994645982253142
 GameObject:
@@ -636,7 +636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5513481792461087613}
   - component: {fileID: 2809382898554432963}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 2389267940339195336}
   - component: {fileID: 152188938491902976}
   - component: {fileID: 297127056472590017}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FemNPC2 Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4720258237068041389}
   - component: {fileID: 5755091222011250504}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: SFXRiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8281087260280313885}
   - component: {fileID: 7209721942059199222}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6925278952331316113}
   - component: {fileID: 2933707857198940411}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1073,7 +1073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6348969621733166648}
   - component: {fileID: 3079387171454569462}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1161,7 +1161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 248454704037506045}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9025997323196262727}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1242,7 @@ GameObject:
   - component: {fileID: 6134767251841770125}
   - component: {fileID: 3824875862477507428}
   - component: {fileID: 2402021276932931275}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FemNPC1 Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1426,7 +1426,7 @@ GameObject:
   - component: {fileID: 5396699938364608842}
   - component: {fileID: 4550718235516216604}
   - component: {fileID: 623626867393808394}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FemNPC3 Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1528,7 +1528,7 @@ GameObject:
   - component: {fileID: 1401637760727666127}
   - component: {fileID: 1185049420055995784}
   - component: {fileID: 5804638704685015308}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: MaleNPC2 Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1712,7 +1712,7 @@ GameObject:
   - component: {fileID: 3208277907275986958}
   - component: {fileID: 8934818144456782926}
   - component: {fileID: 8881433109118035376}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Dad Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1813,7 +1813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5514608155825771072}
   - component: {fileID: 7443230063849420778}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

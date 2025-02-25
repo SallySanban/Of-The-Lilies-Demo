@@ -6,6 +6,11 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
+      name: Sit
+    second: {fileID: 7400000, guid: de608e6e79b531b4595c6a5a402b3352, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
       name: SittingIdle
     second: {fileID: 7400000, guid: 34766534dc09def40a1ce49da01593f4, type: 2}
   serializedVersion: 2
@@ -102,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638702717892981007
+  platformSettingsDirtyTick: 638761148976069628
   textureAssetName: 
   singleSpriteImportData:
   - name: 

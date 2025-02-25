@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5287380102920337815}
   - component: {fileID: 2923343671035543033}
   - component: {fileID: 2307178938272309471}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Kuchai Town 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,12 +109,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -4494.5522, y: -540.25415}
-      - {x: -4365.552, y: -540.2541}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 4495.156, y: -539.6237}
-      - {x: 4495.333, y: 539.4786}
-      - {x: -4496.128, y: 538.6772}
+    - - {x: -4489.655, y: -646.3708}
+      - {x: -4354.94, y: -645.5544}
+      - {x: -133.53403, y: -645.9805}
+      - {x: 4491.1816, y: -642.9459}
+      - {x: 4488.9004, y: 646.77466}
+      - {x: -4489.5977, y: 648.05896}
   m_UseDelaunayMesh: 0
 --- !u!1 &955164707215599182
 GameObject:
@@ -126,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 92173624036001804}
   - component: {fileID: 1651160493207052496}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: AMBMarket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2948110028858983787}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5245480157796316787}
   - component: {fileID: 5484448024490986806}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   - component: {fileID: 2144655386185874957}
   - component: {fileID: 3078311415750745215}
   - component: {fileID: 3972811004821499373}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Right Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 529327233669230585}
   - component: {fileID: 8226146645667085050}
   - component: {fileID: 5177359612166388781}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Nari
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,7 +754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 95940917481193011}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 271212969039826996}
   - component: {fileID: 473837412602432711}
   - component: {fileID: 7743978955999013187}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +903,7 @@ GameObject:
   - component: {fileID: 7221150584626252336}
   - component: {fileID: 2534805884049838238}
   - component: {fileID: 1724680291155099734}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8348299418567433229}
   - component: {fileID: 8609389851252397611}
   - component: {fileID: 1386739185155319264}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Textbox Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 6421147119627975463}
   - component: {fileID: 7679657131490640486}
   - component: {fileID: 2987695006271960940}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,10 +175,10 @@ RectTransform:
   m_Father: {fileID: 7344702199926518858}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.44251347, y: 0.8147}
-  m_AnchorMax: {x: 0.55179316, y: 0.97789794}
-  m_AnchoredPosition: {x: -0.023529053, y: -2.899231}
-  m_SizeDelta: {x: -80.342964, y: -90.73605}
+  m_AnchorMin: {x: 0.44648287, y: 0.8128186}
+  m_AnchorMax: {x: 0.5531163, y: 0.97789794}
+  m_AnchoredPosition: {x: 0.8312721, y: -2.42247}
+  m_SizeDelta: {x: -78.55932, y: -91.689575}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &7679657131490640486
 SpriteRenderer:
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 944280016941404643}
   - component: {fileID: 6555951351451579158}
   - component: {fileID: 1456436263082331426}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: SpeechBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 1439226906451878103}
   - component: {fileID: 8227598647014827222}
   - component: {fileID: 317631579017849577}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Dialogue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 8387200155230513811}
   - component: {fileID: 1963764013273559552}
   - component: {fileID: 6904699801418500303}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FemNPC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,9 +509,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5423863828383736128}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -195, y: -940.0412, z: 0}
+  m_LocalPosition: {x: -205, y: -942, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7344702199926518858}
   m_RootOrder: -1
@@ -557,7 +557,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3672910496229852717, guid: 5d28848dac0203e4caf0174d76c269dd, type: 3}
+  m_Sprite: {fileID: -7791459633258954289, guid: 5d28848dac0203e4caf0174d76c269dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 7344702199926518858}
   - component: {fileID: 3910099301135278862}
   - component: {fileID: 5917157478980012482}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FemNPC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +662,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.2740479, y: -44.718918}
+  m_Offset: {x: 0.24006271, y: -44.62812}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -673,7 +673,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 110.46423, y: 379.1086}
+  m_Size: {x: 84.700386, y: 378.92694}
   m_EdgeRadius: 0
 --- !u!114 &5917157478980012482
 MonoBehaviour:
@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 4246020390572027540}
   - component: {fileID: 8634872035256353871}
   - component: {fileID: 2617813576205631559}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 3222130477836020272}
   - component: {fileID: 8066391342676753297}
   - component: {fileID: 6249491163207362604}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}

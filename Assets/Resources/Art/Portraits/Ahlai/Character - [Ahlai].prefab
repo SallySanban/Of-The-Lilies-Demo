@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3389364940420934589}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Renderers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6551113289142994317}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Layer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 6701722170842745836}
   - component: {fileID: 2234354407703754857}
   - component: {fileID: 529504461858627448}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 1366480351491856343}
   - component: {fileID: 4721432034698958266}
   - component: {fileID: 6688806146425790195}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5809970031535456416}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Layer 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 73117205560130273}
   - component: {fileID: 7663534684168956334}
   - component: {fileID: 422860194065500917}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Character - [Ahlai]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 606450679407616731}
   - component: {fileID: 5027558256199874157}
   - component: {fileID: 8633615012360937574}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}

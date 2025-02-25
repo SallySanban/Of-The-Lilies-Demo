@@ -6,6 +6,16 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: 8b98dfe5457060a4d99f833e1e6d2696, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Panic
+    second: {fileID: 7400000, guid: e13dcac35e75dc14b86f83f163467cfb, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
       name: RFemNPCPanic
     second: {fileID: 7400000, guid: f92ad0b5ce713e44cb9e2db5f3693704, type: 2}
   - first:
@@ -107,7 +117,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638724635941542430
+  platformSettingsDirtyTick: 638761115092985305
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -133,7 +143,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: FemNPC2_Frame_8
     originalName: 
-    pivot: {x: -0.7837837, y: -1.8210527}
+    pivot: {x: -0.9189193, y: -1.8210527}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -153,7 +163,7 @@ ScriptedImporter:
     uvTransform: {x: 176, y: 396}
   - name: FemNPC2_Frame_9
     originalName: 
-    pivot: {x: -0.8857141, y: -1.8020834}
+    pivot: {x: -1.0285718, y: -1.8020834}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -173,7 +183,7 @@ ScriptedImporter:
     uvTransform: {x: 176, y: 1576}
   - name: FemNPC2_Frame_10
     originalName: 
-    pivot: {x: -0.8611109, y: -1.7835052}
+    pivot: {x: -1.0000004, y: -1.7835052}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -193,7 +203,7 @@ ScriptedImporter:
     uvTransform: {x: 176, y: 784}
   - name: FemNPC2_Frame_11
     originalName: 
-    pivot: {x: -0.75609744, y: -1.7835052}
+    pivot: {x: -0.87804914, y: -1.7835052}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -213,7 +223,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: FemNPC2_Frame_12
     originalName: 
-    pivot: {x: -0.8000004, y: -1.7653062}
+    pivot: {x: -0.9249997, y: -1.7653062}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -233,7 +243,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 796}
   - name: FemNPC2_Frame_13
     originalName: 
-    pivot: {x: -0.75609744, y: -1.7835052}
+    pivot: {x: -0.87804914, y: -1.7835052}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -253,7 +263,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 400}
   - name: FemNPC2_Frame_14
     originalName: 
-    pivot: {x: -0.8000004, y: -1.7653062}
+    pivot: {x: -0.9249997, y: -1.7653062}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -273,7 +283,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 1196}
   - name: FemNPC2_Frame_15
     originalName: 
-    pivot: {x: -0.8611109, y: -1.7835052}
+    pivot: {x: -1.0000004, y: -1.7835052}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -293,7 +303,7 @@ ScriptedImporter:
     uvTransform: {x: 176, y: 1180}
   - name: FemNPC2_Frame_16
     originalName: 
-    pivot: {x: -0.93939376, y: -1.8404255}
+    pivot: {x: -1.0909095, y: -1.8404255}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -313,7 +323,7 @@ ScriptedImporter:
     uvTransform: {x: 480, y: 1168}
   - name: FemNPC2_Frame_17
     originalName: 
-    pivot: {x: -1.0000005, y: -1.8210527}
+    pivot: {x: -1.1562496, y: -1.8210527}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -333,7 +343,7 @@ ScriptedImporter:
     uvTransform: {x: 620, y: 388}
   - name: FemNPC2_Frame_18
     originalName: 
-    pivot: {x: -1.0000005, y: -1.8210527}
+    pivot: {x: -1.1562496, y: -1.8210527}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -353,7 +363,7 @@ ScriptedImporter:
     uvTransform: {x: 620, y: 776}
   - name: FemNPC2_Frame_19
     originalName: 
-    pivot: {x: -0.93939376, y: -1.8210527}
+    pivot: {x: -1.0909095, y: -1.8210527}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -373,7 +383,7 @@ ScriptedImporter:
     uvTransform: {x: 480, y: 4}
   - name: FemNPC2_Frame_20
     originalName: 
-    pivot: {x: -0.93939376, y: -1.8210527}
+    pivot: {x: -1.0909095, y: -1.8210527}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -393,7 +403,7 @@ ScriptedImporter:
     uvTransform: {x: 480, y: 392}
   - name: FemNPC2_Frame_21
     originalName: 
-    pivot: {x: -0.8823535, y: -1.8404255}
+    pivot: {x: -1.0294114, y: -1.8404255}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -413,7 +423,7 @@ ScriptedImporter:
     uvTransform: {x: 332, y: 1556}
   - name: FemNPC2_Frame_22
     originalName: 
-    pivot: {x: -0.93939376, y: -1.8210527}
+    pivot: {x: -1.0909095, y: -1.8210527}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -433,7 +443,7 @@ ScriptedImporter:
     uvTransform: {x: 480, y: 780}
   - name: FemNPC2_Frame_23
     originalName: 
-    pivot: {x: -1.0000005, y: -1.8210527}
+    pivot: {x: -1.1562496, y: -1.8210527}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -624,7 +634,7 @@ ScriptedImporter:
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
-        x: 1716
+        x: 1736
         y: 692
         width: 148
         height: 380
@@ -633,7 +643,7 @@ ScriptedImporter:
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
-        x: 1724
+        x: 1744
         y: 692
         width: 140
         height: 384
@@ -642,7 +652,7 @@ ScriptedImporter:
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
-        x: 1724
+        x: 1744
         y: 692
         width: 144
         height: 388
@@ -651,7 +661,7 @@ ScriptedImporter:
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
-        x: 1724
+        x: 1744
         y: 692
         width: 164
         height: 388
@@ -660,7 +670,7 @@ ScriptedImporter:
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
-        x: 1728
+        x: 1748
         y: 692
         width: 160
         height: 392
@@ -669,7 +679,7 @@ ScriptedImporter:
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
-        x: 1724
+        x: 1744
         y: 692
         width: 164
         height: 388
@@ -678,7 +688,7 @@ ScriptedImporter:
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
-        x: 1728
+        x: 1748
         y: 692
         width: 160
         height: 392
@@ -687,7 +697,7 @@ ScriptedImporter:
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
-        x: 1724
+        x: 1744
         y: 692
         width: 144
         height: 388
@@ -696,7 +706,7 @@ ScriptedImporter:
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
-        x: 1724
+        x: 1744
         y: 692
         width: 132
         height: 376
@@ -705,7 +715,7 @@ ScriptedImporter:
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
-        x: 1728
+        x: 1748
         y: 692
         width: 128
         height: 380
@@ -714,7 +724,7 @@ ScriptedImporter:
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
-        x: 1728
+        x: 1748
         y: 692
         width: 128
         height: 380
@@ -723,7 +733,7 @@ ScriptedImporter:
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
-        x: 1724
+        x: 1744
         y: 692
         width: 132
         height: 380
@@ -732,7 +742,7 @@ ScriptedImporter:
       frameIndex: 20
       additiveSortOrder: 0
       cellRect:
-        x: 1724
+        x: 1744
         y: 692
         width: 132
         height: 380
@@ -741,7 +751,7 @@ ScriptedImporter:
       frameIndex: 21
       additiveSortOrder: 0
       cellRect:
-        x: 1720
+        x: 1740
         y: 692
         width: 136
         height: 376
@@ -750,7 +760,7 @@ ScriptedImporter:
       frameIndex: 22
       additiveSortOrder: 0
       cellRect:
-        x: 1724
+        x: 1744
         y: 692
         width: 132
         height: 380
@@ -759,7 +769,7 @@ ScriptedImporter:
       frameIndex: 23
       additiveSortOrder: 0
       cellRect:
-        x: 1728
+        x: 1748
         y: 692
         width: 128
         height: 380

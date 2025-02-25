@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 760500069646062681}
   - component: {fileID: 2339252946428320420}
   - component: {fileID: 1401670168442159539}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 3015231111519077239}
   - component: {fileID: 5999153598458604533}
   - component: {fileID: 1853089849493202948}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Books 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 8407909880140325362}
   - component: {fileID: 3184006979458530936}
   - component: {fileID: 1144583752143709666}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Right Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3779187995950596761}
   - component: {fileID: 7435959568347082239}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1786825263861010772}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 3598723179980960219}
   - component: {fileID: 976560568724004239}
   - component: {fileID: 1906445898560512132}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Books 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 2652428642613313416}
   - component: {fileID: 3993547545594828605}
   - component: {fileID: 7090031516974110667}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Library 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -885,12 +885,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2255.6477, y: -537.9954}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 2142.6604, y: -539.7479}
-      - {x: 2258.439, y: -539.748}
-      - {x: 2257.7122, y: 539.4971}
-      - {x: -2259.4587, y: 540.78503}
+    - - {x: -2257.7542, y: -647.62915}
+      - {x: -128.6084, y: -648.4918}
+      - {x: 2143.3687, y: -647.3799}
+      - {x: 2257.0227, y: -647.37994}
+      - {x: 2257.7122, y: 647.83716}
+      - {x: -2257.2532, y: 646.6534}
   m_UseDelaunayMesh: 0
 --- !u!1 &5477900358406507798
 GameObject:
@@ -903,7 +903,7 @@ GameObject:
   - component: {fileID: 4956384785332616933}
   - component: {fileID: 2458024426675762178}
   - component: {fileID: 7204219917291469859}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Bathroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1006,7 +1006,7 @@ GameObject:
   - component: {fileID: 3337499423370214585}
   - component: {fileID: 8557463133726685527}
   - component: {fileID: 2084434769930554}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1115,7 +1115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1243208668996318642}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 5341172815056579309}
   - component: {fileID: 4241055483980176782}
   - component: {fileID: 5528679771984661295}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1264,7 +1264,7 @@ GameObject:
   - component: {fileID: 922413463660437010}
   - component: {fileID: 1429870251201015191}
   - component: {fileID: 1170762615254298437}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

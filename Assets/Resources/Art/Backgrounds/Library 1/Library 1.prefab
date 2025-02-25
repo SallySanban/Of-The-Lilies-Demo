@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8657945068943546682}
   - component: {fileID: 8146977576577491817}
   - component: {fileID: 1199269038166458296}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5002444896119921933}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1976730733055094997}
   - component: {fileID: 4884265344994012667}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 2395549936726956437}
   - component: {fileID: 4780799315897464637}
   - component: {fileID: 8659509779522785457}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 822434597617899117}
   - component: {fileID: 1595311858420474800}
   - component: {fileID: 1285326162359430440}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Ambana Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20960903, y: 0.29749945}
   m_AnchorMax: {x: 0.25883278, y: 0.77314436}
-  m_AnchoredPosition: {x: 0.5233154, y: 0.89538574}
+  m_AnchoredPosition: {x: 0.5234375, y: 0.89538574}
   m_SizeDelta: {x: 1.6395435, y: 0.74764013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1595311858420474800
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 6954605579767953740}
   - component: {fileID: 7558134184880928858}
   - component: {fileID: 6728633607205282956}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Library 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,11 +551,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2725.8516, y: -540.3582}
-      - {x: -125.58618, y: -538.68445}
+    - - {x: -2724.326, y: -648.68115}
+      - {x: -134.74023, y: -647.0068}
+      - {x: 2721.5544, y: -646.54517}
       - {x: 2721.5544, y: -539.748}
-      - {x: 2725.553, y: 539.4971}
-      - {x: -2722.5742, y: 538.4222}
+      - {x: 2723.2644, y: 647.0571}
+      - {x: -2723.7288, y: 646.94714}
   m_UseDelaunayMesh: 0
 --- !u!1 &5244040950454124067
 GameObject:
@@ -568,7 +569,7 @@ GameObject:
   - component: {fileID: 2156261505123994757}
   - component: {fileID: 3802331205758018502}
   - component: {fileID: 4997469197635295297}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +680,7 @@ GameObject:
   - component: {fileID: 200854312966521818}
   - component: {fileID: 8636485828101023808}
   - component: {fileID: 3573341214863427246}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +791,7 @@ GameObject:
   - component: {fileID: 1858100044348166256}
   - component: {fileID: 6306830577550865241}
   - component: {fileID: 233128659280032435}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1128,7 +1129,7 @@ GameObject:
   - component: {fileID: 6358320513270838077}
   - component: {fileID: 6113105639724380141}
   - component: {fileID: 7133483886413255092}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Library Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1231,7 +1232,7 @@ GameObject:
   - component: {fileID: 8005657148619839477}
   - component: {fileID: 8681757970903771897}
   - component: {fileID: 829231167589308004}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1343,7 @@ GameObject:
   - component: {fileID: 1249196561872855352}
   - component: {fileID: 2815204082386304277}
   - component: {fileID: 9122060171886363089}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Staircase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1445,7 +1446,7 @@ GameObject:
   - component: {fileID: 8947191890778513936}
   - component: {fileID: 4192788146349922131}
   - component: {fileID: 4881379569774467604}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1556,7 +1557,7 @@ GameObject:
   - component: {fileID: 5101289540326298215}
   - component: {fileID: 5298676656192556005}
   - component: {fileID: 8001658588386976242}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1667,7 +1668,7 @@ GameObject:
   - component: {fileID: 3627068795060944137}
   - component: {fileID: 5929510455514966461}
   - component: {fileID: 3776401135639284832}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Left Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1770,7 +1771,7 @@ GameObject:
   - component: {fileID: 8748685063153295988}
   - component: {fileID: 5165939860910923538}
   - component: {fileID: 6286939169899368339}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Right Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1873,7 +1874,7 @@ GameObject:
   - component: {fileID: 6998696627251907939}
   - component: {fileID: 5559326514240199615}
   - component: {fileID: 1613206059093963798}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Bulletin Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1974,7 +1975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8639401598827179743}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}

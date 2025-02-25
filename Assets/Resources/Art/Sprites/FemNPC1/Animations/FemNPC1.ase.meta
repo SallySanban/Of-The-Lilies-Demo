@@ -13,6 +13,16 @@ ScriptedImporter:
       assembly: UnityEngine.AnimationModule
       name: DBFemNPCStandingIdle
     second: {fileID: 7400000, guid: e6f5e0fb47a740c46b99c742fa1eb718, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: 289c73d2dc011824fbcd1ae6092870fd, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Panic
+    second: {fileID: 7400000, guid: 1bfa1666c8e28d74a835b8602b3be315, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -107,7 +117,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638724631858359267
+  platformSettingsDirtyTick: 638761112971382389
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -138,7 +148,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 408
+      x: 416
       y: 780
       width: 140
       height: 376
@@ -150,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 408, y: 780}
+    uvTransform: {x: 416, y: 780}
   - name: FemNPC1_Frame_1
     originalName: 
     pivot: {x: -1.1212118, y: -1.8817205}
@@ -158,8 +168,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 564
-      y: 736
+      x: 572
+      y: 388
       width: 132
       height: 372
     spriteID: 9213ed1beae563242a9330da17dd4422
@@ -170,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 564, y: 736}
+    uvTransform: {x: 572, y: 388}
   - name: FemNPC1_Frame_2
     originalName: 
     pivot: {x: -1.0285718, y: -1.8617021}
@@ -178,7 +188,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 408
+      x: 416
       y: 1164
       width: 140
       height: 376
@@ -190,7 +200,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 408, y: 1164}
+    uvTransform: {x: 416, y: 1164}
   - name: FemNPC1_Frame_3
     originalName: 
     pivot: {x: -0.9459457, y: -1.8421053}
@@ -198,7 +208,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 408
+      x: 416
       y: 4
       width: 148
       height: 380
@@ -210,7 +220,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 408, y: 4}
+    uvTransform: {x: 416, y: 4}
   - name: FemNPC1_Frame_4
     originalName: 
     pivot: {x: -1.0285718, y: -1.8617021}
@@ -218,7 +228,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 408
+      x: 416
       y: 1548
       width: 140
       height: 376
@@ -230,7 +240,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 408, y: 1548}
+    uvTransform: {x: 416, y: 1548}
   - name: FemNPC1_Frame_5
     originalName: 
     pivot: {x: -1.1212118, y: -1.8817205}
@@ -238,8 +248,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 564
-      y: 1116
+      x: 572
+      y: 768
       width: 132
       height: 372
     spriteID: 804fb4ee67afc2a43874248d91f912fd
@@ -250,7 +260,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 564, y: 1116}
+    uvTransform: {x: 572, y: 768}
   - name: FemNPC1_Frame_6
     originalName: 
     pivot: {x: -1.0285718, y: -1.8617021}
@@ -258,8 +268,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 564
-      y: 352
+      x: 572
+      y: 4
       width: 140
       height: 376
     spriteID: 3a9188e96fd55e840904c9f1a6489329
@@ -270,7 +280,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 564, y: 352}
+    uvTransform: {x: 572, y: 4}
   - name: FemNPC1_Frame_7
     originalName: 
     pivot: {x: -0.9459457, y: -1.8421053}
@@ -278,7 +288,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 408
+      x: 416
       y: 392
       width: 148
       height: 380
@@ -290,17 +300,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 408, y: 392}
+    uvTransform: {x: 416, y: 392}
   - name: FemNPC1_Frame_10
     originalName: 
-    pivot: {x: -0.40816286, y: -2.2}
+    pivot: {x: -0.46000004, y: -2.271875}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
+      x: 208
       y: 4
-      width: 196
+      width: 200
       height: 320
     spriteID: c0ca2250e900ada4a90cbe3d64f121b4
     spriteBone: []
@@ -310,17 +320,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 4}
+    uvTransform: {x: 208, y: 4}
   - name: FemNPC1_Frame_13
     originalName: 
-    pivot: {x: -0.40816286, y: -2.2}
+    pivot: {x: -0.46000004, y: -2.271875}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
+      x: 208
       y: 332
-      width: 196
+      width: 200
       height: 320
     spriteID: 0ea09ba2b8e8c3b4d9a485925e79f181
     spriteBone: []
@@ -330,17 +340,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 332}
+    uvTransform: {x: 208, y: 332}
   - name: FemNPC1_Frame_17
     originalName: 
-    pivot: {x: -0.44680858, y: -2.2857141}
+    pivot: {x: -0.4693878, y: -2.3603895}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 352
-      width: 188
+      y: 1728
+      width: 196
       height: 308
     spriteID: dfaef5864ea0858488d716eb05d0bd95
     spriteBone: []
@@ -350,16 +360,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 352}
+    uvTransform: {x: 4, y: 1728}
   - name: FemNPC1_Frame_18
     originalName: 
-    pivot: {x: -0.43750006, y: -2.1728394}
+    pivot: {x: -0.5208333, y: -2.243827}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 660
+      x: 4
+      y: 1396
       width: 192
       height: 324
     spriteID: ca905171f51cc7b439735295039f0602
@@ -370,16 +380,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 660}
+    uvTransform: {x: 4, y: 1396}
   - name: FemNPC1_Frame_8
     originalName: 
-    pivot: {x: -0.6428571, y: -2.070588}
+    pivot: {x: -0.7380951, y: -2.138235}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 668
+      x: 208
+      y: 660
       width: 168
       height: 340
     spriteID: f1f41a30449ebd24fb9e53aebb257ec9
@@ -390,16 +400,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 668}
+    uvTransform: {x: 208, y: 660}
   - name: FemNPC1_Frame_9
     originalName: 
-    pivot: {x: -0.6428571, y: -2.070588}
+    pivot: {x: -0.7380951, y: -2.138235}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1016
+      x: 208
+      y: 1008
       width: 168
       height: 340
     spriteID: ce96eb0d8369dbe46b3b7b30dc3d57f6
@@ -410,17 +420,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1016}
+    uvTransform: {x: 208, y: 1008}
   - name: FemNPC1_Frame_11
     originalName: 
-    pivot: {x: -0.5333328, y: -2.070588}
+    pivot: {x: -0.48979545, y: -2.138235}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 992
-      width: 180
+      x: 4
+      y: 4
+      width: 196
       height: 340
     spriteID: e044fe357f3237d439077f2bdf4e1209
     spriteBone: []
@@ -430,17 +440,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 992}
+    uvTransform: {x: 4, y: 4}
   - name: FemNPC1_Frame_12
     originalName: 
-    pivot: {x: -0.6046517, y: -2.070588}
+    pivot: {x: -0.55319196, y: -2.138235}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 1688
-      width: 172
+      x: 4
+      y: 1048
+      width: 188
       height: 340
     spriteID: a2f09cbe2fdd2bd4cb977cec50451dc5
     spriteBone: []
@@ -450,17 +460,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 1688}
+    uvTransform: {x: 4, y: 1048}
   - name: FemNPC1_Frame_14
     originalName: 
-    pivot: {x: -0.5333328, y: -2.070588}
+    pivot: {x: -0.48979545, y: -2.138235}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 1340
-      width: 180
+      x: 4
+      y: 352
+      width: 196
       height: 340
     spriteID: 45c1dcba460a0c143a257a922feef4cc
     spriteBone: []
@@ -470,16 +480,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 1340}
+    uvTransform: {x: 4, y: 352}
   - name: FemNPC1_Frame_15
     originalName: 
-    pivot: {x: -0.6428571, y: -2.070588}
+    pivot: {x: -0.7380951, y: -2.138235}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1364
+      x: 208
+      y: 1356
       width: 168
       height: 340
     spriteID: 6ca9802d660d714448b7944ae326649d
@@ -490,16 +500,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1364}
+    uvTransform: {x: 208, y: 1356}
   - name: FemNPC1_Frame_16
     originalName: 
-    pivot: {x: -0.68292737, y: -2.070588}
+    pivot: {x: -0.78048825, y: -2.138235}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 564
-      y: 4
+      x: 208
+      y: 1704
       width: 164
       height: 340
     spriteID: 58001847c8f2e7f49a5644de39f09ab9
@@ -510,16 +520,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 564, y: 4}
+    uvTransform: {x: 208, y: 1704}
   - name: FemNPC1_Frame_19
     originalName: 
-    pivot: {x: -0.43750006, y: -2.070588}
+    pivot: {x: -0.5208333, y: -2.138235}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 700
       width: 192
       height: 340
     spriteID: 0d3912eaf613f784b80968a413e7c942
@@ -530,7 +540,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 700}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -616,35 +626,35 @@ ScriptedImporter:
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
-        x: 1680
-        y: 704
-        width: 196
+        x: 1692
+        y: 727
+        width: 200
         height: 320
       spriteId: c0ca2250e900ada4a90cbe3d64f121b4
     - name: FemNPC1_Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
-        x: 1680
-        y: 704
-        width: 196
+        x: 1692
+        y: 727
+        width: 200
         height: 320
       spriteId: 0ea09ba2b8e8c3b4d9a485925e79f181
     - name: FemNPC1_Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
-        x: 1684
-        y: 704
-        width: 188
+        x: 1692
+        y: 727
+        width: 196
         height: 308
       spriteId: dfaef5864ea0858488d716eb05d0bd95
     - name: FemNPC1_Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
-        x: 1684
-        y: 704
+        x: 1700
+        y: 727
         width: 192
         height: 324
       spriteId: ca905171f51cc7b439735295039f0602
@@ -652,8 +662,8 @@ ScriptedImporter:
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
-        x: 1708
-        y: 704
+        x: 1724
+        y: 727
         width: 168
         height: 340
       spriteId: f1f41a30449ebd24fb9e53aebb257ec9
@@ -661,8 +671,8 @@ ScriptedImporter:
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
-        x: 1708
-        y: 704
+        x: 1724
+        y: 727
         width: 168
         height: 340
       spriteId: ce96eb0d8369dbe46b3b7b30dc3d57f6
@@ -671,8 +681,8 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 1696
-        y: 704
-        width: 180
+        y: 727
+        width: 196
         height: 340
       spriteId: e044fe357f3237d439077f2bdf4e1209
     - name: FemNPC1_Frame_12
@@ -680,8 +690,8 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 1704
-        y: 704
-        width: 172
+        y: 727
+        width: 188
         height: 340
       spriteId: a2f09cbe2fdd2bd4cb977cec50451dc5
     - name: FemNPC1_Frame_14
@@ -689,16 +699,16 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 1696
-        y: 704
-        width: 180
+        y: 727
+        width: 196
         height: 340
       spriteId: 45c1dcba460a0c143a257a922feef4cc
     - name: FemNPC1_Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
-        x: 1708
-        y: 704
+        x: 1724
+        y: 727
         width: 168
         height: 340
       spriteId: 6ca9802d660d714448b7944ae326649d
@@ -706,8 +716,8 @@ ScriptedImporter:
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
-        x: 1712
-        y: 704
+        x: 1728
+        y: 727
         width: 164
         height: 340
       spriteId: 58001847c8f2e7f49a5644de39f09ab9
@@ -715,8 +725,8 @@ ScriptedImporter:
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
-        x: 1684
-        y: 704
+        x: 1700
+        y: 727
         width: 192
         height: 340
       spriteId: 0d3912eaf613f784b80968a413e7c942

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3369485894698993371}
   - component: {fileID: 2100038586967925423}
   - component: {fileID: 9011215490977457382}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sabina Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1382670682101467366}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 9146513247456839824}
   - component: {fileID: 7204482016328841363}
   - component: {fileID: 2473322170574954412}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 3288946621583839725}
   - component: {fileID: 6047840522300387797}
   - component: {fileID: 8761548046168383880}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -602,7 +602,7 @@ GameObject:
   - component: {fileID: 6002121994136153734}
   - component: {fileID: 1852549051086195836}
   - component: {fileID: 5152587572875829697}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Plaque
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -704,7 +704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7072456436392973579}
   - component: {fileID: 6309063552508989013}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -794,7 +794,7 @@ GameObject:
   - component: {fileID: 7449481342276917508}
   - component: {fileID: 402844264326883442}
   - component: {fileID: 5478512558703669747}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: La Liryo Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +895,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1346834842438584628}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -933,7 +933,7 @@ GameObject:
   - component: {fileID: 399066165407560981}
   - component: {fileID: 9206410916620542432}
   - component: {fileID: 8139825400676431147}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: La Liryo Hallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,11 +1031,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2558.921, y: -539.1763}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 2558.5552, y: -538.8573}
-      - {x: 2558.991, y: 539.4971}
-      - {x: -2558.0076, y: 541.2946}
+    - - {x: -2558.921, y: -650.7245}
+      - {x: -123.355194, y: -648.0017}
+      - {x: 2558.5552, y: -645.9436}
+      - {x: 2558.991, y: 644.3524}
+      - {x: -2555.7766, y: 643.919}
   m_UseDelaunayMesh: 0
 --- !u!1 &8969277568139924710
 GameObject:
@@ -1048,7 +1048,7 @@ GameObject:
   - component: {fileID: 2421578463942296595}
   - component: {fileID: 8652876779888002572}
   - component: {fileID: 5838032147664355196}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

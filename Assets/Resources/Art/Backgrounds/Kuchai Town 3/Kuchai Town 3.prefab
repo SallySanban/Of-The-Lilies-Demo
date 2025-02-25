@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4919658866022348391}
   - component: {fileID: 2812395903533420028}
   - component: {fileID: 4321302808494374720}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Kuchai Town 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,11 +109,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -8593.398, y: -541.18536}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 8596.147, y: -534.49335}
-      - {x: 8592.162, y: 539.4971}
-      - {x: -8594.089, y: 539.5615}
+    - - {x: -8595.007, y: -647.30505}
+      - {x: -107.09422, y: -645.40875}
+      - {x: 8596.147, y: -644.78394}
+      - {x: 8597.677, y: 638.7586}
+      - {x: -8595.696, y: 647.28906}
   m_UseDelaunayMesh: 0
 --- !u!1 &154392498766333513
 GameObject:
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1495106501864540009}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 6979860919443548959}
   - component: {fileID: 8315565214010855676}
   - component: {fileID: 6721778267278788981}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 2697850876262133185}
   - component: {fileID: 1743074763773656206}
   - component: {fileID: 324154584555884396}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 7502912598493501790}
   - component: {fileID: 4686768694860385040}
   - component: {fileID: 2287648324694562459}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Library Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6316783476804430030}
   - component: {fileID: 6134401491376121849}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4998268318198075371}
   - component: {fileID: 8310774858445428821}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 261363955675411576}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ GameObject:
   - component: {fileID: 5683819891955573106}
   - component: {fileID: 2582935484682399191}
   - component: {fileID: 2054989410133435226}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

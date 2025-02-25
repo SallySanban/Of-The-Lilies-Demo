@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5008424403229267745}
   - component: {fileID: 6751141514010499853}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 513454601569076685}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4398132386117297403}
   - component: {fileID: 4351446737599249436}
   - component: {fileID: 1092903568267236909}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 5367026372010443364}
   - component: {fileID: 2101176654635621445}
   - component: {fileID: 7004761047053524483}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: La Liryo Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,11 +461,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1858.4297, y: -539.1763}
-      - {x: -125.58618, y: -538.68445}
+    - - {x: -1858.4297, y: -648.854}
+      - {x: -125.58618, y: -645.3156}
+      - {x: 1857.4786, y: -646.8648}
       - {x: 1857.4788, y: -538.8573}
-      - {x: 1858.9053, y: 538.50635}
-      - {x: -1857.5162, y: 541.2946}
+      - {x: 1856.9125, y: 646.1186}
+      - {x: -1851.4232, y: 644.87915}
   m_UseDelaunayMesh: 0
 --- !u!1 &8418578294637534056
 GameObject:
@@ -476,7 +477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4251069252942605151}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 5517676981882500150}
   - component: {fileID: 7279238902322706097}
   - component: {fileID: 1231808037369346339}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Left Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6685366079683870326}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4640821832507977049}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 1773772899721459511}
   - component: {fileID: 6510317964979812841}
   - component: {fileID: 7988302279510404266}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Coconut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 4035467208300677728}
   - component: {fileID: 4824498282402836925}
   - component: {fileID: 6309081914730655904}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Coconut Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 7965919400814999810}
   - component: {fileID: 3160919440863763240}
   - component: {fileID: 7298895417109833781}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Tayabac Cliffside 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,12 +720,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1687.8313, y: -539.46295}
-      - {x: -1391.9406, y: -539.4629}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 1689.1643, y: -538.6752}
-      - {x: 1689.3062, y: 539.8711}
-      - {x: -1689.0952, y: 540.09534}
+    - - {x: -1687.8313, y: -648.37115}
+      - {x: -1407.4989, y: -648.37115}
+      - {x: -128.17923, y: -646.29614}
+      - {x: 1686.5712, y: -647.5834}
+      - {x: 1686.713, y: 647.4828}
+      - {x: -1686.5022, y: 647.70703}
   m_UseDelaunayMesh: 0
 --- !u!1 &5635178504166615338
 GameObject:
@@ -738,7 +738,7 @@ GameObject:
   - component: {fileID: 2864356242330806375}
   - component: {fileID: 2112124754445078126}
   - component: {fileID: 5857807490686178268}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 720465024757134783}
   - component: {fileID: 3081952402901137154}
   - component: {fileID: 7736587797164124695}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -959,7 +959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8158339957255366984}
   - component: {fileID: 2599688993900152108}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ GameObject:
   - component: {fileID: 6364242921467773827}
   - component: {fileID: 2964051192099700155}
   - component: {fileID: 4038623390901375566}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

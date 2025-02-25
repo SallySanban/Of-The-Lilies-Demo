@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3158941645172896572}
   - component: {fileID: 2851099850812080477}
   - component: {fileID: 6113162624509410220}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: SpeechBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 3666814601712260627}
   - component: {fileID: 7311124173149616489}
   - component: {fileID: 4409098506120015885}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Dialogue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 6749370667981910908}
   - component: {fileID: 4050712301612162054}
   - component: {fileID: 2445966041442115784}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 8699554738502791659}
   - component: {fileID: 8272872799379625789}
   - component: {fileID: 737564238107140455}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Textbox Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8875266467601994873}
   - component: {fileID: 3217036269183820825}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: BathroomGuy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ GameObject:
   - component: {fileID: 593474592084529289}
   - component: {fileID: 8658705531326019595}
   - component: {fileID: 5967140720490145502}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}

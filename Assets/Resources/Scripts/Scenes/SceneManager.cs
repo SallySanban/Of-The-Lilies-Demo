@@ -22,6 +22,7 @@ public class SceneManager : MonoBehaviour
 
     public const string SPRITES_OBJECTNAME = "Sprites";
 
+    [SerializeField] private Camera pixelCamera;
     [SerializeField] private CinemachineVirtualCamera playerCamera;
     [SerializeField] private CinemachineVirtualCamera panCamera;
     private CinemachineConfiner playerCamConfiner;
@@ -70,7 +71,7 @@ public class SceneManager : MonoBehaviour
 
         playerCamConfiner = playerCamera.GetComponent<CinemachineConfiner>();
         panCamConfiner = panCamera.GetComponent<CinemachineConfiner>();
-        cinemachineBrain = Camera.main.GetComponent<CinemachineBrain>();
+        cinemachineBrain = pixelCamera.GetComponent<CinemachineBrain>();
     }
 
     private void Update()

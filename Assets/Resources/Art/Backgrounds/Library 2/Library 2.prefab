@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7916679974047821991}
   - component: {fileID: 6507414247104317307}
   - component: {fileID: 5094306925514282766}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Left Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 2786223978945151868}
   - component: {fileID: 318836562878385913}
   - component: {fileID: 3691273562563254257}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Books
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6209357928680054810}
   - component: {fileID: 3587852161937370253}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -531,7 +531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3776129698067695539}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 8870730335776725435}
   - component: {fileID: 2410561011731029775}
   - component: {fileID: 6915856873330343041}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Library 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,12 +667,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2257.5747, y: -540.45917}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 2002.2876, y: -539.7479}
-      - {x: 2257.7207, y: -538.51605}
-      - {x: 2258.011, y: 539.8692}
-      - {x: -2258.8242, y: 538.3213}
+    - - {x: -2259.0996, y: -647.18567}
+      - {x: -128.2882, y: -646.7646}
+      - {x: 1988.7775, y: -646.4771}
+      - {x: 2256.3696, y: -646.5962}
+      - {x: 2259.3618, y: 646.5984}
+      - {x: -2258.8242, y: 646.8837}
   m_UseDelaunayMesh: 0
 --- !u!1 &7585041563269238247
 GameObject:
@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 1203191933077074264}
   - component: {fileID: 6077329090350793840}
   - component: {fileID: 772712720048648279}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 6919698204527862623}
   - component: {fileID: 1239571043261803563}
   - component: {fileID: 7127024980804533223}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7674477209052371012}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}

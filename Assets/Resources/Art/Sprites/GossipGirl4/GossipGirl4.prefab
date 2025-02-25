@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4713587314613483353}
   - component: {fileID: 1529253992683107368}
   - component: {fileID: 7356101566582468256}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: SpeechBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 2203705614767131671}
   - component: {fileID: 3781798029133107143}
   - component: {fileID: 4305664736680247673}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: GossipGirl4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 6792039113455086552}
   - component: {fileID: 3934379270699512499}
   - component: {fileID: 1089968721250717415}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Textbox Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 74998080693520360}
   - component: {fileID: 1722567812294580876}
   - component: {fileID: 1794956300890239554}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 6898539798602048545}
   - component: {fileID: 5488410246166962539}
   - component: {fileID: 3342703382419637353}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 338482370102245731}
   - component: {fileID: 486701553105271111}
   - component: {fileID: 75287812338253826}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Dialogue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 6835259614971184471}
   - component: {fileID: 7972063351311628246}
   - component: {fileID: 7466644596589207851}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -834,7 +834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: c8f82fad3f6cfc54eb8b7c07d3f14185, type: 3}
       propertyPath: m_Layer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: c8f82fad3f6cfc54eb8b7c07d3f14185, type: 3}
       propertyPath: m_SortingLayer

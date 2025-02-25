@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2282014297946749687}
   - component: {fileID: 4170086362391346420}
   - component: {fileID: 4291053416752480169}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: SpeechBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 3045323818070696709}
   - component: {fileID: 3063750833965394160}
   - component: {fileID: 2605814685737185830}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Textbox Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 6523298416907196073}
   - component: {fileID: 9179124938889627017}
   - component: {fileID: 6712514930904156022}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 3709390075864550456}
   - component: {fileID: 6774419479198413173}
   - component: {fileID: 7379357517630046185}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Dialogue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 3001131842226518163}
   - component: {fileID: 2359103628400755561}
   - component: {fileID: 1595355572076358609}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 1492144325769107718}
   - component: {fileID: 7615739634577233195}
   - component: {fileID: 4876897092282696576}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Receptionist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 78123020722798925}
   - component: {fileID: 3770440008157254833}
   - component: {fileID: 8685647619954045555}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -834,7 +834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 488578002976f3e4cb02e24c19b7b28c, type: 3}
       propertyPath: m_Layer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1160356261127867848, guid: 488578002976f3e4cb02e24c19b7b28c, type: 3}
       propertyPath: m_Controller

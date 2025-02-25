@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8911124028297954542}
   - component: {fileID: 6525016935669927913}
   - component: {fileID: 451871757066965632}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 6790580154301710029}
   - component: {fileID: 2627287181493530022}
   - component: {fileID: 4265331736062515242}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FemNPC3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.2740479, y: -60.67299}
+  m_Offset: {x: -4.782345, y: -56.18553}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -219,7 +219,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 110.46423, y: 373.29434}
+  m_Size: {x: 96.35145, y: 384.0773}
   m_EdgeRadius: 0
 --- !u!114 &4265331736062515242
 MonoBehaviour:
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 3140778371089697320}
   - component: {fileID: 4187279943984572374}
   - component: {fileID: 1045100633088116772}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Dialogue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 4554560687516496834}
   - component: {fileID: 1040029850913140413}
   - component: {fileID: 1884675810990842200}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Textbox Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 42096522536389795}
   - component: {fileID: 435452626010507479}
   - component: {fileID: 4224041528281952499}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FemNPC3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,9 +564,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5968900933390342600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 362, y: -448, z: 0}
+  m_LocalPosition: {x: 362, y: -428, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6790580154301710029}
   m_RootOrder: 0
@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 2434474123500746514}
   - component: {fileID: 82426949439052623}
   - component: {fileID: 440641127779791364}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 1988942041978510385}
   - component: {fileID: 4390140325909570974}
   - component: {fileID: 2673365897549954341}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: SpeechBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -826,7 +826,7 @@ GameObject:
   - component: {fileID: 7131772117861611021}
   - component: {fileID: 2894649640770167537}
   - component: {fileID: 5759477681105679798}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

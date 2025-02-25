@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4811976843469487478}
   - component: {fileID: 2687026614483290798}
   - component: {fileID: 8140296153547419104}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Textbox Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.0002746582, y: -0.0018005371}
-  m_SizeDelta: {x: 0, y: 77.45999}
+  m_SizeDelta: {x: 0, y: 9.229996}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &420008280965478471
 CanvasRenderer:
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 3780332913992015113}
   - component: {fileID: 322766190030175305}
   - component: {fileID: 248261480380469744}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 4118918436782034400}
   - component: {fileID: 3458672307754224787}
   - component: {fileID: 3327231503063848668}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Right Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4614806936900457553}
   - component: {fileID: 303666661004905310}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Right Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 6861374432375855539}
   - component: {fileID: 9055730522769919360}
   - component: {fileID: 4688109313423287492}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Left Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,13 +492,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4759332630434016363}
   - component: {fileID: 1454352749349251634}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Choice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4759332630434016363
 RectTransform:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 6.8852463, y: -69.03112}
+  m_Offset: {x: 6.8852463, y: -77.63591}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -658,7 +658,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 144.27962, y: 356.5299}
+  m_Size: {x: 144.27962, y: 385.19943}
   m_EdgeRadius: 0
 --- !u!1 &7474525683452069790
 GameObject:
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 96278295659105544}
   - component: {fileID: 1169127858324717987}
   - component: {fileID: 6621069322717371545}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Dialogue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 5995148974082976870}
   - component: {fileID: 5522481807129158546}
   - component: {fileID: 6252383518995840284}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 6979759948595543956}
   - component: {fileID: 908451905763776872}
   - component: {fileID: 8132161993729018390}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: SpeechBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 8197242897708829915}
   - component: {fileID: 7820382764848337637}
   - component: {fileID: 8415232270414236593}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Choice Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1171,7 +1171,7 @@ GameObject:
   - component: {fileID: 7166684295291112039}
   - component: {fileID: 3972632504770603718}
   - component: {fileID: 7026831783140514541}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ahlai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1186,9 +1186,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8081313126072929149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47, y: -403.10986, z: 0}
+  m_LocalPosition: {x: 48, y: -416, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7123015239715294887}
   m_RootOrder: -1
@@ -1276,7 +1276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6114399060814437650}
   - component: {fileID: 5281649734249873697}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Left Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

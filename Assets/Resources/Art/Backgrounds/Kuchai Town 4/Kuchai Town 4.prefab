@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5331353842635109831}
   - component: {fileID: 6217827885106948641}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: AMBGrass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5495517084152919303}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 963276127640335793}
   - component: {fileID: 1453750368709983191}
   - component: {fileID: 8387375860366749682}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Right Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 7354957291702238147}
   - component: {fileID: 6177744833990797909}
   - component: {fileID: 7066558212419411316}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Kuchai Town 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,11 +548,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2012.2017, y: -540.25415}
-      - {x: -125.58618, y: -538.68445}
+    - - {x: -2010.576, y: -646.4777}
+      - {x: -125.58618, y: -645.67413}
+      - {x: 2007.901, y: -645.6648}
       - {x: 2012.996, y: -538.6752}
-      - {x: 2009.484, y: 541.3508}
-      - {x: -2010.8223, y: 540.69965}
+      - {x: 2006.9366, y: 643.24585}
+      - {x: -2007.9371, y: 647.4509}
   m_UseDelaunayMesh: 0
 --- !u!1 &4620570233984589037
 GameObject:
@@ -565,7 +566,7 @@ GameObject:
   - component: {fileID: 2074350432884848988}
   - component: {fileID: 1411926453481409317}
   - component: {fileID: 4337533978727104072}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4600455968880264860}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +713,7 @@ GameObject:
   - component: {fileID: 5518789171645722404}
   - component: {fileID: 4915886375262418921}
   - component: {fileID: 3527412872858583850}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Dock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -815,7 +816,7 @@ GameObject:
   - component: {fileID: 6163578584366683511}
   - component: {fileID: 4994786308549348296}
   - component: {fileID: 2275898286497036536}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4312801820464679184}
   - component: {fileID: 1403739504199260747}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: SFXCreek2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -994,7 +995,7 @@ GameObject:
   - component: {fileID: 5726257293779148015}
   - component: {fileID: 2144702401330686346}
   - component: {fileID: 8003464652100046461}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1105,7 +1106,7 @@ GameObject:
   - component: {fileID: 6722233122513493862}
   - component: {fileID: 3970662911442397852}
   - component: {fileID: 7254166677829034191}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Left Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1207,7 +1208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9092596197065197251}
   - component: {fileID: 8863608190222938458}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 777068015908174584}
   - component: {fileID: 3704287255202776961}
   - component: {fileID: 7475970688906638664}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Tavern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,11 +109,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2558.921, y: -539.1763}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 2558.5552, y: -538.8573}
-      - {x: 2558.991, y: 539.4971}
-      - {x: -2558.0076, y: 541.2946}
+    - - {x: -2560.162, y: -645.93274}
+      - {x: -129.0026, y: -644.5932}
+      - {x: 2555.1387, y: -644.7662}
+      - {x: 2558.991, y: 645.4059}
+      - {x: -2558.0076, y: 646.8097}
   m_UseDelaunayMesh: 0
 --- !u!1 &628838443466483261
 GameObject:
@@ -399,7 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2238788585872824335}
   - component: {fileID: 1523089290058701992}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 5306818319144441273}
   - component: {fileID: 6808042920249401298}
   - component: {fileID: 4834724427211631402}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,7 +599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7350136700624804675}
   - component: {fileID: 8157044384590083330}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +687,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4238019139116795246}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4048498986344487776}
   - component: {fileID: 2910504789079800988}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -950,7 +950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5838782839902054265}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 4640439722305110218}
   - component: {fileID: 5211373945296424556}
   - component: {fileID: 7751005826131021742}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Left Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,7 +1093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 780283210228997114}
   - component: {fileID: 6499034920778556291}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: AmbTavern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1162,7 +1162,7 @@ GameObject:
   - component: {fileID: 5006345522355032837}
   - component: {fileID: 7090927717902030937}
   - component: {fileID: 2702899096978642609}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Alcohol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1263,7 +1263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4542672003718787890}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1301,7 +1301,7 @@ GameObject:
   - component: {fileID: 2164578975868261841}
   - component: {fileID: 2796608467732118212}
   - component: {fileID: 1562006182683188853}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

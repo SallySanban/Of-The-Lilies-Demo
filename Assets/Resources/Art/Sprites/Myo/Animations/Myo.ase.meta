@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 313a9a24359947f43bca02239441c33b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: IdleLeft
+    second: {fileID: 7400000, guid: 9d32034c6ac89e64486e71eab815b3bd, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: IdleRight
+    second: {fileID: 7400000, guid: 39b8530b7bef74449bdb1e0b6e087c5b, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Sit
+    second: {fileID: 7400000, guid: ad21e21f26810d64a96a5d2376f88904, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638761161551057150
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Myo_Frame_16
+    originalName: 
+    pivot: {x: 1.0769231, y: -0.48913044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 764
+      width: 156
+      height: 368
+    spriteID: 385719318da25034a82c7df5b6a8db24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 764}
+  - name: Myo_Frame_17
+    originalName: 
+    pivot: {x: 1.0769231, y: -0.4945055}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 860
+      y: 380
+      width: 156
+      height: 364
+    spriteID: 3f92291b2c369cd4695cda886e41d804
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 860, y: 380}
+  - name: Myo_Frame_18
+    originalName: 
+    pivot: {x: 1.0769231, y: -0.48913044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 1140
+      width: 156
+      height: 368
+    spriteID: b0f27b8c5c4604f4bac7ba2ae952f964
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 1140}
+  - name: Myo_Frame_19
+    originalName: 
+    pivot: {x: 1.0769231, y: -0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 4
+      width: 156
+      height: 372
+    spriteID: c081ddfc658982946b3d902cb555d03f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 4}
+  - name: Myo_Frame_20
+    originalName: 
+    pivot: {x: 1.0769231, y: -0.48913044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 1516
+      width: 156
+      height: 368
+    spriteID: 13c2cc180ea64bd44aa146e17a35d6f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 1516}
+  - name: Myo_Frame_21
+    originalName: 
+    pivot: {x: 1.0769231, y: -0.4945055}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 860
+      y: 752
+      width: 156
+      height: 364
+    spriteID: b257e8f8edccbfe44a8f9393fb9b1bdc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 860, y: 752}
+  - name: Myo_Frame_22
+    originalName: 
+    pivot: {x: 1.0769231, y: -0.48913044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 860
+      y: 4
+      width: 156
+      height: 368
+    spriteID: 0a7a08ca5cdafe74db416434bc474ddc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 860, y: 4}
+  - name: Myo_Frame_23
+    originalName: 
+    pivot: {x: 1.0769231, y: -0.48387098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 384
+      width: 156
+      height: 372
+    spriteID: 53b005b28b795af4da38c52ce6e210e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 384}
+  - name: Myo_Frame_8
+    originalName: 
+    pivot: {x: 1.1463414, y: -0.29245284}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 4
+      width: 164
+      height: 424
+    spriteID: f046b288029132244b645c1a2af825ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 4}
+  - name: Myo_Frame_9
+    originalName: 
+    pivot: {x: 1.1707317, y: -0.2952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 4
+      width: 164
+      height: 420
+    spriteID: dfc5147c3ae9c8743862b9ab70ce9571
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 4}
+  - name: Myo_Frame_10
+    originalName: 
+    pivot: {x: 1.1463414, y: -0.29245284}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 436
+      width: 164
+      height: 424
+    spriteID: 7c60a646fc4d3754597da6b26dccc075
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 436}
+  - name: Myo_Frame_11
+    originalName: 
+    pivot: {x: 1.0952381, y: -0.28971964}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 168
+      height: 428
+    spriteID: 6945176be8037ea458e7fb6a47c6c7b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Myo_Frame_12
+    originalName: 
+    pivot: {x: 1.1463414, y: -0.29245284}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 868
+      width: 164
+      height: 424
+    spriteID: 600477c1852f8c2439f076739725c054
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 868}
+  - name: Myo_Frame_13
+    originalName: 
+    pivot: {x: 1.1707317, y: -0.2952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 432
+      width: 164
+      height: 420
+    spriteID: 952acd9a0c20255499eb8fc584f0017f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 432}
+  - name: Myo_Frame_14
+    originalName: 
+    pivot: {x: 1.1463414, y: -0.29245284}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1300
+      width: 164
+      height: 424
+    spriteID: b650e4d31d857d040935d3be19d82002
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1300}
+  - name: Myo_Frame_15
+    originalName: 
+    pivot: {x: 1.0952381, y: -0.28971964}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 440
+      width: 168
+      height: 428
+    spriteID: ee9925f9b96c3ac458511b737de88d99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 440}
+  - name: Myo_Frame_0
+    originalName: 
+    pivot: {x: 1.2195121, y: -0.29245284}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 4
+      width: 164
+      height: 424
+    spriteID: b77a4880bbad4d743b4d3661b7e93155
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 352, y: 4}
+  - name: Myo_Frame_1
+    originalName: 
+    pivot: {x: 1.1951219, y: -0.2952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 860
+      width: 164
+      height: 420
+    spriteID: 5e5d34402e4112645aa965b5bd3ddbe3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 860}
+  - name: Myo_Frame_2
+    originalName: 
+    pivot: {x: 1.2195121, y: -0.29245284}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 436
+      width: 164
+      height: 424
+    spriteID: 180d5ea9e3f40c841813eb976bf822e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 352, y: 436}
+  - name: Myo_Frame_3
+    originalName: 
+    pivot: {x: 1.2380952, y: -0.28971964}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 876
+      width: 168
+      height: 428
+    spriteID: b5e49a310f6011942a8659ad17766c7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 876}
+  - name: Myo_Frame_4
+    originalName: 
+    pivot: {x: 1.2195121, y: -0.29245284}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 868
+      width: 164
+      height: 424
+    spriteID: b72dc186a3263f94cae395c4b1326ce9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 352, y: 868}
+  - name: Myo_Frame_5
+    originalName: 
+    pivot: {x: 1.1951219, y: -0.2952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1288
+      width: 164
+      height: 420
+    spriteID: 35277800ab0d5f84eb9360f72e336a9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1288}
+  - name: Myo_Frame_6
+    originalName: 
+    pivot: {x: 1.2195121, y: -0.29245284}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 1300
+      width: 164
+      height: 424
+    spriteID: 9b7fbbe0fd3043446879aace94031ab6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 352, y: 1300}
+  - name: Myo_Frame_7
+    originalName: 
+    pivot: {x: 1.2380952, y: -0.28971964}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1312
+      width: 168
+      height: 428
+    spriteID: 29a0e4e496f95754a933c25a2fa00819
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1312}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1917391177
+    name: Myo
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Myo_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 180
+        width: 156
+        height: 368
+      spriteId: 385719318da25034a82c7df5b6a8db24
+    - name: Myo_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 180
+        width: 156
+        height: 364
+      spriteId: 3f92291b2c369cd4695cda886e41d804
+    - name: Myo_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 180
+        width: 156
+        height: 368
+      spriteId: b0f27b8c5c4604f4bac7ba2ae952f964
+    - name: Myo_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 180
+        width: 156
+        height: 372
+      spriteId: c081ddfc658982946b3d902cb555d03f
+    - name: Myo_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 180
+        width: 156
+        height: 368
+      spriteId: 13c2cc180ea64bd44aa146e17a35d6f0
+    - name: Myo_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 180
+        width: 156
+        height: 364
+      spriteId: b257e8f8edccbfe44a8f9393fb9b1bdc
+    - name: Myo_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 180
+        width: 156
+        height: 368
+      spriteId: 0a7a08ca5cdafe74db416434bc474ddc
+    - name: Myo_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 180
+        width: 156
+        height: 372
+      spriteId: 53b005b28b795af4da38c52ce6e210e6
+    - name: Myo_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 124
+        width: 164
+        height: 424
+      spriteId: f046b288029132244b645c1a2af825ac
+    - name: Myo_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 124
+        width: 164
+        height: 420
+      spriteId: dfc5147c3ae9c8743862b9ab70ce9571
+    - name: Myo_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 124
+        width: 164
+        height: 424
+      spriteId: 7c60a646fc4d3754597da6b26dccc075
+    - name: Myo_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 776
+        y: 124
+        width: 168
+        height: 428
+      spriteId: 6945176be8037ea458e7fb6a47c6c7b2
+    - name: Myo_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 124
+        width: 164
+        height: 424
+      spriteId: 600477c1852f8c2439f076739725c054
+    - name: Myo_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 124
+        width: 164
+        height: 420
+      spriteId: 952acd9a0c20255499eb8fc584f0017f
+    - name: Myo_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 124
+        width: 164
+        height: 424
+      spriteId: b650e4d31d857d040935d3be19d82002
+    - name: Myo_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 776
+        y: 124
+        width: 168
+        height: 428
+      spriteId: ee9925f9b96c3ac458511b737de88d99
+    - name: Myo_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 760
+        y: 124
+        width: 164
+        height: 424
+      spriteId: b77a4880bbad4d743b4d3661b7e93155
+    - name: Myo_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 764
+        y: 124
+        width: 164
+        height: 420
+      spriteId: 5e5d34402e4112645aa965b5bd3ddbe3
+    - name: Myo_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 760
+        y: 124
+        width: 164
+        height: 424
+      spriteId: 180d5ea9e3f40c841813eb976bf822e3
+    - name: Myo_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 752
+        y: 124
+        width: 168
+        height: 428
+      spriteId: b5e49a310f6011942a8659ad17766c7e
+    - name: Myo_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 760
+        y: 124
+        width: 164
+        height: 424
+      spriteId: b72dc186a3263f94cae395c4b1326ce9
+    - name: Myo_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 764
+        y: 124
+        width: 164
+        height: 420
+      spriteId: 35277800ab0d5f84eb9360f72e336a9e
+    - name: Myo_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 760
+        y: 124
+        width: 164
+        height: 424
+      spriteId: 9b7fbbe0fd3043446879aace94031ab6
+    - name: Myo_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 752
+        y: 124
+        width: 168
+        height: 428
+      spriteId: 29a0e4e496f95754a933c25a2fa00819
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1920, y: 1080}

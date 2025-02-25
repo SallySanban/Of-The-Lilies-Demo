@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 8794100355395836024}
   - component: {fileID: 7831881578005140644}
   - component: {fileID: 2408731476289312437}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8794100355395836024
 RectTransform:
   m_ObjectHideFlags: 0
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 6579786881785637625}
   - component: {fileID: 6529601635472066242}
   - component: {fileID: 8798407684210774308}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 1287207724131035519}
   - component: {fileID: 6266286738910698776}
   - component: {fileID: 1992859902720484006}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 5237028128407780029}
   - component: {fileID: 953893154696086347}
   - component: {fileID: 8230151506112494776}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Ahlai's Bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,11 +434,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1403.6703, y: -541.23474}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 1403.7788, y: -538.6752}
-      - {x: 1404.1101, y: 543.54224}
-      - {x: -1404.2554, y: 543.4855}
+    - - {x: -1402.0702, y: -648.43445}
+      - {x: -133.94614, y: -649.0361}
+      - {x: 1403.7788, y: -647.3549}
+      - {x: 1402.4381, y: 647.206}
+      - {x: -1403.1171, y: 646.3842}
   m_UseDelaunayMesh: 0
 --- !u!1 &2133375651693781118
 GameObject:
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 6160903676991354167}
   - component: {fileID: 7223385953137141595}
   - component: {fileID: 2322662970779547961}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Conspiracy Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4368647876914182174}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 7071120594013532295}
   - component: {fileID: 7578197087473229619}
   - component: {fileID: 3625418043546837239}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Painting of Nari
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 4854872135349030814}
   - component: {fileID: 76704353146325701}
   - component: {fileID: 6900690349579984258}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -815,7 +815,7 @@ GameObject:
   - component: {fileID: 8007993160512524424}
   - component: {fileID: 2544119811181343368}
   - component: {fileID: 8910997677264136340}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -989,7 +989,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5237028128407780029}
   m_RootOrder: -1
@@ -1197,7 +1197,7 @@ GameObject:
   - component: {fileID: 3246721543446774890}
   - component: {fileID: 2097000157341555264}
   - component: {fileID: 5453618975637242899}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1308,7 +1308,7 @@ GameObject:
   - component: {fileID: 7811136222696358228}
   - component: {fileID: 2644454101001956849}
   - component: {fileID: 5589759872676870194}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Workbench
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1410,7 +1410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7477999426974941294}
   - component: {fileID: 6531858907327264138}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1500,7 +1500,7 @@ GameObject:
   - component: {fileID: 4552484365434691861}
   - component: {fileID: 4111591138823487877}
   - component: {fileID: 7626049528016360319}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 8648420229584680617}
   - component: {fileID: 339804959959615380}
   - component: {fileID: 9201169367579500181}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1767,7 +1767,7 @@ GameObject:
   - component: {fileID: 5436515760851455515}
   - component: {fileID: 5382624532147934135}
   - component: {fileID: 7268902418174001665}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1878,7 +1878,7 @@ GameObject:
   - component: {fileID: 6302304264688032237}
   - component: {fileID: 4117248568011002297}
   - component: {fileID: 479450943634830640}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1989,7 +1989,7 @@ GameObject:
   - component: {fileID: 6688396691305670852}
   - component: {fileID: 5654499011432874784}
   - component: {fileID: 4016944717102033421}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2092,7 +2092,7 @@ GameObject:
   - component: {fileID: 382055952293186235}
   - component: {fileID: 7982911168970490082}
   - component: {fileID: 3456769891170680124}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2203,7 +2203,7 @@ GameObject:
   - component: {fileID: 3877659973771733344}
   - component: {fileID: 7232895017824395684}
   - component: {fileID: 3845542927799549441}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2306,7 +2306,7 @@ GameObject:
   - component: {fileID: 6186808222353420178}
   - component: {fileID: 1440918783018855098}
   - component: {fileID: 8741141266296269924}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Flowers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2409,7 +2409,7 @@ GameObject:
   - component: {fileID: 6187889595584457702}
   - component: {fileID: 6191648002485690535}
   - component: {fileID: 4029474159322906969}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2520,7 +2520,7 @@ GameObject:
   - component: {fileID: 6316738687263027481}
   - component: {fileID: 4118117401486558033}
   - component: {fileID: 6272795498158403320}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Family Photo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2621,7 +2621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5237682205217625958}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2659,7 +2659,7 @@ GameObject:
   - component: {fileID: 1339634972523132142}
   - component: {fileID: 5951494078858955979}
   - component: {fileID: 8779496142790298723}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 79247211549754165}
   - component: {fileID: 4389665496043878116}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 8985660349617263415}
   - component: {fileID: 2732831928719268952}
   - component: {fileID: 7950931404880142208}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8599603738069559342}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 6572758114021193194}
   - component: {fileID: 3835740872595518475}
   - component: {fileID: 70953319866658810}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 1827660763541216212}
   - component: {fileID: 8586965344201133835}
   - component: {fileID: 2433585496880685339}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +461,7 @@ GameObject:
   - component: {fileID: 7643270548969758259}
   - component: {fileID: 4380097981874555029}
   - component: {fileID: 3569354038426893700}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: 1st Floor Hallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8525421641913508231}
   - {fileID: 8599603738069559342}
@@ -559,11 +559,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2559.2239, y: -541.23474}
-      - {x: -125.58618, y: -538.68445}
-      - {x: 2561.5198, y: -535.30963}
-      - {x: 2565.2168, y: 543.54224}
-      - {x: -2557.933, y: 539.24274}
+    - - {x: -2560.7893, y: -648.54694}
+      - {x: -121.04104, y: -647.76953}
+      - {x: 2561.5198, y: -643.29846}
+      - {x: 2565.2168, y: 646.69714}
+      - {x: -2562.8418, y: 644.7773}
   m_UseDelaunayMesh: 0
 --- !u!1 &3087577649591998593
 GameObject:
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 3010829270961046114}
   - component: {fileID: 7023611521165426564}
   - component: {fileID: 2111469400404305853}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Double Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7643270548969758259}
   m_RootOrder: -1
@@ -906,7 +906,7 @@ GameObject:
   - component: {fileID: 6781199931595100014}
   - component: {fileID: 4767098940817760173}
   - component: {fileID: 5293148315238707185}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 2353062700909411764}
   - component: {fileID: 4024605056842983899}
   - component: {fileID: 7684144560478685181}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 9065186162666699456}
   - component: {fileID: 5424418997636816152}
   - component: {fileID: 9017041389735491496}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Flasks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1223,7 +1223,7 @@ GameObject:
   - component: {fileID: 5482460465786881752}
   - component: {fileID: 2322274752088911012}
   - component: {fileID: 8449634775525582012}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1334,7 +1334,7 @@ GameObject:
   - component: {fileID: 358633388123968345}
   - component: {fileID: 2120762643260191334}
   - component: {fileID: 560897849479721893}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1445,7 +1445,7 @@ GameObject:
   - component: {fileID: 6574516177281126584}
   - component: {fileID: 8108830413970154942}
   - component: {fileID: 1221992446711804884}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Barrels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1546,7 +1546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2461561312141908975}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Interactables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1591,7 +1591,7 @@ GameObject:
   - component: {fileID: 5251394119100101054}
   - component: {fileID: 2176446295647545370}
   - component: {fileID: 8860895887463453315}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1694,7 +1694,7 @@ GameObject:
   - component: {fileID: 1703954468405786743}
   - component: {fileID: 1103958119832331859}
   - component: {fileID: 930770210488171724}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1805,7 +1805,7 @@ GameObject:
   - component: {fileID: 4132565421326666134}
   - component: {fileID: 3461152174574075589}
   - component: {fileID: 1775939172533491386}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1916,7 +1916,7 @@ GameObject:
   - component: {fileID: 8816789626361421940}
   - component: {fileID: 8344407794805231900}
   - component: {fileID: 5002200629267420039}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}

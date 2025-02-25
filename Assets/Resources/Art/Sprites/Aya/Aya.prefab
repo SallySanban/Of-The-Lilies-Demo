@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1194018367911045576}
   - component: {fileID: 4148996939568464602}
   - component: {fileID: 7072289145506214943}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Aya
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
       propertyPath: m_Layer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1160356261127867848, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
       propertyPath: m_Controller

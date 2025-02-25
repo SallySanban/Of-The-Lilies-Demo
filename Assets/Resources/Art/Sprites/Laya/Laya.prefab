@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4602548795078438619}
   - component: {fileID: 3408091790409248081}
   - component: {fileID: 8220547883673162641}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 13180514791106722}
   - component: {fileID: 553561236021826331}
   - component: {fileID: 2128214100976694764}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Laya
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 292ff326cb87533468441ca57ae37b07, type: 3}
       propertyPath: m_Layer
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 292ff326cb87533468441ca57ae37b07, type: 3}
       propertyPath: m_SortingOrder
