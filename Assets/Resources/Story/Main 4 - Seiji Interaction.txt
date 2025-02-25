@@ -108,8 +108,6 @@ choice in -1
 		pixel Seiji "Good call, <playerName>."
 
 		$GetCloser = false
-		pauseEvent(BGM_Lien)
-		resumeEvent(BGM_KuchaiTown)
 }
 
 [wait]HideTextbox(false)

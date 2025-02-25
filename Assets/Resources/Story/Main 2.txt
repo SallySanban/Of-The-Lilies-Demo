@@ -63,6 +63,7 @@ choice in 0
 
 		HideTextbox(true)
 		[wait]Blackout()
+		playSFX(SFX_LienSword)
 		[input]SwitchCG("Lien Fires")
 		[wait]Blackout()
 
@@ -89,6 +90,7 @@ choice in 0
 
 		HideTextbox(true)
 		[wait]Blackout()
+		playSFX(SFX_LienSword)
 		[input]SwitchCG("Lien Fires")
 		[wait]Blackout()
 

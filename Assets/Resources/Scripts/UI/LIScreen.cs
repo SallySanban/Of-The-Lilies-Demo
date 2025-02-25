@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Dialogue;
 using System.Collections;
+using FMODUnity;
 
 public class LIScreen
 {
@@ -42,6 +43,8 @@ public class LIScreen
     {
         if (!isRunningConversation)
         {
+            RuntimeManager.PlayOneShot("event:/SFX/SFX_UI LISelect"); // Plays paper shuffle sfx
+
             SetButtonsInteractable(false);
 
             string filename = FormatStoryFilename(liButtonName, button.name);
