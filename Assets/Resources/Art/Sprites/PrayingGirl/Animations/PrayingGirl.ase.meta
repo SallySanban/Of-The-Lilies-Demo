@@ -6,11 +6,6 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
-      name: Family
-    second: {fileID: 7400000, guid: ccb23a18a757bde4baeb54cc03c1b95e, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
       name: IdleLeft
     second: {fileID: 7400000, guid: 63668ca75eb3abd43a875f5eac9f50e8, type: 2}
   - first:
@@ -122,7 +117,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748215007615398
+  platformSettingsDirtyTick: 638760992165626572
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -148,16 +143,16 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: PrayingGirl_Frame_0
     originalName: 
-    pivot: {x: 1.3703704, y: -0.6329114}
+    pivot: {x: 1.2580645, y: -0.6125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 408
-      width: 108
-      height: 316
-    spriteID: 2dff60a34d490d842875aa413de64555
+      x: 144
+      y: 668
+      width: 124
+      height: 320
+    spriteID: 4b589880707773e4a90208f2d4098852
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -165,19 +160,39 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 408}
-  - name: PrayingGirl_Frame_4
+    uvTransform: {x: 144, y: 668}
+  - name: PrayingGirl_Frame_1
     originalName: 
-    pivot: {x: 0.34579438, y: -0.48484844}
+    pivot: {x: 1.3571428, y: -0.62025315}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 4
+      width: 112
+      height: 316
+    spriteID: dc898ea466fef50498a299e4b3c7c4c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 4}
+  - name: PrayingGirl_Frame_3
+    originalName: 
+    pivot: {x: 1.2121211, y: -0.60493827}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 428
-      height: 396
-    spriteID: 873a160ef4fe94442958c7e30404ce93
+      width: 132
+      height: 324
+    spriteID: bdc92154ddf91cb41a716b99c650086c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -186,38 +201,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: PrayingGirl_Frame_1
-    originalName: 
-    pivot: {x: 1.4444444, y: -0.6329114}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 120
-      y: 408
-      width: 108
-      height: 316
-    spriteID: d4a02eb567f1abb429804e398ff1fd99
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 120, y: 408}
   - name: PrayingGirl_Frame_2
     originalName: 
-    pivot: {x: 1.5, y: -0.6329114}
+    pivot: {x: 1.2580645, y: -0.6125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 236
-      y: 408
-      width: 96
-      height: 316
-    spriteID: 8911b8e8bf6f1dc44b5d243194ec9a50
+      x: 144
+      y: 996
+      width: 124
+      height: 320
+    spriteID: 18cfd569e99cb85449063183df29383f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -225,19 +220,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 236, y: 408}
-  - name: PrayingGirl_Frame_3
+    uvTransform: {x: 144, y: 996}
+  - name: PrayingGirl_Frame_4
     originalName: 
-    pivot: {x: 1.5416666, y: -0.6329114}
+    pivot: {x: 1.2580645, y: -0.6125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 340
-      y: 408
-      width: 96
-      height: 316
-    spriteID: 449441d7050b6134db56ccfeb5a43901
+      x: 144
+      y: 1324
+      width: 124
+      height: 320
+    spriteID: ff89511972da27e439e5b44e29195391
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -245,7 +240,547 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 340, y: 408}
+    uvTransform: {x: 144, y: 1324}
+  - name: PrayingGirl_Frame_5
+    originalName: 
+    pivot: {x: 1.3571428, y: -0.62025315}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 328
+      width: 112
+      height: 316
+    spriteID: 65db6563857bae043a655bfacc59a1c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 328}
+  - name: PrayingGirl_Frame_6
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 1652
+      width: 124
+      height: 320
+    spriteID: 092bdc84ecca38a47b6fe906bf76c645
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 1652}
+  - name: PrayingGirl_Frame_7
+    originalName: 
+    pivot: {x: 1.2121211, y: -0.60493827}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 336
+      width: 132
+      height: 324
+    spriteID: b1d4f5b7753169c42b1970fe8f9bbba4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 336}
+  - name: PrayingGirl_Frame_8
+    originalName: 
+    pivot: {x: 1.3225807, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 4
+      width: 124
+      height: 320
+    spriteID: c9238a6db4afe0d4aa8521a504a87e30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 4}
+  - name: PrayingGirl_Frame_9
+    originalName: 
+    pivot: {x: 1.3928571, y: -0.62025315}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 652
+      width: 112
+      height: 316
+    spriteID: 6595986f5e0a1ea46932396db558875b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 652}
+  - name: PrayingGirl_Frame_11
+    originalName: 
+    pivot: {x: 1.2727274, y: -0.60493827}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 668
+      width: 132
+      height: 324
+    spriteID: 3b0aea7f67009c64d9ec347865f24039
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 668}
+  - name: PrayingGirl_Frame_10
+    originalName: 
+    pivot: {x: 1.3225807, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 332
+      width: 124
+      height: 320
+    spriteID: a36e87230d90c694b9238a32dfee8f6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 332}
+  - name: PrayingGirl_Frame_12
+    originalName: 
+    pivot: {x: 1.3225807, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 660
+      width: 124
+      height: 320
+    spriteID: c3969bba801d6d445b0b663c40b50d9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 660}
+  - name: PrayingGirl_Frame_13
+    originalName: 
+    pivot: {x: 1.3928571, y: -0.62025315}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 976
+      width: 112
+      height: 316
+    spriteID: b421957963be75d4e8f449732c2321da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 976}
+  - name: PrayingGirl_Frame_14
+    originalName: 
+    pivot: {x: 1.3225807, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 988
+      width: 124
+      height: 320
+    spriteID: b983b97cc27bf8e438630ca8163c789a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 988}
+  - name: PrayingGirl_Frame_15
+    originalName: 
+    pivot: {x: 1.2727274, y: -0.60493827}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1000
+      width: 132
+      height: 324
+    spriteID: a5456c033d69afc429495c8b4ccdcc0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1000}
+  - name: PrayingGirl_Frame_16
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 1316
+      width: 124
+      height: 320
+    spriteID: 9e8296dc63b8b614abd396cac2939082
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 1316}
+  - name: PrayingGirl_Frame_17
+    originalName: 
+    pivot: {x: 1.3571428, y: -0.62025315}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 1300
+      width: 112
+      height: 316
+    spriteID: 6cdc3f40354773942b45ab8821b2c3b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 1300}
+  - name: PrayingGirl_Frame_19
+    originalName: 
+    pivot: {x: 1.2121211, y: -0.60493827}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1332
+      width: 132
+      height: 324
+    spriteID: 4b4dc144678c2934782ebf10908d78cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1332}
+  - name: PrayingGirl_Frame_18
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 1644
+      width: 124
+      height: 320
+    spriteID: 6a50aa4fcc1d1814eb9168948840a10d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 1644}
+  - name: PrayingGirl_Frame_20
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 4
+      width: 124
+      height: 320
+    spriteID: 672b60b5388c2af489812ca36303e2de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 4}
+  - name: PrayingGirl_Frame_21
+    originalName: 
+    pivot: {x: 1.3571428, y: -0.62025315}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 1624
+      width: 112
+      height: 316
+    spriteID: 277138eae2e750446883e28ca3cf8239
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 1624}
+  - name: PrayingGirl_Frame_22
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 332
+      width: 124
+      height: 320
+    spriteID: 0d92241db2b7a7f4485e311af2254b49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 332}
+  - name: PrayingGirl_Frame_23
+    originalName: 
+    pivot: {x: 1.2121211, y: -0.60493827}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1664
+      width: 132
+      height: 324
+    spriteID: 2b22a2eff8cf35f409ddbcf94d71a612
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1664}
+  - name: PrayingGirl_Frame_24
+    originalName: 
+    pivot: {x: 1.3225807, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 660
+      width: 124
+      height: 320
+    spriteID: 2f07707d371460f49b2c33a4a2b90253
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 660}
+  - name: PrayingGirl_Frame_25
+    originalName: 
+    pivot: {x: 1.3928571, y: -0.62025315}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 4
+      width: 112
+      height: 316
+    spriteID: 0d1fa9c73d95d35439e1877b74e97a02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 4}
+  - name: PrayingGirl_Frame_27
+    originalName: 
+    pivot: {x: 1.2727274, y: -0.60493827}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 4
+      width: 132
+      height: 324
+    spriteID: 707288c389b33eb45a7bdb56396b7468
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 4}
+  - name: PrayingGirl_Frame_26
+    originalName: 
+    pivot: {x: 1.3225807, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 988
+      width: 124
+      height: 320
+    spriteID: c7efff4a73e0ac8419282a40ff237ec3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 988}
+  - name: PrayingGirl_Frame_28
+    originalName: 
+    pivot: {x: 1.3225807, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 1316
+      width: 124
+      height: 320
+    spriteID: 4539c2ad7dc89624eb78f1b87986661b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 1316}
+  - name: PrayingGirl_Frame_29
+    originalName: 
+    pivot: {x: 1.3928571, y: -0.62025315}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 328
+      width: 112
+      height: 316
+    spriteID: e5571ef3e3816294282e0d1753d61cc2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 328}
+  - name: PrayingGirl_Frame_30
+    originalName: 
+    pivot: {x: 1.3225807, y: -0.6125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 1644
+      width: 124
+      height: 320
+    spriteID: 1896e4fef3683e3408c61fb89416e9fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 1644}
+  - name: PrayingGirl_Frame_31
+    originalName: 
+    pivot: {x: 1.2727274, y: -0.60493827}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 336
+      width: 132
+      height: 324
+    spriteID: 24899183e8ade0e4fb4dccd90ca0e6e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 336}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -259,47 +794,290 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 252
-        y: 200
-        width: 108
-        height: 316
-      spriteId: 2dff60a34d490d842875aa413de64555
-    - name: PrayingGirl_Frame_4
-      frameIndex: 4
-      additiveSortOrder: 0
-      cellRect:
-        x: 252
-        y: 192
-        width: 428
-        height: 396
-      spriteId: 873a160ef4fe94442958c7e30404ce93
+        x: 244
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 4b589880707773e4a90208f2d4098852
     - name: PrayingGirl_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 244
-        y: 200
-        width: 108
+        x: 248
+        y: 196
+        width: 112
         height: 316
-      spriteId: d4a02eb567f1abb429804e398ff1fd99
-    - name: PrayingGirl_Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 256
-        y: 200
-        width: 96
-        height: 316
-      spriteId: 8911b8e8bf6f1dc44b5d243194ec9a50
+      spriteId: dc898ea466fef50498a299e4b3c7c4c4
     - name: PrayingGirl_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 252
-        y: 200
-        width: 96
+        x: 240
+        y: 196
+        width: 132
+        height: 324
+      spriteId: bdc92154ddf91cb41a716b99c650086c
+    - name: PrayingGirl_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 18cfd569e99cb85449063183df29383f
+    - name: PrayingGirl_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 124
+        height: 320
+      spriteId: ff89511972da27e439e5b44e29195391
+    - name: PrayingGirl_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 248
+        y: 196
+        width: 112
         height: 316
-      spriteId: 449441d7050b6134db56ccfeb5a43901
+      spriteId: 65db6563857bae043a655bfacc59a1c3
+    - name: PrayingGirl_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 092bdc84ecca38a47b6fe906bf76c645
+    - name: PrayingGirl_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 240
+        y: 196
+        width: 132
+        height: 324
+      spriteId: b1d4f5b7753169c42b1970fe8f9bbba4
+    - name: PrayingGirl_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 236
+        y: 196
+        width: 124
+        height: 320
+      spriteId: c9238a6db4afe0d4aa8521a504a87e30
+    - name: PrayingGirl_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 112
+        height: 316
+      spriteId: 6595986f5e0a1ea46932396db558875b
+    - name: PrayingGirl_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 232
+        y: 196
+        width: 132
+        height: 324
+      spriteId: 3b0aea7f67009c64d9ec347865f24039
+    - name: PrayingGirl_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 236
+        y: 196
+        width: 124
+        height: 320
+      spriteId: a36e87230d90c694b9238a32dfee8f6f
+    - name: PrayingGirl_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 236
+        y: 196
+        width: 124
+        height: 320
+      spriteId: c3969bba801d6d445b0b663c40b50d9a
+    - name: PrayingGirl_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 112
+        height: 316
+      spriteId: b421957963be75d4e8f449732c2321da
+    - name: PrayingGirl_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 236
+        y: 196
+        width: 124
+        height: 320
+      spriteId: b983b97cc27bf8e438630ca8163c789a
+    - name: PrayingGirl_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 232
+        y: 196
+        width: 132
+        height: 324
+      spriteId: a5456c033d69afc429495c8b4ccdcc0f
+    - name: PrayingGirl_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 9e8296dc63b8b614abd396cac2939082
+    - name: PrayingGirl_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 248
+        y: 196
+        width: 112
+        height: 316
+      spriteId: 6cdc3f40354773942b45ab8821b2c3b7
+    - name: PrayingGirl_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 240
+        y: 196
+        width: 132
+        height: 324
+      spriteId: 4b4dc144678c2934782ebf10908d78cf
+    - name: PrayingGirl_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 6a50aa4fcc1d1814eb9168948840a10d
+    - name: PrayingGirl_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 672b60b5388c2af489812ca36303e2de
+    - name: PrayingGirl_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 248
+        y: 196
+        width: 112
+        height: 316
+      spriteId: 277138eae2e750446883e28ca3cf8239
+    - name: PrayingGirl_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 0d92241db2b7a7f4485e311af2254b49
+    - name: PrayingGirl_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 240
+        y: 196
+        width: 132
+        height: 324
+      spriteId: 2b22a2eff8cf35f409ddbcf94d71a612
+    - name: PrayingGirl_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 236
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 2f07707d371460f49b2c33a4a2b90253
+    - name: PrayingGirl_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 112
+        height: 316
+      spriteId: 0d1fa9c73d95d35439e1877b74e97a02
+    - name: PrayingGirl_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 232
+        y: 196
+        width: 132
+        height: 324
+      spriteId: 707288c389b33eb45a7bdb56396b7468
+    - name: PrayingGirl_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 236
+        y: 196
+        width: 124
+        height: 320
+      spriteId: c7efff4a73e0ac8419282a40ff237ec3
+    - name: PrayingGirl_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 236
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 4539c2ad7dc89624eb78f1b87986661b
+    - name: PrayingGirl_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 244
+        y: 196
+        width: 112
+        height: 316
+      spriteId: e5571ef3e3816294282e0d1753d61cc2
+    - name: PrayingGirl_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 236
+        y: 196
+        width: 124
+        height: 320
+      spriteId: 1896e4fef3683e3408c61fb89416e9fd
+    - name: PrayingGirl_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 232
+        y: 196
+        width: 132
+        height: 324
+      spriteId: 24899183e8ade0e4fb4dccd90ca0e6e2
     linkedCells: []
     parentIndex: -1
   platformSettings:
