@@ -1,4 +1,3 @@
 [wait]SwitchScene("Scene 7" "Kuchai Town 4")
-FollowPlayer("Seiji")
 resumeEvent(BGM_KuchaiTown)
 pauseEvent(BGM_Lien)

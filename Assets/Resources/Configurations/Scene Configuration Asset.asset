@@ -1641,23 +1641,23 @@ MonoBehaviour:
       flipped: 0
       animationState: IdleRight
     - npcName: Soldier1
-      position: {x: -2419.45, y: -193.32}
+      position: {x: -2469.45, y: -165.32}
       orderInLayer: 0
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: IdleRight
     - npcName: Soldier2
-      position: {x: -2255.45, y: -193.32}
+      position: {x: -2283.45, y: -173.32}
       orderInLayer: 0
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: IdleRight
     - npcName: Soldier3
-      position: {x: -1897.45, y: -193.32}
+      position: {x: -1897.45, y: -165.32}
       orderInLayer: 0
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: IdleRight
     interactablesInScene:
     - interactableName: Bridge
       interactableType: 2

@@ -71,6 +71,8 @@ namespace Commands
             if(backgroundData != null)
             {
                 SceneManager.Instance.CreateScene(sceneName, backgroundName, playerPositionInNextBackground: backgroundData.playerPositionInNextBackground, playerDirectionInNextBackground: backgroundData.playerDirectionInNextBackground);
+
+                if (!string.IsNullOrEmpty(backgroundData.followPlayer)) SceneManager.Instance.FollowPlayer(backgroundData.followPlayer, backgroundData.followPlayerPosition);
             }
             else
             {
