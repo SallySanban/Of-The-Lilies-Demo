@@ -7,6 +7,7 @@ public class NPCData
 {
     public string npcName;
     public Vector2 position;
+    public string orderInLayer;
     public bool appear;
     public bool flipped;
     public string animationState;
@@ -17,6 +18,7 @@ public class NPCData
 
         result.npcName = npcName;
         result.position = position;
+        result.orderInLayer = orderInLayer;
         result.appear = appear;
         result.flipped = flipped;
         result.animationState = animationState;

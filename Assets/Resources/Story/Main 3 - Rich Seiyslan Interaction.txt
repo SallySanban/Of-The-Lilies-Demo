@@ -66,6 +66,7 @@ else
 
 		pixel RichSeiyslan as Customer "Understood! Here's my payment. My regards to you and the rest of the staff."
 
+		HideTextbox(false)
 		playSFX(SFX_CoinsJiggle)
 		Wait(0.5)
 

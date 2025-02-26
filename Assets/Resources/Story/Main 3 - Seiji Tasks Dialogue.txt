@@ -21,7 +21,7 @@ HideCharacter(Seiji)
 HideCharacter(Ahlai)
 HideTextbox(false)
 [wait]Blackout()
-[wait]SetNPCPosition(Myo -x -167.22 -y -259.32)
+[wait]SetNPCPosition(Myo -x -167.22 -y -229.32)
 [wait]HideCG()
 
 ShowCharacterLeft(Myo -b Left_Default_Body -e Left_FlirtySmile)
@@ -250,14 +250,16 @@ choice in 1
 		[wait]HideCharacter(Seiji)
 		[wait]HideCG()
 
-		ShowCharacterLeft(Seiji -b Right_Default_Body -e Right_Pout)
-		[wait]ShowCharacterRight(Ahlai -b Left_Default_Body -e Left_Smirk)
+		ShowCharacterRight(Seiji -b Right_Default_Body -e Right_Pout)
+		[wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Smirk)
 
 		Ahlai as <playerName> at 0 "That's a little protective even for <i>you</i>, Seiji."
 
 		ChangeBodyEmotion(Seiji -e Right_Blush)
 
-		Seiji at 1 "I, well! I... I mean, it's a part of the job! Lady Sabina took you in 10 years ago, she told me to protect you for... about the same time. Again, I was just simply doing my job."
+		Seiji at 1 "I, well! I... I mean, it's a part of the job! Lady Sabina took you in 10 years ago, she told me to protect you for... about the same time."
+		
+		Seiji at 1 "Again, I was just simply doing my job."
 }
 
 ChangeBodyEmotion(Ahlai -e Left_Smile)

@@ -22,21 +22,25 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Dad
       position: {x: -184.94, y: -189.66}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: SittingTogether
     - npcName: Mom
       position: {x: -612.94, y: -192.34}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sitting
     - npcName: Laya
       position: {x: 296.32, y: -149.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: PlayingAlone
     - npcName: Dalawi
       position: {x: 752.32, y: -148.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
@@ -51,21 +55,25 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Dad
       position: {x: -151.94, y: -197.66}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sitting
     - npcName: Mom
       position: {x: -612.94, y: -192.34}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sitting
     - npcName: Laya
       position: {x: 296.32, y: -149.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Playing
     - npcName: Dalawi
       position: {x: 752.32, y: -148.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
@@ -175,41 +183,49 @@ MonoBehaviour:
     npcsInScene:
     - npcName: MaleNPC1
       position: {x: -3860.97, y: -173.84}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: LGMaleNPCStandingIdle
     - npcName: MaleNPC2
       position: {x: 4813.24, y: -188.68}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: RMaleNPCStandingIdle
     - npcName: MaleNPC3
       position: {x: -2014.94, y: -192.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC4
       position: {x: 6445.06, y: -190.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC5
       position: {x: 7395.09, y: -199.26}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Swinging
     - npcName: FemNPC1
       position: {x: 1442.06, y: -206.88}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: DBFemNPCStandingIdle
     - npcName: FemNPC2
       position: {x: -924.26, y: -222.38}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: RFemStandingIdle
     - npcName: FemNPC3
       position: {x: 3729.21, y: -171.82}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: PFemNPCStandingIdle
@@ -323,11 +339,13 @@ MonoBehaviour:
     npcsInScene:
     - npcName: FemSittingNPC
       position: {x: -538.68, y: -300.18}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sitting NPC - Fem
     - npcName: MaleSittingNPC
       position: {x: 561.36, y: -408.84}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: SittingIdle
@@ -364,6 +382,7 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Aya
       position: {x: -2786.25, y: -580.6}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Aya bird
@@ -426,36 +445,43 @@ MonoBehaviour:
     npcsInScene:
     - npcName: FemNPC1
       position: {x: 1446.07, y: -199.88}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: DBFemNPCPanic
     - npcName: FemNPC2
       position: {x: -960.22, y: -202.38}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: RFemNPCPanic
     - npcName: MaleNPC1
       position: {x: -4497.97, y: -184.73}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: LGMaleNPCPanic
     - npcName: MaleNPC2
       position: {x: 3131.25, y: -182.68}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: RMaleNPCPanic
     - npcName: FemNPC3
       position: {x: -2605.79, y: -231.82}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: PFemNPCPanic
     - npcName: Dad
       position: {x: 5244.91, y: -279.66}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Combat
     - npcName: Lien
       position: {x: 5786.91, y: -190.47}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Lien10Yrs
@@ -500,6 +526,7 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Ahlai
       position: {x: -528.62, y: -871.12}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: ChainedWalk
@@ -708,51 +735,61 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Sabina
       position: {x: 631.78, y: -218.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: Idle
     - npcName: RookieJournalist
       position: {x: -2131.22, y: -190.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Seiji
       position: {x: 262.78, y: -168.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Sato
       position: {x: -1201.53, y: -227.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: RichSeiyslan
       position: {x: -1482.22, y: -213.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: MotherWithSon
       position: {x: 1607.78, y: -219.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: DesperateGirl
       position: {x: -404.22, y: -298.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: AmazedVisitor
       position: {x: 1070.78, y: -219.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: SonWithMother
       position: {x: 1436.78, y: -303.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Myo
       position: {x: -2678.22, y: -262.05}
+      orderInLayer: 1
       appear: 1
       flipped: 0
       animationState: Idle
@@ -781,7 +818,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rookie Journalist Interaction
-      moveToInteractPosition: {x: -24.07, y: -2.43}
+      moveToInteractPosition: {x: -23.54, y: -2.09}
     - interactableName: Sabina
       interactableType: 0
       isInteractable: 1
@@ -845,52 +882,62 @@ MonoBehaviour:
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Myo
-      position: {x: 3180.04, y: -189.32}
+      position: {x: 3180.04, y: -174.32}
+      orderInLayer: 0
       appear: 1
       flipped: 1
-      animationState: Idle
+      animationState: IdleLeft
     - npcName: GossipGirl1
       position: {x: 2027.04, y: -198.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipRight
     - npcName: GossipGirl2
       position: {x: 2161.04, y: -194.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipLeft
     - npcName: TownCrier
       position: {x: -206.96, y: -165.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: MaleListener
       position: {x: 260.04, y: -201.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: FemaleListener
       position: {x: 437.04, y: -174.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: RichSeiyslan
       position: {x: -2737.96, y: -189.32}
+      orderInLayer: 
       appear: 0
       flipped: 0
       animationState: BlondeRight
     - npcName: RichSeiyslanCrush
       position: {x: -2518.96, y: -192.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: RichSeiyslanFriend
       position: {x: -1441.96, y: -199.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
       position: {x: -3819.96, y: -191.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -988,46 +1035,55 @@ MonoBehaviour:
     npcsInScene:
     - npcName: DesperateGirl
       position: {x: -257.34, y: -278.32}
+      orderInLayer: 
       appear: 0
       flipped: 0
       animationState: IdleRight
     - npcName: Quan
       position: {x: -1330.34, y: -202.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: PrayingGirl
       position: {x: 774.66, y: -269.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: PrayLeft
     - npcName: PrayingGirlFamily
       position: {x: 774.66, y: -269.32}
+      orderInLayer: 
       appear: 0
       flipped: 0
       animationState: FamilyRight
     - npcName: MaleCustomer
       position: {x: -47.34, y: -200.32}
+      orderInLayer: 
       appear: 0
       flipped: 1
       animationState: IdleLeft
     - npcName: Salesperson1
       position: {x: -3983.34, y: -193.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson2
       position: {x: -2485.34, y: -187.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson3
       position: {x: 1915.66, y: -195.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Seiji
       position: {x: 4251.06, y: -189.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
@@ -1094,36 +1150,43 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Sato
       position: {x: -4997.45, y: -202.32}
+      orderInLayer: 
       appear: 0
       flipped: 0
       animationState: IdleRight
     - npcName: Soldier1
       position: {x: -252.45, y: -193.32}
+      orderInLayer: 0
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: Kick
     - npcName: Soldier2
-      position: {x: 166.55, y: -193.32}
+      position: {x: -179.45, y: -193.32}
+      orderInLayer: 0
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: Kick
     - npcName: Soldier3
       position: {x: 1625.55, y: -193.32}
+      orderInLayer: 0
       appear: 1
       flipped: 0
-      animationState: Idle
+      animationState: IdleRight
     - npcName: PoorBoy
       position: {x: -57.45, y: -397.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: CrouchRight
     - npcName: Reader
       position: {x: 3174.05, y: -162.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -3908.45, y: -193.32}
+      position: {x: -3908.45, y: -188.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -1182,21 +1245,25 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Boater
       position: {x: -970.65, y: -180.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: WaterLooker
       position: {x: -70.65, y: -171.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: MotherAndDaughter
       position: {x: 1014.35, y: -182.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
       position: {x: -1747.12, y: -188.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -1255,26 +1322,31 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Seiji
       position: {x: -989.58, y: -197.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: BusyLibrarian
       position: {x: 1849.42, y: -211.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Receptionist
       position: {x: 1222.42, y: -140.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: FatherWithDaughter
       position: {x: -1769.58, y: -216.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: DaughterWithFather
       position: {x: -1930.58, y: -299.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -1365,31 +1437,37 @@ MonoBehaviour:
     npcsInScene:
     - npcName: CoupleSit1
       position: {x: -1760.69, y: -462.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: 
     - npcName: CoupleSit2
       position: {x: -810.69, y: -462.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: 
     - npcName: RetiredVeteran
       position: {x: 1669.31, y: -199.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: GossipSit1
       position: {x: -441.69, y: -461.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: 
     - npcName: GossipSit2
       position: {x: 462.31, y: -462.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: 
     - npcName: BathroomGuy
       position: {x: -1702.95, y: -161.84}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: 
@@ -1446,31 +1524,37 @@ MonoBehaviour:
     npcsInScene:
     - npcName: StudentSit1
       position: {x: -460.05, y: -491.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: 
     - npcName: StudentSit2
       position: {x: 449.95, y: -492.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: 
     - npcName: AspiringWriterSit
       position: {x: -828.05, y: -481.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: 
     - npcName: GossipGirl3
       position: {x: -1697.05, y: -209.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipRight
     - npcName: GossipGirl4
       position: {x: -1557.05, y: -210.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipLeft
     - npcName: Manju
       position: {x: 1665.96, y: -201.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
@@ -1522,46 +1606,55 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Seiji
       position: {x: 4326.55, y: -193.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Laisa
       position: {x: -2082.45, y: -193.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Lien
       position: {x: -1708.92, y: -150.67}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: TownCrier
       position: {x: -1287.45, y: -193.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Reader
       position: {x: -496.45, y: -166.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Sato
       position: {x: -4341.45, y: -202.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Soldier1
       position: {x: -2419.45, y: -193.32}
+      orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Soldier2
       position: {x: -2255.45, y: -193.32}
+      orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Soldier3
       position: {x: -1897.45, y: -193.32}
+      orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: Idle
@@ -1613,16 +1706,19 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Boater
       position: {x: -1089.65, y: -180.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: WaterLooker
       position: {x: -70.65, y: -171.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Seiji
       position: {x: -1747.12, y: -188.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
@@ -1676,26 +1772,31 @@ MonoBehaviour:
     npcsInScene:
     - npcName: GossipGirl1
       position: {x: 2027.04, y: -198.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipRight
     - npcName: GossipGirl2
       position: {x: 2161.04, y: -194.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipLeft
     - npcName: MaleListener
       position: {x: 260.04, y: -201.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: FemaleListener
       position: {x: 437.04, y: -174.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
       position: {x: -3819.96, y: -191.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
@@ -1768,26 +1869,31 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Quan
       position: {x: -1330.34, y: -202.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson1
       position: {x: -3983.34, y: -193.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson2
       position: {x: -2485.34, y: -187.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson3
       position: {x: 1915.66, y: -195.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Seiji
       position: {x: 4251.06, y: -189.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
@@ -1839,41 +1945,49 @@ MonoBehaviour:
     npcsInScene:
     - npcName: StudentSit3
       position: {x: 185.73, y: -489.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: StudentSit4
       position: {x: 1050.73, y: -488.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Barkeep
       position: {x: -298.27, y: -178.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Myo
       position: {x: -894.27, y: -163.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: AdmirerSit1
       position: {x: -1415.27, y: -474.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: AdmirerSit2
       position: {x: -534.27, y: -474.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: SocialClimberSit1
       position: {x: 1161.73, y: -182.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: SocialClimberSit2
       position: {x: 1518.73, y: -173.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: SideSit
@@ -1930,36 +2044,43 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Barkeep
       position: {x: -298.27, y: -178.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Myo
       position: {x: -894.27, y: -163.32}
+      orderInLayer: 3
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: SocialClimberSit2
       position: {x: -665.27, y: -189.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: BackSit
     - npcName: Soldier1
       position: {x: 535.73, y: -188.32}
+      orderInLayer: 1
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Soldier2
       position: {x: 787.73, y: -233.32}
+      orderInLayer: 3
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Soldier3
       position: {x: 50.73, y: -191.32}
+      orderInLayer: 1
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Lien
       position: {x: 922.19, y: -180.47}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
@@ -2021,6 +2142,7 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Seiji
       position: {x: 2315.04, y: -191.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
@@ -2083,11 +2205,13 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Sabina
       position: {x: -164.22, y: -218.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Seiji
       position: {x: -711.22, y: -219.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
@@ -2102,26 +2226,31 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Laisa
       position: {x: -3488.96, y: -221.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Lien
       position: {x: 2491.29, y: -220.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Soldier1
       position: {x: 2740.04, y: -220.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Soldier2
       position: {x: 2943.04, y: -220.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Soldier3
       position: {x: 3146.04, y: -220.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
@@ -2136,11 +2265,13 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Sabina
       position: {x: -164.22, y: -218.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: Seiji
       position: {x: -711.22, y: -219.32}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
@@ -2333,6 +2464,7 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Sabina
       position: {x: -511.46, y: -226.32}
+      orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
@@ -2563,6 +2695,7 @@ MonoBehaviour:
     npcsInScene:
     - npcName: Sabina
       position: {x: 255.57, y: -251.77}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle

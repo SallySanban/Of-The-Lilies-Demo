@@ -1,5 +1,6 @@
 pixel Ahlai as <playerName> "This was once my family's axe, but it's mine now."
 
+HideTextbox(false)
 RemoveFromScene("Axe")
 $AxeReceived = true
 playSFX(SFX_AxePickup)

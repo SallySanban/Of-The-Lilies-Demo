@@ -7,6 +7,7 @@ public class NPC : PixelSprite
 {
     public string name;
     public Vector2 lastPosition = Vector2.zero;
+    public string orderInLayer = "";
     public string lastAnimationState;
     public Vector2 lastInteractablePosition = Vector2.zero;
     public bool appear = true;
@@ -22,17 +23,19 @@ public class NPC : PixelSprite
         name = npcData.npcName;
         root.name = name;
         lastPosition = npcData.position;
+        orderInLayer = npcData.orderInLayer;
         lastAnimationState = npcData.animationState;
         appear = npcData.appear;
         flipped = npcData.flipped;
 
-        SetupNPC(appear, lastPosition, lastAnimationState, flipped);
+
+        SetupNPC(appear, lastPosition, lastAnimationState, flipped, orderInLayer);
 
         //FOR DEBUGGING PURPOSES
         //root.AddComponent<PositionDebugger>();
     }
 
-    public void SetupNPC(bool appear, Vector2 position, string animationState, bool flipped)
+    public void SetupNPC(bool appear, Vector2 position, string animationState, bool flipped, string orderInLayer)
     {
         if(animator != null)
         {
@@ -42,6 +45,11 @@ public class NPC : PixelSprite
             {
                 animator.SetBool("Flipped", flipped);
             }
+        }
+
+        if(int.TryParse(orderInLayer, out int order))
+        {
+            root.GetComponentInChildren<SpriteRenderer>().sortingOrder = order;
         }
 
         SetPosition(root, position);

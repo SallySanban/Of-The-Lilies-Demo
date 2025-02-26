@@ -6,6 +6,7 @@ pixel Ahlai as <playerName> "The intricate carving, the design, it's all beautif
 
 pixel Ahlai as <playerName> "It feels like yesterday when she made it for me..."
 
+HideTextbox(false)
 playSFX("SFX_UI InventoryPickup")
 RemoveFromScene("Rock")
 Wait(0.5)
