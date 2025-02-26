@@ -33,10 +33,10 @@ RectTransform:
   m_Father: {fileID: 7993481141171924303}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.44765764, y: 0.8133305}
-  m_AnchorMax: {x: 0.55464256, y: 0.97232515}
-  m_AnchoredPosition: {x: -0.33044052, y: -0.85124207}
-  m_SizeDelta: {x: -78.66624, y: -89.09233}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 2.3988953}
+  m_SizeDelta: {x: -1.5674477, y: -4.7978}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &4932755415524753837
 SpriteRenderer:
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: ca416f86a952d3d44ab81f96488ccb0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -662,7 +662,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_TargetDisplay: 0
 --- !u!1 &8390286073744267330
 GameObject:
@@ -850,7 +850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 149305c4ba0b53044a2810e30751300f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 149305c4ba0b53044a2810e30751300f, type: 3}
       propertyPath: m_LocalPosition.y

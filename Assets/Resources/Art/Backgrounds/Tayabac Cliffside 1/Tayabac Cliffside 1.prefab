@@ -73,10 +73,10 @@ RectTransform:
   m_Father: {fileID: 8987970772248585440}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.126, y: 0.67533714}
-  m_AnchorMax: {x: 0.87700003, y: 0.94523126}
-  m_AnchoredPosition: {x: -0.64133453, y: -0.64411163}
-  m_SizeDelta: {x: -0.44805336, y: -1.2996557}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200.89735, y: 86.125305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &7091677063327835597
 SpriteRenderer:
@@ -118,7 +118,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 9d135a134a4be8540842cf7e12f6e4a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -117,7 +117,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748146989819594
+  platformSettingsDirtyTick: 638762133529438573
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -143,16 +143,56 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: PoorBoy_Frame_0
     originalName: 
-    pivot: {x: 1.3703704, y: -0.17948718}
+    pivot: {x: 1.2580645, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1316
+      width: 124
+      height: 316
+    spriteID: 17d614758c85b1d44a844e9419685cdc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1316}
+  - name: PoorBoy_Frame_1
+    originalName: 
+    pivot: {x: 1.3571429, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 4
+      width: 112
+      height: 312
+    spriteID: 86cae2e02edeec446aa836957facba91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 4}
+  - name: PoorBoy_Frame_3
+    originalName: 
+    pivot: {x: 1.2121212, y: -0.16250001}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 108
-      height: 312
-    spriteID: 1153094da9f383246bfbe85c4e1d4d5a
+      width: 132
+      height: 320
+    spriteID: 653db6d687696a245b23fa015531a20c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,38 +201,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: PoorBoy_Frame_1
-    originalName: 
-    pivot: {x: 1.4444444, y: -0.17948718}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 120
-      y: 4
-      width: 108
-      height: 312
-    spriteID: d54be1131d1e9ef42bb306cf47e2848b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 120, y: 4}
   - name: PoorBoy_Frame_2
     originalName: 
-    pivot: {x: 1.0571429, y: -0.31111112}
+    pivot: {x: 1.2580645, y: -0.16455697}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 236
-      y: 4
-      width: 140
-      height: 180
-    spriteID: c8d5841782046b9469728fef8fa0a82f
+      x: 4
+      y: 1640
+      width: 124
+      height: 316
+    spriteID: bcb961b9453924f48bb8d1e62c88f083
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,19 +220,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 236, y: 4}
-  - name: PoorBoy_Frame_3
+    uvTransform: {x: 4, y: 1640}
+  - name: PoorBoy_Frame_4
     originalName: 
-    pivot: {x: 1.0571429, y: -0.31111112}
+    pivot: {x: 1.2580645, y: -0.16455697}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 236
-      y: 192
-      width: 140
-      height: 180
-    spriteID: 76ffaf0155390f54e887479d246cdedc
+      x: 144
+      y: 4
+      width: 124
+      height: 316
+    spriteID: 366b482568678ec43bf1810bf9051b4d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,7 +240,547 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 236, y: 192}
+    uvTransform: {x: 144, y: 4}
+  - name: PoorBoy_Frame_5
+    originalName: 
+    pivot: {x: 1.3571429, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 324
+      width: 112
+      height: 312
+    spriteID: 161fa6caaf5a28c4da0372e6490732da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 324}
+  - name: PoorBoy_Frame_6
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 328
+      width: 124
+      height: 316
+    spriteID: 78b4c0e5bb738094285e6948525a5cbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 328}
+  - name: PoorBoy_Frame_7
+    originalName: 
+    pivot: {x: 1.2121212, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 332
+      width: 132
+      height: 320
+    spriteID: c56c3f3f6789a9f4bb516c086157dfb2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 332}
+  - name: PoorBoy_Frame_8
+    originalName: 
+    pivot: {x: 1.2258065, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 652
+      width: 124
+      height: 316
+    spriteID: 0d4f2d7718037cc47a4e9cebbaf1a61a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 652}
+  - name: PoorBoy_Frame_9
+    originalName: 
+    pivot: {x: 1.2857144, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 644
+      width: 112
+      height: 312
+    spriteID: 46d689050f449f841b02bcc0b4c23b8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 644}
+  - name: PoorBoy_Frame_11
+    originalName: 
+    pivot: {x: 1.1818182, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 660
+      width: 132
+      height: 320
+    spriteID: 9bf0cdc03a17a6947960353eb162e36b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 660}
+  - name: PoorBoy_Frame_10
+    originalName: 
+    pivot: {x: 1.2258065, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 976
+      width: 124
+      height: 316
+    spriteID: 474bd52318b922244b6adaff06d01014
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 976}
+  - name: PoorBoy_Frame_12
+    originalName: 
+    pivot: {x: 1.2258065, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 1300
+      width: 124
+      height: 316
+    spriteID: f307c3b108890cb48a3a017bd3ddfc36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 1300}
+  - name: PoorBoy_Frame_13
+    originalName: 
+    pivot: {x: 1.2857144, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 964
+      width: 112
+      height: 312
+    spriteID: 710b5acec7082c843bef557528f61813
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 964}
+  - name: PoorBoy_Frame_14
+    originalName: 
+    pivot: {x: 1.2258065, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 1624
+      width: 124
+      height: 316
+    spriteID: 12823fa09432db74590875e9637a9539
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 1624}
+  - name: PoorBoy_Frame_15
+    originalName: 
+    pivot: {x: 1.1818182, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 988
+      width: 132
+      height: 320
+    spriteID: a6d77d0e5a147fe44b00e1b640ec1c51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 988}
+  - name: PoorBoy_Frame_16
+    originalName: 
+    pivot: {x: 1.027027, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 772
+      width: 148
+      height: 180
+    spriteID: 1316e1ec11d73104290f91a34d58d090
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 772}
+  - name: PoorBoy_Frame_17
+    originalName: 
+    pivot: {x: 1.0277778, y: -1.0227273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 560
+      y: 380
+      width: 144
+      height: 176
+    spriteID: a55e69c13e247c8458bb7bd5e52338b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 560, y: 380}
+  - name: PoorBoy_Frame_19
+    originalName: 
+    pivot: {x: 1, y: -0.9782609}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 4
+      width: 156
+      height: 184
+    spriteID: 97c40d3d6b1b4164a94054f2955c2386
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 4}
+  - name: PoorBoy_Frame_18
+    originalName: 
+    pivot: {x: 1.027027, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 960
+      width: 148
+      height: 180
+    spriteID: ee53ae3736e7a604298b0e5e390e2ada
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 960}
+  - name: PoorBoy_Frame_20
+    originalName: 
+    pivot: {x: 1.027027, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 1148
+      width: 148
+      height: 180
+    spriteID: a56ac06bcc26c4c41be9885364e68720
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 1148}
+  - name: PoorBoy_Frame_21
+    originalName: 
+    pivot: {x: 1.0277778, y: -1.0227273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 560
+      y: 564
+      width: 144
+      height: 176
+    spriteID: ae3abae6c189d7a4fb4bff3f9d78d031
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 560, y: 564}
+  - name: PoorBoy_Frame_22
+    originalName: 
+    pivot: {x: 1.027027, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 1336
+      width: 148
+      height: 180
+    spriteID: 70ff5c517b8af0b42976db23d7abdfa1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 1336}
+  - name: PoorBoy_Frame_23
+    originalName: 
+    pivot: {x: 1, y: -0.9782609}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 196
+      width: 156
+      height: 184
+    spriteID: 3fc92abce1cee0249b572d38a6b9db5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 196}
+  - name: PoorBoy_Frame_24
+    originalName: 
+    pivot: {x: 1.2432432, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 1524
+      width: 148
+      height: 180
+    spriteID: e0b9a6aaaf617c148a5993424893b5e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 1524}
+  - name: PoorBoy_Frame_25
+    originalName: 
+    pivot: {x: 1.2777778, y: -1.0227273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 560
+      y: 748
+      width: 144
+      height: 176
+    spriteID: b2be797f1ba1eb542b57b03e205ab558
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 560, y: 748}
+  - name: PoorBoy_Frame_27
+    originalName: 
+    pivot: {x: 1.2051282, y: -0.9782609}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 388
+      width: 156
+      height: 184
+    spriteID: 47650840315fe644584dec771a6b148f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 388}
+  - name: PoorBoy_Frame_26
+    originalName: 
+    pivot: {x: 1.2432432, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 1712
+      width: 148
+      height: 180
+    spriteID: 58a8dae6beceb0249972ccd532f1e08f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 1712}
+  - name: PoorBoy_Frame_28
+    originalName: 
+    pivot: {x: 1.2432432, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 560
+      y: 4
+      width: 148
+      height: 180
+    spriteID: 93feb5cec596a5d4f9ff83f49c24f04c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 560, y: 4}
+  - name: PoorBoy_Frame_29
+    originalName: 
+    pivot: {x: 1.2777778, y: -1.0227273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 560
+      y: 932
+      width: 144
+      height: 176
+    spriteID: b6c3b0c0c8a83404d85a80c2bca58c4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 560, y: 932}
+  - name: PoorBoy_Frame_30
+    originalName: 
+    pivot: {x: 1.2432432, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 560
+      y: 192
+      width: 148
+      height: 180
+    spriteID: f5a53455eaa5c5d4ba244dd0be72f781
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 560, y: 192}
+  - name: PoorBoy_Frame_31
+    originalName: 
+    pivot: {x: 1.2051282, y: -0.9782609}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 580
+      width: 156
+      height: 184
+    spriteID: 23f93d8a40a641940b3ae042ff8d853b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 580}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -234,38 +794,290 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 108
-        y: 56
-        width: 108
-        height: 312
-      spriteId: 1153094da9f383246bfbe85c4e1d4d5a
+        x: 100
+        y: 52
+        width: 124
+        height: 316
+      spriteId: 17d614758c85b1d44a844e9419685cdc
     - name: PoorBoy_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 100
-        y: 56
-        width: 108
+        x: 104
+        y: 52
+        width: 112
         height: 312
-      spriteId: d54be1131d1e9ef42bb306cf47e2848b
-    - name: PoorBoy_Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 108
-        y: 56
-        width: 140
-        height: 180
-      spriteId: c8d5841782046b9469728fef8fa0a82f
+      spriteId: 86cae2e02edeec446aa836957facba91
     - name: PoorBoy_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 108
-        y: 56
-        width: 140
+        x: 96
+        y: 52
+        width: 132
+        height: 320
+      spriteId: 653db6d687696a245b23fa015531a20c
+    - name: PoorBoy_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 124
+        height: 316
+      spriteId: bcb961b9453924f48bb8d1e62c88f083
+    - name: PoorBoy_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 124
+        height: 316
+      spriteId: 366b482568678ec43bf1810bf9051b4d
+    - name: PoorBoy_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 112
+        height: 312
+      spriteId: 161fa6caaf5a28c4da0372e6490732da
+    - name: PoorBoy_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 124
+        height: 316
+      spriteId: 78b4c0e5bb738094285e6948525a5cbb
+    - name: PoorBoy_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 132
+        height: 320
+      spriteId: c56c3f3f6789a9f4bb516c086157dfb2
+    - name: PoorBoy_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 124
+        height: 316
+      spriteId: 0d4f2d7718037cc47a4e9cebbaf1a61a
+    - name: PoorBoy_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 112
+        y: 52
+        width: 112
+        height: 312
+      spriteId: 46d689050f449f841b02bcc0b4c23b8c
+    - name: PoorBoy_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 132
+        height: 320
+      spriteId: 9bf0cdc03a17a6947960353eb162e36b
+    - name: PoorBoy_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 124
+        height: 316
+      spriteId: 474bd52318b922244b6adaff06d01014
+    - name: PoorBoy_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 124
+        height: 316
+      spriteId: f307c3b108890cb48a3a017bd3ddfc36
+    - name: PoorBoy_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 112
+        y: 52
+        width: 112
+        height: 312
+      spriteId: 710b5acec7082c843bef557528f61813
+    - name: PoorBoy_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 124
+        height: 316
+      spriteId: 12823fa09432db74590875e9637a9539
+    - name: PoorBoy_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 132
+        height: 320
+      spriteId: a6d77d0e5a147fe44b00e1b640ec1c51
+    - name: PoorBoy_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 180
+        width: 148
         height: 180
-      spriteId: 76ffaf0155390f54e887479d246cdedc
+      spriteId: 1316e1ec11d73104290f91a34d58d090
+    - name: PoorBoy_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 108
+        y: 180
+        width: 144
+        height: 176
+      spriteId: a55e69c13e247c8458bb7bd5e52338b7
+    - name: PoorBoy_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 180
+        width: 156
+        height: 184
+      spriteId: 97c40d3d6b1b4164a94054f2955c2386
+    - name: PoorBoy_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 180
+        width: 148
+        height: 180
+      spriteId: ee53ae3736e7a604298b0e5e390e2ada
+    - name: PoorBoy_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 180
+        width: 148
+        height: 180
+      spriteId: a56ac06bcc26c4c41be9885364e68720
+    - name: PoorBoy_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 108
+        y: 180
+        width: 144
+        height: 176
+      spriteId: ae3abae6c189d7a4fb4bff3f9d78d031
+    - name: PoorBoy_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 180
+        width: 148
+        height: 180
+      spriteId: 70ff5c517b8af0b42976db23d7abdfa1
+    - name: PoorBoy_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 180
+        width: 156
+        height: 184
+      spriteId: 3fc92abce1cee0249b572d38a6b9db5f
+    - name: PoorBoy_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 180
+        width: 148
+        height: 180
+      spriteId: e0b9a6aaaf617c148a5993424893b5e0
+    - name: PoorBoy_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 180
+        width: 144
+        height: 176
+      spriteId: b2be797f1ba1eb542b57b03e205ab558
+    - name: PoorBoy_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 180
+        width: 156
+        height: 184
+      spriteId: 47650840315fe644584dec771a6b148f
+    - name: PoorBoy_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 180
+        width: 148
+        height: 180
+      spriteId: 58a8dae6beceb0249972ccd532f1e08f
+    - name: PoorBoy_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 180
+        width: 148
+        height: 180
+      spriteId: 93feb5cec596a5d4f9ff83f49c24f04c
+    - name: PoorBoy_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 180
+        width: 144
+        height: 176
+      spriteId: b6c3b0c0c8a83404d85a80c2bca58c4a
+    - name: PoorBoy_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 180
+        width: 148
+        height: 180
+      spriteId: f5a53455eaa5c5d4ba244dd0be72f781
+    - name: PoorBoy_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 180
+        width: 156
+        height: 184
+      spriteId: 23f93d8a40a641940b3ae042ff8d853b
     linkedCells: []
     parentIndex: -1
   platformSettings:

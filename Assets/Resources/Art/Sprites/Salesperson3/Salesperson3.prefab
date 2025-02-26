@@ -610,7 +610,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_TargetDisplay: 0
 --- !u!1 &7850037694533026596
 GameObject:
@@ -645,10 +645,10 @@ RectTransform:
   m_Father: {fileID: 8634568699720855531}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.45010126, y: 0.8147}
-  m_AnchorMax: {x: 0.5566759, y: 0.9728829}
-  m_AnchoredPosition: {x: -0.2708127, y: -1.3739014}
-  m_SizeDelta: {x: -78.37063, y: -88.68547}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 2.4106445}
+  m_SizeDelta: {x: -1.5674896, y: -4.82131}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &662738768712328960
 SpriteRenderer:
@@ -690,7 +690,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: ca416f86a952d3d44ab81f96488ccb0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

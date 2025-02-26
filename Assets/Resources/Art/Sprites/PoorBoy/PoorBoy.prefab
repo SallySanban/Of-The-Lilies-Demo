@@ -331,10 +331,10 @@ RectTransform:
   m_Father: {fileID: 4804823773909071134}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.4416124, y: 0.8147}
-  m_AnchorMax: {x: 0.5506124, y: 0.9695862}
-  m_AnchoredPosition: {x: 1, y: -0.5}
-  m_SizeDelta: {x: -80.11841, y: -86.93764}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -1.5674438, y: -4.821312}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2862568029609415753
 SpriteRenderer:
@@ -376,7 +376,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: ca416f86a952d3d44ab81f96488ccb0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -713,7 +713,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_TargetDisplay: 0
 --- !u!1 &7494357859898022329
 GameObject:
@@ -788,7 +788,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.2740479, y: -30.01265}
+  m_Offset: {x: 2.2740479, y: -7.287529}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -799,7 +799,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 110.46423, y: 408.52115}
+  m_Size: {x: 110.46423, y: 309.78442}
   m_EdgeRadius: 0
 --- !u!114 &1372963099701355728
 MonoBehaviour:
@@ -850,7 +850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 439014dbbdacc2b4e9c133969db4f06c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 92
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 439014dbbdacc2b4e9c133969db4f06c, type: 3}
       propertyPath: m_LocalPosition.y
