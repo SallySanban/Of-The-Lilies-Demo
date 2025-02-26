@@ -1,5 +1,12 @@
 if (!$BarkeepTalkedTo)
 {
+	[wait]Blackout()
+	ChangeAnimationState("Ahlai" Sit true)
+	ChangeOrder("Ahlai" 1)
+	SetNPCPosition(Ahlai -x -144.83 -y -177.32)
+	FreezePlayer(true)
+	[wait]HideCG()
+
 	pixel Barkeep "Welcome to the Kuchai Tavern."
 
 	pixel Barkeep "How can I help you?"

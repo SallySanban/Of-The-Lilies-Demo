@@ -60,6 +60,7 @@ choice in -1
 
 		Soldier as Seiyslan Soldier "O-oh... Sorry, sir."
 
+		HideTextbox(true)
 		playSFX(SFX_WalkingSitting)
 		Wait(4.0)
 

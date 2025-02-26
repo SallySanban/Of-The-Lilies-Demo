@@ -1,6 +1,6 @@
 if ($GetCloser)
 {
-	[wait]PanCamera(-x -17.3 -spd 2)
+	[wait]PanCamera(-x -19 -spd 2)
 
 	pixel Soldier1 as Seiyslan Soldier "Hey, you! Don't get too close. This woman is dangerous."
 
@@ -51,7 +51,7 @@ if ($GetCloser)
 
 			Laisa as Ilaisaane at 0 "Well, time has a way of shifting in my favor."
 
-			pixel Soldier1 as Seiyslan Soldier "Not this time. Don't even think about trying to get away."
+			pixel Soldier3 as Seiyslan Soldier "Not this time. Don't even think about trying to get away."
 
 			ChangeBodyEmotion(Laisa -e Left_SmirkClosed)
 
@@ -93,6 +93,7 @@ if ($GetCloser)
 	HideCharacter(Laisa)
 	HideCharacter(Ahlai)
 	$LaisaTalkedTo = true
+	ToggleInteractable("Scene 7" "Kuchai Town 3" Laisa false)
 	ResetCamera(true)
 }
 else

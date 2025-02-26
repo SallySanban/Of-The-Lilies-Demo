@@ -21,8 +21,13 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
-      name: SitLeft
+      name: Sit
     second: {fileID: 7400000, guid: 61752ba9abf0ab84fa27530239762723, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: SitLeft
+    second: {fileID: 7400000, guid: 3081e033bc78c8e44914178e0c49c1fd, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -117,7 +122,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638761363241736033
+  platformSettingsDirtyTick: 638762067858346328
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -143,16 +148,16 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Soldier2_Frame_0
     originalName: 
-    pivot: {x: 1.421875, y: -1.2588235}
+    pivot: {x: 1.421875, y: -1.1818181}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1180
-      y: 4
+      x: 4
+      y: 1476
       width: 256
-      height: 340
-    spriteID: 42cfc56c069d6b649a7f439a59e5d398
+      height: 352
+    spriteID: 5f8a980d0e3951844b23c6421a650b97
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,19 +165,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1180, y: 4}
+    uvTransform: {x: 4, y: 1476}
   - name: Soldier2_Frame_1
     originalName: 
-    pivot: {x: 1.421875, y: -1.2588235}
+    pivot: {x: 1.421875, y: -1.1818181}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1180
-      y: 352
+      x: 292
+      y: 4
       width: 256
-      height: 340
-    spriteID: 7389939259e5c114fb841b00a0929f24
+      height: 352
+    spriteID: c0073e4a31aa2904cbb32199cb4f216e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,19 +185,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1180, y: 352}
+    uvTransform: {x: 292, y: 4}
   - name: Soldier2_Frame_2
     originalName: 
-    pivot: {x: 1.7659576, y: -1.2022471}
+    pivot: {x: 1.7659576, y: -1.1304348}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1444
+      x: 1440
       y: 372
       width: 188
-      height: 356
-    spriteID: a907409e68e16354cb4135b725e46d6c
+      height: 368
+    spriteID: bca0f71b00950d84e805a4b05efb1912
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,19 +205,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1444, y: 372}
+    uvTransform: {x: 1440, y: 372}
   - name: Soldier2_Frame_3
     originalName: 
-    pivot: {x: 1.7659576, y: -1.2022471}
+    pivot: {x: 1.7659576, y: -1.1304348}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1444
-      y: 736
+      x: 1440
+      y: 748
       width: 188
-      height: 356
-    spriteID: d2eecd99624d68d4db469105181d02cc
+      height: 368
+    spriteID: 720615b56eb2df54e92399baf2addc23
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,10 +225,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1444, y: 736}
+    uvTransform: {x: 1440, y: 748}
   - name: Soldier2_Frame_4
     originalName: 
-    pivot: {x: 1.5285714, y: -1.2588235}
+    pivot: {x: 1.5285714, y: -1.1818181}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -231,8 +236,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 280
-      height: 340
-    spriteID: 9312881fd9a8fdc40a35838c927b24d4
+      height: 352
+    spriteID: e955952faaffb164fa71c48ea514ed23
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -243,16 +248,16 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Soldier2_Frame_5
     originalName: 
-    pivot: {x: 1.5285714, y: -1.2588235}
+    pivot: {x: 1.5285714, y: -1.1818181}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 352
+      y: 364
       width: 280
-      height: 340
-    spriteID: b09662b3facaa8544a9917f0382e6fe6
+      height: 352
+    spriteID: e4d30e1976b7f4044a34fdf14346762e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -260,7 +265,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 352}
+    uvTransform: {x: 4, y: 364}
   - name: Soldier2_Frame_14
     originalName: 
     pivot: {x: 1.5490196, y: -0.7943925}
@@ -268,11 +273,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 508
+      x: 772
       y: 1492
       width: 204
       height: 428
-    spriteID: 999d323bd671ce94781648b5f379c8ce
+    spriteID: 3e494c27509e6c24f95180736069477c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,7 +285,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 508, y: 1492}
+    uvTransform: {x: 772, y: 1492}
   - name: Soldier2_Frame_15
     originalName: 
     pivot: {x: 1.5600001, y: -0.8018868}
@@ -288,11 +293,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 968
-      y: 876
+      x: 1232
+      y: 4
       width: 200
       height: 424
-    spriteID: b944c74ae0da51e42a0df27494db5da8
+    spriteID: ef48fe441ff82ff4db0d431a4238e807
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -300,7 +305,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 968, y: 876}
+    uvTransform: {x: 1232, y: 4}
   - name: Soldier2_Frame_17
     originalName: 
     pivot: {x: 1.5192307, y: -0.787037}
@@ -308,11 +313,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1452
+      x: 292
+      y: 364
       width: 208
       height: 432
-    spriteID: 9af1d83f6db45a243a50ddcc5dbc062f
+    spriteID: ffe52063360efa14c8c701914acd53ea
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -320,7 +325,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1452}
+    uvTransform: {x: 292, y: 364}
   - name: Soldier2_Frame_16
     originalName: 
     pivot: {x: 1.5490196, y: -0.7943925}
@@ -328,11 +333,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 292
-      y: 1324
+      x: 556
+      y: 444
       width: 204
       height: 428
-    spriteID: ba9e818ddad0d074ea3614b2917bb631
+    spriteID: 5071fc5d47e220a419608a727cc5c414
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -340,7 +345,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 292, y: 1324}
+    uvTransform: {x: 556, y: 444}
   - name: Soldier2_Frame_18
     originalName: 
     pivot: {x: 1.5490196, y: -0.7943925}
@@ -348,11 +353,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 756
-      y: 4
+      x: 556
+      y: 880
       width: 204
       height: 428
-    spriteID: 6f8c98176c5bc5240873e4ec1ce99bfa
+    spriteID: f5279607d4ca6814096f51de660c2672
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -360,7 +365,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 756, y: 4}
+    uvTransform: {x: 556, y: 880}
   - name: Soldier2_Frame_19
     originalName: 
     pivot: {x: 1.5600001, y: -0.8018868}
@@ -368,11 +373,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 968
-      y: 1308
+      x: 1232
+      y: 436
       width: 200
       height: 424
-    spriteID: 420d36d10a7d9064484dec9a14a2a82e
+    spriteID: 4c1e648a6d2013d4285b4808020201a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -380,7 +385,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 968, y: 1308}
+    uvTransform: {x: 1232, y: 436}
   - name: Soldier2_Frame_20
     originalName: 
     pivot: {x: 1.5490196, y: -0.7943925}
@@ -388,11 +393,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 756
-      y: 440
+      x: 556
+      y: 1316
       width: 204
       height: 428
-    spriteID: f26809c7a9395ca4cac34415c1bdfdd5
+    spriteID: cbe6d16c410070941b1e65b226df9474
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -400,7 +405,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 756, y: 440}
+    uvTransform: {x: 556, y: 1316}
   - name: Soldier2_Frame_21
     originalName: 
     pivot: {x: 1.5192307, y: -0.787037}
@@ -409,10 +414,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 292
-      y: 4
+      y: 804
       width: 208
       height: 432
-    spriteID: d550caa14c25db549a7183df14dec454
+    spriteID: 104fced199ac69748addee38f7c70626
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -420,7 +425,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 292, y: 4}
+    uvTransform: {x: 292, y: 804}
   - name: Soldier2_Frame_6
     originalName: 
     pivot: {x: 1.4901961, y: -0.7943925}
@@ -428,11 +433,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 756
-      y: 876
+      x: 1020
+      y: 4
       width: 204
       height: 428
-    spriteID: e87adabdeaba85343974e74a6abfc21d
+    spriteID: 654885706c640f044acb09d3cc785533
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -440,7 +445,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 756, y: 876}
+    uvTransform: {x: 1020, y: 4}
   - name: Soldier2_Frame_7
     originalName: 
     pivot: {x: 1.5200001, y: -0.8018868}
@@ -448,11 +453,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1180
-      y: 700
+      x: 1232
+      y: 868
       width: 200
       height: 424
-    spriteID: d9633992a778a2d4ab82fd4f47b51cd1
+    spriteID: 9130c886bbc9b4343ae37d799066ed44
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -460,7 +465,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1180, y: 700}
+    uvTransform: {x: 1232, y: 868}
   - name: Soldier2_Frame_9
     originalName: 
     pivot: {x: 1.4807692, y: -0.787037}
@@ -469,10 +474,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 292
-      y: 444
+      y: 1244
       width: 208
       height: 432
-    spriteID: 082001824f8482549a1cd535d829e1e2
+    spriteID: a8dda063bc1e8914c962e7fb9f284bb3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -480,7 +485,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 292, y: 444}
+    uvTransform: {x: 292, y: 1244}
   - name: Soldier2_Frame_8
     originalName: 
     pivot: {x: 1.4901961, y: -0.7943925}
@@ -488,11 +493,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 756
-      y: 1312
+      x: 1020
+      y: 440
       width: 204
       height: 428
-    spriteID: 813a05174810d4f4bb58e6a05abdee98
+    spriteID: eba846498ed718345802dad3fe19ae1e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -500,7 +505,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 756, y: 1312}
+    uvTransform: {x: 1020, y: 440}
   - name: Soldier2_Frame_10
     originalName: 
     pivot: {x: 1.4901961, y: -0.7943925}
@@ -508,11 +513,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 968
-      y: 4
+      x: 1020
+      y: 876
       width: 204
       height: 428
-    spriteID: 2c88dcba93f1c5a44bff2a50b13d3815
+    spriteID: 36aa02089eed58e4c9fa2e018488a099
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -520,7 +525,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 968, y: 4}
+    uvTransform: {x: 1020, y: 876}
   - name: Soldier2_Frame_11
     originalName: 
     pivot: {x: 1.5200001, y: -0.8018868}
@@ -528,11 +533,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1180
-      y: 1132
+      x: 1232
+      y: 1300
       width: 200
       height: 424
-    spriteID: 3e1f13829652e8e458648d28e5b1dd81
+    spriteID: 99ff97092804e0246b05b66765c18ab0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -540,7 +545,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1180, y: 1132}
+    uvTransform: {x: 1232, y: 1300}
   - name: Soldier2_Frame_12
     originalName: 
     pivot: {x: 1.4901961, y: -0.7943925}
@@ -548,11 +553,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 968
-      y: 440
+      x: 1020
+      y: 1312
       width: 204
       height: 428
-    spriteID: caa8b6e94b9c40541aa36bbd3325e92f
+    spriteID: aaab2d1caceded14aaf6e8a25e4dd460
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -560,7 +565,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 968, y: 440}
+    uvTransform: {x: 1020, y: 1312}
   - name: Soldier2_Frame_13
     originalName: 
     pivot: {x: 1.4807692, y: -0.787037}
@@ -568,11 +573,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 292
-      y: 884
+      x: 556
+      y: 4
       width: 208
       height: 432
-    spriteID: b7bc4883884647e46879d7f6492bf2c3
+    spriteID: 38a65b509cdb3a244b5e43dd34e545c6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -580,7 +585,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 292, y: 884}
+    uvTransform: {x: 556, y: 4}
   - name: Soldier2_Frame_22
     originalName: 
     pivot: {x: 1.5166667, y: -1.0879121}
@@ -588,11 +593,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 508
+      x: 772
       y: 4
       width: 240
       height: 364
-    spriteID: a25a355c99ef1a1418821b13fc51ac2e
+    spriteID: 2c1f83e102c89bf48a2614e96c382d49
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -600,7 +605,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 508, y: 4}
+    uvTransform: {x: 772, y: 4}
   - name: Soldier2_Frame_23
     originalName: 
     pivot: {x: 1.5344827, y: -1.1}
@@ -608,11 +613,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1180
-      y: 1564
+      x: 292
+      y: 1684
       width: 232
       height: 360
-    spriteID: bed76c6b1a0d0fb40b5dea7cb2d5f715
+    spriteID: 213867ece69032c4aaeed2de19c00500
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -620,7 +625,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1180, y: 1564}
+    uvTransform: {x: 292, y: 1684}
   - name: Soldier2_Frame_25
     originalName: 
     pivot: {x: 1.4999999, y: -1.076087}
@@ -629,10 +634,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 700
+      y: 724
       width: 248
       height: 368
-    spriteID: f299456346e698044b50e2399751eb3d
+    spriteID: fe9b9bac094154c448393c27909f5924
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -640,7 +645,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 700}
+    uvTransform: {x: 4, y: 724}
   - name: Soldier2_Frame_24
     originalName: 
     pivot: {x: 1.5166667, y: -1.0879121}
@@ -648,11 +653,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 508
+      x: 772
       y: 376
       width: 240
       height: 364
-    spriteID: 31c12f53d95295649ad88e549d30929a
+    spriteID: 4cf62c5370231954eb4a741526056ad5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -660,7 +665,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 508, y: 376}
+    uvTransform: {x: 772, y: 376}
   - name: Soldier2_Frame_26
     originalName: 
     pivot: {x: 1.5166667, y: -1.0879121}
@@ -668,11 +673,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 508
+      x: 772
       y: 748
       width: 240
       height: 364
-    spriteID: 9480bc4c721c1664890bdb42d9542aed
+    spriteID: 502fb2ed0304c744c89e17429d379ac4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -680,7 +685,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 508, y: 748}
+    uvTransform: {x: 772, y: 748}
   - name: Soldier2_Frame_27
     originalName: 
     pivot: {x: 1.5344827, y: -1.1}
@@ -688,11 +693,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1444
+      x: 1440
       y: 4
       width: 232
       height: 360
-    spriteID: 89e3578b532bf7d49b72451ffed5193f
+    spriteID: 7dfb852919cec23408357e10c9edbcc9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -700,7 +705,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1444, y: 4}
+    uvTransform: {x: 1440, y: 4}
   - name: Soldier2_Frame_28
     originalName: 
     pivot: {x: 1.5166667, y: -1.0879121}
@@ -708,11 +713,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 508
+      x: 772
       y: 1120
       width: 240
       height: 364
-    spriteID: b344a5cf995c53c4ea2011125d47700e
+    spriteID: d3051b29a93f4604894b05afeab339b2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -720,7 +725,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 508, y: 1120}
+    uvTransform: {x: 772, y: 1120}
   - name: Soldier2_Frame_29
     originalName: 
     pivot: {x: 1.4999999, y: -1.076087}
@@ -729,10 +734,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1076
+      y: 1100
       width: 248
       height: 368
-    spriteID: a964a1b9de36dba4ebe88e4c54e80d6a
+    spriteID: c73318ee538c67149aa769aefee4f70f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -740,7 +745,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1076}
+    uvTransform: {x: 4, y: 1100}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -755,55 +760,55 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 596
-        y: 428
+        y: 416
         width: 256
-        height: 340
-      spriteId: 42cfc56c069d6b649a7f439a59e5d398
+        height: 352
+      spriteId: 5f8a980d0e3951844b23c6421a650b97
     - name: Soldier2_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
         x: 596
-        y: 428
+        y: 416
         width: 256
-        height: 340
-      spriteId: 7389939259e5c114fb841b00a0929f24
+        height: 352
+      spriteId: c0073e4a31aa2904cbb32199cb4f216e
     - name: Soldier2_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
         x: 628
-        y: 428
+        y: 416
         width: 188
-        height: 356
-      spriteId: a907409e68e16354cb4135b725e46d6c
+        height: 368
+      spriteId: bca0f71b00950d84e805a4b05efb1912
     - name: Soldier2_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
         x: 628
-        y: 428
+        y: 416
         width: 188
-        height: 356
-      spriteId: d2eecd99624d68d4db469105181d02cc
+        height: 368
+      spriteId: 720615b56eb2df54e92399baf2addc23
     - name: Soldier2_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
         x: 532
-        y: 428
+        y: 416
         width: 280
-        height: 340
-      spriteId: 9312881fd9a8fdc40a35838c927b24d4
+        height: 352
+      spriteId: e955952faaffb164fa71c48ea514ed23
     - name: Soldier2_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
         x: 532
-        y: 428
+        y: 416
         width: 280
-        height: 340
-      spriteId: b09662b3facaa8544a9917f0382e6fe6
+        height: 352
+      spriteId: e4d30e1976b7f4044a34fdf14346762e
     - name: Soldier2_Frame_14
       frameIndex: 14
       additiveSortOrder: 0
@@ -812,7 +817,7 @@ ScriptedImporter:
         y: 340
         width: 204
         height: 428
-      spriteId: 999d323bd671ce94781648b5f379c8ce
+      spriteId: 3e494c27509e6c24f95180736069477c
     - name: Soldier2_Frame_15
       frameIndex: 15
       additiveSortOrder: 0
@@ -821,7 +826,7 @@ ScriptedImporter:
         y: 340
         width: 200
         height: 424
-      spriteId: b944c74ae0da51e42a0df27494db5da8
+      spriteId: ef48fe441ff82ff4db0d431a4238e807
     - name: Soldier2_Frame_17
       frameIndex: 17
       additiveSortOrder: 0
@@ -830,7 +835,7 @@ ScriptedImporter:
         y: 340
         width: 208
         height: 432
-      spriteId: 9af1d83f6db45a243a50ddcc5dbc062f
+      spriteId: ffe52063360efa14c8c701914acd53ea
     - name: Soldier2_Frame_16
       frameIndex: 16
       additiveSortOrder: 0
@@ -839,7 +844,7 @@ ScriptedImporter:
         y: 340
         width: 204
         height: 428
-      spriteId: ba9e818ddad0d074ea3614b2917bb631
+      spriteId: 5071fc5d47e220a419608a727cc5c414
     - name: Soldier2_Frame_18
       frameIndex: 18
       additiveSortOrder: 0
@@ -848,7 +853,7 @@ ScriptedImporter:
         y: 340
         width: 204
         height: 428
-      spriteId: 6f8c98176c5bc5240873e4ec1ce99bfa
+      spriteId: f5279607d4ca6814096f51de660c2672
     - name: Soldier2_Frame_19
       frameIndex: 19
       additiveSortOrder: 0
@@ -857,7 +862,7 @@ ScriptedImporter:
         y: 340
         width: 200
         height: 424
-      spriteId: 420d36d10a7d9064484dec9a14a2a82e
+      spriteId: 4c1e648a6d2013d4285b4808020201a4
     - name: Soldier2_Frame_20
       frameIndex: 20
       additiveSortOrder: 0
@@ -866,7 +871,7 @@ ScriptedImporter:
         y: 340
         width: 204
         height: 428
-      spriteId: f26809c7a9395ca4cac34415c1bdfdd5
+      spriteId: cbe6d16c410070941b1e65b226df9474
     - name: Soldier2_Frame_21
       frameIndex: 21
       additiveSortOrder: 0
@@ -875,7 +880,7 @@ ScriptedImporter:
         y: 340
         width: 208
         height: 432
-      spriteId: d550caa14c25db549a7183df14dec454
+      spriteId: 104fced199ac69748addee38f7c70626
     - name: Soldier2_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -884,7 +889,7 @@ ScriptedImporter:
         y: 340
         width: 204
         height: 428
-      spriteId: e87adabdeaba85343974e74a6abfc21d
+      spriteId: 654885706c640f044acb09d3cc785533
     - name: Soldier2_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
@@ -893,7 +898,7 @@ ScriptedImporter:
         y: 340
         width: 200
         height: 424
-      spriteId: d9633992a778a2d4ab82fd4f47b51cd1
+      spriteId: 9130c886bbc9b4343ae37d799066ed44
     - name: Soldier2_Frame_9
       frameIndex: 9
       additiveSortOrder: 0
@@ -902,7 +907,7 @@ ScriptedImporter:
         y: 340
         width: 208
         height: 432
-      spriteId: 082001824f8482549a1cd535d829e1e2
+      spriteId: a8dda063bc1e8914c962e7fb9f284bb3
     - name: Soldier2_Frame_8
       frameIndex: 8
       additiveSortOrder: 0
@@ -911,7 +916,7 @@ ScriptedImporter:
         y: 340
         width: 204
         height: 428
-      spriteId: 813a05174810d4f4bb58e6a05abdee98
+      spriteId: eba846498ed718345802dad3fe19ae1e
     - name: Soldier2_Frame_10
       frameIndex: 10
       additiveSortOrder: 0
@@ -920,7 +925,7 @@ ScriptedImporter:
         y: 340
         width: 204
         height: 428
-      spriteId: 2c88dcba93f1c5a44bff2a50b13d3815
+      spriteId: 36aa02089eed58e4c9fa2e018488a099
     - name: Soldier2_Frame_11
       frameIndex: 11
       additiveSortOrder: 0
@@ -929,7 +934,7 @@ ScriptedImporter:
         y: 340
         width: 200
         height: 424
-      spriteId: 3e1f13829652e8e458648d28e5b1dd81
+      spriteId: 99ff97092804e0246b05b66765c18ab0
     - name: Soldier2_Frame_12
       frameIndex: 12
       additiveSortOrder: 0
@@ -938,7 +943,7 @@ ScriptedImporter:
         y: 340
         width: 204
         height: 428
-      spriteId: caa8b6e94b9c40541aa36bbd3325e92f
+      spriteId: aaab2d1caceded14aaf6e8a25e4dd460
     - name: Soldier2_Frame_13
       frameIndex: 13
       additiveSortOrder: 0
@@ -947,7 +952,7 @@ ScriptedImporter:
         y: 340
         width: 208
         height: 432
-      spriteId: b7bc4883884647e46879d7f6492bf2c3
+      spriteId: 38a65b509cdb3a244b5e43dd34e545c6
     - name: Soldier2_Frame_22
       frameIndex: 22
       additiveSortOrder: 0
@@ -956,7 +961,7 @@ ScriptedImporter:
         y: 396
         width: 240
         height: 364
-      spriteId: a25a355c99ef1a1418821b13fc51ac2e
+      spriteId: 2c1f83e102c89bf48a2614e96c382d49
     - name: Soldier2_Frame_23
       frameIndex: 23
       additiveSortOrder: 0
@@ -965,7 +970,7 @@ ScriptedImporter:
         y: 396
         width: 232
         height: 360
-      spriteId: bed76c6b1a0d0fb40b5dea7cb2d5f715
+      spriteId: 213867ece69032c4aaeed2de19c00500
     - name: Soldier2_Frame_25
       frameIndex: 25
       additiveSortOrder: 0
@@ -974,7 +979,7 @@ ScriptedImporter:
         y: 396
         width: 248
         height: 368
-      spriteId: f299456346e698044b50e2399751eb3d
+      spriteId: fe9b9bac094154c448393c27909f5924
     - name: Soldier2_Frame_24
       frameIndex: 24
       additiveSortOrder: 0
@@ -983,7 +988,7 @@ ScriptedImporter:
         y: 396
         width: 240
         height: 364
-      spriteId: 31c12f53d95295649ad88e549d30929a
+      spriteId: 4cf62c5370231954eb4a741526056ad5
     - name: Soldier2_Frame_26
       frameIndex: 26
       additiveSortOrder: 0
@@ -992,7 +997,7 @@ ScriptedImporter:
         y: 396
         width: 240
         height: 364
-      spriteId: 9480bc4c721c1664890bdb42d9542aed
+      spriteId: 502fb2ed0304c744c89e17429d379ac4
     - name: Soldier2_Frame_27
       frameIndex: 27
       additiveSortOrder: 0
@@ -1001,7 +1006,7 @@ ScriptedImporter:
         y: 396
         width: 232
         height: 360
-      spriteId: 89e3578b532bf7d49b72451ffed5193f
+      spriteId: 7dfb852919cec23408357e10c9edbcc9
     - name: Soldier2_Frame_28
       frameIndex: 28
       additiveSortOrder: 0
@@ -1010,7 +1015,7 @@ ScriptedImporter:
         y: 396
         width: 240
         height: 364
-      spriteId: b344a5cf995c53c4ea2011125d47700e
+      spriteId: d3051b29a93f4604894b05afeab339b2
     - name: Soldier2_Frame_29
       frameIndex: 29
       additiveSortOrder: 0
@@ -1019,7 +1024,7 @@ ScriptedImporter:
         y: 396
         width: 248
         height: 368
-      spriteId: a964a1b9de36dba4ebe88e4c54e80d6a
+      spriteId: c73318ee538c67149aa769aefee4f70f
     linkedCells: []
     parentIndex: -1
   platformSettings:

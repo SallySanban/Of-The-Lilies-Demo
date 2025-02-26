@@ -20,6 +20,7 @@ namespace Commands
             database.AddCommand("ToggleInteractable", new Action<string[]>(ToggleInteractable));
             database.AddCommand("ToggleNPC", new Action<string[]>(ToggleNPC));
             database.AddCommand("ChangeAnimationState", new Action<string[]>(ChangeAnimationState));
+            database.AddCommand("ChangeOrder", new Action<string[]>(ChangeOrderInLayer));
             database.AddCommand("RemoveFromScene", new Action<string[]>(RemoveFromScene));
             database.AddCommand("MoveNPC", new Func<string[], IEnumerator>(MoveNPC));
             database.AddCommand("MovePlayerToInteract", new Func<string[], IEnumerator>(MovePlayerToInteract));
@@ -31,6 +32,7 @@ namespace Commands
             database.AddCommand("SetCameraFollow", new Action<string>(SetCameraFollow));
             database.AddCommand("FlipNPC", new Action<string[]>(FlipNPC));
             database.AddCommand("FollowPlayer", new Action<string>(FollowPlayer));
+            database.AddCommand("FreezePlayer", new Action<string>(FreezePlayer));
         }
 
         private static void ShowScene(string[] data)
@@ -122,6 +124,27 @@ namespace Commands
             }
         }
 
+        private static void ChangeOrderInLayer(string[] data)
+        {
+            string name = data[0];
+
+            if (int.TryParse(data[1], out int order))
+            {
+                if (name.Equals(SceneManager.Instance.MC_NAME))
+                {
+                    GameObject root = SceneManager.Instance.player.root;
+
+                    root.GetComponentInChildren<SpriteRenderer>().sortingOrder = order;
+                }
+                else
+                {
+                    NPC npc = NPCManager.Instance.GetNPC(name);
+
+                    npc.root.GetComponentInChildren<SpriteRenderer>().sortingOrder = order;
+                }
+            }
+        }
+
         private static void ChangeAnimationState(string[] data)
         {
             string name = data[0];
@@ -129,17 +152,26 @@ namespace Commands
 
             if (bool.TryParse(data[2], out bool state))
             {
-                Interactable interactable = InteractableManager.Instance.GetInteractable(name);
-
-                if (interactable == null)
+                if (name.Equals(SceneManager.Instance.MC_NAME))
                 {
-                    NPC npc = NPCManager.Instance.GetNPC(name);
+                    GameObject root = SceneManager.Instance.player.root;
 
-                    npc.root.GetComponentInChildren<Animator>().SetBool(parameter, state);
+                    root.GetComponentInChildren<Animator>().SetBool(parameter, state);
                 }
                 else
                 {
-                    interactable.GetComponentInChildren<Animator>().SetBool(parameter, state);
+                    Interactable interactable = InteractableManager.Instance.GetInteractable(name);
+
+                    if (interactable == null)
+                    {
+                        NPC npc = NPCManager.Instance.GetNPC(name);
+
+                        npc.root.GetComponentInChildren<Animator>().SetBool(parameter, state);
+                    }
+                    else
+                    {
+                        interactable.GetComponentInChildren<Animator>().SetBool(parameter, state);
+                    }
                 }
             }
         }
@@ -317,6 +349,24 @@ namespace Commands
                 NPC npc = NPCManager.Instance.GetNPC(data[0]);
 
                 npc.Flip(direction);
+            }
+        }
+
+        private static void FreezePlayer(string data)
+        {
+            if (bool.TryParse(data, out bool freeze))
+            {
+                PixelSprite player = SceneManager.Instance.player;
+
+                if (freeze)
+                {
+                    player.root.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+                }
+                else
+                {
+                    player.root.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                }
+                
             }
         }
     }
