@@ -59,7 +59,7 @@ choice in 0
 
 		TayabacAhlai as <playerName> at 0 "You don't want to hurt us? How dare you? <b>You already have.</b>"
 
-		TayabacAhlai as <playerName> at 0 "You don't have the right to tell us to stand down"
+		TayabacAhlai as <playerName> at 0 "You don't have the right to tell us to stand down."
 
 		HideTextbox(true)
 		[wait]Blackout()
@@ -135,6 +135,7 @@ TayabacAhlai as <playerName> "<i>I never got to play with Alonay after all...</i
 
 ??? "Sir Lien!"
 
+HideTextbox(true)
 playSFX(SFX_LienFall)
 Wait(0.5)
 
@@ -175,7 +176,9 @@ Wait(3)
 Wait(3)
 [wait]SwitchCredits("<b>Pixel Backgrounds</b><br>Dyethrow Pixel")
 Wait(3)
-[wait]SwitchCredits("<b>Pixel Sprites</b><br>Chen Cada<br>Edgar Joseph Vallejo<br>Alessandra Delos Santos")
+[wait]SwitchCredits("<b>Pixel Sprites</b><br>Chen Cada<br>Edgar Joseph Vallejo<br>Gwyneth Balucio")
+Wait(3)
+[wait]SwitchCredits("OnlyPixels<br>Alessandra Delos Santos")
 Wait(3)
 [wait]SwitchCredits("<b>User Interface</b><br>Althea Ong")
 Wait(3)
@@ -282,6 +285,7 @@ TayabacAhlai as <playerName> "<i>There are people talking outside... Is it not o
 
 ??? "Then how about I offer you more?"
 
+HideTextbox(true)
 playSFX(SFX_CoinsJiggle)
 Wait(0.5)
 

@@ -12,6 +12,7 @@ playSFX(SFX_KuchaiWalkout)
 Wait(0.5)
 RemoveFromScene("RichSeiyslanCrush")
 ChangeAnimationState("RichSeiyslan" Cry true)
+SetNPCPosition("RichSeiyslan" -x -2737.96 -y -202.32)
 SetNPCPosition("RichSeiyslanFriend" -x -2518.96 -y -199.32)
 [wait]HideCG()
 

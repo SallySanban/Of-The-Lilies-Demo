@@ -198,7 +198,7 @@ choice in 1
 		RemoveFromScene("Myo")
 		FlipNPC("Ahlai" "Right")
 		HideCharacter(Myo)
-		[wait]HideCharacter(Ahlai)
+		HideCharacter(Ahlai)
 		[wait]HideCG()
 
 		ShowCharacterRight(Seiji -b Right_Default_Body -e Right_Pout)
@@ -247,7 +247,7 @@ choice in 1
 		RemoveFromScene("Myo")
 		FlipNPC("Ahlai" "Right")
 		HideCharacter(Myo)
-		[wait]HideCharacter(Seiji)
+		HideCharacter(Seiji)
 		[wait]HideCG()
 
 		ShowCharacterRight(Seiji -b Right_Default_Body -e Right_Pout)

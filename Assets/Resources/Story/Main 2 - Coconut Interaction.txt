@@ -1,4 +1,6 @@
 pixel Ahlai as <playerName> "This will do for the ritual."
+
+HideTextbox(false)
 playSFX("SFX_UI InventoryPickup")
 Wait(0.5)
 

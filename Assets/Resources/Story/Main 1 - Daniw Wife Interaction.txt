@@ -11,6 +11,8 @@ choice in -1
 		pixel FemNPC3 as Auntie "I keep telling him not to leave it out by the lake overnight."
 
 		pixel FemNPC3 as Auntie "I do have some. Here you go."
+
+		HideTextbox(false)
 		playSFX("SFX_UI InventoryPickup")
 		Wait(0.5)
 

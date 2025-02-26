@@ -33,13 +33,13 @@ MonoBehaviour:
       flipped: 0
       animationState: Sitting
     - npcName: Laya
-      position: {x: 296.32, y: -149.32}
+      position: {x: 290.32, y: -358.32}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: PlayingAlone
     - npcName: Dalawi
-      position: {x: 752.32, y: -148.32}
+      position: {x: 697.32, y: -244.32}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -66,13 +66,13 @@ MonoBehaviour:
       flipped: 0
       animationState: Sitting
     - npcName: Laya
-      position: {x: 296.32, y: -149.32}
+      position: {x: 290.32, y: -358.32}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Playing
     - npcName: Dalawi
-      position: {x: 752.32, y: -148.32}
+      position: {x: 697.32, y: -244.32}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -186,13 +186,13 @@ MonoBehaviour:
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: LGMaleNPCStandingIdle
+      animationState: Idle
     - npcName: MaleNPC2
       position: {x: 4813.24, y: -188.68}
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: RMaleNPCStandingIdle
+      animationState: Idle
     - npcName: MaleNPC3
       position: {x: -2014.94, y: -192.32}
       orderInLayer: 
@@ -216,19 +216,19 @@ MonoBehaviour:
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: DBFemNPCStandingIdle
+      animationState: Idle
     - npcName: FemNPC2
       position: {x: -924.26, y: -222.38}
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: RFemStandingIdle
+      animationState: Idle
     - npcName: FemNPC3
       position: {x: 3729.21, y: -171.82}
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: PFemNPCStandingIdle
+      animationState: Idle
     interactablesInScene:
     - interactableName: Fishing Equipment
       interactableType: 1
@@ -342,13 +342,13 @@ MonoBehaviour:
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: Sitting NPC - Fem
+      animationState: Sit
     - npcName: MaleSittingNPC
       position: {x: 561.36, y: -408.84}
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: SittingIdle
+      animationState: Sit
     interactablesInScene:
     - interactableName: FemSittingNPC
       interactableType: 0
@@ -448,31 +448,31 @@ MonoBehaviour:
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: DBFemNPCPanic
+      animationState: Panic
     - npcName: FemNPC2
       position: {x: -960.22, y: -202.38}
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: RFemNPCPanic
+      animationState: Panic
     - npcName: MaleNPC1
       position: {x: -4497.97, y: -184.73}
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: LGMaleNPCPanic
+      animationState: Panic
     - npcName: MaleNPC2
       position: {x: 3131.25, y: -182.68}
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: RMaleNPCPanic
+      animationState: Panic
     - npcName: FemNPC3
       position: {x: -2605.79, y: -231.82}
       orderInLayer: 
       appear: 1
       flipped: 0
-      animationState: PFemNPCPanic
+      animationState: Panic
     - npcName: Dad
       position: {x: 5244.91, y: -279.66}
       orderInLayer: 
@@ -746,7 +746,7 @@ MonoBehaviour:
       flipped: 0
       animationState: IdleRight
     - npcName: Seiji
-      position: {x: 262.78, y: -168.32}
+      position: {x: 262.78, y: -145.32}
       orderInLayer: 
       appear: 1
       flipped: 1
