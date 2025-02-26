@@ -237,6 +237,10 @@ public class PixelSprite
             {
                 currentSurface = "Wood2";
             }
+            else if (hit.collider.CompareTag("CarpetedStone"))
+            {
+                currentSurface = "CarpetedStone";
+            }
             else
             {
                 currentSurface = "Grass"; // Default surface
@@ -253,6 +257,7 @@ public class PixelSprite
             case "Wood": return "Wood";
             case "Stone": return "Stone";
             case "Wood2": return "Wood2";
+            case "CarpetedStone": return "CarpetedStone";
             default: return "Grass"; // Default to Grass
         }
     }

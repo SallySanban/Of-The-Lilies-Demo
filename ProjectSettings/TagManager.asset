@@ -10,6 +10,7 @@ TagManager:
   - Wood
   - Stone
   - Wood2
+  - CarpetedStone
   layers:
   - Default
   - TransparentFX

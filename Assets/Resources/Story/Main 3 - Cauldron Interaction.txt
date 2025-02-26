@@ -7,7 +7,8 @@ if ($PotionQuests > 0)
 
 			HideTextbox(false)
 			[wait]Blackout()
-			Wait(0.5)
+			playSFX(SFX_PotionBrew)
+			Wait(3.0)
 			$SatoPotionDone = true
 			$PotionQuests -= 1
 			[wait]HideCG()
@@ -17,7 +18,8 @@ if ($PotionQuests > 0)
 
 			HideTextbox(false)
 			[wait]Blackout()
-			Wait(0.5)
+			playSFX(SFX_PotionBrew)
+			Wait(3.0)
 			$DesperateGirlPotionDone = true
 			$PotionQuests -= 1
 			[wait]HideCG()
@@ -29,7 +31,8 @@ if ($PotionQuests > 0)
 
 			HideTextbox(false)
 			[wait]Blackout()
-			Wait(0.5)
+			playSFX(SFX_PotionBrew)
+			Wait(3.0)
 			$RichSeiyslanPotionDone = true
 			$PotionQuests -= 1
 			[wait]HideCG()
@@ -47,7 +50,8 @@ if ($PotionQuests > 0)
 
 				HideTextbox(false)
 				[wait]Blackout()
-				Wait(0.5)
+				playSFX(SFX_PotionBrew)
+				Wait(3.0)
 				$QuanPotionDone = true
 				$PotionQuests -= 1
 				[wait]HideCG()
