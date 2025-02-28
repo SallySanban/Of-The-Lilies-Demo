@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748121120681235
+  platformSettingsDirtyTick: 638762895530921717
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,7 +131,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Sato_Frame_0
+  - name: Sato_Frame_8
     originalName: 
     pivot: {x: 1.138889, y: -0.021052632}
     alignment: 9
@@ -139,10 +139,50 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 1572
       width: 144
       height: 380
-    spriteID: 5b85d8463e5647e49ac04cbcb1b1b73f
+    spriteID: e433951b609247343b524308f9aa5f1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1572}
+  - name: Sato_Frame_9
+    originalName: 
+    pivot: {x: 1.1764706, y: -0.021276595}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 780
+      width: 136
+      height: 376
+    spriteID: 51aa2de3a66521543ab842004ba7a0c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 780}
+  - name: Sato_Frame_11
+    originalName: 
+    pivot: {x: 1.135135, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 148
+      height: 384
+    spriteID: a0f73569e827c394cb80f5a2c8ad4e2c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Sato_Frame_1
+  - name: Sato_Frame_10
     originalName: 
     pivot: {x: 1.138889, y: -0.021052632}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 156
+      x: 160
       y: 4
       width: 144
       height: 380
-    spriteID: 5271d0064002c4e47bd1e692e9d5e579
+    spriteID: 155790d81c7ed4046aba8ced3f289259
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 156, y: 4}
+    uvTransform: {x: 160, y: 4}
+  - name: Sato_Frame_12
+    originalName: 
+    pivot: {x: 1.138889, y: -0.021052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 392
+      width: 144
+      height: 380
+    spriteID: a824a184a5276ef4682d9a77b832dc7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 392}
+  - name: Sato_Frame_13
+    originalName: 
+    pivot: {x: 1.1764706, y: -0.021276595}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1164
+      width: 136
+      height: 376
+    spriteID: 3d907cf46ec31f64d8c289d43c9ecfcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 1164}
+  - name: Sato_Frame_14
+    originalName: 
+    pivot: {x: 1.138889, y: -0.021052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 780
+      width: 144
+      height: 380
+    spriteID: d42fa78fe87b16b4891ce7b77ba081fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 780}
+  - name: Sato_Frame_15
+    originalName: 
+    pivot: {x: 1.135135, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 396
+      width: 148
+      height: 384
+    spriteID: 9a7f2f5ccde3e79458c7bf892729ce86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 396}
+  - name: Sato_Frame_0
+    originalName: 
+    pivot: {x: 1.138889, y: -0.021052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 1168
+      width: 144
+      height: 380
+    spriteID: 0619f2df8fb43ba4db366b20eaa1271d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 1168}
+  - name: Sato_Frame_1
+    originalName: 
+    pivot: {x: 1.1764706, y: -0.021276595}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1548
+      width: 136
+      height: 376
+    spriteID: ae0a4dcde2e459e4e9393f4dbfab0e40
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 1548}
+  - name: Sato_Frame_3
+    originalName: 
+    pivot: {x: 1.108108, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 788
+      width: 148
+      height: 384
+    spriteID: 72b708513c57d9f4dbebcf7f84e83132
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 788}
+  - name: Sato_Frame_2
+    originalName: 
+    pivot: {x: 1.138889, y: -0.021052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 1556
+      width: 144
+      height: 380
+    spriteID: b080bc784a3bf1946a8883a6b5014795
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 1556}
+  - name: Sato_Frame_4
+    originalName: 
+    pivot: {x: 1.138889, y: -0.021052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 4
+      width: 144
+      height: 380
+    spriteID: 059ffcac0a02a6a48b085d8b7a480823
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 4}
+  - name: Sato_Frame_5
+    originalName: 
+    pivot: {x: 1.1764706, y: -0.021276595}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 4
+      width: 136
+      height: 376
+    spriteID: 6309dd88d468ec14fa4536c4b2222857
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 4}
+  - name: Sato_Frame_6
+    originalName: 
+    pivot: {x: 1.138889, y: -0.021052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 392
+      width: 144
+      height: 380
+    spriteID: 6f353f6342336ba4a806331824ec336f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 392}
+  - name: Sato_Frame_7
+    originalName: 
+    pivot: {x: 1.108108, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1180
+      width: 148
+      height: 384
+    spriteID: 126c2164b30b1ff4a873dec5dde739d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1180}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,6 +460,78 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: Sato_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 8
+        width: 144
+        height: 380
+      spriteId: e433951b609247343b524308f9aa5f1d
+    - name: Sato_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 8
+        width: 136
+        height: 376
+      spriteId: 51aa2de3a66521543ab842004ba7a0c2
+    - name: Sato_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 8
+        width: 148
+        height: 384
+      spriteId: a0f73569e827c394cb80f5a2c8ad4e2c
+    - name: Sato_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 8
+        width: 144
+        height: 380
+      spriteId: 155790d81c7ed4046aba8ced3f289259
+    - name: Sato_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 8
+        width: 144
+        height: 380
+      spriteId: a824a184a5276ef4682d9a77b832dc7b
+    - name: Sato_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 8
+        width: 136
+        height: 376
+      spriteId: 3d907cf46ec31f64d8c289d43c9ecfcf
+    - name: Sato_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 8
+        width: 144
+        height: 380
+      spriteId: d42fa78fe87b16b4891ce7b77ba081fb
+    - name: Sato_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 8
+        width: 148
+        height: 384
+      spriteId: 9a7f2f5ccde3e79458c7bf892729ce86
     - name: Sato_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -188,16 +540,70 @@ ScriptedImporter:
         y: 8
         width: 144
         height: 380
-      spriteId: 5b85d8463e5647e49ac04cbcb1b1b73f
+      spriteId: 0619f2df8fb43ba4db366b20eaa1271d
     - name: Sato_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 8
+        width: 136
+        height: 376
+      spriteId: ae0a4dcde2e459e4e9393f4dbfab0e40
+    - name: Sato_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 8
+        width: 148
+        height: 384
+      spriteId: 72b708513c57d9f4dbebcf7f84e83132
+    - name: Sato_Frame_2
+      frameIndex: 2
       additiveSortOrder: 0
       cellRect:
         x: 28
         y: 8
         width: 144
         height: 380
-      spriteId: 5271d0064002c4e47bd1e692e9d5e579
+      spriteId: b080bc784a3bf1946a8883a6b5014795
+    - name: Sato_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 8
+        width: 144
+        height: 380
+      spriteId: 059ffcac0a02a6a48b085d8b7a480823
+    - name: Sato_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 8
+        width: 136
+        height: 376
+      spriteId: 6309dd88d468ec14fa4536c4b2222857
+    - name: Sato_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 8
+        width: 144
+        height: 380
+      spriteId: 6f353f6342336ba4a806331824ec336f
+    - name: Sato_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 8
+        width: 148
+        height: 384
+      spriteId: 126c2164b30b1ff4a873dec5dde739d2
     linkedCells: []
     parentIndex: -1
   platformSettings:

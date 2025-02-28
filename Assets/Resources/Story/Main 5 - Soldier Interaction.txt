@@ -1,6 +1,6 @@
 if ($GetCloser)
 {
-	[wait]PanCamera(-x -17.3 -spd 2)
+	[wait]PanCamera(-x -19 -spd 2)
 
 	choice in -1
 	{
@@ -68,7 +68,7 @@ if ($GetCloser)
 		- Where did Lien go?
 			pixel Soldier1 as Seiyslan Soldier "You mean <i>General</i> Lien?"
 
-			pixel Soldier1 as Seiyslan Soldier "He went inside the town hall to talk to the governor of this town. They’re going to keep the pirate in custody till we're ready to go back to the capital."
+			pixel Soldier1 as Seiyslan Soldier "He went inside the town hall to talk to the governor of this town. They're going to keep the pirate in custody till we're ready to go back to the capital."
 
 			pixel Soldier2 as Seiyslan Soldier "And then, drinks!"
 

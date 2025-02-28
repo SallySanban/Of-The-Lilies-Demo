@@ -7,12 +7,12 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: IdleLeft
-    second: {fileID: 7400000, guid: 71b7ca804f6d6df418f2d835dbb90ece, type: 2}
+    second: {fileID: 7400000, guid: df44aef3a1375264a862b99795a14c5b, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: IdleRight
-    second: {fileID: 7400000, guid: e15168db280f2c04eaf7d495f7284835, type: 2}
+    second: {fileID: 7400000, guid: 8aaf22aabcc965943a96634ab3b46d3a, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638762151917655045
+  platformSettingsDirtyTick: 638763754666457307
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -142,7 +142,7 @@ ScriptedImporter:
       y: 1572
       width: 144
       height: 380
-    spriteID: d4455348f2d8e734dae9d425efc5e7aa
+    spriteID: 57034de0fab8bfe4f911ba09ea23bcd2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -162,7 +162,7 @@ ScriptedImporter:
       y: 780
       width: 136
       height: 376
-    spriteID: 69ab9683992090942807138eef5af8a8
+    spriteID: 7f070ee6c4cef6f4c93d1e93e82390ac
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -182,7 +182,7 @@ ScriptedImporter:
       y: 4
       width: 148
       height: 384
-    spriteID: ba2d24637c6af1845bd979e6fbdec2a4
+    spriteID: dd39a40ccdfbc5b40a601995ba5a3df5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -202,7 +202,7 @@ ScriptedImporter:
       y: 4
       width: 144
       height: 380
-    spriteID: 4be0e3d1cd53b804e9ea6de018ecad48
+    spriteID: 63a8fb94801827347879f990d3063b30
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -222,7 +222,7 @@ ScriptedImporter:
       y: 392
       width: 144
       height: 380
-    spriteID: ca2edd01d6444f5488fa181328aa735e
+    spriteID: 817cf162b616eb840a41aa2436df9fe4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -242,7 +242,7 @@ ScriptedImporter:
       y: 1164
       width: 136
       height: 376
-    spriteID: ea4782fdb5de9514f8bd487cc3b76769
+    spriteID: ce4c630f05af62842a0b0a87d395d790
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -262,7 +262,7 @@ ScriptedImporter:
       y: 780
       width: 144
       height: 380
-    spriteID: b2292b5aef2a5064d950c929da94a016
+    spriteID: efc58540869870c4799fbb650f5a51e3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -282,7 +282,7 @@ ScriptedImporter:
       y: 396
       width: 148
       height: 384
-    spriteID: 128b44c14c9796046a9e44a9a09c5649
+    spriteID: 3f62c6cb42efc9b46b72209e460b6222
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -293,7 +293,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 396}
   - name: Quan_Frame_8
     originalName: 
-    pivot: {x: 1.0277778, y: -0.021052632}
+    pivot: {x: 1.0555556, y: -0.021052632}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -302,7 +302,7 @@ ScriptedImporter:
       y: 1168
       width: 144
       height: 380
-    spriteID: 3157d72077d55fa4cabec6a101465c21
+    spriteID: 1b0d970126e03cc4680f330222ed722a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -313,7 +313,7 @@ ScriptedImporter:
     uvTransform: {x: 160, y: 1168}
   - name: Quan_Frame_9
     originalName: 
-    pivot: {x: 1.0588236, y: -0.021276595}
+    pivot: {x: 1.0882353, y: -0.021276595}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -322,7 +322,7 @@ ScriptedImporter:
       y: 1548
       width: 136
       height: 376
-    spriteID: 12daf34e79f0d604ca40c1cac07d7644
+    spriteID: 50b146cbe50248046911146533225f5b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -333,7 +333,7 @@ ScriptedImporter:
     uvTransform: {x: 312, y: 1548}
   - name: Quan_Frame_11
     originalName: 
-    pivot: {x: 1.027027, y: -0.020833332}
+    pivot: {x: 1.054054, y: -0.020833332}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -342,7 +342,7 @@ ScriptedImporter:
       y: 788
       width: 148
       height: 384
-    spriteID: 9f91c63e021cb234a96fa5cf34b169de
+    spriteID: f8e4e7987161baa4aadb2e8624625043
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -353,7 +353,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 788}
   - name: Quan_Frame_10
     originalName: 
-    pivot: {x: 1.0277778, y: -0.021052632}
+    pivot: {x: 1.0555556, y: -0.021052632}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -362,7 +362,7 @@ ScriptedImporter:
       y: 1556
       width: 144
       height: 380
-    spriteID: 48a1787174f55174ab79188a072fb78d
+    spriteID: af511ca4a674e6040b0460622f29ecc4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -373,7 +373,7 @@ ScriptedImporter:
     uvTransform: {x: 160, y: 1556}
   - name: Quan_Frame_12
     originalName: 
-    pivot: {x: 1.0277778, y: -0.021052632}
+    pivot: {x: 1.0555556, y: -0.021052632}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -382,7 +382,7 @@ ScriptedImporter:
       y: 4
       width: 144
       height: 380
-    spriteID: cfa6a7c5ff9844c408cf148321eecbe5
+    spriteID: 3a7638c75367301478c0d13455516014
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -393,7 +393,7 @@ ScriptedImporter:
     uvTransform: {x: 312, y: 4}
   - name: Quan_Frame_13
     originalName: 
-    pivot: {x: 1.0588236, y: -0.021276595}
+    pivot: {x: 1.0882353, y: -0.021276595}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -402,7 +402,7 @@ ScriptedImporter:
       y: 4
       width: 136
       height: 376
-    spriteID: 119fb003cc93a8240b5d77c3ff5cc1f9
+    spriteID: 25bbfe688ba82494eb7bb20e51c85ed4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -413,7 +413,7 @@ ScriptedImporter:
     uvTransform: {x: 464, y: 4}
   - name: Quan_Frame_14
     originalName: 
-    pivot: {x: 1.0277778, y: -0.021052632}
+    pivot: {x: 1.0555556, y: -0.021052632}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -422,7 +422,7 @@ ScriptedImporter:
       y: 392
       width: 144
       height: 380
-    spriteID: 6ecf7edca7f8ac44b930a485c97e4c93
+    spriteID: 9c5a6b30839e4fd4499d3891b441ff7e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -433,7 +433,7 @@ ScriptedImporter:
     uvTransform: {x: 312, y: 392}
   - name: Quan_Frame_15
     originalName: 
-    pivot: {x: 1.027027, y: -0.020833332}
+    pivot: {x: 1.054054, y: -0.020833332}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -442,7 +442,7 @@ ScriptedImporter:
       y: 1180
       width: 148
       height: 384
-    spriteID: 597857ef628e2524784d362bb38b104b
+    spriteID: e2a9a2639c544504185bfffc8e51b525
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -468,7 +468,7 @@ ScriptedImporter:
         y: 8
         width: 144
         height: 380
-      spriteId: d4455348f2d8e734dae9d425efc5e7aa
+      spriteId: 57034de0fab8bfe4f911ba09ea23bcd2
     - name: Quan_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -477,7 +477,7 @@ ScriptedImporter:
         y: 8
         width: 136
         height: 376
-      spriteId: 69ab9683992090942807138eef5af8a8
+      spriteId: 7f070ee6c4cef6f4c93d1e93e82390ac
     - name: Quan_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -486,7 +486,7 @@ ScriptedImporter:
         y: 8
         width: 148
         height: 384
-      spriteId: ba2d24637c6af1845bd979e6fbdec2a4
+      spriteId: dd39a40ccdfbc5b40a601995ba5a3df5
     - name: Quan_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -495,7 +495,7 @@ ScriptedImporter:
         y: 8
         width: 144
         height: 380
-      spriteId: 4be0e3d1cd53b804e9ea6de018ecad48
+      spriteId: 63a8fb94801827347879f990d3063b30
     - name: Quan_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -504,7 +504,7 @@ ScriptedImporter:
         y: 8
         width: 144
         height: 380
-      spriteId: ca2edd01d6444f5488fa181328aa735e
+      spriteId: 817cf162b616eb840a41aa2436df9fe4
     - name: Quan_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
@@ -513,7 +513,7 @@ ScriptedImporter:
         y: 8
         width: 136
         height: 376
-      spriteId: ea4782fdb5de9514f8bd487cc3b76769
+      spriteId: ce4c630f05af62842a0b0a87d395d790
     - name: Quan_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -522,7 +522,7 @@ ScriptedImporter:
         y: 8
         width: 144
         height: 380
-      spriteId: b2292b5aef2a5064d950c929da94a016
+      spriteId: efc58540869870c4799fbb650f5a51e3
     - name: Quan_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
@@ -531,79 +531,79 @@ ScriptedImporter:
         y: 8
         width: 148
         height: 384
-      spriteId: 128b44c14c9796046a9e44a9a09c5649
+      spriteId: 3f62c6cb42efc9b46b72209e460b6222
     - name: Quan_Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
-        x: 44
+        x: 40
         y: 8
         width: 144
         height: 380
-      spriteId: 3157d72077d55fa4cabec6a101465c21
+      spriteId: 1b0d970126e03cc4680f330222ed722a
     - name: Quan_Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
-        x: 48
+        x: 44
         y: 8
         width: 136
         height: 376
-      spriteId: 12daf34e79f0d604ca40c1cac07d7644
+      spriteId: 50b146cbe50248046911146533225f5b
     - name: Quan_Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
-        x: 40
+        x: 36
         y: 8
         width: 148
         height: 384
-      spriteId: 9f91c63e021cb234a96fa5cf34b169de
+      spriteId: f8e4e7987161baa4aadb2e8624625043
     - name: Quan_Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
-        x: 44
+        x: 40
         y: 8
         width: 144
         height: 380
-      spriteId: 48a1787174f55174ab79188a072fb78d
+      spriteId: af511ca4a674e6040b0460622f29ecc4
     - name: Quan_Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
-        x: 44
+        x: 40
         y: 8
         width: 144
         height: 380
-      spriteId: cfa6a7c5ff9844c408cf148321eecbe5
+      spriteId: 3a7638c75367301478c0d13455516014
     - name: Quan_Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
-        x: 48
+        x: 44
         y: 8
         width: 136
         height: 376
-      spriteId: 119fb003cc93a8240b5d77c3ff5cc1f9
+      spriteId: 25bbfe688ba82494eb7bb20e51c85ed4
     - name: Quan_Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
-        x: 44
+        x: 40
         y: 8
         width: 144
         height: 380
-      spriteId: 6ecf7edca7f8ac44b930a485c97e4c93
+      spriteId: 9c5a6b30839e4fd4499d3891b441ff7e
     - name: Quan_Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
-        x: 40
+        x: 36
         y: 8
         width: 148
         height: 384
-      spriteId: 597857ef628e2524784d362bb38b104b
+      spriteId: e2a9a2639c544504185bfffc8e51b525
     linkedCells: []
     parentIndex: -1
   platformSettings:

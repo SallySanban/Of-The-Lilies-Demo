@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748151167807567
+  platformSettingsDirtyTick: 638763718327528695
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: SonWithMother_Frame_0
+  - name: SonWithMother_Frame_8
     originalName: 
-    pivot: {x: 1.3703704, y: -0.17721519}
+    pivot: {x: 1.2903225, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 336
+      width: 124
+      height: 320
+    spriteID: 4d8b41617fca9a04cafda7567a03b02b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 336}
+  - name: SonWithMother_Frame_9
+    originalName: 
+    pivot: {x: 1.3571429, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 4
+      width: 112
+      height: 316
+    spriteID: 96677e0ab7bbeec4b97d4555ae7cb229
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 4}
+  - name: SonWithMother_Frame_11
+    originalName: 
+    pivot: {x: 1.2424242, y: -0.16049382}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 108
-      height: 316
-    spriteID: 3d479b132870a0e40acb9d2cb7252428
+      width: 132
+      height: 324
+    spriteID: 2afedfb2ce57e9a4799fc7145a41f3cb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: SonWithMother_Frame_1
+  - name: SonWithMother_Frame_10
     originalName: 
-    pivot: {x: 1.4444444, y: -0.17721519}
+    pivot: {x: 1.2903225, y: -0.16250001}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 120
-      y: 4
-      width: 108
-      height: 316
-    spriteID: f3170ec331dc49e48910e390bd9a2a69
+      x: 144
+      y: 664
+      width: 124
+      height: 320
+    spriteID: cc2e99dfcccd8404e8580e68570b59fc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 120, y: 4}
+    uvTransform: {x: 144, y: 664}
+  - name: SonWithMother_Frame_12
+    originalName: 
+    pivot: {x: 1.2903225, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 4
+      width: 124
+      height: 320
+    spriteID: 00b8d3326ab720a4faea823030f371a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 4}
+  - name: SonWithMother_Frame_13
+    originalName: 
+    pivot: {x: 1.3571429, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 328
+      width: 112
+      height: 316
+    spriteID: 397f5c434d80c7a44becde33d968716b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 328}
+  - name: SonWithMother_Frame_14
+    originalName: 
+    pivot: {x: 1.2903225, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 332
+      width: 124
+      height: 320
+    spriteID: 8168eabe3b3281f41afc41f8c685334f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 332}
+  - name: SonWithMother_Frame_15
+    originalName: 
+    pivot: {x: 1.2424242, y: -0.16049382}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 336
+      width: 132
+      height: 324
+    spriteID: b7f5cbb2fe107564ca22f0a30bfd164e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 336}
+  - name: SonWithMother_Frame_0
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 660
+      width: 124
+      height: 320
+    spriteID: 5ef2aa4cdeea7d5448f43d604369c0fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 660}
+  - name: SonWithMother_Frame_1
+    originalName: 
+    pivot: {x: 1.3571429, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 652
+      width: 112
+      height: 316
+    spriteID: 4fa02cbc960d6d649930dda35a09a7d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 652}
+  - name: SonWithMother_Frame_3
+    originalName: 
+    pivot: {x: 1.2121212, y: -0.16049382}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 668
+      width: 132
+      height: 324
+    spriteID: c6bbb03a8eafffe41a8ef17903a4c9e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 668}
+  - name: SonWithMother_Frame_2
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 4
+      width: 124
+      height: 320
+    spriteID: e6c03006d5ffab9488d3268c86d13a6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 4}
+  - name: SonWithMother_Frame_4
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 332
+      width: 124
+      height: 320
+    spriteID: 453c56a323ccaf04cbae19b2ef77ae69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 332}
+  - name: SonWithMother_Frame_5
+    originalName: 
+    pivot: {x: 1.3571429, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 4
+      width: 112
+      height: 316
+    spriteID: f1389e20a39712441a803eb151c272e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 4}
+  - name: SonWithMother_Frame_6
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 660
+      width: 124
+      height: 320
+    spriteID: 968a6bcc078b18f4892f07e98fa923ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 660}
+  - name: SonWithMother_Frame_7
+    originalName: 
+    pivot: {x: 1.2121212, y: -0.16049382}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 4
+      width: 132
+      height: 324
+    spriteID: 0261ea6949e1613499640db75f7fbb95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,24 +460,150 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: SonWithMother_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 4d8b41617fca9a04cafda7567a03b02b
+    - name: SonWithMother_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 112
+        height: 316
+      spriteId: 96677e0ab7bbeec4b97d4555ae7cb229
+    - name: SonWithMother_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 92
+        y: 52
+        width: 132
+        height: 324
+      spriteId: 2afedfb2ce57e9a4799fc7145a41f3cb
+    - name: SonWithMother_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 124
+        height: 320
+      spriteId: cc2e99dfcccd8404e8580e68570b59fc
+    - name: SonWithMother_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 00b8d3326ab720a4faea823030f371a6
+    - name: SonWithMother_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 112
+        height: 316
+      spriteId: 397f5c434d80c7a44becde33d968716b
+    - name: SonWithMother_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 8168eabe3b3281f41afc41f8c685334f
+    - name: SonWithMother_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 92
+        y: 52
+        width: 132
+        height: 324
+      spriteId: b7f5cbb2fe107564ca22f0a30bfd164e
     - name: SonWithMother_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 108
-        y: 56
-        width: 108
-        height: 316
-      spriteId: 3d479b132870a0e40acb9d2cb7252428
+        x: 100
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 5ef2aa4cdeea7d5448f43d604369c0fe
     - name: SonWithMother_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 100
-        y: 56
-        width: 108
+        x: 104
+        y: 52
+        width: 112
         height: 316
-      spriteId: f3170ec331dc49e48910e390bd9a2a69
+      spriteId: 4fa02cbc960d6d649930dda35a09a7d9
+    - name: SonWithMother_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 132
+        height: 324
+      spriteId: c6bbb03a8eafffe41a8ef17903a4c9e6
+    - name: SonWithMother_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 124
+        height: 320
+      spriteId: e6c03006d5ffab9488d3268c86d13a6a
+    - name: SonWithMother_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 453c56a323ccaf04cbae19b2ef77ae69
+    - name: SonWithMother_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 112
+        height: 316
+      spriteId: f1389e20a39712441a803eb151c272e6
+    - name: SonWithMother_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 968a6bcc078b18f4892f07e98fa923ce
+    - name: SonWithMother_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 132
+        height: 324
+      spriteId: 0261ea6949e1613499640db75f7fbb95
     linkedCells: []
     parentIndex: -1
   platformSettings:

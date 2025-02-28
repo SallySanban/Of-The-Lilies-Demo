@@ -6,6 +6,8 @@ if (!$ManjuTalkedTo)
 }
 else
 {
+	[wait]PanCamera(-x -6.36 -spd 1)
+
 	pixel Seiji "Hey, were you planning on leaving without me?"
 
 	HideTextbox(true)

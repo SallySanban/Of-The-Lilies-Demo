@@ -6,6 +6,7 @@ if (!$MaiThankYou)
 {
 	pixel PrayingGirlFamily as Mai "Thank you so much... I guess I won't be needing these anymore."
 
+	HideTextbox(false)
 	playSFX("SFX_UI InventoryPickup")
 	Wait(0.5)
 }

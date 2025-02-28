@@ -3,7 +3,7 @@ resumeEvent(BGM_Scene5)
 stopEvent(BGM_KuchaiTown)
 RemoveScene()
 [wait]ShowScene("Scene 10" "Main Shop")
-[wait]SetCamera(-x -10.26 -spd 1)
+[wait]SetCamera(-x -10.5)
 Wait(0.5)
 [wait]HideCG()
 
@@ -54,6 +54,7 @@ else
 {
 	Ahlai as <playerName> at 0 "I was thinking I could start in Agon Province. I might be able to get some help from Sir Aciano."
 
+	HideTextbox(true)
 	[wait]SwitchCharacter(Ahlai Seiji -p 0 -b Left_Default_Body -e Left_SadSmile)
 
 	Seiji at 0 "He's also one of the people you trust, isn't he? If this is what <playerName> really wants... he might be able to keep <objectPronoun> safe..."
@@ -67,6 +68,7 @@ ChangeBodyEmotion(Seiji -e Left_Worried)
 
 Seiji at 0 "Lady Sabina? What do you say?"
 
+HideTextbox(true)
 [wait]SwitchCharacter(Seiji Ahlai -p 0 -b Left_Default_Body -e Left_Concerned)
 
 pixel Sabina as Lady Sabina "<playerName>, I know--I can only imagine just how much pain you've been through."

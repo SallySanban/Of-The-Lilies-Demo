@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: bd17ca873220b364e806fcf938ccdf30
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Chained
+    second: {fileID: 7400000, guid: 5ff7128ae245d914a8861ac8998b12dc, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: IdleLeft
+    second: {fileID: 7400000, guid: 2d36faed9fa166e4192845f7d2a3f9d1, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: IdleRight
+    second: {fileID: 7400000, guid: edaccbaba189ff541b6d18fdefafe6e7, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638763712218583777
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Laisa_Frame_16
+    originalName: 
+    pivot: {x: 1.3142858, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 4
+      width: 140
+      height: 400
+    spriteID: 97bade2465b9bec4e8d9ac89e2277fe0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 4}
+  - name: Laisa_Frame_17
+    originalName: 
+    pivot: {x: 1.382353, y: -0.83838385}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 4
+      width: 136
+      height: 396
+    spriteID: 52aa79bd1f073d846892b7015ddf04e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 4}
+  - name: Laisa_Frame_19
+    originalName: 
+    pivot: {x: 1.2307692, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 156
+      height: 404
+    spriteID: 47b1b93b1ed548f48b8e8bd132b403f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Laisa_Frame_18
+    originalName: 
+    pivot: {x: 1.3142858, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 412
+      width: 140
+      height: 400
+    spriteID: 1b24f486b76243c4f8e7b22e40bdaa63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 412}
+  - name: Laisa_Frame_20
+    originalName: 
+    pivot: {x: 1.3142858, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 820
+      width: 140
+      height: 400
+    spriteID: 087d4ccaac068e948af2c47d10cec925
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 820}
+  - name: Laisa_Frame_21
+    originalName: 
+    pivot: {x: 1.382353, y: -0.83838385}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 408
+      width: 136
+      height: 396
+    spriteID: 35df8a2396745f346acc5a16fe79137a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 408}
+  - name: Laisa_Frame_22
+    originalName: 
+    pivot: {x: 1.3142858, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 1228
+      width: 140
+      height: 400
+    spriteID: d3707f526486ff2448ef72f31fd9bf99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 1228}
+  - name: Laisa_Frame_23
+    originalName: 
+    pivot: {x: 1.2307692, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 416
+      width: 156
+      height: 404
+    spriteID: 148285d1f1d61d14db70d6f98c0a2773
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 416}
+  - name: Laisa_Frame_8
+    originalName: 
+    pivot: {x: 1.4571427, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 1636
+      width: 140
+      height: 400
+    spriteID: 853c350d1ba3d8342ba1143b9b2232db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 1636}
+  - name: Laisa_Frame_9
+    originalName: 
+    pivot: {x: 1.4285713, y: -0.83838385}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1228
+      width: 140
+      height: 396
+    spriteID: d62cdebb11f6c7a4795056f7fc74d579
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1228}
+  - name: Laisa_Frame_11
+    originalName: 
+    pivot: {x: 1.4054052, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 828
+      width: 148
+      height: 404
+    spriteID: 49e32a36e976b8e47adb0099238cd4ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 828}
+  - name: Laisa_Frame_10
+    originalName: 
+    pivot: {x: 1.4571427, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 4
+      width: 140
+      height: 400
+    spriteID: 379ed50ddc7c4a448950eaab2bccffa5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 4}
+  - name: Laisa_Frame_12
+    originalName: 
+    pivot: {x: 1.4571427, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 412
+      width: 140
+      height: 400
+    spriteID: 7d6a434464d3de54fb5d42714e3f81c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 412}
+  - name: Laisa_Frame_13
+    originalName: 
+    pivot: {x: 1.4285713, y: -0.83838385}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1632
+      width: 140
+      height: 396
+    spriteID: ce50b0c9aa884794c8784313fba2b55a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1632}
+  - name: Laisa_Frame_14
+    originalName: 
+    pivot: {x: 1.4571427, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 820
+      width: 140
+      height: 400
+    spriteID: 4ec306a17bae6ad4389d7313c0c63177
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 820}
+  - name: Laisa_Frame_15
+    originalName: 
+    pivot: {x: 1.4054052, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1240
+      width: 148
+      height: 404
+    spriteID: b11f048c993daf04d864d0febe72f8c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1240}
+  - name: Laisa_Frame_0
+    originalName: 
+    pivot: {x: 1.4848484, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 812
+      width: 132
+      height: 400
+    spriteID: d41fc931ff1b56048bee8cbcaf7c8df5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 812}
+  - name: Laisa_Frame_1
+    originalName: 
+    pivot: {x: 1.4545454, y: -0.83838385}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 412
+      width: 132
+      height: 396
+    spriteID: 74d6caa59a27e124389d54e571683f12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 412}
+  - name: Laisa_Frame_3
+    originalName: 
+    pivot: {x: 1.5312499, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 1220
+      width: 128
+      height: 404
+    spriteID: 00e597d5508af7640a6463d5dcb93a3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 1220}
+  - name: Laisa_Frame_2
+    originalName: 
+    pivot: {x: 1.4848484, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 1220
+      width: 132
+      height: 400
+    spriteID: 61c648acb8b6e2d4b918752dba97dee0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 1220}
+  - name: Laisa_Frame_4
+    originalName: 
+    pivot: {x: 1.4848484, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 1628
+      width: 132
+      height: 400
+    spriteID: e17d46907cc2e6a49841766d71ab4e1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 1628}
+  - name: Laisa_Frame_5
+    originalName: 
+    pivot: {x: 1.4545454, y: -0.83838385}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 816
+      width: 132
+      height: 396
+    spriteID: f331be6ea5481eb41a9474aef22e4bb9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 816}
+  - name: Laisa_Frame_6
+    originalName: 
+    pivot: {x: 1.4848484, y: -0.83000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 4
+      width: 132
+      height: 400
+    spriteID: c4260be89730c6241a91818190a78ee3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 4}
+  - name: Laisa_Frame_7
+    originalName: 
+    pivot: {x: 1.5312499, y: -0.8217822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 1632
+      width: 128
+      height: 404
+    spriteID: 956e029d96343c941af92e91cc594b65
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 1632}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1051091492
+    name: Laisa
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Laisa_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 776
+        y: 332
+        width: 140
+        height: 400
+      spriteId: 97bade2465b9bec4e8d9ac89e2277fe0
+    - name: Laisa_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 332
+        width: 136
+        height: 396
+      spriteId: 52aa79bd1f073d846892b7015ddf04e9
+    - name: Laisa_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 332
+        width: 156
+        height: 404
+      spriteId: 47b1b93b1ed548f48b8e8bd132b403f6
+    - name: Laisa_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 776
+        y: 332
+        width: 140
+        height: 400
+      spriteId: 1b24f486b76243c4f8e7b22e40bdaa63
+    - name: Laisa_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 776
+        y: 332
+        width: 140
+        height: 400
+      spriteId: 087d4ccaac068e948af2c47d10cec925
+    - name: Laisa_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 332
+        width: 136
+        height: 396
+      spriteId: 35df8a2396745f346acc5a16fe79137a
+    - name: Laisa_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 776
+        y: 332
+        width: 140
+        height: 400
+      spriteId: d3707f526486ff2448ef72f31fd9bf99
+    - name: Laisa_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 332
+        width: 156
+        height: 404
+      spriteId: 148285d1f1d61d14db70d6f98c0a2773
+    - name: Laisa_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 756
+        y: 332
+        width: 140
+        height: 400
+      spriteId: 853c350d1ba3d8342ba1143b9b2232db
+    - name: Laisa_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 760
+        y: 332
+        width: 140
+        height: 396
+      spriteId: d62cdebb11f6c7a4795056f7fc74d579
+    - name: Laisa_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 752
+        y: 332
+        width: 148
+        height: 404
+      spriteId: 49e32a36e976b8e47adb0099238cd4ec
+    - name: Laisa_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 756
+        y: 332
+        width: 140
+        height: 400
+      spriteId: 379ed50ddc7c4a448950eaab2bccffa5
+    - name: Laisa_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 756
+        y: 332
+        width: 140
+        height: 400
+      spriteId: 7d6a434464d3de54fb5d42714e3f81c2
+    - name: Laisa_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 760
+        y: 332
+        width: 140
+        height: 396
+      spriteId: ce50b0c9aa884794c8784313fba2b55a
+    - name: Laisa_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 756
+        y: 332
+        width: 140
+        height: 400
+      spriteId: 4ec306a17bae6ad4389d7313c0c63177
+    - name: Laisa_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 752
+        y: 332
+        width: 148
+        height: 404
+      spriteId: b11f048c993daf04d864d0febe72f8c5
+    - name: Laisa_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 764
+        y: 332
+        width: 132
+        height: 400
+      spriteId: d41fc931ff1b56048bee8cbcaf7c8df5
+    - name: Laisa_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 332
+        width: 132
+        height: 396
+      spriteId: 74d6caa59a27e124389d54e571683f12
+    - name: Laisa_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 764
+        y: 332
+        width: 128
+        height: 404
+      spriteId: 00e597d5508af7640a6463d5dcb93a3b
+    - name: Laisa_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 764
+        y: 332
+        width: 132
+        height: 400
+      spriteId: 61c648acb8b6e2d4b918752dba97dee0
+    - name: Laisa_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 764
+        y: 332
+        width: 132
+        height: 400
+      spriteId: e17d46907cc2e6a49841766d71ab4e1f
+    - name: Laisa_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 332
+        width: 132
+        height: 396
+      spriteId: f331be6ea5481eb41a9474aef22e4bb9
+    - name: Laisa_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 764
+        y: 332
+        width: 132
+        height: 400
+      spriteId: c4260be89730c6241a91818190a78ee3
+    - name: Laisa_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 764
+        y: 332
+        width: 128
+        height: 404
+      spriteId: 956e029d96343c941af92e91cc594b65
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1920, y: 1080}

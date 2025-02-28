@@ -8,6 +8,7 @@ choice in -1
 
 		pixel Salesperson3 as Salesperson "That would be two gold coins."
 
+		HideTextbox(false)
 		playSFX(SFX_CoinsJiggle)
 		Wait(0.5)
 

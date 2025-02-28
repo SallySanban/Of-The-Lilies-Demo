@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748146002883054
+  platformSettingsDirtyTick: 638763714762152723
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: MotherWithSon_Frame_0
+  - name: MotherWithSon_Frame_8
     originalName: 
-    pivot: {x: 1.15, y: -0.12871286}
+    pivot: {x: 0.95, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 4
+      width: 160
+      height: 404
+    spriteID: 1250f0d5bb9cfc0469985c5056faef4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 4}
+  - name: MotherWithSon_Frame_9
+    originalName: 
+    pivot: {x: 1, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 512
+      y: 4
+      width: 148
+      height: 400
+    spriteID: 5c6ff89f10798434592690bf789b1e6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 512, y: 4}
+  - name: MotherWithSon_Frame_11
+    originalName: 
+    pivot: {x: 0.9512195, y: -0.12745099}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 160
-      height: 404
-    spriteID: 3d7aa327b07fe8e4d93d6a2e8c2865bd
+      width: 164
+      height: 408
+    spriteID: e0dc88a552a3f7848b53699270922029
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: MotherWithSon_Frame_1
+  - name: MotherWithSon_Frame_10
     originalName: 
-    pivot: {x: 1.0500001, y: -0.12871286}
+    pivot: {x: 0.95, y: -0.12871286}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 172
-      y: 4
+      x: 176
+      y: 416
       width: 160
       height: 404
-    spriteID: 028ac4a873450c7468db5efc58de3ee5
+    spriteID: 2893b0fb3c7ecc14283f301bfa292748
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 172, y: 4}
+    uvTransform: {x: 176, y: 416}
+  - name: MotherWithSon_Frame_12
+    originalName: 
+    pivot: {x: 0.95, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 828
+      width: 160
+      height: 404
+    spriteID: c110c8f0798d8774a9c68756e0cd80e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 828}
+  - name: MotherWithSon_Frame_13
+    originalName: 
+    pivot: {x: 1, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 512
+      y: 412
+      width: 148
+      height: 400
+    spriteID: c6e5986398fe1604fb309f790eb6d8b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 512, y: 412}
+  - name: MotherWithSon_Frame_14
+    originalName: 
+    pivot: {x: 0.95, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 1240
+      width: 160
+      height: 404
+    spriteID: 3e44f16be3aad07468282b7af5142adf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 1240}
+  - name: MotherWithSon_Frame_15
+    originalName: 
+    pivot: {x: 0.9512195, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 420
+      width: 164
+      height: 408
+    spriteID: 2d4648084297a954e9f52126c69e8fc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 420}
+  - name: MotherWithSon_Frame_0
+    originalName: 
+    pivot: {x: 1.15, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 344
+      y: 4
+      width: 160
+      height: 404
+    spriteID: 63e88afaa6c605a4fb642e3146f820ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 344, y: 4}
+  - name: MotherWithSon_Frame_1
+    originalName: 
+    pivot: {x: 1.1891892, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 512
+      y: 820
+      width: 148
+      height: 400
+    spriteID: 95b7a667a4e8f3f41b77cb6e3c06a3d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 512, y: 820}
+  - name: MotherWithSon_Frame_3
+    originalName: 
+    pivot: {x: 1.1219512, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 836
+      width: 164
+      height: 408
+    spriteID: 6df42b97e44012c4d9e2b8b882cbc138
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 836}
+  - name: MotherWithSon_Frame_2
+    originalName: 
+    pivot: {x: 1.15, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 344
+      y: 416
+      width: 160
+      height: 404
+    spriteID: b8e5cc3f2988b0a41bdf81afa97c4d62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 344, y: 416}
+  - name: MotherWithSon_Frame_4
+    originalName: 
+    pivot: {x: 1.15, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 344
+      y: 828
+      width: 160
+      height: 404
+    spriteID: 8d4b211e1d1b9b046bf61e8b21471489
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 344, y: 828}
+  - name: MotherWithSon_Frame_5
+    originalName: 
+    pivot: {x: 1.1891892, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 512
+      y: 1228
+      width: 148
+      height: 400
+    spriteID: ee8ac6e643513724196004bf0a8eabe2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 512, y: 1228}
+  - name: MotherWithSon_Frame_6
+    originalName: 
+    pivot: {x: 1.15, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 344
+      y: 1240
+      width: 160
+      height: 404
+    spriteID: 651a30016050b1b4bb02f1a0c081357f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 344, y: 1240}
+  - name: MotherWithSon_Frame_7
+    originalName: 
+    pivot: {x: 1.1219512, y: -0.12745099}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1252
+      width: 164
+      height: 408
+    spriteID: 6ded1b1d65422d247a881039b021060c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1252}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,6 +460,78 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: MotherWithSon_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 160
+        height: 404
+      spriteId: 1250f0d5bb9cfc0469985c5056faef4f
+    - name: MotherWithSon_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 108
+        y: 52
+        width: 148
+        height: 400
+      spriteId: 5c6ff89f10798434592690bf789b1e6d
+    - name: MotherWithSon_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 164
+        height: 408
+      spriteId: e0dc88a552a3f7848b53699270922029
+    - name: MotherWithSon_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 160
+        height: 404
+      spriteId: 2893b0fb3c7ecc14283f301bfa292748
+    - name: MotherWithSon_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 160
+        height: 404
+      spriteId: c110c8f0798d8774a9c68756e0cd80e7
+    - name: MotherWithSon_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 108
+        y: 52
+        width: 148
+        height: 400
+      spriteId: c6e5986398fe1604fb309f790eb6d8b7
+    - name: MotherWithSon_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 160
+        height: 404
+      spriteId: 3e44f16be3aad07468282b7af5142adf
+    - name: MotherWithSon_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 164
+        height: 408
+      spriteId: 2d4648084297a954e9f52126c69e8fc7
     - name: MotherWithSon_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -188,16 +540,70 @@ ScriptedImporter:
         y: 52
         width: 160
         height: 404
-      spriteId: 3d7aa327b07fe8e4d93d6a2e8c2865bd
+      spriteId: 63e88afaa6c605a4fb642e3146f820ba
     - name: MotherWithSon_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 88
+        x: 80
+        y: 52
+        width: 148
+        height: 400
+      spriteId: 95b7a667a4e8f3f41b77cb6e3c06a3d5
+    - name: MotherWithSon_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 52
+        width: 164
+        height: 408
+      spriteId: 6df42b97e44012c4d9e2b8b882cbc138
+    - name: MotherWithSon_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
         y: 52
         width: 160
         height: 404
-      spriteId: 028ac4a873450c7468db5efc58de3ee5
+      spriteId: b8e5cc3f2988b0a41bdf81afa97c4d62
+    - name: MotherWithSon_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 52
+        width: 160
+        height: 404
+      spriteId: 8d4b211e1d1b9b046bf61e8b21471489
+    - name: MotherWithSon_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 80
+        y: 52
+        width: 148
+        height: 400
+      spriteId: ee8ac6e643513724196004bf0a8eabe2
+    - name: MotherWithSon_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 52
+        width: 160
+        height: 404
+      spriteId: 651a30016050b1b4bb02f1a0c081357f
+    - name: MotherWithSon_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 52
+        width: 164
+        height: 408
+      spriteId: 6ded1b1d65422d247a881039b021060c
     linkedCells: []
     parentIndex: -1
   platformSettings:

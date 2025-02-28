@@ -21,7 +21,7 @@ HideCharacter(Seiji)
 HideCharacter(Ahlai)
 HideTextbox(false)
 [wait]Blackout()
-[wait]SetNPCPosition(Myo -x -167.22 -y -229.32)
+[wait]SetNPCPosition(Myo -x -167.22 -y -238.32)
 [wait]HideCG()
 
 ShowCharacterLeft(Myo -b Left_Default_Body -e Left_FlirtySmile)
@@ -198,7 +198,7 @@ choice in 1
 		RemoveFromScene("Myo")
 		FlipNPC("Ahlai" "Right")
 		HideCharacter(Myo)
-		HideCharacter(Ahlai)
+		[wait]HideCharacter(Ahlai)
 		[wait]HideCG()
 
 		ShowCharacterRight(Seiji -b Right_Default_Body -e Right_Pout)
@@ -241,13 +241,13 @@ choice in 1
 
 		Myo at 0 "Yes... Well, until then, <playerName>."
 
+		HideCharacter(Myo)
+		HideCharacter(Seiji)
 		HideTextbox(true)
 		[wait]Blackout()
 		ResetCamera(false)
 		RemoveFromScene("Myo")
 		FlipNPC("Ahlai" "Right")
-		HideCharacter(Myo)
-		HideCharacter(Seiji)
 		[wait]HideCG()
 
 		ShowCharacterRight(Seiji -b Right_Default_Body -e Right_Pout)

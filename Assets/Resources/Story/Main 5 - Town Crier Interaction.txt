@@ -1,6 +1,6 @@
 if ($GetCloser)
 {
-	[wait]PanCamera(-x -17.3 -spd 2)
+	[wait]PanCamera(-x -19 -spd 2)
 
 	pixel Soldier1 as Seiyslan Soldier "Yeah! Good going, boy!"
 

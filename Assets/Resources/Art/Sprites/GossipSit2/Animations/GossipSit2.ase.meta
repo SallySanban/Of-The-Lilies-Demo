@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: decdc36801978b648b90d24d5025ed71
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Sit
+    second: {fileID: 7400000, guid: e62e425115ee5254c90370ac1759b17b, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -97,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748125915008496
+  platformSettingsDirtyTick: 638763734514218729
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +126,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: GossipSit2
+  - name: GossipSit2_Frame_0
     originalName: 
     pivot: {x: 2.5671642, y: -0.043010753}
     alignment: 9
@@ -129,10 +134,50 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 772
       width: 268
       height: 372
-    spriteID: 90e3fcf97ec8bc441a292aa03f688abe
+    spriteID: 5d0edf4663c228b47b9d185cea7bd2fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 772}
+  - name: GossipSit2_Frame_1
+    originalName: 
+    pivot: {x: 2.590909, y: -0.043478258}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 280
+      y: 384
+      width: 264
+      height: 368
+    spriteID: f80d23a6824f11c468c2a23bdc905db4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 280, y: 384}
+  - name: GossipSit2_Frame_3
+    originalName: 
+    pivot: {x: 2.5671642, y: -0.04255319}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 268
+      height: 376
+    spriteID: dd0bad4d707615f44b2d5ffa9b0d8001
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,6 +186,106 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: GossipSit2_Frame_4
+    originalName: 
+    pivot: {x: 2.5671642, y: -0.043010753}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1152
+      width: 268
+      height: 372
+    spriteID: 7bd6363aa44f6104c97f28064d4c41db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1152}
+  - name: GossipSit2_Frame_2
+    originalName: 
+    pivot: {x: 2.5671642, y: -0.043010753}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1532
+      width: 268
+      height: 372
+    spriteID: bd4150bd41d387c4db90c780096816bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1532}
+  - name: GossipSit2_Frame_5
+    originalName: 
+    pivot: {x: 2.590909, y: -0.043478258}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 280
+      y: 760
+      width: 264
+      height: 368
+    spriteID: 9190ee1cdafce8547be1390e4d9519a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 280, y: 760}
+  - name: GossipSit2_Frame_6
+    originalName: 
+    pivot: {x: 2.5671642, y: -0.043010753}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 280
+      y: 4
+      width: 268
+      height: 372
+    spriteID: 51b672c1576aa9445929def31dee2559
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 280, y: 4}
+  - name: GossipSit2_Frame_7
+    originalName: 
+    pivot: {x: 2.5671642, y: -0.04255319}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 388
+      width: 268
+      height: 376
+    spriteID: 214f929d423d12a4889b3223d35de34c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 388}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -150,7 +295,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: GossipSit2
+    - name: GossipSit2_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -158,7 +303,70 @@ ScriptedImporter:
         y: 16
         width: 268
         height: 372
-      spriteId: 90e3fcf97ec8bc441a292aa03f688abe
+      spriteId: 5d0edf4663c228b47b9d185cea7bd2fa
+    - name: GossipSit2_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 1876
+        y: 16
+        width: 264
+        height: 368
+      spriteId: f80d23a6824f11c468c2a23bdc905db4
+    - name: GossipSit2_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 268
+        height: 376
+      spriteId: dd0bad4d707615f44b2d5ffa9b0d8001
+    - name: GossipSit2_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 268
+        height: 372
+      spriteId: 7bd6363aa44f6104c97f28064d4c41db
+    - name: GossipSit2_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 268
+        height: 372
+      spriteId: bd4150bd41d387c4db90c780096816bd
+    - name: GossipSit2_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 1876
+        y: 16
+        width: 264
+        height: 368
+      spriteId: 9190ee1cdafce8547be1390e4d9519a8
+    - name: GossipSit2_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 268
+        height: 372
+      spriteId: 51b672c1576aa9445929def31dee2559
+    - name: GossipSit2_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 268
+        height: 376
+      spriteId: 214f929d423d12a4889b3223d35de34c
     linkedCells: []
     parentIndex: -1
   platformSettings:

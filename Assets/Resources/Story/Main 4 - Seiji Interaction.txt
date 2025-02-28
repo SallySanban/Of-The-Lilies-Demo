@@ -49,9 +49,13 @@ HideCharacter(Seiji)
 HideTextbox(false)
 stopEvent(BGM_Library)
 playMusic(BGM_Lien)
-[wait]SwitchScene("Scene 7" "Kuchai Town 3")
+[wait]Blackout()
+ResetCamera(false)
+RemoveScene()
+[wait]ShowScene("Scene 7" "Kuchai Town 3")
+[wait]HideCG()
 FlipNPC(Seiji Left)
-[wait]PanCamera(-x -16.81 -spd 5)
+[wait]PanCamera(-x -16.81 -spd 10)
 
 pixel TownCrier as Town Crier "Make way for the Seiyslan army!"
 

@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748132108036215
+  platformSettingsDirtyTick: 638762893958857891
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,18 +131,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: DesperateGirl_Frame_0
+  - name: DesperateGirl_Frame_8
     originalName: 
-    pivot: {x: 1.3703704, y: -0.17721519}
+    pivot: {x: 1.3225806, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 336
+      width: 124
+      height: 320
+    spriteID: b982785e220312f4e86a407c48aaec99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 336}
+  - name: DesperateGirl_Frame_9
+    originalName: 
+    pivot: {x: 1.3928572, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 4
+      width: 112
+      height: 316
+    spriteID: d6b1bc52cb9f4c7459a92ba1ae371e89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 4}
+  - name: DesperateGirl_Frame_11
+    originalName: 
+    pivot: {x: 1.2727273, y: -0.16049382}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 108
-      height: 316
-    spriteID: c7350a6b50ce2c84aa0ed9487c39ba3e
+      width: 132
+      height: 324
+    spriteID: de0a0d25fbc69ef4cb661946b6aaf91c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +191,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: DesperateGirl_Frame_1
+  - name: DesperateGirl_Frame_10
     originalName: 
-    pivot: {x: 1.4444444, y: -0.17721519}
+    pivot: {x: 1.3225806, y: -0.16250001}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 120
-      y: 4
-      width: 108
-      height: 316
-    spriteID: db6f31c58298d8c458ad15e5319a1549
+      x: 144
+      y: 664
+      width: 124
+      height: 320
+    spriteID: 9c495a84d61d3c8469cc2da2337b364b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +210,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 120, y: 4}
+    uvTransform: {x: 144, y: 664}
+  - name: DesperateGirl_Frame_12
+    originalName: 
+    pivot: {x: 1.3225806, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 4
+      width: 124
+      height: 320
+    spriteID: c895b22876d47914b84e2a53e7f2ef32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 4}
+  - name: DesperateGirl_Frame_13
+    originalName: 
+    pivot: {x: 1.3928572, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 328
+      width: 112
+      height: 316
+    spriteID: 5d80bb7c36d2cbb4c830c4b62a208569
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 328}
+  - name: DesperateGirl_Frame_14
+    originalName: 
+    pivot: {x: 1.3225806, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 332
+      width: 124
+      height: 320
+    spriteID: 14c843ed958c9074e8e061f75b06417f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 332}
+  - name: DesperateGirl_Frame_15
+    originalName: 
+    pivot: {x: 1.2727273, y: -0.16049382}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 336
+      width: 132
+      height: 324
+    spriteID: 312a00bb26205fd4a8af89591da780c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 336}
+  - name: DesperateGirl_Frame_0
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 660
+      width: 124
+      height: 320
+    spriteID: 923bbeb6a4a0fe3428695f7a7a885c9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 660}
+  - name: DesperateGirl_Frame_1
+    originalName: 
+    pivot: {x: 1.3571429, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 652
+      width: 112
+      height: 316
+    spriteID: f026b4bed9c9b4748ab1d417d7986a88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 548, y: 652}
+  - name: DesperateGirl_Frame_3
+    originalName: 
+    pivot: {x: 1.2121212, y: -0.16049382}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 668
+      width: 132
+      height: 324
+    spriteID: bbe7509bebda99146b23a93d46d29f5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 668}
+  - name: DesperateGirl_Frame_2
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 4
+      width: 124
+      height: 320
+    spriteID: 07c28db8b5e4c7340bc35d7bb38e3e9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 4}
+  - name: DesperateGirl_Frame_4
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 332
+      width: 124
+      height: 320
+    spriteID: 3c1f960b383a75349a68c65d4ac4faf5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 332}
+  - name: DesperateGirl_Frame_5
+    originalName: 
+    pivot: {x: 1.3571429, y: -0.16455697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 4
+      width: 112
+      height: 316
+    spriteID: b8db8023a1e69c5468752536610114a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 4}
+  - name: DesperateGirl_Frame_6
+    originalName: 
+    pivot: {x: 1.2580645, y: -0.16250001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 660
+      width: 124
+      height: 320
+    spriteID: b2fef0a662028db41b8b9bb28b728ffd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 660}
+  - name: DesperateGirl_Frame_7
+    originalName: 
+    pivot: {x: 1.2121212, y: -0.16049382}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 4
+      width: 132
+      height: 324
+    spriteID: 1db1732e07051db4cadba52da2e09d55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -180,24 +460,150 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: DesperateGirl_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 92
+        y: 52
+        width: 124
+        height: 320
+      spriteId: b982785e220312f4e86a407c48aaec99
+    - name: DesperateGirl_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 112
+        height: 316
+      spriteId: d6b1bc52cb9f4c7459a92ba1ae371e89
+    - name: DesperateGirl_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 88
+        y: 52
+        width: 132
+        height: 324
+      spriteId: de0a0d25fbc69ef4cb661946b6aaf91c
+    - name: DesperateGirl_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 92
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 9c495a84d61d3c8469cc2da2337b364b
+    - name: DesperateGirl_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 92
+        y: 52
+        width: 124
+        height: 320
+      spriteId: c895b22876d47914b84e2a53e7f2ef32
+    - name: DesperateGirl_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 112
+        height: 316
+      spriteId: 5d80bb7c36d2cbb4c830c4b62a208569
+    - name: DesperateGirl_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 92
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 14c843ed958c9074e8e061f75b06417f
+    - name: DesperateGirl_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 88
+        y: 52
+        width: 132
+        height: 324
+      spriteId: 312a00bb26205fd4a8af89591da780c8
     - name: DesperateGirl_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 108
-        y: 56
-        width: 108
-        height: 316
-      spriteId: c7350a6b50ce2c84aa0ed9487c39ba3e
+        x: 100
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 923bbeb6a4a0fe3428695f7a7a885c9d
     - name: DesperateGirl_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 100
-        y: 56
-        width: 108
+        x: 104
+        y: 52
+        width: 112
         height: 316
-      spriteId: db6f31c58298d8c458ad15e5319a1549
+      spriteId: f026b4bed9c9b4748ab1d417d7986a88
+    - name: DesperateGirl_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 132
+        height: 324
+      spriteId: bbe7509bebda99146b23a93d46d29f5b
+    - name: DesperateGirl_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 07c28db8b5e4c7340bc35d7bb38e3e9e
+    - name: DesperateGirl_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 124
+        height: 320
+      spriteId: 3c1f960b383a75349a68c65d4ac4faf5
+    - name: DesperateGirl_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 112
+        height: 316
+      spriteId: b8db8023a1e69c5468752536610114a9
+    - name: DesperateGirl_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 124
+        height: 320
+      spriteId: b2fef0a662028db41b8b9bb28b728ffd
+    - name: DesperateGirl_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 132
+        height: 324
+      spriteId: 1db1732e07051db4cadba52da2e09d55
     linkedCells: []
     parentIndex: -1
   platformSettings:

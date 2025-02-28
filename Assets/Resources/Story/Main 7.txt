@@ -27,7 +27,7 @@ HideTextbox(true)
 stopEvent(AMB_Thunder)
 [wait]RemoveScene()
 [wait]ShowScene("Scene 11" "Main Shop")
-[wait]SetCamera(-x -10.26 -spd 1)
+[wait]SetCamera(-x -10.5)
 Wait(0.5)
 [wait]HideCG()
 

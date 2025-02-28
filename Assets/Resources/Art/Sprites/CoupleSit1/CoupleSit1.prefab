@@ -836,6 +836,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 1beee005f190a95409c312dfdcfe20ba, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 90b98bab2ef1f69458ca498d57cdac45, type: 2}
     - target: {fileID: 3626916397498700004, guid: 1beee005f190a95409c312dfdcfe20ba, type: 3}
       propertyPath: m_SortingLayer
       value: 0
@@ -850,7 +854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 1beee005f190a95409c312dfdcfe20ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1479
+      value: 1485
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 1beee005f190a95409c312dfdcfe20ba, type: 3}
       propertyPath: m_LocalPosition.y

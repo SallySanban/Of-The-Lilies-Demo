@@ -22,6 +22,7 @@ choice in -1
 
 		pixel Ahlai as <playerName> "Okay, four gold coins it is, sir. Here you go."
 
+		HideTextbox(false)
 		playSFX(SFX_CoinsJiggle)
 		Wait(0.5)
 

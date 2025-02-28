@@ -38,6 +38,7 @@ else
 	{
 		pixel Barkeep "Your drinks are ready. Here's your three flasks of areka."
 
+		HideTextbox(false)
 		playSFX("SFX_UI InventoryPickup")
 		Wait(0.5)
 
