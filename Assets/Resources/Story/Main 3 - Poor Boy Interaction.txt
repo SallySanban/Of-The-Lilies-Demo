@@ -16,6 +16,12 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "You should think twice before doing things like this."
 
+		ChangeAnimationState("Soldier1" Kick false)
+		SetNPCPosition("Soldier1" -x 127.55 -y -164.32)
+		FlipNPC("Soldier1" Left)
+		ChangeAnimationState("Soldier2" Kick false)
+		SetNPCPosition("Soldier2" -x -199.45 -y -164.32)
+		FlipNPC("Soldier2" Left)
 		HideTextbox(true)
 		[wait]SwitchCharacter(Ahlai Seiji -b Left_Default_Body -e Left_Worried)
 
@@ -94,6 +100,13 @@ choice in 0
 		[wait]SwitchCharacter(Seiji Ahlai -b Left_Default_Body -e Left_Concerned)
 
 		Ahlai as <playerName> at 0 "That's enough! Leave him alone!"
+
+		ChangeAnimationState("Soldier1" Kick false)
+		SetNPCPosition("Soldier1" -x 127.55 -y -164.32)
+		FlipNPC("Soldier1" Left)
+		ChangeAnimationState("Soldier2" Kick false)
+		SetNPCPosition("Soldier2" -x -199.45 -y -164.32)
+		FlipNPC("Soldier2" Left)
 
 		pixel Soldier1 as Seiyslan Soldier "Crap... We've been caught. Let's go."
 

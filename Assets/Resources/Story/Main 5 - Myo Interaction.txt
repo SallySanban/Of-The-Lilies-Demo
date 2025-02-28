@@ -206,7 +206,7 @@ else
 
 			pixel SocialClimberSit2 as ??? "But as for <i>you</i>, I recommend you watch your own mouth when you speak with elders like myself!"
 
-			Myo at 0 "I appreciate your efforts to help, but might I remind you that this person is no  <i>stranger</i>."
+			Myo at 0 "I appreciate your efforts to help, but might I remind you that this person is no <i>stranger</i>."
 			
 			Myo at 0 "I'm actually one of their loyalest customers, at Sabina's Salves."
 

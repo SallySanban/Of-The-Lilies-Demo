@@ -6,6 +6,7 @@ if ($RetiredVeteranQuest)
 {
 	pixel Ahlai as <playerName> "I should take this to that man. He did say he wanted to see more of these landscapes..."
 
+	HideTextbox(false)
 	playSFX("SFX_UI InventoryPickup")
 	Wait(0.5)
 

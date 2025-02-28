@@ -8,11 +8,6 @@ ScriptedImporter:
       assembly: UnityEngine.AnimationModule
       name: GossipRight
     second: {fileID: 7400000, guid: 18ee287fc174a794aadd0f6c3745dd46, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: IdleRight
-    second: {fileID: 7400000, guid: 745374b03a832964c961886f1e72e67d, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -107,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748135996446143
+  platformSettingsDirtyTick: 638763967935774041
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -133,16 +128,56 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: GossipGirl1_Frame_0
     originalName: 
-    pivot: {x: 1.1538461, y: -0.13}
+    pivot: {x: 1.1818182, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 4
+      width: 132
+      height: 400
+    spriteID: 01ab2b889daf9244a9b6082f357fc201
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 4}
+  - name: GossipGirl1_Frame_1
+    originalName: 
+    pivot: {x: 1.21875, y: -0.13131313}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 4
+      width: 128
+      height: 396
+    spriteID: 9216ce42e98cd6b4da244630d459d5d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 428, y: 4}
+  - name: GossipGirl1_Frame_3
+    originalName: 
+    pivot: {x: 1.1470588, y: -0.12871286}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 156
-      height: 400
-    spriteID: ba2a5b1eafe05e44db3ae204faf215ae
+      width: 136
+      height: 404
+    spriteID: 2146925e46c3ad3448d04dfc88d0f154
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +186,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: GossipGirl1_Frame_1
+  - name: GossipGirl1_Frame_2
     originalName: 
     pivot: {x: 1.1818182, y: -0.13}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 4
+      x: 148
+      y: 412
       width: 132
       height: 400
-    spriteID: c9387b830d2627e47a6d26eec65c845d
+    spriteID: 5d03d7a59600c654da1b0f61e1b9caf9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +205,87 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 4}
+    uvTransform: {x: 148, y: 412}
+  - name: GossipGirl1_Frame_4
+    originalName: 
+    pivot: {x: 1.1818182, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 4
+      width: 132
+      height: 400
+    spriteID: eb81bc0a8c1a2ff49a989a3bca27a333
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 288, y: 4}
+  - name: GossipGirl1_Frame_5
+    originalName: 
+    pivot: {x: 1.21875, y: -0.13131313}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 408
+      width: 128
+      height: 396
+    spriteID: ba5af36cc2e1b83479c69f97bdf8c534
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 428, y: 408}
+  - name: GossipGirl1_Frame_6
+    originalName: 
+    pivot: {x: 1.1818182, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 412
+      width: 132
+      height: 400
+    spriteID: 438f0b1f5ba3cac47aa642fe4fb9cbd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 288, y: 412}
+  - name: GossipGirl1_Frame_7
+    originalName: 
+    pivot: {x: 1.1470588, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 416
+      width: 136
+      height: 404
+    spriteID: cec0ffdf8aa717842b3c6852ed168b8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 416}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -184,20 +299,74 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 76
+        x: 100
         y: 52
-        width: 156
+        width: 132
         height: 400
-      spriteId: ba2a5b1eafe05e44db3ae204faf215ae
+      spriteId: 01ab2b889daf9244a9b6082f357fc201
     - name: GossipGirl1_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
         x: 100
         y: 52
+        width: 128
+        height: 396
+      spriteId: 9216ce42e98cd6b4da244630d459d5d0
+    - name: GossipGirl1_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 136
+        height: 404
+      spriteId: 2146925e46c3ad3448d04dfc88d0f154
+    - name: GossipGirl1_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
         width: 132
         height: 400
-      spriteId: c9387b830d2627e47a6d26eec65c845d
+      spriteId: 5d03d7a59600c654da1b0f61e1b9caf9
+    - name: GossipGirl1_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 132
+        height: 400
+      spriteId: eb81bc0a8c1a2ff49a989a3bca27a333
+    - name: GossipGirl1_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 128
+        height: 396
+      spriteId: ba5af36cc2e1b83479c69f97bdf8c534
+    - name: GossipGirl1_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 132
+        height: 400
+      spriteId: 438f0b1f5ba3cac47aa642fe4fb9cbd7
+    - name: GossipGirl1_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 136
+        height: 404
+      spriteId: cec0ffdf8aa717842b3c6852ed168b8f
     linkedCells: []
     parentIndex: -1
   platformSettings:

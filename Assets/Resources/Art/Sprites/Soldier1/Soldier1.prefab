@@ -832,6 +832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soldier1
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 86b66e93112d6164686e40709dfd1079, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a60cb481a45841b469f7a368ed31e03e, type: 2}
     - target: {fileID: 3626916397498700004, guid: 86b66e93112d6164686e40709dfd1079, type: 3}
       propertyPath: m_Sprite
       value: 

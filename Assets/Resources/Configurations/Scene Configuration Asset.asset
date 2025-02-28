@@ -224,7 +224,7 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: FemNPC3
-      position: {x: 3729.21, y: -171.82}
+      position: {x: 3729.21, y: -197.82}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -1200,7 +1200,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - After Sato Interaction
-      moveToInteractPosition: {x: -44.28, y: -2.15}
+      moveToInteractPosition: {x: 14.38, y: -1.97}
     - interactableName: PoorBoy
       interactableType: 0
       isInteractable: 1
@@ -1541,13 +1541,13 @@ MonoBehaviour:
       flipped: 0
       animationState: 
     - npcName: GossipGirl3
-      position: {x: -1697.05, y: -209.32}
+      position: {x: -1663.05, y: -209.32}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipRight
     - npcName: GossipGirl4
-      position: {x: -1557.05, y: -210.32}
+      position: {x: -1552.05, y: -210.32}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -2458,7 +2458,7 @@ MonoBehaviour:
   - sceneName: Scene 12
     currentBackgroundName: Ahlai's Bedroom
     showPlayer: 1
-    playerPosition: {x: -1001.34, y: -213.89}
+    playerPosition: {x: -810.86, y: -202.98}
     playerDirection: 1
     playerAnimationState: IdleLeft
     npcsInScene:

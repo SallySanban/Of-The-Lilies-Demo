@@ -7,7 +7,7 @@ choice in -1
 
 		HideTextbox(false)
 	- if ($QuanDeliverQuest) Delivery from Sabina's Salves!
-		HideTextbox(false)
+		HideTextbox(true)
 		[wait]ShowCharacterRight(Seiji -b Right_Default_Body -e Right_Smile)
 
 		pixel Quan as Mr. Quan "Oh, has my potion finally arrived?"
