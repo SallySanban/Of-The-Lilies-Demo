@@ -88,8 +88,6 @@ if ($GetCloser)
 
 	Laisa as Ilaisaane at 0 "Don't worry. We'll see each other again."
 
-	pauseEvent(BGM_Lien)
-	resumeEvent(BGM_KuchaiTown)
 	HideCharacter(Laisa)
 	HideCharacter(Ahlai)
 	$LaisaTalkedTo = true
