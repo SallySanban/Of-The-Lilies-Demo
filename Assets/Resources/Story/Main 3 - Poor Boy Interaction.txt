@@ -161,10 +161,14 @@ choice in 0
 	- I shouldn't get involved.
 		$Peace += 1
 
-		pixel Ahlai as <playerName> "I shouldn't get involved in this..."
+		Ahlai as <playerName> at 0 "I shouldn't get involved in this..."
 
-		pixel Seiji "You're right, <playerName>. It's too dangerous. Let's go."
+		HideTextbox(true)
+		[wait]SwitchCharacter(Ahlai Seiji -b Left_Default_Body -e Left_Stern)
 
+		Seiji at 0 "You're right, <playerName>. It's too dangerous. Let's go."
+
+		HideCharacter(Seiji)
 		ToggleInteractable("Scene 5" "Kuchai Town 3" PoorBoy false)
 
 		ResetCamera(true)

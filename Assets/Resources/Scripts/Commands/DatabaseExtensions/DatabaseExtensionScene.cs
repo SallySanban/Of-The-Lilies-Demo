@@ -335,12 +335,46 @@ namespace Commands
             {
                 direction = -1;
             }
-            else
+            else if (data[1].Equals("Right"))
             {
                 direction = 1;
             }
+            else
+            {
+                PixelSprite npc1;
+                if (data[0].Equals(SceneManager.Instance.MC_NAME))
+                {
+                    npc1 = SceneManager.Instance.player;
+                }
+                else
+                {
+                    npc1 = NPCManager.Instance.GetNPC(data[0]);
+                }
 
-            if (data[0].Equals("Ahlai"))
+                PixelSprite npc2;
+                if (data[1].Equals(SceneManager.Instance.MC_NAME))
+                {
+                    npc2 = SceneManager.Instance.player;
+                }
+                else
+                {
+                    npc2 = NPCManager.Instance.GetNPC(data[1]);
+                }
+
+                if (npc1 != null && npc2 != null)
+                {
+                    if (npc1.root.transform.position.x < npc2.root.transform.position.x)
+                    {
+                        direction = 1;
+                    }
+                    else
+                    {
+                        direction = -1;
+                    }
+                }
+            }
+
+            if (data[0].Equals(SceneManager.Instance.MC_NAME))
             {
                 SceneManager.Instance.player.Flip(direction);
             }

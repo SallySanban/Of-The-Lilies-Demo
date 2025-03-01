@@ -1,4 +1,4 @@
-FlipNPC("Ahlai" Left)
+FlipNPC("Ahlai" "Seiji")
 
 pixel Seiji "It's open."
 

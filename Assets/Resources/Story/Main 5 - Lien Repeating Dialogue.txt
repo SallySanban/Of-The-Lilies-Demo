@@ -108,7 +108,7 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "<i>Damn, even the soldiers got tense at the mention of Sir Aciano."
 		
-		Ahlai as <playerName> at 0 "I could still be wrong, but it seems likely they do have bad blood.</i>"
+		Ahlai as <playerName> at 0 "<i>I could still be wrong, but it seems likely they do have bad blood.</i>"
 
 		$AskedAboutMyo = true
 		Load("Main 5 - Lien Repeating Dialogue")

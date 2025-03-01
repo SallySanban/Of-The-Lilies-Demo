@@ -1,7 +1,12 @@
-pixel Myo "<playerName>! Are you here to come to the tavern with me?"
+ShowCharacterRight(Myo -b Right_Default_Body -e Right_FlirtySmile)
+[wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Default)
 
-pixel Ahlai as <playerName> "Sorry, sir. I still have some things to do."
+Myo at 1 "<playerName>! Are you here to come to the tavern with me?"
 
-pixel Myo "No worries, my dear. The tavern isn't open yet anyway!"
+Ahlai as <playerName> at 0 "Sorry, sir. I still have some things to do."
 
+Myo at 1 "No worries, my dear. The tavern isn't open yet anyway!"
+
+HideCharacter(Ahlai)
+HideCharacter(Myo)
 HideTextbox(false)

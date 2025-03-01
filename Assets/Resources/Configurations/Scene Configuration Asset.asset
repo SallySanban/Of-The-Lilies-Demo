@@ -315,6 +315,11 @@ MonoBehaviour:
       isInteractable: 1
       storyToPlay: Main 1 - Axe Guy Interaction
       moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: House Entrance
+      interactableType: 2
+      isInteractable: 1
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
     backgroundsToGo:
     - interactableName: Cliffside Entrance
       backgroundToGo: Tayabac Cliffside 1
@@ -327,6 +332,13 @@ MonoBehaviour:
       backgroundToGo: Tayabac Fireplace
       keyToPress: 4
       playerPositionInNextBackground: {x: -39.03, y: -82.32}
+      playerDirectionInNextBackground: 1
+      followPlayer: 
+      followPlayerPosition: {x: 0, y: 0}
+    - interactableName: House Entrance
+      backgroundToGo: Tayabac House 1st Floor
+      keyToPress: 3
+      playerPositionInNextBackground: {x: -0.02, y: -227.17}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
@@ -2192,14 +2204,14 @@ MonoBehaviour:
     - interactableName: Sabina Door
       backgroundToGo: Main Shop
       keyToPress: 3
-      playerPositionInNextBackground: {x: -928.56, y: -249.14}
+      playerPositionInNextBackground: {x: -808.56, y: -237.97}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 10
     currentBackgroundName: Main Shop
     showPlayer: 1
-    playerPosition: {x: -808.56, y: -237.99}
+    playerPosition: {x: -808.56, y: -237.97}
     playerDirection: 1
     playerAnimationState: IdleRight
     npcsInScene:

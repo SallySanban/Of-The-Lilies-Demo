@@ -14,7 +14,7 @@ if (!$LienPaperInteracted)
 
 	Sabina as Lady Sabina "But I cannot lie to you, this is a dangerous option for you to take."
 	
-	Sabina as Lady Sabina "And the Empire of Seiysla itself will never be the same  if you proceed to take him out. Do you want that weight on you?"
+	Sabina as Lady Sabina "And the Empire of Seiysla itself will never be the same if you proceed to take him out. Do you want that weight on you?"
 
 	Sabina as Lady Sabina "But if you choose him... I truly cannot blame you at all."
 

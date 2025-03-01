@@ -8,7 +8,7 @@ public class VNManager : MonoBehaviour
 {
     public static VNManager Instance { get; private set; }
 
-    private const string DIALOGUE_FILE = "Main 1";
+    private const string DIALOGUE_FILE = "Test";
 
     private void Awake()
     {

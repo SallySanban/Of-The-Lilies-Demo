@@ -10,7 +10,7 @@ choice in -1
 			pixel MaleNPC4 as Uncle "You have to help out, don't you? Come by later when you're done for some sparring practice."
 		}
 		
-	- if ($DaniwQuestCompleted && $CropsQuestCompleted) Can I help with sparring practice?
+	- if ($CanDoCombat && !$CombatQuestCompleted) Can I help with sparring practice?
 		pixel MaleNPC4 as Uncle "<playerName>! Finished with the preparations, are we?"
 
 		pixel MaleNPC4 as Uncle "We couldn't start without you. Come on."

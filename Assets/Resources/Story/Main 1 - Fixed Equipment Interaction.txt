@@ -22,4 +22,9 @@ else
 	[wait]HideCG()
 	
 	$DaniwQuestCompleted = true
+
+	if ($DaniwQuestCompleted && $CropsQuestCompleted)
+	{
+		$CanDoCombat = true
+	}
 }

@@ -1,29 +1,39 @@
-[wait]SwitchScene("Scene 2" "Tayabac Village")
-playAmbience(Amb_ForestMain)
+if (!$GotDaniwQuest)
+{
+	[wait]SwitchScene("Scene 2" "Tayabac Village")
+	playAmbience(Amb_ForestMain)
 
-pixel MaleNPC3 as Uncle Daniw "<playerName>! Congratulations on your coming-of-age!"
+	pixel MaleNPC3 as Uncle Daniw "<playerName>! Congratulations on your coming-of-age!"
 
-pixel Ahlai as <playerName> "Oh, Uncle Daniw! How are the preparations for the celebration coming along?"
+	pixel Ahlai as <playerName> "Oh, Uncle Daniw! How are the preparations for the celebration coming along?"
 
-pixel MaleNPC3 as Uncle Daniw "About that... I need your help with something."
+	pixel MaleNPC3 as Uncle Daniw "About that... I need your help with something."
 
-pixel Ahlai as <playerName> "What can I do for you?"
+	pixel Ahlai as <playerName> "What can I do for you?"
 
-pixel MaleNPC3 as Uncle Daniw "My fishing equipment broke this morning, you see... I need that to catch some fish in time for later. Would you kindly help me out?"
+	pixel MaleNPC3 as Uncle Daniw "My fishing equipment broke this morning, you see... I need that to catch some fish in time for later. Would you kindly help me out?"
 
-pixel Ahlai as <playerName> "Of course, Uncle. Leave it to me. Where did you say your fishing equipment was?"
+	pixel Ahlai as <playerName> "Of course, Uncle. Leave it to me. Where did you say your fishing equipment was?"
 
-pixel MaleNPC3 as Uncle Daniw "Over there by the river. Some kids must have been toying with it... Oh, my dear fishing equipment..."
+	pixel MaleNPC3 as Uncle Daniw "Over there by the river. Some kids must have been toying with it... Oh, my dear fishing equipment..."
 
-$GotDaniwQuest = true
-$GotCropsQuest = false
-$DaniwItems = 0
-$KnowDaniwItems = false
-$FishingEquipmentFixed = false
-$KnowThreadLocation = false
-$KnowWoodLocation = false
-$DaniwQuestCompleted = false
-$CropsQuestCompleted = false
-$CombatQuestCompleted = false
+	$GotDaniwQuest = true
+	$GotCropsQuest = false
+	$DaniwItems = 0
+	$KnowDaniwItems = false
+	$FishingEquipmentFixed = false
+	$KnowThreadLocation = false
+	$KnowWoodLocation = false
+	$DaniwQuestCompleted = false
+	$CropsQuestCompleted = false
+	$CombatQuestCompleted = false
+	$CanDoCombat = false
 
-HideTextbox(false)
+	HideTextbox(false)
+}
+else
+{
+	[wait]SwitchScene("Scene 2" "Tayabac Village")
+	playAmbience(Amb_ForestMain)
+}
+

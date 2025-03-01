@@ -29,6 +29,11 @@ else
 			pixel FemNPC1 as Auntie "We'll prepare a feast just for you!"
 
 			$CropsQuestCompleted = true
+
+			if ($DaniwQuestCompleted && $CropsQuestCompleted)
+			{
+				$CanDoCombat = true
+			}
 		}
 	}
 }

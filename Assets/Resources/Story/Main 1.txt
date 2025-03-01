@@ -145,4 +145,6 @@ HideCharacter(TayabacAhlai)
 
 pixel Ahlai as <playerName> "It all feels like this has happened before..."
 
+$GotDaniwQuest = false
+
 HideTextbox(false)
