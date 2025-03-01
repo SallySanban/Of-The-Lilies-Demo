@@ -49,9 +49,6 @@ choice in -1
 
 		HideTextbox(true)
 
-		pauseEvent(BGM_KuchaiTavern)
-		resumeEvent(BGM_Lien)
-
 		[wait]Blackout()
 
 		Soldier as ??? "Make way for General Lien and the Seiyslan army!"

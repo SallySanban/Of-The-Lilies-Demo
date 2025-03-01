@@ -32,7 +32,6 @@ choice in 0
 	- <i>I should punch him.</i>
 		$Vengeance += 2
 
-		pauseEvent(BGM_Lien)
 		ChangeBodyEmotion(Ahlai -e Left_Angry)
 
 		Ahlai as <playerName> at 0 "Excuse me..."
@@ -51,8 +50,6 @@ choice in 0
 		[wait]Blackout(-i true)
 
 		Ahlai as <playerName> "<i>Somehow, I feel... relieved.</i>"
-
-		resumeEvent(BGM_Lien)
 
 		HideTextbox(true)
 		ChangeBodyEmotion(Ahlai -e Left_Surprised)
