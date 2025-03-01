@@ -338,7 +338,7 @@ MonoBehaviour:
     - interactableName: House Entrance
       backgroundToGo: Tayabac House 1st Floor
       keyToPress: 3
-      playerPositionInNextBackground: {x: -0.02, y: -227.17}
+      playerPositionInNextBackground: {x: -1007.42, y: -202.93}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
