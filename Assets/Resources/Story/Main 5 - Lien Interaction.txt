@@ -163,7 +163,7 @@ choice in 0
 
 		pixel Soldier1 as Seiyslan Soldier "I'm just trying to set a man up with a good time!"
 
-		ChangeBodyEmotion(Lien -e Right_Frown)
+		ChangeBodyEmotion(Lien -e Right_Angry)
 
 		Lien as General Lien at 1 "<i>Excuse me?</i>"
 
@@ -201,7 +201,7 @@ choice in 0
 
 		Ahlai as <playerName> at 0 "<i>What a bad impression these soldiers are making. Maybe if they get drunk enough, that'll make things easier...</i>"
 
-		ChangeBodyEmotion(Lien -e Right_Frown)
+		ChangeBodyEmotion(Lien -e Right_Annoyed)
 
 		Lien as General Lien at 1 "I have no plans to entertain <i>anyone</i> tonight. We still have <i>work</i>. This is your last chance before I have to write you up."
 
@@ -257,7 +257,7 @@ choice in 0
 
 		pixel Soldier1 as Seiyslan Soldier "He could also tell you the things he's about to do!"
 
-		ChangeBodyEmotion(Lien -e Right_Frown)
+		ChangeBodyEmotion(Lien -e Right_Confused)
 
 		Lien as General Lien at 1 "I-what? Are you referring to the plans of the army? Because that information is classified."
 
