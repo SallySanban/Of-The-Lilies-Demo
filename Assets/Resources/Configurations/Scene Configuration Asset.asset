@@ -1963,7 +1963,7 @@ MonoBehaviour:
       animationState: IdleRight
     - npcName: Myo
       position: {x: -894.27, y: -163.32}
-      orderInLayer: 
+      orderInLayer: 2
       appear: 1
       flipped: 0
       animationState: Sit
@@ -2050,37 +2050,37 @@ MonoBehaviour:
       animationState: IdleRight
     - npcName: Myo
       position: {x: -894.27, y: -163.32}
-      orderInLayer: 3
+      orderInLayer: 2
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: SocialClimberSit2
       position: {x: -665.27, y: -189.32}
-      orderInLayer: 
+      orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: BackSit
     - npcName: Soldier1
       position: {x: 535.73, y: -188.32}
-      orderInLayer: 1
+      orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Soldier2
       position: {x: 787.73, y: -233.32}
-      orderInLayer: 3
+      orderInLayer: 2
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Soldier3
       position: {x: 50.73, y: -191.32}
-      orderInLayer: 1
+      orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Lien
       position: {x: 922.19, y: -213.47}
-      orderInLayer: 
+      orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: Sit

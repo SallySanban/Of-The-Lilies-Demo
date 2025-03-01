@@ -1,3 +1,4 @@
+
 ShowCharacterLeft(Seiji -b Left_Default_Body -e Left_Worried)
 [wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Conflicted)
 
@@ -112,4 +113,5 @@ HideCharacter(Seiji)
 HideCharacter(Ahlai)
 resumeEvent(BGM_KuchaiTown)
 HideTextbox(false)
+ResetCamera(true)
 FollowPlayer("Seiji")
