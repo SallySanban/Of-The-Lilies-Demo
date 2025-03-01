@@ -127,8 +127,6 @@ choice in 0
 		HideTextbox(false)
 		ToggleInteractable("Scene 9" "Tavern" "Lien" false)
 
-		pauseEvent(BGM_Lien)
-		resumeEvent(BGM_KuchaiTavern)
 		HideCharacter(Ahlai)
 		HideCharacter(Lien)
 

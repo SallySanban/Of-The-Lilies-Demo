@@ -1,6 +1,7 @@
 [wait]SwitchCG("Laisa")
 
 resumeEvent(BGM_Laisa)
+stopEvent(AMB_SwordClash)
 
 Laisa "Did you miss me already?"
 
@@ -61,8 +62,6 @@ playSFX(SFX_Running)
 Wait(0.5)
 
 Ahlai as <playerName> "<i>Did... that just happen...?</i>"
-
-stopEvent(AMB_SwordClash)
 
 HideTextbox(true)
 [wait]SwitchCG("Curses Appear")

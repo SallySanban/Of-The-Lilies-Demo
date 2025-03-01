@@ -1,5 +1,4 @@
 [wait]Blackout()
-resumeEvent(BGM_Scene5)
 stopEvent(BGM_KuchaiTown)
 RemoveScene()
 [wait]ShowScene("Scene 10" "Main Shop")
@@ -131,7 +130,6 @@ playSFX(SFX_AhlaiWalk)
 playSFX(SFX_LaisaBumping)
 RemoveScene()
 Wait(1.5)
-stopEvent(BGM_Scene5)
 [wait]ShowScene("Scene 11" "Kuchai Town 1")
 
 Ahlai as <playerName> "Hey!"
