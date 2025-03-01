@@ -2079,7 +2079,7 @@ MonoBehaviour:
       flipped: 0
       animationState: Sit
     - npcName: Soldier2
-      position: {x: 787.73, y: -233.32}
+      position: {x: 787.73, y: -229.32}
       orderInLayer: 2
       appear: 1
       flipped: 0
