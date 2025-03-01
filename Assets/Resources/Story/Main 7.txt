@@ -104,7 +104,6 @@ pixel Sabina as Lady Sabina "I'll call you both again in the morning once I have
 pixel Sabina as Lady Sabina "And <i>whatever</i> you do, do <i>not</i> go out until we know more."
 
 HideCharacter(Ahlai)
-HideCharacter(Seiji)
 HideTextbox(true)
 [wait]Blackout()
 playSFX(SFX_KuchaiWalkout)

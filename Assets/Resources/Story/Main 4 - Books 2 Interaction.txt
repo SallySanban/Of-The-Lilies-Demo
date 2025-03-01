@@ -11,7 +11,7 @@ if ($RetiredVeteranQuest)
 	Wait(0.5)
 
 	$RetiredVeteranBook = true
-	ToggleInteractable("Scene 6" "Library 2" "Books 2" false)
+	ToggleInteractable("Scene 6" "Library 3" "Books 2" false)
 }
 
 HideTextbox(false)

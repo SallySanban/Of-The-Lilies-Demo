@@ -110,7 +110,7 @@ playSFX(SFX_KuchaiWalkout)
 Wait(0.5)
 RemoveFromScene("Sabina")
 [wait]FlipNPC("Seiji" Left)
-[wait]SetCamera(-x -12.68)
+[wait]SetCamera(-x -11.43)
 [wait]HideCG()
 
 ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Sad)

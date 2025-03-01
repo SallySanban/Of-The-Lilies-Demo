@@ -1,4 +1,4 @@
-[wait]PanCamera(-x -1.57 -spd 2)
+[wait]PanCamera(-x -3.87 -spd 2)
 [wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Default)
 
 pixel Soldier1 as Seiyslan Soldier "Scram! Damn street rats! You're all lucky you even get warnings from us here!"

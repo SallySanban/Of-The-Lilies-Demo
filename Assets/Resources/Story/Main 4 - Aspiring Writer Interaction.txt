@@ -131,5 +131,5 @@ pixel Ahlai as <playerName> "Thank you for writing about it. I hope you find suc
 
 pixel AspiringWriterSit as Aspiring Writer "Thank you. I hope I do you justice."
 
-ToggleInteractable("Scene 6" "Library 3" AspiringWriterSit false)
+ToggleInteractable("Scene 6" "Library 2" AspiringWriterSit false)
 HideTextbox(false)

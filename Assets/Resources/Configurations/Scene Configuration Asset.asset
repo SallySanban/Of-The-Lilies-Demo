@@ -1200,7 +1200,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - After Sato Interaction
-      moveToInteractPosition: {x: 14.38, y: -1.97}
+      moveToInteractPosition: {x: -43.89, y: -1.97}
     - interactableName: PoorBoy
       interactableType: 0
       isInteractable: 1
@@ -1210,7 +1210,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Soldier Interaction
-      moveToInteractPosition: {x: 16.94, y: -2.15}
+      moveToInteractPosition: {x: 14.38, y: -1.97}
     - interactableName: Bridge
       interactableType: 2
       isInteractable: 1
@@ -2199,18 +2199,18 @@ MonoBehaviour:
   - sceneName: Scene 10
     currentBackgroundName: Main Shop
     showPlayer: 1
-    playerPosition: {x: -928.56, y: -249.14}
+    playerPosition: {x: -808.56, y: -237.99}
     playerDirection: 1
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sabina
-      position: {x: -164.22, y: -220.32}
+      position: {x: -164.22, y: -227.32}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -711.22, y: -210.32}
+      position: {x: -591.22, y: -210.32}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -2259,18 +2259,18 @@ MonoBehaviour:
   - sceneName: Scene 11
     currentBackgroundName: Main Shop
     showPlayer: 1
-    playerPosition: {x: -928.56, y: -249.14}
+    playerPosition: {x: -808.56, y: -237.99}
     playerDirection: 1
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sabina
-      position: {x: -164.22, y: -220.32}
+      position: {x: -164.22, y: -227.32}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -711.22, y: -210.32}
+      position: {x: -591.22, y: -210.32}
       orderInLayer: 
       appear: 1
       flipped: 0

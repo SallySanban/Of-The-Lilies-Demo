@@ -143,7 +143,7 @@ Wait(0.5)
 
 ??? "Someone get Sir Lien!"
 
-TayabacLien "I'm fine. This is all... <b>for the good of the Seiyslan Empire.</b>"
+TayabacLien as Lien "I'm fine. This is all... <b>for the good of the Seiyslan Empire.</b>"
 
 TayabacAhlai as <playerName> "<b><i>Lien...</b></i>"
 
