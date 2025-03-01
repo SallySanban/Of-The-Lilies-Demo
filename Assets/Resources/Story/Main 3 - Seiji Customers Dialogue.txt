@@ -33,7 +33,7 @@ Seiji at 1 "But instead, she got a verbal beatdown from her! I'm sure her ego to
 
 Seiji at 1 "In the end, she left, saying she's never coming back."
 
-ChangeBodyEmotion(Seiji -e Right_Laugh)
+ChangeBodyEmotion(Seiji -e Right_ReallyHappy)
 
 Seiji at 1 "Haha! It's safe to say that she's banned from even coming inside now."
 
