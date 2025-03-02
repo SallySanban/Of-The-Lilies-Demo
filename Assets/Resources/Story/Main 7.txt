@@ -1,3 +1,5 @@
+stopEvent(AMB_SwordClash)
+
 Soldier "Damn it, General! We can't find the pirate anymore!"
 
 Lien as General Lien "That is no excuse. Go secure the perimeter, cover <i>all</i> exits out of Kuchai! <i>This is an order!</i>"
