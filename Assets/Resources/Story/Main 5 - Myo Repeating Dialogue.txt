@@ -1,5 +1,5 @@
 ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
-ChangeBodyEmotion(Myo -e Left_Smile)
+ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 Ahlai as <playerName> at 1 "<i>What should I ask?</i>"
 
@@ -10,7 +10,7 @@ choice in 1
 
 		Myo at 0 "Oh, forget about that."
 
-		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+		ChangeBodyEmotion(Myo -e Left_Teasing)
 		ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Blush)
 
 		Myo at 0 "He already took up the time we could've spent enjoying each other's company."
@@ -19,7 +19,7 @@ choice in 1
 
 		Ahlai as <playerName> at 1 "Then you've got yourself a deal."
 
-		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Myo -e Left_KindSmile)
 		ChangeBodyEmotion(Ahlai -b Right_Question_Body -e Right_Question)
 
 		Myo at 0 "Wonderful. Well, if you must know, yes, that was Sir Gascon."
@@ -53,7 +53,7 @@ choice in 1
 
 		Ahlai as <playerName> at 1 "I'm quite honored you endorsed Sabina's Salves to that tablemate of yours. Is there a reason you like our store so much?"
 
-		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+		ChangeBodyEmotion(Myo -e Left_Teasing)
 
 		Myo at 0 "Hmm, I <i>love</i> the people who work there."
 
@@ -63,7 +63,7 @@ choice in 1
 
 		Ahlai as <playerName> at 1 "Is this an advance...?"
 
-		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 		Myo at 0 "What <i>ever</i> do you mean? Lady Sabina's an excellent seller! I always love the results we get whenever we work together!"
 
@@ -71,13 +71,13 @@ choice in 1
 
 		Ahlai as <playerName> at 1 "...Oh, I thought you..."
 
-		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+		ChangeBodyEmotion(Myo -e Left_Teasing)
 
 		Myo at 0 "You thought what? That I was referring to you?"
 		
 		Myo at 0 "I mean... you definitely could make a good case for why I should keep coming back to Sabina's Salves."
 
-		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 		Myo at 0 "Again... only if you're interested. But, that aside..."
 
@@ -116,7 +116,7 @@ choice in 1
 	- if (!$FavouriteDrinkChosen) What's <i>your</i> favorite drink at this tavern?
 		Ahlai as <playerName> at 1 "What's <i>your</i> favorite drink at this tavern, anyway? I'm curious."
 
-		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+		ChangeBodyEmotion(Myo -e Left_Teasing)
 
 		Myo at 0 "Oh, will it be your treat next time?"
 
@@ -124,7 +124,7 @@ choice in 1
 
 		Ahlai as <playerName> at 1 "I said no such thing!"
 
-		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 		Myo at 0 "Then I have no favorite."
 
@@ -134,7 +134,7 @@ choice in 1
 
 		Myo at 0 "...Maybe not, if you keep making those expressions..."
 
-		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 		Myo at 0 "Okay, I judge a tavern by the quality of their ale. And the Kuchai Tavern has good ale!"
 
@@ -159,7 +159,7 @@ choice in 1
 
 		Ahlai as <playerName> at 1 "Laisa...? You two are acquainted with each other?"
 
-		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 		Myo at 0 "Oh, you sound so surprised... let's just say you're right again. We're <i>very</i> well-acquainted with each other."
 
@@ -172,7 +172,7 @@ choice in 1
 
 		Myo at 0 "She just might, this time."
 
-		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 		Myo at 0 "But I welcome a challenge, one way or another. I don't doubt her capabilities."
 
@@ -194,7 +194,7 @@ choice in 1
 
 		Ahlai as <playerName> at 1 "You know, Sir Aciano. Myo. Are you always this forward with your intentions when you... speak with someone like me?"
 
-		ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+		ChangeBodyEmotion(Myo -e Left_Teasing)
 
 		Myo at 0 "Yes, actually. Transparency's very important in the work I do, but perhaps the same could be said for the relationships I pursue."
 

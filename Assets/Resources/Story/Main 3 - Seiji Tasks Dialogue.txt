@@ -24,7 +24,7 @@ HideTextbox(false)
 [wait]SetNPCPosition(Myo -x -167.22 -y -238.32)
 [wait]HideCG()
 
-ShowCharacterLeft(Myo -b Left_Default_Body -e Left_FlirtySmile)
+ShowCharacterLeft(Myo -b Left_Default_Body -e Left_Teasing)
 [wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Surprised)
 
 Ahlai as <playerName> at 1 "Sir Aciano? Welcome to Sabina's Salves!"
@@ -53,7 +53,7 @@ Ahlai as <playerName> at 1 "Sorry about that. How are you today, sir? Do we have
 
 Ahlai as <playerName> at 1 "I didn't hear anything from Lady Sabina... er, Seiji and I were just about to go out to make some deliveries, so we weren't expecting you-"
 
-ChangeBodyEmotion(Myo -e Left_Smile)
+ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 Myo at 0 "Please, <playerName>, just call me Myo. You have no need to stress about why I'm here, I'm just going to claim the potion I ordered a few days ago."
 
@@ -70,7 +70,7 @@ Myo at 0 "Overseeing Agon Province, writing publications and conducting research
 
 Myo at 0 "I mean, you're going to want to drink these too, or you just wouldn't get anything done, don't you think?"
 
-ChangeBodyEmotion(Myo -e Left_Smile)
+ChangeBodyEmotion(Myo -e Left_KindSmile)
 ChangeBodyEmotion(Ahlai -e Right_Concerned)
 
 Ahlai as <playerName> at 1 "I don't envy you, Sir- um, Myo. But please, you're only allowed to drink one vial a day."
@@ -93,7 +93,7 @@ Ahlai as <playerName> at 1 "Please, don't feel too bothered by it."
 
 Myo at 0 "Well, if you insist..."
 
-ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+ChangeBodyEmotion(Myo -e Left_Teasing)
 
 Myo at 0 "But allow me to pose the question back to you, <playerName>. How are you faring today? You seem a little pale."
 
@@ -102,7 +102,7 @@ choice in 1
 	- I'm alright, I guess...
 		$FlirtMyo = false
 
-		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Myo -e Left_KindSmile)
 		ChangeBodyEmotion(Ahlai -e Right_Conflicted)
 
 		Myo at 0 "I see."
@@ -132,13 +132,15 @@ choice in 1
 		Myo at 0 "Is that so..."
 }
 
-ChangeBodyEmotion(Myo -e Left_Smile)
+ChangeBodyEmotion(Myo -e Left_KindSmile)
 ChangeBodyEmotion(Ahlai -e Right_BlushSurprised)
 
 Myo at 0 "Then perhaps I can invite you for a drink with me later, if you're not too busy?"
 
 if ($FlirtMyo)
 {
+	ChangeBodyEmotion(Myo -e Left_Winking)
+
 	Myo at 0 "So you'd know I'm not just joking with you."
 }
 else
@@ -158,7 +160,7 @@ Myo at 0 "Is that right..."
 
 Seiji at 1 "Yes, it is."
 
-ChangeBodyEmotion(Myo -e Left_Smile)
+ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 Myo at 0 "Well, I would love to hear what <i><playerName></i> thinks, you know. No need to speak on <possessivePronoun> behalf."
 
@@ -227,7 +229,7 @@ choice in 1
 
 		Myo at 0 "Oh, that's a shame..."
 
-		ChangeBodyEmotion(Myo -e Left_Smile)
+		ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 		Myo at 0 "Well, if you do change your mind, come see me at the tavern, okay?"
 

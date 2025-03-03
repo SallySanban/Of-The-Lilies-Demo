@@ -107,7 +107,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748129058901612
+  platformSettingsDirtyTick: 638766371398006197
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -138,11 +138,71 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 176
       y: 4
       width: 156
       height: 400
-    spriteID: 06bef06ba006f4a4dacb5307ca9c19f7
+    spriteID: f01482263967d54428f1ae1210a1ccab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 4}
+  - name: RichSeiyslanCrush_Frame_1
+    originalName: 
+    pivot: {x: 1.1891892, y: -0.13131313}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 1228
+      width: 148
+      height: 396
+    spriteID: ee15440548f32394faae424ddcab8d11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 1228}
+  - name: RichSeiyslanCrush_Frame_2
+    originalName: 
+    pivot: {x: 1.1538461, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 412
+      width: 156
+      height: 400
+    spriteID: 1de1b37317b5b784cb99e34880aae775
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 412}
+  - name: RichSeiyslanCrush_Frame_3
+    originalName: 
+    pivot: {x: 1.1219512, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 164
+      height: 404
+    spriteID: 992389d1654027646b1b978548fbc01b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -151,18 +211,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: RichSeiyslanCrush_Frame_1
+  - name: RichSeiyslanCrush_Frame_4
     originalName: 
-    pivot: {x: 1.0769231, y: -0.13}
+    pivot: {x: 1.1538461, y: -0.13}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 4
+      x: 176
+      y: 820
       width: 156
       height: 400
-    spriteID: 6026e7269270ab249935cf82a0d7dcd7
+    spriteID: 179f5199eba2e1944bb2f81dada5d74f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +230,227 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 4}
+    uvTransform: {x: 176, y: 820}
+  - name: RichSeiyslanCrush_Frame_5
+    originalName: 
+    pivot: {x: 1.1891892, y: -0.13131313}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 1632
+      width: 148
+      height: 396
+    spriteID: 6879bd732db0f9041b14de359b255a72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 1632}
+  - name: RichSeiyslanCrush_Frame_6
+    originalName: 
+    pivot: {x: 1.1538461, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 1228
+      width: 156
+      height: 400
+    spriteID: 0bf87c763acb16946a99bacb32b2731f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 1228}
+  - name: RichSeiyslanCrush_Frame_7
+    originalName: 
+    pivot: {x: 1.1219512, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 416
+      width: 164
+      height: 404
+    spriteID: 9c1446772e425624d900cc5f0c1bcd4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 416}
+  - name: RichSeiyslanCrush_Frame_8
+    originalName: 
+    pivot: {x: 1, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 1636
+      width: 156
+      height: 400
+    spriteID: 6c95adff171f89041aa93273d59ab467
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 1636}
+  - name: RichSeiyslanCrush_Frame_9
+    originalName: 
+    pivot: {x: 1.027027, y: -0.13131313}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 504
+      y: 4
+      width: 148
+      height: 396
+    spriteID: ca2a24ca13f725245bd0e78a7ef71485
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 504, y: 4}
+  - name: RichSeiyslanCrush_Frame_10
+    originalName: 
+    pivot: {x: 1, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 4
+      width: 156
+      height: 400
+    spriteID: deff89de4b0b5504c854f07bbefce113
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 4}
+  - name: RichSeiyslanCrush_Frame_11
+    originalName: 
+    pivot: {x: 0.9756097, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 828
+      width: 164
+      height: 404
+    spriteID: 806a6c9cac002cd4192e8e6330017c92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 828}
+  - name: RichSeiyslanCrush_Frame_12
+    originalName: 
+    pivot: {x: 1, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 412
+      width: 156
+      height: 400
+    spriteID: ec8ae6ba3207a6341b25f5b3c0632577
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 412}
+  - name: RichSeiyslanCrush_Frame_13
+    originalName: 
+    pivot: {x: 1.027027, y: -0.13131313}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 504
+      y: 408
+      width: 148
+      height: 396
+    spriteID: 62d725bc500ab1b4a85cc671eccad514
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 504, y: 408}
+  - name: RichSeiyslanCrush_Frame_14
+    originalName: 
+    pivot: {x: 1, y: -0.13}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 820
+      width: 156
+      height: 400
+    spriteID: 50920aaf83553a242b3e521a5d4c2572
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 820}
+  - name: RichSeiyslanCrush_Frame_15
+    originalName: 
+    pivot: {x: 0.9756097, y: -0.12871286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1240
+      width: 164
+      height: 404
+    spriteID: 09bd8be8eeff1ed46b2436b1c1b84d8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1240}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -188,16 +468,142 @@ ScriptedImporter:
         y: 52
         width: 156
         height: 400
-      spriteId: 06bef06ba006f4a4dacb5307ca9c19f7
+      spriteId: f01482263967d54428f1ae1210a1ccab
     - name: RichSeiyslanCrush_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 88
+        x: 80
+        y: 52
+        width: 148
+        height: 396
+      spriteId: ee15440548f32394faae424ddcab8d11
+    - name: RichSeiyslanCrush_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
         y: 52
         width: 156
         height: 400
-      spriteId: 6026e7269270ab249935cf82a0d7dcd7
+      spriteId: 1de1b37317b5b784cb99e34880aae775
+    - name: RichSeiyslanCrush_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 52
+        width: 164
+        height: 404
+      spriteId: 992389d1654027646b1b978548fbc01b
+    - name: RichSeiyslanCrush_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 52
+        width: 156
+        height: 400
+      spriteId: 179f5199eba2e1944bb2f81dada5d74f
+    - name: RichSeiyslanCrush_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 80
+        y: 52
+        width: 148
+        height: 396
+      spriteId: 6879bd732db0f9041b14de359b255a72
+    - name: RichSeiyslanCrush_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 52
+        width: 156
+        height: 400
+      spriteId: 0bf87c763acb16946a99bacb32b2731f
+    - name: RichSeiyslanCrush_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 52
+        width: 164
+        height: 404
+      spriteId: 9c1446772e425624d900cc5f0c1bcd4e
+    - name: RichSeiyslanCrush_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 156
+        height: 400
+      spriteId: 6c95adff171f89041aa93273d59ab467
+    - name: RichSeiyslanCrush_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 148
+        height: 396
+      spriteId: ca2a24ca13f725245bd0e78a7ef71485
+    - name: RichSeiyslanCrush_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 156
+        height: 400
+      spriteId: deff89de4b0b5504c854f07bbefce113
+    - name: RichSeiyslanCrush_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 164
+        height: 404
+      spriteId: 806a6c9cac002cd4192e8e6330017c92
+    - name: RichSeiyslanCrush_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 156
+        height: 400
+      spriteId: ec8ae6ba3207a6341b25f5b3c0632577
+    - name: RichSeiyslanCrush_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 52
+        width: 148
+        height: 396
+      spriteId: 62d725bc500ab1b4a85cc671eccad514
+    - name: RichSeiyslanCrush_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 100
+        y: 52
+        width: 156
+        height: 400
+      spriteId: 50920aaf83553a242b3e521a5d4c2572
+    - name: RichSeiyslanCrush_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 96
+        y: 52
+        width: 164
+        height: 404
+      spriteId: 09bd8be8eeff1ed46b2436b1c1b84d8d
     linkedCells: []
     parentIndex: -1
   platformSettings:

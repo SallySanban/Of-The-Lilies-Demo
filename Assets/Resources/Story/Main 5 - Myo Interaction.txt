@@ -88,7 +88,7 @@ else
 			Ahlai as <playerName> at 1 "Well, I was actually here at the tavern to greet him. But even I was intrigued by what you had to say about your son!"
 
 			HideTextbox(true)
-			[wait]ShowCharacterLeft(Myo -b Left_Default_Body -e Left_Surprised)
+			[wait]ShowCharacterLeft(Myo -b Left_Default_Body -e Left_TakenAback)
 
 			Myo at 0 "You're intrigued, you say?"
 
@@ -244,7 +244,7 @@ else
 
 			Ahlai as <playerName> at 1 "Yes! I thought about it, and maybe I would like that drink with you after all."
 
-			ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+			ChangeBodyEmotion(Myo -e Left_Teasing)
 
 			Myo at 0 "Is there anything else you'd like, then?"
 
@@ -254,7 +254,7 @@ else
 
 			pixel SocialClimberSit2 as ??? "I'm sorry, who is this? Who are you?"
 
-			ChangeBodyEmotion(Myo -e Left_Smile)
+			ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 			Myo at 0 "Someone I made a <i>promise</i> to, thanks to the fine deals they set up with me back at Sabina's Salves. An excellent establishment."
 
@@ -306,7 +306,7 @@ else
 
 	Myo at 0 "You really saved me back there, <playerName>."
 
-	ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+	ChangeBodyEmotion(Myo -e Left_Teasing)
 
 	Myo at 0 "You know, I did catch sight of you entering the tavern. Seeing you around is as lovely as ever."
 
@@ -317,7 +317,7 @@ else
 		- Are you so sure about that?
 			$Myo += 1
 
-			ChangeBodyEmotion(Myo -e Left_Surprised)
+			ChangeBodyEmotion(Myo -e Left_TakenAback)
 
 			Myo at 0 "Oh, you wouldn't?"
 
@@ -325,7 +325,7 @@ else
 			
 			Ahlai as <playerName> at 1 "You might just be getting ahead of yourself when you say that you're hard to miss."
 
-			ChangeBodyEmotion(Myo -e Left_FlirtySmile)
+			ChangeBodyEmotion(Myo -e Left_Teasing)
 
 			Myo at 0 "I beg to differ, you know."
 
@@ -339,7 +339,7 @@ else
 
 			Ahlai as <playerName> at 1 "You are more respectful than you let on. Maybe you <i>are</i> proving me wrong already..."
 
-			ChangeBodyEmotion(Myo -e Left_Smile)
+			ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 			Myo at 0 "Then, how about that drink, hmm?"
 
@@ -350,7 +350,7 @@ else
 
 			Ahlai as <playerName> at 1 "I mean, you regularly visit Sabina's Salves, you did promise me that drink, and many can tell that you are at least working in the government."
 
-			ChangeBodyEmotion(Myo -e Left_Smile)
+			ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 			Myo at 0 "Thank you, thank you... so, <i>that's</i> what you noticed?"
 
@@ -360,14 +360,14 @@ else
 
 			Myo at 0 "...Oh, of course."
 
-			ChangeBodyEmotion(Myo -e Left_Smile)
+			ChangeBodyEmotion(Myo -e Left_KindSmile)
 
 			Myo at 0 "Well, how about that drink, hmm?"
 
 		- Well, I did remember you this morning.
 			$Myo += 2
 
-			ChangeBodyEmotion(Myo -e Left_Surprised)
+			ChangeBodyEmotion(Myo -e Left_TakenAback)
 
 			Myo at 0 "You did? What for?"
 
