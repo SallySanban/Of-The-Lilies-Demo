@@ -1,3 +1,5 @@
+stopEvent(AMB_SwordClash)
+
 Soldier "Damn it, General! We can't find the pirate anymore!"
 
 Lien as General Lien "That is no excuse. Go secure the perimeter, cover <i>all</i> exits out of Kuchai! <i>This is an order!</i>"
@@ -30,6 +32,8 @@ stopEvent(AMB_Thunder)
 [wait]SetCamera(-x -10.5)
 Wait(0.5)
 [wait]HideCG()
+
+resumeEvent(BGM_DramaMusic)
 
 [wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Apologetic)
 
