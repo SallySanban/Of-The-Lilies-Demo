@@ -150,7 +150,7 @@ TayabacAhlai as <playerName> "<b><i>Lien...</b></i>"
 TayabacAhlai as <playerName> "<b><i>I won't forget that name...</b></i>"
 
 HideTextbox(true)
-playMusic(BGM_Scene4)
+playMusic(BGM_MainTheme2)
 Wait(1)
 [wait]ShowScene("Scene 4" "Riverside Pathway")
 ScrollBackground(true)
@@ -187,7 +187,7 @@ Wait(3)
 [wait]SwitchCredits("<b>Original Soundtrack</b><br>Antoine Andre Labuanan<br>Darren Vega")
 Wait(3)
 HideCredits()
-stopEvent(BGM_Scene4)
+stopEvent(BGM_MainTheme2)
 [wait]Blackout()
 Wait(0.5)
 ScrollBackground(false)

@@ -1,6 +1,7 @@
 [wait]Blackout()
 HideCharacter(Laisa)
 HideCharacter(Lien)
+stopEvent(BGM_Lien)
 playAmbience(AMB_SwordClash)
 playAmbience(AMB_Thunder)
 [wait]SwitchCG("Curses Appear")

@@ -66,6 +66,5 @@ Ahlai as <playerName> "<i>Did... that just happen...?</i>"
 HideTextbox(true)
 [wait]SwitchCG("Curses Appear")
 playSFX(SFX_ThunderCurse)
-stopEvent(BGM_Lien)
 
 Load("Main 7")

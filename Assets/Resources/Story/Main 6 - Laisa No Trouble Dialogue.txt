@@ -116,6 +116,8 @@ Ahlai as <playerName> at 0 "It's <playerName>."
 
 Laisa as Ilaisaane at 1 "<playerName>... I'll make sure to remember. And you can call me Laisa."
 
+pauseEvent(BGM_Laisa)
+
 HideCharacter(Laisa)
 HideCharacter(Ahlai)
 HideTextbox(true)

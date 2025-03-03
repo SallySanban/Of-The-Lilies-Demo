@@ -1,3 +1,4 @@
+playMusic(BGM_DramaMusic)
 
 ShowCharacterLeft(Seiji -b Left_Default_Body -e Left_Worried)
 [wait]ShowCharacterRight(Ahlai -b Right_Default_Body -e Right_Conflicted)
@@ -109,9 +110,9 @@ choice in 1
 		Seiji at 0 "Let's head back. She might be worried that we've been out so late."
 }
 
+stopEvent(BGM_Scene5)
 HideCharacter(Seiji)
 HideCharacter(Ahlai)
-resumeEvent(BGM_KuchaiTown)
 HideTextbox(false)
 ResetCamera(true)
 FollowPlayer("Seiji")
