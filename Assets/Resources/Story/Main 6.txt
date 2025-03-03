@@ -1,5 +1,4 @@
 [wait]Blackout()
-stopEvent(BGM_KuchaiTown)
 RemoveScene()
 [wait]ShowScene("Scene 10" "Main Shop")
 [wait]SetCamera(-x -10.5)
@@ -119,6 +118,8 @@ Seiji at 1 "<playerName>... Are you okay?"
 
 Ahlai as <playerName> at 0 "I... I'm fine, Seiji... I just need to catch some air. Please... let me be alone for a while."
 
+pauseEvent(BGM_DramaMusic)
+
 HideCharacter(Ahlai)
 HideCharacter(Seiji)
 HideTextbox(false)
@@ -136,7 +137,6 @@ Ahlai as <playerName> "Hey!"
 
 Ahlai as <playerName> "Wait... aren't you-"
 
-pauseEvent(BGM_KuchaiTown)
 playMusic(BGM_Laisa)
 
 HideTextbox(true)

@@ -2,6 +2,7 @@ pixel Ahlai as <playerName> "I hope I don't get nightmares again."
 
 HideTextbox(true)
 [wait]Blackout()
+stopEvent(BGM_DramaMusic)
 
 Sabina as ??? "<i>Ahlai, wake up</i>."
 

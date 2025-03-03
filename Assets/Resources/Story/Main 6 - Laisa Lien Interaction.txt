@@ -1,6 +1,6 @@
 [wait]PanCamera(-x 25.74 -spd 7)
 
-pauseEvent(BGM_Laisa)
+resumeEvent(BGM_Lien)
 
 pixel Soldier1 as Seiyslan Soldier "Hey, isn't that..."
 

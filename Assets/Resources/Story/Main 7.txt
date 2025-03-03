@@ -33,6 +33,8 @@ stopEvent(AMB_Thunder)
 Wait(0.5)
 [wait]HideCG()
 
+resumeEvent(BGM_DramaMusic)
+
 [wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Apologetic)
 
 pixel Sabina as Lady Sabina "Oh, <playerName>! Seiji! By Dok'kale, both of you better quit making me worry! Thank goodness you're both safe!"
