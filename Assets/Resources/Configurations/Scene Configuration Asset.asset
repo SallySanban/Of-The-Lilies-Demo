@@ -1547,7 +1547,7 @@ MonoBehaviour:
       flipped: 0
       animationState: 
     - npcName: AspiringWriterSit
-      position: {x: -828.05, y: -481.32}
+      position: {x: -833.05, y: -491.32}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -1980,13 +1980,13 @@ MonoBehaviour:
       flipped: 0
       animationState: Sit
     - npcName: AdmirerSit1
-      position: {x: -1415.27, y: -474.32}
+      position: {x: -1429.27, y: -488.32}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: AdmirerSit2
-      position: {x: -534.27, y: -474.32}
+      position: {x: -534.27, y: -488.32}
       orderInLayer: 
       appear: 1
       flipped: 0

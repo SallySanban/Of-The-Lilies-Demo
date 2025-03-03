@@ -1,8 +1,13 @@
 fileFormatVersion: 2
-guid: 49be55f6eaea9164c82446ead4cdfeae
+guid: e980e39a91134b944a0b9717ffc05cc5
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Sit
+    second: {fileID: 7400000, guid: 6ee6daf7e6d018d419cd6401047b787b, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -97,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638748122695773437
+  platformSettingsDirtyTick: 638766210394186739
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +126,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Admirer2
+  - name: AdmirerSit2_Frame_0
     originalName: 
     pivot: {x: 2.6060607, y: -0.043010753}
     alignment: 9
@@ -132,7 +137,7 @@ ScriptedImporter:
       y: 4
       width: 264
       height: 372
-    spriteID: 742e85e3de68e874e9a85f450e7b57d8
+    spriteID: ba3fd9095a2550c4b9bf225da8694e40
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,16 +146,156 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: AdmirerSit2_Frame_1
+    originalName: 
+    pivot: {x: 2.6060607, y: -0.043478258}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 544
+      y: 4
+      width: 264
+      height: 368
+    spriteID: 91fe6efa3ac3aa84ea97df175993add1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 544, y: 4}
+  - name: AdmirerSit2_Frame_2
+    originalName: 
+    pivot: {x: 2.6060607, y: -0.043010753}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 384
+      width: 264
+      height: 372
+    spriteID: aed2357b846651149b84c692b4813243
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 384}
+  - name: AdmirerSit2_Frame_3
+    originalName: 
+    pivot: {x: 2.630769, y: -0.04255319}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1524
+      width: 260
+      height: 376
+    spriteID: dc5dcd69b8cb9e748817fe635c32cd06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1524}
+  - name: AdmirerSit2_Frame_4
+    originalName: 
+    pivot: {x: 2.6060607, y: -0.043010753}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 764
+      width: 264
+      height: 372
+    spriteID: c5e207e6a14c5c24e98f9f5f23285a73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 764}
+  - name: AdmirerSit2_Frame_5
+    originalName: 
+    pivot: {x: 2.6060607, y: -0.043478258}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 544
+      y: 380
+      width: 264
+      height: 368
+    spriteID: bc013c10c9405f946bc66102fd475692
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 544, y: 380}
+  - name: AdmirerSit2_Frame_6
+    originalName: 
+    pivot: {x: 2.6060607, y: -0.043010753}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1144
+      width: 264
+      height: 372
+    spriteID: a9150d90cf1be6d429334fbf1f2a446a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1144}
+  - name: AdmirerSit2_Frame_7
+    originalName: 
+    pivot: {x: 2.630769, y: -0.04255319}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 4
+      width: 260
+      height: 376
+    spriteID: 92047a915ddf1a2409e105855f169b22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 16959188
-    name: Admirer2
+    guid: -1725904844
+    name: AdmirerSit2
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Admirer2
+    - name: AdmirerSit2_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -158,7 +303,70 @@ ScriptedImporter:
         y: 16
         width: 264
         height: 372
-      spriteId: 742e85e3de68e874e9a85f450e7b57d8
+      spriteId: ba3fd9095a2550c4b9bf225da8694e40
+    - name: AdmirerSit2_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 264
+        height: 368
+      spriteId: 91fe6efa3ac3aa84ea97df175993add1
+    - name: AdmirerSit2_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 264
+        height: 372
+      spriteId: aed2357b846651149b84c692b4813243
+    - name: AdmirerSit2_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 1876
+        y: 16
+        width: 260
+        height: 376
+      spriteId: dc5dcd69b8cb9e748817fe635c32cd06
+    - name: AdmirerSit2_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 264
+        height: 372
+      spriteId: c5e207e6a14c5c24e98f9f5f23285a73
+    - name: AdmirerSit2_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 264
+        height: 368
+      spriteId: bc013c10c9405f946bc66102fd475692
+    - name: AdmirerSit2_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 1872
+        y: 16
+        width: 264
+        height: 372
+      spriteId: a9150d90cf1be6d429334fbf1f2a446a
+    - name: AdmirerSit2_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 1876
+        y: 16
+        width: 260
+        height: 376
+      spriteId: 92047a915ddf1a2409e105855f169b22
     linkedCells: []
     parentIndex: -1
   platformSettings:
