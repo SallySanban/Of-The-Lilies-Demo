@@ -67,10 +67,10 @@ namespace Dialogue
             {
                 if (currentTextbox.textboxType == textboxTypeToShow)
                 {
-                    if(currentTextbox.textboxType != DialogueContainer.ContainerType.SpeechBubble && currentTextbox.textboxType != DialogueContainer.ContainerType.MainTextbox)
+                    if(currentTextbox.textboxType != DialogueContainer.ContainerType.SpeechBubble)
                     {
                         //we don't hide the textbox if they're exactly the same textbox, only change the name
-                        if (!speakerName.Equals(currentTextbox.name))
+                        if (!speakerName.ToLower().Equals(currentTextbox.name.text.ToLower()))
                         {
                             currentTextbox.name.text = speakerName.ToUpper();
                         }
@@ -86,7 +86,10 @@ namespace Dialogue
                     {
                         //we want to show the next textbox (which is a speech bubble), and the previous is also speech bubble,
                         //so we hide it to make way for new speech bubble
-                        yield return HideTextbox(true);
+                        if (!speakerName.ToLower().Equals(currentTextbox.name.text.ToLower()))
+                        {
+                            yield return HideTextbox(true);
+                        }
                     }
                 }
                 else

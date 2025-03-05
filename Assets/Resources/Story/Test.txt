@@ -1,4 +1,2 @@
 input
 
-$TasksAlreadyChosen = false
-[wait]ShowScene("Scene 5" "2nd Floor Hallway")
