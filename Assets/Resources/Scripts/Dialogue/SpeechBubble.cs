@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class SpeechBubble : DialogueContainer
 {
-    public Vector3 playerOffset = new Vector2(0f, 4f);
-
     private const string SPEECHBUBBLE_OBJECT = "SpeechBubble";
+
+    public string speakerSpriteName = "";
 
     public SpeechBubble(GameObject speakerSprite, string speakerName = "", string[] listOfChoices = null)
     {
@@ -17,6 +17,7 @@ public class SpeechBubble : DialogueContainer
 
         rootCanvasGroup = root.GetComponent<CanvasGroup>();
 
+        speakerSpriteName = speakerSprite.name;
         textboxImage = root.transform.Find(TEXTBOX_OBJECTNAME).gameObject;
         name = textboxImage.transform.Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         dialogue = textboxImage.transform.Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
@@ -77,5 +78,10 @@ public class SpeechBubble : DialogueContainer
         }
 
         hidingContainerCoroutine = null;
+    }
+
+    public override string SpeakerSpriteName
+    {
+        get { return speakerSpriteName; }
     }
 }

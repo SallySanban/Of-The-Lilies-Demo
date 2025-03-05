@@ -89,6 +89,11 @@ public class DialogueContainer
         hidingContainerCoroutine = null;
     }
 
+    public virtual string SpeakerSpriteName
+    {
+        get { return string.Empty; }
+    }
+
     public enum ContainerType
     {
         MainTextbox,

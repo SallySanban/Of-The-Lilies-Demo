@@ -86,7 +86,7 @@ namespace Dialogue
                     {
                         //we want to show the next textbox (which is a speech bubble), and the previous is also speech bubble,
                         //so we hide it to make way for new speech bubble
-                        if (!speakerName.ToLower().Equals(currentTextbox.name.text.ToLower()))
+                        if (!speakerSprite.name.ToLower().Equals(currentTextbox.SpeakerSpriteName.ToLower()))
                         {
                             yield return HideTextbox(true);
                         }
