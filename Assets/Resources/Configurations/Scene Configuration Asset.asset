@@ -456,7 +456,7 @@ MonoBehaviour:
     playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: FemNPC1
-      position: {x: 1446.07, y: -199.88}
+      position: {x: 1446.07, y: -223.88}
       orderInLayer: 
       appear: 1
       flipped: 0
