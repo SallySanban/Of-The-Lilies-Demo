@@ -5,7 +5,7 @@ stopEvent(BGM_Lien)
 playAmbience(AMB_SwordClash)
 playAmbience(AMB_Thunder)
 [wait]SwitchCG("Curses Appear")
-playSFX(SFX_ThunderCurse)
+playSFX(SFX_ThunderFirst)
 
 Ahlai as <playerName> "<i>What's happening...?</i>"
 
