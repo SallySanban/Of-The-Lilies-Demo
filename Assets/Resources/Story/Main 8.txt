@@ -1,6 +1,6 @@
 [wait]Blackout()
 RemoveScene()
-[wait]SetCamera(-x -0.2)
+[wait]SetCamera(-x 0.01)
 [wait]ShowScene("Scene 12" "La Liryo Room")
 setEventParameter("BGM_LaLiryoRoom" "LaLiryoMusicState" 1)
 [wait]HideCG()
