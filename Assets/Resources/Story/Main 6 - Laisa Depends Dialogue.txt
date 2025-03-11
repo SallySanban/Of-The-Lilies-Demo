@@ -64,6 +64,7 @@ choice in 0
 		HideCharacter(Laisa)
 		HideCharacter(Ahlai)
 		HideTextbox(true)
+		pauseEvent(BGM_Laisa)
 		Load("Main 6 - Laisa Lien Interaction")
 
 	- It seems your life is in my hands.
