@@ -1,0 +1,89 @@
+choice in -1
+{
+	- Who is she?
+		pixel Soldier2 as Seiyslan Soldier "What? Did you not listen to a word the town crier said?"
+
+		pixel Laisa as Ilaisaane "Can't say I'm surprised. Who can stand listening to all that bullsh-"
+
+		pixel Soldier3 as Seiyslan Soldier "Quiet, you!"
+
+		pixel Soldier1 as Seiyslan Soldier "She's the first mate and quartermaster of a notorious gang of pirates from the Gataran Empire that commandeer a ship known as the Sea Emperor."
+
+		pixel Soldier1 as Seiyslan Soldier "They managed to land in Seiysla without us knowing. Through the ports in Agon Province."
+
+		pixel Soldier1 as Seiyslan Soldier "They've been taking things from people for weeks. Who knows what other crimes they've committed?"
+			
+		pixel Soldier1 as Seiyslan Soldier "Thank Dok'kale we finally got our hands on their first mate."
+
+		pixel Ahlai as <playerName> "It's that easy to sneak into the continent, then...?"
+
+		Load("Main 5 - Soldier Repeating Dialogue")
+	- How did you capture her?
+		pixel Soldier1 as Seiyslan Soldier "General Lien's been tracking her down for weeks before we finally ambushed her."
+
+		pixel Soldier1 as Seiyslan Soldier "Believe me, she couldn't stand a chance against us."
+
+		pixel Laisa as Ilaisaane "And yet it took you <i>weeks</i> to find me."
+
+		pixel Soldier2 as Seiyslan Soldier "Hey! Be quiet!"
+
+		pixel Laisa as Ilaisaane "Weren't you three just holding him back? Some honorary squad you are. Even the kids back at the ship could put up more of a fight."
+
+		pixel Soldier3 as Seiyslan Soldier "I ought to gag you for this."
+
+		pixel Laisa as Ilaisaane "Is that what it takes for you to get the upper hand?"
+
+		Load("Main 5 - Soldier Repeating Dialogue")
+	- What are you going to do to her?
+		pixel Soldier2 as Seiyslan Soldier "Good question."
+
+		pixel Soldier2 as Seiyslan Soldier "We're still looking for the rest of the Sea Emperor crew, but when we do find them, they'll be put on trial. Which I'm sure will go by very quickly..."
+
+		pixel Soldier2 as Seiyslan Soldier "...Then we have our choice of execution, because there's no way this woman is just sitting behind bars!"
+
+		pixel Soldier2 as Seiyslan Soldier "Hanging..."
+
+		pixel Laisa as Ilaisaane "Not my first time."
+
+		pixel Soldier2 as Seiyslan Soldier "...burning at the stake..."
+
+		pixel Laisa as Ilaisaane "Spicy."
+
+		pixel Soldier2 as Seiyslan Soldier "...beheading..."
+
+		pixel Laisa as Ilaisaane "A classic."
+
+		pixel Soldier2 as Seiyslan Soldier "...and maybe even disembowelment."
+
+		pixel Laisa as Ilaisaane "Oh, now <i>that's</i> new!"
+
+		pixel Soldier3 as Seiyslan Soldier "Must you make a remark on everything, woman?"
+
+		pixel Laisa as Ilaisaane "If this is the day I'll die, I might as well make it count, right?"
+
+		pixel Soldier3 as Seiyslan Soldier "Then shut it, wench!"
+
+		Load("Main 5 - Soldier Repeating Dialogue")
+	- Where did Lien go?
+		pixel Soldier1 as Seiyslan Soldier "You mean <i>General</i> Lien?"
+
+		pixel Soldier1 as Seiyslan Soldier "He went inside the town hall to talk to the governor of this town. They're going to keep the pirate in custody till we're ready to go back to the capital."
+
+		pixel Soldier2 as Seiyslan Soldier "And then, drinks!"
+
+		pixel Soldier3 as Seiyslan Soldier "Yeah!"
+
+		pixel Soldier1 as Seiyslan Soldier "Our hard work is finally paying off."
+
+		pixel Laisa as Ilaisaane "Your hard work? Or are you taking credit for what the General did?"
+
+		pixel Soldier3 as Seiyslan Soldier "I said, quiet!"
+
+		Load("Main 5 - Soldier Repeating Dialogue")
+	- I have nothing to say.
+		HideTextbox(true)
+
+		ResetCamera(true)
+
+		ToggleInteractable("Scene 7" "Kuchai Town 3" Soldier1 false)
+}

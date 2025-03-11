@@ -152,7 +152,7 @@ choice in 0
 
 		Seiji at 0 "It's best not to get involved in things like these... You know how they happen all the time."
 
-		Ahlai as <playerName> at 0 "You know I can't do that, Seiji. I have to help them."
+		Ahlai as <playerName> at 1 "You know I can't do that, Seiji. I have to help them."
 
 		Seiji at 0 "You and your heroic heart..."
 

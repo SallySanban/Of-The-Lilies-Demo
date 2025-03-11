@@ -194,7 +194,7 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC3
-      position: {x: -2014.94, y: -192.32}
+      position: {x: -2086.94, y: -192.32}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -642,7 +642,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Books 1 Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -19.82, y: -1.88}
     - interactableName: Books 2
       interactableType: 1
       isInteractable: 1
@@ -2395,7 +2395,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Books 1 Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -19.82, y: -1.88}
     - interactableName: Books 2
       interactableType: 1
       isInteractable: 1
@@ -2536,7 +2536,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Books 1 Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -19.82, y: -1.88}
     - interactableName: Books 2
       interactableType: 1
       isInteractable: 1
