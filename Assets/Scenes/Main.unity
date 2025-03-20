@@ -346,8 +346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textboxPanel: {fileID: 1534821054}
-  leftTextboxPrefab: {fileID: 3892275632796959326, guid: 599150446756c0749922b4cb3095117d, type: 3}
-  rightTextboxPrefab: {fileID: 3884748081230255133, guid: 92f9ba07d905de44bbbe2afb1da32d70, type: 3}
+  leftTextboxPrefab: {fileID: 7842932024362800637, guid: 599150446756c0749922b4cb3095117d, type: 3}
+  rightTextboxPrefab: {fileID: 3686448789292273927, guid: 92f9ba07d905de44bbbe2afb1da32d70, type: 3}
 --- !u!1 &151385052
 GameObject:
   m_ObjectHideFlags: 0

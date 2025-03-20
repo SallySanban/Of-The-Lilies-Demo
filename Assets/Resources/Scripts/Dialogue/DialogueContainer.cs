@@ -17,18 +17,14 @@ public class DialogueContainer
     public TextMeshProUGUI name;
     public TextMeshProUGUI dialogue;
     public Transform choices;
-    public TextMeshProUGUI choiceText;
-    public GameObject leftArrow;
-    public GameObject rightArrow;
+    public GameObject choiceTemplate;
 
     protected string TEXTBOX_OBJECTNAME = "Textbox Image";
     protected string NAMEPLATE_OBJECTNAME = "Name Plate";
     protected string NAME_OBJECTNAME = "Name Text";
     protected string DIALOGUE_OBJECTNAME = "Dialogue Text";
-    protected string CHOICES_OBJECTNAME = "Choice";
-    protected string CHOICETEXT_OBJECTNAME = "Choice Text";
-    protected string LEFTARROW_OBJECTNAME = "Right Arrow";
-    protected string RIGHTARROW_OBJECTNAME = "Left Arrow";
+    protected string CHOICES_OBJECTNAME = "Choices";
+    protected string CHOICETEMPLATE_OBJECTNAME = "Choice Template";
 
     protected const float FADE_SPEED = 3f;
 
@@ -48,16 +44,15 @@ public class DialogueContainer
     public virtual void ShowChoices(string[] listOfChoices)
     {
         dialogue.gameObject.SetActive(false);
-        choices.gameObject.SetActive(true);
-        dialogue.text = "";
+        choices?.gameObject.SetActive(true);
 
-        currentChoiceContainer = new ChoiceContainer(this, listOfChoices, choiceText, leftArrow, rightArrow);
+        currentChoiceContainer = new ChoiceContainer(this, listOfChoices, choices, choiceTemplate);
     }
 
     public virtual void HideChoices()
     {
         dialogue.gameObject.SetActive(true);
-        choices.gameObject.SetActive(false);
+        choices?.gameObject.SetActive(false);
     }
 
     public Coroutine Hide()
@@ -89,16 +84,16 @@ public class DialogueContainer
         hidingContainerCoroutine = null;
     }
 
-    public virtual string SpeakerSpriteName
-    {
-        get { return string.Empty; }
-    }
-
     public enum ContainerType
     {
         MainTextbox,
         LeftTextbox,
         RightTextbox,
         SpeechBubble
+    }
+
+    public virtual string SpeakerSpriteName
+    {
+        get { return string.Empty; }
     }
 }

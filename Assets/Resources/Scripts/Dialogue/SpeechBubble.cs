@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class SpeechBubble : DialogueContainer
 {
+    public Vector3 playerOffset = new Vector2(0f, 4f);
+
     private const string SPEECHBUBBLE_OBJECT = "SpeechBubble";
 
     public string speakerSpriteName = "";
@@ -18,28 +20,22 @@ public class SpeechBubble : DialogueContainer
         rootCanvasGroup = root.GetComponent<CanvasGroup>();
 
         speakerSpriteName = speakerSprite.name;
+
         textboxImage = root.transform.Find(TEXTBOX_OBJECTNAME).gameObject;
         name = textboxImage.transform.Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         dialogue = textboxImage.transform.Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+        choices = textboxImage.transform.Find(CHOICES_OBJECTNAME)?.transform;
 
-        if(speakerSprite.tag == "Player")
-        {
-            choices = textboxImage.transform.Find(CHOICES_OBJECTNAME)?.transform;
-
-            if(choices != null)
-            {
-                choiceText = choices.Find(CHOICETEXT_OBJECTNAME).GetComponent<TextMeshProUGUI>();
-                leftArrow = choices.Find(LEFTARROW_OBJECTNAME).gameObject;
-                rightArrow = choices.Find(RIGHTARROW_OBJECTNAME).gameObject;
-
-                choices.gameObject.SetActive(false);
-            }
-        }
-        
         textboxType = ContainerType.SpeechBubble;
         name.text = speakerName.ToUpper();
 
         dialogue.gameObject.SetActive(true);
+
+        if(choices != null)
+        {
+            choiceTemplate = choices.Find(CHOICETEMPLATE_OBJECTNAME).gameObject;
+            choices.gameObject.SetActive(false);
+        }
 
         if (listOfChoices != null)
         {

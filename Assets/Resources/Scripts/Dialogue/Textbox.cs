@@ -6,9 +6,6 @@ using UnityEngine.UI;
 
 public class Textbox : DialogueContainer
 {
-    private const int dialoguePadding = 45;
-    private const int choicePadding = 20;
-
     private Vector2 mainPosition = new Vector2(16.82f, -464.20f);
 
     public Textbox(GameObject prefab, Transform parent, ContainerType textboxType, string speakerName = "", string[] listOfChoices = null)
@@ -32,18 +29,13 @@ public class Textbox : DialogueContainer
         name = textboxImage.transform.Find(NAMEPLATE_OBJECTNAME).Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         dialogue = textboxImage.transform.Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         choices = textboxImage.transform.Find(CHOICES_OBJECTNAME).transform;
-        choiceText = choices.Find(CHOICETEXT_OBJECTNAME).GetComponent<TextMeshProUGUI>();
-        leftArrow = choices.Find(LEFTARROW_OBJECTNAME).gameObject;
-        rightArrow = choices.Find(RIGHTARROW_OBJECTNAME).gameObject;
+        choiceTemplate = choices.Find(CHOICETEMPLATE_OBJECTNAME).gameObject;
 
         this.textboxType = textboxType;
         name.text = speakerName.ToUpper();
 
         dialogue.gameObject.SetActive(true);
         choices.gameObject.SetActive(false);
-
-        textboxImage.GetComponent<VerticalLayoutGroup>().padding.top = dialoguePadding;
-        textboxImage.GetComponent<VerticalLayoutGroup>().padding.bottom = dialoguePadding;
 
         if (speakerName != "") ApplySpeakerDataToDialogueContainer(speakerName);
 
