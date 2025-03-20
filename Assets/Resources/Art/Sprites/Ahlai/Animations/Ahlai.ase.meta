@@ -53,6 +53,11 @@ ScriptedImporter:
       assembly: UnityEngine.AnimationModule
       name: TayabacRunRight
     second: {fileID: 7400000, guid: 06c3b424041c4c945b09db2f7922c068, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: TayabacSit
+    second: {fileID: 7400000, guid: 86862a418af47754db66a543c929295a, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -147,7 +152,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638762061958651124
+  platformSettingsDirtyTick: 638780864413641046
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -171,9 +176,889 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
+  - name: Ahlai_Frame_76
+    originalName: 
+    pivot: {x: 0.68421066, y: -1.78125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 900
+      y: 1336
+      width: 152
+      height: 256
+    spriteID: 08de1ae697663ad43b268066ca8db42a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 900, y: 1336}
+  - name: Ahlai_Frame_77
+    originalName: 
+    pivot: {x: 0.68421066, y: -1.8387097}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 900
+      y: 1864
+      width: 152
+      height: 248
+    spriteID: bb857f4b8b6402d41ba00b8dbbda6480
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 900, y: 1864}
+  - name: Ahlai_Frame_78
+    originalName: 
+    pivot: {x: 0.6923078, y: -1.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 1336
+      width: 156
+      height: 240
+    spriteID: 0aea0d5cfc4292c4b88c13e8906c5fa4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 1336}
+  - name: Ahlai_Frame_79
+    originalName: 
+    pivot: {x: 0.68421066, y: -1.8387097}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 900
+      y: 2120
+      width: 152
+      height: 248
+    spriteID: db2f213e151137f45955affd0f9b9098
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 900, y: 2120}
+  - name: Ahlai_Frame_80
+    originalName: 
+    pivot: {x: 0.68421066, y: -1.78125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 900
+      y: 1600
+      width: 152
+      height: 256
+    spriteID: a94233fef8ad2c04193b40259ea9e77c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 900, y: 1600}
+  - name: Ahlai_Frame_81
+    originalName: 
+    pivot: {x: 0.68421066, y: -1.8387097}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 900
+      y: 2376
+      width: 152
+      height: 248
+    spriteID: 25ee6ee2e7aeedc419b59383067d8662
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 900, y: 2376}
+  - name: Ahlai_Frame_82
+    originalName: 
+    pivot: {x: 0.6923078, y: -1.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 1584
+      width: 156
+      height: 240
+    spriteID: 8ae8afc25af0b8146a8101a5695e1457
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 1584}
+  - name: Ahlai_Frame_83
+    originalName: 
+    pivot: {x: 0.68421066, y: -1.8387097}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 900
+      y: 2632
+      width: 152
+      height: 248
+    spriteID: f544cb4a6b2ac3f468b64363093f9205
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 900, y: 2632}
+  - name: Ahlai_Frame_64
+    originalName: 
+    pivot: {x: 0.5757575, y: -1.0465117}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 3744
+      width: 132
+      height: 344
+    spriteID: 5de393aa8760cea499408877680bddf6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 3744}
+  - name: Ahlai_Frame_65
+    originalName: 
+    pivot: {x: 0.5757575, y: -1.0714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3752
+      width: 132
+      height: 336
+    spriteID: d3827a3e46fe63742a0f7965d14a7151
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3752}
+  - name: Ahlai_Frame_66
+    originalName: 
+    pivot: {x: 0.5757575, y: -1.0465117}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 756
+      y: 2084
+      width: 132
+      height: 344
+    spriteID: c837a1be04ff0c1408995836f3ec712e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 756, y: 2084}
+  - name: Ahlai_Frame_67
+    originalName: 
+    pivot: {x: 0.5757575, y: -1.0227273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 756
+      y: 1724
+      width: 132
+      height: 352
+    spriteID: 7d6f77319995a11489e20c314ebd4ac6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 756, y: 1724}
+  - name: Ahlai_Frame_56
+    originalName: 
+    pivot: {x: 0.8108108, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1336
+      width: 148
+      height: 392
+    spriteID: fbd6e9794b321a644b1f5fe467c9c9db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1336}
+  - name: Ahlai_Frame_57
+    originalName: 
+    pivot: {x: 0.6346153, y: -0.7765957}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1308
+      y: 888
+      width: 208
+      height: 376
+    spriteID: 551fd1515ba625e4ebcd4d25722054b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1308, y: 888}
+  - name: Ahlai_Frame_58
+    originalName: 
+    pivot: {x: 0.5714285, y: -0.7525773}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3268
+      y: 4
+      width: 252
+      height: 388
+    spriteID: 9d9b6098f7db2a344a2e0cab23c23fbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3268, y: 4}
+  - name: Ahlai_Frame_59
+    originalName: 
+    pivot: {x: 0.59649116, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2584
+      y: 444
+      width: 228
+      height: 392
+    spriteID: 133891362d8b6a34c9a04a62156cc989
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2584, y: 444}
+  - name: Ahlai_Frame_60
+    originalName: 
+    pivot: {x: 0.75, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3628
+      y: 888
+      width: 160
+      height: 392
+    spriteID: 7d76509be0d1dd54e9398ba7d52811f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3628, y: 888}
+  - name: Ahlai_Frame_61
+    originalName: 
+    pivot: {x: 0.6122449, y: -0.7765957}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1740
+      y: 888
+      width: 196
+      height: 376
+    spriteID: 2f51e020e18fe8d4b99fddb2c9892340
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1740, y: 888}
+  - name: Ahlai_Frame_62
+    originalName: 
+    pivot: {x: 0.5873015, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2748
+      y: 4
+      width: 252
+      height: 392
+    spriteID: e143f4cf4f7ae274a884c9a953ae95ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2748, y: 4}
+  - name: Ahlai_Frame_63
+    originalName: 
+    pivot: {x: 0.6271185, y: -0.7373737}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3788
+      y: 4
+      width: 236
+      height: 396
+    spriteID: 35c2cfcdec042824a9dc497678a4e860
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3788, y: 4}
+  - name: Ahlai_Frame_40
+    originalName: 
+    pivot: {x: 0.4054054, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1736
+      width: 148
+      height: 392
+    spriteID: 148d4325d9827cf4484464e891930a7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1736}
+  - name: Ahlai_Frame_41
+    originalName: 
+    pivot: {x: 0.51923084, y: -0.7765957}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1524
+      y: 888
+      width: 208
+      height: 376
+    spriteID: 8efe67fdb9c20c443a924f42f7ad9989
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1524, y: 888}
+  - name: Ahlai_Frame_42
+    originalName: 
+    pivot: {x: 0.55555546, y: -0.7525773}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3528
+      y: 4
+      width: 252
+      height: 388
+    spriteID: 023c71f8662c98c46b1ff8a621bce562
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3528, y: 4}
+  - name: Ahlai_Frame_43
+    originalName: 
+    pivot: {x: 0.54385966, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2820
+      y: 444
+      width: 228
+      height: 392
+    spriteID: 89fcd9c0c3bfdec44bf0d61c2eb5d948
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2820, y: 444}
+  - name: Ahlai_Frame_44
+    originalName: 
+    pivot: {x: 0.44999993, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3796
+      y: 888
+      width: 160
+      height: 392
+    spriteID: 2a1dfc81231b66d4191e5003a52867fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3796, y: 888}
+  - name: Ahlai_Frame_45
+    originalName: 
+    pivot: {x: 0.55102044, y: -0.7765957}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1944
+      y: 888
+      width: 196
+      height: 376
+    spriteID: 0ff072ec64845c948968c57cdbc2392c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1944, y: 888}
+  - name: Ahlai_Frame_46
+    originalName: 
+    pivot: {x: 0.5396825, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3008
+      y: 4
+      width: 252
+      height: 392
+    spriteID: 3e757f760b7d00946a21ab0597df53eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3008, y: 4}
+  - name: Ahlai_Frame_47
+    originalName: 
+    pivot: {x: 0.5084746, y: -0.7373737}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1332
+      y: 444
+      width: 236
+      height: 396
+    spriteID: 51990961aa3382a4f84c23d9bf480cbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1332, y: 444}
+  - name: Ahlai_Frame_48
+    originalName: 
+    pivot: {x: 0.5555554, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2136
+      width: 144
+      height: 396
+    spriteID: d1481d2420939864ab9f9eecf2c314bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2136}
+  - name: Ahlai_Frame_49
+    originalName: 
+    pivot: {x: 0.58333313, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 2952
+      width: 144
+      height: 388
+    spriteID: 8909b3eeab1b25446ae7f36eff7d6cf7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 2952}
+  - name: Ahlai_Frame_50
+    originalName: 
+    pivot: {x: 0.5555554, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2540
+      width: 144
+      height: 396
+    spriteID: 64ee4e82fb9ab7d4d8a3de8783fa8bff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2540}
+  - name: Ahlai_Frame_51
+    originalName: 
+    pivot: {x: 0.5641024, y: -0.76237625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2972
+      y: 888
+      width: 156
+      height: 404
+    spriteID: c751a42ca0fb13140a70c99c00554889
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2972, y: 888}
+  - name: Ahlai_Frame_52
+    originalName: 
+    pivot: {x: 0.5555554, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2944
+      width: 144
+      height: 396
+    spriteID: 02d39dd00e1c231419b65684d4a5b179
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2944}
+  - name: Ahlai_Frame_53
+    originalName: 
+    pivot: {x: 0.58333313, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 3348
+      width: 144
+      height: 388
+    spriteID: aa8cc59bf5543a34fa2fa09a811882fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 3348}
+  - name: Ahlai_Frame_54
+    originalName: 
+    pivot: {x: 0.5555554, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3348
+      width: 144
+      height: 396
+    spriteID: bfdd974545f0a6f47bb447f8a6ba3949
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3348}
+  - name: Ahlai_Frame_55
+    originalName: 
+    pivot: {x: 0.5641024, y: -0.76237625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3136
+      y: 888
+      width: 156
+      height: 404
+    spriteID: 7efffd293f53ced4eb94868807ba3798
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3136, y: 888}
   - name: Ahlai_Frame_32
     originalName: 
-    pivot: {x: 0.52339184, y: -0.28703704}
+    pivot: {x: 0.6666668, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 1336
+      width: 144
+      height: 396
+    spriteID: ca24d872d6438d14197d53e2213b7f88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 1336}
+  - name: Ahlai_Frame_33
+    originalName: 
+    pivot: {x: 0.6388891, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1336
+      width: 144
+      height: 388
+    spriteID: 6cdceaab232b20e40b88d79688aca9cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 1336}
+  - name: Ahlai_Frame_34
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 1740
+      width: 144
+      height: 396
+    spriteID: 17e9f912fa30a0a4a8099f3618caa532
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 1740}
+  - name: Ahlai_Frame_35
+    originalName: 
+    pivot: {x: 0.6410258, y: -0.76237625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3300
+      y: 888
+      width: 156
+      height: 404
+    spriteID: f2360e5a0c071e846bff74f2f1140f7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3300, y: 888}
+  - name: Ahlai_Frame_36
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 2144
+      width: 144
+      height: 396
+    spriteID: 2bdfb5915f9f0d041935047128ca4520
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 2144}
+  - name: Ahlai_Frame_37
+    originalName: 
+    pivot: {x: 0.6388891, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 1732
+      width: 144
+      height: 388
+    spriteID: e6c3c1b5c742c5c4bbe00608a8fa216c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 1732}
+  - name: Ahlai_Frame_38
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 2548
+      width: 144
+      height: 396
+    spriteID: ecd26a3433cf5004d92b14593490c35d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 2548}
+  - name: Ahlai_Frame_39
+    originalName: 
+    pivot: {x: 0.6410258, y: -0.76237625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3464
+      y: 888
+      width: 156
+      height: 404
+    spriteID: f625dddec206a3a47a8e2febc97a1737
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3464, y: 888}
+  - name: Ahlai_Frame_68
+    originalName: 
+    pivot: {x: 0.49707606, y: -0.6759259}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -182,7 +1067,7 @@ ScriptedImporter:
       y: 4
       width: 684
       height: 432
-    spriteID: 77b4a0dd9ec6f1742a908ac338bc3737
+    spriteID: 3cd255e4dc423b74583803c7db7a607c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -191,18 +1076,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Ahlai_Frame_33
+  - name: Ahlai_Frame_69
     originalName: 
-    pivot: {x: 0.5446428, y: -0.28703704}
+    pivot: {x: 0.5178572, y: -0.6759259}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 884
+      x: 1388
+      y: 4
       width: 672
       height: 432
-    spriteID: 0b5c730756a9f154d9738474367dbb52
+    spriteID: fa3d61cf0a57f6c41a32be666e5c94f2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,19 +1095,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 884}
-  - name: Ahlai_Frame_34
+    uvTransform: {x: 1388, y: 4}
+  - name: Ahlai_Frame_70
     originalName: 
-    pivot: {x: 0.5306749, y: -0.28181818}
+    pivot: {x: 0.5031055, y: -0.6636364}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 1764
-      width: 652
+      y: 888
+      width: 644
       height: 440
-    spriteID: 59889b15e85a8204ab34877e1643acd8
+    spriteID: c845ab10d46c244499cadd4ed09fb82a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,39 +1115,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1764}
-  - name: Ahlai_Frame_35
+    uvTransform: {x: 4, y: 888}
+  - name: Ahlai_Frame_71
     originalName: 
-    pivot: {x: 0.52743906, y: -0.28440368}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2660
-      width: 656
-      height: 436
-    spriteID: c616bc93df2cef44dbbbe96894d477dc
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 2660}
-  - name: Ahlai_Frame_36
-    originalName: 
-    pivot: {x: 0.52339184, y: -0.28703704}
+    pivot: {x: 0.49999997, y: -0.6697247}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 444
-      width: 684
-      height: 432
-    spriteID: 534933b806d89304188f8513425fb6bf
+      width: 656
+      height: 436
+    spriteID: c8751748e9347634398190291da5f23d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -271,118 +1136,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 444}
-  - name: Ahlai_Frame_37
+  - name: Ahlai_Frame_72
     originalName: 
-    pivot: {x: 0.5446428, y: -0.28703704}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1324
-      width: 672
-      height: 432
-    spriteID: 01c4848471a82b64f9214e2b9a25114e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 1324}
-  - name: Ahlai_Frame_38
-    originalName: 
-    pivot: {x: 0.5306749, y: -0.28181818}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2212
-      width: 652
-      height: 440
-    spriteID: e36d046bd9a59a34790e1eaf753b856f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 2212}
-  - name: Ahlai_Frame_39
-    originalName: 
-    pivot: {x: 0.52743906, y: -0.28440368}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 3104
-      width: 656
-      height: 436
-    spriteID: 30608ec7be24ab34481e55939ef2ec02
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 3104}
-  - name: Ahlai_Frame_64
-    originalName: 
-    pivot: {x: 0.6891892, y: -0.31632653}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 2776
-      width: 148
-      height: 392
-    spriteID: 45eca5d994f80c74d8a65eabc18ed2e9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 2776}
-  - name: Ahlai_Frame_65
-    originalName: 
-    pivot: {x: 0.72115386, y: -0.32978722}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 1572
-      width: 208
-      height: 376
-    spriteID: 6a75681a7d1bfc54195cf7f9b035f232
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 1572}
-  - name: Ahlai_Frame_66
-    originalName: 
-    pivot: {x: 0.7222222, y: -0.31958765}
+    pivot: {x: 0.49707606, y: -0.6759259}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 696
       y: 4
-      width: 252
-      height: 388
-    spriteID: 0848bcda72fc05c4aae835d1be1ac398
+      width: 684
+      height: 432
+    spriteID: 9edb10bb02f767f45ab0c53c3e10c0ba
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -391,1258 +1156,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 696, y: 4}
-  - name: Ahlai_Frame_67
-    originalName: 
-    pivot: {x: 0.7280702, y: -0.31632653}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 696
-      y: 3132
-      width: 228
-      height: 392
-    spriteID: d0dc65112ac42da46bc1d82fc2ef1829
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 696, y: 3132}
-  - name: Ahlai_Frame_68
-    originalName: 
-    pivot: {x: 0.7124999, y: -0.31632653}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 1976
-      width: 160
-      height: 392
-    spriteID: b0840b52680a87e48857de1611514697
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 1976}
-  - name: Ahlai_Frame_69
-    originalName: 
-    pivot: {x: 0.7653061, y: -0.32978722}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 2340
-      width: 196
-      height: 376
-    spriteID: 685a74e9c6ce3374d8baaf6d18f03819
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 2340}
-  - name: Ahlai_Frame_70
-    originalName: 
-    pivot: {x: 0.70634913, y: -0.31632653}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 3548
-      width: 252
-      height: 392
-    spriteID: 74d07b8fe3cc6bb489e74bba1af4ca4a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 3548}
-  - name: Ahlai_Frame_71
-    originalName: 
-    pivot: {x: 0.6864406, y: -0.3131313}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 696
-      y: 796
-      width: 236
-      height: 396
-    spriteID: 245f281da6c97f04abdcb405187541d8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 696, y: 796}
-  - name: Ahlai_Frame_48
-    originalName: 
-    pivot: {x: 1.0472974, y: -0.31632653}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 3176
-      width: 148
-      height: 392
-    spriteID: 8cd1ef16facd58d4387c26b9ed0ea7e2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 3176}
-  - name: Ahlai_Frame_49
-    originalName: 
-    pivot: {x: 0.8028846, y: -0.32978722}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 1956
-      width: 208
-      height: 376
-    spriteID: 655e610a05642b244b063052ee9faf05
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 1956}
-  - name: Ahlai_Frame_50
-    originalName: 
-    pivot: {x: 0.7103175, y: -0.31958765}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 696
-      y: 400
-      width: 252
-      height: 388
-    spriteID: 09d8efe4c4cb05241b9ecc1aa0c0a89d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 696, y: 400}
-  - name: Ahlai_Frame_51
-    originalName: 
-    pivot: {x: 0.75000006, y: -0.31632653}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 696
-      y: 3532
-      width: 228
-      height: 392
-    spriteID: 619252e66fd67924193cf4571863c115
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 696, y: 3532}
-  - name: Ahlai_Frame_52
-    originalName: 
-    pivot: {x: 0.9687502, y: -0.31632653}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 2376
-      width: 160
-      height: 392
-    spriteID: e7d93e5f1410a184b81588d9bfbc0d52
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 2376}
-  - name: Ahlai_Frame_53
-    originalName: 
-    pivot: {x: 0.7908164, y: -0.32978722}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 2724
-      width: 196
-      height: 376
-    spriteID: 89553c4e86820ec418f159085c584110
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 2724}
-  - name: Ahlai_Frame_54
-    originalName: 
-    pivot: {x: 0.72619045, y: -0.31632653}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 264
-      y: 3548
-      width: 252
-      height: 392
-    spriteID: 9fc0111552e224642aa4d84dadb2bb84
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 264, y: 3548}
-  - name: Ahlai_Frame_55
-    originalName: 
-    pivot: {x: 0.7754237, y: -0.3131313}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 696
-      y: 1200
-      width: 236
-      height: 396
-    spriteID: 1de74f08dab45e44e9825ff188c709e7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 696, y: 1200}
-  - name: Ahlai_Frame_24
-    originalName: 
-    pivot: {x: 0.6714286, y: -0.34042552}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 4
-      width: 140
-      height: 376
-    spriteID: fbe4c63ab034ac34fabe311ba4f4a686
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 4}
-  - name: Ahlai_Frame_25
-    originalName: 
-    pivot: {x: 0.7156862, y: -0.35555556}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 3108
-      width: 204
-      height: 360
-    spriteID: 87e78bb8b35719f4cbbef2707bab0426
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 3108}
-  - name: Ahlai_Frame_26
-    originalName: 
-    pivot: {x: 0.7131148, y: -0.34042552}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 696
-      y: 1604
-      width: 244
-      height: 376
-    spriteID: d320d2fa632fe684bb83f2643a982911
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 696, y: 1604}
-  - name: Ahlai_Frame_27
-    originalName: 
-    pivot: {x: 0.6999999, y: -0.33333334}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 4
-      width: 220
-      height: 384
-    spriteID: e5395802a60d84d49a77c46e5c152b84
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 4}
-  - name: Ahlai_Frame_28
-    originalName: 
-    pivot: {x: 0.6714286, y: -0.34042552}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 388
-      width: 140
-      height: 376
-    spriteID: 8cb48bdd3f168594fa998902ab6868fd
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 388}
-  - name: Ahlai_Frame_29
-    originalName: 
-    pivot: {x: 0.76041657, y: -0.35555556}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 4
-      width: 192
-      height: 360
-    spriteID: 5f2da55e5d1339e4a89f4f2a4dc22131
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 4}
-  - name: Ahlai_Frame_30
-    originalName: 
-    pivot: {x: 0.7131148, y: -0.34408605}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 696
-      y: 2372
-      width: 244
-      height: 372
-    spriteID: efdf357af2e0f5b46abe599da30bf5d1
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 696, y: 2372}
-  - name: Ahlai_Frame_31
-    originalName: 
-    pivot: {x: 0.6999999, y: -0.33333334}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 396
-      width: 220
-      height: 384
-    spriteID: cc7ffd3f6d2ddfe41acbe2a70a27f844
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 396}
-  - name: Ahlai_Frame_8
-    originalName: 
-    pivot: {x: 1.0714287, y: -0.34042552}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 772
-      width: 140
-      height: 376
-    spriteID: 69bf3b2f3f8452c4ca475d1b8743ea5a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 772}
-  - name: Ahlai_Frame_9
-    originalName: 
-    pivot: {x: 0.79411757, y: -0.35555556}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 3476
-      width: 204
-      height: 360
-    spriteID: 5ec9e33d2088f6744b787d356b321c04
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 3476}
-  - name: Ahlai_Frame_10
-    originalName: 
-    pivot: {x: 0.7131148, y: -0.34042552}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 696
-      y: 1988
-      width: 244
-      height: 376
-    spriteID: 926d743fb368fcd4f88c8573861dec94
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 696, y: 1988}
-  - name: Ahlai_Frame_11
-    originalName: 
-    pivot: {x: 0.7727272, y: -0.33333334}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 788
-      width: 220
-      height: 384
-    spriteID: 817b07b4eceba8d49aa3edc9f6a48e80
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 788}
-  - name: Ahlai_Frame_12
-    originalName: 
-    pivot: {x: 1.0714287, y: -0.34042552}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 1156
-      width: 140
-      height: 376
-    spriteID: ba4fd5686196b7440ac4e85143c6fafd
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 1156}
-  - name: Ahlai_Frame_13
-    originalName: 
-    pivot: {x: 0.78125006, y: -0.35555556}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 372
-      width: 192
-      height: 360
-    spriteID: 8d86b0ff7f1fd9e498aea65875a31f89
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 372}
-  - name: Ahlai_Frame_14
-    originalName: 
-    pivot: {x: 0.7131148, y: -0.34408605}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 696
-      y: 2752
-      width: 244
-      height: 372
-    spriteID: 81d3d4a313582cf4a9f5a5ee9fa24364
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 696, y: 2752}
-  - name: Ahlai_Frame_15
-    originalName: 
-    pivot: {x: 0.7727272, y: -0.33333334}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 956
-      y: 1180
-      width: 220
-      height: 384
-    spriteID: f8c9891f353aba94eb984e3edb33d5ab
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 956, y: 1180}
-  - name: Ahlai_Frame_56
-    originalName: 
-    pivot: {x: 0.9166668, y: -0.35353535}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 3576
-      width: 144
-      height: 396
-    spriteID: 1484e56453cb9e943b1a901a73a94939
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 3576}
-  - name: Ahlai_Frame_57
-    originalName: 
-    pivot: {x: 0.8888889, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 2832
-      width: 144
-      height: 388
-    spriteID: 1bed3390337126a49b348396f29b4bce
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 2832}
-  - name: Ahlai_Frame_58
-    originalName: 
-    pivot: {x: 0.9166668, y: -0.35353535}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 4
-      width: 144
-      height: 396
-    spriteID: 9e6fd17347c6b1643b9d6f54c02085f3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 4}
-  - name: Ahlai_Frame_59
-    originalName: 
-    pivot: {x: 0.8717948, y: -0.34653464}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 524
-      y: 3548
-      width: 156
-      height: 404
-    spriteID: 5c9223a471487f049ac04e6a9ed19435
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 524, y: 3548}
-  - name: Ahlai_Frame_60
-    originalName: 
-    pivot: {x: 0.9166668, y: -0.35353535}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 408
-      width: 144
-      height: 396
-    spriteID: 0d726a28633345742a10c73c35d5692b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 408}
-  - name: Ahlai_Frame_61
-    originalName: 
-    pivot: {x: 0.8888889, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 3228
-      width: 144
-      height: 388
-    spriteID: c93f3fe3905954f44ba3ef3ac1bbd167
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 3228}
-  - name: Ahlai_Frame_62
-    originalName: 
-    pivot: {x: 0.9166668, y: -0.35353535}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 812
-      width: 144
-      height: 396
-    spriteID: aa7f40c7a089e404990b036db351228c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 812}
-  - name: Ahlai_Frame_63
-    originalName: 
-    pivot: {x: 0.8717948, y: -0.34653464}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 740
-      width: 156
-      height: 404
-    spriteID: f6e950519ec295d49b6262d9e128a24e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 740}
-  - name: Ahlai_Frame_40
-    originalName: 
-    pivot: {x: 0.76388896, y: -0.35353535}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 1216
-      width: 144
-      height: 396
-    spriteID: e46ebea15d5e1d1489485c96ccc890fb
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 1216}
-  - name: Ahlai_Frame_41
-    originalName: 
-    pivot: {x: 0.79166657, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 3624
-      width: 144
-      height: 388
-    spriteID: 5e140ac3398e6594ab3d45be634df9c6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 3624}
-  - name: Ahlai_Frame_42
-    originalName: 
-    pivot: {x: 0.76388896, y: -0.35353535}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 1620
-      width: 144
-      height: 396
-    spriteID: a495f8533f65c1541b27d7b5fbd1031a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 1620}
-  - name: Ahlai_Frame_43
-    originalName: 
-    pivot: {x: 0.7564103, y: -0.34653464}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 1152
-      width: 156
-      height: 404
-    spriteID: 33d2d321261b70b44b215812edb1683b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 1152}
-  - name: Ahlai_Frame_44
-    originalName: 
-    pivot: {x: 0.76388896, y: -0.35353535}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 2024
-      width: 144
-      height: 396
-    spriteID: 98aff10703ce7f6489bfef6681c870e1
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 2024}
-  - name: Ahlai_Frame_45
-    originalName: 
-    pivot: {x: 0.79166657, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 4
-      width: 144
-      height: 388
-    spriteID: 639860f18cac44d42a8c548f599c2347
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 4}
-  - name: Ahlai_Frame_46
-    originalName: 
-    pivot: {x: 0.76388896, y: -0.35353535}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1384
-      y: 2428
-      width: 144
-      height: 396
-    spriteID: df9749b1d6f2e0d4aad917a290237c12
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1384, y: 2428}
-  - name: Ahlai_Frame_47
-    originalName: 
-    pivot: {x: 0.7564103, y: -0.34653464}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1184
-      y: 1564
-      width: 156
-      height: 404
-    spriteID: b2decc8c357fc084cbbd2f7659109f49
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1184, y: 1564}
-  - name: Ahlai_Frame_16
-    originalName: 
-    pivot: {x: 0.9558822, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 1984
-      width: 136
-      height: 388
-    spriteID: 7f7a8eb245134fb4cb0b5e71c4487a7d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 1984}
-  - name: Ahlai_Frame_17
-    originalName: 
-    pivot: {x: 0.9264706, y: -0.36842105}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 2324
-      width: 136
-      height: 380
-    spriteID: 8f9e0a496e471e141a03eae484816b41
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 2324}
-  - name: Ahlai_Frame_18
-    originalName: 
-    pivot: {x: 0.9558822, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 2380
-      width: 136
-      height: 388
-    spriteID: 2d289fb5c68f80c4d867f4de9615c4e9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 2380}
-  - name: Ahlai_Frame_19
-    originalName: 
-    pivot: {x: 0.9305556, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 400
-      width: 144
-      height: 388
-    spriteID: aaef429f293e4d04d91fa27fd008776f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 400}
-  - name: Ahlai_Frame_20
-    originalName: 
-    pivot: {x: 0.9558822, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 2776
-      width: 136
-      height: 388
-    spriteID: cc1acf4147553b54f8e4efe42274da35
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 2776}
-  - name: Ahlai_Frame_21
-    originalName: 
-    pivot: {x: 0.9264706, y: -0.36842105}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 2712
-      width: 136
-      height: 380
-    spriteID: 2fd191f4b20c84140ba545b194942d2e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 2712}
-  - name: Ahlai_Frame_22
-    originalName: 
-    pivot: {x: 0.9558822, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 3172
-      width: 136
-      height: 388
-    spriteID: b31198b6f8dc7ec40a2e1d2baf9044a8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 3172}
-  - name: Ahlai_Frame_23
-    originalName: 
-    pivot: {x: 0.9305556, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 796
-      width: 144
-      height: 388
-    spriteID: 17a4f3ab5d58fe642ab06d9634f5ec46
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 796}
-  - name: Ahlai_Frame_0
-    originalName: 
-    pivot: {x: 0.8088235, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 3568
-      width: 136
-      height: 388
-    spriteID: 0f40c9203b45ff54f99651887d6b230b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 3568}
-  - name: Ahlai_Frame_1
-    originalName: 
-    pivot: {x: 0.83823514, y: -0.36842105}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 3100
-      width: 136
-      height: 380
-    spriteID: edbf70f5bd987c04fba8475d0f705e64
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 3100}
-  - name: Ahlai_Frame_2
-    originalName: 
-    pivot: {x: 0.8088235, y: -0.36458334}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 1540
-      width: 136
-      height: 384
-    spriteID: a287a0a9d2638284caffcd2badb2a502
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 1540}
-  - name: Ahlai_Frame_3
-    originalName: 
-    pivot: {x: 0.79166657, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 1192
-      width: 144
-      height: 388
-    spriteID: 05a1f75de2cfeb7428c63a534660908b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 1192}
-  - name: Ahlai_Frame_4
-    originalName: 
-    pivot: {x: 0.8088235, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1688
-      y: 4
-      width: 136
-      height: 388
-    spriteID: 6cbccbecf2754bb4abac62dcbbf72372
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1688, y: 4}
-  - name: Ahlai_Frame_5
-    originalName: 
-    pivot: {x: 0.83823514, y: -0.36842105}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 3488
-      width: 136
-      height: 380
-    spriteID: 9d00d3367e624ca42951fad377848796
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 3488}
-  - name: Ahlai_Frame_6
-    originalName: 
-    pivot: {x: 0.8088235, y: -0.36458334}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1832
-      y: 1932
-      width: 136
-      height: 384
-    spriteID: 618663aec42523441a1c98bc0cb367ec
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1832, y: 1932}
-  - name: Ahlai_Frame_7
-    originalName: 
-    pivot: {x: 0.79166657, y: -0.36082476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1536
-      y: 1588
-      width: 144
-      height: 388
-    spriteID: 58b575b3dca35f7498a9b7dc83b98474
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1536, y: 1588}
-  - name: Ahlai_Frame_72
-    originalName: 
-    pivot: {x: 0.8484848, y: -0.55813956}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1688
-      y: 760
-      width: 132
-      height: 344
-    spriteID: 524ac6d8f043ecb4baf154edb96c8a91
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1688, y: 760}
   - name: Ahlai_Frame_73
     originalName: 
-    pivot: {x: 0.8484848, y: -0.5714286}
+    pivot: {x: 0.5178572, y: -0.6759259}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1688
-      y: 1464
-      width: 132
-      height: 336
-    spriteID: c6415416aa7654348a0056f269b03a8a
+      x: 2068
+      y: 4
+      width: 672
+      height: 432
+    spriteID: 7184d67463656f04ebd06dfa8b7ff33e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1650,39 +1175,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1688, y: 1464}
-  - name: Ahlai_Frame_74
-    originalName: 
-    pivot: {x: 0.8484848, y: -0.55813956}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1688
-      y: 1112
-      width: 132
-      height: 344
-    spriteID: 2f8efca7738984242bb75c60f3ce252c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1688, y: 1112}
+    uvTransform: {x: 2068, y: 4}
   - name: Ahlai_Frame_75
     originalName: 
-    pivot: {x: 0.8484848, y: -0.54545456}
+    pivot: {x: 0.49999997, y: -0.6697247}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1688
-      y: 400
-      width: 132
-      height: 352
-    spriteID: a7a259cf176d75d42828d50148cd09d8
+      x: 668
+      y: 444
+      width: 656
+      height: 436
+    spriteID: 43115b6d3fa94f9488b7c20a75f69574
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1690,7 +1195,667 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1688, y: 400}
+    uvTransform: {x: 668, y: 444}
+  - name: Ahlai_Frame_74
+    originalName: 
+    pivot: {x: 0.5031055, y: -0.6636364}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 656
+      y: 888
+      width: 644
+      height: 440
+    spriteID: 8849aa8e72fcf6647b8376397d810ff3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 656, y: 888}
+  - name: Ahlai_Frame_24
+    originalName: 
+    pivot: {x: 1.2, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 3712
+      width: 140
+      height: 376
+    spriteID: d641c594ccb7d7546960681685c20030
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 3712}
+  - name: Ahlai_Frame_25
+    originalName: 
+    pivot: {x: 0.87500006, y: -0.82222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2572
+      y: 888
+      width: 192
+      height: 360
+    spriteID: 58ce3670c4eb9fd439a328f016aaba39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2572, y: 888}
+  - name: Ahlai_Frame_26
+    originalName: 
+    pivot: {x: 0.7868852, y: -0.79569894}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2080
+      y: 444
+      width: 244
+      height: 372
+    spriteID: efca76e24dc4d9c46b416d3b5e7e31a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2080, y: 444}
+  - name: Ahlai_Frame_27
+    originalName: 
+    pivot: {x: 0.8545455, y: -0.7708334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3056
+      y: 444
+      width: 220
+      height: 384
+    spriteID: f0347c57d9beb114f8b54c4fc5b157e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3056, y: 444}
+  - name: Ahlai_Frame_28
+    originalName: 
+    pivot: {x: 1.2, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 1336
+      width: 140
+      height: 376
+    spriteID: ddff009e6b0e6984e86719c617d1a89a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 1336}
+  - name: Ahlai_Frame_29
+    originalName: 
+    pivot: {x: 0.88235295, y: -0.82222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2148
+      y: 888
+      width: 204
+      height: 360
+    spriteID: d1f4dedaf9211e54da5a439fff12a998
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2148, y: 888}
+  - name: Ahlai_Frame_30
+    originalName: 
+    pivot: {x: 0.7868852, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1576
+      y: 444
+      width: 244
+      height: 376
+    spriteID: 0883831828916964ca2b1ba4477a0796
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1576, y: 444}
+  - name: Ahlai_Frame_31
+    originalName: 
+    pivot: {x: 0.8545455, y: -0.7708334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3284
+      y: 444
+      width: 220
+      height: 384
+    spriteID: 4a052b41b904f934aa1d1c00a02fb03c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3284, y: 444}
+  - name: Ahlai_Frame_8
+    originalName: 
+    pivot: {x: 0.37142864, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 1720
+      width: 140
+      height: 376
+    spriteID: 64080e1cbe757e94ca85760b43c808b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 1720}
+  - name: Ahlai_Frame_9
+    originalName: 
+    pivot: {x: 0.54166675, y: -0.82222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2772
+      y: 888
+      width: 192
+      height: 360
+    spriteID: a3893fa04abf0c348a0b342143b054ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2772, y: 888}
+  - name: Ahlai_Frame_10
+    originalName: 
+    pivot: {x: 0.54098356, y: -0.79569894}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2332
+      y: 444
+      width: 244
+      height: 372
+    spriteID: 7f89258614d124346a85e31f80bf87c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2332, y: 444}
+  - name: Ahlai_Frame_11
+    originalName: 
+    pivot: {x: 0.50909096, y: -0.7708334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3512
+      y: 444
+      width: 220
+      height: 384
+    spriteID: 762d89f8cf4b1b44dbba39642036efa9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3512, y: 444}
+  - name: Ahlai_Frame_12
+    originalName: 
+    pivot: {x: 0.37142864, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 2104
+      width: 140
+      height: 376
+    spriteID: e132e39df997e5047a885dbb5a1619f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 2104}
+  - name: Ahlai_Frame_13
+    originalName: 
+    pivot: {x: 0.509804, y: -0.82222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2360
+      y: 888
+      width: 204
+      height: 360
+    spriteID: 63b57526808830b448b05db04b222a4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2360, y: 888}
+  - name: Ahlai_Frame_14
+    originalName: 
+    pivot: {x: 0.54098356, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1828
+      y: 444
+      width: 244
+      height: 376
+    spriteID: a5bb1af42e8527d4eb7d00318e4420c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1828, y: 444}
+  - name: Ahlai_Frame_15
+    originalName: 
+    pivot: {x: 0.50909096, y: -0.7708334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3740
+      y: 444
+      width: 220
+      height: 384
+    spriteID: 54bcfbdb0fd2ce647be6187560160037
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3740, y: 444}
+  - name: Ahlai_Frame_16
+    originalName: 
+    pivot: {x: 0.5294117, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 1336
+      width: 136
+      height: 388
+    spriteID: 96d285a279b7eb643b641c6bfd5d1a32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 1336}
+  - name: Ahlai_Frame_17
+    originalName: 
+    pivot: {x: 0.5588234, y: -0.8105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 3712
+      width: 136
+      height: 380
+    spriteID: 3477e181c2250674f833e5a94f80f804
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 3712}
+  - name: Ahlai_Frame_18
+    originalName: 
+    pivot: {x: 0.5294117, y: -0.8020833}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 2488
+      width: 136
+      height: 384
+    spriteID: bba6040e921df2b4097781fc8d01f350
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 2488}
+  - name: Ahlai_Frame_19
+    originalName: 
+    pivot: {x: 0.5277777, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 2128
+      width: 144
+      height: 388
+    spriteID: a27b178e81b0ba64186c078f7a11dd20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 2128}
+  - name: Ahlai_Frame_20
+    originalName: 
+    pivot: {x: 0.5294117, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 1732
+      width: 136
+      height: 388
+    spriteID: 0d927af2fdc7e0043b9fb95707272d69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 1732}
+  - name: Ahlai_Frame_21
+    originalName: 
+    pivot: {x: 0.5588234, y: -0.8105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 3272
+      width: 136
+      height: 380
+    spriteID: e2dab35f0927cd64d9c1eb8560071012
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 3272}
+  - name: Ahlai_Frame_22
+    originalName: 
+    pivot: {x: 0.5294117, y: -0.8020833}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 2880
+      width: 136
+      height: 384
+    spriteID: f962e177b4a2eee42b31d905fd224969
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 2880}
+  - name: Ahlai_Frame_23
+    originalName: 
+    pivot: {x: 0.5277777, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 2524
+      width: 144
+      height: 388
+    spriteID: f5a971decb3a35947b04532106689de7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 2524}
+  - name: Ahlai_Frame_0
+    originalName: 
+    pivot: {x: 0.6764708, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 2128
+      width: 136
+      height: 388
+    spriteID: 65432dbf21787e44cb061401d0963ced
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 2128}
+  - name: Ahlai_Frame_1
+    originalName: 
+    pivot: {x: 0.6470586, y: -0.8105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 3660
+      width: 136
+      height: 380
+    spriteID: 8948fb9ab6257d847b53665441fa2639
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 3660}
+  - name: Ahlai_Frame_2
+    originalName: 
+    pivot: {x: 0.6764708, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 2524
+      width: 136
+      height: 388
+    spriteID: d7b48bec69d7e684f805fa1bb2df160e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 2524}
+  - name: Ahlai_Frame_3
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 2920
+      width: 144
+      height: 388
+    spriteID: b1c2fe5ee62d29c4abfdf12fae184fee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 2920}
+  - name: Ahlai_Frame_4
+    originalName: 
+    pivot: {x: 0.6764708, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 2920
+      width: 136
+      height: 388
+    spriteID: 550fe91ee3abd394d984f8b22df28fc6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 2920}
+  - name: Ahlai_Frame_5
+    originalName: 
+    pivot: {x: 0.6470586, y: -0.8105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 756
+      y: 1336
+      width: 136
+      height: 380
+    spriteID: b697df3fd55aabd40999571fd51016ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 756, y: 1336}
+  - name: Ahlai_Frame_6
+    originalName: 
+    pivot: {x: 0.6764708, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 464
+      y: 3316
+      width: 136
+      height: 388
+    spriteID: 6fbcd13fcb7b94846825efa08cf7c155
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 464, y: 3316}
+  - name: Ahlai_Frame_7
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 312
+      y: 3316
+      width: 144
+      height: 388
+    spriteID: c702b9ffe81cbe741a7195e73cc8bea0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 312, y: 3316}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -1700,690 +1865,762 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Ahlai_Frame_32
-      frameIndex: 32
+    - name: Ahlai_Frame_76
+      frameIndex: 76
       additiveSortOrder: 0
       cellRect:
-        x: 340
-        y: 124
-        width: 684
-        height: 432
-      spriteId: 77b4a0dd9ec6f1742a908ac338bc3737
-    - name: Ahlai_Frame_33
-      frameIndex: 33
+        x: 856
+        y: 456
+        width: 152
+        height: 256
+      spriteId: 08de1ae697663ad43b268066ca8db42a
+    - name: Ahlai_Frame_77
+      frameIndex: 77
       additiveSortOrder: 0
       cellRect:
-        x: 332
-        y: 124
-        width: 672
-        height: 432
-      spriteId: 0b5c730756a9f154d9738474367dbb52
-    - name: Ahlai_Frame_34
-      frameIndex: 34
+        x: 856
+        y: 456
+        width: 152
+        height: 248
+      spriteId: bb857f4b8b6402d41ba00b8dbbda6480
+    - name: Ahlai_Frame_78
+      frameIndex: 78
       additiveSortOrder: 0
       cellRect:
-        x: 352
-        y: 124
-        width: 652
-        height: 440
-      spriteId: 59889b15e85a8204ab34877e1643acd8
-    - name: Ahlai_Frame_35
-      frameIndex: 35
+        x: 852
+        y: 456
+        width: 156
+        height: 240
+      spriteId: 0aea0d5cfc4292c4b88c13e8906c5fa4
+    - name: Ahlai_Frame_79
+      frameIndex: 79
       additiveSortOrder: 0
       cellRect:
-        x: 352
-        y: 124
-        width: 656
-        height: 436
-      spriteId: c616bc93df2cef44dbbbe96894d477dc
-    - name: Ahlai_Frame_36
-      frameIndex: 36
+        x: 856
+        y: 456
+        width: 152
+        height: 248
+      spriteId: db2f213e151137f45955affd0f9b9098
+    - name: Ahlai_Frame_80
+      frameIndex: 80
       additiveSortOrder: 0
       cellRect:
-        x: 340
-        y: 124
-        width: 684
-        height: 432
-      spriteId: 534933b806d89304188f8513425fb6bf
-    - name: Ahlai_Frame_37
-      frameIndex: 37
+        x: 856
+        y: 456
+        width: 152
+        height: 256
+      spriteId: a94233fef8ad2c04193b40259ea9e77c
+    - name: Ahlai_Frame_81
+      frameIndex: 81
       additiveSortOrder: 0
       cellRect:
-        x: 332
-        y: 124
-        width: 672
-        height: 432
-      spriteId: 01c4848471a82b64f9214e2b9a25114e
-    - name: Ahlai_Frame_38
-      frameIndex: 38
+        x: 856
+        y: 456
+        width: 152
+        height: 248
+      spriteId: 25ee6ee2e7aeedc419b59383067d8662
+    - name: Ahlai_Frame_82
+      frameIndex: 82
       additiveSortOrder: 0
       cellRect:
-        x: 352
-        y: 124
-        width: 652
-        height: 440
-      spriteId: e36d046bd9a59a34790e1eaf753b856f
-    - name: Ahlai_Frame_39
-      frameIndex: 39
+        x: 852
+        y: 456
+        width: 156
+        height: 240
+      spriteId: 8ae8afc25af0b8146a8101a5695e1457
+    - name: Ahlai_Frame_83
+      frameIndex: 83
       additiveSortOrder: 0
       cellRect:
-        x: 352
-        y: 124
-        width: 656
-        height: 436
-      spriteId: 30608ec7be24ab34481e55939ef2ec02
+        x: 856
+        y: 456
+        width: 152
+        height: 248
+      spriteId: f544cb4a6b2ac3f468b64363093f9205
     - name: Ahlai_Frame_64
       frameIndex: 64
       additiveSortOrder: 0
       cellRect:
-        x: 596
-        y: 124
-        width: 148
-        height: 392
-      spriteId: 45eca5d994f80c74d8a65eabc18ed2e9
+        x: 884
+        y: 360
+        width: 132
+        height: 344
+      spriteId: 5de393aa8760cea499408877680bddf6
     - name: Ahlai_Frame_65
       frameIndex: 65
       additiveSortOrder: 0
       cellRect:
-        x: 548
-        y: 124
-        width: 208
-        height: 376
-      spriteId: 6a75681a7d1bfc54195cf7f9b035f232
+        x: 884
+        y: 360
+        width: 132
+        height: 336
+      spriteId: d3827a3e46fe63742a0f7965d14a7151
     - name: Ahlai_Frame_66
       frameIndex: 66
       additiveSortOrder: 0
       cellRect:
-        x: 516
-        y: 124
-        width: 252
-        height: 388
-      spriteId: 0848bcda72fc05c4aae835d1be1ac398
+        x: 884
+        y: 360
+        width: 132
+        height: 344
+      spriteId: c837a1be04ff0c1408995836f3ec712e
     - name: Ahlai_Frame_67
       frameIndex: 67
       additiveSortOrder: 0
       cellRect:
-        x: 532
-        y: 124
-        width: 228
-        height: 392
-      spriteId: d0dc65112ac42da46bc1d82fc2ef1829
-    - name: Ahlai_Frame_68
-      frameIndex: 68
-      additiveSortOrder: 0
-      cellRect:
-        x: 584
-        y: 124
-        width: 160
-        height: 392
-      spriteId: b0840b52680a87e48857de1611514697
-    - name: Ahlai_Frame_69
-      frameIndex: 69
-      additiveSortOrder: 0
-      cellRect:
-        x: 548
-        y: 124
-        width: 196
-        height: 376
-      spriteId: 685a74e9c6ce3374d8baaf6d18f03819
-    - name: Ahlai_Frame_70
-      frameIndex: 70
-      additiveSortOrder: 0
-      cellRect:
-        x: 520
-        y: 124
-        width: 252
-        height: 392
-      spriteId: 74d07b8fe3cc6bb489e74bba1af4ca4a
-    - name: Ahlai_Frame_71
-      frameIndex: 71
-      additiveSortOrder: 0
-      cellRect:
-        x: 536
-        y: 124
-        width: 236
-        height: 396
-      spriteId: 245f281da6c97f04abdcb405187541d8
-    - name: Ahlai_Frame_48
-      frameIndex: 48
-      additiveSortOrder: 0
-      cellRect:
-        x: 543
-        y: 124
-        width: 148
-        height: 392
-      spriteId: 8cd1ef16facd58d4387c26b9ed0ea7e2
-    - name: Ahlai_Frame_49
-      frameIndex: 49
-      additiveSortOrder: 0
-      cellRect:
-        x: 531
-        y: 124
-        width: 208
-        height: 376
-      spriteId: 655e610a05642b244b063052ee9faf05
-    - name: Ahlai_Frame_50
-      frameIndex: 50
-      additiveSortOrder: 0
-      cellRect:
-        x: 519
-        y: 124
-        width: 252
-        height: 388
-      spriteId: 09d8efe4c4cb05241b9ecc1aa0c0a89d
-    - name: Ahlai_Frame_51
-      frameIndex: 51
-      additiveSortOrder: 0
-      cellRect:
-        x: 527
-        y: 124
-        width: 228
-        height: 392
-      spriteId: 619252e66fd67924193cf4571863c115
-    - name: Ahlai_Frame_52
-      frameIndex: 52
-      additiveSortOrder: 0
-      cellRect:
-        x: 543
-        y: 124
-        width: 160
-        height: 392
-      spriteId: e7d93e5f1410a184b81588d9bfbc0d52
-    - name: Ahlai_Frame_53
-      frameIndex: 53
-      additiveSortOrder: 0
-      cellRect:
-        x: 543
-        y: 124
-        width: 196
-        height: 376
-      spriteId: 89553c4e86820ec418f159085c584110
-    - name: Ahlai_Frame_54
-      frameIndex: 54
-      additiveSortOrder: 0
-      cellRect:
-        x: 515
-        y: 124
-        width: 252
-        height: 392
-      spriteId: 9fc0111552e224642aa4d84dadb2bb84
-    - name: Ahlai_Frame_55
-      frameIndex: 55
-      additiveSortOrder: 0
-      cellRect:
-        x: 515
-        y: 124
-        width: 236
-        height: 396
-      spriteId: 1de74f08dab45e44e9825ff188c709e7
-    - name: Ahlai_Frame_24
-      frameIndex: 24
-      additiveSortOrder: 0
-      cellRect:
-        x: 604
-        y: 128
-        width: 140
-        height: 376
-      spriteId: fbe4c63ab034ac34fabe311ba4f4a686
-    - name: Ahlai_Frame_25
-      frameIndex: 25
-      additiveSortOrder: 0
-      cellRect:
-        x: 552
-        y: 128
-        width: 204
-        height: 360
-      spriteId: 87e78bb8b35719f4cbbef2707bab0426
-    - name: Ahlai_Frame_26
-      frameIndex: 26
-      additiveSortOrder: 0
-      cellRect:
-        x: 524
-        y: 128
-        width: 244
-        height: 376
-      spriteId: d320d2fa632fe684bb83f2643a982911
-    - name: Ahlai_Frame_27
-      frameIndex: 27
-      additiveSortOrder: 0
-      cellRect:
-        x: 544
-        y: 128
-        width: 220
-        height: 384
-      spriteId: e5395802a60d84d49a77c46e5c152b84
-    - name: Ahlai_Frame_28
-      frameIndex: 28
-      additiveSortOrder: 0
-      cellRect:
-        x: 604
-        y: 128
-        width: 140
-        height: 376
-      spriteId: 8cb48bdd3f168594fa998902ab6868fd
-    - name: Ahlai_Frame_29
-      frameIndex: 29
-      additiveSortOrder: 0
-      cellRect:
-        x: 552
-        y: 128
-        width: 192
-        height: 360
-      spriteId: 5f2da55e5d1339e4a89f4f2a4dc22131
-    - name: Ahlai_Frame_30
-      frameIndex: 30
-      additiveSortOrder: 0
-      cellRect:
-        x: 524
-        y: 128
-        width: 244
-        height: 372
-      spriteId: efdf357af2e0f5b46abe599da30bf5d1
-    - name: Ahlai_Frame_31
-      frameIndex: 31
-      additiveSortOrder: 0
-      cellRect:
-        x: 544
-        y: 128
-        width: 220
-        height: 384
-      spriteId: cc7ffd3f6d2ddfe41acbe2a70a27f844
-    - name: Ahlai_Frame_8
-      frameIndex: 8
-      additiveSortOrder: 0
-      cellRect:
-        x: 548
-        y: 128
-        width: 140
-        height: 376
-      spriteId: 69bf3b2f3f8452c4ca475d1b8743ea5a
-    - name: Ahlai_Frame_9
-      frameIndex: 9
-      additiveSortOrder: 0
-      cellRect:
-        x: 536
-        y: 128
-        width: 204
-        height: 360
-      spriteId: 5ec9e33d2088f6744b787d356b321c04
-    - name: Ahlai_Frame_10
-      frameIndex: 10
-      additiveSortOrder: 0
-      cellRect:
-        x: 524
-        y: 128
-        width: 244
-        height: 376
-      spriteId: 926d743fb368fcd4f88c8573861dec94
-    - name: Ahlai_Frame_11
-      frameIndex: 11
-      additiveSortOrder: 0
-      cellRect:
-        x: 528
-        y: 128
-        width: 220
-        height: 384
-      spriteId: 817b07b4eceba8d49aa3edc9f6a48e80
-    - name: Ahlai_Frame_12
-      frameIndex: 12
-      additiveSortOrder: 0
-      cellRect:
-        x: 548
-        y: 128
-        width: 140
-        height: 376
-      spriteId: ba4fd5686196b7440ac4e85143c6fafd
-    - name: Ahlai_Frame_13
-      frameIndex: 13
-      additiveSortOrder: 0
-      cellRect:
-        x: 548
-        y: 128
-        width: 192
-        height: 360
-      spriteId: 8d86b0ff7f1fd9e498aea65875a31f89
-    - name: Ahlai_Frame_14
-      frameIndex: 14
-      additiveSortOrder: 0
-      cellRect:
-        x: 524
-        y: 128
-        width: 244
-        height: 372
-      spriteId: 81d3d4a313582cf4a9f5a5ee9fa24364
-    - name: Ahlai_Frame_15
-      frameIndex: 15
-      additiveSortOrder: 0
-      cellRect:
-        x: 528
-        y: 128
-        width: 220
-        height: 384
-      spriteId: f8c9891f353aba94eb984e3edb33d5ab
+        x: 884
+        y: 360
+        width: 132
+        height: 352
+      spriteId: 7d6f77319995a11489e20c314ebd4ac6
     - name: Ahlai_Frame_56
       frameIndex: 56
       additiveSortOrder: 0
       cellRect:
-        x: 566
-        y: 140
-        width: 144
-        height: 396
-      spriteId: 1484e56453cb9e943b1a901a73a94939
+        x: 840
+        y: 292
+        width: 148
+        height: 392
+      spriteId: fbd6e9794b321a644b1f5fe467c9c9db
     - name: Ahlai_Frame_57
       frameIndex: 57
       additiveSortOrder: 0
       cellRect:
-        x: 570
-        y: 140
-        width: 144
-        height: 388
-      spriteId: 1bed3390337126a49b348396f29b4bce
+        x: 828
+        y: 292
+        width: 208
+        height: 376
+      spriteId: 551fd1515ba625e4ebcd4d25722054b8
     - name: Ahlai_Frame_58
       frameIndex: 58
       additiveSortOrder: 0
       cellRect:
-        x: 566
-        y: 140
-        width: 144
-        height: 396
-      spriteId: 9e6fd17347c6b1643b9d6f54c02085f3
+        x: 816
+        y: 292
+        width: 252
+        height: 388
+      spriteId: 9d9b6098f7db2a344a2e0cab23c23fbc
     - name: Ahlai_Frame_59
       frameIndex: 59
       additiveSortOrder: 0
       cellRect:
-        x: 562
-        y: 140
-        width: 156
-        height: 404
-      spriteId: 5c9223a471487f049ac04e6a9ed19435
+        x: 824
+        y: 292
+        width: 228
+        height: 392
+      spriteId: 133891362d8b6a34c9a04a62156cc989
     - name: Ahlai_Frame_60
       frameIndex: 60
       additiveSortOrder: 0
       cellRect:
-        x: 566
-        y: 140
-        width: 144
-        height: 396
-      spriteId: 0d726a28633345742a10c73c35d5692b
+        x: 840
+        y: 292
+        width: 160
+        height: 392
+      spriteId: 7d76509be0d1dd54e9398ba7d52811f1
     - name: Ahlai_Frame_61
       frameIndex: 61
       additiveSortOrder: 0
       cellRect:
-        x: 570
-        y: 140
-        width: 144
-        height: 388
-      spriteId: c93f3fe3905954f44ba3ef3ac1bbd167
+        x: 840
+        y: 292
+        width: 196
+        height: 376
+      spriteId: 2f51e020e18fe8d4b99fddb2c9892340
     - name: Ahlai_Frame_62
       frameIndex: 62
       additiveSortOrder: 0
       cellRect:
-        x: 566
-        y: 140
-        width: 144
-        height: 396
-      spriteId: aa7f40c7a089e404990b036db351228c
+        x: 812
+        y: 292
+        width: 252
+        height: 392
+      spriteId: e143f4cf4f7ae274a884c9a953ae95ef
     - name: Ahlai_Frame_63
       frameIndex: 63
       additiveSortOrder: 0
       cellRect:
-        x: 562
-        y: 140
-        width: 156
-        height: 404
-      spriteId: f6e950519ec295d49b6262d9e128a24e
+        x: 812
+        y: 292
+        width: 236
+        height: 396
+      spriteId: 35c2cfcdec042824a9dc497678a4e860
     - name: Ahlai_Frame_40
       frameIndex: 40
       additiveSortOrder: 0
       cellRect:
-        x: 588
-        y: 140
-        width: 144
-        height: 396
-      spriteId: e46ebea15d5e1d1489485c96ccc890fb
+        x: 900
+        y: 292
+        width: 148
+        height: 392
+      spriteId: 148d4325d9827cf4484464e891930a7c
     - name: Ahlai_Frame_41
       frameIndex: 41
       additiveSortOrder: 0
       cellRect:
-        x: 584
-        y: 140
-        width: 144
-        height: 388
-      spriteId: 5e140ac3398e6594ab3d45be634df9c6
+        x: 852
+        y: 292
+        width: 208
+        height: 376
+      spriteId: 8efe67fdb9c20c443a924f42f7ad9989
     - name: Ahlai_Frame_42
       frameIndex: 42
       additiveSortOrder: 0
       cellRect:
-        x: 588
-        y: 140
-        width: 144
-        height: 396
-      spriteId: a495f8533f65c1541b27d7b5fbd1031a
+        x: 820
+        y: 292
+        width: 252
+        height: 388
+      spriteId: 023c71f8662c98c46b1ff8a621bce562
     - name: Ahlai_Frame_43
       frameIndex: 43
       additiveSortOrder: 0
       cellRect:
-        x: 580
-        y: 140
-        width: 156
-        height: 404
-      spriteId: 33d2d321261b70b44b215812edb1683b
+        x: 836
+        y: 292
+        width: 228
+        height: 392
+      spriteId: 89fcd9c0c3bfdec44bf0d61c2eb5d948
     - name: Ahlai_Frame_44
       frameIndex: 44
       additiveSortOrder: 0
       cellRect:
-        x: 588
-        y: 140
-        width: 144
-        height: 396
-      spriteId: 98aff10703ce7f6489bfef6681c870e1
+        x: 888
+        y: 292
+        width: 160
+        height: 392
+      spriteId: 2a1dfc81231b66d4191e5003a52867fa
     - name: Ahlai_Frame_45
       frameIndex: 45
       additiveSortOrder: 0
       cellRect:
-        x: 584
-        y: 140
-        width: 144
-        height: 388
-      spriteId: 639860f18cac44d42a8c548f599c2347
+        x: 852
+        y: 292
+        width: 196
+        height: 376
+      spriteId: 0ff072ec64845c948968c57cdbc2392c
     - name: Ahlai_Frame_46
       frameIndex: 46
       additiveSortOrder: 0
       cellRect:
-        x: 588
-        y: 140
-        width: 144
-        height: 396
-      spriteId: df9749b1d6f2e0d4aad917a290237c12
+        x: 824
+        y: 292
+        width: 252
+        height: 392
+      spriteId: 3e757f760b7d00946a21ab0597df53eb
     - name: Ahlai_Frame_47
       frameIndex: 47
       additiveSortOrder: 0
       cellRect:
-        x: 580
-        y: 140
+        x: 840
+        y: 292
+        width: 236
+        height: 396
+      spriteId: 51990961aa3382a4f84c23d9bf480cbf
+    - name: Ahlai_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 880
+        y: 308
+        width: 144
+        height: 396
+      spriteId: d1481d2420939864ab9f9eecf2c314bf
+    - name: Ahlai_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 876
+        y: 308
+        width: 144
+        height: 388
+      spriteId: 8909b3eeab1b25446ae7f36eff7d6cf7
+    - name: Ahlai_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 880
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 64ee4e82fb9ab7d4d8a3de8783fa8bff
+    - name: Ahlai_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 872
+        y: 308
         width: 156
         height: 404
-      spriteId: b2decc8c357fc084cbbd2f7659109f49
-    - name: Ahlai_Frame_16
-      frameIndex: 16
+      spriteId: c751a42ca0fb13140a70c99c00554889
+    - name: Ahlai_Frame_52
+      frameIndex: 52
       additiveSortOrder: 0
       cellRect:
-        x: 568
-        y: 140
-        width: 136
-        height: 388
-      spriteId: 7f7a8eb245134fb4cb0b5e71c4487a7d
-    - name: Ahlai_Frame_17
-      frameIndex: 17
+        x: 880
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 02d39dd00e1c231419b65684d4a5b179
+    - name: Ahlai_Frame_53
+      frameIndex: 53
       additiveSortOrder: 0
       cellRect:
-        x: 572
-        y: 140
-        width: 136
-        height: 380
-      spriteId: 8f9e0a496e471e141a03eae484816b41
-    - name: Ahlai_Frame_18
-      frameIndex: 18
-      additiveSortOrder: 0
-      cellRect:
-        x: 568
-        y: 140
-        width: 136
-        height: 388
-      spriteId: 2d289fb5c68f80c4d867f4de9615c4e9
-    - name: Ahlai_Frame_19
-      frameIndex: 19
-      additiveSortOrder: 0
-      cellRect:
-        x: 564
-        y: 140
+        x: 876
+        y: 308
         width: 144
         height: 388
-      spriteId: aaef429f293e4d04d91fa27fd008776f
-    - name: Ahlai_Frame_20
-      frameIndex: 20
+      spriteId: aa8cc59bf5543a34fa2fa09a811882fa
+    - name: Ahlai_Frame_54
+      frameIndex: 54
       additiveSortOrder: 0
       cellRect:
-        x: 568
-        y: 140
-        width: 136
-        height: 388
-      spriteId: cc1acf4147553b54f8e4efe42274da35
-    - name: Ahlai_Frame_21
-      frameIndex: 21
+        x: 880
+        y: 308
+        width: 144
+        height: 396
+      spriteId: bfdd974545f0a6f47bb447f8a6ba3949
+    - name: Ahlai_Frame_55
+      frameIndex: 55
       additiveSortOrder: 0
       cellRect:
-        x: 572
-        y: 140
-        width: 136
-        height: 380
-      spriteId: 2fd191f4b20c84140ba545b194942d2e
-    - name: Ahlai_Frame_22
-      frameIndex: 22
+        x: 872
+        y: 308
+        width: 156
+        height: 404
+      spriteId: 7efffd293f53ced4eb94868807ba3798
+    - name: Ahlai_Frame_32
+      frameIndex: 32
       additiveSortOrder: 0
       cellRect:
-        x: 568
-        y: 140
-        width: 136
-        height: 388
-      spriteId: b31198b6f8dc7ec40a2e1d2baf9044a8
-    - name: Ahlai_Frame_23
-      frameIndex: 23
+        x: 864
+        y: 308
+        width: 144
+        height: 396
+      spriteId: ca24d872d6438d14197d53e2213b7f88
+    - name: Ahlai_Frame_33
+      frameIndex: 33
       additiveSortOrder: 0
       cellRect:
-        x: 564
-        y: 140
+        x: 868
+        y: 308
         width: 144
         height: 388
-      spriteId: 17a4f3ab5d58fe642ab06d9634f5ec46
-    - name: Ahlai_Frame_0
-      frameIndex: 0
+      spriteId: 6cdceaab232b20e40b88d79688aca9cd
+    - name: Ahlai_Frame_34
+      frameIndex: 34
       additiveSortOrder: 0
       cellRect:
-        x: 588
-        y: 140
-        width: 136
-        height: 388
-      spriteId: 0f40c9203b45ff54f99651887d6b230b
-    - name: Ahlai_Frame_1
-      frameIndex: 1
+        x: 864
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 17e9f912fa30a0a4a8099f3618caa532
+    - name: Ahlai_Frame_35
+      frameIndex: 35
       additiveSortOrder: 0
       cellRect:
-        x: 584
-        y: 140
-        width: 136
-        height: 380
-      spriteId: edbf70f5bd987c04fba8475d0f705e64
-    - name: Ahlai_Frame_2
-      frameIndex: 2
+        x: 860
+        y: 308
+        width: 156
+        height: 404
+      spriteId: f2360e5a0c071e846bff74f2f1140f7a
+    - name: Ahlai_Frame_36
+      frameIndex: 36
       additiveSortOrder: 0
       cellRect:
-        x: 588
-        y: 140
-        width: 136
-        height: 384
-      spriteId: a287a0a9d2638284caffcd2badb2a502
-    - name: Ahlai_Frame_3
-      frameIndex: 3
+        x: 864
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 2bdfb5915f9f0d041935047128ca4520
+    - name: Ahlai_Frame_37
+      frameIndex: 37
       additiveSortOrder: 0
       cellRect:
-        x: 584
-        y: 140
+        x: 868
+        y: 308
         width: 144
         height: 388
-      spriteId: 05a1f75de2cfeb7428c63a534660908b
-    - name: Ahlai_Frame_4
-      frameIndex: 4
+      spriteId: e6c3c1b5c742c5c4bbe00608a8fa216c
+    - name: Ahlai_Frame_38
+      frameIndex: 38
       additiveSortOrder: 0
       cellRect:
-        x: 588
-        y: 140
-        width: 136
-        height: 388
-      spriteId: 6cbccbecf2754bb4abac62dcbbf72372
-    - name: Ahlai_Frame_5
-      frameIndex: 5
-      additiveSortOrder: 0
-      cellRect:
-        x: 584
-        y: 140
-        width: 136
-        height: 380
-      spriteId: 9d00d3367e624ca42951fad377848796
-    - name: Ahlai_Frame_6
-      frameIndex: 6
-      additiveSortOrder: 0
-      cellRect:
-        x: 588
-        y: 140
-        width: 136
-        height: 384
-      spriteId: 618663aec42523441a1c98bc0cb367ec
-    - name: Ahlai_Frame_7
-      frameIndex: 7
-      additiveSortOrder: 0
-      cellRect:
-        x: 584
-        y: 140
+        x: 864
+        y: 308
         width: 144
-        height: 388
-      spriteId: 58b575b3dca35f7498a9b7dc83b98474
+        height: 396
+      spriteId: ecd26a3433cf5004d92b14593490c35d
+    - name: Ahlai_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 860
+        y: 308
+        width: 156
+        height: 404
+      spriteId: f625dddec206a3a47a8e2febc97a1737
+    - name: Ahlai_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 620
+        y: 292
+        width: 684
+        height: 432
+      spriteId: 3cd255e4dc423b74583803c7db7a607c
+    - name: Ahlai_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 612
+        y: 292
+        width: 672
+        height: 432
+      spriteId: fa3d61cf0a57f6c41a32be666e5c94f2
+    - name: Ahlai_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 636
+        y: 292
+        width: 644
+        height: 440
+      spriteId: c845ab10d46c244499cadd4ed09fb82a
+    - name: Ahlai_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 632
+        y: 292
+        width: 656
+        height: 436
+      spriteId: c8751748e9347634398190291da5f23d
     - name: Ahlai_Frame_72
       frameIndex: 72
       additiveSortOrder: 0
       cellRect:
-        x: 586
-        y: 192
-        width: 132
-        height: 344
-      spriteId: 524ac6d8f043ecb4baf154edb96c8a91
+        x: 620
+        y: 292
+        width: 684
+        height: 432
+      spriteId: 9edb10bb02f767f45ab0c53c3e10c0ba
     - name: Ahlai_Frame_73
       frameIndex: 73
       additiveSortOrder: 0
       cellRect:
-        x: 586
-        y: 192
-        width: 132
-        height: 336
-      spriteId: c6415416aa7654348a0056f269b03a8a
-    - name: Ahlai_Frame_74
-      frameIndex: 74
-      additiveSortOrder: 0
-      cellRect:
-        x: 586
-        y: 192
-        width: 132
-        height: 344
-      spriteId: 2f8efca7738984242bb75c60f3ce252c
+        x: 612
+        y: 292
+        width: 672
+        height: 432
+      spriteId: 7184d67463656f04ebd06dfa8b7ff33e
     - name: Ahlai_Frame_75
       frameIndex: 75
       additiveSortOrder: 0
       cellRect:
-        x: 586
-        y: 192
-        width: 132
-        height: 352
-      spriteId: a7a259cf176d75d42828d50148cd09d8
+        x: 632
+        y: 292
+        width: 656
+        height: 436
+      spriteId: 43115b6d3fa94f9488b7c20a75f69574
+    - name: Ahlai_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 636
+        y: 292
+        width: 644
+        height: 440
+      spriteId: 8849aa8e72fcf6647b8376397d810ff3
+    - name: Ahlai_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 296
+        width: 140
+        height: 376
+      spriteId: d641c594ccb7d7546960681685c20030
+    - name: Ahlai_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 296
+        width: 192
+        height: 360
+      spriteId: 58ce3670c4eb9fd439a328f016aaba39
+    - name: Ahlai_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 296
+        width: 244
+        height: 372
+      spriteId: efca76e24dc4d9c46b416d3b5e7e31a1
+    - name: Ahlai_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 296
+        width: 220
+        height: 384
+      spriteId: f0347c57d9beb114f8b54c4fc5b157e4
+    - name: Ahlai_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 296
+        width: 140
+        height: 376
+      spriteId: ddff009e6b0e6984e86719c617d1a89a
+    - name: Ahlai_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 780
+        y: 296
+        width: 204
+        height: 360
+      spriteId: d1f4dedaf9211e54da5a439fff12a998
+    - name: Ahlai_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 296
+        width: 244
+        height: 376
+      spriteId: 0883831828916964ca2b1ba4477a0796
+    - name: Ahlai_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 296
+        width: 220
+        height: 384
+      spriteId: 4a052b41b904f934aa1d1c00a02fb03c
+    - name: Ahlai_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 908
+        y: 296
+        width: 140
+        height: 376
+      spriteId: 64080e1cbe757e94ca85760b43c808b7
+    - name: Ahlai_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 856
+        y: 296
+        width: 192
+        height: 360
+      spriteId: a3893fa04abf0c348a0b342143b054ec
+    - name: Ahlai_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 828
+        y: 296
+        width: 244
+        height: 372
+      spriteId: 7f89258614d124346a85e31f80bf87c7
+    - name: Ahlai_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 848
+        y: 296
+        width: 220
+        height: 384
+      spriteId: 762d89f8cf4b1b44dbba39642036efa9
+    - name: Ahlai_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 908
+        y: 296
+        width: 140
+        height: 376
+      spriteId: e132e39df997e5047a885dbb5a1619f6
+    - name: Ahlai_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 856
+        y: 296
+        width: 204
+        height: 360
+      spriteId: 63b57526808830b448b05db04b222a4f
+    - name: Ahlai_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 828
+        y: 296
+        width: 244
+        height: 376
+      spriteId: a5bb1af42e8527d4eb7d00318e4420c8
+    - name: Ahlai_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 848
+        y: 296
+        width: 220
+        height: 384
+      spriteId: 54bcfbdb0fd2ce647be6187560160037
+    - name: Ahlai_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 888
+        y: 308
+        width: 136
+        height: 388
+      spriteId: 96d285a279b7eb643b641c6bfd5d1a32
+    - name: Ahlai_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 308
+        width: 136
+        height: 380
+      spriteId: 3477e181c2250674f833e5a94f80f804
+    - name: Ahlai_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 888
+        y: 308
+        width: 136
+        height: 384
+      spriteId: bba6040e921df2b4097781fc8d01f350
+    - name: Ahlai_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 308
+        width: 144
+        height: 388
+      spriteId: a27b178e81b0ba64186c078f7a11dd20
+    - name: Ahlai_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 888
+        y: 308
+        width: 136
+        height: 388
+      spriteId: 0d927af2fdc7e0043b9fb95707272d69
+    - name: Ahlai_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 308
+        width: 136
+        height: 380
+      spriteId: e2dab35f0927cd64d9c1eb8560071012
+    - name: Ahlai_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 888
+        y: 308
+        width: 136
+        height: 384
+      spriteId: f962e177b4a2eee42b31d905fd224969
+    - name: Ahlai_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 308
+        width: 144
+        height: 388
+      spriteId: f5a971decb3a35947b04532106689de7
+    - name: Ahlai_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 136
+        height: 388
+      spriteId: 65432dbf21787e44cb061401d0963ced
+    - name: Ahlai_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 872
+        y: 308
+        width: 136
+        height: 380
+      spriteId: 8948fb9ab6257d847b53665441fa2639
+    - name: Ahlai_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 136
+        height: 388
+      spriteId: d7b48bec69d7e684f805fa1bb2df160e
+    - name: Ahlai_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 864
+        y: 308
+        width: 144
+        height: 388
+      spriteId: b1c2fe5ee62d29c4abfdf12fae184fee
+    - name: Ahlai_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 136
+        height: 388
+      spriteId: 550fe91ee3abd394d984f8b22df28fc6
+    - name: Ahlai_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 872
+        y: 308
+        width: 136
+        height: 380
+      spriteId: b697df3fd55aabd40999571fd51016ca
+    - name: Ahlai_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 136
+        height: 388
+      spriteId: 6fbcd13fcb7b94846825efa08cf7c155
+    - name: Ahlai_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 864
+        y: 308
+        width: 144
+        height: 388
+      spriteId: c702b9ffe81cbe741a7195e73cc8bea0
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -2450,4 +2687,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 1396, y: 628}
+  canvasSize: {x: 1920, y: 1080}

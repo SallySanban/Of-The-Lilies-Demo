@@ -206,7 +206,20 @@ public class SceneManager : MonoBehaviour
 
         if (playerInScene)
         {
-            GameObject playerPrefab = FilePaths.GetPrefabFromPath(FilePaths.spritesPrefabPath, MC_NAME);
+            GameObject playerPrefab = null;
+
+            switch (UIManager.Instance.inputPanel.subjectPronoun)
+            {
+                case "she":
+                    playerPrefab = FilePaths.GetPrefabFromPath(FilePaths.spritesPrefabPath, "Fem" + MC_NAME);
+                    break;
+                case "he":
+                    playerPrefab = FilePaths.GetPrefabFromPath(FilePaths.spritesPrefabPath, MC_NAME);
+                    break;
+                case "they":
+                    playerPrefab = FilePaths.GetPrefabFromPath(FilePaths.spritesPrefabPath, MC_NAME);
+                    break;
+            }
 
             player = new Player(playerPrefab, currentScene.transform.Find(SPRITES_OBJECTNAME), playerPosition, playerDirection, playerAnimationState);
 

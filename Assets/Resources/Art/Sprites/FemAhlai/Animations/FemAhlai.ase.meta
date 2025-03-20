@@ -1,0 +1,2690 @@
+fileFormatVersion: 2
+guid: 31b3c60ad983514409e0309421e16f22
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: ChainedWalk
+    second: {fileID: 7400000, guid: 01e905e402f73a646bfda5d4cbc6885d, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: IdleLeft
+    second: {fileID: 7400000, guid: e2a5e8f9b7805b340bcbbfb60b5fc53d, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: IdleRight
+    second: {fileID: 7400000, guid: f07c22ce7848e234dadb39f7284f8f2c, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: RunLeft
+    second: {fileID: 7400000, guid: 501e5d09329a482469b47896a7a3ceb0, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: RunRight
+    second: {fileID: 7400000, guid: 8ad15a3e8f0b38842977fe0f62700111, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Sit
+    second: {fileID: 7400000, guid: 6c4c4c14354727f4292d4fcf5d8d7f62, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: TayabacIdleLeft
+    second: {fileID: 7400000, guid: f03efdc6f70dd8341a2e018181f98c77, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: TayabacIdleRight
+    second: {fileID: 7400000, guid: 471e896ab574be043aa5aa66fccbada6, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: TayabacRunLeft
+    second: {fileID: 7400000, guid: dddcf261ceeda854197604ec815e1fa6, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: TayabacRunRight
+    second: {fileID: 7400000, guid: eec97847c9ef65142bea758717032422, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: TayabacSit
+    second: {fileID: 7400000, guid: 7279cfaa1a7870b4f910b59b7a067c8d, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 1
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638780872800294066
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: FemAhlai_Frame_76
+    originalName: 
+    pivot: {x: 0.6578949, y: -1.734375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 1800
+      width: 152
+      height: 256
+    spriteID: 2a47b9ce18ea69044bbe7a695a57c863
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 1800}
+  - name: FemAhlai_Frame_77
+    originalName: 
+    pivot: {x: 0.6578949, y: -1.7903227}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 3844
+      width: 152
+      height: 248
+    spriteID: d6c53c341b9e374489d7b05b37e3f107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 3844}
+  - name: FemAhlai_Frame_78
+    originalName: 
+    pivot: {x: 0.6666668, y: -1.85}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 3096
+      width: 156
+      height: 240
+    spriteID: 729246cb7a88e5d4fb305705e12f73f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 3096}
+  - name: FemAhlai_Frame_79
+    originalName: 
+    pivot: {x: 0.6578949, y: -1.7903227}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 2328
+      width: 152
+      height: 248
+    spriteID: f6b63dfb3bebc904a888c057eaf05b30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 2328}
+  - name: FemAhlai_Frame_80
+    originalName: 
+    pivot: {x: 0.6578949, y: -1.734375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 2064
+      width: 152
+      height: 256
+    spriteID: 6d7d89a01f6a9ef459c48057fcb6730f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 2064}
+  - name: FemAhlai_Frame_81
+    originalName: 
+    pivot: {x: 0.6578949, y: -1.7903227}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 2584
+      width: 152
+      height: 248
+    spriteID: 8da5708e5bb41874b960eb284333a18c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 2584}
+  - name: FemAhlai_Frame_82
+    originalName: 
+    pivot: {x: 0.6666668, y: -1.85}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 3344
+      width: 156
+      height: 240
+    spriteID: 1d5a97078bac7184b83a76fbe887c38c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 3344}
+  - name: FemAhlai_Frame_83
+    originalName: 
+    pivot: {x: 0.6578949, y: -1.7903227}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 2840
+      width: 152
+      height: 248
+    spriteID: 1e185eb0ef042a24389e8e28e058a479
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 2840}
+  - name: FemAhlai_Frame_68
+    originalName: 
+    pivot: {x: 0.49707606, y: -0.6759259}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 684
+      height: 432
+    spriteID: ca1b005c52ae132438fb338f97f56d13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: FemAhlai_Frame_69
+    originalName: 
+    pivot: {x: 0.5178572, y: -0.6759259}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 884
+      width: 672
+      height: 432
+    spriteID: 409397923faae1a45aeba5b8ff63e90d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 884}
+  - name: FemAhlai_Frame_70
+    originalName: 
+    pivot: {x: 0.5031055, y: -0.6636364}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2652
+      width: 644
+      height: 440
+    spriteID: 583115b392944a04abdbe8171c4b6a79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2652}
+  - name: FemAhlai_Frame_71
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.6697247}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1764
+      width: 656
+      height: 436
+    spriteID: 6e2727362edb8404d86faf51fcd89c9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1764}
+  - name: FemAhlai_Frame_72
+    originalName: 
+    pivot: {x: 0.49707606, y: -0.6759259}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 444
+      width: 684
+      height: 432
+    spriteID: 3a8589e16b9a8a24f9a1622c454dde3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 444}
+  - name: FemAhlai_Frame_73
+    originalName: 
+    pivot: {x: 0.5178572, y: -0.6759259}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1324
+      width: 672
+      height: 432
+    spriteID: 5804388038d64cf448e4412abf84aa94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1324}
+  - name: FemAhlai_Frame_75
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.6697247}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2208
+      width: 656
+      height: 436
+    spriteID: 4788a926d11f839429444128ff9bc922
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2208}
+  - name: FemAhlai_Frame_74
+    originalName: 
+    pivot: {x: 0.5031055, y: -0.6636364}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3100
+      width: 644
+      height: 440
+    spriteID: 101d609cd69ad174ea3abb4634765a78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3100}
+  - name: FemAhlai_Frame_60
+    originalName: 
+    pivot: {x: 1.2, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 3568
+      width: 140
+      height: 376
+    spriteID: 58e1e7c42e92a4443951bf3da3a16226
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 3568}
+  - name: FemAhlai_Frame_61
+    originalName: 
+    pivot: {x: 0.87500006, y: -0.82222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 4
+      width: 192
+      height: 360
+    spriteID: 55a7eb72583b9854c8d5d26c10ce44f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 4}
+  - name: FemAhlai_Frame_62
+    originalName: 
+    pivot: {x: 0.7868852, y: -0.79569894}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 2372
+      width: 244
+      height: 372
+    spriteID: 6a81ac0148b9e6b45a5ea6922ec5d68f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 2372}
+  - name: FemAhlai_Frame_63
+    originalName: 
+    pivot: {x: 0.8545455, y: -0.7708334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 4
+      width: 220
+      height: 384
+    spriteID: 220b95eead17e0c4fa2a903296bec3b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 4}
+  - name: FemAhlai_Frame_64
+    originalName: 
+    pivot: {x: 1.2, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 4
+      width: 140
+      height: 376
+    spriteID: 05732a8a1fd77dd4bbc68df7e3193f99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 4}
+  - name: FemAhlai_Frame_65
+    originalName: 
+    pivot: {x: 0.88235295, y: -0.82222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 3108
+      width: 204
+      height: 360
+    spriteID: 0e41cb0a42c51cb459f1c00d764069b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 3108}
+  - name: FemAhlai_Frame_66
+    originalName: 
+    pivot: {x: 0.7868852, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 1604
+      width: 244
+      height: 376
+    spriteID: bcd8b651ee3afbe4c806b22e0b898573
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 1604}
+  - name: FemAhlai_Frame_67
+    originalName: 
+    pivot: {x: 0.8545455, y: -0.7708334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 396
+      width: 220
+      height: 384
+    spriteID: d1208df734ef239468fcf7feb6403e7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 396}
+  - name: FemAhlai_Frame_44
+    originalName: 
+    pivot: {x: 0.37142864, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 388
+      width: 140
+      height: 376
+    spriteID: e5fe1c54d2799b64884e0ba678e239dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 388}
+  - name: FemAhlai_Frame_45
+    originalName: 
+    pivot: {x: 0.54166675, y: -0.82222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 372
+      width: 192
+      height: 360
+    spriteID: 5cf54865d3d6e6f488f9400a7a460914
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 372}
+  - name: FemAhlai_Frame_46
+    originalName: 
+    pivot: {x: 0.54098356, y: -0.79569894}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 2752
+      width: 244
+      height: 372
+    spriteID: 4cdb39d8f1f892642a4f06c24915595f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 2752}
+  - name: FemAhlai_Frame_47
+    originalName: 
+    pivot: {x: 0.50909096, y: -0.7708334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 788
+      width: 220
+      height: 384
+    spriteID: 9243d85888a818646a730b1f34c350b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 788}
+  - name: FemAhlai_Frame_48
+    originalName: 
+    pivot: {x: 0.37142864, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 772
+      width: 140
+      height: 376
+    spriteID: 0e707659cbb8ca74bbedb7ab0e278516
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 772}
+  - name: FemAhlai_Frame_49
+    originalName: 
+    pivot: {x: 0.509804, y: -0.82222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 3476
+      width: 204
+      height: 360
+    spriteID: 8911d7066c686b6488a88f511dca8f69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 3476}
+  - name: FemAhlai_Frame_50
+    originalName: 
+    pivot: {x: 0.54098356, y: -0.78723407}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 1988
+      width: 244
+      height: 376
+    spriteID: a17fd77b2100e764d9e14d99050bfd5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 1988}
+  - name: FemAhlai_Frame_51
+    originalName: 
+    pivot: {x: 0.50909096, y: -0.7708334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 1180
+      width: 220
+      height: 384
+    spriteID: aae427e8467e8d24793ecf7a81a7ff65
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 1180}
+  - name: FemAhlai_Frame_52
+    originalName: 
+    pivot: {x: 0.5294117, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 1984
+      width: 136
+      height: 388
+    spriteID: 6c18d5e118062634baf9144a9778142d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 1984}
+  - name: FemAhlai_Frame_53
+    originalName: 
+    pivot: {x: 0.5588234, y: -0.8105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 2724
+      width: 136
+      height: 380
+    spriteID: e498ae64161a19142b63d95e74997728
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 2724}
+  - name: FemAhlai_Frame_54
+    originalName: 
+    pivot: {x: 0.5294117, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 2380
+      width: 136
+      height: 388
+    spriteID: e7b46a9a999716944bb16c2f256547ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 2380}
+  - name: FemAhlai_Frame_55
+    originalName: 
+    pivot: {x: 0.5277777, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 2832
+      width: 144
+      height: 388
+    spriteID: 058219892e85ba6429bf83e5dddaab5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 2832}
+  - name: FemAhlai_Frame_56
+    originalName: 
+    pivot: {x: 0.5294117, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 2776
+      width: 136
+      height: 388
+    spriteID: 3a0d38992d208b3428d4044c64e1188d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 2776}
+  - name: FemAhlai_Frame_57
+    originalName: 
+    pivot: {x: 0.5588234, y: -0.8105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 3112
+      width: 136
+      height: 380
+    spriteID: 443980f2a2263a14bb701adac5c0abe6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 3112}
+  - name: FemAhlai_Frame_58
+    originalName: 
+    pivot: {x: 0.5294117, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 3172
+      width: 136
+      height: 388
+    spriteID: 2c5c1546b863a504b89789bb62eac174
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 3172}
+  - name: FemAhlai_Frame_59
+    originalName: 
+    pivot: {x: 0.5277777, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 3228
+      width: 144
+      height: 388
+    spriteID: 015bcec03bf5dd845ac560bf5388c973
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 3228}
+  - name: FemAhlai_Frame_36
+    originalName: 
+    pivot: {x: 0.6764708, y: -0.8020833}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 1156
+      width: 136
+      height: 384
+    spriteID: 33d50317a3553cc43a8b9632c27751fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 1156}
+  - name: FemAhlai_Frame_37
+    originalName: 
+    pivot: {x: 0.6470586, y: -0.8105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 3500
+      width: 136
+      height: 380
+    spriteID: c15c9eab8c0252a4c8476d8c8a43ce0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 3500}
+  - name: FemAhlai_Frame_38
+    originalName: 
+    pivot: {x: 0.6764708, y: -0.8020833}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 1548
+      width: 136
+      height: 384
+    spriteID: 12d6b33db0f8dbe4a8eb90557d41e56e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 1548}
+  - name: FemAhlai_Frame_39
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 3624
+      width: 144
+      height: 388
+    spriteID: d0ac69a48d74b8f4aae9ac7af1fb26c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 3624}
+  - name: FemAhlai_Frame_40
+    originalName: 
+    pivot: {x: 0.6764708, y: -0.8020833}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 1940
+      width: 136
+      height: 384
+    spriteID: ba29f28ad8ffa2e4fa2116ea8e4c676f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 1940}
+  - name: FemAhlai_Frame_41
+    originalName: 
+    pivot: {x: 0.6470586, y: -0.8105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 4
+      width: 136
+      height: 380
+    spriteID: 249695d8318a3b34cb30b01b3ab2b21b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 4}
+  - name: FemAhlai_Frame_42
+    originalName: 
+    pivot: {x: 0.6764708, y: -0.8020833}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1688
+      y: 2332
+      width: 136
+      height: 384
+    spriteID: 77d61dc2c9f4dba4b98c82700033b034
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1688, y: 2332}
+  - name: FemAhlai_Frame_43
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 4
+      width: 144
+      height: 388
+    spriteID: 2ca54cdd8db963f40b3955d41cc5e016
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 4}
+  - name: FemAhlai_Frame_32
+    originalName: 
+    pivot: {x: 0.5757575, y: -1.0465117}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 752
+      width: 132
+      height: 344
+    spriteID: 7c60e6d826891c94cb3b287969838a5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 752}
+  - name: FemAhlai_Frame_33
+    originalName: 
+    pivot: {x: 0.5757575, y: -1.0714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 1456
+      width: 132
+      height: 336
+    spriteID: 35ccdbe7cc9b2584c9e46b51b4d0b756
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 1456}
+  - name: FemAhlai_Frame_34
+    originalName: 
+    pivot: {x: 0.5757575, y: -1.0465117}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 1104
+      width: 132
+      height: 344
+    spriteID: 7dbca81870e101248974b593af192683
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 1104}
+  - name: FemAhlai_Frame_35
+    originalName: 
+    pivot: {x: 0.5757575, y: -1.0227273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1836
+      y: 392
+      width: 132
+      height: 352
+    spriteID: 4a09a037f94bce24f91d94f5a4b69893
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1836, y: 392}
+  - name: FemAhlai_Frame_24
+    originalName: 
+    pivot: {x: 0.8108108, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 2776
+      width: 148
+      height: 392
+    spriteID: d198447f88a204744b2d8cdbaef3860a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 2776}
+  - name: FemAhlai_Frame_25
+    originalName: 
+    pivot: {x: 0.6346153, y: -0.7765957}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 1572
+      width: 208
+      height: 376
+    spriteID: 7343c0a6e1c67244b9fef3a0612970d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 1572}
+  - name: FemAhlai_Frame_26
+    originalName: 
+    pivot: {x: 0.5714285, y: -0.7525773}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 4
+      width: 252
+      height: 388
+    spriteID: 459a227322f48e043a218ab684cc9267
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 4}
+  - name: FemAhlai_Frame_27
+    originalName: 
+    pivot: {x: 0.59649116, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 3132
+      width: 228
+      height: 392
+    spriteID: 67f739465edd011489c5c03a41cc0411
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 3132}
+  - name: FemAhlai_Frame_28
+    originalName: 
+    pivot: {x: 0.75, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 1976
+      width: 160
+      height: 392
+    spriteID: 8c1b61c179030fc4fa1125ea95be23ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 1976}
+  - name: FemAhlai_Frame_29
+    originalName: 
+    pivot: {x: 0.6122449, y: -0.7765957}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 2340
+      width: 196
+      height: 376
+    spriteID: b8dc683d24aad9f468eea0bc43babc5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 2340}
+  - name: FemAhlai_Frame_30
+    originalName: 
+    pivot: {x: 0.5873015, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3548
+      width: 252
+      height: 392
+    spriteID: 6fb4e1b235118bf4fa60ca0cc3c36f86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3548}
+  - name: FemAhlai_Frame_31
+    originalName: 
+    pivot: {x: 0.6271185, y: -0.7373737}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 796
+      width: 236
+      height: 396
+    spriteID: f1a242cf1bfdacb4e871cb827cc9fae5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 796}
+  - name: FemAhlai_Frame_8
+    originalName: 
+    pivot: {x: 0.4054054, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 3176
+      width: 148
+      height: 392
+    spriteID: 15503766ed5f1dc49800fc443e160c83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 3176}
+  - name: FemAhlai_Frame_9
+    originalName: 
+    pivot: {x: 0.51923084, y: -0.7765957}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 1956
+      width: 208
+      height: 376
+    spriteID: ac87b3cf582a77044a187bbf4e22f130
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 1956}
+  - name: FemAhlai_Frame_10
+    originalName: 
+    pivot: {x: 0.55555546, y: -0.7525773}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 400
+      width: 252
+      height: 388
+    spriteID: 7bbe2cad5e2f8b041a57e779ed9c87c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 400}
+  - name: FemAhlai_Frame_11
+    originalName: 
+    pivot: {x: 0.54385966, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 3532
+      width: 228
+      height: 392
+    spriteID: b0e68c184e17ad348bff1e2db6a7fa70
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 3532}
+  - name: FemAhlai_Frame_12
+    originalName: 
+    pivot: {x: 0.44999993, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 2376
+      width: 160
+      height: 392
+    spriteID: b100bb2ac80678942bbb9a17457e7a7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 2376}
+  - name: FemAhlai_Frame_13
+    originalName: 
+    pivot: {x: 0.55102044, y: -0.7765957}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 956
+      y: 2724
+      width: 196
+      height: 376
+    spriteID: 948f247a59ff207488b7266a2cdff365
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 956, y: 2724}
+  - name: FemAhlai_Frame_14
+    originalName: 
+    pivot: {x: 0.5396825, y: -0.74489796}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 264
+      y: 3548
+      width: 252
+      height: 392
+    spriteID: 4b63e662d01b6ca409687b34cef34e3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 264, y: 3548}
+  - name: FemAhlai_Frame_15
+    originalName: 
+    pivot: {x: 0.5084746, y: -0.7373737}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 1200
+      width: 236
+      height: 396
+    spriteID: 3821be2fe7f49784e9c75972cf28cb55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 1200}
+  - name: FemAhlai_Frame_16
+    originalName: 
+    pivot: {x: 0.5555554, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 3576
+      width: 144
+      height: 396
+    spriteID: 969fa9597a04d3f4b98a389eac02cb4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 3576}
+  - name: FemAhlai_Frame_17
+    originalName: 
+    pivot: {x: 0.58333313, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 400
+      width: 144
+      height: 388
+    spriteID: e288ac4450e24b845ac780407aee6097
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 400}
+  - name: FemAhlai_Frame_18
+    originalName: 
+    pivot: {x: 0.5555554, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 4
+      width: 144
+      height: 396
+    spriteID: 2347b582b697798448828796a427e183
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 4}
+  - name: FemAhlai_Frame_19
+    originalName: 
+    pivot: {x: 0.5641024, y: -0.76237625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 3548
+      width: 156
+      height: 404
+    spriteID: 3b9c717e8528b194eab7427dbe93207d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 3548}
+  - name: FemAhlai_Frame_20
+    originalName: 
+    pivot: {x: 0.5555554, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 408
+      width: 144
+      height: 396
+    spriteID: 115299e2d2aa2804ab952fb83b355031
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 408}
+  - name: FemAhlai_Frame_21
+    originalName: 
+    pivot: {x: 0.58333313, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 796
+      width: 144
+      height: 388
+    spriteID: e1f91d6f4cc358f4bbd3088f9acaf8d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 796}
+  - name: FemAhlai_Frame_22
+    originalName: 
+    pivot: {x: 0.5555554, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 812
+      width: 144
+      height: 396
+    spriteID: 75641b53a5b6dfa43a472657fb95b2eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 812}
+  - name: FemAhlai_Frame_23
+    originalName: 
+    pivot: {x: 0.5641024, y: -0.76237625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 740
+      width: 156
+      height: 404
+    spriteID: d4f65e627fc5bba46aa2d4ddf04f00c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 740}
+  - name: FemAhlai_Frame_0
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 1216
+      width: 144
+      height: 396
+    spriteID: f822641f429caa14fa056eae9db52c21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 1216}
+  - name: FemAhlai_Frame_1
+    originalName: 
+    pivot: {x: 0.6388891, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 1192
+      width: 144
+      height: 388
+    spriteID: 44c701983d38e184bad4700f0a58cff0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 1192}
+  - name: FemAhlai_Frame_2
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 1620
+      width: 144
+      height: 396
+    spriteID: a3da44ebb61337b489dfb82aedd5ad05
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 1620}
+  - name: FemAhlai_Frame_3
+    originalName: 
+    pivot: {x: 0.6410258, y: -0.76237625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 1152
+      width: 156
+      height: 404
+    spriteID: 37ef12f63d9019f4cb88c93540f8ea0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 1152}
+  - name: FemAhlai_Frame_4
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 2024
+      width: 144
+      height: 396
+    spriteID: 84c77c9f718fa3b47aaad802a2ba48a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 2024}
+  - name: FemAhlai_Frame_5
+    originalName: 
+    pivot: {x: 0.6388891, y: -0.7938145}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1536
+      y: 1588
+      width: 144
+      height: 388
+    spriteID: 71112c67e1b7f1646afbf33154fa7347
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1536, y: 1588}
+  - name: FemAhlai_Frame_6
+    originalName: 
+    pivot: {x: 0.6666668, y: -0.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1384
+      y: 2428
+      width: 144
+      height: 396
+    spriteID: 2eb78f2a709091e40b497084b9368d89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1384, y: 2428}
+  - name: FemAhlai_Frame_7
+    originalName: 
+    pivot: {x: 0.6410258, y: -0.76237625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1184
+      y: 1564
+      width: 156
+      height: 404
+    spriteID: 1c8a58d19a491cc42ba1b42e97e1ce56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1184, y: 1564}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 2063182335
+    name: FemAhlai
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: FemAhlai_Frame_76
+      frameIndex: 76
+      additiveSortOrder: 0
+      cellRect:
+        x: 860
+        y: 444
+        width: 152
+        height: 256
+      spriteId: 2a47b9ce18ea69044bbe7a695a57c863
+    - name: FemAhlai_Frame_77
+      frameIndex: 77
+      additiveSortOrder: 0
+      cellRect:
+        x: 860
+        y: 444
+        width: 152
+        height: 248
+      spriteId: d6c53c341b9e374489d7b05b37e3f107
+    - name: FemAhlai_Frame_78
+      frameIndex: 78
+      additiveSortOrder: 0
+      cellRect:
+        x: 856
+        y: 444
+        width: 156
+        height: 240
+      spriteId: 729246cb7a88e5d4fb305705e12f73f2
+    - name: FemAhlai_Frame_79
+      frameIndex: 79
+      additiveSortOrder: 0
+      cellRect:
+        x: 860
+        y: 444
+        width: 152
+        height: 248
+      spriteId: f6b63dfb3bebc904a888c057eaf05b30
+    - name: FemAhlai_Frame_80
+      frameIndex: 80
+      additiveSortOrder: 0
+      cellRect:
+        x: 860
+        y: 444
+        width: 152
+        height: 256
+      spriteId: 6d7d89a01f6a9ef459c48057fcb6730f
+    - name: FemAhlai_Frame_81
+      frameIndex: 81
+      additiveSortOrder: 0
+      cellRect:
+        x: 860
+        y: 444
+        width: 152
+        height: 248
+      spriteId: 8da5708e5bb41874b960eb284333a18c
+    - name: FemAhlai_Frame_82
+      frameIndex: 82
+      additiveSortOrder: 0
+      cellRect:
+        x: 856
+        y: 444
+        width: 156
+        height: 240
+      spriteId: 1d5a97078bac7184b83a76fbe887c38c
+    - name: FemAhlai_Frame_83
+      frameIndex: 83
+      additiveSortOrder: 0
+      cellRect:
+        x: 860
+        y: 444
+        width: 152
+        height: 248
+      spriteId: 1e185eb0ef042a24389e8e28e058a479
+    - name: FemAhlai_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 620
+        y: 292
+        width: 684
+        height: 432
+      spriteId: ca1b005c52ae132438fb338f97f56d13
+    - name: FemAhlai_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 612
+        y: 292
+        width: 672
+        height: 432
+      spriteId: 409397923faae1a45aeba5b8ff63e90d
+    - name: FemAhlai_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 636
+        y: 292
+        width: 644
+        height: 440
+      spriteId: 583115b392944a04abdbe8171c4b6a79
+    - name: FemAhlai_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 632
+        y: 292
+        width: 656
+        height: 436
+      spriteId: 6e2727362edb8404d86faf51fcd89c9e
+    - name: FemAhlai_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 620
+        y: 292
+        width: 684
+        height: 432
+      spriteId: 3a8589e16b9a8a24f9a1622c454dde3d
+    - name: FemAhlai_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 612
+        y: 292
+        width: 672
+        height: 432
+      spriteId: 5804388038d64cf448e4412abf84aa94
+    - name: FemAhlai_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 632
+        y: 292
+        width: 656
+        height: 436
+      spriteId: 4788a926d11f839429444128ff9bc922
+    - name: FemAhlai_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 636
+        y: 292
+        width: 644
+        height: 440
+      spriteId: 101d609cd69ad174ea3abb4634765a78
+    - name: FemAhlai_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 296
+        width: 140
+        height: 376
+      spriteId: 58e1e7c42e92a4443951bf3da3a16226
+    - name: FemAhlai_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 296
+        width: 192
+        height: 360
+      spriteId: 55a7eb72583b9854c8d5d26c10ce44f9
+    - name: FemAhlai_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 296
+        width: 244
+        height: 372
+      spriteId: 6a81ac0148b9e6b45a5ea6922ec5d68f
+    - name: FemAhlai_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 296
+        width: 220
+        height: 384
+      spriteId: 220b95eead17e0c4fa2a903296bec3b0
+    - name: FemAhlai_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 792
+        y: 296
+        width: 140
+        height: 376
+      spriteId: 05732a8a1fd77dd4bbc68df7e3193f99
+    - name: FemAhlai_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 780
+        y: 296
+        width: 204
+        height: 360
+      spriteId: 0e41cb0a42c51cb459f1c00d764069b5
+    - name: FemAhlai_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 768
+        y: 296
+        width: 244
+        height: 376
+      spriteId: bcd8b651ee3afbe4c806b22e0b898573
+    - name: FemAhlai_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 772
+        y: 296
+        width: 220
+        height: 384
+      spriteId: d1208df734ef239468fcf7feb6403e7f
+    - name: FemAhlai_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 908
+        y: 296
+        width: 140
+        height: 376
+      spriteId: e5fe1c54d2799b64884e0ba678e239dc
+    - name: FemAhlai_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 856
+        y: 296
+        width: 192
+        height: 360
+      spriteId: 5cf54865d3d6e6f488f9400a7a460914
+    - name: FemAhlai_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 828
+        y: 296
+        width: 244
+        height: 372
+      spriteId: 4cdb39d8f1f892642a4f06c24915595f
+    - name: FemAhlai_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 848
+        y: 296
+        width: 220
+        height: 384
+      spriteId: 9243d85888a818646a730b1f34c350b3
+    - name: FemAhlai_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 908
+        y: 296
+        width: 140
+        height: 376
+      spriteId: 0e707659cbb8ca74bbedb7ab0e278516
+    - name: FemAhlai_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 856
+        y: 296
+        width: 204
+        height: 360
+      spriteId: 8911d7066c686b6488a88f511dca8f69
+    - name: FemAhlai_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 828
+        y: 296
+        width: 244
+        height: 376
+      spriteId: a17fd77b2100e764d9e14d99050bfd5e
+    - name: FemAhlai_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 848
+        y: 296
+        width: 220
+        height: 384
+      spriteId: aae427e8467e8d24793ecf7a81a7ff65
+    - name: FemAhlai_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 888
+        y: 308
+        width: 136
+        height: 388
+      spriteId: 6c18d5e118062634baf9144a9778142d
+    - name: FemAhlai_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 308
+        width: 136
+        height: 380
+      spriteId: e498ae64161a19142b63d95e74997728
+    - name: FemAhlai_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 888
+        y: 308
+        width: 136
+        height: 388
+      spriteId: e7b46a9a999716944bb16c2f256547ab
+    - name: FemAhlai_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 308
+        width: 144
+        height: 388
+      spriteId: 058219892e85ba6429bf83e5dddaab5c
+    - name: FemAhlai_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 888
+        y: 308
+        width: 136
+        height: 388
+      spriteId: 3a0d38992d208b3428d4044c64e1188d
+    - name: FemAhlai_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 308
+        width: 136
+        height: 380
+      spriteId: 443980f2a2263a14bb701adac5c0abe6
+    - name: FemAhlai_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 888
+        y: 308
+        width: 136
+        height: 388
+      spriteId: 2c5c1546b863a504b89789bb62eac174
+    - name: FemAhlai_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 308
+        width: 144
+        height: 388
+      spriteId: 015bcec03bf5dd845ac560bf5388c973
+    - name: FemAhlai_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 136
+        height: 384
+      spriteId: 33d50317a3553cc43a8b9632c27751fa
+    - name: FemAhlai_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 872
+        y: 308
+        width: 136
+        height: 380
+      spriteId: c15c9eab8c0252a4c8476d8c8a43ce0e
+    - name: FemAhlai_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 136
+        height: 384
+      spriteId: 12d6b33db0f8dbe4a8eb90557d41e56e
+    - name: FemAhlai_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 864
+        y: 308
+        width: 144
+        height: 388
+      spriteId: d0ac69a48d74b8f4aae9ac7af1fb26c7
+    - name: FemAhlai_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 136
+        height: 384
+      spriteId: ba29f28ad8ffa2e4fa2116ea8e4c676f
+    - name: FemAhlai_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 872
+        y: 308
+        width: 136
+        height: 380
+      spriteId: 249695d8318a3b34cb30b01b3ab2b21b
+    - name: FemAhlai_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 136
+        height: 384
+      spriteId: 77d61dc2c9f4dba4b98c82700033b034
+    - name: FemAhlai_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 864
+        y: 308
+        width: 144
+        height: 388
+      spriteId: 2ca54cdd8db963f40b3955d41cc5e016
+    - name: FemAhlai_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 360
+        width: 132
+        height: 344
+      spriteId: 7c60e6d826891c94cb3b287969838a5a
+    - name: FemAhlai_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 360
+        width: 132
+        height: 336
+      spriteId: 35ccdbe7cc9b2584c9e46b51b4d0b756
+    - name: FemAhlai_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 360
+        width: 132
+        height: 344
+      spriteId: 7dbca81870e101248974b593af192683
+    - name: FemAhlai_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 884
+        y: 360
+        width: 132
+        height: 352
+      spriteId: 4a09a037f94bce24f91d94f5a4b69893
+    - name: FemAhlai_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 840
+        y: 292
+        width: 148
+        height: 392
+      spriteId: d198447f88a204744b2d8cdbaef3860a
+    - name: FemAhlai_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 828
+        y: 292
+        width: 208
+        height: 376
+      spriteId: 7343c0a6e1c67244b9fef3a0612970d0
+    - name: FemAhlai_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 816
+        y: 292
+        width: 252
+        height: 388
+      spriteId: 459a227322f48e043a218ab684cc9267
+    - name: FemAhlai_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 824
+        y: 292
+        width: 228
+        height: 392
+      spriteId: 67f739465edd011489c5c03a41cc0411
+    - name: FemAhlai_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 840
+        y: 292
+        width: 160
+        height: 392
+      spriteId: 8c1b61c179030fc4fa1125ea95be23ee
+    - name: FemAhlai_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 840
+        y: 292
+        width: 196
+        height: 376
+      spriteId: b8dc683d24aad9f468eea0bc43babc5d
+    - name: FemAhlai_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 812
+        y: 292
+        width: 252
+        height: 392
+      spriteId: 6fb4e1b235118bf4fa60ca0cc3c36f86
+    - name: FemAhlai_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 812
+        y: 292
+        width: 236
+        height: 396
+      spriteId: f1a242cf1bfdacb4e871cb827cc9fae5
+    - name: FemAhlai_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 900
+        y: 292
+        width: 148
+        height: 392
+      spriteId: 15503766ed5f1dc49800fc443e160c83
+    - name: FemAhlai_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 852
+        y: 292
+        width: 208
+        height: 376
+      spriteId: ac87b3cf582a77044a187bbf4e22f130
+    - name: FemAhlai_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 820
+        y: 292
+        width: 252
+        height: 388
+      spriteId: 7bbe2cad5e2f8b041a57e779ed9c87c4
+    - name: FemAhlai_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 836
+        y: 292
+        width: 228
+        height: 392
+      spriteId: b0e68c184e17ad348bff1e2db6a7fa70
+    - name: FemAhlai_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 888
+        y: 292
+        width: 160
+        height: 392
+      spriteId: b100bb2ac80678942bbb9a17457e7a7a
+    - name: FemAhlai_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 852
+        y: 292
+        width: 196
+        height: 376
+      spriteId: 948f247a59ff207488b7266a2cdff365
+    - name: FemAhlai_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 824
+        y: 292
+        width: 252
+        height: 392
+      spriteId: 4b63e662d01b6ca409687b34cef34e3d
+    - name: FemAhlai_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 840
+        y: 292
+        width: 236
+        height: 396
+      spriteId: 3821be2fe7f49784e9c75972cf28cb55
+    - name: FemAhlai_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 880
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 969fa9597a04d3f4b98a389eac02cb4f
+    - name: FemAhlai_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 876
+        y: 308
+        width: 144
+        height: 388
+      spriteId: e288ac4450e24b845ac780407aee6097
+    - name: FemAhlai_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 880
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 2347b582b697798448828796a427e183
+    - name: FemAhlai_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 872
+        y: 308
+        width: 156
+        height: 404
+      spriteId: 3b9c717e8528b194eab7427dbe93207d
+    - name: FemAhlai_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 880
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 115299e2d2aa2804ab952fb83b355031
+    - name: FemAhlai_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 876
+        y: 308
+        width: 144
+        height: 388
+      spriteId: e1f91d6f4cc358f4bbd3088f9acaf8d4
+    - name: FemAhlai_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 880
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 75641b53a5b6dfa43a472657fb95b2eb
+    - name: FemAhlai_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 872
+        y: 308
+        width: 156
+        height: 404
+      spriteId: d4f65e627fc5bba46aa2d4ddf04f00c0
+    - name: FemAhlai_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 864
+        y: 308
+        width: 144
+        height: 396
+      spriteId: f822641f429caa14fa056eae9db52c21
+    - name: FemAhlai_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 144
+        height: 388
+      spriteId: 44c701983d38e184bad4700f0a58cff0
+    - name: FemAhlai_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 864
+        y: 308
+        width: 144
+        height: 396
+      spriteId: a3da44ebb61337b489dfb82aedd5ad05
+    - name: FemAhlai_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 860
+        y: 308
+        width: 156
+        height: 404
+      spriteId: 37ef12f63d9019f4cb88c93540f8ea0c
+    - name: FemAhlai_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 864
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 84c77c9f718fa3b47aaad802a2ba48a2
+    - name: FemAhlai_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 868
+        y: 308
+        width: 144
+        height: 388
+      spriteId: 71112c67e1b7f1646afbf33154fa7347
+    - name: FemAhlai_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 864
+        y: 308
+        width: 144
+        height: 396
+      spriteId: 2eb78f2a709091e40b497084b9368d89
+    - name: FemAhlai_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 860
+        y: 308
+        width: 156
+        height: 404
+      spriteId: 1c8a58d19a491cc42ba1b42e97e1ce56
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1920, y: 1080}

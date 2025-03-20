@@ -26,7 +26,26 @@ namespace Characters
         public PortraitCharacter(string name, CharacterConfigData config, GameObject prefab, string rootAssetsFolder) : base(name, config, prefab)
         {
             isCharacterVisible = false;
-            portraitAssetsDirectory = FilePaths.FormatPath(FilePaths.portraitAssetsPath, rootAssetsFolder);
+
+            if (name == SceneManager.Instance.MC_NAME)
+            {
+                switch(UIManager.Instance.inputPanel.subjectPronoun)
+                {
+                    case "she":
+                        portraitAssetsDirectory = FilePaths.FormatPath(FilePaths.portraitAssetsPath, rootAssetsFolder) + "/Fem";
+                        break;
+                    case "he":
+                        portraitAssetsDirectory = FilePaths.FormatPath(FilePaths.portraitAssetsPath, rootAssetsFolder) + "/Enby";
+                        break;
+                    case "they":
+                        portraitAssetsDirectory = FilePaths.FormatPath(FilePaths.portraitAssetsPath, rootAssetsFolder) + "/Enby";
+                        break;
+                }
+            }
+            else
+            {
+                portraitAssetsDirectory = FilePaths.FormatPath(FilePaths.portraitAssetsPath, rootAssetsFolder);
+            }
 
             GetLayers();
 
