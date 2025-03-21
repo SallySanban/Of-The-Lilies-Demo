@@ -42,16 +42,18 @@ public class ChoiceContainer
 
         for (int i = 0; i < listOfChoices.Length; )
         {
+            int remainingChoices = listOfChoices.Length - i;
             int groupSize;
 
-            if(listOfChoices.Length > fullChoiceSet)
+            if(listOfChoices.Length > 3)
             {
-                groupSize = i == 0 ? 2 : 1;
+                groupSize = System.Math.Min(2, remainingChoices);
             }
             else
             {
-                groupSize = listOfChoices.Length;
+                groupSize = System.Math.Min(3, remainingChoices);
             }
+            
 
             string[] choiceSet = new string[groupSize];
             System.Array.Copy(listOfChoices, i, choiceSet, 0, groupSize);
@@ -69,13 +71,6 @@ public class ChoiceContainer
 
         string[] currentChoices = choiceSets[currentChoiceSetIndex];
 
-        Debug.Log("CHOICE SET " + currentChoiceSetIndex);
-
-        foreach (string choice in currentChoices)
-        {
-            Debug.Log(choice);
-        }
-
         for (int i = 0; i < currentChoices.Length; i++)
         {
             CreateChoiceButton(currentChoices[i], i, GetIndexFromListOfChoices(currentChoices[i]), choices, choiceTemplate);
@@ -86,7 +81,7 @@ public class ChoiceContainer
             CreateChoiceButton(nextString, currentChoices.Length, -1, choices, choiceTemplate);
         }
         
-        if (currentChoiceSetIndex > 0)
+        if (currentChoiceSetIndex == choiceSets.Count - 1)
         {
             CreateChoiceButton(backString, currentChoices.Length, -1, choices, choiceTemplate);
         }
@@ -184,7 +179,7 @@ public class ChoiceContainer
         }
         else if (selectedChoice == backString)
         {
-            currentChoiceSetIndex--;
+            currentChoiceSetIndex = 0;
             DisplayCurrentChoiceSet(choicesContainer, choiceTemplate);
             return;
         }
