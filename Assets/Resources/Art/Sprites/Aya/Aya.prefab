@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2729656738121326156
+--- !u!1 &4361846131779988946
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1194018367911045576}
-  - component: {fileID: 4148996939568464602}
-  - component: {fileID: 7072289145506214943}
+  - component: {fileID: 3389158022743797145}
+  - component: {fileID: 5687777763848440296}
   m_Layer: 12
   m_Name: Aya
   m_TagString: Untagged
@@ -18,34 +17,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1194018367911045576
-RectTransform:
+--- !u!4 &3389158022743797145
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729656738121326156}
+  m_GameObject: {fileID: 4361846131779988946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3309341686894721480}
+  - {fileID: 994700036739425280}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.32752192, y: 0.123325154}
-  m_AnchorMax: {x: 0.44400004, y: 0.52729845}
-  m_AnchoredPosition: {x: 0.3798828, y: 0.53842163}
-  m_SizeDelta: {x: -1.6528363, y: -1.7205944}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &4148996939568464602
+--- !u!61 &5687777763848440296
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729656738121326156}
+  m_GameObject: {fileID: 4361846131779988946}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -71,7 +65,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -39.008102, y: 156.04176}
+  m_Offset: {x: -0.8784202, y: -1.3640589}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -82,42 +76,19 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 166.87363, y: 96.84611}
+  m_Size: {x: 1.5199267, y: 0.8939011}
   m_EdgeRadius: 0
---- !u!114 &7072289145506214943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2729656738121326156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd8174999a3b78e48ab2ae5933fd35b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableName: 
-  interactableType: 0
-  isInteractable: 0
-  storyToPlay: 
-  moveToInteractPosition: {x: 0, y: 0}
-  icon: {fileID: 0}
-  stateChangedDuringStory: 0
---- !u!1001 &4663654868919518917
+--- !u!1001 &6960427256100657933
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1194018367911045576}
+    m_TransformParent: {fileID: 3389158022743797145}
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
       propertyPath: m_Name
       value: Aya
-      objectReference: {fileID: 0}
-    - target: {fileID: -2253911629886400664, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
-      propertyPath: m_Layer
-      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1160356261127867848, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
       propertyPath: m_Controller
@@ -129,11 +100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.54
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.78
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
       propertyPath: m_LocalPosition.z
@@ -172,8 +143,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
---- !u!4 &3309341686894721480 stripped
+--- !u!4 &994700036739425280 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 63424ea60306fe348abc336dbcdf0231, type: 3}
-  m_PrefabInstance: {fileID: 4663654868919518917}
+  m_PrefabInstance: {fileID: 6960427256100657933}
   m_PrefabAsset: {fileID: 0}

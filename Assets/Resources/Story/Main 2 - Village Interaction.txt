@@ -29,15 +29,18 @@ if($GotCoconut == true)
 	[wait]ShowScene("Scene 3" "Tayabac Village Burning")
 	playAmbience(Amb_SwordRiot)
 	playMusic(BGM_Scene3)
+	[wait]ChangeRender("Color Adjustments" 0)
+	[wait]ChangeLighting(0.8)
+	[wait]SetCamera(-x -66 -y 0)
 	[wait]HideCG()
-	[wait]PanCamera(-x 66.69 -spd 20)
+	[wait]PanCamera(-x 46.82 -spd 20)
 	[wait]Blackout()
 	[wait]ResetCamera(false)
 	[wait]HideCG()
 }
 else
 {
-	[wait]MovePlayerToInteract(-x -11.70 -y -1.98)
+	[wait]MovePlayerToInteract(-x -11.45 -y 0.26)
 	
 	pixel Ahlai as <playerName> "I need to find a coconut first."
 

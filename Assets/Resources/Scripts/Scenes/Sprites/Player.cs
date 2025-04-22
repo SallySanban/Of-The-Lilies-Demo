@@ -19,6 +19,8 @@ public class Player : PixelSprite
         
         root = Object.Instantiate(prefab, Vector2.zero, Quaternion.identity);
         root.transform.SetParent(parent, false);
+        root.name = SceneManager.Instance.MC_NAME;
+
         SetPosition(root, position);
 
         animator = root.GetComponentInChildren<Animator>();

@@ -27,12 +27,13 @@ namespace Commands
             database.AddCommand("PanCamera", new Func<string[], IEnumerator>(PanCamera));
             database.AddCommand("ResetCamera", new Action<string>(ResetCamera));
             database.AddCommand("SetCamera", new Action<string[]>(SetCamera));
-            database.AddCommand("ScrollBackground", new Action<string>(ScrollBackground));
             database.AddCommand("SetNPCPosition", new Action<string[]>(SetNPCPosition));
             database.AddCommand("SetCameraFollow", new Action<string>(SetCameraFollow));
             database.AddCommand("FlipNPC", new Action<string[]>(FlipNPC));
             database.AddCommand("FollowPlayer", new Action<string>(FollowPlayer));
             database.AddCommand("FreezePlayer", new Action<string>(FreezePlayer));
+            database.AddCommand("ChangeRender", new Action<string[]>(ChangeRender));
+            database.AddCommand("ChangeLighting", new Action<string>(ChangeLighting));
         }
 
         private static void ShowScene(string[] data)
@@ -310,16 +311,6 @@ namespace Commands
             
         }
 
-        private static void ScrollBackground(string data)
-        {
-            if(bool.TryParse(data, out bool scroll))
-            {
-                SceneManager.Instance.scrollBackground = scroll;
-
-                SceneManager.Instance.StartCoroutine(SceneManager.Instance.ScrollBackground());
-            }
-        }
-
         private static void SetCameraFollow(string data)
         {
             NPC npc = NPCManager.Instance.GetNPC(data);
@@ -394,13 +385,29 @@ namespace Commands
 
                 if (freeze)
                 {
-                    player.root.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+                    player.root.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
                 }
                 else
                 {
-                    player.root.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                    player.root.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
                 }
                 
+            }
+        }
+
+        private static void ChangeRender(string[] data)
+        {
+            if (float.TryParse(data[1], out float value))
+            {
+                SceneManager.Instance.ChangeRender(data[0], value);
+            }
+        }
+
+        private static void ChangeLighting(string data)
+        {
+            if (float.TryParse(data, out float value))
+            {
+                SceneManager.Instance.ChangeLighting(value);
             }
         }
     }

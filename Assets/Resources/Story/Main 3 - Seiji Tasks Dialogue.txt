@@ -21,7 +21,7 @@ HideCharacter(Seiji)
 HideCharacter(Ahlai)
 HideTextbox(false)
 [wait]Blackout()
-[wait]SetNPCPosition(Myo -x -167.22 -y -238.32)
+[wait]SetNPCPosition(Myo -x -1.62 -y 0.39)
 [wait]HideCG()
 
 ShowCharacterLeft(Myo -b Left_Default_Body -e Left_Teasing)

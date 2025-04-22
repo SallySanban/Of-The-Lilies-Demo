@@ -1,6 +1,6 @@
 if ($GetCloser)
 {
-	[wait]PanCamera(-x -19 -spd 2)
+	[wait]PanCamera(-x -13.1 -spd 2)
 
 	Load("Main 5 - Soldier Repeating Dialogue")
 }

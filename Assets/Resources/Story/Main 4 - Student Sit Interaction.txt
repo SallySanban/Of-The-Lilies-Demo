@@ -1,4 +1,4 @@
-[wait]PanCamera(-x 0.5 -y 0 -spd 2)
+[wait]PanCamera(-x -0.29 -y 0 -spd 2)
 
 pixel StudentSit1 as Student "We're going to fail..."
 

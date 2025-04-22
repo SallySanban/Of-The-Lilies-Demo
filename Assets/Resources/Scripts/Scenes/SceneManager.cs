@@ -5,14 +5,16 @@ using Dialogue;
 using UnityEngine.UI;
 using FMODUnity;
 using System.Xml.Linq;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class SceneManager : MonoBehaviour
 {
     public static SceneManager Instance { get; private set; }
 
-    [SerializeField] private RectTransform _pixelContainer = null;
+    [SerializeField] private Transform _pixelContainer = null;
     [SerializeField] private StudioListener studioListener;
-    public RectTransform pixelContainer => _pixelContainer;
+    public Transform pixelContainer => _pixelContainer;
 
     [SerializeField] private SceneConfig _config = null;
     public SceneConfig config => _config;
@@ -29,6 +31,10 @@ public class SceneManager : MonoBehaviour
     private CinemachineConfiner panCamConfiner;
     private CinemachineBrain cinemachineBrain;
 
+    [SerializeField] private Volume globalVolume;
+    [SerializeField] private Light2D globalLight;
+
+
     [HideInInspector] public GameObject currentScene = null;
     [HideInInspector] public string currentSceneName;
     [HideInInspector] public string currentBackground;
@@ -44,7 +50,7 @@ public class SceneManager : MonoBehaviour
 
     private bool isRunningConversation => DialogueManager.Instance.conversationManager.isRunning;
 
-    public string currentBackgroundInteractableName = "";
+    [HideInInspector] public string currentBackgroundInteractableName = "";
 
     private void Awake()
     {
@@ -294,7 +300,10 @@ public class SceneManager : MonoBehaviour
         panCamera.Priority = 2;
         cinemachineBrain.m_DefaultBlend.m_Time = 0;
 
-        panCamera.transform.position = new Vector2(position.x, playerCamera.transform.position.y);
+        position.x = position.x == 0 ? playerCamera.transform.position.x : position.x;
+        position.y = position.y == 0 ? playerCamera.transform.position.y : position.y;
+
+        panCamera.transform.position = new Vector2(position.x, position.y);
     }
 
     public void ResetCamera(bool smooth)
@@ -316,20 +325,26 @@ public class SceneManager : MonoBehaviour
         panCamera.Follow = npc;
     }
 
-    public IEnumerator ScrollBackground()
+    public void ChangeRender(string render, float value)
     {
-        RawImage scrollImage = currentScene.GetComponentInChildren<RawImage>();
-
-        while (scrollBackground == true)
+        switch (render)
         {
-            scrollImage.uvRect = new Rect(scrollImage.uvRect.position + new Vector2(0.05f, scrollImage.uvRect.y) * Time.deltaTime, scrollImage.uvRect.size);
+            case "Color Adjustments":
+                ColorAdjustments colorAdjustments;
 
-            if(scrollBackground == false)
-            {
+                globalVolume.profile.TryGet<ColorAdjustments>(out colorAdjustments);
+                colorAdjustments.saturation.value = value;
+
                 break;
-            }
-
-            yield return null;
+            case "Vignette":
+                break;
         }
+
+        
+    }
+
+    public void ChangeLighting(float lighting)
+    {
+        globalLight.intensity = lighting;
     }
 }

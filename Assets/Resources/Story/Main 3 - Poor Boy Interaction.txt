@@ -1,4 +1,4 @@
-[wait]PanCamera(-x -3.87 -spd 2)
+[wait]PanCamera(-x -13.9 -spd 2)
 [wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Default)
 
 pixel Soldier1 as Seiyslan Soldier "Scram! Damn street rats! You're all lucky you even get warnings from us here!"
@@ -17,10 +17,10 @@ choice in 0
 		Ahlai as <playerName> at 0 "You should think twice before doing things like this."
 
 		ChangeAnimationState("Soldier1" Kick false)
-		SetNPCPosition("Soldier1" -x 127.55 -y -164.32)
+		SetNPCPosition("Soldier1" -x -9.13 -y 1.14)
 		FlipNPC("Soldier1" Left)
 		ChangeAnimationState("Soldier2" Kick false)
-		SetNPCPosition("Soldier2" -x -199.45 -y -164.32)
+		SetNPCPosition("Soldier2" -x -12.34 -y 1.09)
 		FlipNPC("Soldier2" Left)
 		HideTextbox(true)
 		[wait]SwitchCharacter(Ahlai Seiji -b Left_Default_Body -e Left_Worried)
@@ -45,7 +45,7 @@ choice in 0
 		RemoveFromScene("Soldier1")
 		RemoveFromScene("Soldier2")
 		ChangeAnimationState("PoorBoy" Stand true)
-		SetNPCPosition("PoorBoy" -x -57.45 -y -281.32)
+		SetNPCPosition("PoorBoy" -x -10.90 -y -0.29)
 		FlipNPC("PoorBoy" Left)
 		ChangeBodyEmotion(Ahlai -e Left_Concerned)
 		[wait]HideCG()
@@ -102,10 +102,10 @@ choice in 0
 		Ahlai as <playerName> at 0 "That's enough! Leave him alone!"
 
 		ChangeAnimationState("Soldier1" Kick false)
-		SetNPCPosition("Soldier1" -x 127.55 -y -164.32)
+		SetNPCPosition("Soldier1" -x -9.13 -y 1.14)
 		FlipNPC("Soldier1" Left)
 		ChangeAnimationState("Soldier2" Kick false)
-		SetNPCPosition("Soldier2" -x -199.45 -y -164.32)
+		SetNPCPosition("Soldier2" -x -12.34 -y 1.09)
 		FlipNPC("Soldier2" Left)
 
 		pixel Soldier1 as Seiyslan Soldier "Crap... We've been caught. Let's go."
@@ -117,7 +117,7 @@ choice in 0
 		RemoveFromScene("Soldier1")
 		RemoveFromScene("Soldier2")
 		ChangeAnimationState("PoorBoy" Stand true)
-		SetNPCPosition("PoorBoy" -x -57.45 -y -281.32)
+		SetNPCPosition("PoorBoy" -x -10.90 -y -0.29)
 		FlipNPC("PoorBoy" Left)
 		ChangeBodyEmotion(Ahlai -e Left_Concerned)
 		[wait]HideCG()

@@ -81,7 +81,7 @@ public class ChoiceContainer
             CreateChoiceButton(nextString, currentChoices.Length, -1, choices, choiceTemplate);
         }
         
-        if (currentChoiceSetIndex == choiceSets.Count - 1)
+        if (currentChoiceSetIndex == choiceSets.Count - 1 && currentChoiceSetIndex != 0)
         {
             CreateChoiceButton(backString, currentChoices.Length, -1, choices, choiceTemplate);
         }

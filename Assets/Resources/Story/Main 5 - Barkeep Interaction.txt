@@ -3,7 +3,7 @@ if (!$BarkeepTalkedTo)
 	[wait]Blackout()
 	ChangeAnimationState("Ahlai" Sit true)
 	ChangeOrder("Ahlai" 0)
-	SetNPCPosition(Ahlai -x -144.83 -y -177.32)
+	SetNPCPosition(Ahlai -x -1.36 -y 0.37)
 	FreezePlayer(true)
 	[wait]HideCG()
 

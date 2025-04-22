@@ -3,7 +3,7 @@ playSFX(SFX_AyaWalk)
 
 ChangeAnimationState("Aya" Hop true)
 
-[wait]MoveNPC(Aya -x -18.52 -y -5.43 -spd 5)
+[wait]MoveNPC(Aya -x -14.95 -y -2.32 -spd 3)
 
 pixel Ahlai as <playerName> "An Aya?"
 
@@ -16,7 +16,7 @@ ChangeAnimationState("Aya" Fly true)
 Wait(0.3)
 
 playSFX(SFX_AyaFlap)
-[wait]MoveNPC(Aya -x 3.09 -y 4.67 -spd 5)
+[wait]MoveNPC(Aya -x -0.74 -y 7.09 -spd 5)
 
 pixel Ahlai as <playerName> "It might be nothing. Let's... just move forward."
 

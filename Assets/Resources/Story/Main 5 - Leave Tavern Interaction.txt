@@ -1,6 +1,6 @@
 if (!$MyoTalkedTo || !$LienTalkedTo)
 {
-	[wait]MovePlayerToInteract(-x -19.67 -y -2.47)
+	[wait]MovePlayerToInteract(-x -19.51 -y 0)
 
 	pixel Ahlai as <playerName> "Those drinks aren't ready yet. I should talk to someone else while waiting."
 
@@ -21,7 +21,7 @@ else
 	}
 	else
 	{
-		[wait]MovePlayerToInteract(-x -19.67 -y -2.47)
+		[wait]MovePlayerToInteract(-x -19.51 -y 0)
 
 		pixel Ahlai as <playerName> "I need to get those drinks first."
 		

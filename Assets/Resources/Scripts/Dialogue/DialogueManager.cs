@@ -12,6 +12,7 @@ namespace Dialogue
         [SerializeField] private RectTransform textboxPanel;
         [SerializeField] private GameObject leftTextboxPrefab;
         [SerializeField] private GameObject rightTextboxPrefab;
+        [SerializeField] private GameObject speechBubblePrefab;
 
         public SceneManager sceneManager => SceneManager.Instance;
 
@@ -90,6 +91,15 @@ namespace Dialogue
                         {
                             yield return HideTextbox(true);
                         }
+                        else //we don't hide the textbox if the same person is talking
+                        {
+                            if (listOfChoices != null)
+                            {
+                                currentTextbox.ShowChoices(listOfChoices);
+                            }
+
+                            yield break;
+                        }
                     }
                 }
                 else
@@ -108,7 +118,7 @@ namespace Dialogue
                     currentTextbox = new Textbox(dialogueContainer, textboxPanel, textboxTypeToShow, speakerName, listOfChoices);
                     break;
                 case DialogueContainer.ContainerType.SpeechBubble:
-                    currentTextbox = new SpeechBubble(speakerSprite, speakerName, listOfChoices);
+                    currentTextbox = new SpeechBubble(speechBubblePrefab, speakerSprite, speakerName, listOfChoices);
                     break;
             }
 
@@ -119,41 +129,17 @@ namespace Dialogue
         {
             if (currentTextbox == null) yield break;
 
-            switch (currentTextbox.textboxType)
+            if (immediate)
             {
-                case DialogueContainer.ContainerType.MainTextbox:
-                case DialogueContainer.ContainerType.LeftTextbox:
-                case DialogueContainer.ContainerType.RightTextbox:
-                    if (immediate)
-                    {
-                        DestroyImmediate(currentTextbox.root);
-                    }
-                    else
-                    {
-                        yield return currentTextbox.Hide();
-                        currentTextbox.dialogue.text = "";
-                    }
-
-                    currentTextbox = null;
-
-                    break;
-                case DialogueContainer.ContainerType.SpeechBubble:
-                    if (immediate)
-                    {
-                        currentTextbox.root.SetActive(false);
-                    }
-                    else
-                    {
-                        yield return currentTextbox.Hide();
-                    }
-
-                    currentTextbox.dialogue.text = "";
-                    currentTextbox = null;
-
-                    break;
-                default:
-                    break;
+                DestroyImmediate(currentTextbox.root);
             }
+            else
+            {
+                yield return currentTextbox.Hide();
+                currentTextbox.dialogue.text = "";
+            }
+
+            currentTextbox = null;
         }
 
         private GameObject GetTextboxContainerPrefab(DialogueContainer.ContainerType textboxUsed)

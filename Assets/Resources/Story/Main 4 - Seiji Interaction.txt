@@ -55,7 +55,7 @@ RemoveScene()
 [wait]ShowScene("Scene 7" "Kuchai Town 3")
 [wait]HideCG()
 FlipNPC(Seiji Left)
-[wait]PanCamera(-x -16.81 -spd 10)
+[wait]PanCamera(-x -12.37 -spd 10)
 
 pixel TownCrier as Town Crier "Make way for the Seiyslan army!"
 
@@ -91,7 +91,7 @@ HideTextbox(true)
 [wait]Blackout()
 ResetCamera(false)
 RemoveFromScene("Lien")
-SetNPCPosition("TownCrier" -x -1599.45 -y -193.32)
+SetNPCPosition("TownCrier" -x -9.65 -y 0.76)
 FlipNPC("TownCrier" Left)
 [wait]HideCG()
 

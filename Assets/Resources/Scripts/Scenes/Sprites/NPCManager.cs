@@ -9,7 +9,7 @@ public class NPCManager
 
     private SceneManager sceneManager => SceneManager.Instance;
 
-    private List<NPC> npcsInScreen = new List<NPC>();
+    public List<NPC> npcsInScreen = new List<NPC>();
 
     public NPCManager()
     {

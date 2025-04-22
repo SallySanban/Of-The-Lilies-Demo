@@ -1,4 +1,6 @@
-[wait]PanCamera(-x 65.75 -spd 2)
+Proceed(false)
+
+[wait]PanCamera(-x 45.2 -spd 2)
 
 pixel Ahlai as <playerName> "Dad!"
 
@@ -35,7 +37,7 @@ HideCharacter(Dad)
 HideCharacter(TayabacAhlai)
 playSFX(SFX_DadWalk)
 ChangeAnimationState(Dad Run true)
-[wait]MoveNPC(Dad -x 76.74 -y -2.59 -spd 5)
+[wait]MoveNPC(Dad -x 56 -y 0.67 -spd 5)
 
 ShowCharacterLeft(TayabacAhlai -b TayabacLeft_Default_Body -e TayabacLeft_WorriedAngry)
 [wait]ShowCharacterRight(TayabacLien -b TayabacRight_Default_Body -e TayabacRight_Proud)
@@ -153,13 +155,15 @@ HideTextbox(true)
 playMusic(BGM_MainTheme2)
 Wait(1)
 [wait]ShowScene("Scene 4" "Riverside Pathway")
-ScrollBackground(true)
+[wait]ChangeRender("Color Adjustments" 25)
+[wait]ChangeLighting(1.3)
+[wait]SetCamera(-y 8.5)
 HideCG()
 Wait(3)
 [wait]ShowCG("Title")
 Wait(3)
 HideCG()
-[wait]PanCamera(-y -17.75 -spd 6)
+[wait]PanCamera(-y -8.5 -spd 9)
 [wait]ShowCredits("<b>Of The Lilies</b><br>by Startris Studio")
 Wait(3)
 [wait]ShowCredits("<b>Lead and Programmer</b><br>Johanna Eikou Teknomo")
@@ -168,19 +172,15 @@ Wait(3)
 Wait(3)
 [wait]SwitchCredits("<b>Scriptwriters</b><br>Matthew Rafael Eusebio<br>Mateo Dagondon<br>Angeli Patrisha Thadani")
 Wait(3)
-[wait]SwitchCredits("<b>Character Design</b><br>Althea Ong<br>Amparo Isabelle Rivera<br>Alessandra Delos Santos")
-Wait(3)
-[wait]SwitchCredits("<b>Character Design</b><br>Chen Cada<br>Edgar Joseph Vallejo")
-Wait(3)
 [wait]SwitchCredits("<b>Character Portraits</b><br>Althea Ong")
 Wait(3)
-[wait]SwitchCredits("<b>Cutscene Graphics</b><br>Amparo Isabelle Rivera<br>Althea Ong")
+[wait]SwitchCredits("<b>Cutscene Graphics</b><br>Amparo Isabelle Rivera<br>sumpaguitakita<br>Althea Ong")
 Wait(3)
 [wait]SwitchCredits("<b>Pixel Backgrounds</b><br>Elise Illenberger<br>Chen Cada<br>Althea Ong")
 Wait(3)
-[wait]SwitchCredits("<b>Pixel Backgrounds</b><br>Dyethrow Pixel")
+[wait]SwitchCredits("<b>Pixel Backgrounds</b><br>Dyethrow Pixel<br>Gwyneth Balucio")
 Wait(3)
-[wait]SwitchCredits("<b>Pixel Sprites</b><br>Chen Cada<br>Edgar Joseph Vallejo<br>Gwyneth Balucio")
+[wait]SwitchCredits("<b>Pixel Sprites</b><br>Chen Cada<br>Gwyneth Balucio<br>Edgar Joseph Vallejo")
 Wait(3)
 [wait]SwitchCredits("<b>Pixel Sprites</b><br>OnlyPixels<br>Alessandra Delos Santos")
 Wait(3)
@@ -188,13 +188,12 @@ Wait(3)
 Wait(3)
 [wait]SwitchCredits("<b>Audio and Mixing</b><br>Antoine Andre Labuanan")
 Wait(3)
-[wait]SwitchCredits("<b>Original Soundtrack</b><br>Gabriel Ceballos<br>Antoine Andre Labuanan<br>Darren Vega")
+[wait]SwitchCredits("<b>Original Soundtrack</b><br>Antoine Andre Labuanan<br>Darren Vega")
 Wait(3)
 HideCredits()
 stopEvent(BGM_MainTheme2)
 [wait]Blackout()
 Wait(0.5)
-ScrollBackground(false)
 RemoveScene()
 [wait]ResetCamera(false)
 
@@ -368,37 +367,43 @@ Wait(1)
 ??? "It's time to wake up."
 
 HideTextbox(true)
-[input]SwitchCG("Lady Sabina Worried")
+[wait]ShowScene("Scene 5" "Ahlai's Bedroom")
+[wait]HideCG()
 
-Sabina as Lady Sabina "Oh my. <playerName>, you're sweating profusely!"
+[wait]ShowCharacterLeft(Ahlai -b Left_Default_Body -e Left_Conflicted)
 
-Sabina as Lady Sabina "Are you okay? Did you perhaps have another bad dream?"
+pixel Sabina as Lady Sabina "Oh my. <playerName>, you're sweating profusely!"
 
-choice in 2
+pixel Sabina as Lady Sabina "Are you okay? Did you perhaps have another bad dream?"
+
+choice in 0
 {
 	- I did, actually...
-		Sabina as Lady Sabina "Oh no. If you were sweating from that nightmare, then it must've been terrible..."
+		pixel Sabina as Lady Sabina "Oh no. If you were sweating from that nightmare, then it must've been terrible..."
 
 	- No, I'm fine...
-		Sabina as Lady Sabina "I just said you're sweating, of course you're not fine!"
+		pixel Sabina as Lady Sabina "I just said you're sweating, of course you're not fine!"
 
-		Sabina as Lady Sabina "Ugh. You know I'm concerned for you, so you might as well be honest with me..."
+		pixel Sabina as Lady Sabina "Ugh. You know I'm concerned for you, so you might as well be honest with me..."
 
-		TayabacAhlai as <playerName> "Thank you for your concern, Lady Sabina..."
+		Ahlai as <playerName> at 0 "Thank you for your concern, Lady Sabina..."
 }
 
-Sabina as Lady Sabina "Go get ready and head downstairs. Seiji's already manning the counter."
+pixel Sabina as Lady Sabina "Go get ready and head downstairs. Seiji's already manning the counter."
 
-Sabina as Lady Sabina "I'll see to it that I prepare something for your sleep."
+pixel Sabina as Lady Sabina "I'll see to it that I prepare something for your sleep."
 
-Sabina as Lady Sabina "If you don't feel well, you tell me, okay?"
+pixel Sabina as Lady Sabina "If you don't feel well, you tell me, okay?"
 
-TayabacAhlai as <playerName> "Yes, ma'am."
+Ahlai as <playerName> at 0 "Yes, ma'am."
 
-Sabina as Lady Sabina "Good."
+pixel Sabina as Lady Sabina "Good."
 
-HideTextbox(true)
+HideTextbox(false)
+HideCharacter(Ahlai)
 [wait]Blackout()
+RemoveFromScene("Sabina")
+
 $AxeReceived = false
 $SatoQuest = false
 $SatoPotionDone = false
@@ -436,6 +441,6 @@ $Myo = 0
 $Manju = 0
 $Laisa = 0
 $Lien = 0
-[wait]ShowScene("Scene 5" "Ahlai's Bedroom")
-[wait]HideCG()
+
+HideCG()
 playMusic(BGM_Scene5)

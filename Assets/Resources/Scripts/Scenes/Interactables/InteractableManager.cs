@@ -49,6 +49,7 @@ public class InteractableManager
                 }
             }
 
+            //for NPCs (with interactable component) on the screen that are not in the interactables list because they are not interactable for that scene, we don't want to delete them
             if(NPCManager.Instance.GetNPC(interactable.gameObject.name) != null)
             {
                 existsInData = true;

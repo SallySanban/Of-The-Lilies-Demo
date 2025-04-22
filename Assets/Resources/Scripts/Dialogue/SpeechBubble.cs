@@ -7,15 +7,13 @@ using UnityEngine.UI;
 
 public class SpeechBubble : DialogueContainer
 {
-    public Vector3 playerOffset = new Vector2(0f, 4f);
-
     private const string SPEECHBUBBLE_OBJECT = "SpeechBubble";
 
     public string speakerSpriteName = "";
 
-    public SpeechBubble(GameObject speakerSprite, string speakerName = "", string[] listOfChoices = null)
+    public SpeechBubble(GameObject prefab, GameObject speakerSprite, string speakerName = "", string[] listOfChoices = null)
     {
-        root = speakerSprite.transform.Find(SPEECHBUBBLE_OBJECT).gameObject;
+        root = Object.Instantiate(prefab, speakerSprite.transform.Find(SPEECHBUBBLE_OBJECT).transform.position, Quaternion.identity, speakerSprite.transform);
 
         rootCanvasGroup = root.GetComponent<CanvasGroup>();
 
@@ -54,26 +52,6 @@ public class SpeechBubble : DialogueContainer
     public override void HideChoices()
     {
         base.HideChoices();
-    }
-
-    public override IEnumerator Hiding()
-    {
-        CanvasGroup self = rootCanvasGroup;
-
-        while (self.alpha != 0)
-        {
-            self.alpha = Mathf.MoveTowards(self.alpha, 0, FADE_SPEED * Time.deltaTime);
-
-            if (self.alpha == 0f)
-            {
-                self.gameObject.SetActive(false);
-                break;
-            }
-
-            yield return null;
-        }
-
-        hidingContainerCoroutine = null;
     }
 
     public override string SpeakerSpriteName

@@ -68,6 +68,8 @@ Dad "Not so fast, Alonay."
 HideTextbox(true)
 [wait]Blackout()
 [wait]ShowScene("Scene 1" "Tayabac House 2nd Floor")
+FreezePlayer(true)
+SetNPCPosition(Ahlai -x 0.78 -y -0.29)
 playMusic(BGM_Scene1)
 [wait]HideCG()
 ShowCharacterLeft(Alonay -b Left_Pout_Body -e Left_Pout)

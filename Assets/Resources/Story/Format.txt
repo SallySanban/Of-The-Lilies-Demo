@@ -106,6 +106,9 @@ ToggleNPC("Scene Name" "Background Name" NPCName true/false) //changes appear to
 SetNPCPosition("NPC Name" -x xPosition -y yPosition)
 FollowPlayer("NPC Name That Will Follow Player")
 SetCamera(-x xPosition -y yPosition)
+FreezePlayer(true/false)
+ChangeSaturation(number)
+ChangeLighting(number)
 
 === Effects ===
 ScreenShake()

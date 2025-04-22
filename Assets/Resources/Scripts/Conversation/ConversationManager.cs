@@ -148,7 +148,8 @@ namespace Dialogue
                 }
                 else
                 {
-                    speakerSprite = sceneManager.npcManager.GetNPC(line.speakerData.name).root;
+                    speakerSprite = sceneManager.npcManager.GetNPC(line.speakerData.name)?.root 
+                                     ?? sceneManager.interactableManager.GetInteractable(line.speakerData.name).gameObject;
                 }
                 
 

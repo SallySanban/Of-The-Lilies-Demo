@@ -15,31 +15,31 @@ MonoBehaviour:
   scenes:
   - sceneName: Scene 1
     currentBackgroundName: Tayabac House 2nd Floor
-    showPlayer: 0
-    playerPosition: {x: 0, y: 0}
-    playerDirection: 0
-    playerAnimationState: 
+    showPlayer: 1
+    playerPosition: {x: 0.2, y: -0.22}
+    playerDirection: -1
+    playerAnimationState: TayabacSit
     npcsInScene:
     - npcName: Dad
-      position: {x: -184.94, y: -189.66}
+      position: {x: -1.78, y: 0.11}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: SittingTogether
     - npcName: Mom
-      position: {x: -612.94, y: -192.34}
+      position: {x: -5.37, y: 0.34}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sitting
     - npcName: Laya
-      position: {x: 290.32, y: -358.32}
+      position: {x: 2.6, y: -0.6}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: PlayingAlone
     - npcName: Dalawi
-      position: {x: 697.32, y: -244.32}
+      position: {x: 6.43, y: 0.4}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -49,30 +49,30 @@ MonoBehaviour:
   - sceneName: Scene 2
     currentBackgroundName: Tayabac House 2nd Floor
     showPlayer: 1
-    playerPosition: {x: -3.73, y: -82.32}
+    playerPosition: {x: 0.2, y: 1.5}
     playerDirection: -1
     playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: Dad
-      position: {x: -151.94, y: -197.66}
+      position: {x: -1.78, y: 0.11}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sitting
     - npcName: Mom
-      position: {x: -612.94, y: -192.34}
+      position: {x: -5.37, y: 0.34}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sitting
     - npcName: Laya
-      position: {x: 290.32, y: -358.32}
+      position: {x: 2.6, y: -0.6}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Playing
     - npcName: Dalawi
-      position: {x: 697.32, y: -244.32}
+      position: {x: 6.43, y: 0.4}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -87,22 +87,22 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 1 - Banig Interaction
-      moveToInteractPosition: {x: -5.09, y: -0.76}
+      moveToInteractPosition: {x: -4.61, y: 1.33}
     - interactableName: Hearth
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 1 - Hearth Interaction
-      moveToInteractPosition: {x: 4.62, y: -0.68}
+      moveToInteractPosition: {x: 3.45, y: 1.33}
     - interactableName: Mom
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Mom Interaction
-      moveToInteractPosition: {x: -3.9, y: -0.76}
+      moveToInteractPosition: {x: -3.44, y: 1.33}
     - interactableName: Dad
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Dad Interaction
-      moveToInteractPosition: {x: 0.68, y: -0.76}
+      moveToInteractPosition: {x: 0.17, y: 1.33}
     - interactableName: Ladder
       interactableType: 2
       isInteractable: 1
@@ -112,24 +112,24 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Laya Alonay Interaction
-      moveToInteractPosition: {x: 1.14, y: -0.76}
+      moveToInteractPosition: {x: 0.9, y: 1.33}
     - interactableName: Dalawi
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Dalawi Interaction
-      moveToInteractPosition: {x: 5.03, y: -0.76}
+      moveToInteractPosition: {x: 4.87, y: 1.33}
     backgroundsToGo:
     - interactableName: Ladder
       backgroundToGo: Tayabac House 1st Floor
       keyToPress: 4
-      playerPositionInNextBackground: {x: -0.02, y: -227.17}
+      playerPositionInNextBackground: {x: 0, y: 0.09}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac House 1st Floor
     showPlayer: 1
-    playerPosition: {x: -0.02, y: -227.17}
+    playerPosition: {x: 0, y: 0.09}
     playerDirection: -1
     playerAnimationState: TayabacIdleLeft
     npcsInScene: []
@@ -163,68 +163,68 @@ MonoBehaviour:
     - interactableName: Ladder
       backgroundToGo: Tayabac House 2nd Floor
       keyToPress: 3
-      playerPositionInNextBackground: {x: -0.04, y: -86.29}
+      playerPositionInNextBackground: {x: 0.2, y: 1.5}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Left Door
       backgroundToGo: Tayabac Village
       keyToPress: 2
-      playerPositionInNextBackground: {x: -1522.89, y: -238.22}
+      playerPositionInNextBackground: {x: -13.54, y: 0.24}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Village
     showPlayer: 1
-    playerPosition: {x: -1522.89, y: -224.2}
+    playerPosition: {x: -13.54, y: 0.24}
     playerDirection: -1
     playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: MaleNPC1
-      position: {x: -3860.97, y: -173.84}
+      position: {x: -36.39, y: 0.99}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC2
-      position: {x: 4813.24, y: -188.68}
+      position: {x: 42.98, y: 0.77}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC3
-      position: {x: -2086.94, y: -192.32}
+      position: {x: -20.02, y: 0.83}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC4
-      position: {x: 6445.06, y: -190.32}
+      position: {x: 57.78, y: 0.76}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC5
-      position: {x: 7395.09, y: -199.26}
+      position: {x: 62.91, y: 0.44}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Swinging
     - npcName: FemNPC1
-      position: {x: 1442.06, y: -206.88}
+      position: {x: 13.85, y: 0.59}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: FemNPC2
-      position: {x: -924.26, y: -222.38}
+      position: {x: -7.01, y: 0.55}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: FemNPC3
-      position: {x: 3729.21, y: -197.82}
+      position: {x: 32.13, y: 0.63}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -254,37 +254,37 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Cloud Rats Interaction
-      moveToInteractPosition: {x: -18.3, y: -2.08}
+      moveToInteractPosition: {x: -34.51, y: 0.24}
     - interactableName: MaleNPC2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - To Do Interaction
-      moveToInteractPosition: {x: 62.03, y: -2.08}
+      moveToInteractPosition: {x: 45.01, y: 0.24}
     - interactableName: MaleNPC3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Fixed Equipment Interaction
-      moveToInteractPosition: {x: -1.12, y: -2.08}
+      moveToInteractPosition: {x: -17.78, y: 0.24}
     - interactableName: MaleNPC4
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Combat Guy Interaction
-      moveToInteractPosition: {x: 73.23, y: -2.08}
+      moveToInteractPosition: {x: 55.95, y: 0.24}
     - interactableName: FemNPC1
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Crops Interaction
-      moveToInteractPosition: {x: 27, y: -2.08}
+      moveToInteractPosition: {x: 12.15, y: 0.24}
     - interactableName: FemNPC2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Question Interaction
-      moveToInteractPosition: {x: 4.85, y: -2.08}
+      moveToInteractPosition: {x: -9.07, y: 0.24}
     - interactableName: FemNPC3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Daniw Wife Interaction
-      moveToInteractPosition: {x: 47.96, y: -2.08}
+      moveToInteractPosition: {x: 30.34, y: 0.24}
     - interactableName: Turnip
       interactableType: 1
       isInteractable: 0
@@ -305,11 +305,6 @@ MonoBehaviour:
       isInteractable: 0
       storyToPlay: Main 1 - Tree Interaction
       moveToInteractPosition: {x: 0, y: 0}
-    - interactableName: MaleNPC5
-      interactableType: 1
-      isInteractable: 0
-      storyToPlay: 
-      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Axe Trigger
       interactableType: 5
       isInteractable: 1
@@ -324,39 +319,39 @@ MonoBehaviour:
     - interactableName: Cliffside Entrance
       backgroundToGo: Tayabac Cliffside 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 1977.22, y: -223.2}
+      playerPositionInNextBackground: {x: 18.03, y: 0.22}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Fireplace Entrance
       backgroundToGo: Tayabac Fireplace
       keyToPress: 4
-      playerPositionInNextBackground: {x: -39.03, y: -82.32}
+      playerPositionInNextBackground: {x: 0, y: 1.49}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: House Entrance
       backgroundToGo: Tayabac House 1st Floor
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1007.42, y: -202.93}
+      playerPositionInNextBackground: {x: -9.08, y: 0.26}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Fireplace
     showPlayer: 1
-    playerPosition: {x: -39.03, y: -82.32}
+    playerPosition: {x: 0, y: 1.49}
     playerDirection: 1
     playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: FemSittingNPC
-      position: {x: -538.68, y: -300.18}
+      position: {x: -4.9, y: -0.53}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: MaleSittingNPC
-      position: {x: 561.36, y: -408.84}
+      position: {x: 4.87, y: -1.13}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -366,12 +361,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - FemSitting Interaction
-      moveToInteractPosition: {x: -2.98, y: -0.76}
+      moveToInteractPosition: {x: -2.87, y: 1.49}
     - interactableName: MaleSittingNPC
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - MaleSitting Interaction
-      moveToInteractPosition: {x: 3.1, y: -0.76}
+      moveToInteractPosition: {x: 3.08, y: 1.49}
     - interactableName: Village Entrance
       interactableType: 2
       isInteractable: 1
@@ -381,19 +376,19 @@ MonoBehaviour:
     - interactableName: Village Entrance
       backgroundToGo: Tayabac Village
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1595.11, y: -224.2}
+      playerPositionInNextBackground: {x: -13.54, y: 0.24}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Cliffside 1
     showPlayer: 1
-    playerPosition: {x: 1977.22, y: -223.2}
+    playerPosition: {x: 18.03, y: 0.22}
     playerDirection: -1
     playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: Aya
-      position: {x: -2786.25, y: -580.6}
+      position: {x: -18.21, y: -2.32}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -413,14 +408,14 @@ MonoBehaviour:
     - interactableName: Left Exit
       backgroundToGo: Tayabac Cliffside 2
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1270.26, y: -223.2}
+      playerPositionInNextBackground: {x: 11.29, y: 0.26}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 2
     currentBackgroundName: Tayabac Cliffside 2
     showPlayer: 1
-    playerPosition: {x: 1270.26, y: -223.2}
+    playerPosition: {x: 11.29, y: 0.26}
     playerDirection: -1
     playerAnimationState: TayabacIdleLeft
     npcsInScene: []
@@ -451,48 +446,48 @@ MonoBehaviour:
   - sceneName: Scene 3
     currentBackgroundName: Tayabac Village Burning
     showPlayer: 1
-    playerPosition: {x: -7868.96, y: -224.2}
+    playerPosition: {x: -72.7, y: 0.24}
     playerDirection: 1
     playerAnimationState: TayabacIdleLeft
     npcsInScene:
     - npcName: FemNPC1
-      position: {x: 1446.07, y: -223.88}
+      position: {x: 13.83, y: 0.42}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Panic
     - npcName: FemNPC2
-      position: {x: -960.22, y: -202.38}
+      position: {x: -11.64, y: 0.55}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Panic
     - npcName: MaleNPC1
-      position: {x: -4497.97, y: -184.73}
+      position: {x: -36.39, y: 0.99}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Panic
     - npcName: MaleNPC2
-      position: {x: 3131.25, y: -182.68}
+      position: {x: 29.38, y: 0.77}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Panic
     - npcName: FemNPC3
-      position: {x: -2605.79, y: -231.82}
+      position: {x: -23.56, y: -0.1}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Panic
     - npcName: Dad
-      position: {x: 5244.91, y: -279.66}
+      position: {x: 43.76, y: 0.54}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Combat
     - npcName: Lien
-      position: {x: 5786.91, y: -190.47}
+      position: {x: 49.15, y: 0.82}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -531,26 +526,26 @@ MonoBehaviour:
     backgroundsToGo: []
   - sceneName: Scene 4
     currentBackgroundName: Riverside Pathway
-    showPlayer: 0
-    playerPosition: {x: 0, y: 0}
+    showPlayer: 1
+    playerPosition: {x: 0, y: -5.5}
     playerDirection: 0
-    playerAnimationState: 
-    npcsInScene:
-    - npcName: Ahlai
-      position: {x: -528.62, y: -871.12}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: ChainedWalk
+    playerAnimationState: ChainedWalk
+    npcsInScene: []
     interactablesInScene: []
     backgroundsToGo: []
   - sceneName: Scene 5
     currentBackgroundName: Ahlai's Bedroom
     showPlayer: 1
-    playerPosition: {x: -1001.34, y: -223.16}
+    playerPosition: {x: -8.18, y: 0}
     playerDirection: 1
-    playerAnimationState: IdleLeft
-    npcsInScene: []
+    playerAnimationState: IdleRight
+    npcsInScene:
+    - npcName: Sabina
+      position: {x: -5.19, y: 0.5}
+      orderInLayer: 
+      appear: 1
+      flipped: 1
+      animationState: IdleLeft
     interactablesInScene:
     - interactableName: Conspiracy Wall
       interactableType: 1
@@ -576,12 +571,12 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Bed Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -8.28, y: 0}
     - interactableName: Book
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Book Interaction
-      moveToInteractPosition: {x: 9.27, y: -2.07}
+      moveToInteractPosition: {x: 8.61, y: 0}
     - interactableName: Painting of Nari
       interactableType: 1
       isInteractable: 1
@@ -596,7 +591,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Axe Interaction
-      moveToInteractPosition: {x: -9.17, y: -2.07}
+      moveToInteractPosition: {x: -8.72, y: 0}
     - interactableName: Door
       interactableType: 2
       isInteractable: 1
@@ -606,14 +601,14 @@ MonoBehaviour:
     - interactableName: Door
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1277.97, y: -223.2}
+      playerPositionInNextBackground: {x: -11.75, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: 2nd Floor Hallway
     showPlayer: 1
-    playerPosition: {x: -1277.97, y: -223.2}
+    playerPosition: {x: -11.75, y: 0}
     playerDirection: 1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -642,7 +637,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Books 1 Interaction
-      moveToInteractPosition: {x: -19.82, y: -1.88}
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Books 2
       interactableType: 1
       isInteractable: 1
@@ -652,7 +647,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Books 3 Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -19.38, y: 0}
     - interactableName: Stairs
       interactableType: 2
       isInteractable: 1
@@ -662,21 +657,21 @@ MonoBehaviour:
     - interactableName: Stairs
       backgroundToGo: 1st Floor Hallway
       keyToPress: 4
-      playerPositionInNextBackground: {x: 1275.84, y: -246.51}
+      playerPositionInNextBackground: {x: 11.95, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Ahlai Door
       backgroundToGo: Ahlai's Bedroom
       keyToPress: 3
-      playerPositionInNextBackground: {x: -122.45, y: -213.89}
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: 1st Floor Hallway
     showPlayer: 1
-    playerPosition: {x: 1275.84, y: -246.51}
+    playerPosition: {x: 11.95, y: 0}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -720,87 +715,87 @@ MonoBehaviour:
     - interactableName: Door
       backgroundToGo: Main Shop
       keyToPress: 2
-      playerPositionInNextBackground: {x: 2277.64, y: -262.05}
+      playerPositionInNextBackground: {x: 20.86, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Stairs
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1996.91, y: -202.93}
+      playerPositionInNextBackground: {x: 18.46, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Double Door
       backgroundToGo: La Liryo Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1280.18, y: -237.06}
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: Main Shop
     showPlayer: 1
-    playerPosition: {x: 2277.65, y: -249.14}
+    playerPosition: {x: 20.86, y: 0}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Sabina
-      position: {x: 631.78, y: -198.32}
-      orderInLayer: 
+      position: {x: 6.49, y: 0.63}
+      orderInLayer: 2
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: RookieJournalist
-      position: {x: -2131.22, y: -190.32}
+      position: {x: -19.91, y: 0.85}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Seiji
-      position: {x: 262.78, y: -145.32}
+      position: {x: 2.28, y: 1.1}
       orderInLayer: 0
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Sato
-      position: {x: -1201.53, y: -223.32}
+      position: {x: -14.81, y: 0.38}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: RichSeiyslan
-      position: {x: -1482.22, y: -213.32}
+      position: {x: -10.34, y: 0.63}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: MotherWithSon
-      position: {x: 1607.78, y: -219.32}
+      position: {x: 15.56, y: 0.63}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: DesperateGirl
-      position: {x: -404.22, y: -298.32}
+      position: {x: -3.44, y: -0.12}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: AmazedVisitor
-      position: {x: 1070.78, y: -219.32}
+      position: {x: 10.15, y: 0.63}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: SonWithMother
-      position: {x: 1436.78, y: -299.32}
+      position: {x: 13.87, y: -0.12}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Myo
-      position: {x: -2678.22, y: -262.05}
+      position: {x: -24.73, y: 0.6}
       orderInLayer: 1
       appear: 1
       flipped: 0
@@ -830,42 +825,42 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rookie Journalist Interaction
-      moveToInteractPosition: {x: -23.54, y: -2.09}
+      moveToInteractPosition: {x: -17.85, y: 0}
     - interactableName: Sabina
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Sabina Interaction
-      moveToInteractPosition: {x: -1.57, y: -2.3}
+      moveToInteractPosition: {x: 4.74, y: 0}
     - interactableName: Seiji
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3
-      moveToInteractPosition: {x: -5.19, y: -2.3}
+      moveToInteractPosition: {x: 0.44, y: 0}
     - interactableName: Sato
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Sato Interaction
-      moveToInteractPosition: {x: -14.91, y: -2.43}
+      moveToInteractPosition: {x: -12.27, y: 0}
     - interactableName: RichSeiyslan
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rich Seiyslan Interaction
-      moveToInteractPosition: {x: -21.02, y: -2.43}
+      moveToInteractPosition: {x: -12.26, y: 0}
     - interactableName: MotherWithSon
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Mother Son Interaction
-      moveToInteractPosition: {x: 11.21, y: -2.3}
+      moveToInteractPosition: {x: 17.98, y: 0}
     - interactableName: DesperateGirl
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Desperate Girl Interaction
-      moveToInteractPosition: {x: -7.51, y: -2.3}
+      moveToInteractPosition: {x: -1.38, y: 0}
     - interactableName: AmazedVisitor
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Amazed Visitor Interaction
-      moveToInteractPosition: {x: 2.72, y: -2.3}
+      moveToInteractPosition: {x: 12.58, y: 0}
     - interactableName: Cauldron
       interactableType: 1
       isInteractable: 1
@@ -875,80 +870,80 @@ MonoBehaviour:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: -3436.47, y: -244.74}
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Right Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 1
-      playerPositionInNextBackground: {x: -2271.75, y: -246.51}
+      playerPositionInNextBackground: {x: -20.5, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: Kuchai Town 1
     showPlayer: 1
-    playerPosition: {x: -3436.47, y: -244.74}
+    playerPosition: {x: -31.75, y: 0.16}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Myo
-      position: {x: 3180.04, y: -174.32}
+      position: {x: 30.3, y: 1.02}
       orderInLayer: 0
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: GossipGirl1
-      position: {x: 2027.04, y: -198.32}
+      position: {x: 18.09, y: 0.82}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipRight
     - npcName: GossipGirl2
-      position: {x: 2161.04, y: -194.32}
+      position: {x: 19.26, y: 0.87}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipLeft
     - npcName: TownCrier
-      position: {x: -206.96, y: -165.32}
+      position: {x: -1.92, y: 1.03}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: MaleListener
-      position: {x: 260.04, y: -194.32}
+      position: {x: 1.5, y: 0.78}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: FemaleListener
-      position: {x: 437.04, y: -169.32}
+      position: {x: 3.2, y: 0.91}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: RichSeiyslan
-      position: {x: -2737.96, y: -189.32}
+      position: {x: -26.63, y: 0.83}
       orderInLayer: 
       appear: 0
       flipped: 0
       animationState: BlondeRight
     - npcName: RichSeiyslanCrush
-      position: {x: -2518.96, y: -192.32}
+      position: {x: -24.18, y: 0.78}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: RichSeiyslanFriend
-      position: {x: -1441.96, y: -199.32}
+      position: {x: -13.76, y: 0.79}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -3819.96, y: -174.32}
+      position: {x: -29.8, y: 0.88}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -958,37 +953,37 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Myo Interaction
-      moveToInteractPosition: {x: 27.49, y: -2.27}
+      moveToInteractPosition: {x: 28.2, y: 0}
     - interactableName: GossipGirl2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Gossip Interaction
-      moveToInteractPosition: {x: 16.51, y: -2.27}
+      moveToInteractPosition: {x: 16.12, y: 0}
     - interactableName: TownCrier
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Town Crier Interaction
-      moveToInteractPosition: {x: -3.86, y: -2.27}
+      moveToInteractPosition: {x: 0.27, y: 0}
     - interactableName: MaleListener
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Listener Interaction
-      moveToInteractPosition: {x: 6.71, y: -2.27}
+      moveToInteractPosition: {x: 5.62, y: 0}
     - interactableName: RichSeiyslan
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - After Rich Seiyslan Interaction
-      moveToInteractPosition: {x: -27.33, y: -2.27}
+      moveToInteractPosition: {x: -29, y: 0}
     - interactableName: RichSeiyslanCrush
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rich Seiyslan Crush Interaction
-      moveToInteractPosition: {x: -25.42, y: -2.27}
+      moveToInteractPosition: {x: -26.28, y: 0}
     - interactableName: RichSeiyslanFriend
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rich Seiyslan Friend Interaction
-      moveToInteractPosition: {x: -15.31, y: -2.27}
+      moveToInteractPosition: {x: -15.83, y: 0}
     - interactableName: Sabina Door
       interactableType: 2
       isInteractable: 1
@@ -1013,88 +1008,88 @@ MonoBehaviour:
     - interactableName: Market
       backgroundToGo: Kuchai Town 2
       keyToPress: 3
-      playerPositionInNextBackground: {x: 4050.6, y: -235.45}
+      playerPositionInNextBackground: {x: 37.51, y: 0.36}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Bridge
       backgroundToGo: Kuchai Town 4
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1523.99, y: -236.6}
+      playerPositionInNextBackground: {x: -15.1, y: 0.2}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Tavern Door
       backgroundToGo: Tavern
       keyToPress: 3
-      playerPositionInNextBackground: {x: -2249.73, y: -266.93}
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Sabina Door
       backgroundToGo: Main Shop
       keyToPress: 3
-      playerPositionInNextBackground: {x: -2306.26, y: -249.14}
+      playerPositionInNextBackground: {x: -20.96, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: Kuchai Town 2
     showPlayer: 1
-    playerPosition: {x: 4050.6, y: -235.45}
+    playerPosition: {x: 37.51, y: 0.36}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: DesperateGirl
-      position: {x: -257.34, y: -258.32}
+      position: {x: -2.34, y: 0.21}
       orderInLayer: 
       appear: 0
       flipped: 0
       animationState: IdleRight
     - npcName: Quan
-      position: {x: -1330.34, y: -202.32}
+      position: {x: -11.36, y: 0.8}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: PrayingGirl
-      position: {x: 774.66, y: -256.32}
+      position: {x: 6.16, y: 0.3}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: PrayLeft
     - npcName: PrayingGirlFamily
-      position: {x: 774.66, y: -244.32}
+      position: {x: 6.16, y: 0.25}
       orderInLayer: 
       appear: 0
       flipped: 0
       animationState: FamilyRight
     - npcName: MaleCustomer
-      position: {x: -47.34, y: -175.32}
+      position: {x: 0.01, y: 1.02}
       orderInLayer: 
       appear: 0
       flipped: 1
       animationState: IdleLeft
     - npcName: Salesperson1
-      position: {x: -3967.34, y: -168.32}
+      position: {x: -36.32, y: 0.84}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson2
-      position: {x: -2485.34, y: -172.32}
+      position: {x: -22.37, y: 0.97}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson3
-      position: {x: 1915.66, y: -177.32}
+      position: {x: 13.11, y: 0.91}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Seiji
-      position: {x: 4251.06, y: -158.32}
+      position: {x: 39.88, y: 0.98}
       orderInLayer: 
       appear: 1
       flipped: 1
@@ -1104,32 +1099,32 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - After Desperate Girl Interaction
-      moveToInteractPosition: {x: -4.6, y: -2.18}
+      moveToInteractPosition: {x: -4.4, y: 0}
     - interactableName: Quan
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Quan Interaction
-      moveToInteractPosition: {x: -10.15, y: -2.06}
+      moveToInteractPosition: {x: -9.17, y: 0}
     - interactableName: PrayingGirl
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Praying Girl Interaction
-      moveToInteractPosition: {x: 4.94, y: -2.18}
+      moveToInteractPosition: {x: 4.2, y: 0}
     - interactableName: Salesperson1
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Salesperson1 Interaction
-      moveToInteractPosition: {x: -34.84, y: -2.18}
+      moveToInteractPosition: {x: -34.06, y: 0}
     - interactableName: Salesperson2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Salesperson2 Interaction
-      moveToInteractPosition: {x: -21.06, y: -2.06}
+      moveToInteractPosition: {x: -20.01, y: 0}
     - interactableName: Salesperson3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Salesperson3 Interaction
-      moveToInteractPosition: {x: 19.48, y: -2.06}
+      moveToInteractPosition: {x: 15.27, y: 0}
     - interactableName: Right Side
       interactableType: 2
       isInteractable: 1
@@ -1144,60 +1139,60 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Complete Family Interaction
-      moveToInteractPosition: {x: 5.32, y: -2.06}
+      moveToInteractPosition: {x: 4.2, y: 0}
     backgroundsToGo:
     - interactableName: Right Side
       backgroundToGo: Kuchai Town 1
       keyToPress: 1
-      playerPositionInNextBackground: {x: -4888.15, y: -244.74}
+      playerPositionInNextBackground: {x: -44.99, y: 0.16}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
-      followPlayerPosition: {x: -5066.96, y: -174.32}
+      followPlayerPosition: {x: -47, y: 0.88}
   - sceneName: Scene 5
     currentBackgroundName: Kuchai Town 3
     showPlayer: 1
-    playerPosition: {x: -3706.83, y: -232.51}
+    playerPosition: {x: -34.09, y: 0.18}
     playerDirection: 1
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sato
-      position: {x: -4997.45, y: -202.32}
+      position: {x: -45.51, y: 0.58}
       orderInLayer: 
       appear: 0
       flipped: 0
       animationState: IdleRight
     - npcName: Soldier1
-      position: {x: 127.55, y: -228.32}
-      orderInLayer: 0
+      position: {x: -9.13, y: 0.47}
+      orderInLayer: 1
       appear: 1
       flipped: 0
       animationState: Kick
     - npcName: Soldier2
-      position: {x: -199.45, y: -243.32}
-      orderInLayer: 0
+      position: {x: -12.19, y: 0.37}
+      orderInLayer: 1
       appear: 1
       flipped: 0
       animationState: Kick
     - npcName: Soldier3
-      position: {x: 1316.55, y: -162.32}
+      position: {x: 12, y: 1.11}
       orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: PoorBoy
-      position: {x: -57.45, y: -399.32}
+      position: {x: -10.9, y: -1.14}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: CrouchRight
     - npcName: Reader
-      position: {x: 3174.05, y: -159.32}
+      position: {x: 29.59, y: 1.12}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -3908.45, y: -169.32}
+      position: {x: -36.17, y: 0.85}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -1207,22 +1202,22 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Reader Interaction
-      moveToInteractPosition: {x: 27.29, y: -2.15}
+      moveToInteractPosition: {x: 27.29, y: 0}
     - interactableName: Sato
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - After Sato Interaction
-      moveToInteractPosition: {x: -43.89, y: -1.97}
+      moveToInteractPosition: {x: -43.15, y: 0}
     - interactableName: PoorBoy
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Poor Boy Interaction
-      moveToInteractPosition: {x: -4.82, y: -2.15}
+      moveToInteractPosition: {x: -14.78, y: 0}
     - interactableName: Soldier3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Soldier Interaction
-      moveToInteractPosition: {x: 14.38, y: -1.97}
+      moveToInteractPosition: {x: 14.53, y: 0}
     - interactableName: Bridge
       interactableType: 2
       isInteractable: 1
@@ -1237,44 +1232,44 @@ MonoBehaviour:
     - interactableName: Bridge
       backgroundToGo: Kuchai Town 4
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1701.75, y: -236.6}
+      playerPositionInNextBackground: {x: 15.33, y: 0.2}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
-      followPlayerPosition: {x: 1833.35, y: -179.32}
+      followPlayerPosition: {x: 17.23, y: 0.88}
     - interactableName: Library Door
       backgroundToGo: Library 1
       keyToPress: 3
-      playerPositionInNextBackground: {x: 0, y: 0}
+      playerPositionInNextBackground: {x: -5.03, y: 0}
       playerDirectionInNextBackground: 0
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 5
     currentBackgroundName: Kuchai Town 4
     showPlayer: 1
-    playerPosition: {x: -1523.99, y: -236.6}
+    playerPosition: {x: -15.1, y: 0.2}
     playerDirection: 1
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Boater
-      position: {x: -970.65, y: -193.32}
+      position: {x: -9.34, y: 0.85}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: WaterLooker
-      position: {x: -70.65, y: -187.32}
+      position: {x: 0.13, y: 0.85}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: MotherAndDaughter
-      position: {x: 1014.35, y: -197.32}
+      position: {x: 9.29, y: 0.77}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -1747.12, y: -179.32}
+      position: {x: -17.15, y: 0.88}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -1284,17 +1279,17 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Mai Family Interaction
-      moveToInteractPosition: {x: 6.29, y: -2.07}
+      moveToInteractPosition: {x: 7.2, y: 0}
     - interactableName: Boater
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Boater Interaction
-      moveToInteractPosition: {x: -11.33, y: -2.07}
+      moveToInteractPosition: {x: -11.11, y: 0}
     - interactableName: WaterLooker
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Water Looker Interaction
-      moveToInteractPosition: {x: -2.8, y: -2.19}
+      moveToInteractPosition: {x: -1.82, y: 0}
     - interactableName: Left Side
       interactableType: 2
       isInteractable: 1
@@ -1314,50 +1309,50 @@ MonoBehaviour:
     - interactableName: Left Side
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 4530.73, y: -244.74}
+      playerPositionInNextBackground: {x: 41.93, y: 0.16}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
-      followPlayerPosition: {x: 4749.48, y: -174.32}
+      followPlayerPosition: {x: 44.36, y: 0.88}
     - interactableName: Right Side
       backgroundToGo: Kuchai Town 3
       keyToPress: 1
-      playerPositionInNextBackground: {x: -3706.83, y: -193.32}
+      playerPositionInNextBackground: {x: -34.09, y: 0.18}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 6
     currentBackgroundName: Library 1
     showPlayer: 1
-    playerPosition: {x: -554, y: -270.88}
+    playerPosition: {x: -5.03, y: 0}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Seiji
-      position: {x: -989.58, y: -197.32}
+      position: {x: -8.92, y: 0.76}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: BusyLibrarian
-      position: {x: 1849.42, y: -220.32}
+      position: {x: 4.87, y: 0.55}
       orderInLayer: 
       appear: 1
-      flipped: 0
-      animationState: IdleRight
+      flipped: 1
+      animationState: IdleLeft
     - npcName: Receptionist
-      position: {x: 1203.42, y: -140.32}
+      position: {x: 11.16, y: 1.29}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: FatherWithDaughter
-      position: {x: -1769.58, y: -216.32}
+      position: {x: -15.92, y: 0.47}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: DaughterWithFather
-      position: {x: -1930.58, y: -299.32}
+      position: {x: -17.28, y: -0.27}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -1367,17 +1362,17 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Father Daughter Interaction
-      moveToInteractPosition: {x: -14.07, y: -2.39}
+      moveToInteractPosition: {x: -13.39, y: 0}
     - interactableName: Receptionist
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Receptionist Interaction
-      moveToInteractPosition: {x: 8.72, y: -2.51}
+      moveToInteractPosition: {x: 9.35, y: 0}
     - interactableName: BusyLibrarian
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Librarian Interaction
-      moveToInteractPosition: {x: 18.91, y: -2.51}
+      moveToInteractPosition: {x: 3.1, y: 0}
     - interactableName: Door
       interactableType: 2
       isInteractable: 1
@@ -1417,88 +1412,74 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 0
       storyToPlay: Main 4 - Seiji Interaction
-      moveToInteractPosition: {x: -6.87, y: -2.39}
+      moveToInteractPosition: {x: -6.52, y: 0}
     backgroundsToGo:
     - interactableName: Left Door
       backgroundToGo: Library 3
       keyToPress: 2
-      playerPositionInNextBackground: {x: 1891.79, y: -238.2}
+      playerPositionInNextBackground: {x: 17.87, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Right Door
       backgroundToGo: Library 2
       keyToPress: 1
-      playerPositionInNextBackground: {x: -1984.83, y: -251.24}
+      playerPositionInNextBackground: {x: -17.97, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Door
       backgroundToGo: Kuchai Town 3
       keyToPress: 3
-      playerPositionInNextBackground: {x: 4082.26, y: -232.5}
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
-      followPlayerPosition: {x: 4326.55, y: -210.6}
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 6
     currentBackgroundName: Library 3
     showPlayer: 1
-    playerPosition: {x: 1891.79, y: -238.2}
+    playerPosition: {x: 17.87, y: 0}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
-    - npcName: CoupleSit1
-      position: {x: -1758.69, y: -462.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: 
-    - npcName: CoupleSit2
-      position: {x: -814.69, y: -462.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: 
     - npcName: RetiredVeteran
-      position: {x: 1669.31, y: -199.32}
+      position: {x: 14.88, y: 0.86}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
-    - npcName: GossipSit1
-      position: {x: -441.69, y: -461.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: 
-    - npcName: GossipSit2
-      position: {x: 462.31, y: -462.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: 
     - npcName: BathroomGuy
-      position: {x: -1702.95, y: -161.84}
+      position: {x: -15.83, y: 0.99}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: 
     interactablesInScene:
+    - interactableName: CoupleSit1
+      interactableType: 0
+      isInteractable: 0
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: CoupleSit2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Couple Interaction
-      moveToInteractPosition: {x: -12.31, y: -2.2}
+      moveToInteractPosition: {x: -12.05, y: 0}
     - interactableName: RetiredVeteran
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Retired Veteran Interaction
-      moveToInteractPosition: {x: 13.36, y: -2.2}
+      moveToInteractPosition: {x: 12.87, y: 0}
+    - interactableName: GossipSit1
+      interactableType: 0
+      isInteractable: 0
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: GossipSit2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Gossip Sit Interaction
-      moveToInteractPosition: {x: 0.33, y: -2.2}
+      moveToInteractPosition: {x: 1.04, y: 0}
     - interactableName: Books 1
       interactableType: 1
       isInteractable: 1
@@ -1518,54 +1499,36 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 4 - Bathroom Interaction
-      moveToInteractPosition: {x: -13.82, y: -2.2}
+      moveToInteractPosition: {x: -14.02, y: 0}
     backgroundsToGo:
     - interactableName: Right Door
       backgroundToGo: Library 1
       keyToPress: 1
-      playerPositionInNextBackground: {x: -2438.99, y: -270.88}
+      playerPositionInNextBackground: {x: -22.33, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 6
     currentBackgroundName: Library 2
     showPlayer: 1
-    playerPosition: {x: -1984.83, y: -251.24}
+    playerPosition: {x: -17.97, y: 0}
     playerDirection: 1
     playerAnimationState: IdleRight
     npcsInScene:
-    - npcName: StudentSit1
-      position: {x: -460.05, y: -491.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: 
-    - npcName: StudentSit2
-      position: {x: 449.95, y: -492.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: 
-    - npcName: AspiringWriterSit
-      position: {x: -833.05, y: -491.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: 
     - npcName: GossipGirl3
-      position: {x: -1663.05, y: -209.32}
+      position: {x: -14.74, y: 0.76}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipRight
     - npcName: GossipGirl4
-      position: {x: -1552.05, y: -210.32}
+      position: {x: -13.62, y: 0.73}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipLeft
     - npcName: Manju
-      position: {x: 1665.96, y: -201.32}
+      position: {x: 14.95, y: 0.78}
       orderInLayer: 
       appear: 1
       flipped: 1
@@ -1575,17 +1538,22 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Gossip Stand Interaction
-      moveToInteractPosition: {x: -12.36, y: -2.2}
+      moveToInteractPosition: {x: -11.41, y: 0}
     - interactableName: AspiringWriterSit
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Aspiring Writer Interaction
-      moveToInteractPosition: {x: -10.25, y: -2.2}
+      moveToInteractPosition: {x: -10.98, y: 0}
+    - interactableName: StudentSit1
+      interactableType: 0
+      isInteractable: 0
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: StudentSit2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4 - Student Sit Interaction
-      moveToInteractPosition: {x: -0.2, y: -2.2}
+      moveToInteractPosition: {x: -0.01, y: 0}
     - interactableName: Books
       interactableType: 1
       isInteractable: 1
@@ -1600,77 +1568,92 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 4
-      moveToInteractPosition: {x: 13.42, y: -2.2}
+      moveToInteractPosition: {x: 13.13, y: 0}
     backgroundsToGo:
     - interactableName: Left Door
       backgroundToGo: Library 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 2394.23, y: -270.88}
+      playerPositionInNextBackground: {x: 22.56, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 7
     currentBackgroundName: Kuchai Town 3
     showPlayer: 1
-    playerPosition: {x: 4082.26, y: -232.51}
+    playerPosition: {x: 39.58, y: 0.18}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
-    - npcName: Seiji
-      position: {x: 4326.55, y: -169.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 1
-      animationState: IdleLeft
-    - npcName: Laisa
-      position: {x: -2084.45, y: -194.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: Chained
-    - npcName: Lien
-      position: {x: -1578.32, y: -180.47}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: IdleRight
-    - npcName: TownCrier
-      position: {x: -1287.45, y: -193.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: IdleRight
-    - npcName: Reader
-      position: {x: -496.45, y: -166.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 1
-      animationState: IdleLeft
     - npcName: Sato
-      position: {x: -4341.45, y: -204.32}
+      position: {x: -23.59, y: 0.58}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Soldier1
-      position: {x: -2469.45, y: -165.32}
+      position: {x: -17.82, y: 1.11}
       orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Soldier2
-      position: {x: -2283.45, y: -169.32}
+      position: {x: -15.91, y: 1.11}
       orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Soldier3
-      position: {x: -1897.45, y: -161.32}
+      position: {x: -12.69, y: 1.11}
       orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: IdleRight
+    - npcName: Reader
+      position: {x: -2.01, y: 1.12}
+      orderInLayer: 
+      appear: 1
+      flipped: 1
+      animationState: IdleLeft
+    - npcName: Seiji
+      position: {x: 41.67, y: 0.85}
+      orderInLayer: 
+      appear: 1
+      flipped: 1
+      animationState: IdleLeft
+    - npcName: Laisa
+      position: {x: -14.32, y: 0.84}
+      orderInLayer: 
+      appear: 1
+      flipped: 0
+      animationState: Chained
+    - npcName: TownCrier
+      position: {x: -7.44, y: 0.8}
+      orderInLayer: 
+      appear: 1
+      flipped: 0
+      animationState: IdleRight
+    - npcName: Lien
+      position: {x: -9.63, y: 1}
+      orderInLayer: 
+      appear: 1
+      flipped: 0
+      animationState: IdleRight
     interactablesInScene:
+    - interactableName: Reader
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Reader Interaction
+      moveToInteractPosition: {x: -3.93, y: 0}
+    - interactableName: Sato
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Sato Interaction
+      moveToInteractPosition: {x: -21.47, y: 0}
+    - interactableName: Soldier1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Soldier Interaction
+      moveToInteractPosition: {x: -10.94, y: 0}
     - interactableName: Bridge
       interactableType: 2
       isInteractable: 1
@@ -1680,56 +1663,41 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5
-      moveToInteractPosition: {x: -15.49, y: -2.15}
-    - interactableName: Soldier1
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: Main 5 - Soldier Interaction
-      moveToInteractPosition: {x: -15.49, y: -2.15}
-    - interactableName: Sato
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: Main 5 - Sato Interaction
-      moveToInteractPosition: {x: -38.18, y: -2.15}
-    - interactableName: Reader
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: Main 5 - Reader Interaction
-      moveToInteractPosition: {x: -7.03, y: -2.15}
+      moveToInteractPosition: {x: -12.07, y: 0}
     - interactableName: TownCrier
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Town Crier Interaction
-      moveToInteractPosition: {x: -12.93, y: -2.15}
+      moveToInteractPosition: {x: -7.41, y: 0}
     backgroundsToGo:
     - interactableName: Bridge
       backgroundToGo: Kuchai Town 4
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1701.75, y: -236.6}
+      playerPositionInNextBackground: {x: 15.33, y: 0.2}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
-      followPlayerPosition: {x: 1833.35, y: -179.32}
+      followPlayerPosition: {x: 17.23, y: 0.88}
   - sceneName: Scene 7
     currentBackgroundName: Kuchai Town 4
     showPlayer: 1
-    playerPosition: {x: -1523.99, y: -236.6}
-    playerDirection: -1
-    playerAnimationState: IdleLeft
+    playerPosition: {x: -15.1, y: 0.2}
+    playerDirection: 1
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Boater
-      position: {x: -970.65, y: -193.32}
+      position: {x: -9.34, y: 0.85}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: WaterLooker
-      position: {x: -70.65, y: -187.32}
+      position: {x: 0.13, y: 0.85}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -1747.12, y: -179.32}
+      position: {x: -17.15, y: 0.88}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -1739,12 +1707,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Boater Interaction
-      moveToInteractPosition: {x: -11.33, y: -2.07}
+      moveToInteractPosition: {x: -11.11, y: 0}
     - interactableName: WaterLooker
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Water Looker Interaction
-      moveToInteractPosition: {x: -2.8, y: -2.19}
+      moveToInteractPosition: {x: -1.82, y: 0}
     - interactableName: Left Side
       interactableType: 2
       isInteractable: 1
@@ -1754,7 +1722,7 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 5 - Leave Bridge Interaction
-      moveToInteractPosition: {x: 14.55, y: -2.1}
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Dock
       interactableType: 1
       isInteractable: 1
@@ -1764,50 +1732,56 @@ MonoBehaviour:
     - interactableName: Left Side
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 4530.73, y: -244.74}
+      playerPositionInNextBackground: {x: 41.93, y: 0.16}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
-      followPlayerPosition: {x: 4749.48, y: -174.32}
+      followPlayerPosition: {x: 44.36, y: 0.88}
     - interactableName: Right Side
       backgroundToGo: Kuchai Town 3
       keyToPress: 1
-      playerPositionInNextBackground: {x: -3706.83, y: -193.32}
+      playerPositionInNextBackground: {x: -34.09, y: 0.18}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 7
     currentBackgroundName: Kuchai Town 1
     showPlayer: 1
-    playerPosition: {x: -3436.47, y: -244.74}
+    playerPosition: {x: -31.75, y: 0.16}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: GossipGirl1
-      position: {x: 2027.04, y: -198.32}
+      position: {x: 18.09, y: 0.82}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipRight
     - npcName: GossipGirl2
-      position: {x: 2161.04, y: -194.32}
+      position: {x: 19.26, y: 0.87}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: GossipLeft
+    - npcName: TownCrier
+      position: {x: -1.92, y: 1.03}
+      orderInLayer: 
+      appear: 1
+      flipped: 0
+      animationState: IdleRight
     - npcName: MaleListener
-      position: {x: 260.04, y: -194.32}
+      position: {x: 1.5, y: 0.78}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: FemaleListener
-      position: {x: 437.04, y: -169.32}
+      position: {x: 3.2, y: 0.91}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -3819.96, y: -174.32}
+      position: {x: -29.8, y: 0.88}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -1817,12 +1791,12 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Gossip Interaction
-      moveToInteractPosition: {x: 16.51, y: -2.27}
+      moveToInteractPosition: {x: 16.12, y: 0}
     - interactableName: MaleListener
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Listener Interaction
-      moveToInteractPosition: {x: 6.71, y: -2.27}
+      moveToInteractPosition: {x: 5.62, y: 0}
     - interactableName: Sabina Door
       interactableType: 2
       isInteractable: 1
@@ -1847,64 +1821,70 @@ MonoBehaviour:
     - interactableName: Market
       backgroundToGo: Kuchai Town 2
       keyToPress: 3
-      playerPositionInNextBackground: {x: 4050.6, y: -235.45}
+      playerPositionInNextBackground: {x: 37.51, y: 0.36}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Bridge
       backgroundToGo: Kuchai Town 4
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1523.99, y: -236.6}
+      playerPositionInNextBackground: {x: -15.1, y: 0.2}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Tavern Door
       backgroundToGo: Tavern
       keyToPress: 3
-      playerPositionInNextBackground: {x: -2249.73, y: -266.93}
+      playerPositionInNextBackground: {x: -20.77, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Sabina Door
       backgroundToGo: Main Shop
       keyToPress: 3
-      playerPositionInNextBackground: {x: -2306.26, y: -249.14}
+      playerPositionInNextBackground: {x: -20.96, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 7
     currentBackgroundName: Kuchai Town 2
     showPlayer: 1
-    playerPosition: {x: 4050.6, y: -235.45}
+    playerPosition: {x: 37.51, y: 0.36}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Quan
-      position: {x: -1330.34, y: -202.32}
+      position: {x: -11.36, y: 0.8}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
+    - npcName: MaleCustomer
+      position: {x: 0.01, y: 1.02}
+      orderInLayer: 
+      appear: 0
+      flipped: 1
+      animationState: IdleLeft
     - npcName: Salesperson1
-      position: {x: -3967.34, y: -168.32}
+      position: {x: -36.32, y: 0.84}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson2
-      position: {x: -2485.34, y: -172.32}
+      position: {x: -22.37, y: 0.97}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Salesperson3
-      position: {x: 1915.66, y: -177.32}
+      position: {x: 13.11, y: 0.91}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Seiji
-      position: {x: 4251.06, y: -158.32}
+      position: {x: 39.88, y: 0.98}
       orderInLayer: 
       appear: 1
       flipped: 1
@@ -1914,22 +1894,22 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Quan Interaction
-      moveToInteractPosition: {x: -10.15, y: -2.06}
+      moveToInteractPosition: {x: -9.17, y: 0}
     - interactableName: Salesperson1
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Salesperson1 Interaction
-      moveToInteractPosition: {x: -34.84, y: -2.18}
+      moveToInteractPosition: {x: -34.06, y: 0}
     - interactableName: Salesperson2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Salesperson2 Interaction
-      moveToInteractPosition: {x: -21.06, y: -2.06}
+      moveToInteractPosition: {x: -20.01, y: 0}
     - interactableName: Salesperson3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Salesperson3 Interaction
-      moveToInteractPosition: {x: 19.48, y: -2.06}
+      moveToInteractPosition: {x: 15.27, y: 0}
     - interactableName: Right Side
       interactableType: 2
       isInteractable: 1
@@ -1944,61 +1924,37 @@ MonoBehaviour:
     - interactableName: Right Side
       backgroundToGo: Kuchai Town 1
       keyToPress: 1
-      playerPositionInNextBackground: {x: -4888.15, y: -244.74}
+      playerPositionInNextBackground: {x: -44.99, y: 0.16}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
-      followPlayerPosition: {x: -5066.96, y: -174.32}
+      followPlayerPosition: {x: -47, y: 0.88}
   - sceneName: Scene 8
     currentBackgroundName: Tavern
     showPlayer: 1
-    playerPosition: {x: -2249.73, y: -266.93}
+    playerPosition: {x: -20.77, y: 0}
     playerDirection: 1
-    playerAnimationState: IdleLeft
+    playerAnimationState: IdleRight
     npcsInScene:
-    - npcName: StudentSit3
-      position: {x: 185.73, y: -489.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: Sit
-    - npcName: StudentSit4
-      position: {x: 1050.73, y: -488.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: Sit
     - npcName: Barkeep
-      position: {x: -298.27, y: -178.32}
+      position: {x: -2.73, y: 0.97}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Myo
-      position: {x: -894.27, y: -163.32}
+      position: {x: -8.24, y: 1.04}
       orderInLayer: 2
       appear: 1
       flipped: 0
       animationState: Sit
-    - npcName: AdmirerSit1
-      position: {x: -1429.27, y: -488.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: Sit
-    - npcName: AdmirerSit2
-      position: {x: -534.27, y: -488.32}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: Sit
     - npcName: SocialClimberSit1
-      position: {x: 1161.73, y: -182.32}
+      position: {x: 10.82, y: 0.74}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: SocialClimberSit2
-      position: {x: 1518.73, y: -173.32}
+      position: {x: 14.17, y: 1.02}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -2008,27 +1964,37 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Barkeep Interaction
-      moveToInteractPosition: {x: -0.98, y: -2.47}
+      moveToInteractPosition: {x: -1.02, y: 0}
     - interactableName: Myo
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Myo Interaction
-      moveToInteractPosition: {x: -6.14, y: -2.47}
+      moveToInteractPosition: {x: -10.25, y: 0}
     - interactableName: StudentSit3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Student Interaction
-      moveToInteractPosition: {x: 5.95, y: -2.39}
+      moveToInteractPosition: {x: 6.31, y: 0}
+    - interactableName: StudentSit4
+      interactableType: 0
+      isInteractable: 0
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: AdmirerSit1
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Admirer Interaction
-      moveToInteractPosition: {x: -8.95, y: -2.39}
+      moveToInteractPosition: {x: -9.27, y: 0}
+    - interactableName: AdmirerSit2
+      interactableType: 0
+      isInteractable: 0
+      storyToPlay: 
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: SocialClimberSit2
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Social Climber Interaction
-      moveToInteractPosition: {x: 15.72, y: -2.39}
+      moveToInteractPosition: {x: 15.81, y: 0}
     - interactableName: Alcohol
       interactableType: 1
       isInteractable: 1
@@ -2043,56 +2009,56 @@ MonoBehaviour:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 2753.3, y: -244.74}
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
-      followPlayerPosition: {x: 2315.04, y: -217.32}
+      followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 9
     currentBackgroundName: Tavern
     showPlayer: 1
-    playerPosition: {x: -119.72, y: -257.86}
+    playerPosition: {x: -1.36, y: 0}
     playerDirection: 1
-    playerAnimationState: IdleLeft
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Barkeep
-      position: {x: -298.27, y: -178.32}
+      position: {x: -2.73, y: 0.97}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: IdleRight
     - npcName: Myo
-      position: {x: -894.27, y: -163.32}
+      position: {x: -8.24, y: 1.04}
       orderInLayer: 2
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: SocialClimberSit2
-      position: {x: -665.27, y: -189.32}
-      orderInLayer: 0
+      position: {x: -6.14, y: 0.7}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: BackSit
     - npcName: Soldier1
-      position: {x: 535.73, y: -188.32}
+      position: {x: 4.95, y: 0.91}
       orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Soldier2
-      position: {x: 787.73, y: -229.32}
-      orderInLayer: 2
+      position: {x: 7.26, y: 0.52}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Soldier3
-      position: {x: 50.73, y: -191.32}
+      position: {x: -1.39, y: 0.81}
       orderInLayer: 0
       appear: 1
       flipped: 0
       animationState: Sit
     - npcName: Lien
-      position: {x: 922.19, y: -213.47}
-      orderInLayer: 0
+      position: {x: 8.7, y: 0.68}
+      orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Sit
@@ -2101,59 +2067,49 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Barkeep Interaction
-      moveToInteractPosition: {x: -0.98, y: -2.47}
+      moveToInteractPosition: {x: -3.15, y: 0}
     - interactableName: Myo
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Myo Interaction
-      moveToInteractPosition: {x: -4.91, y: -2.39}
-    - interactableName: StudentSit3
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: Main 5 - Student Interaction
-      moveToInteractPosition: {x: 5.95, y: -2.39}
-    - interactableName: AdmirerSit1
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: Main 5 - Admirer Interaction
-      moveToInteractPosition: {x: -8.95, y: -2.39}
-    - interactableName: Soldier1
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: Main 5 - Rowdy Soldier Interaction
-      moveToInteractPosition: {x: 2.23, y: -2.47}
-    - interactableName: Lien
-      interactableType: 0
-      isInteractable: 1
-      storyToPlay: Main 5 - Lien Interaction
-      moveToInteractPosition: {x: 2.23, y: -2.47}
+      moveToInteractPosition: {x: -4.33, y: 0}
     - interactableName: Left Door
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 5 - Leave Tavern Interaction
       moveToInteractPosition: {x: 0, y: 0}
+    - interactableName: Soldier1
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Rowdy Soldier Interaction
+      moveToInteractPosition: {x: 2.98, y: 0}
+    - interactableName: Lien
+      interactableType: 0
+      isInteractable: 1
+      storyToPlay: Main 5 - Lien Interaction
+      moveToInteractPosition: {x: 2.98, y: 0}
     - interactableName: Soldier3
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Drunk Soldier Interaction
-      moveToInteractPosition: {x: -1.29, y: -2.39}
+      moveToInteractPosition: {x: 0.64, y: 0}
     backgroundsToGo:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: 2753.3, y: -244.74}
+      playerPositionInNextBackground: {x: 25.66, y: 0.16}
       playerDirectionInNextBackground: -1
-      followPlayer: 
+      followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 10
     currentBackgroundName: Kuchai Town 1
     showPlayer: 1
-    playerPosition: {x: 2753.3, y: -244.74}
+    playerPosition: {x: 25.66, y: 0.16}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Seiji
-      position: {x: 2405.04, y: -174.32}
+      position: {x: 21.97, y: 0.88}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -2183,46 +2139,46 @@ MonoBehaviour:
     - interactableName: Market
       backgroundToGo: Kuchai Town 2
       keyToPress: 3
-      playerPositionInNextBackground: {x: 4050.6, y: -235.45}
+      playerPositionInNextBackground: {x: 37.51, y: 0.36}
       playerDirectionInNextBackground: -1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Bridge
       backgroundToGo: Kuchai Town 4
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1523.99, y: -236.6}
+      playerPositionInNextBackground: {x: -15.1, y: 0.2}
       playerDirectionInNextBackground: 1
       followPlayer: Seiji
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Tavern Door
       backgroundToGo: Tavern
       keyToPress: 3
-      playerPositionInNextBackground: {x: -2249.73, y: -266.93}
+      playerPositionInNextBackground: {x: -20.77, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Sabina Door
       backgroundToGo: Main Shop
       keyToPress: 3
-      playerPositionInNextBackground: {x: -808.56, y: -237.97}
+      playerPositionInNextBackground: {x: -13.32, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 10
     currentBackgroundName: Main Shop
     showPlayer: 1
-    playerPosition: {x: -808.56, y: -237.97}
+    playerPosition: {x: -13.32, y: 0}
     playerDirection: 1
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sabina
-      position: {x: -164.22, y: -227.32}
+      position: {x: -7.81, y: 0.63}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -591.22, y: -210.32}
+      position: {x: -11.57, y: 0.7}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -2232,36 +2188,36 @@ MonoBehaviour:
   - sceneName: Scene 11
     currentBackgroundName: Kuchai Town 1
     showPlayer: 1
-    playerPosition: {x: -3742.79, y: -231.72}
-    playerDirection: -1
-    playerAnimationState: IdleLeft
+    playerPosition: {x: -31.82, y: 0.16}
+    playerDirection: 1
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Laisa
-      position: {x: -3488.96, y: -245.32}
+      position: {x: -28.84, y: 0.41}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Lien
-      position: {x: 2491.29, y: -220.32}
+      position: {x: 20.99, y: 0.63}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Soldier1
-      position: {x: 2740.04, y: -205.32}
+      position: {x: 23.14, y: 0.8}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Soldier2
-      position: {x: 2943.04, y: -207.32}
+      position: {x: 24.95, y: 0.8}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Soldier3
-      position: {x: 3146.04, y: -203.32}
+      position: {x: 27.08, y: 0.74}
       orderInLayer: 
       appear: 1
       flipped: 1
@@ -2271,18 +2227,18 @@ MonoBehaviour:
   - sceneName: Scene 11
     currentBackgroundName: Main Shop
     showPlayer: 1
-    playerPosition: {x: -808.56, y: -237.99}
+    playerPosition: {x: -13.32, y: 0}
     playerDirection: 1
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sabina
-      position: {x: -164.22, y: -227.32}
+      position: {x: -7.81, y: 0.63}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -591.22, y: -210.32}
+      position: {x: -11.57, y: 0.7}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -2317,21 +2273,21 @@ MonoBehaviour:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: -3436.47, y: -244.74}
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Right Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 1
-      playerPositionInNextBackground: {x: -2271.75, y: -246.51}
+      playerPositionInNextBackground: {x: -20.5, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 11
     currentBackgroundName: 1st Floor Hallway
     showPlayer: 1
-    playerPosition: {x: 1275.84, y: -246.51}
+    playerPosition: {x: 11.95, y: 0}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -2355,28 +2311,28 @@ MonoBehaviour:
     - interactableName: Door
       backgroundToGo: Main Shop
       keyToPress: 2
-      playerPositionInNextBackground: {x: 2277.64, y: -262.05}
+      playerPositionInNextBackground: {x: 20.86, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Stairs
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1996.91, y: -202.93}
+      playerPositionInNextBackground: {x: 18.46, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Double Door
       backgroundToGo: La Liryo Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1280.18, y: -237.06}
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 11
     currentBackgroundName: 2nd Floor Hallway
     showPlayer: 1
-    playerPosition: {x: -1277.97, y: -223.2}
+    playerPosition: {x: -11.75, y: 0}
     playerDirection: 1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -2395,7 +2351,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Books 1 Interaction
-      moveToInteractPosition: {x: -19.82, y: -1.88}
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Books 2
       interactableType: 1
       isInteractable: 1
@@ -2405,7 +2361,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Books 3 Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -19.38, y: 0}
     - interactableName: Stairs
       interactableType: 2
       isInteractable: 1
@@ -2415,21 +2371,21 @@ MonoBehaviour:
     - interactableName: Stairs
       backgroundToGo: 1st Floor Hallway
       keyToPress: 4
-      playerPositionInNextBackground: {x: 1275.84, y: -246.51}
+      playerPositionInNextBackground: {x: 11.95, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Ahlai Door
       backgroundToGo: Ahlai's Bedroom
       keyToPress: 3
-      playerPositionInNextBackground: {x: -122.45, y: -213.89}
+      playerPositionInNextBackground: {x: -1.05, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 11
     currentBackgroundName: Ahlai's Bedroom
     showPlayer: 1
-    playerPosition: {x: -122.45, y: -213.89}
+    playerPosition: {x: -1.05, y: 0}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -2448,7 +2404,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 7 - Bed Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -8.28, y: 0}
     - interactableName: Painting of Nari
       interactableType: 1
       isInteractable: 1
@@ -2463,22 +2419,22 @@ MonoBehaviour:
     - interactableName: Door
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1277.97, y: -223.2}
+      playerPositionInNextBackground: {x: -11.75, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 12
     currentBackgroundName: Ahlai's Bedroom
     showPlayer: 1
-    playerPosition: {x: -810.86, y: -202.98}
+    playerPosition: {x: -8.18, y: 0}
     playerDirection: 1
-    playerAnimationState: IdleLeft
+    playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sabina
-      position: {x: -511.46, y: -196.32}
+      position: {x: -5.19, y: 0.5}
       orderInLayer: 
       appear: 1
-      flipped: 1
+      flipped: 0
       animationState: IdleLeft
     interactablesInScene:
     - interactableName: Conspiracy Wall
@@ -2495,7 +2451,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 8 - Bed Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -8.28, y: 0}
     - interactableName: Painting of Nari
       interactableType: 1
       isInteractable: 1
@@ -2510,14 +2466,14 @@ MonoBehaviour:
     - interactableName: Door
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1277.97, y: -223.2}
+      playerPositionInNextBackground: {x: -11.75, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 12
     currentBackgroundName: 2nd Floor Hallway
     showPlayer: 1
-    playerPosition: {x: -1277.97, y: -223.2}
+    playerPosition: {x: -11.75, y: 0}
     playerDirection: 1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -2536,7 +2492,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Books 1 Interaction
-      moveToInteractPosition: {x: -19.82, y: -1.88}
+      moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Books 2
       interactableType: 1
       isInteractable: 1
@@ -2546,7 +2502,7 @@ MonoBehaviour:
       interactableType: 1
       isInteractable: 1
       storyToPlay: Main 3 - Books 3 Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: -19.38, y: 0}
     - interactableName: Stairs
       interactableType: 2
       isInteractable: 1
@@ -2556,21 +2512,21 @@ MonoBehaviour:
     - interactableName: Stairs
       backgroundToGo: 1st Floor Hallway
       keyToPress: 4
-      playerPositionInNextBackground: {x: 1275.84, y: -246.51}
+      playerPositionInNextBackground: {x: 11.95, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Ahlai Door
       backgroundToGo: Ahlai's Bedroom
       keyToPress: 3
-      playerPositionInNextBackground: {x: -122.45, y: -213.89}
+      playerPositionInNextBackground: {x: -1.05, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 12
     currentBackgroundName: 1st Floor Hallway
     showPlayer: 1
-    playerPosition: {x: 1275.84, y: -246.51}
+    playerPosition: {x: 11.95, y: 0}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -2594,31 +2550,43 @@ MonoBehaviour:
     - interactableName: Door
       backgroundToGo: Main Shop
       keyToPress: 2
-      playerPositionInNextBackground: {x: 2277.64, y: -262.05}
+      playerPositionInNextBackground: {x: 20.86, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Stairs
       backgroundToGo: 2nd Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: 802.43, y: -227.16}
+      playerPositionInNextBackground: {x: 18.46, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Double Door
       backgroundToGo: La Liryo Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: 1280.18, y: -237.06}
+      playerPositionInNextBackground: {x: 11.9, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 12
     currentBackgroundName: Main Shop
     showPlayer: 1
-    playerPosition: {x: -928.56, y: -249.14}
+    playerPosition: {x: -13.32, y: 0}
     playerDirection: 1
-    playerAnimationState: IdleLeft
-    npcsInScene: []
+    playerAnimationState: IdleRight
+    npcsInScene:
+    - npcName: Sabina
+      position: {x: -7.81, y: 0.63}
+      orderInLayer: 
+      appear: 1
+      flipped: 1
+      animationState: IdleLeft
+    - npcName: Seiji
+      position: {x: -11.57, y: 0.7}
+      orderInLayer: 
+      appear: 1
+      flipped: 0
+      animationState: IdleRight
     interactablesInScene:
     - interactableName: Potion Cabinet
       interactableType: 1
@@ -2649,21 +2617,21 @@ MonoBehaviour:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
       keyToPress: 2
-      playerPositionInNextBackground: {x: -3436.47, y: -244.74}
+      playerPositionInNextBackground: {x: 0, y: 0}
       playerDirectionInNextBackground: -1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: Right Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 1
-      playerPositionInNextBackground: {x: -2271.75, y: -246.51}
+      playerPositionInNextBackground: {x: -20.5, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 12
     currentBackgroundName: La Liryo Hallway
     showPlayer: 1
-    playerPosition: {x: 1280.18, y: -237.06}
+    playerPosition: {x: 11.9, y: 0}
     playerDirection: -1
     playerAnimationState: IdleLeft
     npcsInScene: []
@@ -2687,26 +2655,26 @@ MonoBehaviour:
     - interactableName: Sabina Door
       backgroundToGo: 1st Floor Hallway
       keyToPress: 3
-      playerPositionInNextBackground: {x: -1275.75, y: -246.51}
+      playerPositionInNextBackground: {x: -11.64, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: 
       followPlayerPosition: {x: 0, y: 0}
     - interactableName: La Liryo Door
       backgroundToGo: La Liryo Room
       keyToPress: 3
-      playerPositionInNextBackground: {x: -278.57, y: -253.32}
+      playerPositionInNextBackground: {x: -2.65, y: 0}
       playerDirectionInNextBackground: 1
       followPlayer: IdleRight
       followPlayerPosition: {x: 0, y: 0}
   - sceneName: Scene 12
     currentBackgroundName: La Liryo Room
     showPlayer: 1
-    playerPosition: {x: -278.57, y: -253.32}
+    playerPosition: {x: -2.65, y: 0}
     playerDirection: 1
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Sabina
-      position: {x: 255.57, y: -233.32}
+      position: {x: 2.3, y: 0.53}
       orderInLayer: 
       appear: 1
       flipped: 1

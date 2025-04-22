@@ -66,6 +66,10 @@ choice in -1
 		HideTextbox(true)
 		[wait]RemoveScene()
 		[wait]ShowScene("Scene 9" "Tavern")
+		RemoveFromScene("StudentSit3")
+		RemoveFromScene("StudentSit4")
+		RemoveFromScene("AdmirerSit1")
+		RemoveFromScene("AdmirerSit2")
 
 		[wait]HideCG()
 
