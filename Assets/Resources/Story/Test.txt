@@ -1,3 +1,3 @@
 input
 
-ShowScene("Scene 12" "2nd Floor Hallway")
+ShowScene("Scene 9" "Tavern")

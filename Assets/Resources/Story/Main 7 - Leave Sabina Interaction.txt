@@ -1,4 +1,4 @@
-[wait]MovePlayerToInteract(-x -25.02 -y -2.43)
+[wait]MovePlayerToInteract(-x -19.52 -y 0)
 
 pixel Ahlai as <playerName> "Lady Sabina said not to go out."
 

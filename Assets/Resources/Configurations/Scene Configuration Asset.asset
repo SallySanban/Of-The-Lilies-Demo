@@ -2574,19 +2574,7 @@ MonoBehaviour:
     playerPosition: {x: -13.32, y: 0}
     playerDirection: 1
     playerAnimationState: IdleRight
-    npcsInScene:
-    - npcName: Sabina
-      position: {x: -7.81, y: 0.63}
-      orderInLayer: 
-      appear: 1
-      flipped: 1
-      animationState: IdleLeft
-    - npcName: Seiji
-      position: {x: -11.57, y: 0.7}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: IdleRight
+    npcsInScene: []
     interactablesInScene:
     - interactableName: Potion Cabinet
       interactableType: 1

@@ -24,7 +24,7 @@ if($SeijiTalkedTo)
 }
 else
 {
-	[wait]MovePlayerToInteract(-x -25.02 -y -2.43)
+	[wait]MovePlayerToInteract(-x -19.52 -y 0)
 
 	pixel Ahlai as <playerName> "Don't I have to find Seiji first?"
 
