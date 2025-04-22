@@ -35,4 +35,5 @@ choice in 2
 
 	- Keep looking
 		HideTextbox(true)
+		Wait(0.5)
 }

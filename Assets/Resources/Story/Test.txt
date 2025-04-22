@@ -1,3 +1,5 @@
 input
 
-ShowScene("Scene 9" "Tavern")
+ShowLIScreen()
+
+Ahlai "<objectPronoun>"
