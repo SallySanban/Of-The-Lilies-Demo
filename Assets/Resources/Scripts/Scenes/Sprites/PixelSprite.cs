@@ -61,6 +61,7 @@ public class PixelSprite
                     target,
                     adjustedSpeed * Time.deltaTime
                 );
+                PlayFootstepSound();
             }
             else
             {
@@ -69,6 +70,7 @@ public class PixelSprite
                     target,
                     adjustedSpeed * Time.deltaTime
                 );
+                PlayFootstepSound();
             }
             yield return null;
         }
