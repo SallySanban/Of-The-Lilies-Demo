@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class QteButtonBar
 {
@@ -65,6 +67,8 @@ public class QteButtonBar
         currentButtonIndex++;
         currentButton = currentButtons[currentButtonIndex];
 
+        PlayButtonSFX();
+
         currentButton.arrow.SetActive(true);
     }
 
@@ -79,6 +83,8 @@ public class QteButtonBar
 
         currentButtonIndex = 0;
         currentButton = currentButtons[currentButtonIndex];
+
+        PlayButtonResetSFX();
 
         currentButton.arrow.SetActive(true);
     }
@@ -100,5 +106,20 @@ public class QteButtonBar
 
             buttonBar.value = sliderTimer;
         }
+    }
+
+    //FMOD Button scripts
+    private void PlayButtonSFX()
+    {
+            FMOD.Studio.EventInstance sfxButton;
+            sfxButton = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SFX_CombatButton");
+            sfxButton.start();
+    }
+
+    private void PlayButtonResetSFX()
+    {
+        FMOD.Studio.EventInstance sfxButtonReset;
+        sfxButtonReset = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SFX_CombatButtonReset");
+        sfxButtonReset.start();
     }
 }
