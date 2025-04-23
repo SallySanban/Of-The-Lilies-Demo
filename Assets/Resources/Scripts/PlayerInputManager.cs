@@ -94,6 +94,8 @@ public class PlayerInputManager : MonoBehaviour
     {
         if (!isRunningConversation) return;
 
+        if (SceneManager.Instance.inCombat) return;
+
         ChoiceContainer choiceContainer = DialogueManager.Instance.currentTextbox?.currentChoiceContainer;
 
         if (choiceContainer != null && choiceContainer.isWaitingForUserChoice)
@@ -111,6 +113,8 @@ public class PlayerInputManager : MonoBehaviour
         {
             return;
         }
+
+        if (SceneManager.Instance.inCombat) return;
 
         if ((isRunningConversation && !InteractableManager.Instance.playerInsideStoryTrigger) || InteractableManager.Instance.playerInsideStopTrigger)
         {

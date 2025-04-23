@@ -35,6 +35,15 @@ public class CombatManager
 
     public int currentButtonIndex = 0;
 
+    // List of animation states that are considered "attack" animations
+    private readonly string[] attackAnimations = new string[] 
+    {
+        "AhlaiAttackEnemyHit",
+        "AhlaiAttackEnemyDodge",
+        "EnemyAttackAhlaiHit",
+        "EnemyAttackAhlaiDodge"
+    };
+
     public CombatManager()
     {
         Instance = this;
@@ -53,9 +62,9 @@ public class CombatManager
 
     private IEnumerator StartCombat()
     {
-        Vector2 positionA = combatSprite.root.transform.Find(POSITION_A).transform.position;
-        Vector2 positionB = combatSprite.root.transform.Find(POSITION_B).transform.position;
-        Vector2 positionC = combatSprite.root.transform.Find(POSITION_C).transform.position;
+        Transform positionA = combatSprite.root.transform.Find(POSITION_A).transform;
+        Transform positionB = combatSprite.root.transform.Find(POSITION_B).transform;
+        Transform positionC = combatSprite.root.transform.Find(POSITION_C).transform;
 
         /* 
         * TODO: improve where to put this combat sequence to account for any combat situation
@@ -72,30 +81,51 @@ public class CombatManager
         yield return new WaitForSeconds(1f);
 
         //position A to C
-        combatSprite.animator.SetBool("EnemyMiss", true);
+        yield return SlidingBarSequence(positionA, 2f);
 
         //position C to A
         yield return ButtonBarSequence(positionC, 3, 0.05f);
 
         //position A to B
         yield return ButtonBarSequence(positionA, 4, 0.05f);
+    }
 
-        //position B to A
-        yield return SlidingBarSequence(positionB, 2f);
-
+    private IEnumerator WaitForAnimationComplete()
+    {
+        yield return null;
         
+        while (IsInAttackAnimation())
+        {
+            yield return null;
+        }
+        
+        yield return null;
+    }
 
-
+    private bool IsInAttackAnimation()
+    {
+        var currentInfo = combatSprite.animator.GetCurrentAnimatorStateInfo(0);
+        
+        // Check if current animation is any of our attack animations
+        foreach (string attackAnim in attackAnimations)
+        {
+            if (currentInfo.IsName(attackAnim))
+            {
+                return true;
+            }
+        }
+        
+        return false;
     }
 
     //ahlai attacking
-    private IEnumerator ButtonBarSequence(Vector2 position, int numberOfKeys, float speed)
+    private IEnumerator ButtonBarSequence(Transform positionParent, int numberOfKeys, float speed)
     {
         currentButtonIndex = 0;
 
         GenerateKeysForButtonBar(numberOfKeys);
 
-        currentButtonBar = new QteButtonBar(qteButtonBarPrefab, position, currentKeySequence.Select(item => item.Item1).ToList(), speed);
+        currentButtonBar = new QteButtonBar(qteButtonBarPrefab, positionParent, currentKeySequence.Select(item => item.Item1).ToList(), speed);
 
         yield return currentButtonBar.Timer();
 
@@ -104,13 +134,13 @@ public class CombatManager
         if (currentButtonBar.stopTimer)
         {
             combatSprite.animator.SetBool("AhlaiMiss", true);
-            //loss += 1;
         }
         else
         {
             combatSprite.animator.SetBool("AhlaiHit", true);
-            //wins += 1;
         }
+
+        yield return WaitForAnimationComplete();
 
         currentButtonBar = null;
 
@@ -132,29 +162,28 @@ public class CombatManager
     }
 
     //enemy attacking
-    private IEnumerator SlidingBarSequence(Vector2 position, float speed)
+    private IEnumerator SlidingBarSequence(Transform positionParent, float speed)
     {
         SliderLength length = GetLengthForSlidingBar();
 
-        currentSlidingBar = new QteSlidingBar(qteSlidingBarPrefab, position, length, speed);
+        currentSlidingBar = new QteSlidingBar(qteSlidingBarPrefab, positionParent, length, speed);
 
         yield return currentSlidingBar.MoveArrow();
 
         bool success = currentSlidingBar.CheckForSuccess();
 
+        Object.Destroy(currentSlidingBar.root);
+
         if (success)
         {
             combatSprite.animator.SetBool("EnemyMiss", true);
-            //wins += 1;
         }
         else
         {
             combatSprite.animator.SetBool("EnemyHit", true);
-            //loss += 1;
-
         }
 
-        Object.Destroy(currentSlidingBar.root);
+        yield return WaitForAnimationComplete();
 
         currentSlidingBar = null;
     }

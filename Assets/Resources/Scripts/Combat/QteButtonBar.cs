@@ -23,11 +23,11 @@ public class QteButtonBar
 
     public bool allButtonsCorrect = false;
 
-    public QteButtonBar(GameObject prefab, Vector2 position, List<string> buttonSequence, float speed)
+    public QteButtonBar(GameObject prefab, Transform positionParent, List<string> buttonSequence, float speed)
     {
         if (prefab != null)
         {
-            root = Object.Instantiate(prefab, position, Quaternion.identity, sceneManager.combatManager.combatSprite.root.transform);
+            root = Object.Instantiate(prefab, positionParent.position, Quaternion.identity, positionParent);
 
             buttonBar = root.GetComponent<Slider>();
             keyParent = root.transform.Find("Keys").gameObject;

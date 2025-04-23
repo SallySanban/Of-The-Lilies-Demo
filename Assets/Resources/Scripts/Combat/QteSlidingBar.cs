@@ -26,11 +26,11 @@ public class QteSlidingBar
     private const float minZoneWidth = 350f;
     private const float maxZoneWidth = 1000f;
 
-    public QteSlidingBar(GameObject prefab, Vector2 position, CombatManager.SliderLength sliderLength, float speed)
+    public QteSlidingBar(GameObject prefab, Transform positionTransform, CombatManager.SliderLength sliderLength, float speed)
     {
         if (prefab != null)
         {
-            root = Object.Instantiate(prefab, position, Quaternion.identity, sceneManager.combatManager.combatSprite.root.transform);
+            root = Object.Instantiate(prefab, positionTransform.position, Quaternion.identity, positionTransform);
 
             fullBar = root.transform.Find(FULL_BAR).GetComponent<RectTransform>();
             successZone = fullBar.Find(SUCCESS_ZONE).GetComponent<RectTransform>();
