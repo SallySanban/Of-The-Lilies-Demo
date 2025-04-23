@@ -21,11 +21,12 @@ public class SceneManager : MonoBehaviour
 
     public InteractableManager interactableManager { get; private set; }
     public NPCManager npcManager { get; private set; }
+    public CombatManager combatManager { get; private set; }
 
     public const string SPRITES_OBJECTNAME = "Sprites";
 
     [SerializeField] private Camera pixelCamera;
-    [SerializeField] private CinemachineVirtualCamera playerCamera;
+    [SerializeField] public CinemachineVirtualCamera playerCamera;
     [SerializeField] private CinemachineVirtualCamera panCamera;
     private CinemachineConfiner playerCamConfiner;
     private CinemachineConfiner panCamConfiner;
@@ -34,15 +35,14 @@ public class SceneManager : MonoBehaviour
     [SerializeField] private Volume globalVolume;
     [SerializeField] private Light2D globalLight;
 
-
     [HideInInspector] public GameObject currentScene = null;
     [HideInInspector] public string currentSceneName;
     [HideInInspector] public string currentBackground;
+    [HideInInspector] public string currentGamePart = "Prologue";
     public Player player = null;
 
     [HideInInspector] public string MC_NAME = "Ahlai";
     [HideInInspector] public float TRANSITION_WAIT_TIME = 0.3f;
-    [HideInInspector] public bool scrollBackground = false;
     [HideInInspector] public bool followPlayer = false;
     [HideInInspector] public NPC follower = null;
 
@@ -51,6 +51,7 @@ public class SceneManager : MonoBehaviour
     private bool isRunningConversation => DialogueManager.Instance.conversationManager.isRunning;
 
     [HideInInspector] public string currentBackgroundInteractableName = "";
+    [HideInInspector] public bool inCombat = false;
 
     private void Awake()
     {
@@ -74,6 +75,7 @@ public class SceneManager : MonoBehaviour
 
         interactableManager = new InteractableManager();
         npcManager = new NPCManager();
+        combatManager = new CombatManager();
 
         playerCamConfiner = playerCamera.GetComponent<CinemachineConfiner>();
         panCamConfiner = panCamera.GetComponent<CinemachineConfiner>();
@@ -235,6 +237,23 @@ public class SceneManager : MonoBehaviour
         {
             player = null;
         }
+    }
+
+    [ContextMenu("Change Length")]
+    public void ChangeLength()
+    {
+        StartCombat("Ahlai vs NPC", new Vector2(58.46f, -2.697f));
+    }
+
+    public void StartCombat(string combatName, Vector2 startingPosition)
+    {
+        inCombat = true;
+
+        string filename = $"[{currentGamePart}] {combatName}";
+
+        GameObject combatSprite = FilePaths.GetPrefabFromPath(FilePaths.combatPrefabPath, filename);
+
+        combatManager.Initialize(combatSprite, pixelContainer, startingPosition);
     }
 
     public void FollowPlayer(string npcName, Vector2 followNPCPosition = default)

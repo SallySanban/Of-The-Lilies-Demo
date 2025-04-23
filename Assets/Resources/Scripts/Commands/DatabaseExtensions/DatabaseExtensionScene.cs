@@ -34,6 +34,8 @@ namespace Commands
             database.AddCommand("FreezePlayer", new Action<string>(FreezePlayer));
             database.AddCommand("ChangeRender", new Action<string[]>(ChangeRender));
             database.AddCommand("ChangeLighting", new Action<string>(ChangeLighting));
+            database.AddCommand("StartCombat", new Action<string[]>(StartCombat));
+            database.AddCommand("ShowNPC", new Action<string[]>(ShowNPC));
         }
 
         private static void ShowScene(string[] data)
@@ -408,6 +410,45 @@ namespace Commands
             if (float.TryParse(data, out float value))
             {
                 SceneManager.Instance.ChangeLighting(value);
+            }
+        }
+
+        private static void StartCombat(string[] data)
+        {
+            var parameters = ConvertDataToParameters(data);
+
+            float x;
+            float y;
+
+            parameters.TryGetValue(xParameter, out x, defaultValue: 0);
+            parameters.TryGetValue(yParameter, out y, defaultValue: 0);
+
+            string combatName = data[0];
+            Vector2 startingPosition = new Vector2(x, y);
+
+            SceneManager.Instance.StartCombat(combatName, startingPosition);
+        }
+
+        private static void ShowNPC(string[] data)
+        {
+            string name = data[0];
+
+            if (bool.TryParse(data[1], out bool show))
+            {
+
+                if (name.Equals(SceneManager.Instance.MC_NAME))
+                {
+                    PixelSprite player = SceneManager.Instance.player;
+                    GameObject root = SceneManager.Instance.player.root;
+
+                    root.SetActive(show);
+                }
+                else
+                {
+                    NPC npc = NPCManager.Instance.GetNPC(name);
+
+                    npc.root.SetActive(show);
+                }
             }
         }
     }

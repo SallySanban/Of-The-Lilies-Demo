@@ -169,8 +169,6 @@ public class ChoiceContainer
 
         string selectedChoice = buttons[currentSelectedIndex].choiceText.text;
 
-        Debug.Log(selectedChoice);
-
         if (selectedChoice == nextString)
         {
             currentChoiceSetIndex++;

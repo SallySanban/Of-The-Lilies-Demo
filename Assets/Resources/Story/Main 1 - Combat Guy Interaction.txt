@@ -15,20 +15,25 @@ choice in -1
 
 		pixel MaleNPC4 as Uncle "We couldn't start without you. Come on."
 
-		[wait]Blackout()
-		HideTextbox(true)
-		Wait(2.0)
-		[wait]HideCG()
+		HideTextbox(false)
 
-		pixel MaleNPC4 as Uncle "Alright, <playerName>. That's it for today."
+		[wait]RemoveFromScene("Axe Trigger")
+		[wait]MoveNPC(Ahlai -x 55.61 -y 0.24 -spd 5)
+		FlipNPC("MaleNPC4" "Right")
+		SetNPCPosition("MaleNPC5" -x 61.25 -y 0.52)
+		ChangeAnimationState("MaleNPC5" StopSwing true)
+		[wait]PanCamera(-x 58.5 -spd 2)
 
-		pixel MaleNPC4 as Uncle "Not so bad for the next-in-line, but you've still got ways to go!"
+		pixel MaleNPC5 as Uncle "<playerName>, you came! Great!"
 
-		pixel MaleNPC4 as Uncle "It's getting late. You'll be meeting with your dad at the cliff for the Hinukaw Ritual, right?"
+		pixel MaleNPC5 as Uncle "But if you're our future chieftain, then let's make sure you are ready to fight."
+		
+		pixel MaleNPC5 "I won't go easy on you..."
 
-		pixel MaleNPC4 as Uncle "Good luck with that. We'll be waiting for you to start the grand celebration."
+		HideTextbox(false)
 
-		$CombatQuestCompleted = true
+		StartCombat("Ahlai vs NPC" -x 58.46 -y -2.697)
+		ShowNPC(Ahlai false)
+		ShowNPC(MaleNPC5 false)
+		ResetCamera(true)
 }
-
-HideTextbox(false)

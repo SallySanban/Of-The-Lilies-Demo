@@ -39,15 +39,17 @@ public class PlayerInputManager : MonoBehaviour
         actions.Add((input.actions["Move"], MovePlayer));
         actions.Add((input.actions["Interact"], Interact));
         actions.Add((input.actions["SwitchBackground"], SwitchBackground));
+        actions.Add((input.actions["ButtonBarCombat"], ButtonBarCombat));
+        actions.Add((input.actions["SlidingBarCombat"], SlidingBarCombat));
     }
 
     private void OnEnable()
     {
-        foreach(var inputAction in actions)
+        foreach (var inputAction in actions)
         {
             inputAction.action.performed += inputAction.command;
 
-            if(inputAction.action == input.actions["Move"])
+            if (inputAction.action == input.actions["Move"])
             {
                 inputAction.action.canceled += inputAction.command;
             }
@@ -77,11 +79,11 @@ public class PlayerInputManager : MonoBehaviour
         {
             float axisValue = context.ReadValue<float>();
 
-            if(axisValue < 0)
+            if (axisValue < 0)
             {
                 choiceContainer.MoveSelection(1);
             }
-            else if(axisValue > 0)
+            else if (axisValue > 0)
             {
                 choiceContainer.MoveSelection(-1);
             }
@@ -175,6 +177,55 @@ public class PlayerInputManager : MonoBehaviour
 
             StartCoroutine(sceneManager.SwitchBackground(keyToPress, collidingInteractable));
         }
+    }
+
+    public void ButtonBarCombat(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+
+        if (!SceneManager.Instance.inCombat) return;
+
+        if (CombatManager.Instance.currentButtonBar == null) return;
+
+        Vector2 direction = context.ReadValue<Vector2>();
+
+        CombatManager combatManager = CombatManager.Instance;
+        List<(string, Vector2)> keySequence = combatManager.currentKeySequence;
+
+        if (combatManager.currentButtonIndex <= keySequence.Count - 1)
+        {
+            if (keySequence[combatManager.currentButtonIndex].Item2 == direction)
+            {
+                if (combatManager.currentButtonIndex == keySequence.Count - 1)
+                {
+                    combatManager.currentButtonBar.allButtonsCorrect = true;
+                    combatManager.currentButtonIndex = 0;
+                }
+                else
+                {
+                    combatManager.currentButtonIndex++;
+                    combatManager.currentButtonBar.NextButton();
+                }
+            }
+            else
+            {
+                combatManager.currentButtonIndex = 0;
+                combatManager.currentButtonBar.ResetButton();
+            }
+        }
+    }
+
+    public void SlidingBarCombat(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+
+        if (!SceneManager.Instance.inCombat) return;
+
+        if (CombatManager.Instance.currentSlidingBar == null) return;
+
+        CombatManager combatManager = CombatManager.Instance;
+
+        combatManager.currentSlidingBar.stopArrow = true;
     }
 }
 

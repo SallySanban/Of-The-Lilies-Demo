@@ -1,5 +1,5 @@
 input
 
-ShowLIScreen()
-
-Ahlai "<objectPronoun>"
+$CanDoCombat = true
+$CombatQuestCompleted = false
+ShowScene("Scene 2" "Tayabac Village")

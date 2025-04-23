@@ -28,7 +28,6 @@ public class NPC : PixelSprite
         appear = npcData.appear;
         flipped = npcData.flipped;
 
-
         SetupNPC(appear, lastPosition, lastAnimationState, flipped, orderInLayer);
 
         //FOR DEBUGGING PURPOSES

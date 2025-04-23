@@ -17,6 +17,9 @@ public class FilePaths
     public static string graphicPanelImagesPath => $"Art/CG/Images/{id}";
     public static string backgroundPrefabPath => $"Art/Backgrounds/{id}/{id}";
     public static string spritesPrefabPath => $"Art/Sprites/{id}/{id}";
+    public static string combatPrefabPath => $"Art/UI/Combat/{id}";
+    public static string qteButtonPath => $"Art/UI/Combat/QTE/Images/{id}";
+    public static string qteBarPrefabPath => $"Art/UI/Combat/QTE/{id}";
 
     public static string runtimePath
     {

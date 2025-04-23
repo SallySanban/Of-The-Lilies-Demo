@@ -188,7 +188,7 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC2
-      position: {x: 42.98, y: 0.77}
+      position: {x: 22.42, y: 0.77}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -200,16 +200,16 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC4
-      position: {x: 57.78, y: 0.76}
+      position: {x: 47.44, y: 0.76}
       orderInLayer: 
       appear: 1
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC5
-      position: {x: 62.91, y: 0.44}
+      position: {x: 61.25, y: 0.52}
       orderInLayer: 
       appear: 1
-      flipped: 0
+      flipped: 1
       animationState: Swinging
     - npcName: FemNPC1
       position: {x: 13.85, y: 0.59}
@@ -259,7 +259,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - To Do Interaction
-      moveToInteractPosition: {x: 45.01, y: 0.24}
+      moveToInteractPosition: {x: 24.63, y: 0.24}
     - interactableName: MaleNPC3
       interactableType: 0
       isInteractable: 1
@@ -269,7 +269,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Combat Guy Interaction
-      moveToInteractPosition: {x: 55.95, y: 0.24}
+      moveToInteractPosition: {x: 45.55, y: 0.24}
     - interactableName: FemNPC1
       interactableType: 0
       isInteractable: 1

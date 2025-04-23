@@ -109,6 +109,8 @@ SetCamera(-x xPosition -y yPosition)
 FreezePlayer(true/false)
 ChangeSaturation(number)
 ChangeLighting(number)
+StartCombat("Combat Name" -x xPosition -y yPosition)
+ShowNPC(NPCName/Ahlai true/false)
 
 === Effects ===
 ScreenShake()
