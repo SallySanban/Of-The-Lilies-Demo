@@ -194,8 +194,10 @@ public class PlayerInputManager : MonoBehaviour
 
         if (combatManager.currentButtonIndex <= keySequence.Count - 1)
         {
+            //if the key pressed is correct
             if (keySequence[combatManager.currentButtonIndex].Item2 == direction)
             {
+                //if the key is the last in the sequence
                 if (combatManager.currentButtonIndex == keySequence.Count - 1)
                 {
                     combatManager.currentButtonBar.allButtonsCorrect = true;
@@ -207,7 +209,7 @@ public class PlayerInputManager : MonoBehaviour
                     combatManager.currentButtonBar.NextButton();
                 }
             }
-            else
+            else //if key pressed is not correct
             {
                 combatManager.currentButtonIndex = 0;
                 combatManager.currentButtonBar.ResetButton();

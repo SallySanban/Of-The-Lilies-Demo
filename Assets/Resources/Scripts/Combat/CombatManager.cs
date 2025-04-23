@@ -88,6 +88,7 @@ public class CombatManager
 
     }
 
+    //ahlai attacking
     private IEnumerator ButtonBarSequence(Vector2 position, int numberOfKeys, float speed)
     {
         currentButtonIndex = 0;
@@ -130,6 +131,7 @@ public class CombatManager
         //count += 1;
     }
 
+    //enemy attacking
     private IEnumerator SlidingBarSequence(Vector2 position, float speed)
     {
         SliderLength length = GetLengthForSlidingBar();
