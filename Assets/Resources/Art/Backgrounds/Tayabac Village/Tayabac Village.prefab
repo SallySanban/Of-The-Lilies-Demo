@@ -1170,7 +1170,6 @@ Transform:
   - {fileID: 1505466638926593630}
   - {fileID: 7494689236915449835}
   - {fileID: 2696846092453816665}
-  - {fileID: 7841381697528733583}
   - {fileID: 4124649549466011173}
   m_Father: {fileID: 662648714745923990}
   m_RootOrder: -1
@@ -2365,69 +2364,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.102160454, y: 1.899373}
   m_EdgeRadius: 0
---- !u!1 &8331928505709155961
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7841381697528733583}
-  - component: {fileID: 8417346505648860926}
-  m_Layer: 12
-  m_Name: SFXAxeGuy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7841381697528733583
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8331928505709155961}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 62.33, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8586023574008071053}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8417346505648860926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8331928505709155961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1087846990
-      Data2: 1203446383
-      Data3: -40982143
-      Data4: 1367628013
-    Path: event:/SFX/SFX_AxeSwing
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &8914845702229565290
 GameObject:
   m_ObjectHideFlags: 0

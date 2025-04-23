@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using FMODUnity;
 
 public class QteSlidingBar
 {
@@ -91,9 +92,10 @@ public class QteSlidingBar
 
         if (arrowCollider != null && arrowCollider.CompareTag("Arrow"))
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_CombatCorrectBar"); //FMOD correct sfx
             return true;
         }
-
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_CombatWrongBar"); //FMOD wrong sound sfx
         return false;
     }
 
