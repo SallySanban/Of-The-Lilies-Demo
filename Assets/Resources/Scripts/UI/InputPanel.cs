@@ -70,7 +70,7 @@ public class InputPanel
 
         foreach (Toggle toggle in pronounToggles)
         {
-            toggle.isOn = true;
+            toggle.isOn = false;
 
             toggle.onValueChanged.AddListener(state =>
             {

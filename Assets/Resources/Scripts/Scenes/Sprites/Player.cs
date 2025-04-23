@@ -81,7 +81,7 @@ public class Player : PixelSprite
             root.transform.position += new Vector3(direction.x, 0, 0) * SPEED * Time.deltaTime;
 
             // Plays footstep sound
-            PlayFootstepSound();
+            //PlayFootstepSound();
 
             yield return null;
         }
