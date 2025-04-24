@@ -194,7 +194,7 @@ MonoBehaviour:
       flipped: 0
       animationState: Idle
     - npcName: MaleNPC3
-      position: {x: -20.02, y: 0.83}
+      position: {x: -18.29, y: 0.83}
       orderInLayer: 
       appear: 1
       flipped: 0
