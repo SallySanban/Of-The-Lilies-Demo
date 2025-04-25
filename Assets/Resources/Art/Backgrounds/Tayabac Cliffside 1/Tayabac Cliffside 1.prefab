@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 8825745997100040818}
   m_Layer: 11
   m_Name: Background
-  m_TagString: Stone
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

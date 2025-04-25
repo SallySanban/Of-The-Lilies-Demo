@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 8095159261804827473}
   m_Layer: 11
   m_Name: Background
-  m_TagString: Stone
+  m_TagString: CarpetedStone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -18,6 +18,7 @@ choice in -1
 		HideTextbox(false)
 
 		[wait]RemoveFromScene("Axe Trigger")
+		playSFX(SFX_AhlaiWalkGrass)
 		[wait]MoveNPC(Ahlai -x 55.61 -y 0.24 -spd 5)
 		FlipNPC("MaleNPC4" "Right")
 		SetNPCPosition("MaleNPC5" -x 61.25 -y 0.52)
