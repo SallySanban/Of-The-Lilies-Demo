@@ -30,6 +30,11 @@ choice in -1
 		
 		pixel MaleNPC5 "I won't go easy on you..."
 
+		pauseEvent(BGM_Scene1)
+		pauseEvent(Amb_ForestMain)
+		pauseEvent(Amb_Opening)
+		playMusic(BGM_Combat)
+
 		HideTextbox(false)
 
 		ShowNPC(Ahlai false)
@@ -43,6 +48,11 @@ choice in -1
 		ChangeAnimationState("MaleNPC5" StopSwing true)
 		SetCamera(-x 47.4 -y 0.24)
 		[wait]HideCG()
+
+		resumeEvent(BGM_Scene1)
+		resumeEvent(Amb_ForestMain)
+		resumeEvent(Amb_Opening)
+		stopEvent(BGM_Combat)
 
 		pixel MaleNPC4 as Uncle "Alright, <playerName>. That's it for today."
 
