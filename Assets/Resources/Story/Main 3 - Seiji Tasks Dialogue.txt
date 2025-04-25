@@ -187,6 +187,7 @@ choice in 1
 
 		HideTextbox(true)
 		[wait]Blackout()
+		[wait]ChangeRender("Color Adjustments" 0)
 		[input]SwitchCG("Myo")
 
 		Myo "There isn't a time in the world where I wouldn't wait for you."
@@ -195,6 +196,7 @@ choice in 1
 
 		HideTextbox(true)
 		[wait]Blackout()
+		[wait]ChangeRender("Color Adjustments" 25)
 		ResetCamera(false)
 		playSFX(SFX_DoorbellPanned)
 		RemoveFromScene("Myo")
