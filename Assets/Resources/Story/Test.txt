@@ -3,37 +3,4 @@ input
 $CanDoCombat = true
 $CombatQuestCompleted = false
 
-$AxeReceived = false
-$SatoQuest = false
-$SatoPotionDone = false
-$FinishedSatoQuest = false
-$RichSeiyslanQuest = false
-$RichSeiyslanPotionDone = false
-$FinishedRichSeiyslanQuest = false
-$DesperateGirlQuest = false
-$DesperateGirlPotionDone = false
-$FinishedDesperateGirlQuest = false
-$RookieJournalistDone = false
-$WideVariety = false
-$CustomerService = false
-$GuaranteedQuality = false
-$QuanDeliverQuest = false
-$QuanPotionQuest = false
-$QuanPotionDone = false
-$EverbarkFlakes = false
-$SilverleafSprigs = false
-$PearlShellPowder = false
-$MaiQuest = false
-$MaiFamilyFound = false
-$PotionQuests = 0
-$QuanIngredients = 0
-$LibraryQuest = false
-$SeijiTalkedTo = false
-$SteppedOutside = false
-$ShopAlreadyChosen = false
-$HowAreYouAlreadyChosen = false
-$CustomersAlreadyChosen = false
-$NightmareAlreadyChosen = false
-$TasksAlreadyChosen = true
-
-ShowScene("Scene 5" "Kuchai Town 2")
+ShowScene("Scene 2" "Tayabac Village")

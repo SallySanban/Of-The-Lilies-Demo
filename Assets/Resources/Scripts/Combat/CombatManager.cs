@@ -34,15 +34,28 @@ public class CombatManager
     public List<(string, Vector2)> currentKeySequence = new List<(string, Vector2)>();
 
     public int currentButtonIndex = 0;
+    public bool success = false;
 
     // List of animation states that are considered "attack" animations
     private readonly string[] attackAnimations = new string[] 
     {
-        "AhlaiAttackEnemyHit",
-        "AhlaiAttackEnemyDodge",
-        "EnemyAttackAhlaiHit",
-        "EnemyAttackAhlaiDodge"
+        "AhlaiAttackEnemyHitA",
+        "AhlaiAttackEnemyDodgeA",
+        "EnemyAttackAhlaiHitA",
+        "EnemyAttackAhlaiDodgeA",
+        "AhlaiAttackEnemyHitB",
+        "AhlaiAttackEnemyDodgeB",
+        "EnemyAttackAhlaiHitB",
+        "EnemyAttackAhlaiDodgeB",
+        "AhlaiAttackEnemyHitC",
+        "AhlaiAttackEnemyDodgeC",
+        "EnemyAttackAhlaiHitC",
+        "EnemyAttackAhlaiDodgeC",
+        "AhlaiAttackEnemyDefeat",
+        "EnemyAttackAhlaiDefeat"
     };
+
+    private int health = 4;
 
     public CombatManager()
     {
@@ -57,10 +70,10 @@ public class CombatManager
 
         qteSlidingBarPrefab = FilePaths.GetPrefabFromPath(FilePaths.qteBarPrefabPath, SLIDINGBAR_FILENAME);
 
-        sceneManager.StartCoroutine(StartCombat());
+        health = 4;
     }
 
-    private IEnumerator StartCombat()
+    public IEnumerator StartCombat()
     {
         Transform positionA = combatSprite.root.transform.Find(POSITION_A).transform;
         Transform positionB = combatSprite.root.transform.Find(POSITION_B).transform;
@@ -86,26 +99,83 @@ public class CombatManager
         //position C to A
         yield return ButtonBarSequence(positionC, 3, 0.05f);
 
+        yield return new WaitForSeconds(1f);
+
+        //new position A
+        yield return combatSprite.ChangePositionA(55f);
+
         //position A to B
         yield return ButtonBarSequence(positionA, 4, 0.05f);
+
+        //position B to A
+        yield return SlidingBarSequence(positionB, 2f);
+
+        yield return new WaitForSeconds(1f);
+
+        //new position A
+        yield return combatSprite.ChangePositionA(60f);
+
+        yield return new WaitForSeconds(1f);
+
+        //position A to C
+        yield return SlidingBarSequence(positionA, 2f);
+
+        yield return ButtonBarSequence(positionC, 4, 0.05f);
+
+        yield return ButtonBarSequence(positionA, 4, 0.05f);
+
+        //B to A
+        yield return SlidingBarSequence(positionB, 2f);
+
+        if (health != 0)
+        {
+            yield return new WaitForSeconds(0.5f);
+
+            sceneManager.StartCoroutine(sceneManager.PanCamera(sceneManager.playerCamera.transform.position.x + 1.5f, 0, 1));
+
+            combatSprite.animator.SetBool("Win", true);
+
+            yield return WaitForAnimationComplete();
+        }
+
+        GraphicPanel blackout = UIManager.Instance.CreateUI<GraphicPanel>("Blackout");
+
+        yield return blackout.Show();
+        Object.Destroy(combatSprite.root);
+        SceneManager.Instance.playerCamera.Follow = SceneManager.Instance.player.root.transform;
+        SceneManager.Instance.inCombat = false;
     }
 
     private IEnumerator WaitForAnimationComplete()
     {
         yield return null;
-        
-        while (IsInAttackAnimation())
+
+        bool hasCompletedOneCycle = false;
+
+        float previousTime = 0;
+
+        while (IsInAttackAnimation() && !hasCompletedOneCycle)
         {
+            var currentInfo = combatSprite.animator.GetCurrentAnimatorStateInfo(0);
+            float currentTime = currentInfo.normalizedTime;
+
+            if (currentTime < previousTime || currentTime >= 1.0f)
+            {
+                hasCompletedOneCycle = true;
+            }
+
+            previousTime = currentTime;
+
             yield return null;
         }
-        
-        yield return null;
+
+        yield return new WaitForSeconds(0.1f);
     }
 
     private bool IsInAttackAnimation()
     {
         var currentInfo = combatSprite.animator.GetCurrentAnimatorStateInfo(0);
-        
+
         // Check if current animation is any of our attack animations
         foreach (string attackAnim in attackAnimations)
         {
@@ -131,6 +201,15 @@ public class CombatManager
 
         Object.Destroy(currentButtonBar.root);
 
+        if(positionParent.name == POSITION_A)   //going from A to B
+        {
+            sceneManager.StartCoroutine(sceneManager.PanCamera(sceneManager.playerCamera.transform.position.x + 1.5f, 0, 2f));
+        }
+        else if (positionParent.name == POSITION_C)  //going from C to A
+        {
+            sceneManager.ResetCamera(true);
+        }
+
         if (currentButtonBar.stopTimer)
         {
             combatSprite.animator.SetBool("AhlaiMiss", true);
@@ -144,21 +223,13 @@ public class CombatManager
 
         currentButtonBar = null;
 
-        //if (count == 5)
-        //{
-        //    if (wins > loss)
-        //    {
-        //        combatSprite.SetBool("Win", true);
-        //    }
-        //    else
-        //    {
-        //        combatSprite.SetBool("Lose", true);
-        //    }
-
-        //    yield break;
-        //}
-
-        //count += 1;
+        if (health == 0)
+        {
+            yield return new WaitForSeconds(0.5f);
+            sceneManager.StartCoroutine(sceneManager.PanCamera(sceneManager.playerCamera.transform.position.x - 3f, 0, 2f));
+            combatSprite.animator.SetBool("Lose", true);
+            yield return WaitForAnimationComplete();
+        }
     }
 
     //enemy attacking
@@ -170,9 +241,16 @@ public class CombatManager
 
         yield return currentSlidingBar.MoveArrow();
 
-        bool success = currentSlidingBar.CheckForSuccess();
-
         Object.Destroy(currentSlidingBar.root);
+
+        if(positionParent.name == POSITION_A)   //going from A to C
+        {
+            sceneManager.StartCoroutine(sceneManager.PanCamera(sceneManager.playerCamera.transform.position.x - 3f, 0, 2f));
+        }
+        else if(positionParent.name == POSITION_B)  //going from B to A
+        {
+            sceneManager.ResetCamera(true);
+        }
 
         if (success)
         {
@@ -181,11 +259,20 @@ public class CombatManager
         else
         {
             combatSprite.animator.SetBool("EnemyHit", true);
+            health--;
         }
 
         yield return WaitForAnimationComplete();
 
         currentSlidingBar = null;
+
+        if (health == 0)
+        {
+            yield return new WaitForSeconds(0.5f);
+            sceneManager.StartCoroutine(sceneManager.PanCamera(sceneManager.playerCamera.transform.position.x - 3f, 0, 2f));
+            combatSprite.animator.SetBool("Lose", true);
+            yield return WaitForAnimationComplete();
+        }
     }
 
     private void GenerateKeysForButtonBar(int numberOfKeys)

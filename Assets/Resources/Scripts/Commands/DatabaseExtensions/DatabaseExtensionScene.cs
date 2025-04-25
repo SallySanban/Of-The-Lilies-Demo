@@ -34,7 +34,7 @@ namespace Commands
             database.AddCommand("FreezePlayer", new Action<string>(FreezePlayer));
             database.AddCommand("ChangeRender", new Action<string[]>(ChangeRender));
             database.AddCommand("ChangeLighting", new Action<string>(ChangeLighting));
-            database.AddCommand("StartCombat", new Action<string[]>(StartCombat));
+            database.AddCommand("StartCombat", new Func<string[], IEnumerator>(StartCombat));
             database.AddCommand("ShowNPC", new Action<string[]>(ShowNPC));
         }
 
@@ -413,7 +413,7 @@ namespace Commands
             }
         }
 
-        private static void StartCombat(string[] data)
+        private static IEnumerator StartCombat(string[] data)
         {
             var parameters = ConvertDataToParameters(data);
 
@@ -426,7 +426,7 @@ namespace Commands
             string combatName = data[0];
             Vector2 startingPosition = new Vector2(x, y);
 
-            SceneManager.Instance.StartCombat(combatName, startingPosition);
+            yield return SceneManager.Instance.StartCombat(combatName, startingPosition);
         }
 
         private static void ShowNPC(string[] data)
@@ -441,13 +441,17 @@ namespace Commands
                     PixelSprite player = SceneManager.Instance.player;
                     GameObject root = SceneManager.Instance.player.root;
 
-                    root.SetActive(show);
+                    Color color = show ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
+
+                    root.GetComponentInChildren<SpriteRenderer>().color = color;
                 }
                 else
                 {
                     NPC npc = NPCManager.Instance.GetNPC(name);
 
-                    npc.root.SetActive(show);
+                    Color color = show ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
+
+                    npc.root.GetComponentInChildren<SpriteRenderer>().color = color;
                 }
             }
         }

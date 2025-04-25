@@ -245,7 +245,7 @@ public class SceneManager : MonoBehaviour
         StartCombat("Ahlai vs NPC", new Vector2(58.46f, -2.697f));
     }
 
-    public void StartCombat(string combatName, Vector2 startingPosition)
+    public IEnumerator StartCombat(string combatName, Vector2 startingPosition)
     {
         inCombat = true;
 
@@ -254,6 +254,13 @@ public class SceneManager : MonoBehaviour
         GameObject combatSprite = FilePaths.GetPrefabFromPath(FilePaths.combatPrefabPath, filename);
 
         combatManager.Initialize(combatSprite, pixelContainer, startingPosition);
+
+        yield return combatManager.StartCombat();
+
+        while (inCombat)
+        {
+            yield return null;
+        }
     }
 
     public void FollowPlayer(string npcName, Vector2 followNPCPosition = default)

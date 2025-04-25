@@ -82,6 +82,8 @@ public class QteSlidingBar
             yield return null;
         }
 
+        sceneManager.combatManager.success = CheckForSuccess();
+
         yield return new WaitForSeconds(0.5f);
     }
 
