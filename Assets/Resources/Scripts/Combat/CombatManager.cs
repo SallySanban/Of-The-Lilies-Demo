@@ -129,10 +129,6 @@ public class CombatManager
 
         if (health != 0)
         {
-            yield return new WaitForSeconds(0.5f);
-
-            sceneManager.StartCoroutine(sceneManager.PanCamera(sceneManager.playerCamera.transform.position.x + 1.5f, 0, 1));
-
             combatSprite.animator.SetBool("Win", true);
 
             yield return WaitForAnimationComplete();
@@ -225,8 +221,6 @@ public class CombatManager
 
         if (health == 0)
         {
-            yield return new WaitForSeconds(0.5f);
-            sceneManager.StartCoroutine(sceneManager.PanCamera(sceneManager.playerCamera.transform.position.x - 3f, 0, 2f));
             combatSprite.animator.SetBool("Lose", true);
             yield return WaitForAnimationComplete();
         }
@@ -268,8 +262,6 @@ public class CombatManager
 
         if (health == 0)
         {
-            yield return new WaitForSeconds(0.5f);
-            sceneManager.StartCoroutine(sceneManager.PanCamera(sceneManager.playerCamera.transform.position.x - 3f, 0, 2f));
             combatSprite.animator.SetBool("Lose", true);
             yield return WaitForAnimationComplete();
         }
