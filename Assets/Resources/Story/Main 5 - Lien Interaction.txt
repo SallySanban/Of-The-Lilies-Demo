@@ -128,7 +128,7 @@ $FeedEgoOption = false
 
 choice in 0
 {
-	- <i>They flatter themselves, why don't I call them out...</i>
+	- <i>Why don't I call them out...</i>
 		$Vengeance += 1
 
 		ChangeBodyEmotion(Ahlai -e Left_Disgust)

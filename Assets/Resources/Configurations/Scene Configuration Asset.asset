@@ -1722,7 +1722,7 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 5 - Leave Bridge Interaction
-      moveToInteractPosition: {x: 0, y: 0}
+      moveToInteractPosition: {x: 14.36, y: 0}
     - interactableName: Dock
       interactableType: 1
       isInteractable: 1
@@ -1762,12 +1762,6 @@ MonoBehaviour:
       appear: 1
       flipped: 0
       animationState: GossipLeft
-    - npcName: TownCrier
-      position: {x: -1.92, y: 1.03}
-      orderInLayer: 
-      appear: 1
-      flipped: 0
-      animationState: IdleRight
     - npcName: MaleListener
       position: {x: 1.5, y: 0.86}
       orderInLayer: 
@@ -1974,7 +1968,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Student Interaction
-      moveToInteractPosition: {x: 6.31, y: 0}
+      moveToInteractPosition: {x: 5, y: 0}
     - interactableName: StudentSit4
       interactableType: 0
       isInteractable: 0
@@ -1984,7 +1978,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Admirer Interaction
-      moveToInteractPosition: {x: -9.27, y: 0}
+      moveToInteractPosition: {x: -10.42, y: 0}
     - interactableName: AdmirerSit2
       interactableType: 0
       isInteractable: 0
@@ -2021,7 +2015,7 @@ MonoBehaviour:
     playerAnimationState: IdleRight
     npcsInScene:
     - npcName: Barkeep
-      position: {x: -2.73, y: 0.97}
+      position: {x: -2.26, y: 0.97}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -2051,7 +2045,7 @@ MonoBehaviour:
       flipped: 0
       animationState: Sit
     - npcName: Soldier3
-      position: {x: -1.39, y: 0.81}
+      position: {x: 0.5, y: 0.81}
       orderInLayer: 0
       appear: 1
       flipped: 0
@@ -2067,7 +2061,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Barkeep Interaction
-      moveToInteractPosition: {x: -3.15, y: 0}
+      moveToInteractPosition: {x: -0.67, y: 0}
     - interactableName: Myo
       interactableType: 0
       isInteractable: 1
@@ -2092,7 +2086,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 5 - Drunk Soldier Interaction
-      moveToInteractPosition: {x: 0.64, y: 0}
+      moveToInteractPosition: {x: 2.49, y: 0}
     backgroundsToGo:
     - interactableName: Left Door
       backgroundToGo: Kuchai Town 1
@@ -2434,7 +2428,7 @@ MonoBehaviour:
       position: {x: -5.19, y: 0.5}
       orderInLayer: 
       appear: 1
-      flipped: 0
+      flipped: 1
       animationState: IdleLeft
     interactablesInScene:
     - interactableName: Conspiracy Wall

@@ -1,4 +1,4 @@
-[wait]PanCamera(-x -8.84 -y 0 -spd 1)
+[wait]PanCamera(-x -11 -y 0 -spd 1)
 
 pixel Ahlai as <playerName> "Ah, I wonder what these ladies are all looking at..."
 

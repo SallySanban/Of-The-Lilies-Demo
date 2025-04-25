@@ -12,8 +12,8 @@ playSFX(SFX_KuchaiWalkout)
 Wait(0.5)
 RemoveFromScene("RichSeiyslanCrush")
 ChangeAnimationState("RichSeiyslan" Cry true)
-SetNPCPosition("RichSeiyslan" -x -2737.96 -y -202.32)
-SetNPCPosition("RichSeiyslanFriend" -x -2518.96 -y -199.32)
+SetNPCPosition("RichSeiyslan" -x -26.14 -y 0.69)
+SetNPCPosition("RichSeiyslanFriend" -x -24.23 -y 0.79)
 [wait]HideCG()
 
 pixel RichSeiyslan as Customer "But... but why?"

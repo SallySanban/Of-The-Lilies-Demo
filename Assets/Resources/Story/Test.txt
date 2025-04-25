@@ -39,3 +39,4 @@ $Laisa = 0
 $Lien = 0
 
 ShowScene("Scene 5" "Main Shop")
+
