@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using FMODUnity;
+using FMOD.Studio;
 
 public class Player : PixelSprite
 {
@@ -81,7 +82,7 @@ public class Player : PixelSprite
             root.transform.position += new Vector3(direction.x, 0, 0) * SPEED * Time.deltaTime;
 
             // Plays footstep sound
-            //PlayFootstepSound();
+            PlayFootstepSound();
 
             yield return null;
         }

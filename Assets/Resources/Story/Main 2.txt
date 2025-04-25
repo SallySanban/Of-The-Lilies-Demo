@@ -152,8 +152,8 @@ TayabacAhlai as <playerName> "<b><i>Lien...</b></i>"
 TayabacAhlai as <playerName> "<b><i>I won't forget that name...</b></i>"
 
 HideTextbox(true)
-playMusic(BGM_MainTheme2)
 Wait(1)
+playMusic(BGM_MainTheme2)
 [wait]ShowScene("Scene 4" "Riverside Pathway")
 [wait]ChangeRender("Color Adjustments" 25)
 [wait]ChangeLighting(1.3)

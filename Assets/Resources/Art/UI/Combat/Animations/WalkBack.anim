@@ -49,8 +49,26 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: 3261934225288242150, guid: 1423fef5a11eabf4cb004dd928a2857e, type: 3}
+    - {fileID: 8968004104267374885, guid: 1423fef5a11eabf4cb004dd928a2857e, type: 3}
+    - {fileID: 7872107955298416241, guid: 1423fef5a11eabf4cb004dd928a2857e, type: 3}
+    - {fileID: -2010031253315607534, guid: 1423fef5a11eabf4cb004dd928a2857e, type: 3}
+    - {fileID: -3520610096157970659, guid: 1423fef5a11eabf4cb004dd928a2857e, type: 3}
+    - {fileID: -5560489740770156276, guid: 1423fef5a11eabf4cb004dd928a2857e, type: 3}
+    - {fileID: 918687578053196175, guid: 1423fef5a11eabf4cb004dd928a2857e, type: 3}
+    - {fileID: -4293143905034849779, guid: 1423fef5a11eabf4cb004dd928a2857e, type: 3}
+    - {fileID: -4293143905034849779, guid: 1423fef5a11eabf4cb004dd928a2857e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -75,4 +93,25 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: CombatGrassStepAudio
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.3
+    functionName: CombatGrassStepAudio
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.7
+    functionName: CombatGrassStepAudio
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
