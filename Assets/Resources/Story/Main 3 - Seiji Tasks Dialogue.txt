@@ -19,7 +19,7 @@ Ahlai as <playerName> at 0 "Oh!"
 
 HideCharacter(Seiji)
 HideCharacter(Ahlai)
-HideTextbox(false)
+HideTextbox(true)
 [wait]Blackout()
 [wait]SetNPCPosition(Myo -x -1.62 -y 0.39)
 [wait]HideCG()

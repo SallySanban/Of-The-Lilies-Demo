@@ -249,7 +249,7 @@ MonoBehaviour:
       interactableType: 2
       isInteractable: 1
       storyToPlay: Main 1 - Cliffside Interaction
-      moveToInteractPosition: {x: -54.81, y: -2.08}
+      moveToInteractPosition: {x: -70.41, y: 0.24}
     - interactableName: MaleNPC1
       interactableType: 0
       isInteractable: 1
@@ -264,7 +264,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 1 - Fixed Equipment Interaction
-      moveToInteractPosition: {x: -17.78, y: 0.24}
+      moveToInteractPosition: {x: -16.31, y: 0.24}
     - interactableName: MaleNPC4
       interactableType: 0
       isInteractable: 1
@@ -741,13 +741,13 @@ MonoBehaviour:
     playerAnimationState: IdleLeft
     npcsInScene:
     - npcName: Sabina
-      position: {x: 6.49, y: 0.63}
+      position: {x: 6.49, y: 0.71}
       orderInLayer: 2
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: RookieJournalist
-      position: {x: -19.91, y: 0.85}
+      position: {x: -19.62, y: 0.85}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -825,7 +825,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Rookie Journalist Interaction
-      moveToInteractPosition: {x: -17.85, y: 0}
+      moveToInteractPosition: {x: -17.67, y: 0}
     - interactableName: Sabina
       interactableType: 0
       isInteractable: 1
@@ -913,13 +913,13 @@ MonoBehaviour:
       flipped: 0
       animationState: IdleRight
     - npcName: MaleListener
-      position: {x: 1.5, y: 0.78}
+      position: {x: 1.5, y: 0.86}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: FemaleListener
-      position: {x: 3.2, y: 0.91}
+      position: {x: 3.2, y: 0.97}
       orderInLayer: 
       appear: 1
       flipped: 1
@@ -943,7 +943,7 @@ MonoBehaviour:
       flipped: 1
       animationState: IdleLeft
     - npcName: Seiji
-      position: {x: -29.8, y: 0.88}
+      position: {x: -34.65, y: 0.88}
       orderInLayer: 
       appear: 1
       flipped: 0
@@ -1279,7 +1279,7 @@ MonoBehaviour:
       interactableType: 0
       isInteractable: 1
       storyToPlay: Main 3 - Mai Family Interaction
-      moveToInteractPosition: {x: 7.2, y: 0}
+      moveToInteractPosition: {x: 6.53, y: 0}
     - interactableName: Boater
       interactableType: 0
       isInteractable: 1
@@ -1769,13 +1769,13 @@ MonoBehaviour:
       flipped: 0
       animationState: IdleRight
     - npcName: MaleListener
-      position: {x: 1.5, y: 0.78}
+      position: {x: 1.5, y: 0.86}
       orderInLayer: 
       appear: 1
       flipped: 1
       animationState: IdleLeft
     - npcName: FemaleListener
-      position: {x: 3.2, y: 0.91}
+      position: {x: 3.2, y: 0.97}
       orderInLayer: 
       appear: 1
       flipped: 1
