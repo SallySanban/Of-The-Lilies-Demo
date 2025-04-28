@@ -38,8 +38,6 @@ choice in -1
 
 		HideTextbox(false)
 
-		ShowNPC(Ahlai false)
-		ShowNPC(MaleNPC5 false)
 		ResetCamera(true)
 		[wait]StartCombat("Ahlai vs NPC" -x 58.46 -y -2.697)
 		ShowNPC(Ahlai true)

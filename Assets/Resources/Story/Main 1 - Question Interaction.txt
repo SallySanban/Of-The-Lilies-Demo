@@ -6,7 +6,7 @@ choice in -1
 		pixel FemNPC2 as Auntie "We'll get the preparations done, don't you worry!"
 
 	- if ($KnowDaniwItems && !$KnowThreadLocation) Do you know where to find fishing thread?
-		pixel FemNPC2 as Auntie "Nope, sorry! Only Brother Daniw would know."
+		pixel FemNPC2 as Auntie "Nope, sorry! Only Brother Daniw's wife would know."
 	
 	- if ($KnowDaniwItems && !$KnowWoodLocation) Do you know where to find some wood?
 		pixel FemNPC2 as Auntie "Wouldn't the people sitting by the fire know that?"

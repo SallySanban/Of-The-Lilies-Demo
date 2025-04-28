@@ -20,6 +20,7 @@ public class QteSlidingBar
 
     private float speed;
     private Vector3 targetArrowPosition;
+    private bool currentCollisionState = false;
     public bool stopArrow = false;
 
     public GameObject root = null;
@@ -79,27 +80,41 @@ public class QteSlidingBar
                 targetArrowPosition = rightPoint.transform.position;
             }
 
+            currentCollisionState = IsArrowInSuccessZone();
+            
             yield return null;
         }
 
-        sceneManager.combatManager.success = CheckForSuccess();
+        sceneManager.combatManager.success = currentCollisionState;
+
+        if (currentCollisionState)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_CombatCorrectBar");
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_CombatWrongBar");
+        }
 
         yield return new WaitForSeconds(0.5f);
     }
 
-    public bool CheckForSuccess()
+    private bool IsArrowInSuccessZone()
     {
         BoxCollider2D sliderCollider = successZone.GetComponent<BoxCollider2D>();
-        Collider2D arrowCollider = Physics2D.OverlapBox(sliderCollider.bounds.center, sliderCollider.bounds.size, 0f);
+        Collider2D[] overlappingColliders = Physics2D.OverlapBoxAll(
+            sliderCollider.bounds.center,
+            sliderCollider.bounds.size,
+            0f
+        );
 
-        if (arrowCollider != null && arrowCollider.CompareTag("Arrow"))
+        foreach (Collider2D collider in overlappingColliders)
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_CombatCorrectBar"); //FMOD correct sfx
-            return true;
+            if (collider.CompareTag("Arrow"))
+            {
+                return true;
+            }
         }
-        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_CombatWrongBar"); //FMOD wrong sound sfx
         return false;
     }
-
-    
 }

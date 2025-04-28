@@ -25,7 +25,7 @@ choice in 0
 		HideTextbox(true)
 		[wait]SwitchCharacter(Ahlai Seiji -b Left_Default_Body -e Left_Worried)
 
-		Seiji at 0 "Ahlai...?"
+		Seiji at 0 "<playerName>...?"
 
 		HideTextbox(true)
 		[wait]SwitchCharacter(Seiji Ahlai -b Left_Default_Body -e Left_Angry)

@@ -1,7 +1,7 @@
 ShowCharacterLeft(Seiji -b Left_Default_Body -e Left_Worried)
 [wait]ShowCharacterRight(Ahlai -b Right_Question_Body -e Right_Question)
 
-Seiji at 0 "Who were you talking to back there, Ahlai?"
+Seiji at 0 "Who were you talking to back there, <playerName>?"
 
 ChangeBodyEmotion(Ahlai -b Right_Default_Body -e Right_Smile)
 

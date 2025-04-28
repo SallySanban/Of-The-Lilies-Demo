@@ -25,6 +25,14 @@ public class CombatSprite
     {
         root = Object.Instantiate(prefab, position, Quaternion.identity, parent);
 
+        //TEMP: make the combat people (hardcoded) disappear
+        Color color = new Color(1, 1, 1, 0);
+        GameObject player = SceneManager.Instance.player.root;
+        player.GetComponentInChildren<SpriteRenderer>().color = color;
+
+        NPC npc = NPCManager.Instance.GetNPC("MaleNPC5");
+        npc.root.GetComponentInChildren<SpriteRenderer>().color = color;
+
         animator = root.GetComponentInChildren<Animator>();
 
         SceneManager.Instance.playerCamera.Follow = root.transform;
@@ -34,9 +42,6 @@ public class CombatSprite
     {
         Vector3 startPosition = root.transform.position;
         Vector3 target = new Vector3(targetX, startPosition.y, startPosition.z);
-
-        //float scaleAdjustment = npcTransform.parent ? npcTransform.parent.localScale.x : 1f;
-        //float adjustedSpeed = moveSpeed * scaleAdjustment;
 
         while (Vector3.Distance(root.transform.position, target) > 0.01f)
         {

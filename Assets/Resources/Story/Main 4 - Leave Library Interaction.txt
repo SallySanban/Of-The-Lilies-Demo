@@ -11,7 +11,7 @@ else
 	pixel Seiji "Hey, were you planning on leaving without me?"
 
 	HideTextbox(true)
-	[wait]MoveNPC(Ahlai -x -6.87 -y -2.39)
+	[wait]MoveNPC(Ahlai -x -6.87 -y 0)
 	[wait]FlipNPC(Ahlai Left)
 
 	$LaisaTalkedTo = false

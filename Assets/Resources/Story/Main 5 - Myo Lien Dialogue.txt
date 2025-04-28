@@ -120,7 +120,7 @@ choice in 1
 
 		Ahlai as <playerName> at 1 "At the very least, I'm pleased to have another round, too. You understand, yes?"
 
-		Myo at 0 "As always, Ahlai..."
+		Myo at 0 "As always, <playerName>..."
 
 	- <i>I shouldn't tell him about it yet.</i>
 		$Peace += 1

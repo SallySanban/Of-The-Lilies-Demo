@@ -16,7 +16,7 @@ MonoBehaviour:
   - sceneName: Scene 1
     currentBackgroundName: Tayabac House 2nd Floor
     showPlayer: 1
-    playerPosition: {x: 0.2, y: -0.22}
+    playerPosition: {x: 0.25, y: -0.29}
     playerDirection: -1
     playerAnimationState: TayabacSit
     npcsInScene:
@@ -302,7 +302,7 @@ MonoBehaviour:
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Trees
       interactableType: 1
-      isInteractable: 0
+      isInteractable: 1
       storyToPlay: Main 1 - Tree Interaction
       moveToInteractPosition: {x: 0, y: 0}
     - interactableName: Axe Trigger

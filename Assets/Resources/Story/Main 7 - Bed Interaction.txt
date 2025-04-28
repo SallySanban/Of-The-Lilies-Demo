@@ -4,7 +4,7 @@ HideTextbox(true)
 [wait]Blackout()
 stopEvent(BGM_DramaMusic)
 
-Sabina as ??? "<i>Ahlai, wake up</i>."
+Sabina as ??? "<i><playerName>, wake up</i>."
 
 Ahlai as <playerName> "<i>Ugh... so early... I really am not a morning person...</i>"
 
