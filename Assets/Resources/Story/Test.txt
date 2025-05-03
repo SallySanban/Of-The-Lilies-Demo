@@ -1,18 +1,5 @@
 input
 
-ShowScene("Scene 2" "Tayabac Village")
-
-$GotDaniwQuest = true
-	$GotCropsQuest = false
-	$DaniwItems = 0
-	$KnowDaniwItems = false
-	$FishingEquipmentFixed = false
-	$KnowThreadLocation = false
-	$KnowWoodLocation = false
-	$DaniwQuestCompleted = false
-	$CropsQuestCompleted = false
-	$CombatQuestCompleted = false
-	$CanDoCombat = true
-
+Ahlai "(Hello)" ShowCG("Family")
 
 

@@ -12,7 +12,7 @@ pixel StudentSit4 as Student "The only way to even <i>properly</i> manage territ
 
 pixel StudentSit4 as Student "We have literal proof in the form of Agon Province!"
 
-pixel StudentSit3 "And let possible <i>invaders</i> lay claim to our precious lands?"
+pixel StudentSit3 as Student "And let possible <i>invaders</i> lay claim to our precious lands?"
 
 pixel StudentSit4 as Student "Mind your language! You call them invaders, but I call them <i>opportunities!</i>"
 

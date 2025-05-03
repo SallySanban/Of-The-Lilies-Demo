@@ -8,7 +8,7 @@ namespace Dialogue
 {
     public class DialogueParser
     {
-        private const string commandRegexPattern = @"[\w\[\]]*[^\s]\(";
+        private const string commandRegexPattern = @"\b\w+\(";
 
         public static DialogueLine Parse(string rawLine)
         {

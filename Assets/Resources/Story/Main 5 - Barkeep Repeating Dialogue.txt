@@ -78,7 +78,4 @@ choice in -1
 		HideTextbox(false)
 
 		$BarkeepTalkedTo = true
-		$MyoTalkedTo = false
-		$LienTalkedTo = false
-		$GotDrinks = false
 }

@@ -17,3 +17,6 @@ playMusic(BGM_KuchaiTavern)
 playAmbience(AMB_Tavern)
 
 $BarkeepTalkedTo = false
+$MyoTalkedTo = false
+$LienTalkedTo = false
+$GotDrinks = false
