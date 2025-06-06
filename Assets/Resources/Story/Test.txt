@@ -1,5 +1,7 @@
 input
 
-Ahlai "(Hello)" ShowCG("Family")
+Ahlai at 0 "WOW! How does this look?"
+
+Ahlai at 0 "NOT BAD HUH?"
 
 
