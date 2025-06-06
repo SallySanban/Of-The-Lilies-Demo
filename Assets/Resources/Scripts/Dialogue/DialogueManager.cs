@@ -10,6 +10,7 @@ namespace Dialogue
         public static DialogueManager Instance { get; private set; }
 
         [SerializeField] private RectTransform textboxPanel;
+        [SerializeField] private GameObject mainTextboxPrefab;
         [SerializeField] private GameObject leftTextboxPrefab;
         [SerializeField] private GameObject rightTextboxPrefab;
         [SerializeField] private GameObject speechBubblePrefab;
@@ -147,6 +148,7 @@ namespace Dialogue
             switch (textboxUsed)
             {
                 case DialogueContainer.ContainerType.MainTextbox:
+                    return mainTextboxPrefab;
                 case DialogueContainer.ContainerType.LeftTextbox:
                     return leftTextboxPrefab;
                 case DialogueContainer.ContainerType.RightTextbox:

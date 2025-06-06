@@ -8,7 +8,7 @@ public class VNManager : MonoBehaviour
 {
     public static VNManager Instance { get; private set; }
 
-    private const string DIALOGUE_FILE = "Test";
+    private const string DIALOGUE_FILE = "Main 1";
 
     private void Awake()
     {
@@ -24,6 +24,9 @@ public class VNManager : MonoBehaviour
 
     private void Start()
     {
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+
         LoadFile(DIALOGUE_FILE);
 
         DialogueManager.Instance.conversationManager.OnConversationEnd += HandleConversationEnd;

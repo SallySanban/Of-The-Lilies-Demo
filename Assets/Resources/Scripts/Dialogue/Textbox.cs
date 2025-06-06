@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Textbox : DialogueContainer
 {
-    private Vector2 mainPosition = new Vector2(16.82f, -464.20f);
+    private Vector2 mainPosition = new Vector2(-0.38f, -331.96f);
 
     public Textbox(GameObject prefab, Transform parent, ContainerType textboxType, string speakerName = "", string[] listOfChoices = null)
     {
@@ -15,7 +15,7 @@ public class Textbox : DialogueContainer
         switch (textboxType)
         {
             case ContainerType.MainTextbox:
-                root.transform.localPosition = mainPosition;
+                //root.transform.localPosition = mainPosition;
                 break;
             case ContainerType.LeftTextbox:
                 break;
