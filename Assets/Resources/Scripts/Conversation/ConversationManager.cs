@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Commands;
 using Characters;
 using Dialogue.LogicalLines;
 using System;
@@ -152,17 +151,18 @@ namespace Dialogue
                                      ?? sceneManager.interactableManager.GetInteractable(line.speakerData.name).gameObject;
                 }
                 
-
                 yield return dialogueManager.ShowTextbox(DialogueContainer.ContainerType.SpeechBubble, speakerName: TagManager.Inject(line.speakerData.displayName), speakerSprite: speakerSprite);
             }
             else
             {
+                Character character = CharacterManager.Instance.GetCharacter(line.speakerData.name);
+
                 if (line.hasSpeaker)
                 {
                     HandleSpeakerLogic(line.speakerData);
                 }
 
-                yield return dialogueManager.ShowTextbox(line.speakerData.textboxPosition, speakerName: TagManager.Inject(line.speakerData.displayName));
+                yield return dialogueManager.ShowTextbox(line.speakerData.textboxPosition, speakerName: TagManager.Inject(line.speakerData.displayName), speakerSprite: character?.root.gameObject);
             }
 
             yield return BuildLineSegments(line.dialogueData);

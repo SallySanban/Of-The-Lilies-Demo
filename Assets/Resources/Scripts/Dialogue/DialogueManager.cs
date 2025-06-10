@@ -116,7 +116,7 @@ namespace Dialogue
                 case DialogueContainer.ContainerType.LeftTextbox:
                 case DialogueContainer.ContainerType.RightTextbox:
                     GameObject dialogueContainer = GetTextboxContainerPrefab(textboxTypeToShow);
-                    currentTextbox = new Textbox(dialogueContainer, textboxPanel, textboxTypeToShow, speakerName, listOfChoices);
+                    currentTextbox = new Textbox(dialogueContainer, textboxPanel, textboxTypeToShow, speakerSprite, speakerName, listOfChoices);
                     break;
                 case DialogueContainer.ContainerType.SpeechBubble:
                     currentTextbox = new SpeechBubble(speechBubblePrefab, speakerSprite, speakerName, listOfChoices);

@@ -35,7 +35,7 @@ namespace Characters
             return config.GetConfig(characterName);
         }
 
-        public Character GetCharacter(string characterName)
+        public Character GetCharacter(string characterName, bool createIfNull = true)
         {
             if (characters.ContainsKey(characterName.ToLower()))
             {
@@ -43,7 +43,14 @@ namespace Characters
             }
             else
             {
-                return CreateCharacter(characterName);
+                if(createIfNull)
+                {
+                    return CreateCharacter(characterName);
+                }
+                else
+                {
+                    return null;
+                }
             }
         }
 

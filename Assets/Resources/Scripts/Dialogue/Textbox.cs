@@ -6,20 +6,21 @@ using UnityEngine.UI;
 
 public class Textbox : DialogueContainer
 {
-    private Vector2 mainPosition = new Vector2(-0.38f, -331.96f);
+    private const string LEFTTEXTBOX_OBJECT = "LeftTextbox";
+    private const string RIGHTTEXTBOX_OBJECT = "RightTextbox";
 
-    public Textbox(GameObject prefab, Transform parent, ContainerType textboxType, string speakerName = "", string[] listOfChoices = null)
+    public Textbox(GameObject prefab, Transform parent, ContainerType textboxType, GameObject speakerSprite = null, string speakerName = "", string[] listOfChoices = null)
     {
-        root = Object.Instantiate(prefab, parent);
-
         switch (textboxType)
         {
             case ContainerType.MainTextbox:
-                //root.transform.localPosition = mainPosition;
+                root = Object.Instantiate(prefab, parent);
                 break;
             case ContainerType.LeftTextbox:
+                root = Object.Instantiate(prefab, speakerSprite.transform.Find(LEFTTEXTBOX_OBJECT).transform.position, Quaternion.identity, parent);
                 break;
             case ContainerType.RightTextbox:
+                root = Object.Instantiate(prefab, speakerSprite.transform.Find(RIGHTTEXTBOX_OBJECT).transform.position, Quaternion.identity, parent);
                 break;
         }
 

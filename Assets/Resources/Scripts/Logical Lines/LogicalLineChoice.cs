@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using static Dialogue.LogicalLines.LogicalLineUtils.Encapsulation;
 using static Dialogue.LogicalLines.LogicalLineUtils.Conditions;
+using Characters;
 using UnityEngine;
 
 namespace Dialogue.LogicalLines
@@ -30,7 +31,22 @@ namespace Dialogue.LogicalLines
 
             string[] choiceTexts = choices.Select(c => c.choiceText).ToArray();
 
-            yield return DialogueManager.Instance.ShowTextbox(choiceContainer, speakerName: TagManager.Inject("<playerName>"), speakerSprite: SceneManager.Instance.player?.root, listOfChoices: choiceTexts);
+            if(choiceContainer == DialogueContainer.ContainerType.SpeechBubble)
+            {
+                yield return DialogueManager.Instance.ShowTextbox(choiceContainer, speakerName: TagManager.Inject("<playerName>"), speakerSprite: SceneManager.Instance.player?.root, listOfChoices: choiceTexts);
+            }
+            else
+            {
+                Character character = CharacterManager.Instance.GetCharacter(SceneManager.Instance.MC_NAME, false);
+
+                //temp until the new tayabac ahlai portrait is here
+                if(character == null)
+                {
+                    character = CharacterManager.Instance.GetCharacter("TayabacAhlai");
+                }
+
+                yield return DialogueManager.Instance.ShowTextbox(choiceContainer, speakerName: TagManager.Inject("<playerName>"), speakerSprite: character?.root.gameObject, listOfChoices: choiceTexts);
+            }
 
             while (DialogueManager.Instance.currentTextbox.currentChoiceContainer.isWaitingForUserChoice)
             {

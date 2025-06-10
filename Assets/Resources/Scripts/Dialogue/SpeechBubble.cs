@@ -20,7 +20,7 @@ public class SpeechBubble : DialogueContainer
         speakerSpriteName = speakerSprite.name;
 
         textboxImage = root.transform.Find(TEXTBOX_OBJECTNAME).gameObject;
-        name = textboxImage.transform.Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
+        name = textboxImage.transform.Find(NAMEPLATE_OBJECTNAME).Find(NAME_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         dialogue = textboxImage.transform.Find(DIALOGUE_OBJECTNAME).GetComponent<TextMeshProUGUI>();
         choices = textboxImage.transform.Find(CHOICES_OBJECTNAME)?.transform;
 
